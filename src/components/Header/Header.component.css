@@ -36,6 +36,8 @@
 }
 
 .header__title {
+  all: unset;
+
   margin: 0;
 
   max-width: fit-content;
