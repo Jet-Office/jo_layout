@@ -1,0 +1,19 @@
+.navigation__list {
+  list-style: none;
+
+  display: flex;
+  gap: 24px;
+}
+
+.navigation__link {
+  text-decoration: none;
+
+  font-size: 18px;
+  line-height: 140%;
+
+  color: #ffffff;
+}
+
+.navigation__link:hover {
+  color: #e961ff;
+}
