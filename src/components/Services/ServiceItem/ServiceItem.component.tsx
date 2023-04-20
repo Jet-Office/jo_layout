@@ -10,7 +10,7 @@ export const ServiceItem: React.FC<Props> = ({ service: { description, icon } })
     <a
       className="services__item"
     >
-        <img src={`./${icon}`} alt="service-icon" className="services__icon" />
+        <img src={`./services-icons/${icon}`} alt="service-icon" className="services__icon" />
         <p className="services__description">{description}</p>
     </a>
   );
