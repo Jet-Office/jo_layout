@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import { Header } from "./components/Header";
+import { Services } from "./components/Services";
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -20,6 +21,9 @@ function App() {
   return (
     <div className="App">
       <Header windowWidth={windowWidth} />
+      <main className="main">
+        <Services />
+      </main>
     </div>
   );
 }

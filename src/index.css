@@ -12,4 +12,18 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+
+  overflow-x: hidden;
+}
+
+h2 {
+  all: unset;
+
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+
+  color: #ffffff;
+
+  mix-blend-mode: normal;
 }
