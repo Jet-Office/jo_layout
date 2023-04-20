@@ -3,42 +3,42 @@
     {
       "id": 1,
       "description": "Virtual administrative assistance",
-      "icon": "/src/assets/services-icons/brain-1.svg"
+      "icon": "brain-1.svg"
     },
     {
       "id": 2,
       "description": "Business Consulting Services",
-      "icon": "/src/assets/services-icons/bulb.svg"
+      "icon": "bulb.svg"
     },
     {
       "id": 3,
       "description": "Web/app development and design",
-      "icon": "/src/assets/services-icons/network-www.svg"
+      "icon": "network-www.svg"
     },
     {
       "id": 4,
       "description": "Coaching,  Leadership & team-building",
-      "icon": "/src/assets/services-icons/target-correct.svg"
+      "icon": "target-correct.svg"
     },
     {
       "id": 5,
       "description": "Project management & coordination",
-      "icon": "/src/assets/services-icons/list-edit.svg"
+      "icon": "list-edit.svg"
     },
     {
       "id": 6,
       "description": "Social media management & advertisement",
-      "icon": "/src/assets/services-icons/vintage-tv-4.svg"
+      "icon": "vintage-tv-4.svg"
     },
     {
         "id": 7,
         "description": " Translation, localization & relocation",
-        "icon": "/src/assets/services-icons/landmark-pisa-tower.svg"
+        "icon": "landmark-pisa-tower.svg"
       },
       {
         "id": 8,
         "description": "Corporate holidays & business events",
-        "icon": "/src/assets/services-icons/restaurant-menu.svg"
+        "icon": "restaurant-menu.svg"
       }
   ]
 }
