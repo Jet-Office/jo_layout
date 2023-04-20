@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import { Header } from "./components/Header";
 import { Services } from "./components/Services";
-import { Benefits } from "./components/Benefits/Benefits.component";
+import { Benefits } from "./components/Benefits";
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
