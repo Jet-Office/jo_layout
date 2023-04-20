@@ -10,3 +10,7 @@ width: 100vw;
 
   gap: 180px;
 }
+
+.main:last-child {
+  margin-bottom: 180px;
+}
