@@ -2,6 +2,10 @@
   background-color: #1c2024;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter", sans-serif;
 
