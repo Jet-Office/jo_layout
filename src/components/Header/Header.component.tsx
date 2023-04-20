@@ -1,4 +1,5 @@
 import Logo from "../../assets/logo.svg";
+import { Buttons } from "../Buttons";
 import { Navigation } from "../Navigation";
 import "./Header.component.css";
 
@@ -21,6 +22,7 @@ export const Header: React.FC<Props> = ({ windowWidth }) => {
             Virtual Assistance <br /> & Business Solutions
           </h1>
           <p className="header__text">Get started with 14 days free trial — no credit card required. Experience up to $30 in value and discover how we can help your business boost.</p>
+          <Buttons />
         </div>
       </div>
     </header>
