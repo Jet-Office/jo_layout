@@ -8,11 +8,9 @@ type Props = {
 export const ServiceItem: React.FC<Props> = ({ service: { description, icon } }) => {
   return (
     <a
-      href="https://t.me/jetoffice_bot"
-      target="_blank"
       className="services__item"
     >
-        <img src={`src/assets/${icon}`} alt="service-icon" className="services__icon" />
+        <img src={`./${icon}`} alt="service-icon" className="services__icon" />
         <p className="services__description">{description}</p>
     </a>
   );
