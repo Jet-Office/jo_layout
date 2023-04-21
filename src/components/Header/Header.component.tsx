@@ -18,7 +18,7 @@ export const Header: React.FC<Props> = ({ windowWidth }) => {
           <Navigation />
         </div>
         <div className="header__content_container">
-          <h1 className="header__title">
+          <h1 className="header__title title">
             Virtual Assistance <br /> & Business Solutions
           </h1>
           <p className="header__text">Get started with 14 days free trial — no credit card required. Experience up to $30 in value and discover how we can help your business boost.</p>

@@ -46,7 +46,7 @@
 
   text-align: left;
 
-  font-size: 54px;
+  font-size: 64px;
   line-height: 120%;
 
   background: linear-gradient(
@@ -79,10 +79,10 @@
   font-size: 18px;
   line-height: 140%;
 
-  color: #ffffff;
+  color: var(--text-color);
 }
 
-@media (max-height: 530px) {
+@media (max-height: 600px) {
   .header, .header__container {
     padding-bottom: 300px;
   }

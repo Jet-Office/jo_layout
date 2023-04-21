@@ -1,5 +1,5 @@
-import { Service } from "../../../types/service.type";
-import "../Services.component.css";
+import { Service } from "../../../../types/service.type";
+import "../../Services.component.css";
 
 type Props = {
   service: Service;

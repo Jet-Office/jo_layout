@@ -1,6 +1,6 @@
-import { Service } from "../../../types/service.type";
+import { Service } from "../../../../types/service.type";
 import { ServiceItem } from "../ServiceItem";
-import "../Services.component.css";
+import "../../Services.component.css";
 
 type Props = {
   services: Service[];

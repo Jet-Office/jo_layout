@@ -8,12 +8,10 @@
 }
 
 .services__list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
 
   gap: 20px;
-
-  min-width: 1068px;
 }
 
 .services__item {
@@ -58,7 +56,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .services__list_container {

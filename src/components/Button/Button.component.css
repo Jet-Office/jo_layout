@@ -42,3 +42,61 @@
 .button--pink:hover {
   background: #f094ff;
 }
+
+.button--green {
+  background-color: #14181c;
+  color: #1ab686;
+  border-color: #1ab686;
+
+  width: 192px;
+}
+
+.button--green:hover {
+  background: rgba(26, 182, 134, 0.1);
+}
+
+.button--blue {
+  background-color: #14181c;
+
+  color: #72a5f2;
+  border-color: #72a5f2;
+
+
+  width: 192px;
+}
+
+.button--blue:hover, .button--pink_price:hover {
+  background: rgba(114, 165, 242, 0.1);
+}
+
+.button--pink_price {
+  background-color: #14181c;
+  width: 192px;
+
+  color: #e961ff;
+  border-color: #e961ff;
+}
+
+.button--mint {
+  background-color: #14181c;
+  width: 192px;
+
+  color: #00e5e5;
+  border-color: #00e5e5;
+}
+
+.button--mint:hover {
+  background: rgba(0, 229, 229, 0.1);
+}
+
+.button--purple {
+  background-color: #14181c;
+
+  color: #7c66e9;
+  border-color: #7c66e9;
+  width: 192px;
+}
+
+.button--purple:hover {
+  background: rgba(124, 102, 233, 0.1);
+}

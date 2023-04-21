@@ -64,7 +64,7 @@ export const Benefits = () => {
     <section className="benefits">
       <div className="benefits__container">
         <div className="benefits__text_container">
-          <h2 className="benefits__title">Benefits</h2>
+          <h2 className="benefits__title h2">Benefits</h2>
           <div className="benefits__list">
             {benefits.map(({ id, icon, text }) => (
               <div key={id} className="benefits__item">

@@ -16,6 +16,6 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src", "src/components/Services/ServiceItem/ServiceItem.component.tsxtem/ServiceItem.component.tsx"],
+  "include": ["src", "src/components/Services/components/ServiceItem/ServiceItem.component.tsxtem/ServiceItem.component.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

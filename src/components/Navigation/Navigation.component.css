@@ -11,7 +11,7 @@
   font-size: 18px;
   line-height: 140%;
 
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .navigation__link:hover {

@@ -1,5 +1,13 @@
+@font-face {
+  font-family: "Proxima Nova regular";
+  src: url(/fonts/proxima/proxima-nova-regular.otf);
+  font-weight: 400;
+}
+
 :root {
   background-color: #1c2024;
+
+  --text-color: #cccc;
 }
 
 html {
@@ -7,7 +15,7 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Proxima Nova regular";
 
   box-sizing: border-box;
 
@@ -20,14 +28,14 @@ body {
   overflow-x: hidden;
 }
 
-h2 {
+.h2 {
   all: unset;
 
   font-weight: 400;
   font-size: 40px;
   line-height: 120%;
 
-  color: #ffffff;
+  color: var(--text-color);
 
   mix-blend-mode: normal;
 }

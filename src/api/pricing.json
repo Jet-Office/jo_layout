@@ -7,7 +7,9 @@
       "price": "30/h",
       "monthlyHour": 0,
       "team": "Account manager 1 part-time Specialist",
-      "mostPopular": false
+      "mostPopular": false,
+      "titleColor": "green",
+      "payment": "per hour, deposit commitment"
     },
     {
       "id": 2,
@@ -16,7 +18,9 @@
       "price": 510,
       "monthlyHour": 80,
       "team": "Account manager 1 part-time Specialist",
-      "mostPopular": false
+      "mostPopular": false,
+      "titleColor": "blue",
+      "payment": "Per month, annual commitment"
     },
     {
       "id": 3,
@@ -26,27 +30,33 @@
       "monthlyHour": 250,
       "team": "Account manager 1 full time Specialist",
       "freelancersPrice": 10,
-      "mostPopular": true
+      "mostPopular": true,
+      "titleColor": "pink",
+      "payment": "Per month, annual commitment"
     },
     {
-        "id": 4,
-        "name": "Business",
-        "description": "Best for full-scale businesses operations with up to 80 employees and complex tasks",
-        "price": 3560,
-        "monthlyHour": 520,
-        "team": "Account manager 2 full time Specialist 1 part-time specialist for day/night shifts 20h for freelancers 4",
-        "freelancersPrice": 8,
-        "mostPopular": false
-      },
-      {
-        "id": 5,
-        "name": "enterprise",
-        "description": "Best for businesses with more than 100 employees, complex tasks and different teams",
-        "price": "calculate",
-        "monthlyHour": "∞",
-        "team": "Let's choose the number of specialists according to your requirements",
-        "freelancersPrice": 8,
-        "mostPopular": false
-      }
+      "id": 4,
+      "name": "Business",
+      "description": "Best for full-scale businesses operations with up to 80 employees and complex tasks",
+      "price": 3560,
+      "monthlyHour": 520,
+      "team": "Account manager 2 full time Specialist 1 part-time specialist for day/night shifts 20h for freelancers 4",
+      "freelancersPrice": 8,
+      "mostPopular": false,
+      "titleColor": "mint",
+      "payment": "Per month, annual commitment"
+    },
+    {
+      "id": 5,
+      "name": "Enterprise",
+      "description": "Best for businesses with more than 100 employees, complex tasks and different teams",
+      "price": "calculate",
+      "monthlyHour": "∞",
+      "team": "Let's choose the number of specialists according to your requirements",
+      "freelancersPrice": 8,
+      "mostPopular": false,
+      "titleColor": "purple",
+      "payment": "annual commitment only"
+    }
   ]
 }
