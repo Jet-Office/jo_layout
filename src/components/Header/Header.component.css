@@ -8,8 +8,6 @@
   width: 100vw;
 
   margin-bottom: 180px;
-
-  padding-bottom: 100px;
 }
 
 .header__container {
@@ -27,8 +25,6 @@
     rgba(20, 24, 28, 0.93) 35.91%,
     rgba(20, 24, 28, 0) 100%
   );
-
-  padding-bottom: 100px;
 }
 
 .header__top_actions {
@@ -89,5 +85,11 @@
 @media (max-height: 530px) {
   .header, .header__container {
     padding-bottom: 300px;
+  }
+}
+
+@media (max-height: 250px) {
+  .header, .header__container {
+    padding-bottom: 500px;
   }
 }

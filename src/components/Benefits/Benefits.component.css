@@ -12,8 +12,6 @@
   align-items: flex-start;
 
   gap: 50px;
-
-  padding: 0 50px;
 }
 
 .benefits__list {
@@ -50,4 +48,25 @@
   line-height: 140%;
 
   color: #ffffff;
+}
+
+@media (max-width: 1280px) {
+  .benefits__container {
+    min-width: 1180px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .benefits__container {
+    min-width: 980px;
+  }
+
+  .benefits__text {
+    font-size: 13px;
+  }
+
+  .benefits__icon {
+    width: 24px;
+    height: 24px;
+  }
 }

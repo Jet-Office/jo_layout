@@ -8,10 +8,12 @@ type Props = {
 
 export const ServicesList: React.FC<Props> = ({ services }) => {
   return (
-    <div className="services__list">
-      {services.map((service) => (
-        <ServiceItem key={service.id} service={service} />
-      ))}
+    <div className="services__list_container">
+      <div className="services__list">
+        {services.map((service) => (
+          <ServiceItem key={service.id} service={service} />
+        ))}
+      </div>
     </div>
   );
 };
