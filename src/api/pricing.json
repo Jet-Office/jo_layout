@@ -1,0 +1,52 @@
+{
+  "pricing": [
+    {
+      "id": 1,
+      "name": "Hourly rate",
+      "description": "Suitable for getting acquainted with JetOffice service and for urgent tasks",
+      "price": "30/h",
+      "monthlyHour": 0,
+      "team": "Account manager 1 part-time Specialist",
+      "mostPopular": false
+    },
+    {
+      "id": 2,
+      "name": "Personal",
+      "description": "Best for individual use up to 5 people, small businesses and simple tasks",
+      "price": 510,
+      "monthlyHour": 80,
+      "team": "Account manager 1 part-time Specialist",
+      "mostPopular": false
+    },
+    {
+      "id": 3,
+      "name": "Startup",
+      "description": "Best for businesses with up to 20 people and medium-complexity tasks.",
+      "price": 1430,
+      "monthlyHour": 250,
+      "team": "Account manager 1 full time Specialist",
+      "freelancersPrice": 10,
+      "mostPopular": true
+    },
+    {
+        "id": 4,
+        "name": "Business",
+        "description": "Best for full-scale businesses operations with up to 80 employees and complex tasks",
+        "price": 3560,
+        "monthlyHour": 520,
+        "team": "Account manager 2 full time Specialist 1 part-time specialist for day/night shifts 20h for freelancers 4",
+        "freelancersPrice": 8,
+        "mostPopular": false
+      },
+      {
+        "id": 5,
+        "name": "enterprise",
+        "description": "Best for businesses with more than 100 employees, complex tasks and different teams",
+        "price": "calculate",
+        "monthlyHour": "∞",
+        "team": "Let's choose the number of specialists according to your requirements",
+        "freelancersPrice": 8,
+        "mostPopular": false
+      }
+  ]
+}
