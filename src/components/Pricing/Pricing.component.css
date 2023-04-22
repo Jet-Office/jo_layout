@@ -22,7 +22,7 @@
 .pricing__card_background {
   min-width: 200px;
   max-width: 232px;
-  height: 859px;
+  height: 1000px;
 
   border: 1px solid;
 
@@ -225,4 +225,35 @@
 
 .pricing--purple {
   color: #7c66e9;
+}
+
+.pricing__card_monthly {
+  max-width: 180px;
+  height: fit-content;
+
+  font-family: "Proxima Nova Bold";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+
+  text-align: center;
+}
+
+.pricing__card_preferences {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: min-content;
+
+  gap: 10px;
+}
+
+.pricing__card_preference {
+  max-width: 192px;
+
+  font-size: 20px;
+  line-height: 140%;
+
+  color: var(--text-color);
 }

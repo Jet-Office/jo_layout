@@ -8,7 +8,18 @@ type Props = {
 };
 
 export const PriceItem: React.FC<Props> = ({
-  priceItem: { name, titleColor, mostPopular, description, price, payment },
+  priceItem: {
+    name,
+    titleColor,
+    mostPopular,
+    description,
+    price,
+    payment,
+    monthlyHour,
+    preferences,
+    frealancersPrice,
+    team,
+  },
 }) => {
   const cardClass = classNames("pricing__card", {
     pricing__card_popular: mostPopular,
@@ -27,6 +38,10 @@ export const PriceItem: React.FC<Props> = ({
       "pricing__card--calculator": price === "calculate",
       "pricing__card--startup": price === "30/h",
     }
+  );
+  const monthlyClass = classNames(
+    "pricing__card_monthly",
+    `pricing--${titleColor}`
   );
 
   return (
@@ -49,7 +64,38 @@ export const PriceItem: React.FC<Props> = ({
             <p className="pricing__card_payment">{payment}</p>
           </div>
         )}
-        <Button color={titleColor !== "pink" ? titleColor : "pink_price"} text="Get started" />
+        <Button
+          color={titleColor !== "pink" ? titleColor : "pink_price"}
+          text="Get started"
+        />
+        {monthlyHour !== 0 && (
+          <p
+            className={monthlyClass}
+          >{`${monthlyHour} hours monthly for task execution`}</p>
+        )}
+        {preferences.length > 0 && (
+          <div className="pricing__card_preferences">
+            {preferences.length > 0 && (
+              <>
+                {preferences.map((preference) => (
+                  <div className="pricing__card_preference">{preference}</div>
+                ))}
+              </>
+            )}
+            {frealancersPrice > 0 && (
+              <div className="pricing__card_preference">{`Freelancers $${frealancersPrice}/h`}</div>
+            )}
+          </div>
+        )}
+        <div className="pricing__card_preferences">
+          {team.length > 0 && (
+            <>
+              {team.map((preference) => (
+                <div className="pricing__card_preference">{preference}</div>
+              ))}
+            </>
+          )}
+        </div>
       </div>
     </div>
   );

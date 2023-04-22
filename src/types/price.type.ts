@@ -4,9 +4,10 @@ export interface Price {
   description: string;
   price: number | string;
   monthlyHour: number | string;
-  team: string;
-  freelancersPrice?: number;
+  team: string[];
   mostPopular: boolean;
   titleColor: string;
   payment: string;
+  preferences: string[];
+  frealancersPrice: number;
 }
