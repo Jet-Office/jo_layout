@@ -13,7 +13,7 @@ export const CasesDescription: React.FC<Props> = ({ descriptions }) => {
           <p className="cases__card_text">{`${id}. ${name}:`}</p>
           <ul className="cases__description_list">
             {text.map((item) => (
-              <li key={id} className="cases__card_text">
+              <li key={item} className="cases__card_text">
                 {item}
               </li>
             ))}
