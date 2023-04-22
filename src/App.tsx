@@ -4,6 +4,7 @@ import { Header } from "./components/Header";
 import { Services } from "./components/Services";
 import { Benefits } from "./components/Benefits";
 import { Pricing } from "./components/Pricing";
+import { Cases } from "./components/Cases";
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -27,6 +28,7 @@ function App() {
         <Services />
         <Benefits />
         <Pricing />
+        <Cases />
       </main>
     </div>
   );

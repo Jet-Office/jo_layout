@@ -9,6 +9,7 @@ type Props = {
 
 export const PriceItem: React.FC<Props> = ({
   priceItem: {
+    id,
     name,
     titleColor,
     mostPopular,
@@ -78,7 +79,7 @@ export const PriceItem: React.FC<Props> = ({
             {preferences.length > 0 && (
               <>
                 {preferences.map((preference) => (
-                  <div className="pricing__card_preference">{preference}</div>
+                  <div className="pricing__card_preference" key={preference}>{preference}</div>
                 ))}
               </>
             )}
@@ -91,7 +92,7 @@ export const PriceItem: React.FC<Props> = ({
           {team.length > 0 && (
             <>
               {team.map((preference) => (
-                <div className="pricing__card_preference">{preference}</div>
+                <div className="pricing__card_preference" key={preference}>{preference}</div>
               ))}
             </>
           )}

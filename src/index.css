@@ -5,9 +5,10 @@
 }
 
 :root {
-  background-color: #1c2024;
-
   --text-color: #cccc;
+  --background: #1c2024;
+
+  background-color: var(--background);
 }
 
 html {

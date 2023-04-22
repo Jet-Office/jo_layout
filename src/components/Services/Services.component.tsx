@@ -3,8 +3,6 @@ import "./Services.component.css";
 import { ServicesList } from "./components/ServicesList";
 
 export const Services = () => {
-  console.log(services);
-  
   return (
     <section className="services" id="services">
       <div className="services__container">

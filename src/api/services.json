@@ -2,43 +2,189 @@
   "services": [
     {
       "id": 1,
-      "description": "Virtual administrative assistance",
-      "icon": "brain-1.svg"
+      "name": "Virtual administrative assistance",
+      "icon": "brain-1.svg",
+      "descriptions": [
+        {
+          "id": 1,
+          "name": "Workspace Organization",
+          "text": ["Mail and calendar management", "Office supplies ordering", "Meeting and negotiation arrangements", "Electronic document and database administration"]
+        }
+      ]
     },
     {
       "id": 2,
-      "description": "Business Consulting Services",
-      "icon": "bulb.svg"
+      "name": "Business Consulting Services",
+      "icon": "bulb.svg",
+      "descriptions": [
+        {
+          "id": 1,
+          "name": "Workspace Organization",
+          "text": ["Mail and calendar management", "Office supplies ordering", "Meeting and negotiation arrangements", "Electronic document and database administration"]
+        },
+        {
+          "id": 2,
+          "name": "Virtual Assistant",
+          "text": ["Travel and business trip arrangements", "Accounting and financial management", "Client and partner relations", "Project management", "Marketing research and analysis"]
+        },
+        {
+          "id": 3,
+          "name": "Personal Assistant",
+          "text": ["Personal affairs management", "Booking and ordering services", "Leisure and entertainment organization"]
+        },
+        {
+          "id": 4,
+          "name": "Administrative Support",
+          "text": ["Report and presentation preparation", "Project and task management", "Database and document work ", "Promotional material preparation", "Social media moderation"]
+        }
+      ]
     },
     {
       "id": 3,
-      "description": "Web/app development and design",
-      "icon": "network-www.svg"
+      "name": "Web/app development and design",
+      "icon": "network-www.svg",
+      "descriptions": [
+        {
+          "id": 1,
+          "name": "Workspace Organization",
+          "text": ["Mail and calendar management", "Office supplies ordering", "Meeting and negotiation arrangements", "Electronic document and database administration"]
+        },
+        {
+          "id": 2,
+          "name": "Virtual Assistant",
+          "text": ["Travel and business trip arrangements", "Accounting and financial management", "Client and partner relations", "Project management", "Marketing research and analysis"]
+        },
+        {
+          "id": 3,
+          "name": "Personal Assistant",
+          "text": ["Personal affairs management", "Booking and ordering services", "Leisure and entertainment organization"]
+        },
+        {
+          "id": 4,
+          "name": "Administrative Support",
+          "text": ["Report and presentation preparation", "Project and task management", "Database and document work ", "Promotional material preparation", "Social media moderation"]
+        }
+      ]
     },
     {
       "id": 4,
-      "description": "Coaching,  Leadership & team-building",
-      "icon": "target-correct.svg"
+      "name": "Coaching,  Leadership & team-building",
+      "icon": "target-correct.svg",
+      "descriptions": [
+        {
+          "id": 1,
+          "name": "Workspace Organization",
+          "text": ["Mail and calendar management", "Office supplies ordering", "Meeting and negotiation arrangements", "Electronic document and database administration"]
+        },
+        {
+          "id": 2,
+          "name": "Virtual Assistant",
+          "text": ["Travel and business trip arrangements", "Accounting and financial management", "Client and partner relations", "Project management", "Marketing research and analysis"]
+        },
+        {
+          "id": 3,
+          "name": "Personal Assistant",
+          "text": ["Personal affairs management", "Booking and ordering services", "Leisure and entertainment organization"]
+        },
+        {
+          "id": 4,
+          "name": "Administrative Support",
+          "text": ["Report and presentation preparation", "Project and task management", "Database and document work ", "Promotional material preparation", "Social media moderation"]
+        }
+      ]
     },
     {
       "id": 5,
-      "description": "Project management & coordination",
-      "icon": "list-edit.svg"
+      "name": "Project management & coordination",
+      "icon": "list-edit.svg",
+      "descriptions": [
+        {
+          "id": 1,
+          "name": "Workspace Organization",
+          "text": ["Mail and calendar management", "Office supplies ordering", "Meeting and negotiation arrangements", "Electronic document and database administration"]
+        },
+        {
+          "id": 2,
+          "name": "Virtual Assistant",
+          "text": ["Travel and business trip arrangements", "Accounting and financial management", "Client and partner relations", "Project management", "Marketing research and analysis"]
+        },
+        {
+          "id": 3,
+          "name": "Personal Assistant",
+          "text": ["Personal affairs management", "Booking and ordering services", "Leisure and entertainment organization"]
+        },
+        {
+          "id": 4,
+          "name": "Administrative Support",
+          "text": ["Report and presentation preparation", "Project and task management", "Database and document work ", "Promotional material preparation", "Social media moderation"]
+        }
+      ]
     },
     {
       "id": 6,
-      "description": "Social media management & advertisement",
-      "icon": "vintage-tv-4.svg"
+      "name": "Social media management & advertisement",
+      "icon": "vintage-tv-4.svg",
+      "descriptions": [
+        {
+          "id": 1,
+          "name": "Workspace Organization",
+          "text": ["Mail and calendar management", "Office supplies ordering", "Meeting and negotiation arrangements", "Electronic document and database administration"]
+        },
+        {
+          "id": 2,
+          "name": "Virtual Assistant",
+          "text": ["Travel and business trip arrangements", "Accounting and financial management", "Client and partner relations", "Project management", "Marketing research and analysis"]
+        },
+        {
+          "id": 3,
+          "name": "Personal Assistant",
+          "text": ["Personal affairs management", "Booking and ordering services", "Leisure and entertainment organization"]
+        }
+      ]
     },
     {
-        "id": 7,
-        "description": " Translation, localization & relocation",
-        "icon": "landmark-pisa-tower.svg"
-      },
-      {
-        "id": 8,
-        "description": "Corporate holidays & business events",
-        "icon": "restaurant-menu.svg"
-      }
+      "id": 7,
+      "name": " Translation, localization & relocation",
+      "icon": "landmark-pisa-tower.svg",
+      "descriptions": [
+        {
+          "id": 1,
+          "name": "Workspace Organization",
+          "text": ["Mail and calendar management", "Office supplies ordering", "Meeting and negotiation arrangements", "Electronic document and database administration"]
+        },
+        {
+          "id": 2,
+          "name": "Virtual Assistant",
+          "text": ["Travel and business trip arrangements", "Accounting and financial management", "Client and partner relations", "Project management", "Marketing research and analysis"]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Corporate holidays & business events",
+      "icon": "restaurant-menu.svg",
+      "descriptions": [
+        {
+          "id": 1,
+          "name": "Workspace Organization",
+          "text": ["Mail and calendar management", "Office supplies ordering", "Meeting and negotiation arrangements", "Electronic document and database administration"]
+        },
+        {
+          "id": 2,
+          "name": "Virtual Assistant",
+          "text": ["Travel and business trip arrangements", "Accounting and financial management", "Client and partner relations", "Project management", "Marketing research and analysis"]
+        },
+        {
+          "id": 3,
+          "name": "Personal Assistant",
+          "text": ["Personal affairs management", "Booking and ordering services", "Leisure and entertainment organization"]
+        },
+        {
+          "id": 4,
+          "name": "Administrative Support",
+          "text": ["Report and presentation preparation", "Project and task management", "Database and document work ", "Promotional material preparation", "Social media moderation"]
+        }
+      ]
+    }
   ]
 }
