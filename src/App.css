@@ -5,16 +5,20 @@
 }
 
 .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__container {
   display: grid;
   grid-template-columns: repeat(1, 12fr);
 
   padding-left: 100px;
 
   gap: 180px;
-
-  /* margin: 0 auto; */
 }
 
-.main:last-child {
+.main__container:last-child {
   margin-bottom: 180px;
 }

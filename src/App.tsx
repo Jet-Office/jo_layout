@@ -20,15 +20,17 @@ function App() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  
+
   return (
     <div className="App">
       <Header windowWidth={windowWidth} />
       <main className="main">
-        <Services />
-        <Benefits />
-        <Pricing />
-        <Cases />
+        <div className="main__container">
+          <Services />
+          <Benefits />
+          <Pricing />
+          <Cases />
+        </div>
       </main>
     </div>
   );
