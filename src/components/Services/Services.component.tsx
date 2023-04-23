@@ -1,4 +1,4 @@
-import { services } from "../../api/services.json";
+import { services } from "../../data/services.json";
 import "./Services.component.css";
 import { ServicesList } from "./components/ServicesList";
 

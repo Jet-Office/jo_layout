@@ -1,6 +1,6 @@
 import "./Cases.component.css";
 import { CasesList } from "./components/CasesList";
-import { services } from "../../api/services.json"
+import { services } from "../../data/services.json"
 import { useState } from "react";
 import { Description } from "../../types/service.type";
 import { CasesDescription } from "./components/CasesDescriptions/CasesDescriptions.component";

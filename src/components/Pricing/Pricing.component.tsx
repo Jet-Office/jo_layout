@@ -1,5 +1,5 @@
 import { PricingList } from "./components/PricingList";
-import {pricing} from "../../api/pricing.json"
+import {pricing} from "../../data/pricing.json"
 import "./Pricing.component.css";
 
 export const Pricing = () => {
