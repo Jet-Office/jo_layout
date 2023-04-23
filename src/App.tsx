@@ -6,6 +6,7 @@ import { Benefits } from "./components/Benefits";
 import { Pricing } from "./components/Pricing";
 import { Cases } from "./components/Cases";
 import { About } from "./components/About";
+import { Crew } from "./components/Crew";
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -32,6 +33,7 @@ function App() {
           <Pricing />
           <Cases />
           <About />
+          <Crew />
         </div>
       </main>
     </div>
