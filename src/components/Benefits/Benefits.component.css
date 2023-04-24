@@ -1,9 +1,4 @@
 .benefits__container {
-  /* display: flex;
-  justify-content: space-between;
-
-  min-width: 1280px; */
-
   display: grid;
   grid-template-columns: 9fr 3fr;
 }

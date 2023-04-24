@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect } from "react";
 import { Description, Service } from "../../../../types/service.type";
 import "../../Cases.component.css";
 import classNames from "classnames";

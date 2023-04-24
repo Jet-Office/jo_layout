@@ -1,6 +1,5 @@
-import Logo from "../../assets/logo.svg";
 import { Buttons } from "../Buttons";
-import { Navigation } from "../Navigation";
+import { Head } from "../Head";
 import "./Header.component.css";
 
 type Props = {
@@ -8,20 +7,20 @@ type Props = {
 };
 
 export const Header: React.FC<Props> = ({ windowWidth }) => {
+
   return (
-    <header className="header">
+    <header className="header" id="home">
       <div className="header__container">
-        <div className="header__top_actions">
-          <a href="#" className="header__logo">
-            <img src={Logo} alt="JetOffice logo" className="header__logo_img" />
-          </a>
-          <Navigation />
-        </div>
+        <Head />
         <div className="header__content_container">
           <h1 className="header__title title">
             Virtual Assistance <br /> & Business Solutions
           </h1>
-          <p className="header__text">Get started with 14 days free trial — no credit card required. Experience up to $30 in value and discover how we can help your business boost.</p>
+          <p className="header__text">
+            Get started with 14 days free trial — no credit card required.
+            Experience up to $30 in value and discover how we can help your
+            business boost.
+          </p>
           <Buttons />
         </div>
       </div>
