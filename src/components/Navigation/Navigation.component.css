@@ -12,8 +12,23 @@
   line-height: 140%;
 
   color: var(--text-color);
+
+  position: relative;
 }
 
 .navigation__link:hover {
   color: #e961ff;
+}
+
+.navigation__link--active::before {
+  content: "";
+
+  position: absolute;
+
+  height: 1px;
+  width: 100%;
+
+  top: 110%;
+
+  background: var(--gradient);
 }
