@@ -7,6 +7,12 @@
 :root {
   --text-color: #cccc;
   --background: #1c2024;
+  --gradient: linear-gradient(
+    223.81deg,
+    #00e5e5 8.72%,
+    #72a5f2 50.87%,
+    #e961ff 91.3%
+  );
 
   background-color: var(--background);
 }

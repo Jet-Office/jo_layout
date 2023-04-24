@@ -1,3 +1,9 @@
+export interface Preference {
+  id: number;
+  name: string;
+  description: string;
+}
+
 export interface Price {
   id: number;
   name: string;
@@ -8,6 +14,6 @@ export interface Price {
   mostPopular: boolean;
   titleColor: string;
   payment: string;
-  preferences: string[];
+  preferences: Preference[];
   frealancersPrice: number;
 }

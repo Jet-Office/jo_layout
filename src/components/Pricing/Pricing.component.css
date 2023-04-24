@@ -29,12 +29,7 @@
   border-image-slice: 1;
   border-width: 1px;
 
-  background: linear-gradient(
-    223.81deg,
-    #00e5e5 8.72%,
-    #72a5f2 50.87%,
-    #e961ff 91.3%
-  );
+  background: var(--gradient);
 
   border-radius: 8px;
 }
@@ -250,10 +245,18 @@
 }
 
 .pricing__card_preference {
-  max-width: 192px;
+  max-width: 200px;
 
   font-size: 20px;
   line-height: 140%;
 
   color: var(--text-color);
+
+  text-align: left;
+}
+
+.pricing__card_text_container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
 }

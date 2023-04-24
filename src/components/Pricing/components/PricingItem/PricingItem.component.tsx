@@ -2,6 +2,7 @@ import classNames from "classnames";
 import { Price } from "../../../../types/price.type";
 import "../../Pricing.component.css";
 import { Button } from "../../../Button";
+import { InfoTooltip } from "../InfoTooltip";
 
 type Props = {
   priceItem: Price;
@@ -9,7 +10,6 @@ type Props = {
 
 export const PriceItem: React.FC<Props> = ({
   priceItem: {
-    id,
     name,
     titleColor,
     mostPopular,
@@ -79,12 +79,29 @@ export const PriceItem: React.FC<Props> = ({
             {preferences.length > 0 && (
               <>
                 {preferences.map((preference) => (
-                  <div className="pricing__card_preference" key={preference}>{preference}</div>
+                  <div
+                    className="pricing__card_text_container"
+                    key={preference.id}
+                  >
+                    <div className="pricing__card_preference">
+                      {preference.name}
+                    </div>
+                    <InfoTooltip description={preference.description} />
+                  </div>
                 ))}
               </>
             )}
             {frealancersPrice > 0 && (
-              <div className="pricing__card_preference">{`Freelancers $${frealancersPrice}/h`}</div>
+           
+                <div className="pricing__card_text_container">
+                  <div className="pricing__card_preference">Freelancers</div>
+                  <InfoTooltip
+                    description={
+                      "Jet Talent Hub is a database of freelancers we tap into for fire drills. Freelancers' work hours beyond the package hours are billed separately (usually from a deposit)."
+                    }
+                  />
+                  <p className="pricing__card_preference">{`$${frealancersPrice}/h`}</p>
+                </div>
             )}
           </div>
         )}
@@ -92,7 +109,9 @@ export const PriceItem: React.FC<Props> = ({
           {team.length > 0 && (
             <>
               {team.map((preference) => (
-                <div className="pricing__card_preference" key={preference}>{preference}</div>
+                <div className="pricing__card_preference" key={preference}>
+                  {preference}
+                </div>
               ))}
             </>
           )}
