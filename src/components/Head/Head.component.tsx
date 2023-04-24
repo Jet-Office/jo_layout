@@ -9,11 +9,11 @@ export const Head: React.FC = () => {
 
   useEffect(() => {
     const listenScrollEvent = () => {
-      if (window.scrollY > 130) {
+      if (window.scrollY > 113) {
         setIsHome(false);
       } else {
         setIsHome(true);
-      }      
+      }
     };
     window.addEventListener("scroll", listenScrollEvent);
     return () => window.removeEventListener("scroll", listenScrollEvent);
