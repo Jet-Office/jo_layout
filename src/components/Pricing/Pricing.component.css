@@ -24,6 +24,8 @@
   max-width: 232px;
   height: 1000px;
 
+  position: relative;
+
   border: 1px solid;
 
   border-image-slice: 1;
@@ -50,11 +52,16 @@
   border-radius: 8px;
 }
 
-.pricing__card_popular {
-  position: relative;
+.pricing__card_background--popular::after {
+  content: "";
+  position: absolute;
+  inset: -.325em;
+  background: var(--gradient);
+  filter: blur(1.5em);
+  z-index: -1;
 }
 
-.pricing__card_popular::before {
+.pricing__card_background--popular::before {
   content: "Most Popular";
   position: absolute;
 

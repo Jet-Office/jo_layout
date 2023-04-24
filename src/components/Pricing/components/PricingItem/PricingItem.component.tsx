@@ -22,8 +22,8 @@ export const PriceItem: React.FC<Props> = ({
     team,
   },
 }) => {
-  const cardClass = classNames("pricing__card", {
-    pricing__card_popular: mostPopular,
+  const backgroundClass = classNames("pricing__card_background", {
+    "pricing__card_background--popular": mostPopular,
   });
   const titleClass = classNames(
     "pricing__card_title",
@@ -46,8 +46,8 @@ export const PriceItem: React.FC<Props> = ({
   );
 
   return (
-    <div className="pricing__card_background">
-      <div className={cardClass}>
+    <div className={backgroundClass}>
+      <div className="pricing__card">
         <div className="pricing__card_head">
           <h3 className={titleClass}>{name}</h3>
           <p className="pricing__card_description">{description}</p>
