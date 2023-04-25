@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Proxima Nova Semibold";
+  src: url(./fonts/proxima/proxima-nova-semibold.otf);
+  font-weight: 600;
+}
+
 .header {
   background-image: url(../../assets/BG_nasa.png);
   background-repeat: no-repeat;
@@ -41,7 +47,7 @@
 
   text-align: left;
 
-  font-size: 54px;
+  font-size: 64px;
   line-height: 120%;
 
   background: linear-gradient(
@@ -51,7 +57,7 @@
     #e961ff 91.3%
   );
   -webkit-background-clip: text;
-   background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 
   text-shadow: 0px 15px 30px #000000;
@@ -74,11 +80,47 @@
   font-size: 18px;
   line-height: 140%;
 
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 @media (max-height: 530px) {
-  .header, .header__container {
+  .header,
+  .header__container {
     padding-bottom: 300px;
+  }
+}
+
+@media (max-width: 641px) {
+  .header {
+    background-position: right;
+
+    min-width: 800px;
+  }
+
+  .header__container {
+    background: linear-gradient(178.37deg, rgba(20, 24, 28, 0.8) 40.57%, rgba(20, 24, 28, 0) 86.73%);
+  }
+
+  .header__title {
+    font-family: "Proxima Nova Semibold";
+    font-weight: 600;
+    font-size: 36px;
+  }
+  .header__text {
+    max-width: 343px;
+
+    text-align: left;
+  }
+
+  .header__content_container {
+    margin-left: 28px;
+  }
+
+  .head--header {
+    margin-top: 50px;
+  }
+
+  .header__title {
+    margin-top: 200px;
   }
 }

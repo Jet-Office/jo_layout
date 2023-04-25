@@ -65,3 +65,15 @@
     height: 24px;
   }
 }
+
+@media (max-width: 1100px) {
+  .benefits__plane_container {
+    display: none;
+  }
+
+  .benefits__text_container {
+    justify-content: center;
+
+    padding-left: 100px;
+  }
+}

@@ -4,3 +4,9 @@
 
   padding-top: 30px;
 }
+
+@media (max-width: 641px) {
+  .buttons {
+    flex-direction: column-reverse;
+  }
+}

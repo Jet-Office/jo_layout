@@ -46,3 +46,9 @@ body {
 
   mix-blend-mode: normal;
 }
+
+@media (max-width: 641px) {
+  .h2 {
+    font-size: 24px;
+  }
+}

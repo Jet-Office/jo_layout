@@ -11,7 +11,7 @@ export const Header: React.FC<Props> = ({ windowWidth }) => {
   return (
     <header className="header" id="home">
       <div className="header__container">
-        <Head />
+        <Head windowWidth={windowWidth} />
         <div className="header__content_container">
           <h1 className="header__title title">
             Virtual Assistance <br /> & Business Solutions

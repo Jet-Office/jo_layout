@@ -26,6 +26,7 @@
   width: 160px;
 
   color: #e961ff;
+  background-color: #14181c;
 }
 
 .button--dark:hover {
@@ -61,11 +62,11 @@
   color: #72a5f2;
   border-color: #72a5f2;
 
-
   width: 192px;
 }
 
-.button--blue:hover, .button--pink_price:hover {
+.button--blue:hover,
+.button--pink_price:hover {
   background: rgba(114, 165, 242, 0.1);
 }
 
@@ -99,4 +100,10 @@
 
 .button--purple:hover {
   background: rgba(124, 102, 233, 0.1);
+}
+
+@media (max-width: 641px) {
+  .button--dark, .button--pink {
+    width: 343px;
+  }
 }

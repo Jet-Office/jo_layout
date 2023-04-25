@@ -7,6 +7,7 @@ import { Pricing } from "./components/Pricing";
 import { Cases } from "./components/Cases";
 import { About } from "./components/About";
 import { Crew } from "./components/Crew";
+import { ControlPreview } from "./components/ControlPreview";
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -29,6 +30,7 @@ function App() {
       <main className="main">
         <div className="main__container">
           <Services />
+          {windowWidth <= 641 && <ControlPreview />}
           <Benefits />
           <Pricing />
           <Cases />

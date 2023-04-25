@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "Proxima Nova Semibold";
+  src: url(./fonts/proxima/proxima-nova-semibold.otf);
+  font-weight: 600;
+}
+
+.control__background {
+  background: linear-gradient(
+    179.57deg,
+    #14181c 0.31%,
+    rgba(20, 24, 28, 0.7) 31.29%,
+    rgba(20, 24, 28, 0) 55.7%,
+    rgba(20, 24, 28, 0) 77.79%,
+    #14181c 97.38%
+  );
+}
+
+.control {
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url(./nasa_mission_control_center.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border: 1px solid transparent;
+  z-index: -1000;
+}
+
+.control__title_container {
+  height: 88vh;
+  width: 100vw;
+
+  max-width: 343px;
+
+  text-align: left;
+
+  padding-top: 120px;
+
+  margin: 0 auto;
+}
+
+.control__title {
+  all: unset;
+
+  font-family: "Proxima Nova Semibold";
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 120%;
+
+  background: linear-gradient(
+    223.81deg,
+    #00e5e5 8.72%,
+    #72a5f2 50.87%,
+    #e961ff 91.3%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  mix-blend-mode: normal;
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}

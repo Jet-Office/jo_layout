@@ -6,7 +6,9 @@ export const Services = () => {
   return (
     <section className="services" id="services">
       <div className="services__container">
-        <h2 className="services__title h2">Services</h2>
+        <div className="services__title_wrapper">
+          <h2 className="services__title h2">Services</h2>
+        </div>
         <ServicesList services={services} />
       </div>
     </section>
