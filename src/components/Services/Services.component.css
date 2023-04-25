@@ -75,3 +75,15 @@
       min-width: 1280px;
   }
 }
+
+@media (max-width: 1120px) {
+  .services__container {
+    align-items: center;
+  }
+
+  .services__list {
+    grid-template-columns: repeat(3, 3fr);
+    justify-content: center;
+    align-items: center;
+  }
+}

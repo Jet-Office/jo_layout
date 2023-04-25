@@ -1,7 +1,9 @@
 #root {
-  width: 120vw;
+  width: 100vw;
 
   text-align: center;
+
+  overflow-x: hidden;
 }
 
 .main {

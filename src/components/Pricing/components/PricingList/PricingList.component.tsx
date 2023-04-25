@@ -1,6 +1,9 @@
 import { Price } from "../../../../types/price.type";
 import "../../Pricing.component.css";
 import { PriceItem } from "../PricingItem";
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
 
 type Props = {
   priceList: Price[];

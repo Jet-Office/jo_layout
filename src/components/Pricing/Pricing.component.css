@@ -267,3 +267,9 @@
   justify-content: flex-start;
   align-items: baseline;
 }
+
+@media (max-width: 1120px) {
+  .pricing__list {
+    gap: 10px;
+  }
+}
