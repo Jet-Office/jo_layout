@@ -78,7 +78,8 @@
 
 @media (max-width: 1120px) {
   .services__container {
-    padding-left: 100px;
+    justify-content: center;
+    align-items: flex-start;
   }
 
   .services__list {

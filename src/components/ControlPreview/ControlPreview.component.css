@@ -5,6 +5,19 @@
 }
 
 .control__background {
+  background-image: url(/nasa_mission_control_center.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.control {
+  width: 100%;
+  height: 100%;
+
   background: linear-gradient(
     179.57deg,
     #14181c 0.31%,
@@ -13,18 +26,10 @@
     rgba(20, 24, 28, 0) 77.79%,
     #14181c 97.38%
   );
-}
-
-.control {
-  width: 100vw;
-  height: 100vh;
-
-  background-image: url(/nasa_mission_control_center.png);
-  background-repeat: no-repeat;
-  background-size: cover;
 
   border: 1px solid transparent;
-  z-index: -1000;
+
+  position: relative;
 }
 
 .control__title_container {
