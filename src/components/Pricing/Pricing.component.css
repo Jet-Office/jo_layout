@@ -4,6 +4,12 @@
   font-weight: 700;
 }
 
+.pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .pricing__container {
   display: flex;
   flex-direction: column;
@@ -271,5 +277,11 @@
 @media (max-width: 1120px) {
   .pricing__list {
     gap: 10px;
+  }
+}
+
+@media (max-width: 641px) {
+  .pricing {
+    all: unset;
   }
 }

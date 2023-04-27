@@ -1,3 +1,9 @@
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .services__container {
   display: flex;
   flex-direction: column;
@@ -88,6 +94,10 @@
 }
 
 @media (max-width: 641px) {
+  .services {
+    all: unset;
+  }
+  
   .services__title {
     text-align: left;
   }

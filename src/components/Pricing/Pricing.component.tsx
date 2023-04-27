@@ -2,12 +2,16 @@ import { PricingList } from "./components/PricingList";
 import {pricing} from "../../data/pricing.json"
 import "./Pricing.component.css";
 
-export const Pricing = () => {
+type Props = {
+  windowWidth: number;
+};
+
+export const Pricing: React.FC<Props> = ({ windowWidth }) => {
   return (
     <section className="pricing" id="pricing">
       <div className="pricing__container">
         <h2 className="pricing__title h2">Pricing</h2>
-        <PricingList priceList={pricing} />
+        <PricingList windowWidth={windowWidth} priceList={pricing} />
       </div>
     </section>
   );

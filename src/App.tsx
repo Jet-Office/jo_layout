@@ -32,7 +32,7 @@ function App() {
           <Services />
           {windowWidth <= 641 && <ControlPreview />}
           <Benefits />
-          <Pricing />
+          <Pricing windowWidth={windowWidth} />
           <Cases />
           <About />
           <Crew />

@@ -16,8 +16,6 @@
   display: grid;
   grid-template-columns: repeat(1, 12fr);
 
-  padding-left: 100px;
-
   width: 100vw;
 
   margin: 0 auto;

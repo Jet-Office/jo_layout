@@ -4,6 +4,12 @@
   font-weight: 700;
 }
 
+.crew {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .crew__container {
   display: flex;
   flex-direction: column;

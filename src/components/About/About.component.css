@@ -2,6 +2,8 @@
   display: grid;
   grid-template-columns: 6fr 6fr;
 
+  padding-left: 10px;
+
   gap: 20px;
 }
 
