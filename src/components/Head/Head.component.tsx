@@ -11,10 +11,14 @@ type Props = {
 
 export const Head: React.FC<Props> = ({ windowWidth }) => {
   const [isHome, setIsHome] = useState(true);
+  const [activeLink, setActiveLink] = useState("Home");
 
   useEffect(() => {
     const listenScrollEvent = () => {
-      if ((window.scrollY > 113 && windowWidth > 1000) || window.scrollY > 100) {
+      if (
+        (window.scrollY > 113 && windowWidth > 1000) ||
+        window.scrollY > 50
+      ) {
         setIsHome(false);
       } else {
         setIsHome(true);
@@ -22,7 +26,7 @@ export const Head: React.FC<Props> = ({ windowWidth }) => {
     };
     window.addEventListener("scroll", listenScrollEvent);
     return () => window.removeEventListener("scroll", listenScrollEvent);
-  }, []);
+  }, [windowWidth]);
 
   return (
     <div className={`head${isHome ? " head--header" : " head--main"}`}>
@@ -30,7 +34,11 @@ export const Head: React.FC<Props> = ({ windowWidth }) => {
         <a href="#" className="head__logo">
           <img src={Logo} alt="JetOffice logo" className="head__logo_img" />
         </a>
-        {windowWidth > 1000 ? <Navigation /> : <Menu />}
+        {windowWidth > 1000 ? (
+          <Navigation activeLink={activeLink} setActiveLink={setActiveLink} />
+        ) : (
+          <Menu activeLink={activeLink} setActiveLink={setActiveLink} />
+        )}
       </div>
     </div>
   );

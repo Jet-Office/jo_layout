@@ -20,13 +20,13 @@ export const CasesItem: React.FC<Props> = ({
     if (activeCaseId === id) {
       setDescriptions(descriptions);
     }
-  }, [id, activeCaseId]);
+  }, [id, activeCaseId, setDescriptions, descriptions]);
 
   const backgroundClass = classNames("cases__background", {"cases__background--active": id === activeCaseId});
 
   const handleClick = useCallback((currentId: number) => {
     setActiveCaseId(currentId);
-  }, [])
+  }, [setActiveCaseId])
 
   return (
     <div className={backgroundClass}>

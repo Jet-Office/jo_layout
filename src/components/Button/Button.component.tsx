@@ -10,6 +10,7 @@ export const Button: React.FC<Props> = ({ color, text }) => {
     <a
       href="https://t.me/jetoffice_bot"
       target="_blank"
+      rel="noreferrer"
       className={`button button--${color}`}
     >
       {text}

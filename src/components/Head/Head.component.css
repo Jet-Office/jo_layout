@@ -8,6 +8,10 @@
   z-index: 1000;
 }
 
+.head--header {
+  margin-top: 44px;
+}
+
 .head__container {
   display: flex;
   justify-content: space-between;
@@ -28,12 +32,10 @@
 
 @media (max-width: 641px) {
   .head--main {
-    padding: 5px 20px;
-
     height: fit-content;
   }
 
   .head__container {
-    padding: 5px 35px;
+    padding: 5px 20px;
   }
 }

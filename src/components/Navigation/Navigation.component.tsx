@@ -1,8 +1,14 @@
 import "./Navigation.component.css";
 import { Link } from "./types/link.type";
-import { useCallback, useState } from "react";
+import { useCallback } from "react";
 
-export const Navigation = () => {
+type Props = {
+  setActiveLink: (name: string) => void;
+  handleCLose?: () => void;
+  activeLink: string;
+};
+
+export const Navigation: React.FC<Props> = ({ handleCLose, setActiveLink, activeLink }) => {
   const links: Link[] = [
     {
       id: 1,
@@ -35,23 +41,37 @@ export const Navigation = () => {
       href: "#contacts",
     },
   ];
-  const [activeLink, setActiveLink] = useState("Home");
-  const handleClick = useCallback((name: string) => setActiveLink(name), []);
+  const handleClick = useCallback(
+    (name: string) => {
+      setActiveLink(name);
+      handleCLose && handleCLose();
+    },
+    [handleCLose, setActiveLink]
+  );
 
   return (
     <nav className="navigation">
       <ul className="navigation__list">
         {links.map((link) => (
-          <li className="navigation__item" key={link.id}>
-            <a
-              href={link.href}
-              className={`navigation__link${
-                activeLink === link.name ? " navigation__link--active" : ""
-              }`}
-              onClick={() => handleClick(link.name)}
-            >
-              {link.name}
-            </a>
+          <li
+            className={`navigation__item_background${
+              activeLink === link.name
+                ? " navigation__item_background--active"
+                : ""
+            }`}
+            key={link.id}
+          >
+            <div className="navigation__item">
+              <a
+                href={link.href}
+                className={`navigation__link${
+                  activeLink === link.name ? " navigation__link--active" : ""
+                }`}
+                onClick={() => handleClick(link.name)}
+              >
+                {link.name}
+              </a>
+            </div>
           </li>
         ))}
       </ul>

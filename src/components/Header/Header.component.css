@@ -110,17 +110,15 @@
     max-width: 343px;
 
     text-align: left;
+
+    padding-bottom: 100px;
   }
 
   .header__content_container {
     margin-left: 28px;
   }
 
-  .head--header {
-    margin-top: 50px;
-  }
-
   .header__title {
-    margin-top: 200px;
+    margin-top: 140px;
   }
 }

@@ -7,6 +7,6 @@
 
 @media (max-width: 641px) {
   .buttons {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 }

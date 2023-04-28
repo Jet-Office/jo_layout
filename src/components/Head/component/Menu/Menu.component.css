@@ -1,0 +1,25 @@
+.menu {
+  position: relative;
+}
+
+.menu__open {
+  position: fixed;
+
+  height: 100%;
+  width: 100%;
+
+  top: 0;
+  left: 0;
+
+  background-color: var(--background);
+
+  z-index: 1000000000;
+
+  overflow-y: scroll;
+}
+
+.menu__close_container {
+  position: absolute;
+  top: 50px;
+  right: 22px;
+}

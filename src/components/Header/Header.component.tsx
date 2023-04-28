@@ -7,7 +7,6 @@ type Props = {
 };
 
 export const Header: React.FC<Props> = ({ windowWidth }) => {
-
   return (
     <header className="header" id="home">
       <div className="header__container">
