@@ -3,15 +3,8 @@ import { Price } from "../../../../types/price.type";
 import "../../Pricing.component.css";
 import { PriceItem } from "../PricingItem";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-
-import SwiperCore, { Navigation } from "swiper";
-
-SwiperCore.use([Navigation]);
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 type Props = {
   priceList: Price[];
@@ -28,18 +21,18 @@ export const PricingList: React.FC<Props> = ({ priceList, windowWidth }) => {
           ))}
         </div>
       ) : (
-        <Swiper
-          slidesPerView={5}
-          spaceBetween={0}
-          navigation={true}
-          loop={true}
+        <Carousel
+          showIndicators={false}
+          showThumbs={false}
+          showStatus={false}
+          width={"400px"}
+          centerMode
+          centerSlidePercentage={60}
         >
           {priceList.map((item) => (
-            <SwiperSlide key={item.id}>
-              <PriceItem priceItem={item} />
-            </SwiperSlide>
+            <PriceItem key={item.id} priceItem={item} />
           ))}
-        </Swiper>
+        </Carousel>
       )}
     </>
   );
