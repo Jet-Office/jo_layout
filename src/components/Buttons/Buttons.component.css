@@ -8,5 +8,13 @@
 @media (max-width: 641px) {
   .buttons {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 380px) {
+  .buttons {
+    margin-left: -20px;
   }
 }
