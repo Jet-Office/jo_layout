@@ -38,7 +38,7 @@ export const About: React.FC<Props> = ({ windowWidth }) => {
               design, web-3, coaching, and more. Let us become your reliable
               flight control center for your business success.
             </p>
-            {(isShow || windowWidth >= 1000) && (
+            {(isShow || windowWidth > 641) && (
               <p className="about__paragraph">
                 Our mission is to provide client-oriented virtual assistance,
                 administrative support, and IT solutions through our network of
@@ -48,7 +48,7 @@ export const About: React.FC<Props> = ({ windowWidth }) => {
               </p>
             )}
 
-            {windowWidth < 1000 && (
+            {windowWidth <= 641 && (
               <div className={showClass} onClick={handleShow}>
                 <p className="about__paragraph">
                   {isShow ? "Show less" : "Show more"}
