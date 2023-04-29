@@ -8,7 +8,7 @@ type Props = {
 
 export const Pricing: React.FC<Props> = ({ windowWidth }) => {
   return (
-    <section className="pricing" id="pricing">
+    <section className="pricing ml_15" id="pricing">
       <div className="pricing__container">
         <h2 className="pricing__title h2">Pricing</h2>
         <PricingList windowWidth={windowWidth} priceList={pricing} />

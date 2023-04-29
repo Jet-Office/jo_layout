@@ -102,8 +102,7 @@
     all: unset;
 
     margin-top: 50px;
-    margin-left: 16px;
-  }
+}
   .crew__list {
     display: grid;
     grid-template-columns: repeat(1, 6fr);

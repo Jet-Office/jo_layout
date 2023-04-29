@@ -85,8 +85,6 @@
 @media (max-width: 641px) {
   .benefits {
     all: unset;
-
-    padding: 16px;
   }
 
   .benefits__container {

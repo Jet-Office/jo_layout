@@ -283,8 +283,6 @@
 @media (max-width: 641px) {
   .pricing {
     all: unset;
-
-    margin-left: 10px;
   }
 
   .pricing__calculator_icon {

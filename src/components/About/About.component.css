@@ -50,6 +50,10 @@
   }
 
   .about__content {
+    margin-left: 2%;
+  }
+
+  .about__content {
     padding-top: 140px;
 
     gap: 20px;

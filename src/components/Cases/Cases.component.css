@@ -136,8 +136,6 @@
 @media (max-width: 641px) {
   .cases {
     all: unset;
-
-    margin-left: 16px;
   }
 
   .cases__background,
