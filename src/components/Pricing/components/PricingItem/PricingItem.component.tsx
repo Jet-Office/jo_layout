@@ -37,7 +37,7 @@ export const PriceItem: React.FC<Props> = ({
       "pricing__card--1430": +price === 1430,
       "pricing__card--510": +price === 510,
       "pricing__card--calculator": price === "calculate",
-      "pricing__card--startup": price === "30/h",
+      "pricing__card--startup": price === "10/h",
     }
   );
   const monthlyClass = classNames(

@@ -96,3 +96,36 @@
 
   margin: 0;
 }
+
+@media (max-width: 641px) {
+  .crew {
+    all: unset;
+
+    margin-top: 50px;
+    margin-left: 16px;
+  }
+  .crew__list {
+    display: grid;
+    grid-template-columns: repeat(1, 6fr);
+  
+    gap: 20px;
+  }
+
+  .crew__item {
+    max-width: 343px;
+  }
+
+  .crew__img_container {
+    height: 140px;
+    width: 140px;
+  }
+
+  .crew__name {
+    max-width: 170px;
+    font-size: 16px;
+  }
+
+  .crew__role {
+    font-size: 16px;
+  }
+}

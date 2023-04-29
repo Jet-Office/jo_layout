@@ -21,20 +21,21 @@ export const PricingList: React.FC<Props> = ({ priceList, windowWidth }) => {
           ))}
         </div>
       ) : (
-        <Carousel
-          showIndicators={false}
-          showThumbs={false}
-          showStatus={false}
-          width={"400px"}
-          centerMode
-          centerSlidePercentage={60}
-          showArrows={false}
-          verticalSwipe="natural"
-        >
-          {priceList.map((item) => (
-            <PriceItem key={item.id} priceItem={item} />
-          ))}
-        </Carousel>
+          <Carousel
+            swipeable={true}
+            showIndicators={false}
+            showThumbs={false}
+            showStatus={false}
+            width={"400px"}
+            centerMode
+            centerSlidePercentage={60}
+            showArrows={false}
+            className="pricing__carousel"
+          >
+            {priceList.map((item) => (
+              <PriceItem key={item.id} priceItem={item} />
+            ))}
+          </Carousel>
       )}
     </>
   );

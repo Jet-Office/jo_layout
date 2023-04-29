@@ -25,8 +25,6 @@ export const CasesItem: React.FC<Props> = ({
     "cases__chevron_icon--open": isOpen,
   });
 
-  const handleChevronClick = useCallback(() => setIsOpen(!isOpen), [isOpen]);
-
   useEffect(() => {
     if (activeCaseId === id) {
       setDescriptions(descriptions);
@@ -40,8 +38,12 @@ export const CasesItem: React.FC<Props> = ({
   const handleClick = useCallback(
     (currentId: number) => {
       setActiveCaseId(currentId);
+      
+      if (windowWidth < 1000) {
+        setIsOpen(!isOpen);
+      }
     },
-    [setActiveCaseId]
+    [isOpen, setActiveCaseId, windowWidth]
   );
 
   return (
@@ -57,10 +59,7 @@ export const CasesItem: React.FC<Props> = ({
           </div>
           <div className="cases__card_text">{name}</div>
           {windowWidth < 1000 && (
-            <div
-              className="cases__chevron_wrapper"
-              onClick={handleChevronClick}
-            >
+            <div className="cases__chevron_wrapper">
               <img
                 src="./chevron-down.svg"
                 alt=""

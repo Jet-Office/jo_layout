@@ -34,7 +34,7 @@ function App() {
           <Benefits />
           <Pricing windowWidth={windowWidth} />
           <Cases windowWidth={windowWidth} />
-          <About />
+          <About windowWidth={windowWidth} />
           <Crew />
         </div>
       </main>
