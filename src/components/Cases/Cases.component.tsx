@@ -5,7 +5,11 @@ import { useState } from "react";
 import { Description } from "../../types/service.type";
 import { CasesDescription } from "./components/CasesDescriptions/CasesDescriptions.component";
 
-export const Cases = () => {
+type Props = {
+  windowWidth: number;
+};
+
+export const Cases: React.FC<Props> = ({ windowWidth }) => {
   const [descriptions, setDescriptions] = useState<Description[]>([]);
   const [activeCaseId, setActiveCaseId] = useState(4);
 
@@ -14,8 +18,8 @@ export const Cases = () => {
       <div className="cases__container">
         <h2 className="cases__title h2">Cases we can do</h2>
         <div className="cases__content">
-            <CasesList cases={services} setActiveCaseId={setActiveCaseId} setDescriptions={setDescriptions} activeCaseId={activeCaseId} />
-            <CasesDescription descriptions={descriptions} />
+            <CasesList windowWidth={windowWidth} cases={services} setActiveCaseId={setActiveCaseId} setDescriptions={setDescriptions} activeCaseId={activeCaseId} />
+            {windowWidth >= 1000 && <CasesDescription descriptions={descriptions} />}
         </div>
       </div>
     </section>

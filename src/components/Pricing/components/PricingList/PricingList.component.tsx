@@ -28,6 +28,8 @@ export const PricingList: React.FC<Props> = ({ priceList, windowWidth }) => {
           width={"400px"}
           centerMode
           centerSlidePercentage={60}
+          showArrows={false}
+          verticalSwipe="natural"
         >
           {priceList.map((item) => (
             <PriceItem key={item.id} priceItem={item} />

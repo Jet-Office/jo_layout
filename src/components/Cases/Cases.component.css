@@ -48,7 +48,7 @@
 .cases__background--active::after {
   content: "";
   position: absolute;
-  inset: -.325em;
+  inset: -0.325em;
   background: var(--gradient);
   filter: blur(1.5em);
   z-index: -1;
@@ -81,7 +81,7 @@
   height: 40px;
 }
 
-.cases__card_text {
+.cases__card_text, .cases__card_name {
   font-size: 20px;
   line-height: 140%;
 
@@ -90,12 +90,16 @@
   margin: 0;
 }
 
+.cases__card_name {
+  text-transform: uppercase;
+}
+
 .cases__descriptions {
   display: flex;
   flex-direction: column;
-  
+
   gap: 30px;
-  
+
   min-height: 710px;
 
   padding: 24px 20px;
@@ -125,5 +129,39 @@
 @media (max-width: 1120px) {
   .cases__descriptions {
     width: max-content;
+  }
+}
+
+@media (max-width: 641px) {
+  .cases {
+    all: unset;
+
+    margin-left: 16px;
+  }
+
+  .cases__background,
+  .cases__background--active,
+  .cases__background--active::after,
+  .cases__background:hover {
+    all: unset;
+  }
+
+  .cases__descriptions {
+    border: none;
+  }
+
+  .cases__card {
+    max-width: 300px;
+  }
+
+  .cases__chevron_icon {
+    width: 24px;
+    height: 24px;
+
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .cases__chevron_icon--open {
+    transform: rotateX(180deg);
   }
 }

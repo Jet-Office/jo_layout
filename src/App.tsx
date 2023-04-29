@@ -33,7 +33,7 @@ function App() {
           {windowWidth <= 641 && <ControlPreview />}
           <Benefits />
           <Pricing windowWidth={windowWidth} />
-          <Cases />
+          <Cases windowWidth={windowWidth} />
           <About />
           <Crew />
         </div>
