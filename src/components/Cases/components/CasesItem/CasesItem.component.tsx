@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { Description, Service } from "../../../../types/service.type";
 import "../../Cases.component.css";
 import classNames from "classnames";
+import { CasesDescription } from "../CasesDescriptions/CasesDescriptions.component";
 
 type Props = {
   caseItem: Service;
@@ -45,22 +46,30 @@ export const CasesItem: React.FC<Props> = ({
 
   return (
     <div className={backgroundClass}>
-      <div className="cases__card" onClick={() => handleClick(id)}>
-        <img
-          src={`./services-icons/${icon}`}
-          alt="services-icon"
-          className="cases__card_icon"
-        />
-        <div className="cases__card_text">{name}</div>
-        {windowWidth < 1000 && (
-          <div className="cases__chevron_wrapper" onClick={handleChevronClick}>
+      <div className="cases__card_wrapper">
+        <div className="cases__card" onClick={() => handleClick(id)}>
+          <div className="cases__card_icon_wrapper">
             <img
-              src="./chevron-down.svg"
-              alt=""
-              className={chevronIconClassName}
+              src={`./services-icons/${icon}`}
+              alt="services-icon"
+              className="cases__card_icon"
             />
           </div>
-        )}    
+          <div className="cases__card_text">{name}</div>
+          {windowWidth < 1000 && (
+            <div
+              className="cases__chevron_wrapper"
+              onClick={handleChevronClick}
+            >
+              <img
+                src="./chevron-down.svg"
+                alt=""
+                className={chevronIconClassName}
+              />
+            </div>
+          )}
+        </div>
+        {isOpen && <CasesDescription descriptions={descriptions} />}
       </div>
     </div>
   );

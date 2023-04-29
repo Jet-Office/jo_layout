@@ -4,6 +4,12 @@
   font-weight: 400;
 }
 
+@font-face {
+  font-family: "Proxima Nova Bold";
+  src: url(/fonts/proxima/proxima-nova-bold.otf);
+  font-weight: 700;
+}
+
 :root {
   --text-color: #cccc;
   --background: #14181c;
@@ -52,5 +58,8 @@ body {
 @media (max-width: 641px) {
   .h2 {
     font-size: 24px;
+
+    font-family: "Proxima Nova Bold";
+    font-weight: 700;
   }
 }
