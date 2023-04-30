@@ -8,6 +8,7 @@ import { Cases } from "./components/Cases";
 import { About } from "./components/About";
 import { Crew } from "./components/Crew";
 import { ControlPreview } from "./components/ControlPreview";
+import { Contacts } from "./components/Contacts";
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -36,8 +37,12 @@ function App() {
           <Cases windowWidth={windowWidth} />
           <About windowWidth={windowWidth} />
           <Crew />
+          <Contacts />
         </div>
       </main>
+      <footer className="footer">
+        <p className="footer__label">© 2023 JetOffice</p>
+      </footer>
     </div>
   );
 }

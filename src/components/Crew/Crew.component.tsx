@@ -4,7 +4,7 @@ import { CrewList } from "./components/CrewList";
 
 export const Crew = () => {
   return (
-    <section className="crew" id="contacts">
+    <section className="crew">
       <div className="crew__container">
         <h2 className="crew__title h2">Crew</h2>
         <CrewList crewList={crew} />
