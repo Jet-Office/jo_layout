@@ -25,6 +25,8 @@
   grid-template-columns: repeat(1, 5fr);
 
   gap: 10px;
+
+  max-height: 896px;
 }
 
 .cases__background {
@@ -32,6 +34,8 @@
   border-radius: 8px;
 
   padding: 1px;
+
+  height: fit-content;
 
   position: relative;
 }
@@ -89,6 +93,10 @@
   color: var(--text-color);
 
   margin: 0;
+}
+
+.cases__text_description {
+  max-width: 300px;
 }
 
 .cases__card_name {

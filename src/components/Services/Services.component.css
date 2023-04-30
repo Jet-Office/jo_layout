@@ -25,15 +25,13 @@
 
   padding: 12px 0px;
 
-  width: 250px;
+  width: 300px;
   height: 212px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  gap: 10px;
 
   border: 1px solid #14181c;
 
@@ -54,7 +52,7 @@
 }
 
 .services__description {
-  max-width: 170px;
+  max-width: 240px;
 
   font-size: 20px;
   line-height: 140%;
