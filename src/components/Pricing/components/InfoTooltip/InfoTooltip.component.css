@@ -50,3 +50,9 @@
 
   color: var(--text-color);
 }
+
+@media (max-width: 641px) {
+  .info__description {
+    left: -150px
+  }
+}
