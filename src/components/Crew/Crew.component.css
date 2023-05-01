@@ -102,11 +102,11 @@
     all: unset;
 
     margin-top: 50px;
-}
+  }
   .crew__list {
     display: grid;
     grid-template-columns: repeat(1, 6fr);
-  
+
     gap: 20px;
   }
 
@@ -126,5 +126,31 @@
 
   .crew__role {
     font-size: 16px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .crew__item {
+    width: 27vw;
+  }
+
+  .crew__img_container {
+    width: 13.89vw;
+    height: 13.89vw;
+
+    object-fit: cover;
+  }
+
+  .crew__description {
+    max-width: 11.6vw;
+  }
+
+  .crew__name {
+    max-width: 6.25vw;
+  }
+
+  .crew__name,
+  .crew__role {
+    font-size: 1.4vw;
   }
 }
