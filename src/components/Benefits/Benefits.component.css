@@ -124,3 +124,27 @@
     object-fit: cover;
   }
 }
+
+@media (min-width: 1920px) {
+  .benefits__icon {
+    width: 3.3vw;
+    height: 3.3vw;
+  }
+
+  .benefits__text {
+    max-width: 24.3vw;
+  
+    padding-right: 3.125vw;
+  
+    font-size: 1.25vw;
+  }
+
+  .benefits__plane_container {
+    object-fit: cover;
+  }
+
+  .benefits__plane {
+    width: 100%;
+    height: 100%;
+  }
+}

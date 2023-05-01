@@ -56,3 +56,25 @@
     left: -150px
   }
 }
+
+@media (min-width: 1920px) {
+  .info__description { 
+    bottom: 2vh;
+    left: -8vw;
+  
+    margin-bottom: 2.4vh;
+  
+    width: 17.1vw;
+  }
+
+  .info__icon {
+    height: 1.7vw;
+    width: 1.7vw;
+  }
+
+  .info__text {
+    max-width: 15.4vw;
+  
+    font-size: 1vw;
+  }
+}

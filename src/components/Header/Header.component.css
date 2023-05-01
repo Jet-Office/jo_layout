@@ -19,6 +19,10 @@
   margin-bottom: 180px;
 }
 
+.header, .header__container {
+  padding-bottom: 35.5vh;
+}
+
 .header__container {
   display: flex;
   flex-direction: column;
@@ -41,7 +45,7 @@
 
   margin: 0;
 
-  margin-top: 152px;
+  margin-top: calc(4.4vw + 88px);
 
   max-width: fit-content;
 
@@ -66,7 +70,7 @@
 }
 
 .header__content_container {
-  margin-left: 50px;
+  margin-left: 3.5vw;
 
   display: flex;
   flex-direction: column;
