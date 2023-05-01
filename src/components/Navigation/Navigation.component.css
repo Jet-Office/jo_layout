@@ -8,7 +8,7 @@
 .navigation__link {
   text-decoration: none;
 
-  font-size: 18px;
+  font-size: 1.25vw;
   line-height: 140%;
 
   color: var(--text-color);

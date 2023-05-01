@@ -8,6 +8,17 @@
   z-index: 1000;
 }
 
+.head__logo {
+  object-fit: cover;
+
+  width: 7.64vw;
+  min-width: 110px;
+}
+
+.head__logo_img {
+  width: 100%;
+}
+
 .head--header {
   margin-top: 44px;
 }
