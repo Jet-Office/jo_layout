@@ -51,3 +51,9 @@
     margin-bottom: 70px;
   }
 }
+
+@media (min-width: 1920px) {
+  .footer__label {
+    font-size: 1.4vw;
+  }
+}

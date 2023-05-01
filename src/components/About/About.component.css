@@ -115,3 +115,13 @@
     height: 24px;
   }
 }
+
+@media (min-width: 1920px) {
+  .about__container {
+    padding-left: 0.7vw;
+  }
+
+  .about__paragraph {
+    font-size: 1.4vw;
+  }
+}
