@@ -185,7 +185,7 @@
     transform: rotateX(180deg);
   }
 
-  .cases__card_wrapper {    
+  .cases__card_wrapper {
     display: flex;
     flex-direction: column;
 
@@ -225,5 +225,42 @@
 
   .cases__list {
     max-height: none;
+  }
+}
+
+@media (min-width: 1920px) {
+  .cases__list {
+    max-height: 62.2vh;
+  }
+
+  .cases__card {
+    gap: 1.4vw;
+  
+    padding: 1.4vw;
+  }
+
+  .cases__card_icon {
+    width: 2.7vw;
+    height: 2.7vw;
+  }
+
+  .cases__card_text,
+  .cases__card_name {
+    font-size: 1.4vw;
+  }
+
+  .cases__text_description {
+    max-width: 20.8vw;
+  }
+
+  .cases__descriptions {
+    display: flex;
+    flex-direction: column;
+  
+    gap: 30px;
+  
+    min-height: 49.3vw;
+  
+    padding: 3vh 1.4vw;
   }
 }
