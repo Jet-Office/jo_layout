@@ -3,8 +3,7 @@ import { Price } from "../../../../types/price.type";
 import "../../Pricing.component.css";
 import { PriceItem } from "../PricingItem";
 
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Swiper } from 'antd-mobile'
 
 type Props = {
   priceList: Price[];
@@ -21,21 +20,13 @@ export const PricingList: React.FC<Props> = ({ priceList, windowWidth }) => {
           ))}
         </div>
       ) : (
-          <Carousel
-            swipeable={true}
-            showIndicators={false}
-            showThumbs={false}
-            showStatus={false}
-            width={"400px"}
-            centerMode
-            centerSlidePercentage={60}
-            showArrows={false}
-            className="pricing__carousel"
-          >
+          <Swiper loop slideSize={26}>
             {priceList.map((item) => (
-              <PriceItem key={item.id} priceItem={item} />
+              <Swiper.Item key={item.id}>
+                <PriceItem priceItem={item} />
+              </Swiper.Item>
             ))}
-          </Carousel>
+          </Swiper>
       )}
     </>
   );

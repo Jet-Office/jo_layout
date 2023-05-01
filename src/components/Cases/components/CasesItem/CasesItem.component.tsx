@@ -33,6 +33,7 @@ export const CasesItem: React.FC<Props> = ({
 
   const backgroundClass = classNames("cases__background", {
     "cases__background--active": id === activeCaseId,
+    opened: isOpen
   });
 
   const handleClick = useCallback(

@@ -38,13 +38,19 @@
 
 @media (max-width: 641px) {
   .about {
-    margin-top: 283px;
-  }
+    border: 1px solid transparent;
 
+    display: block;
+
+    margin-top: 10px;
+  }
+  
   .about__earth {
     position: absolute;
 
     opacity: 0.1;
+
+    left: -15px;
 
     z-index: -20000;
   }

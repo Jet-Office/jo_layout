@@ -144,6 +144,10 @@
 @media (max-width: 641px) {
   .cases {
     all: unset;
+
+    position: relative;
+
+    display: block;
   }
 
   .cases__background,
@@ -151,10 +155,13 @@
   .cases__background--active::after,
   .cases__background:hover {
     all: unset;
+
+    display: block;
   }
 
   .cases__descriptions {
     all: unset;
+    display: block;
   }
 
   .cases__card {
@@ -178,7 +185,7 @@
     transform: rotateX(180deg);
   }
 
-  .cases__card_wrapper {
+  .cases__card_wrapper {    
     display: flex;
     flex-direction: column;
 
