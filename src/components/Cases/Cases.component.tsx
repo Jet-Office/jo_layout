@@ -19,7 +19,7 @@ export const Cases: React.FC<Props> = ({ windowWidth }) => {
         <h2 className="cases__title h2">Cases we can do</h2>
         <div className="cases__content">
             <CasesList windowWidth={windowWidth} cases={services} setActiveCaseId={setActiveCaseId} setDescriptions={setDescriptions} activeCaseId={activeCaseId} />
-            {windowWidth >= 1000 && <CasesDescription descriptions={descriptions} />}
+            {windowWidth > 641 && <CasesDescription descriptions={descriptions} />}
         </div>
       </div>
     </section>

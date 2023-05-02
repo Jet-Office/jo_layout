@@ -34,7 +34,7 @@ export const Head: React.FC<Props> = ({ windowWidth }) => {
         <a href="#" className="head__logo">
           <img src={Logo} alt="JetOffice logo" className="head__logo_img" />
         </a>
-        {windowWidth > 1000 ? (
+        {windowWidth > 641 ? (
           <Navigation activeLink={activeLink} setActiveLink={setActiveLink} />
         ) : (
           <Menu activeLink={activeLink} setActiveLink={setActiveLink} />

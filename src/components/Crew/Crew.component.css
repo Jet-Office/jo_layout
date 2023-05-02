@@ -97,6 +97,38 @@
   margin: 0;
 }
 
+@media (max-width: 1050px) {
+  .crew {
+    all: unset;
+
+    margin-left: 10vw;
+  }
+
+  .crew__item {
+    width: 27vw;
+  }
+
+  .crew__img_container {
+    width: 13.89vw;
+    height: 13.89vw;
+
+    object-fit: cover;
+  }
+
+  .crew__description {
+    max-width: 11.6vw;
+  }
+
+  .crew__name {
+    max-width: 6.25vw;
+  }
+
+  .crew__name,
+  .crew__role {
+    font-size: 1.4vw;
+  }
+}
+
 @media (max-width: 641px) {
   .crew {
     all: unset;
