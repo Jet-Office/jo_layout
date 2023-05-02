@@ -97,7 +97,7 @@
   margin: 0;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1050px) and (min-width: 642px) {
   .crew {
     all: unset;
 

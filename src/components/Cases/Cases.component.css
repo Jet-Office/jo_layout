@@ -141,7 +141,7 @@
   }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1050px) and (min-width: 642px)  {
   .cases {
     all: unset;
 
