@@ -175,8 +175,8 @@
   }
 
   .cases__chevron_icon {
-    width: 24px;
-    height: 24px;
+    width: 6.154vw;
+    height: 6.154vw;
 
     transition: transform 0.3s ease-in-out;
   }
@@ -199,7 +199,7 @@
 
     border: 1px solid var(--background);
 
-    max-width: 300px;
+    max-width: 76.92vw;
 
     box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.6);
     border-radius: 8px;
@@ -212,19 +212,27 @@
   .cases__card_text {
     text-align: left;
 
-    max-width: 200px;
+    max-width: 51.28vw;
 
-    font-size: 16px;
+    font-size: 4.103vw;
     line-height: 140%;
   }
 
   .cases__card_name {
     margin-top: 20px;
     margin-bottom: 20px;
+
+    font-size: 4.103vw;
   }
 
   .cases__list {
     max-height: none;
+  }
+
+  .cases__description_list {
+    text-align: left;
+
+    padding-left: 5.13vw;
   }
 }
 

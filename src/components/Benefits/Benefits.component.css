@@ -108,11 +108,11 @@
   }
 
   .benefits__text {
-    max-width: 140px;
+    max-width: 35.9vw;
 
     text-align: left;
 
-    font-size: 14px;
+    font-size: 5vw;
 
     margin: 0;
   }

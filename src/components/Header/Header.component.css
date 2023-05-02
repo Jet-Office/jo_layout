@@ -98,7 +98,7 @@
   .header {
     background-position: right;
 
-    min-width: 800px;
+    min-width: 205vw;
   }
 
   .header__container {
@@ -108,20 +108,21 @@
   .header__title {
     font-family: "Proxima Nova Semibold";
     font-weight: 600;
-    font-size: 36px;
+    font-size: 9.23vw;
   }
+
   .header__text {
-    max-width: 343px;
+    max-width: 87.95vw;
 
     text-align: left;
 
     font-size: 16px;
 
-    padding-bottom: 100px;
+    padding-bottom: 50px;
   }
 
   .header__content_container {
-    margin-left: 28px;
+    margin-left: 7.18vw;
   }
 
   .header__title {

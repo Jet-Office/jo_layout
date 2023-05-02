@@ -111,21 +111,21 @@
   }
 
   .crew__item {
-    max-width: 343px;
+    max-width: 87.95vw;
   }
 
   .crew__img_container {
-    height: 140px;
-    width: 140px;
+    height: 35.9vw;
+    width: 35.9vw;
   }
 
   .crew__name {
-    max-width: 170px;
-    font-size: 16px;
+    max-width: 43.59vw;
+    font-size: 4.102vw;
   }
 
   .crew__role {
-    font-size: 16px;
+    font-size: 4.102vw;
   }
 }
 

@@ -41,19 +41,19 @@
     justify-content: center;
     align-items: center;
 
-    max-width: 360px;
-
-    margin-right: 16px;
+    max-width: 90.31vw;
   }
 
   .navigation__list {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    gap: 10px;
   }
 
   .navigation__link {
-    font-size: 20px;
+    font-size: 5.13vw;
 
     text-align: center;
   }
@@ -70,8 +70,8 @@
   }
 
   .navigation__item_background {
-    width: 343px;
-    height: 80px;
+    width: 90.31vw;
+    height: 20.51vw;
 
     border: 1px solid #303943;
     box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.6);

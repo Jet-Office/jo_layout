@@ -17,7 +17,7 @@ export const Head: React.FC<Props> = ({ windowWidth }) => {
     const listenScrollEvent = () => {
       if (
         (window.scrollY > 113 && windowWidth > 1000) ||
-        window.scrollY > 50
+        window.scrollY > 87
       ) {
         setIsHome(false);
       } else {
