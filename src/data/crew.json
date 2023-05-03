@@ -1,0 +1,20 @@
+{
+  "crew": [
+    {
+      "id": 1,
+      "name": "Tretnikov Illia",
+      "role": "Co-founder, CEO",
+      "avatar": "illia.png"
+    },
+    {"id": 2,
+    "name": "Timchenko Oksana ",
+    "role": "Co-founder, Head of Assistants Department",
+    "avatar": "oksana.png"
+},
+{"id": 3,
+    "name": "Vydrina Marina ",
+    "role": "Co-founder, PM, Couch",
+    "avatar": "marina.png"
+}
+  ]
+}

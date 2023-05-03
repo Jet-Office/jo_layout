@@ -1,0 +1,310 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "name": "Calendars, Documents & tasks management",
+      "icon": "list-edit.svg",
+      "descriptions": [
+        {
+          "id": 1,
+          "name": "Emails & calendars",
+          "text": [
+            "Answering emails, creating email templates.",
+            "Spam filtering",
+            " Organization of meetings and negotiations.",
+            "Making appointments and maintaining a schedule.",
+            "Managing electronic contacts.",
+            "Meeting schedule control."
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Document and task management",
+          "text": [
+            "Administration of electronic documents.",
+            "Maintaining databases.",
+            "Editing and formatting documents.",
+            "Creating presentations.",
+            "Finding vendors.",
+            "Assignment of tasks and control of execution.",
+            "Notifications about tasks and their status.",
+            "Bill control and payment."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Project management & coordination",
+      "icon": "gauge-dashboard.svg",
+      "descriptions": [
+        {
+          "id": 1,
+          "name": "Curating online schools or courses",
+          "text": [
+            "Help to coordinate and organize the educational process in your online school.",
+            "Guiding students from start to finish.",
+            "Monitoring and checking homework.",
+            "Checking access and connection to the educational platform.",
+            "Communication with students: answering questions, motivating and maintaining a friendly atmosphere."
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Camping or Retreat Coordination",
+          "text": [
+            "Location search",
+            "Route planning and logistics",
+            "Campaign or publicity retreat",
+            "Registration and communication with participants to discuss the details",
+            "Providing information about the features of the venue",
+            "Online consultations on the choice of the necessary equipment",
+            "Providing instructions on how to use the equipment",
+            "Online control over the route and safety of participants",
+            "Gathering feedback from participants",
+            "Analysis of the results and identification of possible improvements in the organization."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Business assistance & Human resources",
+      "icon": "bulb.svg",
+      "descriptions": [
+        {
+          "id": 1,
+          "name": "Business assistance",
+          "text": [
+            "Competitor analysis & market research.",
+            "Optimization of business processes.",
+            "Legal consulting & papers.",
+            "Business modelling.",
+            "Company registration."
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Recruitment & HR",
+          "text": [
+            "Drafting vacancies according to customer requests.",
+            "Conducting the first round of interviews.",
+            "Search and processing of resumes of applicants.",
+            "Calling applicants and conducting the first stage of the interview.",
+            "Registration and placement of vacancies on recruiting resources and social networks.",
+            "Processing applicants' answers."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Social media management & advertisement",
+      "icon": "vintage-tv-4.svg",
+      "descriptions": [
+        {
+          "id": 1,
+          "name": "Social media support",
+          "text": [
+            "Content creation: preparing text messages, photos, videos, graphics, etc.",
+            "Planning and publishing content: determining the frequency and schedule of publications, planning topics and messages for publication.",
+            "Communication: interacting with subscribers, addressing comments and messages, addressing feedback.",
+            "Advertising: creating advertising campaigns, defining the audience, setting parameters, tracking results, and optimising.",
+            "Help bloggers create subtitles for video content.",
+            "Spell check, punctuation and error correction."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Travel & relocation, Translation",
+      "icon": "landmark-pisa-tower.svg",
+      "descriptions": [
+        {
+          "id": 1,
+          "name": "Relocation",
+          "text": [
+            "Assisting with selecting a country to move based on the customer's criteria and preferences.",
+            "Selection and organization of housing - help find and rent suitable housing, negotiate with owners, organize property inspections, and draw up a lease agreement.",
+            "Selection of schools and kindergartens for children, and assistance with paperwork.",
+            "Assistance with job selection and labor market consultation.",
+            "Assistance with paperwork, including visas, work permits, and insurance.",
+            "Transportation of property and personal belongings to the new location.",
+            "Adaptation services: provide information on cultural characteristics, and assistance in finding acquaintances in a new country according to the interests of the customer.",
+            "Legal services - provide legal advice on the laws of the new country."
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Travel management",
+          "text": [
+            "Booking tickets: planes, trains, and buses according to the client's preferences.",
+            "Booking hotels: searching and booking hotels and other accommodations.",
+            "Route planning: developing the optimal travel route, selecting places to visit, booking excursions and entertainment.",
+            "Document preparation: registering visas, insurance policies, and other documents.",
+            "Consultation: providing information about weather conditions, culture, traditions, and other features of the destination country.",
+            "Financial management: monitoring the travel budget, making payments, interacting with banks and financial institutions.",
+            "Transfers: organizing transfers between airports, train stations, hotels, and other destinations.",
+            "Travel support: resolving problems related to tickets, hotels, transportation, and other services that may arise during the trip."
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Translation",
+          "text": [
+            "Translation of written content from one language to another.",
+            "Website translation.",
+            "Translation of documents.",
+            "Translation of marketing materials.",
+            "Translation of audio recordings and video clips.",
+            "Overlay of subtitles."
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Content localization",
+          "text": [
+            "Adaptation of content to meet the cultural characteristics and requirements of the target audience."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Business events & corporate holidays",
+      "icon": "restaurant-menu.svg",
+      "descriptions": [
+        {
+          "id": 1,
+          "name": "Planning and holding conferences and seminars",
+          "text": [
+            "Location selection.",
+            "Organization of accommodation and transportation.",
+            "Invitation of speakers.",
+            "Coordination of all event details."
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Organization of business meetings and events",
+          "text": [
+            "Creation of event programs.",
+            "Selection of a venue according to the customer's criteria.",
+            "Organization of catering, transportation, and entertainment for participants."
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Organization of corporate holidays and parties",
+          "text": [
+            "Selection of a theme for the party.",
+            "Development of a program.",
+            "Selection of a venue.",
+            "RSVP management.",
+            "Organization of catering and entertainment."
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Organizing a date",
+          "text": [
+            "Booking a place at the request of the customer.",
+            "Creating a romantic atmosphere (flowers, balloons, candles, etc.)",
+            "Horse rides, private jet bookings, hot air balloons and many others."
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Event production and AV services",
+          "text": [
+            "Providing audiovisual services, including lighting, sound, and video production for events."
+          ]
+        },
+        {
+          "id": 6,
+          "name": "Budget management and financial reporting",
+          "text": [
+            "Managing the event budget, tracking expenses, and providing financial reports and analysis to the client."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Design, Development & Research",
+      "icon": "brain-1.svg",
+      "descriptions": [
+        {
+          "id": 1,
+          "name": "Web development",
+          "text": [
+            "development of websites and web applications.",
+            "web hosting."
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Web design",
+          "text": [
+            "website design development.",
+            "creation of logos and branding."
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Front-end development",
+          "text": [
+            "user interface development.",
+            "site optimization for mobile devices."
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Back-end development",
+          "text": [
+            "development of the server part of the site.",
+            "database management."
+          ]
+        },
+        {
+          "id": 5,
+          "name": "SEO optimization",
+          "text": [
+            "website content optimization to improve search engine rankings,",
+            "keyword research,",
+            "technical optimization."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Coaching, leadership & Team-building",
+      "icon": "target-correct.svg",
+      "descriptions": [
+        {
+          "id": 1,
+          "name": "SEO optimization",
+          "text": [
+            "Business coaching — goals and performance.",
+            "Personal coaching — personal growth, personal goals and increasing motivation.",
+            "Technical coaching — motivation in mastering new technologies, improving skills.",
+            "Time management coaching — planning and organization.",
+            "Coaching in leadership and communication - development of leadership skills, team management and communication."
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Team building",
+          "text": [
+            "Online trainings to improve team performance.",
+            "Virtual games and quizzes.",
+            "Virtual master classes (culinary/sports/psychological/etc)",
+            "Virtual meetings where participants can discuss problems and find solutions together."
+          ]
+        }
+      ]
+    }
+  ]
+}

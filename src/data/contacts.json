@@ -1,0 +1,22 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "icon": "mail.svg",
+      "address": "mail@jetoffice.org",
+      "link": "mailto:mail@jetoffice.org"
+    },
+    {
+      "id": 2,
+      "icon": "telegram.svg",
+      "address": "@Oksana_HeadJetOffice",
+      "link": "https://t.me/Oksana_HeadJetOffice"
+    },
+    {
+      "id": 3,
+      "icon": "whatsapp.svg",
+      "address": "+380506917548",
+      "link": "tel:+380506917548"
+    }
+  ]
+}
