@@ -7,11 +7,30 @@ import { Menu } from "./component/Menu";
 
 type Props = {
   windowWidth: number;
+  activePageRef: React.RefObject<HTMLElement>;
 };
 
-export const Head: React.FC<Props> = ({ windowWidth }) => {
+export const Head: React.FC<Props> = ({ windowWidth, activePageRef }) => {
   const [isHome, setIsHome] = useState(true);
   const [activeLink, setActiveLink] = useState("Home");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const { current } = activePageRef;
+      if (current !== null) {
+        const { top } = current.getBoundingClientRect();
+        if (top >= 0 && top <= window.innerHeight) {
+          setActiveLink(current.id[0].toUpperCase() + current.id.slice(1));
+        }
+      }
+    };
+
+    document.addEventListener("scroll", handleScroll);
+
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, [activeLink, activePageRef, setActiveLink]);
 
   useEffect(() => {
     const listenScrollEvent = () => {

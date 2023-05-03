@@ -19,10 +19,6 @@
   width: 100%;
 }
 
-.head--header {
-  margin-top: 20px;
-}
-
 .head__container {
   display: flex;
   justify-content: space-between;

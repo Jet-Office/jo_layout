@@ -3,12 +3,12 @@ import { Link } from "./types/link.type";
 import { useCallback } from "react";
 
 type Props = {
-  setActiveLink: (name: string) => void;
   handleCLose?: () => void;
   activeLink: string;
+  setActiveLink: (link: string) => void;
 };
 
-export const Navigation: React.FC<Props> = ({ handleCLose, setActiveLink, activeLink }) => {
+export const Navigation: React.FC<Props> = ({ handleCLose, activeLink, setActiveLink }) => {
   const links: Link[] = [
     {
       id: 1,
@@ -41,6 +41,7 @@ export const Navigation: React.FC<Props> = ({ handleCLose, setActiveLink, active
       href: "#contacts",
     },
   ];
+
   const handleClick = useCallback(
     (name: string) => {
       setActiveLink(name);
@@ -55,11 +56,12 @@ export const Navigation: React.FC<Props> = ({ handleCLose, setActiveLink, active
         {links.map((link) => (
           <li
             className={`navigation__item_background${
-              activeLink === link.name
+              (activeLink.toLowerCase() === link.name.toLowerCase())
                 ? " navigation__item_background--active"
                 : ""
             }`}
             key={link.id}
+            onClick={() => console.log(activeLink.toLowerCase())}
           >
             <div className="navigation__item">
               <a

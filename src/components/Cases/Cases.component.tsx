@@ -7,14 +7,15 @@ import { CasesDescription } from "./components/CasesDescriptions/CasesDescriptio
 
 type Props = {
   windowWidth: number;
+  casesPageRef: React.RefObject<HTMLElement>;
 };
 
-export const Cases: React.FC<Props> = ({ windowWidth }) => {
+export const Cases: React.FC<Props> = ({ windowWidth, casesPageRef }) => {
   const [descriptions, setDescriptions] = useState<Description[]>([]);
   const [activeCaseId, setActiveCaseId] = useState(4);
 
   return (
-    <section className="cases" id="cases">
+    <section className="cases" id="cases" ref={casesPageRef}>
       <div className="cases__container">
         <h2 className="cases__title h2">Cases we can do</h2>
         <div className="cases__content">

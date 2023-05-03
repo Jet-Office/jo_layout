@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 import "./App.css";
 
@@ -14,6 +14,78 @@ import { Contacts } from "./components/Contacts";
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const homePageRef = useRef<HTMLElement>(null);
+  const servicesPageRef = useRef<HTMLElement>(null);
+  const pricingPageRef = useRef<HTMLElement>(null);
+  const casesPageRef = useRef<HTMLElement>(null);
+  const aboutPageRef = useRef<HTMLElement>(null);
+  const contactsPageRef = useRef<HTMLElement>(null);
+  const [activePageRef, setActivePageRef] =
+    useState<React.RefObject<HTMLElement>>(homePageRef);
+
+  useEffect(() => {
+    const options = {
+      rootMargin: "0px",
+      threshold: 0.5,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          switch (entry.target.id) {
+            case "home":
+              setActivePageRef(homePageRef);
+              break;
+            case "services":
+              setActivePageRef(servicesPageRef);
+              break;
+            case "pricing":
+              setActivePageRef(pricingPageRef);
+              break;
+            case "cases":
+              setActivePageRef(casesPageRef);
+              break;
+            case "about":
+              setActivePageRef(aboutPageRef);
+              break;
+            case "contacts":
+              setActivePageRef(contactsPageRef);
+              break;
+            default:
+              setActivePageRef(homePageRef);
+          }
+        }
+      });
+    }, options);
+
+    if (homePageRef.current) {
+      observer.observe(homePageRef.current);
+    }
+
+    if (servicesPageRef.current) {
+      observer.observe(servicesPageRef.current);
+    }
+
+    if (pricingPageRef.current) {
+      observer.observe(pricingPageRef.current);
+    }
+
+    if (casesPageRef.current) {
+      observer.observe(casesPageRef.current);
+    }
+
+    if (aboutPageRef.current) {
+      observer.observe(aboutPageRef.current);
+    }
+
+    if (contactsPageRef.current) {
+      observer.observe(contactsPageRef.current);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
   useEffect(() => {
     const handleResize = () => {
@@ -29,17 +101,21 @@ function App() {
 
   return (
     <div className="App">
-      <Header windowWidth={windowWidth} />
+      <Header
+        activePageRef={activePageRef}
+        windowWidth={windowWidth}
+        homePageRef={homePageRef}
+      />
       <main className="main">
         <div className="main__container">
-          <Services />
+          <Services activeRef={servicesPageRef} />
           {windowWidth <= 641 && <ControlPreview />}
           <Benefits />
-          <Pricing windowWidth={windowWidth} />
-          <Cases windowWidth={windowWidth} />
-          <About windowWidth={windowWidth} />
+          <Pricing windowWidth={windowWidth} activePageRef={pricingPageRef} />
+          <Cases windowWidth={windowWidth} casesPageRef={casesPageRef} />
+          <About windowWidth={windowWidth} aboutPageRef={aboutPageRef} />
           <Crew />
-          <Contacts />
+          <Contacts contactsPageRef={contactsPageRef} />
         </div>
       </main>
       <footer className="footer">

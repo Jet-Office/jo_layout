@@ -5,9 +5,10 @@ import classNames from "classnames";
 
 type Props = {
   windowWidth: number;
+  aboutPageRef: React.RefObject<HTMLElement>;
 };
 
-export const About: React.FC<Props> = ({ windowWidth }) => {
+export const About: React.FC<Props> = ({ windowWidth, aboutPageRef }) => {
   const [isShow, setIsShow] = useState(false);
   const chevronIconClassName = classNames("about__chevron_icon", {
     "about__chevron_icon--open": isShow,
@@ -22,7 +23,7 @@ export const About: React.FC<Props> = ({ windowWidth }) => {
   const handleShow = useCallback(() => setIsShow(!isShow), [isShow]);
 
   return (
-    <section id="about" className="about">
+    <section id="about" className="about" ref={aboutPageRef}>
       <div className="about__container">
         <div className="about__content">
           <h2 className="about__title h2">About us</h2>
