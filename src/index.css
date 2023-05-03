@@ -23,6 +23,36 @@
   background-color: var(--background);
 }
 
+::-webkit-scrollbar {
+  width: 0.5em;
+
+  z-index: -3;
+
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+
+  border-radius: 4px;
+
+  width: 4px;
+
+  height: 93.24vh;
+
+  margin: 6px 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 20px;
+  border: 3px solid #8d8d8d;
+
+  height: 129px;
+
+  width: 4px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -38,7 +68,7 @@ body {
   min-width: 100vw;
   min-height: 100vh;
 
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .h2 {
