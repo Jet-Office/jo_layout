@@ -95,10 +95,6 @@
   margin: 0;
 }
 
-.cases__text_description {
-  max-width: 300px;
-}
-
 .cases__card_name {
   text-transform: uppercase;
 }
@@ -124,6 +120,7 @@
 
 .cases__descriptions {
   max-height: 750px;
+  max-width: 49.65vw;
 
   overflow-y: scroll;
 }
