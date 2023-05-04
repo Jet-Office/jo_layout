@@ -286,8 +286,8 @@
   }
 
   .pricing__calculator_icon {
-    height: 70px;
-    width: 70px;
+    height: 40px;
+    width: 40px;
   }
 
   .pricing__card_background {
@@ -296,6 +296,67 @@
 
   .pricing__container {
     gap: 20px;
+  }
+
+  .pricing__card_title {
+    font-size: 4.1025vw;
+  }
+
+  .pricing__card_description {
+    font-size: 3.077vw;
+  }
+
+  .pricing__card_price {
+    font-size: 9.23vw;
+
+    margin-top: -20px;
+
+    height: fit-content;
+  }
+
+  .pricing__card--3560::after,
+  .pricing__card--1430::after,
+  .pricing__card--510::after,
+  .pricing__card--calculator::after, 
+  .pricing__card--startup::after {
+    font-size: 5.128vw;
+
+    width: 3.077vw;
+    height: 7.08vw;
+
+    top: -10px;
+  }
+
+  .pricing__card--3560::after {
+    left: 30px;
+  }
+  
+  .pricing__card--1430::after {
+    left: 38px;
+  }
+  
+  .pricing__card--510::after {
+    left: 48px;
+  }
+  
+  .pricing__card--calculator::after {
+    left: 50px;
+  }
+  
+  .pricing__card--startup::after {
+    left: 42px;
+  }
+
+  .pricing__card_payment {
+    font-size: 3.077vw;
+  }
+
+  .pricing__card_monthly {
+    font-size: 4.103vw;
+  }
+
+  .pricing__card_preference {
+    font-size: 4.103vw;
   }
 }
 

@@ -25,8 +25,6 @@
   grid-template-columns: repeat(1, 5fr);
 
   gap: 10px;
-
-  max-height: 896px;
 }
 
 .cases__background {
@@ -105,7 +103,7 @@
 
   gap: 30px;
 
-  min-height: 710px;
+  height: 790px;
 
   padding: 24px 20px;
 }
@@ -119,8 +117,8 @@
 }
 
 .cases__descriptions {
-  max-height: 750px;
-  max-width: 49.65vw;
+  height: 750px;
+  width: 49.65vw;
 
   overflow-y: scroll;
 }
@@ -284,8 +282,8 @@
 }
 
 @media (min-width: 1920px) {
-  .cases__list {
-    max-height: 62.2vh;
+  .cases__content {
+    height: 241.5vh;
   }
 
   .cases__card {
@@ -304,17 +302,13 @@
     font-size: 1.4vw;
   }
 
-  .cases__text_description {
-    max-width: 20.8vw;
-  }
-
   .cases__descriptions {
     display: flex;
     flex-direction: column;
 
-    gap: 30px;
+    height: 241.5vh;
 
-    min-height: 49.3vw;
+    gap: 30px;
 
     padding: 3vh 1.4vw;
   }
