@@ -10,7 +10,7 @@ export const CrewItem: React.FC<Props> = ({ crewItem: { avatar, name, role } }) 
     <div className="crew__item">
       <div className="crew__img_container">
         <img
-          src={`./crew-photos/${avatar}`}
+          src={`/crew-photos/${avatar}`}
           className="crew__img"
           alt=""
         />

@@ -53,7 +53,7 @@ export const CasesItem: React.FC<Props> = ({
         <div className="cases__card" onClick={() => handleClick(id)}>
           <div className="cases__card_icon_wrapper">
             <img
-              src={`./services-icons/${icon}`}
+              src={`/services-icons/${icon}`}
               alt="services-icon"
               className="cases__card_icon"
             />
@@ -62,7 +62,7 @@ export const CasesItem: React.FC<Props> = ({
           {windowWidth <= 641 && (
             <div className="cases__chevron_wrapper">
               <img
-                src="./chevron-down.svg"
+                src="/chevron-down.svg"
                 alt=""
                 className={chevronIconClassName}
               />

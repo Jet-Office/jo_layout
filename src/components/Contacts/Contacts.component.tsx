@@ -21,7 +21,7 @@ export const Contacts: React.FC<Props> = ({ contactsPageRef }) => {
               key={contact.id}
             >
               <img
-                src={`./contacts-icons/${contact.icon}`}
+                src={`/contacts-icons/${contact.icon}`}
                 alt=""
                 className="contacts__icon"
               />
