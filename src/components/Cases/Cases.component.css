@@ -11,6 +11,8 @@
   align-items: flex-start;
 
   gap: 40px;
+
+  margin-left: 1.5vw;
 }
 
 .cases__content {
@@ -138,7 +140,7 @@
 
 @media (max-width: 1120px) {
   .cases__descriptions {
-    width: max-content;
+    width: 48vw;
   }
 }
 
@@ -146,7 +148,7 @@
   .cases {
     all: unset;
 
-    margin-left: 10vw;
+    margin-left: 4vw;
   }
 
   .cases__list {
@@ -170,7 +172,7 @@
   }
 
   .cases__text_description {
-    max-width: 20.8vw;
+    max-width: 30vw;
   }
 
   .cases__descriptions {
@@ -179,8 +181,7 @@
 
     gap: 30px;
 
-    min-height: 49.3vw;
-    max-height: none;
+    height: 56.3vw;
 
     padding: 3vh 1.4vw;
   }
@@ -257,8 +258,6 @@
   .cases__card_text {
     text-align: left;
 
-    max-width: 51.28vw;
-
     font-size: 4.103vw;
     line-height: 140%;
   }
@@ -268,6 +267,8 @@
     margin-bottom: 20px;
 
     font-size: 4.103vw;
+
+    text-align: left;
   }
 
   .cases__list {
@@ -284,6 +285,10 @@
 @media (min-width: 1920px) {
   .cases__content {
     height: 241.5vh;
+  }
+
+  .cases__list {
+    max-height: 101.8vh;
   }
 
   .cases__card {
