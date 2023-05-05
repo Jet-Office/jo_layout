@@ -286,6 +286,10 @@
     height: 241.5vh;
   }
 
+  .cases__list {
+    max-height: 101.8vh;
+  }
+
   .cases__card {
     gap: 1.4vw;
 
