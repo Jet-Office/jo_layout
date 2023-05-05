@@ -51,7 +51,7 @@ export const Head: React.FC<Props> = ({ windowWidth, activePageRef }) => {
     <div className={`head${isHome ? " head--header" : " head--main"}`}>
       <div className="head__container">
         <a href="#" className="head__logo">
-          <img src={Logo} alt="JetOffice logo" className="head__logo_img" />
+          <img src={Logo} alt="JetOffice logo" width={110} height={40} srcSet="logo.svg 100%" className="head__logo_img" />
         </a>
         {windowWidth > 641 ? (
           <Navigation activeLink={activeLink} setActiveLink={setActiveLink} />

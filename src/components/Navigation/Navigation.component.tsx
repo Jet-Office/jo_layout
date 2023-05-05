@@ -1,5 +1,5 @@
 import "./Navigation.component.css";
-import { Link } from "./types/link.type";
+import { Link } from "../../types/link.type";
 import { useCallback } from "react";
 
 type Props = {

@@ -67,7 +67,7 @@ export const About: React.FC<Props> = ({ windowWidth, aboutPageRef }) => {
           <Buttons />
         </div>
         <div className="about__earth">
-          <img src="/earth.png" alt="earth" className="about__earth_img" />
+          <img src="/earth.webp" width={793} height={820} alt="earth" className="about__earth_img" />
         </div>
       </div>
     </section>

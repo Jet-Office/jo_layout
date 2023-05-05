@@ -2,6 +2,7 @@
   font-family: "Proxima Nova Bold";
   src: url(/fonts/proxima/proxima-nova-bold.otf);
   font-weight: 700;
+  font-display: swap;
 }
 
 .pricing {
