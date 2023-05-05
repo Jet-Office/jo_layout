@@ -37,10 +37,6 @@
 }
 
 @media (max-width: 1050px) and (min-width: 642px)  {
-  .about__container {
-    padding-left: 0.7vw;
-  }
-
   .about__paragraph {
     font-size: 1.4vw;
   }

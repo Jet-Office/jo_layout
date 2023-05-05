@@ -11,6 +11,8 @@
   align-items: flex-start;
 
   gap: 40px;
+
+  margin-left: 1.5vw;
 }
 
 .cases__content {
@@ -138,7 +140,7 @@
 
 @media (max-width: 1120px) {
   .cases__descriptions {
-    width: max-content;
+    width: 48vw;
   }
 }
 
@@ -146,7 +148,7 @@
   .cases {
     all: unset;
 
-    margin-left: 10vw;
+    margin-left: 4vw;
   }
 
   .cases__list {
@@ -170,7 +172,7 @@
   }
 
   .cases__text_description {
-    max-width: 20.8vw;
+    max-width: 30vw;
   }
 
   .cases__descriptions {
@@ -179,8 +181,7 @@
 
     gap: 30px;
 
-    min-height: 49.3vw;
-    max-height: none;
+    height: 56.3vw;
 
     padding: 3vh 1.4vw;
   }
