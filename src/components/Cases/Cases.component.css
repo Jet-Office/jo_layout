@@ -257,8 +257,6 @@
   .cases__card_text {
     text-align: left;
 
-    max-width: 51.28vw;
-
     font-size: 4.103vw;
     line-height: 140%;
   }
@@ -268,6 +266,8 @@
     margin-bottom: 20px;
 
     font-size: 4.103vw;
+
+    text-align: left;
   }
 
   .cases__list {
