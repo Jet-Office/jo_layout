@@ -1,2 +1,10 @@
 User-agent: *
-Disallow:
+Disallow: /benefits-icons/
+Disallow: /contacts-icons/
+Disallow: /crew-icons/
+Disallow: /services-icons/
+Disallow: /head-icons/
+Disallow: /helpers-icons/
+Disallow: /pricing-icons/
+Disallow: /backgrounds/
+Disallow: /fonts/
