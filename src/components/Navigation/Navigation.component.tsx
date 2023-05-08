@@ -8,7 +8,11 @@ type Props = {
   setActiveLink: (link: string) => void;
 };
 
-export const Navigation: React.FC<Props> = ({ handleCLose, activeLink, setActiveLink }) => {
+export const Navigation: React.FC<Props> = ({
+  handleCLose,
+  activeLink,
+  setActiveLink,
+}) => {
   const links: Link[] = [
     {
       id: 1,
@@ -56,12 +60,11 @@ export const Navigation: React.FC<Props> = ({ handleCLose, activeLink, setActive
         {links.map((link) => (
           <li
             className={`navigation__item_background${
-              (activeLink.toLowerCase() === link.name.toLowerCase())
+              activeLink.toLowerCase() === link.name.toLowerCase()
                 ? " navigation__item_background--active"
                 : ""
             }`}
             key={link.id}
-            onClick={() => console.log(activeLink.toLowerCase())}
           >
             <div className="navigation__item">
               <a

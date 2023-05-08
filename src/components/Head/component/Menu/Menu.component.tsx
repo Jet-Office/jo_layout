@@ -34,7 +34,13 @@ export const Menu: React.FC<Props> = ({ activeLink, setActiveLink }) => {
     <>
       <div className="menu" onClick={handleOpen}>
         <div className="menu__icon_container">
-          <img src="/head-icons/menu.svg" alt="menu" className="menu__icon" />
+          <img
+            src="/head-icons/menu.svg"
+            alt="menu"
+            className="menu__icon"
+            width={30}
+            height={30}
+          />
         </div>
       </div>
       {isOpen && (
@@ -44,6 +50,8 @@ export const Menu: React.FC<Props> = ({ activeLink, setActiveLink }) => {
               src="/head-icons/close-icon.svg"
               alt="close menu"
               className="menu__close_icon"
+              width={30}
+              height={30}
             />
           </div>
           <Navigation
