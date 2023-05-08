@@ -6,12 +6,14 @@ type Props = {
   handleCLose?: () => void;
   activeLink: string;
   setActiveLink: (link: string) => void;
+  setIsClickLink: (isClick: boolean) => void;
 };
 
 export const Navigation: React.FC<Props> = ({
   handleCLose,
   activeLink,
   setActiveLink,
+  setIsClickLink,
 }) => {
   const links: Link[] = [
     {
@@ -48,10 +50,11 @@ export const Navigation: React.FC<Props> = ({
 
   const handleClick = useCallback(
     (name: string) => {
+      setIsClickLink(true);
       setActiveLink(name);
       handleCLose && handleCLose();
     },
-    [handleCLose, setActiveLink]
+    [handleCLose, setActiveLink, setIsClickLink]
   );
 
   return (

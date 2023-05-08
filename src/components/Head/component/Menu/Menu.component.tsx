@@ -5,9 +5,10 @@ import { Navigation } from "../../../Navigation";
 type Props = {
   activeLink: string;
   setActiveLink: (name: string) => void;
+  setIsClickLink: (isClick: boolean) => void;
 };
 
-export const Menu: React.FC<Props> = ({ activeLink, setActiveLink }) => {
+export const Menu: React.FC<Props> = ({ activeLink, setActiveLink,setIsClickLink }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -58,6 +59,7 @@ export const Menu: React.FC<Props> = ({ activeLink, setActiveLink }) => {
             handleCLose={handleClose}
             activeLink={activeLink}
             setActiveLink={setActiveLink}
+            setIsClickLink={setIsClickLink}
           />
         </div>
       )}
