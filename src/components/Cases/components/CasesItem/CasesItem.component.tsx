@@ -62,7 +62,7 @@ export const CasesItem: React.FC<Props> = ({
           {windowWidth <= 641 && (
             <div className="cases__chevron_wrapper">
               <img
-                src="/chevron-down.svg"
+                src="/helpers-icons/chevron-down.svg"
                 alt=""
                 className={chevronIconClassName}
               />

@@ -60,7 +60,7 @@ export const PriceItem: React.FC<Props> = ({
         ) : (
           <div className="pricing__card_info">
             <div className={priceClass}>
-              <img src="/calculator.svg" width={70} height={70} alt="calculator" className="pricing__calculator_icon" />
+              <img src="/pricing-icons/calculator.svg" width={70} height={70} alt="calculator" className="pricing__calculator_icon" />
             </div>
             <p className="pricing__card_payment">{payment}</p>
           </div>
