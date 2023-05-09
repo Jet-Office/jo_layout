@@ -2,10 +2,11 @@
   font-family: "Proxima Nova Semibold";
   src: url(/fonts/proxima/proxima-nova-semibold.otf);
   font-weight: 600;
+  font-display: swap;
 }
 
 .control__background {
-  background-image: url(/nasa_mission_control_center.png);
+  background-image: url(/backgrounds/nasa_mission_control_center.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

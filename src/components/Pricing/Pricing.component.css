@@ -2,6 +2,7 @@
   font-family: "Proxima Nova Bold";
   src: url(/fonts/proxima/proxima-nova-bold.otf);
   font-weight: 700;
+  font-display: swap;
 }
 
 .pricing {
@@ -232,7 +233,7 @@
 }
 
 .pricing--purple {
-  color: #7c66e9;
+  color: #aa97f2;
 }
 
 .pricing__card_monthly {

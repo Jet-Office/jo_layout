@@ -24,6 +24,8 @@ export const Contacts: React.FC<Props> = ({ contactsPageRef }) => {
                 src={`/contacts-icons/${contact.icon}`}
                 alt=""
                 className="contacts__icon"
+                width={24}
+                height={24}
               />
               <p className="contacts__adress">{contact.address}</p>
             </a>

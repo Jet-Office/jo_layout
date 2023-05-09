@@ -13,31 +13,36 @@ type Props = {
 export const Head: React.FC<Props> = ({ windowWidth, activePageRef }) => {
   const [isHome, setIsHome] = useState(true);
   const [activeLink, setActiveLink] = useState("Home");
+  const [isClickLink, setIsClickLink] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const { current } = activePageRef;
-      if (current !== null) {
-        const { top } = current.getBoundingClientRect();
-        if (top >= 0 && top <= window.innerHeight) {
-          setActiveLink(current.id[0].toUpperCase() + current.id.slice(1));
+    if (!isClickLink) {
+      const handleScroll = () => {
+        const { current } = activePageRef;
+        if (current !== null) {
+          const { top } = current.getBoundingClientRect();
+          if (top >= 0 && top <= window.innerHeight) {
+            setActiveLink(current.id[0].toUpperCase() + current.id.slice(1));
+          }
         }
-      }
-    };
+      };
 
-    document.addEventListener("scroll", handleScroll);
+      document.addEventListener("scroll", handleScroll);
 
-    return () => {
-      document.removeEventListener("scroll", handleScroll);
-    };
-  }, [activeLink, activePageRef, setActiveLink]);
+      return () => {
+        document.removeEventListener("scroll", handleScroll);
+      };
+    } else {
+      const { current } = activePageRef;
+
+      current?.id.toLowerCase() === activeLink.toLowerCase() &&
+        setIsClickLink(false);
+    }
+  }, [activeLink, activePageRef, isClickLink]);
 
   useEffect(() => {
     const listenScrollEvent = () => {
-      if (
-        (window.scrollY > 113 && windowWidth > 1000) ||
-        window.scrollY > 87
-      ) {
+      if ((window.scrollY > 113 && windowWidth > 1000) || window.scrollY > 87) {
         setIsHome(false);
       } else {
         setIsHome(true);
@@ -51,12 +56,27 @@ export const Head: React.FC<Props> = ({ windowWidth, activePageRef }) => {
     <div className={`head${isHome ? " head--header" : " head--main"}`}>
       <div className="head__container">
         <a href="#" className="head__logo">
-          <img src={Logo} alt="JetOffice logo" className="head__logo_img" />
+          <img
+            src={Logo}
+            alt="JetOffice logo"
+            width={110}
+            height={40}
+            srcSet="logo.svg 100%"
+            className="head__logo_img"
+          />
         </a>
         {windowWidth > 641 ? (
-          <Navigation activeLink={activeLink} setActiveLink={setActiveLink} />
+          <Navigation
+            setIsClickLink={setIsClickLink}
+            activeLink={activeLink}
+            setActiveLink={setActiveLink}
+          />
         ) : (
-          <Menu activeLink={activeLink} setActiveLink={setActiveLink} />
+          <Menu
+            setIsClickLink={setIsClickLink}
+            activeLink={activeLink}
+            setActiveLink={setActiveLink}
+          />
         )}
       </div>
     </div>

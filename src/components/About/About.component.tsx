@@ -56,7 +56,7 @@ export const About: React.FC<Props> = ({ windowWidth, aboutPageRef }) => {
                 </p>
                 <div className="about__chevron_wrapper">
                   <img
-                    src="/chevron-down.svg"
+                    src="/helpers-icons/chevron-down.svg"
                     alt=""
                     className={chevronIconClassName}
                   />
@@ -67,7 +67,7 @@ export const About: React.FC<Props> = ({ windowWidth, aboutPageRef }) => {
           <Buttons />
         </div>
         <div className="about__earth">
-          <img src="/earth.png" alt="earth" className="about__earth_img" />
+          <img src="/backgrounds/earth.webp" width={793} height={820} alt="earth" className="about__earth_img" />
         </div>
       </div>
     </section>

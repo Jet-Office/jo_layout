@@ -93,8 +93,8 @@
 .button--purple {
   background-color: #14181c;
 
-  color: #7c66e9;
-  border-color: #7c66e9;
+  color: #aa97f2;
+  border-color: #aa97f2;
   width: 192px;
 }
 
@@ -103,7 +103,8 @@
 }
 
 @media (max-width: 641px) {
-  .button--dark, .button--pink {
+  .button--dark,
+  .button--pink {
     width: 87.95vw;
   }
 }
