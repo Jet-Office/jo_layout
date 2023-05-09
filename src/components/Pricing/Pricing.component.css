@@ -19,6 +19,15 @@
   gap: 40px;
 }
 
+.pricing__card_preferences_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  gap: 10px;
+}
+
 .pricing__list {
   display: grid;
   grid-template-columns: repeat(5, 1fr);

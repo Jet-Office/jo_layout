@@ -60,7 +60,13 @@ export const PriceItem: React.FC<Props> = ({
         ) : (
           <div className="pricing__card_info">
             <div className={priceClass}>
-              <img src="/pricing-icons/calculator.svg" width={70} height={70} alt="calculator" className="pricing__calculator_icon" />
+              <img
+                src="/pricing-icons/calculator.svg"
+                width={70}
+                height={70}
+                alt="calculator"
+                className="pricing__calculator_icon"
+              />
             </div>
             <p className="pricing__card_payment">{payment}</p>
           </div>
@@ -74,25 +80,25 @@ export const PriceItem: React.FC<Props> = ({
             className={monthlyClass}
           >{`${monthlyHour} hours monthly for task execution`}</p>
         )}
-        {preferences.length > 0 && (
-          <div className="pricing__card_preferences">
-            {preferences.length > 0 && (
-              <>
-                {preferences.map((preference) => (
-                  <div
-                    className="pricing__card_text_container"
-                    key={preference.id}
-                  >
-                    <div className="pricing__card_preference">
-                      {preference.name}
+        <div className="pricing__card_preferences_container">
+          {preferences.length > 0 && (
+            <div className="pricing__card_preferences">
+              {preferences.length > 0 && (
+                <>
+                  {preferences.map((preference) => (
+                    <div
+                      className="pricing__card_text_container"
+                      key={preference.id}
+                    >
+                      <div className="pricing__card_preference">
+                        {preference.name}
+                      </div>
+                      <InfoTooltip description={preference.description} />
                     </div>
-                    <InfoTooltip description={preference.description} />
-                  </div>
-                ))}
-              </>
-            )}
-            {frealancersPrice > 0 && (
-           
+                  ))}
+                </>
+              )}
+              {frealancersPrice > 0 && (
                 <div className="pricing__card_text_container">
                   <div className="pricing__card_preference">Freelancers</div>
                   <InfoTooltip
@@ -102,19 +108,20 @@ export const PriceItem: React.FC<Props> = ({
                   />
                   <p className="pricing__card_preference">{`$${frealancersPrice}/h`}</p>
                 </div>
+              )}
+            </div>
+          )}
+          <div className="pricing__card_preferences">
+            {team.length > 0 && (
+              <>
+                {team.map((preference) => (
+                  <div className="pricing__card_preference" key={preference}>
+                    {preference}
+                  </div>
+                ))}
+              </>
             )}
           </div>
-        )}
-        <div className="pricing__card_preferences">
-          {team.length > 0 && (
-            <>
-              {team.map((preference) => (
-                <div className="pricing__card_preference" key={preference}>
-                  {preference}
-                </div>
-              ))}
-            </>
-          )}
         </div>
       </div>
     </div>
