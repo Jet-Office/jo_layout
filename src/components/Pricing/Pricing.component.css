@@ -27,7 +27,7 @@
 
   gap: 10px;
 
-  max-width: 183px;
+  max-width: 90%;
 }
 
 .pricing__list {
@@ -381,11 +381,15 @@
   .pricing__card_background {
     min-width: 14vw;
     max-width: 16.1vw;
-    height: 70vw;
+    min-height: 70vw;
 
     border-radius: 0.56vw;
 
-    padding: 5px;
+    padding: 5px 5px 15px 5px;
+  }
+
+  .pricing__card {
+    padding-bottom: 10px;
   }
 
   .pricing__card_head {
@@ -482,8 +486,6 @@
   }
 
   .pricing__card_preference {
-    max-width: 13vw;
-  
     font-size: 1.4vw;
   }
 
