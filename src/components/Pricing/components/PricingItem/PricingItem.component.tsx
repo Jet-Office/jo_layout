@@ -106,7 +106,7 @@ export const PriceItem: React.FC<Props> = ({
                       "Jet Talent Hub is a database of freelancers we tap into for fire drills. Freelancers' work hours beyond the package hours are billed separately (usually from a deposit)."
                     }
                   />
-                  <p className="pricing__card_preference">{`$${frealancersPrice}/h`}</p>
+                  <p className="pricing__card_preference" translate="no">{`$${frealancersPrice}/h`}</p>
                 </div>
               )}
             </div>
