@@ -54,7 +54,7 @@ export const PriceItem: React.FC<Props> = ({
         </div>
         {price !== "calculate" ? (
           <div className="pricing__card_info">
-            <div className={priceClass}>{price}</div>
+            <div className={priceClass} translate="no">{price}</div>
             <p className="pricing__card_payment">{payment}</p>
           </div>
         ) : (

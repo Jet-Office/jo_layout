@@ -26,6 +26,8 @@
   align-items: flex-start;
 
   gap: 10px;
+
+  max-width: 183px;
 }
 
 .pricing__list {
@@ -38,7 +40,7 @@
 .pricing__card_background {
   min-width: 200px;
   max-width: 232px;
-  height: 1000px;
+  min-height: 1000px;
 
   position: relative;
 
@@ -246,7 +248,7 @@
 }
 
 .pricing__card_monthly {
-  max-width: 180px;
+  max-width: 237px;
   height: fit-content;
 
   font-family: "Proxima Nova Bold";
@@ -268,7 +270,7 @@
 }
 
 .pricing__card_preference {
-  max-width: 200px;
+  max-width: 240px;
 
   font-size: 20px;
   line-height: 140%;
