@@ -27,7 +27,7 @@
 
   gap: 10px;
 
-  width: 90%;
+  max-width: 81%;
 }
 
 .pricing__list {
