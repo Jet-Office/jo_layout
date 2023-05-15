@@ -31,6 +31,7 @@
 
 .button--dark:hover {
   background: rgba(233, 97, 255, 0.1);
+  color: #e961ff;
 }
 
 .button--pink {
@@ -42,6 +43,7 @@
 
 .button--pink:hover {
   background: #f094ff;
+  color: #14181c;
 }
 
 .button--green {
@@ -54,6 +56,7 @@
 
 .button--green:hover {
   background: rgba(26, 182, 134, 0.1);
+  color: #1ab686;
 }
 
 .button--blue {
@@ -68,6 +71,14 @@
 .button--blue:hover,
 .button--pink_price:hover {
   background: rgba(114, 165, 242, 0.1);
+}
+
+.button--blue:hover {
+  color: #72a5f2;
+}
+
+.button--pink_price:hover {
+  color: #e961ff;
 }
 
 .button--pink_price {
@@ -88,6 +99,7 @@
 
 .button--mint:hover {
   background: rgba(0, 229, 229, 0.1);
+  color: #00e5e5;
 }
 
 .button--purple {
@@ -100,6 +112,7 @@
 
 .button--purple:hover {
   background: rgba(124, 102, 233, 0.1);
+  color: #aa97f2;
 }
 
 @media (max-width: 641px) {

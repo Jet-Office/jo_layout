@@ -24,7 +24,7 @@ export const About: React.FC<Props> = ({ windowWidth, aboutPageRef }) => {
 
   return (
     <section id="about" className="about" ref={aboutPageRef}>
-      <div className="about__container">
+      <div className="about__container container">
         <div className="about__content">
           <h2 className="about__title h2">About us</h2>
           <div className="about__text">
@@ -67,7 +67,13 @@ export const About: React.FC<Props> = ({ windowWidth, aboutPageRef }) => {
           <Buttons />
         </div>
         <div className="about__earth">
-          <img src="/backgrounds/earth.webp" width={793} height={820} alt="earth" className="about__earth_img" />
+          <img
+            src="/backgrounds/earth.webp"
+            width={793}
+            height={820}
+            alt="earth"
+            className="about__earth_img"
+          />
         </div>
       </div>
     </section>

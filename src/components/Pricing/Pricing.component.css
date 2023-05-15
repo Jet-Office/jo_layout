@@ -27,7 +27,7 @@
 
   gap: 10px;
 
-  max-width: 81%;
+  max-width: 95%;
 }
 
 .pricing__list {
@@ -70,6 +70,13 @@
   border-radius: 8px;
 }
 
+.pricing__card_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .pricing__card_background--popular::after {
   content: "";
   position: absolute;
@@ -98,6 +105,8 @@
   font-family: "Proxima Nova Bold", sans-serif;
   font-weight: 700;
   font-size: 14px;
+
+  z-index: 99;
 }
 
 .pricing__card_head {
@@ -383,7 +392,7 @@
 
     border-radius: 0.56vw;
 
-    padding: 5px 5px 15px 5px;
+    padding: 5px;
   }
 
   .pricing__card {

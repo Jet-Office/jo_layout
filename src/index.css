@@ -59,7 +59,7 @@ html {
 }
 
 body {
-  font-family: "Proxima Nova regular";
+  font-family: "Proxima Nova regular", serif;
 
   box-sizing: border-box;
 
@@ -70,6 +70,12 @@ body {
   min-height: 100vh;
 
   overflow-x: hidden !important;
+}
+
+.container {
+  max-width: 91.8vw;
+
+  margin: 0 auto;
 }
 
 .h2 {
@@ -92,5 +98,13 @@ body {
 
     font-family: "Proxima Nova Bold";
     font-weight: 700;
+  }
+
+  .container {
+    margin: 0;
+
+    margin-left: 4vw;
+
+    max-width: none;
   }
 }

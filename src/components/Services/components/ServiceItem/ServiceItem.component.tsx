@@ -1,4 +1,7 @@
 import { Service } from "../../../../types/service.type";
+
+import { Card } from "antd";
+
 import "../../Services.component.css";
 
 type Props = {
@@ -7,13 +10,13 @@ type Props = {
 
 export const ServiceItem: React.FC<Props> = ({ service: { name, icon } }) => {
   return (
-    <div className="services__item">
+    <Card className="services__item" style={{fontFamily: "inherit"}}>
       <img
         src={`/services-icons/${icon}`}
         alt="service-icon"
         className="services__icon"
       />
       <p className="services__description">{name}</p>
-    </div>
+    </Card>
   );
 };
