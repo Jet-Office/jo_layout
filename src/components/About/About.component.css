@@ -26,6 +26,8 @@
 
 .about__earth {
   object-fit: cover;
+
+  width: 100vw;
 }
 
 .about__earth_img {
@@ -36,7 +38,7 @@
   mix-blend-mode: screen;
 }
 
-@media (max-width: 1050px) and (min-width: 642px)  {
+@media (max-width: 1050px) and (min-width: 642px) {
   .about__paragraph {
     font-size: 1.4vw;
   }
@@ -50,7 +52,11 @@
 
     margin-top: 10px;
   }
-  
+
+  .about__container {
+    padding-left: 0;
+  }
+
   .about__earth {
     position: absolute;
 

@@ -35,7 +35,7 @@
   box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.6);
   border-radius: 8px;
 
-  width: 390px;
+  width: 27.083vw;
 }
 
 .crew__img_container {
@@ -143,7 +143,7 @@
   }
 
   .crew__item {
-    max-width: 87.95vw;
+    width: 87.95vw;
   }
 
   .crew__img_container {

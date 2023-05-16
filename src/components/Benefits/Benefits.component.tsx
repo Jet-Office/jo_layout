@@ -62,7 +62,7 @@ export const Benefits = () => {
 
   return (
     <section className="benefits">
-      <div className="benefits__container">
+      <div className="benefits__container container">
         <div className="benefits__text_container">
           <h2 className="benefits__title h2">Benefits</h2>
           <div className="benefits__list">

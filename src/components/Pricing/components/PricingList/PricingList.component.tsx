@@ -13,14 +13,14 @@ type Props = {
 export const PricingList: React.FC<Props> = ({ priceList, windowWidth }) => {
   return (
     <>
-      {windowWidth > 1050 ? (
+      {windowWidth > 1024 ? (
         <div className="pricing__list">
           {priceList.map((item) => (
             <PriceItem key={item.id} priceItem={item} />
           ))}
         </div>
       ) : (
-          <Swiper loop slideSize={25} trackOffset={15}>
+          <Swiper loop slideSize={windowWidth > 641 ? 40 : 25} trackOffset={15}>
             {priceList.map((item) => (
               <Swiper.Item key={item.id}>
                 <PriceItem priceItem={item} />

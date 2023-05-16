@@ -73,10 +73,6 @@
 }
 
 @media (max-width: 1100px) {
-  .benefits__plane_container {
-    display: none;
-  }
-
   .benefits__text_container {
     justify-content: center;
   }
@@ -89,11 +85,13 @@
   }
 
   .benefits__text {
-    max-width: 24.3vw;
-  
-    padding-right: 3.125vw;
-  
+    max-width: 24.3vw;  
+
     font-size: 1.25vw;
+  }
+
+  .benefits__text_container {
+    padding-left: 18vw;
   }
 
   .benefits__plane_container {
@@ -134,7 +132,7 @@
   }
 
   .benefits__text {
-    max-width: 45.9vw;
+    max-width: 40vw;
 
     text-align: left;
 
@@ -148,6 +146,10 @@
     width: 40px;
 
     object-fit: cover;
+  }
+
+  .benefits__text_container {
+    padding-left: 0;
   }
 }
 

@@ -12,9 +12,3 @@
     align-items: center;
   }
 }
-
-@media (max-width: 380px) {
-  .buttons {
-    margin-left: -20px;
-  }
-}

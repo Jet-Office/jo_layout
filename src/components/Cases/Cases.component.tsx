@@ -16,7 +16,7 @@ export const Cases: React.FC<Props> = ({ windowWidth, casesPageRef }) => {
 
   return (
     <section className="cases" id="cases" ref={casesPageRef}>
-      <div className="cases__container">
+      <div className="cases__container container">
         <h2 className="cases__title h2">Cases we can do</h2>
         <div className="cases__content">
             <CasesList windowWidth={windowWidth} cases={services} setActiveCaseId={setActiveCaseId} setDescriptions={setDescriptions} activeCaseId={activeCaseId} />
