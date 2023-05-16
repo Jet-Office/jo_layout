@@ -4,9 +4,11 @@ import { Price } from "../../../../types/price.type";
 import "../../Pricing.component.css";
 
 import { Button } from "../../../Button";
-import { InfoTooltip } from "../InfoTooltip";
 
 import { Card, Space } from "antd";
+
+import { InfoCircleOutlined } from "@ant-design/icons";
+import { Tooltip } from "antd";
 
 type Props = {
   priceItem: Price;
@@ -102,7 +104,20 @@ export const PriceItem: React.FC<Props> = ({
                         <div className="pricing__card_preference">
                           {preference.name}
                         </div>
-                        <InfoTooltip description={preference.description} />
+                        <Tooltip
+                          placement="top"
+                          title={preference.description}
+                          color="#14181c"
+                          style={{ fontFamily: "inherit" }}
+                        >
+                          <InfoCircleOutlined
+                            style={{
+                              color: "#ccc",
+                              marginLeft: "10px",
+                              cursor: "pointer",
+                            }}
+                          />
+                        </Tooltip>
                       </div>
                     ))}
                   </>
@@ -110,11 +125,21 @@ export const PriceItem: React.FC<Props> = ({
                 {frealancersPrice > 0 && (
                   <div className="pricing__card_text_container">
                     <div className="pricing__card_preference">Freelancers</div>
-                    <InfoTooltip
-                      description={
-                        "Jet Talent Hub is a database of freelancers we tap into for fire drills. Freelancers' work hours beyond the package hours are billed separately (usually from a deposit)."
-                      }
-                    />
+                    <Tooltip
+                      placement="top"
+                      title="Jet Talent Hub is a database of freelancers we tap into for fire drills. Freelancers' work hours beyond the package hours are billed separately (usually from a deposit)."
+                      color="#14181c"
+                      style={{ fontFamily: "inherit" }}
+                    >
+                      <InfoCircleOutlined
+                        style={{
+                          color: "#ccc",
+                          marginLeft: "5px",
+                          marginRight: "5px",
+                          cursor: "pointer",
+                        }}
+                      />
+                    </Tooltip>
                     <p
                       className="pricing__card_preference"
                       translate="no"
