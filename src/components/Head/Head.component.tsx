@@ -16,29 +16,31 @@ export const Head: React.FC<Props> = ({ windowWidth, activePageRef }) => {
   const [isClickLink, setIsClickLink] = useState(false);
 
   useEffect(() => {
-    if (!isClickLink) {
-      const handleScroll = () => {
-        const { current } = activePageRef;
-        if (current !== null) {
-          const { top } = current.getBoundingClientRect();
-          if (top >= 0 && top <= window.innerHeight) {
-            setActiveLink(current.id[0].toUpperCase() + current.id.slice(1));
-          }
-        }
-      };
-
-      document.addEventListener("scroll", handleScroll);
-
-      return () => {
-        document.removeEventListener("scroll", handleScroll);
-      };
-    } else {
+    if (isClickLink) {
       const { current } = activePageRef;
-
-      current?.id.toLowerCase() === activeLink.toLowerCase() &&
+      if (current?.id.toLowerCase() === activeLink.toLowerCase()) {
         setIsClickLink(false);
+      }
+      return;
     }
+  
+    const handleScroll = () => {
+      const { current } = activePageRef;
+      if (current) {
+        const { top } = current.getBoundingClientRect();
+        if (top >= 0 && top <= window.innerHeight) {
+          setActiveLink(current.id[0].toUpperCase() + current.id.slice(1));
+        }
+      }
+    };
+  
+    document.addEventListener("scroll", handleScroll);
+  
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
+    };
   }, [activeLink, activePageRef, isClickLink]);
+  
 
   useEffect(() => {
     const listenScrollEvent = () => {
