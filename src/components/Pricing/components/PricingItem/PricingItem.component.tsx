@@ -5,7 +5,7 @@ import "../../Pricing.component.css";
 
 import { Button } from "../../../Button";
 
-import { Card, Space } from "antd";
+import { Space } from "antd";
 
 import { InfoCircleOutlined } from "@ant-design/icons";
 import { Tooltip } from "antd";
@@ -53,7 +53,7 @@ export const PriceItem: React.FC<Props> = ({
 
   return (
     <div className={backgroundClass}>
-      <Card className="pricing__card" style={{ fontFamily: "inherit" }}>
+      <div className="pricing__card" style={{ fontFamily: "inherit" }}>
         <div className="pricing__card_content">
           <Space direction="vertical" size="large">
             <div className="pricing__card_head">
@@ -161,7 +161,7 @@ export const PriceItem: React.FC<Props> = ({
             </div>
           </div>
         </div>
-      </Card>
+      </div>
     </div>
   );
 };
