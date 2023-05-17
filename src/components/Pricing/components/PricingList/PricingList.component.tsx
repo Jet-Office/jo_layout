@@ -20,7 +20,7 @@ export const PricingList: React.FC<Props> = ({ priceList, windowWidth }) => {
           ))}
         </div>
       ) : (
-          <Swiper loop slideSize={windowWidth > 641 ? 40 : 25} trackOffset={15}>
+          <Swiper loop slideSize={windowWidth > 641 ? 34 : 25} trackOffset={15}>
             {priceList.map((item) => (
               <Swiper.Item key={item.id}>
                 <PriceItem priceItem={item} />
