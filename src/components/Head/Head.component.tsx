@@ -16,18 +16,15 @@ export const Head: React.FC<Props> = ({ windowWidth, activePageRef }) => {
   const [isClickLink, setIsClickLink] = useState(false);
 
   useEffect(() => {
-    if (isClickLink) {
-      const { current } = activePageRef;
+    const { current } = activePageRef;
 
-      if (current?.id.toLowerCase() === activeLink.toLowerCase()) {
-        setIsClickLink(false);
-      }
+    if (isClickLink && current?.id.toLowerCase() === activeLink.toLowerCase()) {
+      setIsClickLink(false);
+
       return;
     }
 
     const handleScroll = () => {
-      const { current } = activePageRef;
-
       if (current) {
         const { top } = current.getBoundingClientRect();
         if (top >= 0 && top <= window.innerHeight) {
