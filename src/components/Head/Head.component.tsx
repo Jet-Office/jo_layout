@@ -18,14 +18,16 @@ export const Head: React.FC<Props> = ({ windowWidth, activePageRef }) => {
   useEffect(() => {
     if (isClickLink) {
       const { current } = activePageRef;
+
       if (current?.id.toLowerCase() === activeLink.toLowerCase()) {
         setIsClickLink(false);
       }
       return;
     }
-  
+
     const handleScroll = () => {
       const { current } = activePageRef;
+
       if (current) {
         const { top } = current.getBoundingClientRect();
         if (top >= 0 && top <= window.innerHeight) {
@@ -33,14 +35,13 @@ export const Head: React.FC<Props> = ({ windowWidth, activePageRef }) => {
         }
       }
     };
-  
+
     document.addEventListener("scroll", handleScroll);
-  
+
     return () => {
       document.removeEventListener("scroll", handleScroll);
     };
   }, [activeLink, activePageRef, isClickLink]);
-  
 
   useEffect(() => {
     const listenScrollEvent = () => {
