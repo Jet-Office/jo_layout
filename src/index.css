@@ -90,6 +90,7 @@ body {
   mix-blend-mode: normal;
 
   margin-top: 70px;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 641px) {
