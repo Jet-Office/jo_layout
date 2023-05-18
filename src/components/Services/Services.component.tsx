@@ -2,8 +2,6 @@ import { services } from "../../data/services.json";
 
 import "./Services.component.css";
 
-import { Space } from "antd";
-
 import { ServicesList } from "./components/ServicesList";
 
 type Props = {

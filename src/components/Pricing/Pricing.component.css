@@ -23,11 +23,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 
   gap: 10px;
 
-  max-width: 95%;
+  max-width: 13.3vw;
 }
 
 .pricing__list {
@@ -40,7 +40,7 @@
 .pricing__card_background {
   min-width: 200px;
   max-width: 232px;
-  height: 1000px;
+  height: 900px;
 
   position: relative;
 
@@ -283,8 +283,6 @@
   line-height: 140%;
 
   color: var(--text-color);
-
-  text-align: left;
 }
 
 .pricing__card_text_container {
@@ -312,10 +310,12 @@
   .pricing__card_background {
     margin-top: 55px; 
     margin-bottom: 50px;  
+
+    height: 710px;
   }
 
-  .pricing__container {
-    gap: 20px;
+  .pricing__card_preferences_container {
+    max-width: 61vw;
   }
 
   .pricing__card_title {
