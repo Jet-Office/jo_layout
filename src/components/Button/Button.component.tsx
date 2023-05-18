@@ -8,7 +8,7 @@ type Props = {
 export const Button: React.FC<Props> = ({ color, text }) => {
   return (
     <a
-      href="https://t.me/jetoffice_bot"
+      href="https://t.me/jetoffice_help_bot"
       target="_blank"
       rel="noreferrer"
       className={`button button--${color}`}
