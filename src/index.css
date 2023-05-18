@@ -90,6 +90,7 @@ body {
   mix-blend-mode: normal;
 
   margin-top: 70px;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 641px) {
@@ -98,6 +99,8 @@ body {
 
     font-family: "Proxima Nova Bold";
     font-weight: 700;
+
+    margin-bottom: 20px;
   }
 
   .container {

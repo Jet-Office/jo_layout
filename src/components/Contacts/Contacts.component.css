@@ -8,8 +8,6 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-
-  gap: 40px;
 }
 
 .contacts__info_container {

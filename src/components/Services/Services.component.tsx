@@ -13,17 +13,9 @@ type Props = {
 export const Services: React.FC<Props> = ({ activeRef }) => {
   return (
     <section className="services" id="services" ref={activeRef}>
-      <div className="container">
-        <Space
-          direction="vertical"
-          size="large"
-          className="services__container"
-        >
-          <div className="services__title_wrapper">
-            <h2 className="services__title h2">Services</h2>
-          </div>
-          <ServicesList services={services} />
-        </Space>
+      <div className="container services__container">
+        <h2 className="services__title h2">Services</h2>
+        <ServicesList services={services} />
       </div>
     </section>
   );
