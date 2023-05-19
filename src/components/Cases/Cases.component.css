@@ -18,6 +18,8 @@
   grid-template-columns: 5fr 7fr;
 
   gap: 40px;
+
+  height: 790px;
 }
 
 .cases__list {
@@ -140,6 +142,12 @@
 @media (max-width: 1120px) {
   .cases__descriptions {
     width: 48vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .cases__content {
+    height: 400px;
   }
 }
 
@@ -272,6 +280,10 @@
     text-align: left;
 
     padding-left: 5.13vw;
+  }
+
+  .cases__content {
+    height: auto;
   }
 }
 
