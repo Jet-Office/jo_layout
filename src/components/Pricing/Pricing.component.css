@@ -80,7 +80,7 @@
 .pricing__card_background--popular::after {
   content: "";
   position: absolute;
-  inset: -.325em;
+  inset: -0.325em;
   background: var(--gradient);
   filter: blur(1.5em);
   z-index: -1;
@@ -309,8 +309,8 @@
   }
 
   .pricing__card_background {
-    margin-top: 55px; 
-    margin-bottom: 50px;  
+    margin-top: 55px;
+    margin-bottom: 50px;
 
     height: 710px;
   }
@@ -334,7 +334,7 @@
   .pricing__card--3560::after,
   .pricing__card--1430::after,
   .pricing__card--510::after,
-  .pricing__card--calculator::after, 
+  .pricing__card--calculator::after,
   .pricing__card--startup::after {
     font-size: 5.128vw;
 
@@ -347,19 +347,19 @@
   .pricing__card--3560::after {
     left: 30px;
   }
-  
+
   .pricing__card--1430::after {
     left: 38px;
   }
-  
+
   .pricing__card--510::after {
     left: 48px;
   }
-  
+
   .pricing__card--calculator::after {
     left: 50px;
   }
-  
+
   .pricing__card--startup::after {
     left: 42px;
   }
@@ -385,15 +385,11 @@
   .pricing__card_background {
     min-width: 14vw;
     max-width: 16.1vw;
-    min-height: 70vw;
+    min-height: 58vw;
 
     border-radius: 0.56vw;
 
     padding: 5px;
-  }
-
-  .pricing__card {
-    padding-bottom: 10px;
   }
 
   .pricing__card_head {
@@ -414,9 +410,9 @@
     font-size: 1.39vw;
   }
 
-  .pricing__card_background--popular::before { 
+  .pricing__card_background--popular::before {
     top: -20px;
-  
+
     padding: 0.24vh 1.4vw;
 
     font-size: 0.97vw;
@@ -424,50 +420,50 @@
 
   .pricing__card_price {
     font-size: 4.4vw;
-  
+
     height: 9.4vh;
   }
 
   .pricing__card--3560::after {
     width: 0.83vw;
     height: 3.41vh;
-  
+
     font-size: 1.4vw;
     bottom: 1.22vh;
     left: 0.5vw;
   }
-  
+
   .pricing__card--1430::after {
     width: 0.83vw;
     height: 3.41vh;
-  
+
     font-size: 1.4vw;
     bottom: 1.22vh;
     left: 0.8vw;
   }
-  
+
   .pricing__card--510::after {
     width: 0.83vw;
     height: 3.41vh;
-  
+
     font-size: 1.4vw;
     bottom: 1.22vh;
     left: 2vw;
   }
-  
+
   .pricing__card--calculator::after {
     width: 0.83vw;
     height: 3.41vh;
-  
+
     font-size: 1.4vw;
     bottom: 1.22vh;
     left: 3vw;
   }
-  
+
   .pricing__card--startup::after {
     width: 0.83vw;
     height: 3.41vh;
-  
+
     font-size: 1.4vw;
     bottom: 1.22vh;
     left: 1vw;
@@ -475,7 +471,7 @@
 
   .pricing__card_payment {
     font-size: 1vw;
-  
+
     max-width: 13.2vw;
 
     padding-top: 40px;
@@ -499,5 +495,8 @@
     width: 4.86vw;
     height: 4.86vw;
   }
-}
 
+  .pricing__card_preferences_container {
+    max-width: fit-content;
+  }
+}
