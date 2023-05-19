@@ -1,5 +1,6 @@
 import "../../Cases.component.css";
 import { Description } from "../../../../types/service.type";
+import { Card } from "antd";
 
 type Props = {
   descriptions: Description[];
@@ -7,7 +8,7 @@ type Props = {
 
 export const CasesDescription: React.FC<Props> = ({ descriptions }) => {
   return (
-    <div className="cases__descriptions">
+    <Card className="cases__descriptions">
       {descriptions.map(({ id, name, text }) => (
         <div key={id} className="cases__description_wrapper">
           <p className="cases__card_name">{`${name}:`}</p>
@@ -23,6 +24,6 @@ export const CasesDescription: React.FC<Props> = ({ descriptions }) => {
           </ul>
         </div>
       ))}
-    </div>
+    </Card>
   );
 };

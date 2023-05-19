@@ -18,6 +18,8 @@
   grid-template-columns: 5fr 7fr;
 
   gap: 40px;
+
+  height: 790px;
 }
 
 .cases__list {
@@ -101,9 +103,11 @@
   display: flex;
   flex-direction: column;
 
-  gap: 30px;
+  font-family: inherit;
 
-  height: 790px;
+  background-color: var(--background);
+
+  gap: 30px;
 
   padding: 24px 20px;
 }
@@ -117,7 +121,6 @@
 }
 
 .cases__descriptions {
-  height: 750px;
   width: 49.65vw;
 
   overflow-y: scroll;
@@ -142,15 +145,17 @@
   }
 }
 
+@media (max-width: 768px) {
+  .cases__content {
+    height: 400px;
+  }
+}
+
 @media (max-width: 1050px) and (min-width: 642px) {
   .cases {
     all: unset;
 
     margin-left: 4vw;
-  }
-
-  .cases__list {
-    max-height: 62.2vh;
   }
 
   .cases__card {
@@ -178,8 +183,6 @@
     flex-direction: column;
 
     gap: 30px;
-
-    height: 56.3vw;
 
     padding: 3vh 1.4vw;
   }
@@ -278,17 +281,13 @@
 
     padding-left: 5.13vw;
   }
+
+  .cases__content {
+    height: auto;
+  }
 }
 
 @media (min-width: 1920px) {
-  .cases__content {
-    height: 241.5vh;
-  }
-
-  .cases__list {
-    max-height: 101.8vh;
-  }
-
   .cases__card {
     gap: 1.4vw;
 
@@ -308,8 +307,6 @@
   .cases__descriptions {
     display: flex;
     flex-direction: column;
-
-    height: 241.5vh;
 
     gap: 30px;
 
