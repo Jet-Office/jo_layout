@@ -312,4 +312,8 @@
 
     padding: 3vh 1.4vw;
   }
+
+  .cases__content {
+    height: 143vh;
+  }
 }
