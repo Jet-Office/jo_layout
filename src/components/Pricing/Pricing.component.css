@@ -27,7 +27,7 @@
 
   gap: 10px;
 
-  max-width: 13.3vw;
+  max-width: 192px;
 }
 
 .pricing__list {
@@ -313,10 +313,6 @@
     margin-bottom: 50px;  
 
     height: 710px;
-  }
-
-  .pricing__card_preferences_container {
-    max-width: 61vw;
   }
 
   .pricing__card_title {
