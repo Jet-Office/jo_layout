@@ -9,6 +9,7 @@ import { Space } from "antd";
 
 import { InfoCircleOutlined } from "@ant-design/icons";
 import { Tooltip } from "antd";
+import { useState } from "react";
 
 type Props = {
   priceItem: Price;
@@ -20,7 +21,7 @@ export const PriceItem: React.FC<Props> = ({
     titleColor,
     mostPopular,
     description,
-    price,
+    monthlyPrice,
     payment,
     monthlyHour,
     preferences,
@@ -28,6 +29,7 @@ export const PriceItem: React.FC<Props> = ({
     team,
   },
 }) => {
+  const [price] = useState(monthlyPrice);
   const backgroundClass = classNames("pricing__card_background", {
     "pricing__card_background--popular": mostPopular,
   });
