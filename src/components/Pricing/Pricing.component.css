@@ -151,7 +151,7 @@
   position: relative;
 }
 
-.pricing__card--3560::after {
+.pricing__card--business::after {
   content: "$";
 
   width: 12px;
@@ -164,7 +164,7 @@
   left: 7px;
 }
 
-.pricing__card--1430::after {
+.pricing__card--startup::after {
   content: "$";
 
   width: 12px;
@@ -177,7 +177,7 @@
   left: 15px;
 }
 
-.pricing__card--510::after {
+.pricing__card--personal::after {
   content: "$";
 
   width: 12px;
@@ -203,7 +203,7 @@
   left: 50px;
 }
 
-.pricing__card--startup::after {
+.pricing__card--hourly::after {
   content: "$";
 
   width: 12px;
@@ -331,11 +331,11 @@
     height: fit-content;
   }
 
-  .pricing__card--3560::after,
-  .pricing__card--1430::after,
-  .pricing__card--510::after,
+  .pricing__card--business::after,
+  .pricing__card--startup::after,
+  .pricing__card--personal::after,
   .pricing__card--calculator::after,
-  .pricing__card--startup::after {
+  .pricing__card--hourly::after {
     font-size: 5.128vw;
 
     width: 3.077vw;
@@ -344,15 +344,15 @@
     top: -10px;
   }
 
-  .pricing__card--3560::after {
+  .pricing__card--business::after {
     left: 30px;
   }
 
-  .pricing__card--1430::after {
+  .pricing__card--startup::after {
     left: 38px;
   }
 
-  .pricing__card--510::after {
+  .pricing__card--personal::after {
     left: 48px;
   }
 
@@ -360,7 +360,7 @@
     left: 50px;
   }
 
-  .pricing__card--startup::after {
+  .pricing__card--hourly::after {
     left: 42px;
   }
 
@@ -424,7 +424,7 @@
     height: 9.4vh;
   }
 
-  .pricing__card--3560::after {
+  .pricing__card--business::after {
     width: 0.83vw;
     height: 3.41vh;
 
@@ -433,7 +433,7 @@
     left: 0.5vw;
   }
 
-  .pricing__card--1430::after {
+  .pricing__card--startup::after {
     width: 0.83vw;
     height: 3.41vh;
 
@@ -442,7 +442,7 @@
     left: 0.8vw;
   }
 
-  .pricing__card--510::after {
+  .pricing__card--personal::after {
     width: 0.83vw;
     height: 3.41vh;
 
@@ -460,7 +460,7 @@
     left: 3vw;
   }
 
-  .pricing__card--startup::after {
+  .pricing__card--hourly::after {
     width: 0.83vw;
     height: 3.41vh;
 

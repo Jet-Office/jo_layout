@@ -8,7 +8,8 @@ export interface Price {
   id: number;
   name: string;
   description: string;
-  price: number | string;
+  monthlyPrice: number | string;
+  yearlyPrice: number | string;
   monthlyHour: number | string;
   team: string[];
   mostPopular: boolean;
