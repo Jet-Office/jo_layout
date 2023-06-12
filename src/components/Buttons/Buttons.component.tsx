@@ -1,4 +1,3 @@
-
 import { Button } from "../Button";
 import "./Buttons.component.css";
 

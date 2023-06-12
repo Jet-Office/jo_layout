@@ -9,10 +9,11 @@ import { Space } from "antd";
 
 import { InfoCircleOutlined } from "@ant-design/icons";
 import { Tooltip } from "antd";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 type Props = {
   priceItem: Price;
+  options: string;
 };
 
 export const PriceItem: React.FC<Props> = ({
@@ -27,9 +28,19 @@ export const PriceItem: React.FC<Props> = ({
     preferences,
     frealancersPrice,
     team,
+    yearlyPrice
   },
+  options,
 }) => {
-  const [price] = useState(monthlyPrice);
+  const [price, setPrice] = useState(monthlyPrice);
+  useEffect(() => {
+    if (options === 'montly') {
+      setPrice(monthlyPrice);
+    } else {
+      setPrice(yearlyPrice);
+    }
+  }, [monthlyPrice, options, yearlyPrice]);
+  
   const backgroundClass = classNames("pricing__card_background", {
     "pricing__card_background--popular": mostPopular,
   });

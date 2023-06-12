@@ -6,7 +6,7 @@
 }
 
 .pricing {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
 }
@@ -499,4 +499,10 @@
   .pricing__card_preferences_container {
     max-width: fit-content;
   }
+}
+
+.pricing__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }

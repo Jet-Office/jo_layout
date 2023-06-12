@@ -14,6 +14,7 @@ import { Contacts } from "./components/Contacts";
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
   const homePageRef = useRef<HTMLElement>(null);
   const servicesPageRef = useRef<HTMLElement>(null);
   const pricingPageRef = useRef<HTMLElement>(null);
