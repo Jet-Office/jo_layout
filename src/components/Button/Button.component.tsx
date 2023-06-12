@@ -27,13 +27,3 @@ export const Button: React.FC<Props> = ({ color, text }) => {
     </>
   );
 };
-
-
-{/* <a
-href="https://t.me/Oksana_HeadJetOffice"
-target="_blank"
-rel="noreferrer"
-className={`button button--${color}`}
->
-{text}
-</a> */}

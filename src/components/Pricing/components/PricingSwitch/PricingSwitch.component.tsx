@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./PricingSwitch.css";
 
 enum SwitchOptions {
-  OPTION1 = "montly",
+  OPTION1 = "monthly",
   OPTION2 = "yearly"
 }
 

@@ -11,7 +11,7 @@ type Props = {
 };
 
 export const Pricing: React.FC<Props> = ({ windowWidth, activePageRef }) => {
-  const [options, setOptions] = useState('montly');
+  const [options, setOptions] = useState('monthly');
 
   return (
     <section className="pricing ml_15" id="pricing" ref={activePageRef}>

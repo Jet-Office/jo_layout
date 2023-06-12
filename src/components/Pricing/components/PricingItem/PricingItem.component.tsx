@@ -34,13 +34,13 @@ export const PriceItem: React.FC<Props> = ({
 }) => {
   const [price, setPrice] = useState(monthlyPrice);
   useEffect(() => {
-    if (options === 'montly') {
+    if (options === 'monthly') {
       setPrice(monthlyPrice);
     } else {
       setPrice(yearlyPrice);
     }
   }, [monthlyPrice, options, yearlyPrice]);
-  
+
   const backgroundClass = classNames("pricing__card_background", {
     "pricing__card_background--popular": mostPopular,
   });
