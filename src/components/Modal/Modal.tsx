@@ -7,7 +7,7 @@ type Props = {
   children: React.ReactNode;
 };
 
-export const Modal: React.FC<Props> = ({ active, setActive, children }) => {
+export const Modal: React.FC<Props> = ({ active, setActive }) => {
   const handleCloseClick = () => {
     setActive(false);
   };
@@ -19,7 +19,6 @@ export const Modal: React.FC<Props> = ({ active, setActive, children }) => {
   return (
     <div className={active ? "modal active" : "modal"} onClick={handleCloseClick}>
       <div className={active ? "modal__content active" : "modal__content"} onClick={handleContentClick}>
-        {children}
         <h2 className="modal__title">Attention</h2>
         <p className="modal__text">
           "Experience our service with a 14-day free trial! Get a bonus of $30,

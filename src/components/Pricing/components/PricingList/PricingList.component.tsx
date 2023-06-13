@@ -21,13 +21,15 @@ export const PricingList: React.FC<Props> = ({ priceList, windowWidth, options }
           ))}
         </div>
       ) : (
-          <Swiper loop slideSize={windowWidth > 641 ? 34 : 25} trackOffset={15}>
-            {priceList.map((item) => (
-              <Swiper.Item key={item.id}>
-                <PriceItem priceItem={item} options={options} />
-              </Swiper.Item>
-            ))}
-          </Swiper>
+        <div className="swiper-wrapper">
+        <Swiper loop slideSize={windowWidth > 641 ? 34 : 25} trackOffset={15} style={{ overflow: "visible", zIndex: 9 }}>
+          {priceList.map((item) => (
+            <Swiper.Item key={item.id}>
+              <PriceItem priceItem={item} options={options} />
+            </Swiper.Item>
+          ))}
+        </Swiper>
+      </div>
       )}
     </>
   );

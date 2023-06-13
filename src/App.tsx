@@ -14,6 +14,7 @@ import { Contacts } from "./components/Contacts";
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [isViewModal, setIsViewModal] = useState(false);
 
   const homePageRef = useRef<HTMLElement>(null);
   const servicesPageRef = useRef<HTMLElement>(null);

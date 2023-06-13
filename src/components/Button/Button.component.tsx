@@ -2,28 +2,31 @@ import { useState } from "react";
 import "./Button.component.css";
 import { Modal } from "../Modal/Modal";
 
+
 type Props = {
   color: string;
   text: string;
 };
 
 export const Button: React.FC<Props> = ({ color, text }) => {
-  const [modalActive, setModalActive] = useState(false);
+  // const [modalActive, setModalActive] = useState(false);
 
-  const handleClick: React.MouseEventHandler<HTMLButtonElement> = () => {
-    setModalActive(true);
-  };
+  // const handleClick: React.MouseEventHandler<HTMLButtonElement> = () => {
+  //   setModalActive(true);
+  // };
 
   return (
     <>
-      <button className={`button button--${color}`} onClick={handleClick}>
+      <button className={`button button--${color}`}>
         {text}
       </button>
-      {modalActive && (
+      {/* {modalActive && (
         <Modal active={modalActive} setActive={setModalActive}>
-          {/* Modal content */}
         </Modal>
-      )}
+      )} */}
     </>
   );
 };
+
+
+
