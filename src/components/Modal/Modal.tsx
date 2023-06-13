@@ -4,7 +4,6 @@ import "./Modal.css";
 type Props = {
   active: boolean;
   setActive: React.Dispatch<React.SetStateAction<boolean>>;
-  children: React.ReactNode;
 };
 
 export const Modal: React.FC<Props> = ({ active, setActive }) => {
@@ -27,7 +26,7 @@ export const Modal: React.FC<Props> = ({ active, setActive }) => {
         </p>
         <div className="link__container">
           <a className="modal__link" href="https://t.me/Oksana_HeadJetOffice">
-            <img src="../../../public/services-icons/telegram-icon.svg" alt="" />
+            <img src="/services-icons/telegram-icon.svg" alt="telegram__icon" />
           </a>
         </div>
         <button className="modal__close" onClick={handleCloseClick}></button>

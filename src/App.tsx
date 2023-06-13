@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useContext } from "react";
 
 import "./App.css";
 
@@ -11,10 +11,11 @@ import { About } from "./components/About";
 import { Crew } from "./components/Crew";
 import { ControlPreview } from "./components/ControlPreview";
 import { Contacts } from "./components/Contacts";
+import { Modal } from "./components/Modal/Modal";
+import { ModalContext } from "./context/modalProvider";
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [isViewModal, setIsViewModal] = useState(false);
 
   const homePageRef = useRef<HTMLElement>(null);
   const servicesPageRef = useRef<HTMLElement>(null);
@@ -101,8 +102,11 @@ function App() {
     };
   }, []);
 
+  const [active, setActive] = useContext(ModalContext);
+
   return (
     <div className="App">
+      <Modal active={active} setActive={setActive} />
       <Header
         activePageRef={activePageRef}
         windowWidth={windowWidth}

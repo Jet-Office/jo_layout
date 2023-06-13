@@ -68,37 +68,41 @@ export const PriceItem: React.FC<Props> = ({
     <div className={backgroundClass}>
       <div className="pricing__card" style={{ fontFamily: "inherit" }}>
         <div className="pricing__card_content">
-          <Space direction="vertical" size="large">
-            <div className="pricing__card_head">
-              <h3 className={titleClass}>{name}</h3>
-              <p className="pricing__card_description">{description}</p>
-            </div>
-            {price !== "calculate" ? (
-              <div className="pricing__card_info">
-                <div className={priceClass} translate="no">
-                  {price}
-                </div>
-                <p className="pricing__card_payment">{payment}</p>
+          <div className="pricing__first">
+            <Space direction="vertical" size="large">
+              <div className="pricing__card_head">
+                <h3 className={titleClass}>{name}</h3>
+                <p className="pricing__card_description">{description}</p>
               </div>
-            ) : (
-              <div className="pricing__card_info">
-                <div className={priceClass}>
-                  <img
-                    src="/pricing-icons/calculator.svg"
-                    width={70}
-                    height={70}
-                    alt="calculator"
-                    className="pricing__calculator_icon"
-                  />
+              {price !== "calculate" ? (
+                <div className="pricing__card_info">
+                  <div className={priceClass} translate="no">
+                    {price}
+                  </div>
+                  <p className="pricing__card_payment">{payment}</p>
                 </div>
-                <p className="pricing__card_payment">{payment}</p>
-              </div>
-            )}
-          </Space>
-          <Button
-            color={titleColor !== "pink" ? titleColor : "pink_price"}
-            text="Get started"
-          />
+              ) : (
+                <div className="pricing__card_info">
+                  <div className={priceClass}>
+                    <img
+                      src="/pricing-icons/calculator.svg"
+                      width={70}
+                      height={70}
+                      alt="calculator"
+                      className="pricing__calculator_icon"
+                    />
+                  </div>
+                  <p className="pricing__card_payment">{payment}</p>
+                </div>
+              )}
+            </Space>
+          </div>
+          <div className="pricing__button">
+            <Button
+              color={titleColor !== "pink" ? titleColor : "pink_price"}
+              text="Get started"
+            />
+          </div>
           {monthlyHour !== 0 && (
             <p
               className={monthlyClass}

@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useContext} from "react";
 import "./Button.component.css";
-import { Modal } from "../Modal/Modal";
+import { ModalContext } from "../../context/modalProvider";
 
 
 type Props = {
@@ -9,22 +9,16 @@ type Props = {
 };
 
 export const Button: React.FC<Props> = ({ color, text }) => {
-  // const [modalActive, setModalActive] = useState(false);
+  const setIsViewModal = useContext(ModalContext)[1];
 
-  // const handleClick: React.MouseEventHandler<HTMLButtonElement> = () => {
-  //   setModalActive(true);
-  // };
+  const handleClick: React.MouseEventHandler<HTMLButtonElement> = () => {
+    setIsViewModal(true);
+  };
 
   return (
-    <>
-      <button className={`button button--${color}`}>
-        {text}
-      </button>
-      {/* {modalActive && (
-        <Modal active={modalActive} setActive={setModalActive}>
-        </Modal>
-      )} */}
-    </>
+    <button onClick={handleClick} className={`button button--${color}`}>
+     {text}
+    </button>
   );
 };
 
