@@ -72,6 +72,10 @@ body {
   overflow-x: hidden !important;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .container {
   max-width: 91.8vw;
 

@@ -2,7 +2,6 @@ import { useContext} from "react";
 import "./Button.component.css";
 import { ModalContext } from "../../context/modalProvider";
 
-
 type Props = {
   color: string;
   text: string;
@@ -13,6 +12,7 @@ export const Button: React.FC<Props> = ({ color, text }) => {
 
   const handleClick: React.MouseEventHandler<HTMLButtonElement> = () => {
     setIsViewModal(true);
+    document.body.classList.add("modal-open");
   };
 
   return (

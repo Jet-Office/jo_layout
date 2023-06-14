@@ -9,6 +9,7 @@ type Props = {
 export const Modal: React.FC<Props> = ({ active, setActive }) => {
   const handleCloseClick = () => {
     setActive(false);
+    document.body.classList.remove("modal-open");
   };
 
   const handleContentClick = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -26,7 +27,7 @@ export const Modal: React.FC<Props> = ({ active, setActive }) => {
         </p>
         <div className="link__container">
           <a className="modal__link" href="https://t.me/Oksana_HeadJetOffice">
-            <img src="/services-icons/telegram-icon.svg" alt="telegram__icon" />
+            <img className="modal__img" src="/services-icons/telegram-icon.svg" alt="telegram__icon" />
           </a>
         </div>
         <button className="modal__close" onClick={handleCloseClick}></button>
