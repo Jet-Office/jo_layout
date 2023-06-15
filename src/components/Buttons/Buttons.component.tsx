@@ -1,4 +1,3 @@
-
 import { Button } from "../Button";
 import "./Buttons.component.css";
 
@@ -10,3 +9,5 @@ export const Buttons = () => {
     </div>
   );
 };
+
+

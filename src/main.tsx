@@ -6,11 +6,14 @@ import { HashRouter } from "react-router-dom";
 import App from "./App";
 
 import "./index.css";
+import { ModalProvider } from "./context/modalProvider";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-  <HashRouter>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </HashRouter>
+  <ModalProvider>
+    <HashRouter>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </HashRouter>
+  </ModalProvider>
 );

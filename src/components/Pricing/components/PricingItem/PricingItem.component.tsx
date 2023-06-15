@@ -9,10 +9,11 @@ import { Space } from "antd";
 
 import { InfoCircleOutlined } from "@ant-design/icons";
 import { Tooltip } from "antd";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 type Props = {
   priceItem: Price;
+  options: string;
 };
 
 export const PriceItem: React.FC<Props> = ({
@@ -27,9 +28,19 @@ export const PriceItem: React.FC<Props> = ({
     preferences,
     frealancersPrice,
     team,
+    yearlyPrice
   },
+  options,
 }) => {
-  const [price] = useState(monthlyPrice);
+  const [price, setPrice] = useState(monthlyPrice);
+  useEffect(() => {
+    if (options === 'monthly') {
+      setPrice(monthlyPrice);
+    } else {
+      setPrice(yearlyPrice);
+    }
+  }, [monthlyPrice, options, yearlyPrice]);
+
   const backgroundClass = classNames("pricing__card_background", {
     "pricing__card_background--popular": mostPopular,
   });
@@ -57,37 +68,41 @@ export const PriceItem: React.FC<Props> = ({
     <div className={backgroundClass}>
       <div className="pricing__card" style={{ fontFamily: "inherit" }}>
         <div className="pricing__card_content">
-          <Space direction="vertical" size="large">
-            <div className="pricing__card_head">
-              <h3 className={titleClass}>{name}</h3>
-              <p className="pricing__card_description">{description}</p>
-            </div>
-            {price !== "calculate" ? (
-              <div className="pricing__card_info">
-                <div className={priceClass} translate="no">
-                  {price}
-                </div>
-                <p className="pricing__card_payment">{payment}</p>
+          <div className="pricing__first">
+            <Space direction="vertical" size="large">
+              <div className="pricing__card_head">
+                <h3 className={titleClass}>{name}</h3>
+                <p className="pricing__card_description">{description}</p>
               </div>
-            ) : (
-              <div className="pricing__card_info">
-                <div className={priceClass}>
-                  <img
-                    src="/pricing-icons/calculator.svg"
-                    width={70}
-                    height={70}
-                    alt="calculator"
-                    className="pricing__calculator_icon"
-                  />
+              {price !== "calculate" ? (
+                <div className="pricing__card_info">
+                  <div className={priceClass} translate="no">
+                    {price}
+                  </div>
+                  <p className="pricing__card_payment">{payment}</p>
                 </div>
-                <p className="pricing__card_payment">{payment}</p>
-              </div>
-            )}
-          </Space>
-          <Button
-            color={titleColor !== "pink" ? titleColor : "pink_price"}
-            text="Get started"
-          />
+              ) : (
+                <div className="pricing__card_info">
+                  <div className={priceClass}>
+                    <img
+                      src="/pricing-icons/calculator.svg"
+                      width={70}
+                      height={70}
+                      alt="calculator"
+                      className="pricing__calculator_icon"
+                    />
+                  </div>
+                  <p className="pricing__card_payment">{payment}</p>
+                </div>
+              )}
+            </Space>
+          </div>
+          <div className="pricing__button">
+            <Button
+              color={titleColor !== "pink" ? titleColor : "pink_price"}
+              text="Get started"
+            />
+          </div>
           {monthlyHour !== 0 && (
             <p
               className={monthlyClass}

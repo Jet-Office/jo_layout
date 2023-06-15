@@ -5,10 +5,40 @@
   font-display: swap;
 }
 
-.pricing {
+.pricing__button {
+  margin-top: 10px;
+}
+
+@media(max-width: 750px) {
+  .pricing__first {
+    height: 280px;
+}
+}
+
+.swiper-wrapper {
   display: flex;
-  justify-content: center;
   align-items: center;
+  width: 100%;
+}
+
+.swiper-wrapper .slider-frame {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.swiper-wrapper .slider-frame .slider-item {
+  flex: 0 0 auto;
+  margin-right: 15px;
+}
+
+.swiper-wrapper .slider-frame .slider-item:last-child {
+  margin-right: 0;
+}
+
+.swiper-wrapper .slider-frame .slider-item {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 10px;
 }
 
 .pricing__container {
@@ -17,6 +47,7 @@
   align-items: flex-start;
 
   gap: 40px;
+  overflow: visible;
 }
 
 .pricing__card_preferences_container {
@@ -38,7 +69,7 @@
 }
 
 .pricing__card_background {
-  min-width: 200px;
+  /* min-width: 200px; */
   max-width: 232px;
   height: 900px;
 
@@ -69,6 +100,31 @@
   border: 1px solid #1c2024;
   border-radius: 8px;
 }
+
+@media (min-width: 573px) and (max-width: 641px) {
+  .pricing__first {
+    height: 400px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 400px) {
+  .pricing__first {
+    height: 195px;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 460px) {
+  .pricing__first {
+    height: 230px;
+  }
+}
+
+@media (min-width: 461px) and (max-width: 470px) {
+  .pricing__first {
+    height: 230px;
+  }
+}
+
 
 .pricing__card_content {
   display: flex;
@@ -124,10 +180,16 @@
   max-width: 192px;
 
   font-weight: 400;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 140%;
 
   color: var(--text-color);
+}
+
+@media (min-width: 1025px) and (max-width: 1165px) {
+  .pricing__card_description {
+    height: 55px;
+  }
 }
 
 .pricing__card_title {
@@ -312,7 +374,6 @@
     margin-top: 55px;
     margin-bottom: 50px;
 
-    height: 740px;
   }
 
   .pricing__card_title {
@@ -372,9 +433,6 @@
     font-size: 4.103vw;
   }
 
-  .pricing__card_preference {
-    font-size: 4.103vw;
-  }
 }
 
 @media (min-width: 1920px) {
@@ -499,4 +557,10 @@
   .pricing__card_preferences_container {
     max-width: fit-content;
   }
+}
+
+.pricing__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
