@@ -1,6 +1,6 @@
 import { useContext} from "react";
 import "./Button.component.css";
-import { ModalContext } from "../../context/modalProvider";
+import { ModalContext } from "../../modalProvider";
 
 type Props = {
   color: string;

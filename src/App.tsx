@@ -12,7 +12,7 @@ import { Crew } from "./components/Crew";
 import { ControlPreview } from "./components/ControlPreview";
 import { Contacts } from "./components/Contacts";
 import { Modal } from "./components/Modal/Modal";
-import { ModalContext, ModalProvider } from "./context/modalProvider";
+import { ModalContext } from "./modalProvider";
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -105,31 +105,29 @@ function App() {
   const [active, setActive] = useContext(ModalContext);
 
   return (
-    <ModalProvider>
-      <div className="App">
-        <Modal active={active} setActive={setActive} />
-        <Header
-          activePageRef={activePageRef}
-          windowWidth={windowWidth}
-          homePageRef={homePageRef}
-        />
-        <main className="main">
-          <div className="main__container">
-            <Services activeRef={servicesPageRef} />
-            {windowWidth <= 641 && <ControlPreview />}
-            <Benefits />
-            <Pricing windowWidth={windowWidth} activePageRef={pricingPageRef} />
-            <Cases windowWidth={windowWidth} casesPageRef={casesPageRef} />
-            <About windowWidth={windowWidth} aboutPageRef={aboutPageRef} />
-            <Crew />
-            <Contacts contactsPageRef={contactsPageRef} />
-          </div>
-        </main>
-        <footer className="footer">
-          <p className="footer__label">© 2023 JetOffice</p>
-        </footer>
-      </div>
-    </ModalProvider>
+    <div className="App">
+      <Modal active={active} setActive={setActive} />
+      <Header
+        activePageRef={activePageRef}
+        windowWidth={windowWidth}
+        homePageRef={homePageRef}
+      />
+      <main className="main">
+        <div className="main__container">
+          <Services activeRef={servicesPageRef} />
+          {windowWidth <= 641 && <ControlPreview />}
+          <Benefits />
+          <Pricing windowWidth={windowWidth} activePageRef={pricingPageRef} />
+          <Cases windowWidth={windowWidth} casesPageRef={casesPageRef} />
+          <About windowWidth={windowWidth} aboutPageRef={aboutPageRef} />
+          <Crew />
+          <Contacts contactsPageRef={contactsPageRef} />
+        </div>
+      </main>
+      <footer className="footer">
+        <p className="footer__label">© 2023 JetOffice</p>
+      </footer>
+    </div>
   );
 }
 
