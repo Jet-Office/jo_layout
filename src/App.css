@@ -28,20 +28,13 @@
   margin-bottom: 180px;
 }
 
-.footer {
+.footermain {
   display: flex;
-  justify-content: center;
-  align-items: center;
-
+  flex-direction: column;
+  justify-content: space-between;
   background-color: var(--background);
 }
 
-.footer__label {
-  font-size: 20px;
-  line-height: 140%;
-
-  color: var(--text-color)
-}
 
 @media (max-width: 641px) {
   .main__container {

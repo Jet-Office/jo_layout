@@ -69,7 +69,6 @@
 }
 
 .pricing__card_background {
-  /* min-width: 200px; */
   max-width: 232px;
   height: 900px;
 
@@ -356,6 +355,7 @@
 
 @media (max-width: 1120px) {
   .pricing__list {
+
     gap: 10px;
   }
 }

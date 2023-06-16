@@ -10,9 +10,9 @@ import { Cases } from "./components/Cases";
 import { About } from "./components/About";
 import { Crew } from "./components/Crew";
 import { ControlPreview } from "./components/ControlPreview";
-import { Contacts } from "./components/Contacts";
 import { Modal } from "./components/Modal/Modal";
 import { ModalContext } from "./modalProvider";
+import { Footer } from "./components/Footer";
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -121,11 +121,10 @@ function App() {
           <Cases windowWidth={windowWidth} casesPageRef={casesPageRef} />
           <About windowWidth={windowWidth} aboutPageRef={aboutPageRef} />
           <Crew />
-          <Contacts contactsPageRef={contactsPageRef} />
         </div>
       </main>
-      <footer className="footer">
-        <p className="footer__label">© 2023 JetOffice</p>
+      <footer className="footermain">
+        <Footer contactsPageRef={contactsPageRef} />
       </footer>
     </div>
   );
