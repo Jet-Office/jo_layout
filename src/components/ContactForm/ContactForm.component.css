@@ -102,3 +102,10 @@
     width: 100%;
   }
 }
+
+@media (min-width: 642px) and (max-width: 716px) {
+  .form__group,
+  .form__submit-button {
+    width: 300px;
+  }
+}

@@ -1,8 +1,13 @@
+.contacts {
+  width: 100%;
+}
+
 .contacts__container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  padding-left: 4vw;
 }
 
 .contacts__info_container {
@@ -35,6 +40,7 @@
 @media (max-width: 641px) {
   .contacts__container {
     gap: 20px;
+    padding: 0;
   }
 
   .contacts__adress {
@@ -59,5 +65,24 @@
   .contacts__icon {
     width: 1.7vw;
     height: 1.7vw;
+  }
+}
+
+.contacts__socials {
+  display: flex;
+  gap: 27px;
+}
+
+@media (max-width: 641px) {
+  #socials__title {
+    display: none;
+  }
+
+  .contacts__socials {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 27px;
+    margin-top: 100px;
   }
 }

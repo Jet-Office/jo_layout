@@ -31,6 +31,42 @@ export const Contacts: React.FC<Props> = ({ contactsPageRef }) => {
             </a>
           ))}
         </div>
+        <h2 className="contacts__title h2" id="socials__title">
+          Socials
+        </h2>
+        <div className="contacts__socials">
+          <div className="icon__container">
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                className="socials__icon"
+                src="/socials-icons/🦆 icon _instagram_.svg"
+                alt="icon _instagram"
+              />
+            </a>
+          </div>
+          <div className="icon__container">
+            <a href="https://twitter.com/" target="_blank" rel="noreferrer">
+              <img
+                className="socials__icon"
+                src="/socials-icons/🦆 icon _twitter_.svg"
+                alt="icon _twitter"
+              />
+            </a>
+          </div>
+          <div className="icon__container">
+            <a href="https://linkedin.com/" target="_blank" rel="noreferrer">
+              <img
+                className="socials__icon"
+                src="/socials-icons/🦆 icon _linkedin_.svg"
+                alt="icon _linkedin"
+              />
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );
