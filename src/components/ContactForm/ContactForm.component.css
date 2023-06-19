@@ -5,31 +5,36 @@
 
 .form__group {
   box-sizing: border-box;
-  border: 2px solid;
-  border-image: linear-gradient(
-    223.81deg,
-    #00e5e5 8.72%,
-    #72a5f2 50.87%,
-    #e961ff 91.3%
-  );
-  border-image-slice: 1;
+  border-radius: 4px;
+  background: var(--gradient);
   outline: none;
-  padding: 10px;
+  padding: 2px 2px 2px 2px;
   margin-bottom: 40px;
   width: 380px;
 }
 
+.form__group:nth-last-child(2) {
+  margin-bottom: 60px;
+}
+
+textarea, input { 
+  padding: 0;
+}
+
 .field {
+  width: 100%;
   background-color: var(--background);
   outline: none;
   border: none;
+  padding: 5px 8px;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 .form__input,
 .form__textarea,
 .field::placeholder {
-  font-family: Proxima Nova;
-  font-style: Regular;
+  font-family: Proxima Nova regular;
   color: rgba(204, 204, 204, 0.5);
   font-size: 20px;
   line-height: 140%;
