@@ -134,3 +134,8 @@ input {
     width: 100%;
   }
 }
+
+.form__submit-button[disabled] {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
