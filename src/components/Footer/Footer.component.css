@@ -3,6 +3,11 @@
   align-items: baseline;
   justify-content: space-between;
   position: relative;
+  
+}
+
+.cont {
+  height: 100%;
 }
 
 .footer__text {

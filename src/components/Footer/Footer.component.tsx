@@ -10,9 +10,11 @@ type Props = {
 export const Footer: React.FC<Props> = ({ contactsPageRef }) => {
   return (
       <div>
-        <div className="footer__contacts container">
-          <Contacts contactsPageRef={contactsPageRef} />
-          <ContactForm />
+        <div className="cont">
+          <div className="footer__contacts container">
+            <Contacts contactsPageRef={contactsPageRef} />
+            <ContactForm />
+          </div>
         </div>
         <div className="footer__label">
           <p className="footer__text">© 2023 JetOffice</p>

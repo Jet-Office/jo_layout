@@ -25,8 +25,8 @@ export const ContactForm = () => {
 
     const data = {
       from: "Mailgun Sandbox <postmaster@sandbox9328fe2f122e451991176570ae9aaa93.mailgun.org>",
-      to: "Oksana Kyryienko <kseniyals1609@gmail.com>",
-      subject: "Hello Oksana Kyryienko",
+      to: "JetOffice <mail@jetoffice.org>",
+      subject: "Hello JetOffice",
       text: message,
     };
 
@@ -100,7 +100,7 @@ export const ContactForm = () => {
               />
             </div>
             <div className="form__group">
-              <label htmlFor="message" className="form__label"></label>
+              {/* <label htmlFor="message" className="form__label"></label> */}
               <textarea
                 id="message"
                 className="form__textarea field"

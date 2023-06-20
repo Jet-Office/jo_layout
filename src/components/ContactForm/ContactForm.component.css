@@ -8,16 +8,18 @@
   border-radius: 4px;
   background: var(--gradient);
   outline: none;
-  padding: 2px 2px 2px 2px;
+  padding: 1px;
   margin-bottom: 40px;
   width: 380px;
+  max-height: 152px;
 }
 
 .form__group:nth-last-child(2) {
   margin-bottom: 60px;
 }
 
-textarea, input { 
+textarea,
+input {
   padding: 0;
 }
 
@@ -42,8 +44,9 @@ textarea, input {
 }
 
 .form__textarea {
+  box-sizing: border-box;
   resize: none;
-  height: 150px;
+  height: 150px !important;
 }
 
 .form__submit-button {
@@ -109,8 +112,25 @@ textarea, input {
 }
 
 @media (min-width: 642px) and (max-width: 716px) {
+  .form__group:nth-last-child(2) {
+    margin-bottom: 80px;
+  }
   .form__group,
   .form__submit-button {
     width: 300px;
+  }
+}
+
+@media (min-width: 1900px) {
+  .sectionform {
+    width: 100%;
+  }
+
+  .form__group {
+    width: 100%;
+  }
+
+  .form__submit-button {
+    width: 100%;
   }
 }

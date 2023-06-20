@@ -10,7 +10,9 @@ export const Contacts: React.FC<Props> = ({ contactsPageRef }) => {
   return (
     <section className="contacts" id="contacts" ref={contactsPageRef}>
       <div className="contacts__container">
-        <h2 className="contacts__title h2">Contacts</h2>
+        <h2 className="contacts__title h2" id="contacts__title">
+          Contacts
+        </h2>
         <div className="contacts__info_container">
           {contacts.map((contact) => (
             <a
