@@ -10,6 +10,7 @@ import { Space } from "antd";
 import { InfoCircleOutlined } from "@ant-design/icons";
 import { Tooltip } from "antd";
 import { useEffect, useState } from "react";
+import useHandleClick from "../../../../helpers/openModal";
 
 type Props = {
   priceItem: Price;
@@ -32,6 +33,7 @@ export const PriceItem: React.FC<Props> = ({
   },
   options,
 }) => {
+  const handleClick = useHandleClick();
   const [price, setPrice] = useState(monthlyPrice);
   useEffect(() => {
     if (options === 'monthly') {
@@ -98,7 +100,7 @@ export const PriceItem: React.FC<Props> = ({
             </Space>
           </div>
           <div className="pricing__button">
-            <Button
+            <Button onClick={handleClick}
               color={titleColor !== "pink" ? titleColor : "pink_price"}
               text="Get started"
             />

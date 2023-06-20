@@ -1,15 +1,10 @@
-import { ModalContext } from "../../modalProvider";
-import { useContext } from "react";
 import { Button } from "../Button";
 import "./Buttons.component.css";
+import useHandleClick from "../../helpers/openModal";
 
 export const Buttons = () => {
-  const setIsViewModal = useContext(ModalContext)[1];
+  const handleClick = useHandleClick();
 
-  const handleClick: React.MouseEventHandler<HTMLButtonElement> = () => {
-    setIsViewModal(true);
-    document.body.classList.add("modal-open");
-  };
   return (
     <div className="buttons">
       <Button color="dark" text="Get in touch" onClick={handleClick} />

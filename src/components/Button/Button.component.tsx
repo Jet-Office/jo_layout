@@ -9,11 +9,12 @@ type Props = {
   className?: string;
 };
 
+
 export const Button: React.FC<Props> = ({
   color = "default",
   text = "Button",
   disabled = false,
-  onClick = () => {},
+  onClick,
   className,
 }) => {
   return (
@@ -26,3 +27,6 @@ export const Button: React.FC<Props> = ({
     </button>
   );
 };
+
+
+
