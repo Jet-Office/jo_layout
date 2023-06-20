@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./ContactForm.component.css";
+import { Button } from "../Button/Button.component";
 
 export const ContactForm = () => {
   const [name, setName] = useState("");
@@ -22,24 +23,23 @@ export const ContactForm = () => {
       alert("Please enter a name between 3 and 50 characters.");
       return;
     }
-
     const data = {
-      from: "Mailgun Sandbox <postmaster@sandbox9328fe2f122e451991176570ae9aaa93.mailgun.org>",
-      to: "JetOffice <mail@jetoffice.org>",
-      subject: "Hello JetOffice",
+      from: "Mailgun Sandbox <mailgun@sandbox2126b81827c0408085ce2d29ee6f7972.mailgun.org>",
+      to: "Oksana Kyryienko <oksana.kirienko@jetoffice.org>",
+      subject: "Hello Oksana Kyryienko",
       text: message,
     };
 
     try {
       const response = await fetch(
-        "https://api.mailgun.net/v3/sandbox9328fe2f122e451991176570ae9aaa93.mailgun.org/messages",
+        "https://api.mailgun.net/v3/sandbox2126b81827c0408085ce2d29ee6f7972.mailgun.org/messages",
         {
           method: "POST",
           headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             Authorization:
               "Basic " +
-              btoa("api:17ec2847019258fdc47f34486062267e-af778b4b-797484e0"),
+              btoa("api:b826bcb220e108bf7c3cef24f1a43fbf-135a8d32-b32899db"),
           },
           body: new URLSearchParams(data).toString(),
         }
@@ -100,7 +100,6 @@ export const ContactForm = () => {
               />
             </div>
             <div className="form__group">
-              {/* <label htmlFor="message" className="form__label"></label> */}
               <textarea
                 id="message"
                 className="form__textarea field"
@@ -140,13 +139,12 @@ export const ContactForm = () => {
                 </div>
               </div>
             )}
-            <button
-              type="submit"
-              className={`form__submit-button button`}
+            <Button
+              color="pink"
+              text="Send a message"
+              className="form__submit-button"
               disabled={isFormSubmitted}
-            >
-              Send a message
-            </button>
+            />
           </form>
         </div>
       </div>

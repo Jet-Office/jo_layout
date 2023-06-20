@@ -1,26 +1,28 @@
-import { useContext} from "react";
+import React from "react";
 import "./Button.component.css";
-import { ModalContext } from "../../modalProvider";
 
 type Props = {
-  color: string;
-  text: string;
+  color?: string;
+  text?: string;
+  disabled?: boolean;
+  onClick?: (() => void) | React.MouseEventHandler<HTMLButtonElement>;
+  className?: string;
 };
 
-export const Button: React.FC<Props> = ({ color, text }) => {
-  const setIsViewModal = useContext(ModalContext)[1];
-
-  const handleClick: React.MouseEventHandler<HTMLButtonElement> = () => {
-    setIsViewModal(true);
-    document.body.classList.add("modal-open");
-  };
-
+export const Button: React.FC<Props> = ({
+  color = "default",
+  text = "Button",
+  disabled = false,
+  onClick = () => {},
+  className,
+}) => {
   return (
-    <button onClick={handleClick} className={`button button--${color}`}>
-     {text}
+    <button
+      onClick={onClick}
+      className={`button button--${color} ${className}`}
+      disabled={disabled}
+    >
+      {text}
     </button>
   );
 };
-
-
-
