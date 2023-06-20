@@ -1,0 +1,32 @@
+.footer__contacts {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  position: relative;
+  
+}
+
+.cont {
+  height: 100%;
+}
+
+.footer__text {
+  font-size: 20px;
+  line-height: 140%;
+
+  color: var(--text-color);
+}
+
+.footer__label {
+  margin: 100px 0;
+}
+
+@media screen and (max-width: 641px) {
+  .footer__contacts {
+    flex-direction: column-reverse;
+  }
+
+  .sectionform {
+    width: 100%;
+  }
+}

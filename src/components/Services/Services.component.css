@@ -62,7 +62,7 @@
 
 @media (max-width: 1280px) {
   .services__container {
-    min-width: 1064px;
+    /* min-width: 1064px; */
     max-width: 1200px;
   }
 }
