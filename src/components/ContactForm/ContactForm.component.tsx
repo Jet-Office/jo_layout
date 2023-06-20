@@ -144,6 +144,7 @@ export const ContactForm = () => {
               text="Send a message"
               className="form__submit-button"
               disabled={isFormSubmitted}
+              onClick={() => {}}
             />
           </form>
         </div>
