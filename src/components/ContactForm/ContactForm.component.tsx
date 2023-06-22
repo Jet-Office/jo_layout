@@ -13,6 +13,7 @@ export const ContactForm = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    console.log (`${message} from ${email}`)
 
     if (!nameRegex.test(name)) {
       alert("Please enter a correct name.");
@@ -24,22 +25,24 @@ export const ContactForm = () => {
       return;
     }
     const data = {
-      from: "Mailgun Sandbox <mailgun@sandbox2126b81827c0408085ce2d29ee6f7972.mailgun.org>",
-      to: "Oksana Kyryienko <oksana.kirienko@jetoffice.org>",
+      from: 'Mailgun Sandbox <postmaster@sandboxe04b1ff47a94485ca8daf9aa4142c609.mailgun.org>',
+      to: 'Oksana Kyryienko <3349609284@mail.gov.ua>',
       subject: "Hello Oksana Kyryienko",
-      text: message,
+      text: `${message} from ${email} from ${name}`
     };
+
+
 
     try {
       const response = await fetch(
-        "https://api.mailgun.net/v3/sandbox2126b81827c0408085ce2d29ee6f7972.mailgun.org/messages",
+        "https://api.mailgun.net/v3/sandboxe04b1ff47a94485ca8daf9aa4142c609.mailgun.org/messages",
         {
           method: "POST",
           headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             Authorization:
               "Basic " +
-              btoa("api:b826bcb220e108bf7c3cef24f1a43fbf-135a8d32-b32899db"),
+              btoa("api:b885a808e2436346732cb2591f7d2371-135a8d32-69c51933"),
           },
           body: new URLSearchParams(data).toString(),
         }

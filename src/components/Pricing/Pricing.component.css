@@ -7,12 +7,13 @@
 
 .pricing__button {
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-@media(max-width: 750px) {
+@media (max-width: 750px) {
   .pricing__first {
     height: 280px;
-}
+  }
 }
 
 .swiper-wrapper {
@@ -123,7 +124,6 @@
     height: 230px;
   }
 }
-
 
 .pricing__card_content {
   display: flex;
@@ -248,7 +248,7 @@
 
   position: absolute;
   top: -20px;
-  left: 36px;
+  left: 25px;
 }
 
 .pricing__card--calculator::after {
@@ -355,7 +355,6 @@
 
 @media (max-width: 1120px) {
   .pricing__list {
-
     gap: 10px;
   }
 }
@@ -373,7 +372,6 @@
   .pricing__card_background {
     margin-top: 55px;
     margin-bottom: 50px;
-
   }
 
   .pricing__card_title {
@@ -432,7 +430,6 @@
   .pricing__card_monthly {
     font-size: 4.103vw;
   }
-
 }
 
 @media (min-width: 1920px) {
