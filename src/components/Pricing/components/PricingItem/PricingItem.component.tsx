@@ -29,14 +29,14 @@ export const PriceItem: React.FC<Props> = ({
     preferences,
     frealancersPrice,
     team,
-    yearlyPrice
+    yearlyPrice,
   },
   options,
 }) => {
   const handleClick = useHandleClick();
   const [price, setPrice] = useState(monthlyPrice);
   useEffect(() => {
-    if (options === 'monthly') {
+    if (options === "monthly") {
       setPrice(monthlyPrice);
     } else {
       setPrice(yearlyPrice);
@@ -100,7 +100,8 @@ export const PriceItem: React.FC<Props> = ({
             </Space>
           </div>
           <div className="pricing__button">
-            <Button onClick={handleClick}
+            <Button
+              onClick={handleClick}
               color={titleColor !== "pink" ? titleColor : "pink_price"}
               text="Get started"
             />
