@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./ContactForm.component.css";
 import { Button } from "../Button/Button.component";
+import emailjs from "@emailjs/browser";
 
 export const ContactForm = () => {
   const [name, setName] = useState("");
@@ -10,63 +11,44 @@ export const ContactForm = () => {
   const [isFormError, setIsFormError] = useState(false);
 
   const nameRegex = /^[a-zA-Zа-яА-Я\s]+$/;
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log (`${message} from ${email}`)
-
-    if (!nameRegex.test(name)) {
+  
+    const form = e.target as HTMLFormElement;
+    const nameInput = form.name as unknown as HTMLInputElement;
+    const emailInput = form.email as HTMLInputElement;
+    const messageInput = form.message as HTMLTextAreaElement;
+  
+    if (!nameRegex.test(nameInput.value)) {
       alert("Please enter a correct name.");
       return;
     }
-
-    if (name.length < 3 || name.length > 50) {
+  
+    if (nameInput.value.length < 3 || nameInput.value.length > 50) {
       alert("Please enter a name between 3 and 50 characters.");
       return;
     }
+  
     const data = {
-      from: 'Mailgun Sandbox <postmaster@sandboxe04b1ff47a94485ca8daf9aa4142c609.mailgun.org>',
-      to: 'Oksana Kyryienko <3349609284@mail.gov.ua>',
-      subject: "Hello Oksana Kyryienko",
-      text: `${message} from ${email} from ${name}`
+      name: nameInput.value,
+      email: emailInput.value,
+      message: messageInput.value,
     };
-
-
-
-    try {
-      const response = await fetch(
-        "https://api.mailgun.net/v3/sandboxe04b1ff47a94485ca8daf9aa4142c609.mailgun.org/messages",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/x-www-form-urlencoded",
-            Authorization:
-              "Basic " +
-              btoa("api:b885a808e2436346732cb2591f7d2371-135a8d32-69c51933"),
-          },
-          body: new URLSearchParams(data).toString(),
-        }
-      );
-
-      if (response.ok) {
+  
+    emailjs.sendForm('service_vur4cex', 'template_a61d8ra', form, 'sBGnZCmTCYR_vOaHS')
+      .then(() => {
         console.log("Form submitted successfully");
         setIsFormSubmitted(true);
         setIsFormError(false);
-        setName("");
-        setEmail("");
-        setMessage("");
-      } else {
-        console.error("Form submission failed");
+        form.reset();
+      })
+      .catch((error) => {
+        console.error("Error submitting the form:", error);
         setIsFormError(true);
         setIsFormSubmitted(false);
-      }
-    } catch (error) {
-      console.error("Error submitting the form:", error);
-      setIsFormError(true);
-      setIsFormSubmitted(false);
-    }
-  };
-
+      });
+  }
+  
   const closeMessage = () => {
     setIsFormSubmitted(false);
     setIsFormError(false);
@@ -77,12 +59,17 @@ export const ContactForm = () => {
       <div className="form">
         <h2 className="form__heading">Write to us</h2>
         <div className="form__container">
-          <form className="form__form" onSubmit={handleSubmit}>
+          <form
+            className="form__form"
+            onSubmit={handleSubmit}
+            // method="POST"
+          >
             <div className="form__group">
               <label htmlFor="name" className="form__label"></label>
               <input
                 type="text"
                 id="name"
+                name="name"
                 className="form__input field"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
@@ -93,6 +80,7 @@ export const ContactForm = () => {
             <div className="form__group">
               <label htmlFor="email" className="form__label"></label>
               <input
+                name="email"
                 type="email"
                 id="email"
                 className="form__input field"
@@ -104,6 +92,7 @@ export const ContactForm = () => {
             </div>
             <div className="form__group">
               <textarea
+                name="message"
                 id="message"
                 className="form__textarea field"
                 value={message}
@@ -143,6 +132,7 @@ export const ContactForm = () => {
               </div>
             )}
             <Button
+              type="submit"
               color="pink"
               text="Send a message"
               className="form__submit-button"
@@ -155,3 +145,4 @@ export const ContactForm = () => {
     </section>
   );
 };
+
