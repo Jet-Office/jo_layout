@@ -63,10 +63,8 @@
 }
 
 .pricing__list {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-
-  gap: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .pricing__card_background {
@@ -353,9 +351,9 @@
   align-items: baseline;
 }
 
-@media (max-width: 1120px) {
+@media (min-width: 1200px) {
   .pricing__list {
-    gap: 10px;
+    width: 100%;
   }
 }
 

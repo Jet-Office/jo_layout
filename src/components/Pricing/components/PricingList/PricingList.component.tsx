@@ -14,7 +14,7 @@ type Props = {
 export const PricingList: React.FC<Props> = ({ priceList, windowWidth, options }) => {
   return (
     <>
-      {windowWidth > 1024 ? (
+      {windowWidth > 1075 ? (
         <div className="pricing__list">
           {priceList.map((item) => (
             <PriceItem key={item.id} priceItem={item} options={options} />
