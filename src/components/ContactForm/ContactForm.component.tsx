@@ -1,54 +1,30 @@
 import { useState } from "react";
 import "./ContactForm.component.css";
 import { Button } from "../Button/Button.component";
-import emailjs from "@emailjs/browser";
+import { submitContactForm } from "../../helpers/submitContactForm";
 
 export const ContactForm = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [isFormError, setIsFormError] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const nameRegex = /^[a-zA-Zа-яА-Я\s]+$/;
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleFormSubmit = (e: { preventDefault: () => void; target: any }) => {
     e.preventDefault();
-  
-    const form = e.target as HTMLFormElement;
-    const nameInput = form.name as unknown as HTMLInputElement;
-    const emailInput = form.email as HTMLInputElement;
-    const messageInput = form.message as HTMLTextAreaElement;
-  
-    if (!nameRegex.test(nameInput.value)) {
-      alert("Please enter a correct name.");
-      return;
-    }
-  
-    if (nameInput.value.length < 3 || nameInput.value.length > 50) {
-      alert("Please enter a name between 3 and 50 characters.");
-      return;
-    }
-  
-    const data = {
-      name: nameInput.value,
-      email: emailInput.value,
-      message: messageInput.value,
-    };
-  
-    emailjs.sendForm('service_vur4cex', 'template_a61d8ra', form, 'sBGnZCmTCYR_vOaHS')
-      .then(() => {
-        console.log("Form submitted successfully");
-        setIsFormSubmitted(true);
-        setIsFormError(false);
-        form.reset();
-      })
-      .catch((error) => {
-        console.error("Error submitting the form:", error);
-        setIsFormError(true);
-        setIsFormSubmitted(false);
-      });
-  }
-  
+    const form = e.target;
+    setIsSubmitting(true);
+    submitContactForm(
+      form,
+      setIsFormSubmitted,
+      setIsFormError,
+      setIsSubmitting
+    );
+  };
+
   const closeMessage = () => {
     setIsFormSubmitted(false);
     setIsFormError(false);
@@ -61,8 +37,8 @@ export const ContactForm = () => {
         <div className="form__container">
           <form
             className="form__form"
-            onSubmit={handleSubmit}
-            // method="POST"
+            onSubmit={handleFormSubmit}
+            method="POST"
           >
             <div className="form__group">
               <label htmlFor="name" className="form__label"></label>
@@ -71,8 +47,10 @@ export const ContactForm = () => {
                 id="name"
                 name="name"
                 className="form__input field"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
+                value={formData.name}
+                onChange={(e) =>
+                  setFormData({ ...formData, name: e.target.value })
+                }
                 required
                 placeholder="Your name"
               />
@@ -84,8 +62,10 @@ export const ContactForm = () => {
                 type="email"
                 id="email"
                 className="form__input field"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                value={formData.email}
+                onChange={(e) =>
+                  setFormData({ ...formData, email: e.target.value })
+                }
                 required
                 placeholder="Your mail"
               />
@@ -95,8 +75,10 @@ export const ContactForm = () => {
                 name="message"
                 id="message"
                 className="form__textarea field"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
+                value={formData.message}
+                onChange={(e) =>
+                  setFormData({ ...formData, message: e.target.value })
+                }
                 required
                 placeholder="Your message"
               ></textarea>
@@ -108,7 +90,13 @@ export const ContactForm = () => {
                 </div>
                 <div className="div">
                   <button
-                    className="form__message-close form__message--success form__message--text"
+                    className={
+                      `
+                      form__message-close 
+                      form__message--success 
+                      form__message--text
+                      `
+                    }
                     onClick={closeMessage}
                   >
                     X
@@ -123,7 +111,13 @@ export const ContactForm = () => {
                 </div>
                 <div>
                   <button
-                    className="form__message-close form__message--error form__message--text"
+                    className={
+                      `
+                      form__message-close
+                      form__message--error
+                      form__message--text
+                      `
+                    }
                     onClick={closeMessage}
                   >
                     X
@@ -134,7 +128,7 @@ export const ContactForm = () => {
             <Button
               type="submit"
               color="pink"
-              text="Send a message"
+              text={isSubmitting ? "Message is sending..." : "Send a message"}
               className="form__submit-button"
               disabled={isFormSubmitted}
               onClick={() => {}}
@@ -145,4 +139,3 @@ export const ContactForm = () => {
     </section>
   );
 };
-
