@@ -39,7 +39,7 @@ export const Contacts: React.FC<Props> = ({ contactsPageRef }) => {
         <div className="contacts__socials">
           <div className="icon__container">
             <a
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/jet.office/"
               target="_blank"
               rel="noreferrer"
             >
@@ -60,7 +60,7 @@ export const Contacts: React.FC<Props> = ({ contactsPageRef }) => {
             </a>
           </div>
           <div className="icon__container">
-            <a href="https://linkedin.com/" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/company/jetoffice-ua" target="_blank" rel="noreferrer">
               <img
                 className="socials__icon"
                 src="/socials-icons/🦆 icon _linkedin_.svg"
