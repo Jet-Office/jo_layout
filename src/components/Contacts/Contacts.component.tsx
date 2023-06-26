@@ -51,7 +51,7 @@ export const Contacts: React.FC<Props> = ({ contactsPageRef }) => {
             </a>
           </div>
           <div className="icon__container">
-            <a href="https://twitter.com/" target="_blank" rel="noreferrer">
+            <a href="https://twitter.com/JetOffice23" target="_blank" rel="noreferrer">
               <img
                 className="socials__icon"
                 src="/socials-icons/🦆 icon _twitter_.svg"
