@@ -7,13 +7,16 @@ import App from "./App";
 
 import "./index.css";
 import { ModalProvider } from "./modalProvider";
+import { DropdownProvider } from "./DropdownContext";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <ModalProvider>
-    <HashRouter>
-      <React.StrictMode>
-        <App />
-      </React.StrictMode>
-    </HashRouter>
+    <DropdownProvider>
+      <HashRouter>
+        <React.StrictMode>
+          <App />
+        </React.StrictMode>
+      </HashRouter>
+    </DropdownProvider>
   </ModalProvider>
 );

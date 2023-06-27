@@ -13,6 +13,7 @@ import { ControlPreview } from "./components/ControlPreview";
 import { Modal } from "./components/Modal/Modal";
 import { ModalContext } from "./modalProvider";
 import { Footer } from "./components/Footer";
+import { Dropdown } from "./components/Dropdown";
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -107,6 +108,7 @@ function App() {
   return (
     <div className="App">
       <Modal active={active} setActive={setActive} />
+      <Dropdown />
       <Header
         activePageRef={activePageRef}
         windowWidth={windowWidth}
