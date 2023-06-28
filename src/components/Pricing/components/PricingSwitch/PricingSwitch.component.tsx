@@ -28,7 +28,7 @@ export const PricingSwitch: React.FC<Props> = ({ setOptions }) => {
           style={{
             background:
               activeOption === SwitchOptions.OPTION1
-                ? "#E961FF"
+                ? "#e961ff"
                 : "transparent",
           }}
           onClick={() => handleSwitchClick(SwitchOptions.OPTION1)}
@@ -37,7 +37,7 @@ export const PricingSwitch: React.FC<Props> = ({ setOptions }) => {
             className="switch-text"
             style={{
               color:
-                activeOption === SwitchOptions.OPTION1 ? "#14181c" : "#fff",
+                activeOption === SwitchOptions.OPTION1 ? "#14181c" : "#e961ff",
             }}
           >
             {SwitchOptions.OPTION1}
@@ -48,7 +48,7 @@ export const PricingSwitch: React.FC<Props> = ({ setOptions }) => {
           style={{
             background:
               activeOption === SwitchOptions.OPTION2
-                ? "#E961FF"
+                ? "#e961ff"
                 : "transparent"
           }}
           onClick={() => handleSwitchClick(SwitchOptions.OPTION2)}
@@ -57,7 +57,7 @@ export const PricingSwitch: React.FC<Props> = ({ setOptions }) => {
             className="switch-text"
             style={{
               color:
-                activeOption === SwitchOptions.OPTION2 ? "#14181c" : "#fff"
+                activeOption === SwitchOptions.OPTION2 ? "#14181c" : "#e961ff"
             }}
           >
             {SwitchOptions.OPTION2}

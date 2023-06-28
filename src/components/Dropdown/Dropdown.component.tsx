@@ -4,7 +4,7 @@ import { useDropdownContext } from "../../DropdownContext";
 export const Dropdown = () => {
   const { isDropdownOpen } = useDropdownContext();
 
-  if (!isDropdownOpen || !isHovered) {
+  if (!isDropdownOpen) {
     return null;
   }
   
