@@ -87,10 +87,10 @@ p, button {
 }
 
 .h2 {
-  all: unset;
+  /* all: unset; */
 
   font-weight: 400;
-  font-size: 3.5vw;
+  font-size: 40px;
   line-height: 120%;
 
   color: var(--text-color);
@@ -98,7 +98,7 @@ p, button {
   mix-blend-mode: normal;
 
   margin-top: 70px;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 
 @media (max-width: 641px) {

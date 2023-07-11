@@ -18,6 +18,10 @@
   gap: 40px;
 }
 
+.crew__title {
+  text-align: start;
+}
+
 .crew__list {
   display: grid;
   grid-template-columns: repeat(3, 4fr);

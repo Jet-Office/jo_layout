@@ -26,8 +26,8 @@ export const Contacts: React.FC<Props> = ({ contactsPageRef }) => {
                 src={`/contacts-icons/${contact.icon}`}
                 alt=""
                 className="contacts__icon"
-                width={24}
-                height={24}
+                width={32}
+                height={32}
               />
               <p className="contacts__adress">{contact.address}</p>
             </a>
@@ -47,6 +47,8 @@ export const Contacts: React.FC<Props> = ({ contactsPageRef }) => {
                 className="socials__icon"
                 src="/socials-icons/🦆 icon _instagram_.svg"
                 alt="icon _instagram"
+                width={32}
+                height={32}
               />
             </a>
           </div>
@@ -56,6 +58,8 @@ export const Contacts: React.FC<Props> = ({ contactsPageRef }) => {
                 className="socials__icon"
                 src="/socials-icons/🦆 icon _twitter_.svg"
                 alt="icon _twitter"
+                width={32}
+                height={32}
               />
             </a>
           </div>
@@ -65,6 +69,8 @@ export const Contacts: React.FC<Props> = ({ contactsPageRef }) => {
                 className="socials__icon"
                 src="/socials-icons/🦆 icon _linkedin_.svg"
                 alt="icon _linkedin"
+                width={32}
+                height={32}
               />
             </a>
           </div>
