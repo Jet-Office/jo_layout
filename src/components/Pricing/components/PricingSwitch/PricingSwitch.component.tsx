@@ -12,7 +12,7 @@ type Props = {
 
 export const PricingSwitch: React.FC<Props> = ({ setOptions }) => {
   const [activeOption, setActiveOption] = useState<SwitchOptions>(
-    SwitchOptions.OPTION1
+    SwitchOptions.OPTION2
   );
 
   const handleSwitchClick = (options: SwitchOptions) => {

@@ -17,6 +17,12 @@
       "name": "Sergey Solovev ",
       "role": "Ux/Ui Designer",
       "avatar": "sergey.webp"
+    },
+    {
+      "id": 4,
+      "name": "Vydrina Marina ",
+      "role": "Co-founder, PM, Coach",
+      "avatar": "marina.webp"
     }
   ]
 }

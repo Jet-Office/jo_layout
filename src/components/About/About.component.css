@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 6fr 6fr;
 
-  padding-left: 4vw;
+  padding-left: 6vw;
 
   gap: 20px;
 }

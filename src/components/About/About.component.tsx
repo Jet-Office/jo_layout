@@ -24,7 +24,7 @@ export const About: React.FC<Props> = ({ windowWidth, aboutPageRef }) => {
 
   return (
     <section id="about" className="about" ref={aboutPageRef}>
-      <div className="about__container container">
+      <div className="about__container container__special">
         <div className="about__content">
           <h2 className="about__title h2">About us</h2>
           <div className="about__text">

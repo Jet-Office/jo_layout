@@ -50,6 +50,19 @@
   line-height: 140%;
 
   color: var(--text-color);
+  transition: all 0.2s;
+}
+
+.contacts__adress:hover {
+  opacity: 75%;
+}
+
+.socials__icon {
+  transition: all 0.2s;
+}
+
+.socials__icon:hover {
+  opacity: 75%;
 }
 
 @media (max-width: 641px) {
