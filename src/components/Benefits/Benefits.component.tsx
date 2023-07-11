@@ -75,7 +75,7 @@ export const Benefits = () => {
           </div>
         </div>
         <div className="benefits__plane_container">
-            <img src="/benefits-icons/plane.svg" width={259.39} height={616} alt="" className="benefits__plane" />
+            <img src="/benefits-icons/plane.svg" width={259.39} height={616} alt="rocket" className="benefits__plane" />
         </div>
       </div>
     </section>
