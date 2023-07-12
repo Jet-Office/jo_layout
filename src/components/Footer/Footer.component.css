@@ -43,4 +43,8 @@
   .sectionform {
     width: 100%;
   }
+
+  .cont {
+    margin: auto;
+  }
 }

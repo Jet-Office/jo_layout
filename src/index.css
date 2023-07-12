@@ -112,6 +112,14 @@ p, button {
   .container {
     margin: 0;
 
+    padding: 0 6vw;
+
+    max-width: none;
+  }
+
+  .container__special {
+    margin: 0;
+
     padding: 0 4vw;
 
     max-width: none;
