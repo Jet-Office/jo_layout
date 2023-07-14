@@ -17,12 +17,10 @@
 }
 
 .faq__question {
-  font-family: Proxima Nova regular;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 140%;
-  color: white;
 }
 
 
@@ -32,13 +30,15 @@
   flex-wrap: wrap;
   justify-content: space-between;
   cursor: pointer;
-
-  color:white;
+  font-weight: bold;
+  color: var(--text-color);
 }
 
 .answer {
   margin-top: 10px;
   color: var(--text-color);
+
+  font-weight: normal;
 
   text-align: left;
 }
