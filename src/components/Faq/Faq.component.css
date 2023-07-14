@@ -30,13 +30,15 @@
   flex-wrap: wrap;
   justify-content: space-between;
   cursor: pointer;
-
+  font-weight: bold;
   color: var(--text-color);
 }
 
 .answer {
   margin-top: 10px;
   color: var(--text-color);
+
+  font-weight: normal;
 
   text-align: left;
 }
