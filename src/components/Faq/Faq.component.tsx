@@ -26,15 +26,23 @@ export const Faq: React.FC = () => {
 
         <div className="faq__question">
           {faqItems.map((faq: FAQItem) => (
-            <div key={faq.id} className={`faq-item ${expandedIndex === faq.id ? "expanded" : ""}`}>
-              <div
-                className="question"
-                onClick={() => toggleAnswer(faq.id)}
-              >
+            <div
+              key={faq.id}
+              className={`faq-item ${
+                expandedIndex === faq.id ? "expanded" : ""
+              }`}
+            >
+              <div className="question" onClick={() => toggleAnswer(faq.id)}>
                 {faq.question}
                 <img
-                  className={`plus-icon ${expandedIndex === faq.id ? "minus" : "plus"}`}
-                  src={expandedIndex === faq.id ? "/faq-icon/minus.svg" : "/faq-icon/plus.svg"}
+                  className={`plus-icon ${
+                    expandedIndex === faq.id ? "minus" : "plus"
+                  }`}
+                  src={
+                    expandedIndex === faq.id
+                      ? "/faq-icon/minus.svg"
+                      : "/faq-icon/plus.svg"
+                  }
                   alt={expandedIndex === faq.id ? "Minus Icon" : "Plus Icon"}
                 />
               </div>
