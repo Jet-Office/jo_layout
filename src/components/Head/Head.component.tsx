@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Logo from "../../assets/logo.svg";
 import { Navigation } from "../Navigation";
+import { Button } from "../Button";
 
 import "./Head.component.css";
 import { Menu } from "./component/Menu";
@@ -78,6 +79,11 @@ export const Head: React.FC<Props> = ({ windowWidth, activePageRef }) => {
             setActiveLink={setActiveLink}
           />
         )}
+        <Button
+        color="pink"
+        text="Start free trial"
+        onClick={() => console.log("pressed")}
+      />
       </div>
     </div>
   );

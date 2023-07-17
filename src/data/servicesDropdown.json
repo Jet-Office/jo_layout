@@ -1,0 +1,382 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "name": "Calendars, Documents & tasks management",
+      "icon": "list-edit.svg",
+      "descriptions": [
+        {
+          "id": 1,
+          "icon": "drawer-envelope.svg",
+          "name": "Email Management",
+          "attachment": "hot",
+          "text": "Effective email management is of paramount importance for businesses."
+        },
+        {
+          "id": 2,
+          "icon": "paper-write.svg",
+          "name": "Tasks Managment",
+          "attachment": "hot",
+          "text": "Highlighting the importance of effective task assignment and control."
+        },
+        {
+          "id": 3,
+          "icon": "presentation-analytics.svg",
+          "name": "Scheduling & Contacts",
+          "attachment": "",
+          "text": "Efficient meeting schedule control and electronic contact management."
+        },
+        {
+          "id": 4,
+          "icon": "presentation-projector-screen-bars.svg",
+          "name": "Documents & Presentations",
+          "attachment": "",
+          "text": "Highlighting the significance of well-edited and visually appealing documents."
+        },
+        {
+          "id": 5,
+          "icon": "business-contract-handshake-sign.svg",
+          "name": "Finding vendors",
+          "attachment": "new",
+          "text": "Effective email management is of paramount importance for businesses."
+        },
+        {
+          "id": 6,
+          "icon": "accounting-invoice-mail.svg",
+          "name": "Bills & Payment",
+          "attachment": "",
+          "text": "Highlighting the importance of efficient bill control and payment processes in maintaining"
+        },
+        {
+          "id": 7,
+          "icon": "shopping-cart-heart.svg",
+          "name": "Shopping & Delivery",
+          "attachment": "new",
+          "text": "Effective email management is of paramount importance for businesses."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Project management & coordination",
+      "icon": "gauge-dashboard.svg",
+      "descriptions": [
+        {
+          "id": 1,
+          "icon": "drawer-envelope.svg",
+          "name": "Email Management",
+          "attachment": "hot",
+          "text": "Effective email management is of paramount importance for businesses."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Business assistance & Human resources",
+      "icon": "bulb.svg",
+      "descriptions": [
+        {
+          "id": 1,
+          "icon": "drawer-envelope.svg",
+          "name": "Email Management",
+          "attachment": "hot",
+          "text": "Effective email management is of paramount importance for businesses."
+        },
+        {
+          "id": 2,
+          "icon": "paper-write.svg",
+          "name": "Tasks Managment",
+          "attachment": "hot",
+          "text": "Highlighting the importance of effective task assignment and control."
+        },
+        {
+          "id": 3,
+          "icon": "drawer-envelope.svg",
+          "name": "Scheduling & Contacts",
+          "attachment": "",
+          "text": "Efficient meeting schedule control and electronic contact management."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Social media management & advertisement",
+      "icon": "vintage-tv-4.svg",
+      "descriptions": [
+        {
+          "id": 1,
+          "icon": "drawer-envelope.svg",
+          "name": "Email Management",
+          "attachment": "hot",
+          "text": "Effective email management is of paramount importance for businesses."
+        },
+        {
+          "id": 2,
+          "icon": "paper-write.svg",
+          "name": "Tasks Managment",
+          "attachment": "hot",
+          "text": "Highlighting the importance of effective task assignment and control."
+        },
+        {
+          "id": 3,
+          "icon": "drawer-envelope.svg",
+          "name": "Scheduling & Contacts",
+          "attachment": "",
+          "text": "Efficient meeting schedule control and electronic contact management."
+        },
+        {
+          "id": 4,
+          "icon": "drawer-envelope.svg",
+          "name": "Documents & Presentations",
+          "attachment": "",
+          "text": "Highlighting the significance of well-edited and visually appealing documents."
+        },
+        {
+          "id": 5,
+          "icon": "drawer-envelope.svg",
+          "name": "Finding vendors",
+          "attachment": "new",
+          "text": "Effective email management is of paramount importance for businesses."
+        },
+        {
+          "id": 6,
+          "icon": "drawer-envelope.svg",
+          "name": "Bills & Payment",
+          "attachment": "",
+          "text": "Highlighting the importance of efficient bill control and payment processes in maintaining"
+        },
+        {
+          "id": 7,
+          "icon": "drawer-envelope.svg",
+          "name": "Shopping & Delivery",
+          "attachment": "new",
+          "text": "Effective email management is of paramount importance for businesses."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Travel & relocation, Translation",
+      "icon": "landmark-pisa-tower.svg",
+      "descriptions": [
+        {
+          "id": 1,
+          "icon": "drawer-envelope.svg",
+          "name": "Email Management",
+          "attachment": "hot",
+          "text": "Effective email management is of paramount importance for businesses."
+        },
+        {
+          "id": 2,
+          "icon": "paper-write.svg",
+          "name": "Tasks Managment",
+          "attachment": "hot",
+          "text": "Highlighting the importance of effective task assignment and control."
+        },
+        {
+          "id": 3,
+          "icon": "drawer-envelope.svg",
+          "name": "Scheduling & Contacts",
+          "attachment": "",
+          "text": "Efficient meeting schedule control and electronic contact management."
+        },
+        {
+          "id": 4,
+          "icon": "drawer-envelope.svg",
+          "name": "Documents & Presentations",
+          "attachment": "",
+          "text": "Highlighting the significance of well-edited and visually appealing documents."
+        },
+        {
+          "id": 5,
+          "icon": "drawer-envelope.svg",
+          "name": "Finding vendors",
+          "attachment": "new",
+          "text": "Effective email management is of paramount importance for businesses."
+        },
+        {
+          "id": 6,
+          "icon": "drawer-envelope.svg",
+          "name": "Bills & Payment",
+          "attachment": "",
+          "text": "Highlighting the importance of efficient bill control and payment processes in maintaining"
+        },
+        {
+          "id": 7,
+          "icon": "drawer-envelope.svg",
+          "name": "Shopping & Delivery",
+          "attachment": "new",
+          "text": "Effective email management is of paramount importance for businesses."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Business events & corporate holidays",
+      "icon": "restaurant-menu.svg",
+      "descriptions": [
+        {
+          "id": 1,
+          "icon": "drawer-envelope.svg",
+          "name": "Email Management",
+          "attachment": "hot",
+          "text": "Effective email management is of paramount importance for businesses."
+        },
+        {
+          "id": 2,
+          "icon": "paper-write.svg",
+          "name": "Tasks Managment",
+          "attachment": "hot",
+          "text": "Highlighting the importance of effective task assignment and control."
+        },
+        {
+          "id": 3,
+          "icon": "drawer-envelope.svg",
+          "name": "Scheduling & Contacts",
+          "attachment": "",
+          "text": "Efficient meeting schedule control and electronic contact management."
+        },
+        {
+          "id": 4,
+          "icon": "drawer-envelope.svg",
+          "name": "Documents & Presentations",
+          "attachment": "",
+          "text": "Highlighting the significance of well-edited and visually appealing documents."
+        },
+        {
+          "id": 5,
+          "icon": "drawer-envelope.svg",
+          "name": "Finding vendors",
+          "attachment": "new",
+          "text": "Effective email management is of paramount importance for businesses."
+        },
+        {
+          "id": 6,
+          "icon": "drawer-envelope.svg",
+          "name": "Bills & Payment",
+          "attachment": "",
+          "text": "Highlighting the importance of efficient bill control and payment processes in maintaining"
+        },
+        {
+          "id": 7,
+          "icon": "drawer-envelope.svg",
+          "name": "Shopping & Delivery",
+          "attachment": "new",
+          "text": "Effective email management is of paramount importance for businesses."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Design, Development & Research",
+      "icon": "brain-1.svg",
+      "descriptions": [
+        {
+          "id": 1,
+          "icon": "drawer-envelope.svg",
+          "name": "Email Management",
+          "attachment": "hot",
+          "text": "Effective email management is of paramount importance for businesses."
+        },
+        {
+          "id": 2,
+          "icon": "paper-write.svg",
+          "name": "Tasks Managment",
+          "attachment": "hot",
+          "text": "Highlighting the importance of effective task assignment and control."
+        },
+        {
+          "id": 3,
+          "icon": "drawer-envelope.svg",
+          "name": "Scheduling & Contacts",
+          "attachment": "",
+          "text": "Efficient meeting schedule control and electronic contact management."
+        },
+        {
+          "id": 4,
+          "icon": "drawer-envelope.svg",
+          "name": "Documents & Presentations",
+          "attachment": "",
+          "text": "Highlighting the significance of well-edited and visually appealing documents."
+        },
+        {
+          "id": 5,
+          "icon": "drawer-envelope.svg",
+          "name": "Finding vendors",
+          "attachment": "new",
+          "text": "Effective email management is of paramount importance for businesses."
+        },
+        {
+          "id": 6,
+          "icon": "drawer-envelope.svg",
+          "name": "Bills & Payment",
+          "attachment": "",
+          "text": "Highlighting the importance of efficient bill control and payment processes in maintaining"
+        },
+        {
+          "id": 7,
+          "icon": "drawer-envelope.svg",
+          "name": "Shopping & Delivery",
+          "attachment": "new",
+          "text": "Effective email management is of paramount importance for businesses."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Coaching, leadership & Team-building",
+      "icon": "target-correct.svg",
+      "descriptions": [
+        {
+          "id": 1,
+          "icon": "drawer-envelope.svg",
+          "name": "Email Management",
+          "attachment": "hot",
+          "text": "Effective email management is of paramount importance for businesses."
+        },
+        {
+          "id": 2,
+          "icon": "paper-write.svg",
+          "name": "Tasks Managment",
+          "attachment": "hot",
+          "text": "Highlighting the importance of effective task assignment and control."
+        },
+        {
+          "id": 3,
+          "icon": "drawer-envelope.svg",
+          "name": "Scheduling & Contacts",
+          "attachment": "",
+          "text": "Efficient meeting schedule control and electronic contact management."
+        },
+        {
+          "id": 4,
+          "icon": "drawer-envelope.svg",
+          "name": "Documents & Presentations",
+          "attachment": "",
+          "text": "Highlighting the significance of well-edited and visually appealing documents."
+        },
+        {
+          "id": 5,
+          "icon": "drawer-envelope.svg",
+          "name": "Finding vendors",
+          "attachment": "new",
+          "text": "Effective email management is of paramount importance for businesses."
+        },
+        {
+          "id": 6,
+          "icon": "drawer-envelope.svg",
+          "name": "Bills & Payment",
+          "attachment": "",
+          "text": "Highlighting the importance of efficient bill control and payment processes in maintaining"
+        },
+        {
+          "id": 7,
+          "icon": "drawer-envelope.svg",
+          "name": "Shopping & Delivery",
+          "attachment": "new",
+          "text": "Effective email management is of paramount importance for businesses."
+        }
+      ]
+    }
+  ]
+}

@@ -10,7 +10,7 @@ export const Dropdown = () => {
   
   return (
     <div className="dropdown">
-      {/* Содержимое дропдауна */}
+      <div className="dropdown__content">123</div>
     </div>
   );
 };

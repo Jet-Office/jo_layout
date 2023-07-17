@@ -1,6 +1,8 @@
 import "./Navigation.component.css";
 import { Link } from "../../types/link.type";
 import { useCallback } from "react";
+import { ServicesDropdown } from "../ServicesDropdown";
+import React from "react";
 
 type Props = {
   handleCLose?: () => void;
@@ -57,10 +59,12 @@ export const Navigation: React.FC<Props> = ({
     [handleCLose, setActiveLink, setIsClickLink]
   );
 
+  const [servicesOpen, setServicesOpen] = React.useState(false);
+
   return (
     <nav className="navigation">
       <ul className="navigation__list">
-        {links.map((link) => (
+        {/* {links.map((link) => (
           <li
             className={`navigation__item_background${
               activeLink.toLowerCase() === link.name.toLowerCase()
@@ -81,7 +85,31 @@ export const Navigation: React.FC<Props> = ({
               </a>
             </div>
           </li>
-        ))}
+        ))} */}
+
+        <a className={`navigation__link`}>Home</a>
+        <div
+          className="menu-container"
+          onMouseEnter={() => setServicesOpen(true)}
+        >
+          <div className="menu-trigger">
+            <a className={`navigation__link`}>Services</a>
+          </div>
+          {servicesOpen && (
+            <div
+              className="dropdown-menu"
+              onMouseLeave={() => setServicesOpen(false)}
+            >
+              <ul>
+                <ServicesDropdown />
+              </ul>
+            </div>
+          )}
+        </div>
+        <a className={`navigation__link`}>Pricing</a>
+        <a className={`navigation__link`}>Cases</a>
+        <a className={`navigation__link`}>About</a>
+        <a className={`navigation__link`}>Contacts</a>
       </ul>
     </nav>
   );
