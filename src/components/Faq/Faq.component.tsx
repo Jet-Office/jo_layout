@@ -23,9 +23,10 @@ export const Faq: React.FC = () => {
         <div className="faq__text_container">
           <h2 className="faq__title-text h2">FAQ</h2>
         </div>
-
+        <div className="faq-grid__container">
         <div className="faq__question">
           {faqItems.map((faq: FAQItem) => (
+            <div className="faq__item-wrapper">
             <div
               key={faq.id}
               className={`faq-item ${
@@ -52,8 +53,12 @@ export const Faq: React.FC = () => {
                 <div className="answer">{faq.text}</div>
               )}
             </div>
+            </div>
+
           ))}
         </div>
+        </div>
+
       </div>
     </section>
   );
