@@ -97,6 +97,7 @@
 
 .cases__card_name {
   text-transform: uppercase;
+  padding-bottom: 10px;
 }
 
 .cases__descriptions {
@@ -131,8 +132,8 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 20px;
-  padding-top: 15px;
+
+  margin-bottom: 20px;
 }
 
 .cases__description_list {
@@ -266,8 +267,6 @@
   }
 
   .cases__card_name {
-    margin-top: 20px;
-    margin-bottom: 20px;
 
     font-size: 4.103vw;
 
@@ -318,4 +317,9 @@
   .cases__content {
     height: 143vh;
   }
+}
+
+
+.ant-card-body {
+  padding: 0 !important;
 }
