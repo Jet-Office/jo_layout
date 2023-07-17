@@ -65,6 +65,15 @@
     text-align: left;
   }
   
+  .faq__question {
+    min-width: 343px;
+  }
+
+  .question__text {
+    max-width: 240px;
+    text-align: left;
+  }
+  
   .faq-item {
     display: flex;
     flex-direction: column;

@@ -33,7 +33,9 @@ export const Faq: React.FC = () => {
               }`}
             >
               <div className="question" onClick={() => toggleAnswer(faq.id)}>
+                <div className="question__text">
                 {faq.question}
+                </div>
                 <img
                   className={`plus-icon ${
                     expandedIndex === faq.id ? "minus" : "plus"
