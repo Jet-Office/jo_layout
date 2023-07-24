@@ -1,0 +1,6 @@
+.list-of-services {
+    display: flex;
+    flex-direction: column;
+    color: #ccc;
+    height: 100vh;
+}

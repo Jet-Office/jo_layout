@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef, useContext } from "react";
 
+import { Routes, Route } from "react-router-dom";
+
 import "./App.css";
 
 import { Header } from "./components/Header";
@@ -15,6 +17,9 @@ import { Modal } from "./components/Modal/Modal";
 import { ModalContext } from "./modalProvider";
 import { Footer } from "./components/Footer";
 import { Dropdown } from "./components/Dropdown";
+import { ServicesPage } from "./components/ServicesPage";
+import { ListOfServices } from "./components/ListOfServices";
+import { NotFound } from "./components/NotFound";
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -108,25 +113,59 @@ function App() {
 
   return (
     <div className="App">
-      <Modal active={active} setActive={setActive} />
-      <Dropdown />
-      <Header
-        activePageRef={activePageRef}
-        windowWidth={windowWidth}
-        homePageRef={homePageRef}
-      />
-      <main className="main">
-        <div className="main__container">
-          <Services activeRef={servicesPageRef} />
-          {windowWidth <= 641 && <ControlPreview />}
-          <Benefits />
-          <Pricing windowWidth={windowWidth} activePageRef={pricingPageRef} />
-          <Cases windowWidth={windowWidth} casesPageRef={casesPageRef} />
-          <About windowWidth={windowWidth} aboutPageRef={aboutPageRef} />
-          <Faq />
-          <Crew />
-        </div>
-      </main>
+      
+      <Routes>
+        <Route path="/" element={
+          <>
+          <Modal active={active} setActive={setActive} />
+            <Dropdown />
+            <Header
+              activePageRef={activePageRef}
+              windowWidth={windowWidth}
+              homePageRef={homePageRef}
+            />
+          
+            <main className="main">
+              <div className="main__container">
+                <Services activeRef={servicesPageRef} />
+                {windowWidth <= 641 && <ControlPreview />}
+                <Benefits />
+                <Pricing windowWidth={windowWidth} activePageRef={pricingPageRef} />
+                <Cases windowWidth={windowWidth} casesPageRef={casesPageRef} />
+                <About windowWidth={windowWidth} aboutPageRef={aboutPageRef} />
+                <Faq />
+                <Crew />
+              </div>
+            </main>
+
+          </>
+        } />
+        <Route path="/services/:link" element={
+          <ListOfServices
+          activePageRef={activePageRef}
+          windowWidth={windowWidth}
+          active={active}
+          setActive={setActive}
+          />
+        } />
+
+        <Route path="/services" element={
+          <ServicesPage
+            activePageRef={activePageRef}
+            windowWidth={windowWidth}
+            active={active}
+            setActive={setActive}
+          />
+        } />
+        <Route path="*" element={
+          <NotFound 
+          activePageRef={activePageRef}
+          windowWidth={windowWidth}
+          active={active}
+          setActive={setActive}
+          />
+        } />
+      </Routes>
       <footer className="footermain">
         <Footer contactsPageRef={contactsPageRef} />
       </footer>
