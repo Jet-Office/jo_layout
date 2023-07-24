@@ -1,0 +1,150 @@
+{
+  "servicesPage": [
+    {
+      "id": 1,
+      "title": "Calendars, Documents & Tasks management",
+      "description": "Effective email management is crucial for businesses to optimize their communication processes.",
+      "background": "/services-page/services-bg-1.png",
+      "link": "calendars-documents-tasks-management",
+      "list": [
+        {
+          "id": 1,
+          "title": "Email management",
+          "icon": "/list-of-services/drawer-envelope.svg",
+          "description": "Effective email management is crucial for businesses to optimize their communication processes. Jet Office service offers comprehensive solutions to streamline your email management, taking it to a new level of efficiency and professionalism."
+        },
+        {
+          "id": 2,
+          "title": "Tasks management",
+          "icon": "/list-of-services/paper-write.svg",
+          "description": "Effective task assignment and control of execution is important for achieving business goals. Jet Office professionals specialize in streamlining task management and facilitating collaboration to drive productivity and ensure success."
+        },
+        {
+          "id": 3,
+          "title": "Scheduling & Contacts",
+          "icon": "/list-of-services/presentation-analytics.svg",
+          "description": "Effective meeting schedule control and electronic contact management are vital for startups to optimize their operations and achieve productivity. At Jet Office we understand the unique challenges faced by emerging businesses and offer comprehensive solutions to streamline these essential aspects."
+        },
+        {
+          "id": 4,
+          "title": "Documents & Presentations",
+          "icon": "/list-of-services/presentation-projector-screen-bars.svg",
+          "description": "At Jet Office, we understand the significance of well-edited and visually appealing documents and presentations in effective communication. In a business optimization first impression of servises matter more than ever. That's why we emphasize the role of professionals in editing, formatting, and creating impactful content."
+        },
+        {
+          "id": 5,
+          "title": "Finding vendors",
+          "icon": "/list-of-services/business-contract-handshake-sign.svg",
+          "description": "Finding reliable and compatible vendors is important for successful business operations. At Jet Office, we understand the significance of this process and emphasize the role of professionals in efficiently identifying and selecting vendors that meet your specific needs."
+        },
+        {
+          "id": 6,
+          "title": "Bills & Payment",
+          "icon": "/list-of-services/accounting-invoice-mail.svg",
+          "description": "Efficient bill control and payment processes are vital for maintaining financial stability and organization. JetOffice services help to optimize these processes and bill management of your company."
+        },
+        {
+          "id": 7,
+          "title": "Shopping & Delivery",
+          "icon": "/list-of-services/shopping-cart-heart.svg",
+          "description": "Our team is proud to offer a virtual service that combines the convenience of shopping from anywhere with reliable delivery to customers' doorsteps."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Social media management & advertisement",
+      "description": "Effective email management is crucial for businesses to optimize their communication processes.",
+      "background": "/services-page/services-bg-2.png",
+      "link": "social-media-management-advertisement",
+      "list":[
+        {
+          "id": 1,
+          "title": "Content Creation",
+          "icon": "/list-of-services/content-write.svg",
+          "description": "JetOffice's Content Creation is designed to help businesses establish a strong online presence and connect with their target audience through compelling and customized content."
+        },
+        {
+          "id": 2,
+          "title": "Content Planning & Publishing",
+          "icon": "/list-of-services/notes-paper-approve.svg",
+          "description": "JetOffice's Content Planning & Publishing is designed to empower businesses with a strategic approach to content creation and effective distribution. We understand the power of valuable and engaging content in driving brand awareness, attracting audiences, and nurturing customer relationships."
+        },
+        {
+          "id": 3,
+          "title": "Ad Campaign Management",
+          "icon": "/list-of-services/notes-warning.svg",
+          "description": "JetOffice's Ad Campaign Management service is designed to help you maximize the results of your advertising efforts. This service offers a wide range of features and benefits to ensure effective management of your ad campaigns and achieve maximum success."
+        },
+        {
+          "id": 4,
+          "title": "Proofreading & Error Correction",
+          "icon": "/list-of-services/computer-bug-search.svg",
+          "description": "JetOffice's Proofreading and Error Correction service is specifically designed to help you enhance the quality and professionalism of your written materials. With our comprehensive suite of services, we offer expert proofreading and meticulous error correction to ensure that your content is flawless, impactful, and of the highest standard."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Project management & coordination",
+      "description": "Effective email management is crucial for businesses to optimize their communication processes.",
+      "background": "/services-page/services-bg-3.png",
+      "link": "project-management-coordination",
+      "list":[
+        {
+          "id": 1,
+          "title": "Administration of Electronic Documents & Database Management",
+          "icon": "/list-of-services/monitor-page.svg",
+          "description": "Efficient administration of electronic documents and database management is crucial for businesses to ensure organized and accessible information. JetOffice provides comprehensive services that optimize information organization, enhancing productivity and streamlining operations."
+        },
+        {
+          "id": 2,
+          "title": "Curating Online Schools or Courses",
+          "icon": "/list-of-services/meeting-remote.svg",
+          "description": "Curating online schools or courses is essential for creating a seamless and effective educational process. JetOffice knows how important are curators in coordinating and organizing the educational journey, ensuring a rewarding and impactful learning experience for students."
+        },
+        {
+          "id": 3,
+          "title": "Camping or Retreat Coordination",
+          "icon": "/list-of-services/camping-tent-3.svg",
+          "description": "Well organized and pleasant campsites or retreats for individuals and groups. We go to great lengths to ensure that every aspect of the experience is fluid, memorable, and tailored to our clients' unique needs."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Business assistance & Human resources",
+      "description": "Effective email management is crucial for businesses to optimize their communication processes.",
+      "background": "/services-page/services-bg-4.png",
+      "link": "business-assistance-human-resources"
+    },
+    {
+      "id": 5,
+      "title": "Travel & relocation, Translation",
+      "description": "Effective email management is crucial for businesses to optimize their communication processes.",
+      "background": "/services-page/services-bg-5.png",
+      "link": "travel-relocation-translation"
+    },
+    {
+      "id": 6,
+      "title": "business events & corporate holidays",
+      "description": "Effective email management is crucial for businesses to optimize their communication processes.",
+      "background": "/services-page/services-bg-6.png",
+      "link": "business-events-corporate-holidays"
+    },
+    {
+      "id": 7,
+      "title": "Coaching, leadership & Team-building",
+      "description": "Effective email management is crucial for businesses to optimize their communication processes.",
+      "background": "/services-page/services-bg-7.png",
+      "link": "coaching-leadership-team-building"
+    },
+    {
+      "id": 8,
+      "title": "Design, development & Research",
+      "description": "Effective email management is crucial for businesses to optimize their communication processes.",
+      "background": "/services-page/services-bg-8.png",
+      "link": "design-development-research"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Work-Office-Companies / Presentations / presentation-analytics">
+<g id="Group">
+<g id="presentation-analytics">
+<path id="Shape" d="M48.125 2.1875V8.75" stroke="url(#paint0_linear_2667_8266)" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_2" d="M35 8.75H64.4583C66.3164 8.76124 67.8157 10.2724 67.8125 12.1304V42.5571C67.8157 44.4151 66.3164 45.9263 64.4583 45.9375H43.75" stroke="url(#paint1_linear_2667_8266)" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_3" d="M39.7834 28.3646L45.1122 23.0417C45.7701 22.3861 46.8343 22.3861 47.4922 23.0417L51.6251 27.1804C52.283 27.836 53.3472 27.836 54.0051 27.1804L61.113 20.0725" stroke="url(#paint2_linear_2667_8266)" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_4" d="M48.125 45.9375V61.25" stroke="url(#paint3_linear_2667_8266)" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_5" d="M48.125 61.25L39.375 67.8125" stroke="url(#paint4_linear_2667_8266)" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_6" d="M48.125 61.25L55.9738 67.8125" stroke="url(#paint5_linear_2667_8266)" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Oval" fill-rule="evenodd" clip-rule="evenodd" d="M17.5 19.6875C22.3325 19.6875 26.25 15.77 26.25 10.9375C26.25 6.10501 22.3325 2.1875 17.5 2.1875C12.6675 2.1875 8.75 6.10501 8.75 10.9375C8.75 15.77 12.6675 19.6875 17.5 19.6875Z" stroke="url(#paint6_linear_2667_8266)" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_7" fill-rule="evenodd" clip-rule="evenodd" d="M32.8125 39.375C32.8125 30.9181 25.9569 24.0625 17.5 24.0625C9.04314 24.0625 2.1875 30.9181 2.1875 39.375V45.9375H8.75L10.9375 67.8125H24.0625L26.25 45.9375H32.8125V39.375Z" stroke="url(#paint7_linear_2667_8266)" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_2667_8266" x1="50.7832" y1="2.75146" x2="46.7334" y2="4.62806" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00E5E5"/>
+<stop offset="0.510417" stop-color="#72A5F2"/>
+<stop offset="1" stop-color="#E961FF"/>
+</linearGradient>
+<linearGradient id="paint1_linear_2667_8266" x1="64.9051" y1="11.9458" x2="34.9296" y2="39.5213" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00E5E5"/>
+<stop offset="0.510417" stop-color="#72A5F2"/>
+<stop offset="1" stop-color="#E961FF"/>
+</linearGradient>
+<linearGradient id="paint2_linear_2667_8266" x1="59.2231" y1="20.7851" x2="54.8317" y2="32.5621" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00E5E5"/>
+<stop offset="0.510417" stop-color="#72A5F2"/>
+<stop offset="1" stop-color="#E961FF"/>
+</linearGradient>
+<linearGradient id="paint3_linear_2667_8266" x1="50.7832" y1="47.2534" x2="46.0505" y2="48.1933" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00E5E5"/>
+<stop offset="0.510417" stop-color="#72A5F2"/>
+<stop offset="1" stop-color="#E961FF"/>
+</linearGradient>
+<linearGradient id="paint4_linear_2667_8266" x1="47.3497" y1="61.814" x2="42.317" y2="68.8101" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00E5E5"/>
+<stop offset="0.510417" stop-color="#72A5F2"/>
+<stop offset="1" stop-color="#E961FF"/>
+</linearGradient>
+<linearGradient id="paint5_linear_2667_8266" x1="55.2783" y1="61.814" x2="50.0968" y2="68.275" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00E5E5"/>
+<stop offset="0.510417" stop-color="#72A5F2"/>
+<stop offset="1" stop-color="#E961FF"/>
+</linearGradient>
+<linearGradient id="paint6_linear_2667_8266" x1="24.6994" y1="3.69141" x2="10.5564" y2="18.4368" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00E5E5"/>
+<stop offset="0.510417" stop-color="#72A5F2"/>
+<stop offset="1" stop-color="#E961FF"/>
+</linearGradient>
+<linearGradient id="paint7_linear_2667_8266" x1="30.0989" y1="27.8223" x2="-3.60373" y2="52.419" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00E5E5"/>
+<stop offset="0.510417" stop-color="#72A5F2"/>
+<stop offset="1" stop-color="#E961FF"/>
+</linearGradient>
+</defs>
+</svg>
