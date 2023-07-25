@@ -16,19 +16,21 @@ export const Descriptions: React.FC<Props> = ({ descriptions, windowWidth }) => 
       {descriptions.map(({ id, icon, attachment, name, text }) => (
         <div 
           key={id} 
-          className={`services__card ${windowWidth <= 641 && activeDescriptionId === id ? "active" : ""}`}
+          className={`services__card ${windowWidth <= 890 && activeDescriptionId === id ? "active" : ""}`}
           onClick={() => {setActiveDescriptionId(id)}}
           >
           <div className="top-part">
             <div className="top-part--first">
-              <img src={ windowWidth <= 641 && activeDescriptionId === id ? `./dropdown-icons/gradient/${icon}` : `./dropdown-icons/${icon}`} alt="" />
-              <span className={`services__card__title ${windowWidth <= 641 && activeDescriptionId === id ? "active" : ""}`}>{name}</span>
+              <img 
+                className="icons_scale"
+                src={ windowWidth <= 890 && activeDescriptionId === id ? `./dropdown-icons/gradient/${icon}` : `./dropdown-icons/${icon}`} alt="" />
+              <span className={`services__card__title ${windowWidth <= 890 && activeDescriptionId === id ? "active" : ""}`}>{name}</span>
             </div>
             {attachment !== "" && (
               <span className="attachment">{attachment}</span>
             )}
           </div>
-          <div className={`bottom-part ${windowWidth <= 641 && activeDescriptionId === id ? "active" : ""}`}>
+          <div className={`bottom-part ${windowWidth <= 890 && activeDescriptionId === id ? "active" : ""}`}>
             <span className="services__card__desc">{text}</span>
           </div>
         </div>

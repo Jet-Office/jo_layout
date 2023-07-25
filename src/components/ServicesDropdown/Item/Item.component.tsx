@@ -47,7 +47,7 @@ export const Item: React.FC<Props> = ({
     (currentId: number) => {
       setActiveId(currentId);
 
-      if (windowWidth <= 641) {
+      if (windowWidth <= 890) {
         setIsOpen(!isOpen);
       }
     },
@@ -74,12 +74,14 @@ export const Item: React.FC<Props> = ({
 
   return (
     <> {
-      windowWidth > 641 
+      windowWidth > 890 
       ? <div className={cardClassName} 
           onMouseEnter={ () => handleMouse(id) }
           >
-          <img src={`/services-icons/${icon}`} alt="dropdown-icons" className="services-icons--svg" />
-          <span>{name}</span>
+          <div className="left">
+            <img src={`/services-icons/${icon}`} alt="dropdown-icons" className="services-icons--svg img_scale" />
+            <span>{name}</span>
+          </div>
         </div>
       : (
         <>
@@ -88,26 +90,28 @@ export const Item: React.FC<Props> = ({
             setTimeout(() => handleMouse(id), 100);
           }}
           >
-          <img src={`/services-icons/${icon}`} alt="dropdown-icons" className="services-icons--svg"
+          <div className={`left`}>
+            <img src={`/services-icons/${icon}`} alt="dropdown-icons" className="services-icons--svg img_scale"
             />
-          <span>{name}</span>
+            <span>{name}</span>
+          </div>
           <img 
             src={activeId === id ? `/helpers-icons/arrow-right-pink.svg` : `/helpers-icons/arrow-right.svg`}
-            className="arrow-right--svg"></img>
+            className="arrow-right--svg img_scale"></img>
         </div>
         <div className="content-container scroll"> {          
           activeId !== 0 && id === activeId ? (
             <div className="content">
               <div className="content-top">
                 <div 
-                  className="back_arrow--svg"
+                  className="back_arrow--svg img_scale"
                   onClick={() => handleClickBack()}
                   >
                   <img src="/head-icons/arrow-left-gradient.svg"></img>
                 </div>
                 <span className="submenu_name">{name}</span>
                 <div 
-                  className="close--svg"
+                  className="close--svg img_scale"
                   onClick={() => handleClickClose()}
                   >
                   <img 
@@ -125,6 +129,7 @@ export const Item: React.FC<Props> = ({
                     color="pink"
                     text="Start free trial"
                     onClick={() => console.log("pressed")}
+                    className="menu"
                   />  
                 </div>
               </div>

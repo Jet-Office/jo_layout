@@ -27,7 +27,7 @@ export const List: React.FC<Props> = ({
 }) => {
   return (
     <> {
-      windowWidth > 641 ? (
+      windowWidth > 890 ? (
         <DesktopList
           windowWidth={windowWidth} 
           cases={cases} 

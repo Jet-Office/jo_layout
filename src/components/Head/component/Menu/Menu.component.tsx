@@ -67,7 +67,7 @@ export const Menu: React.FC<Props> = ({
             <img
               src="/head-icons/close-icon.svg"
               alt="close menu"
-              className="menu__close_icon"
+              className="menu__close_icon img_scale"
               width={30}
               height={30}
             />
@@ -88,6 +88,7 @@ export const Menu: React.FC<Props> = ({
               color="pink"
               text="Start free trial"
               onClick={() => console.log("pressed")}
+              className="menu"
             />  
           </div>
         </div>

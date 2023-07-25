@@ -28,9 +28,9 @@ export const ServicesDropdown: React.FC<Props> = ({
     <List
       windowWidth={windowWidth}
       cases={activeLink}
-      setActiveId={windowWidth > 641 ? setActiveId : setActiveIdForMobile}
+      setActiveId={windowWidth > 890 ? setActiveId : setActiveIdForMobile}
       //setDescriptions={setDescriptions}
-      activeId={windowWidth > 641 ? activeId : activeIdForMobile}
+      activeId={windowWidth > 890 ? activeId : activeIdForMobile}
       handleCLose={handleCLose}
       submenuOpen={submenuOpen}
       mainMenuSetIsOpen={mainMenuSetIsOpen}

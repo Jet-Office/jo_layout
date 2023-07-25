@@ -68,7 +68,8 @@ svg path {
   fill: red;
 }
 
-@media (max-width: 641px) {
+/* @media (max-width: 641px) { */
+@media (max-width: 890px) { 
   .navigation {
     margin-top: 40px;
     margin-bottom: 8px;

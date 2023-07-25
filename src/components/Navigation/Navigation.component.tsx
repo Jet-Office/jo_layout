@@ -65,7 +65,7 @@ export const Navigation: React.FC<Props> = ({
 
   return (
     <nav className="navigation"> {
-      windowWidth > 641 ? (
+      windowWidth > 890 ? (
         <DesktopNavigation
           windowWidth={windowWidth}
           activeLink={activeLink}

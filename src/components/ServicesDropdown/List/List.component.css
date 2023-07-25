@@ -55,7 +55,8 @@ span {
     transform: rotate(-90deg);
 }
 
-@media (max-width: 641px) {
+/* @media (max-width: 641px) { */
+@media (max-width: 890px) {
     .sidebar {
         width: 100%;
         background-color: transparent;
@@ -83,7 +84,7 @@ span {
         width: 100%;
         align-items: center;
         justify-content: center;
-        gap: 64px;
+        gap: 45px;
         padding: 10.5px 0;
         margin-bottom: 40px;
     }
@@ -125,7 +126,8 @@ span {
 
 }
 
-@media (min-width: 641px) {
+/* @media (min-width: 641px) { */
+@media (min-width: 890px) {
     .sidebar {
         height: fit-content;
     }

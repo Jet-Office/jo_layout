@@ -15,7 +15,7 @@
 
 .services-icons--svg {
   height: 36px;
-  width: 36px;
+  align-self: center;
 }
 
 .sidebar__card {
@@ -23,7 +23,6 @@
   position: relative;
   padding: 20px 50px;
   padding-left: 75px;
-  gap: 20px;
   text-align: left;
   transition: all 0.2s ease-in-out;
   box-sizing: border-box;
@@ -32,11 +31,15 @@
   justify-content: space-between;
 }
 
-.sidebar__card > span {
+.sidebar__card > .left {
+  display: flex;
+  gap: 16px;
+}
+
+.sidebar__card > .left > span  {
   font-family: "Proxima Nova regular", serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 19.8px;
   color: #cccccc;
 }
 
@@ -94,6 +97,10 @@
   border: none;
 }
 
+.arrow-right--svg {
+  height: 3.6vw;
+  width: 3.6vw;
+}
 
 @media (max-width: 1366px) {
   .sidebar__card {
@@ -112,17 +119,27 @@
   }
 }
 
-@media (max-width: 641px) {
+/* @media (max-width: 641px) { */
+@media (max-width: 890px) {
 
   .sidebar__card {
     width: 100%;
     padding-left: 40px;
     padding-right: 32px;
-    gap: 40.5px;
   }
 
-  .sidebar__card > span {
+  .sidebar__card > .left {
+    gap: 40px;
+    padding-right: 25px;
+  }
+
+  .services-icons--svg {
+    height: 9.7vw;
+  }
+    
+  .sidebar__card > .left > span  {
     font-size: 3.7vw;
+    max-width: 350px;
   }
 
   .active, .sidebar__card:hover {
@@ -143,8 +160,32 @@
     mask-composite: exclude; 
   }
 
-  .arrow-right--svg {
-    width: 16px;
-    height: 16px;
+}
+
+@media (min-width: 641px) and (max-width: 890px) {
+
+  .img_scale {
+    scale: 150%;
   }
+
+  .services-icons--svg {
+    padding-left: 40px;
+  }
+
+  .arrow-right--svg {
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 300px) {
+
+  .sidebar__card > .left {
+    gap: 20px;
+  }
+
+  .sidebar__card {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
 }

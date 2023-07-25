@@ -69,7 +69,7 @@
 
 .pricing__card_background {
   max-width: 232px;
-  height: 780px;
+  height: 859px;
 
   position: relative;
 
@@ -81,6 +81,7 @@
   background: var(--gradient);
 
   border-radius: 8px;
+  margin-top: 40px;
 }
 
 .pricing__card {
@@ -97,6 +98,7 @@
 
   border: 1px solid #1c2024;
   border-radius: 8px;
+  
 }
 
 @media (min-width: 573px) and (max-width: 641px) {
@@ -155,8 +157,8 @@
 }
 
 .pricing__card_head {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 40px;
 
   display: flex;
@@ -165,7 +167,7 @@
   gap: 10px;
 }
 
-@media (max-width: 641px) {
+@media (max-width: 1450px) {
   .pricing__card_head {
     padding: 16px 21.7px;
     padding-bottom: 0;
@@ -328,6 +330,8 @@
   line-height: 140%;
 
   text-align: center;
+
+  padding: 0 20px;
 }
 
 .pricing__card_preferences {
@@ -339,6 +343,11 @@
   height: min-content;
 
   gap: 5px;
+  padding: 0 20px;
+}
+
+.pricing__card_preferences.second {
+  padding-bottom: 40px;
 }
 
 .pricing__card_preference {
@@ -354,16 +363,22 @@
   align-items: baseline;
 }
 
+.pricing__container.container, .pricing__flex.container {
+  max-width: 85vw;
+}
+
 @media (min-width: 1200px) {
   .pricing__list {
     width: 100%;
   }
 }
 
-@media (max-width: 641px) {
+
+@media (max-width: 1450px) {
 
   .pricing__container.container {
     padding: 0;
+    max-width: fit-content;
   }
 
   .pricing__card_text_container {
@@ -390,6 +405,7 @@
   .pricing__card_background {
     margin-top: 40px;
     margin-bottom: 50px;
+    margin-left: 16px;
     max-width: 235px;
     height: 690px;
   }
@@ -416,7 +432,7 @@
   .pricing__card--personal::after,
   .pricing__card--calculator::after,
   .pricing__card--hourly::after {
-    font-size: 5.128vw;
+    font-size: 20px;
 
     width: 3.077vw;
     height: 7.08vw;
@@ -428,6 +444,26 @@
   .pricing__card_monthly {
     padding: 0 16px;
   }
+
+}
+
+@media (min-width: 641px) and (max-width: 1450px) {
+  .pricing__card--business::after,
+  .pricing__card--startup::after,
+  .pricing__card--personal::after,
+  .pricing__card--calculator::after,
+  .pricing__card--hourly::after {
+    left: -30px;
+  }
+}
+
+@media (min-width: 1450px) {
+  .pricing__card--business::after,
+  .pricing__card--startup::after,
+  .pricing__card--personal::after {
+    left: -15px;
+  }
+
 }
 
 @media (min-width: 1920px) {
@@ -560,10 +596,6 @@
   align-items: baseline;
 }
 
-.pricing__flex.container {
-  width: 91.8vw;
-}
-
 .adm-swiper-slide .adm-swiper-item {
   display: flex;
   justify-content: center;
@@ -575,4 +607,12 @@
     justify-content: right;
   }
 
+  .pricing__card_background {
+    margin-left: 0;
+  }
+
+}
+
+.adm-page-indicator.adm-page-indicator-horizontal.adm-page-indicator-color-primary {
+  display: none;
 }
