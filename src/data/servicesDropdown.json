@@ -54,6 +54,27 @@
           "attachment": "new",
           "text": "Effective email management is of paramount importance for businesses."
         }
+      ],
+      "news": [
+        {
+          "id": 1,
+          "title": "JetOffice email Management Services for business",
+          "alt": "JetOffice email Management Services for business",
+          "image": "./src/assets/news1.png"
+        },
+        {
+          "id": 2,
+          "title": "Enhancing Productivity and Collaboration",
+          "alt":  "Enhancing Productivity and Collaboration",
+          "image": "./src/assets/news2.png"
+        },
+        {
+          "id": 3,
+          "title": "Stages of development with a virtual assistant",
+          "alt":  "Stages of development with a virtual assistant",
+          "image": "./src/assets/news3.png"
+        }
+        
       ]
     },
     {
@@ -63,11 +84,46 @@
       "descriptions": [
         {
           "id": 1,
-          "icon": "drawer-envelope.svg",
-          "name": "Email Management",
-          "attachment": "hot",
-          "text": "Effective email management is of paramount importance for businesses."
+          "icon": "meeting-remote.svg",
+          "name": "Curating Online Schools or Courses",
+          "attachment": "",
+          "text": "Ensuring a smooth flow of educational content, assignments and assessments."
+        },
+        {
+          "id": 2,
+          "icon": "camping-tent.svg",
+          "name": "Camping or Retreat Coordination",
+          "attachment": "",
+          "text": "Well organized and pleasant campsites or retreats for individuals and groups."
+        },
+        {
+          "id": 3,
+          "icon": "monitor-page.svg",
+          "name": "Administration of Electronic Documents & Database Management",
+          "attachment": "",
+          "text": "Organization, categorization and archiving of electronic documents."
         }
+      ],
+      "news": [
+        {
+          "id": 1,
+          "title": "JetOffice email Management Services for business",
+          "alt": "JetOffice email Management Services for business",
+          "image": "./src/assets/news1.png"
+        },
+        {
+          "id": 2,
+          "title": "Enhancing Productivity and Collaboration",
+          "alt":  "Enhancing Productivity and Collaboration",
+          "image": "./src/assets/news2.png"
+        },
+        {
+          "id": 3,
+          "title": "Stages of development with a virtual assistant",
+          "alt":  "Stages of development with a virtual assistant",
+          "image": "./src/assets/news3.png"
+        }
+        
       ]
     },
     {
@@ -96,6 +152,27 @@
           "attachment": "",
           "text": "Efficient meeting schedule control and electronic contact management."
         }
+      ],
+      "news": [
+        {
+          "id": 1,
+          "title": "JetOffice email Management Services for business",
+          "alt": "JetOffice email Management Services for business",
+          "image": "./src/assets/news1.png"
+        },
+        {
+          "id": 2,
+          "title": "Enhancing Productivity and Collaboration",
+          "alt":  "Enhancing Productivity and Collaboration",
+          "image": "./src/assets/news2.png"
+        },
+        {
+          "id": 3,
+          "title": "Stages of development with a virtual assistant",
+          "alt":  "Stages of development with a virtual assistant",
+          "image": "./src/assets/news3.png"
+        }
+        
       ]
     },
     {
@@ -151,6 +228,26 @@
           "name": "Shopping & Delivery",
           "attachment": "new",
           "text": "Effective email management is of paramount importance for businesses."
+        }
+      ],
+      "news": [
+        {
+          "id": 1,
+          "title": "JetOffice email Management Services for business",
+          "alt": "JetOffice email Management Services for business",
+          "image": "./src/assets/news1.png"
+        },
+        {
+          "id": 2,
+          "title": "Enhancing Productivity and Collaboration",
+          "alt":  "Enhancing Productivity and Collaboration",
+          "image": "./src/assets/news2.png"
+        },
+        {
+          "id": 3,
+          "title": "Stages of development with a virtual assistant",
+          "alt":  "Stages of development with a virtual assistant",
+          "image": "./src/assets/news3.png"
         }
       ]
     },
@@ -208,6 +305,26 @@
           "attachment": "new",
           "text": "Effective email management is of paramount importance for businesses."
         }
+      ],
+      "news": [
+        {
+          "id": 1,
+          "title": "JetOffice email Management Services for business",
+          "alt": "JetOffice email Management Services for business",
+          "image": "./src/assets/news1.png"
+        },
+        {
+          "id": 2,
+          "title": "Enhancing Productivity and Collaboration",
+          "alt":  "Enhancing Productivity and Collaboration",
+          "image": "./src/assets/news2.png"
+        },
+        {
+          "id": 3,
+          "title": "Stages of development with a virtual assistant",
+          "alt":  "Stages of development with a virtual assistant",
+          "image": "./src/assets/news3.png"
+        }
       ]
     },
     {
@@ -263,6 +380,26 @@
           "name": "Shopping & Delivery",
           "attachment": "new",
           "text": "Effective email management is of paramount importance for businesses."
+        }
+      ],
+      "news": [
+        {
+          "id": 1,
+          "title": "JetOffice email Management Services for business",
+          "alt": "JetOffice email Management Services for business",
+          "image": "./src/assets/news1.png"
+        },
+        {
+          "id": 2,
+          "title": "Enhancing Productivity and Collaboration",
+          "alt":  "Enhancing Productivity and Collaboration",
+          "image": "./src/assets/news2.png"
+        },
+        {
+          "id": 3,
+          "title": "Stages of development with a virtual assistant",
+          "alt":  "Stages of development with a virtual assistant",
+          "image": "./src/assets/news3.png"
         }
       ]
     },
@@ -320,6 +457,26 @@
           "attachment": "new",
           "text": "Effective email management is of paramount importance for businesses."
         }
+      ],
+      "news": [
+        {
+          "id": 1,
+          "title": "JetOffice email Management Services for business",
+          "alt": "JetOffice email Management Services for business",
+          "image": "./src/assets/news1.png"
+        },
+        {
+          "id": 2,
+          "title": "Enhancing Productivity and Collaboration",
+          "alt":  "Enhancing Productivity and Collaboration",
+          "image": "./src/assets/news2.png"
+        },
+        {
+          "id": 3,
+          "title": "Stages of development with a virtual assistant",
+          "alt":  "Stages of development with a virtual assistant",
+          "image": "./src/assets/news3.png"
+        }
       ]
     },
     {
@@ -375,6 +532,26 @@
           "name": "Shopping & Delivery",
           "attachment": "new",
           "text": "Effective email management is of paramount importance for businesses."
+        }
+      ],
+      "news": [
+        {
+          "id": 1,
+          "title": "JetOffice email Management Services for business",
+          "alt": "JetOffice email Management Services for business",
+          "image": "./src/assets/news1.png"
+        },
+        {
+          "id": 2,
+          "title": "Enhancing Productivity and Collaboration",
+          "alt":  "Enhancing Productivity and Collaboration",
+          "image": "./src/assets/news2.png"
+        },
+        {
+          "id": 3,
+          "title": "Stages of development with a virtual assistant",
+          "alt":  "Stages of development with a virtual assistant",
+          "image": "./src/assets/news3.png"
         }
       ]
     }

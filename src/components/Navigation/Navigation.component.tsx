@@ -1,116 +1,95 @@
 import "./Navigation.component.css";
 import { Link } from "../../types/link.type";
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 import { ServicesDropdown } from "../ServicesDropdown";
 import React from "react";
+import { DesktopNavigation } from "./components/Desktop";
+import { MobileNavigation } from "./components/Mobile";
 
 type Props = {
   handleCLose?: () => void;
   activeLink: string;
   setActiveLink: (link: string) => void;
   setIsClickLink: (isClick: boolean) => void;
+  windowWidth: number;
+  submenuOpen: boolean;
+  setSubmenuOpen: (submenuOpen: boolean) => void;
+  mainMenuSetIsOpen: (submenuOpen: boolean) => void;
+  setActiveMenuLink: (activeMenuLink: string) => void;
 };
+
+export const LINKS: Link[] = [
+  {
+    id: 1,
+    name: "Services",
+    isDropDown: true,
+    href: "#services",
+  },
+  {
+    id: 2,
+    name: "Pricing",
+    isDropDown: false,
+    href: "#pricing",
+  },
+  {
+    id: 3,
+    name: "Cases",
+    isDropDown: false,
+    href: "#cases",
+  },
+  {
+    id: 4,
+    name: "About",
+    isDropDown: false,
+    href: "#about",
+  },
+  {
+    id: 5,
+    name: "Contacts",
+    isDropDown: false,
+    href: "#contacts",
+  },
+];
 
 export const Navigation: React.FC<Props> = ({
   handleCLose,
   activeLink,
   setActiveLink,
   setIsClickLink,
+  windowWidth,
+  submenuOpen,
+  setSubmenuOpen,
+  mainMenuSetIsOpen,
+  setActiveMenuLink
 }) => {
-  const links: Link[] = [
-    {
-      id: 1,
-      name: "Home",
-      href: "#",
-    },
-    {
-      id: 2,
-      name: "Services",
-      href: "#services",
-    },
-    {
-      id: 3,
-      name: "Pricing",
-      href: "#pricing",
-    },
-    {
-      id: 4,
-      name: "Cases",
-      href: "#cases",
-    },
-    {
-      id: 5,
-      name: "About",
-      href: "#about",
-    },
-    {
-      id: 6,
-      name: "Contacts",
-      href: "#contacts",
-    },
-  ];
-
-  const handleClick = useCallback(
-    (name: string) => {
-      setIsClickLink(true);
-      setActiveLink(name);
-      handleCLose && handleCLose();
-    },
-    [handleCLose, setActiveLink, setIsClickLink]
-  );
-
-  const [servicesOpen, setServicesOpen] = React.useState(false);
 
   return (
-    <nav className="navigation">
-      <ul className="navigation__list">
-        {/* {links.map((link) => (
-          <li
-            className={`navigation__item_background${
-              activeLink.toLowerCase() === link.name.toLowerCase()
-                ? " navigation__item_background--active"
-                : ""
-            }`}
-            key={link.id}
-          >
-            <div className="navigation__item">
-              <a
-                href={link.href}
-                className={`navigation__link${
-                  activeLink === link.name ? " navigation__link--active" : ""
-                }`}
-                onClick={() => handleClick(link.name)}
-              >
-                {link.name}
-              </a>
-            </div>
-          </li>
-        ))} */}
-
-        <a className={`navigation__link`}>Home</a>
-        <div
-          className="menu-container"
-          onMouseEnter={() => setServicesOpen(true)}
-        >
-          <div className="menu-trigger">
-            <a className={`navigation__link`}>Services</a>
-          </div>
-          {servicesOpen && (
-            <div
-              className="dropdown-menu"
-              onMouseLeave={() => setServicesOpen(false)}
-            >
-              <ul>
-                <ServicesDropdown />
-              </ul>
-            </div>
-          )}
-        </div>
-        <a className={`navigation__link`}>Pricing</a>
-        <a className={`navigation__link`}>Cases</a>
-        <a className={`navigation__link`}>About</a>
-        <a className={`navigation__link`}>Contacts</a>
-      </ul>
-    </nav>
+    <nav className="navigation"> {
+      windowWidth > 641 ? (
+        <DesktopNavigation
+          windowWidth={windowWidth}
+          activeLink={activeLink}
+          submenuOpen={submenuOpen}
+          setActiveLink={setActiveLink}
+          setIsClickLink={setIsClickLink}
+          setSubmenuOpen={setSubmenuOpen}
+          mainMenuSetIsOpen={mainMenuSetIsOpen}
+          setActiveMenuLink={setActiveMenuLink}
+        />)
+       : (
+        <MobileNavigation
+          windowWidth={windowWidth}
+          activeLink={activeLink}
+          setActiveLink={setActiveLink}
+          submenuOpen={submenuOpen}
+          setIsClickLink={setIsClickLink}
+          setSubmenuOpen={setSubmenuOpen}
+          handleCLose={handleCLose}
+          mainMenuSetIsOpen={mainMenuSetIsOpen}
+          setActiveMenuLink={setActiveMenuLink}
+        />)
+    } </nav> 
   );
 };
+
+

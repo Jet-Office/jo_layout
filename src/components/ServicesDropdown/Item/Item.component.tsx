@@ -3,6 +3,7 @@ import classNames from "classnames";
 import { Description, Service } from "../../../types/servicesDropdown.type";
 import { Descriptions } from "../Descriptions/Descriptions.component";
 import "../ServicesDropdown.component.css";
+import { Button } from "../../Button";
 
 type Props = {
   item: Service;
@@ -10,7 +11,10 @@ type Props = {
   activeId: number;
   setActiveId: (id: number) => void;
   windowWidth: number;
-  activeID: number;
+  handleCLose?: () => void;
+  submenuOpen: boolean;
+  mainMenuSetIsOpen: (mainMenuOpen: boolean) => void;
+  setActiveMenuLink: (activeMenuLink: string) => void;
 };
 
 export const Item: React.FC<Props> = ({
@@ -19,6 +23,8 @@ export const Item: React.FC<Props> = ({
   activeId,
   setActiveId,
   windowWidth,
+  mainMenuSetIsOpen,
+  setActiveMenuLink
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -37,7 +43,7 @@ export const Item: React.FC<Props> = ({
     opened: isOpen,
   });
 
-  const handleClick = useCallback(
+  const handleMouse = useCallback(
     (currentId: number) => {
       setActiveId(currentId);
 
@@ -48,12 +54,88 @@ export const Item: React.FC<Props> = ({
     [isOpen, setActiveId, windowWidth]
   );
 
-  return (
-    <div className={cardClassName} onClick={() => handleClick(id)}>
-      <img src={`/services-icons/${icon}`} alt="dropdown-icons" />
-      <span>{name}</span>
+  const handleClickBack = useCallback(
+    () => {
+      setActiveId(0);
+      //setActiveMenuLink("");
+    },
+    [setActiveId, setActiveMenuLink]
+  );
 
-      {isOpen && <Descriptions descriptions={descriptions} />}
-    </div>
+  const handleClickClose = useCallback(
+    () => {
+      setActiveId(0);
+      mainMenuSetIsOpen(false);
+      setActiveMenuLink("");
+
+    },
+    [setActiveId, mainMenuSetIsOpen, setActiveMenuLink]
+  );
+
+  return (
+    <> {
+      windowWidth > 641 
+      ? <div className={cardClassName} 
+          onMouseEnter={ () => handleMouse(id) }
+          >
+          <img src={`/services-icons/${icon}`} alt="dropdown-icons" className="services-icons--svg" />
+          <span>{name}</span>
+        </div>
+      : (
+        <>
+        <div className={cardClassName} 
+          onClick={ () => {
+            setTimeout(() => handleMouse(id), 100);
+          }}
+          >
+          <img src={`/services-icons/${icon}`} alt="dropdown-icons" className="services-icons--svg"
+            />
+          <span>{name}</span>
+          <img 
+            src={activeId === id ? `/helpers-icons/arrow-right-pink.svg` : `/helpers-icons/arrow-right.svg`}
+            className="arrow-right--svg"></img>
+        </div>
+        <div className="content-container scroll"> {          
+          activeId !== 0 && id === activeId ? (
+            <div className="content">
+              <div className="content-top">
+                <div 
+                  className="back_arrow--svg"
+                  onClick={() => handleClickBack()}
+                  >
+                  <img src="/head-icons/arrow-left-gradient.svg"></img>
+                </div>
+                <span className="submenu_name">{name}</span>
+                <div 
+                  className="close--svg"
+                  onClick={() => handleClickClose()}
+                  >
+                  <img 
+                  src="/head-icons/close-icon.svg"></img>
+                </div>
+              </div>
+              <div className="content-description">
+                <Descriptions
+                  descriptions={descriptions}
+                  windowWidth={windowWidth}
+                ></Descriptions>
+              
+                <div className="button--container">
+                  <Button
+                    color="pink"
+                    text="Start free trial"
+                    onClick={() => console.log("pressed")}
+                  />  
+                </div>
+              </div>
+
+          </div>
+          ) : null
+        }
+        </div>
+        </>
+      )
+    }
+    </>
   );
 };

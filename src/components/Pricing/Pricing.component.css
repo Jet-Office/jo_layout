@@ -428,6 +428,10 @@
   .pricing__card_monthly {
     font-size: 4.103vw;
   }
+
+  .adm-swiper.adm-swiper-horizontal .adm-swiper-indicator {
+    left: 38%;
+  }
 }
 
 @media (min-width: 1920px) {
@@ -558,4 +562,14 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+}
+
+.pricing__flex.container {
+  margin: auto;
+  width: 91.8vw;
+}
+
+.adm-swiper-slide .adm-swiper-item {
+  display: flex;
+  justify-content: center;
 }
