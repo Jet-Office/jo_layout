@@ -49,7 +49,7 @@ export const Header: React.FC<Props> = ({ windowWidth, activePageRef }) => {
 
   return (
     <div 
-      className={`head ${(!isHome || (activeLink !== "Home")) ? "head--main" : "head--header"}`}
+      className={`header ${(!isHome || (activeLink !== "Home")) ? "header--main" : "head--header"}`}
       onMouseLeave={() => {
         console.log(activeLink);
         console.log(DEFAULT_ACTIVE_LINK);
@@ -58,15 +58,15 @@ export const Header: React.FC<Props> = ({ windowWidth, activePageRef }) => {
         
       }}
     >
-      <div className="head__container">
-        <a href="#" className="head__logo">
+      <div className="header__container">
+        <a href="#" className="header__logo">
           <img
             src={Logo}
             alt="JetOffice logo"
             width={110}
             height={40}
             srcSet="logo.svg 100%"
-            className="head__logo_img"
+            className="header__logo_img"
           />
         </a>
         {windowWidth > 641 ? (    
@@ -84,6 +84,7 @@ export const Header: React.FC<Props> = ({ windowWidth, activePageRef }) => {
             <Button
               color="pink"
               text="Start free trial"
+              className={'button--nav'}
               onClick={() => console.log("pressed")}
             />
           </> 
