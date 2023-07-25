@@ -1,0 +1,32 @@
+.news-card {
+    position: relative;
+    text-align: start;
+    color: #cccccc;
+    font-family: "Proxima Nova regular";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19.6px;
+    height: 160px;
+    width: 240px;
+    padding-top: 20px;
+  }
+
+.text-overlay {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    width: 192px;
+}
+
+.news-container {
+    display: flex;
+    flex-direction: column;
+}
+  
+@media (max-width: 1366px) {
+    .text-overlay {
+        position: absolute;
+        bottom: 30px;
+        left: 14px;
+    }
+}

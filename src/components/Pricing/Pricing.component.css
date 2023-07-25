@@ -100,27 +100,19 @@
 }
 
 @media (min-width: 573px) and (max-width: 641px) {
-  .pricing__first {
-    height: 400px;
-  }
+  
 }
 
 @media (min-width: 320px) and (max-width: 400px) {
-  .pricing__first {
-    height: 195px;
-  }
+  
 }
 
 @media (min-width: 401px) and (max-width: 460px) {
-  .pricing__first {
-    height: 230px;
-  }
+  
 }
 
 @media (min-width: 461px) and (max-width: 470px) {
-  .pricing__first {
-    height: 230px;
-  }
+  
 }
 
 .pricing__card_content {
@@ -163,14 +155,25 @@
 }
 
 .pricing__card_head {
-  padding-top: 40px;
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 40px;
 
   display: flex;
   flex-direction: column;
 
-  gap: 5px;
+  gap: 10px;
+}
+
+@media (max-width: 641px) {
+  .pricing__card_head {
+    padding: 16px 21.7px;
+    padding-bottom: 0;
+  }
+
+  .pricing__first {
+    margin-top: 16px;
+  }
 }
 
 .pricing__card_description {
@@ -335,7 +338,7 @@
 
   height: min-content;
 
-  gap: 10px;
+  gap: 5px;
 }
 
 .pricing__card_preference {
@@ -358,34 +361,54 @@
 }
 
 @media (max-width: 641px) {
+
+  .pricing__container.container {
+    padding: 0;
+  }
+
+  .pricing__card_text_container {
+    gap: 2px;
+  }
+
+  .pricing__card_preferences {
+    padding: 0 21.7px;
+  }
+
+  .pricing__card_preferences.last {
+    padding-bottom: 16px;
+  }
+
   .pricing {
     all: unset;
   }
 
   .pricing__calculator_icon {
-    height: 40px;
-    width: 40px;
+    height: 43px;
+    width: 43px;
   }
 
   .pricing__card_background {
-    margin-top: 55px;
+    margin-top: 40px;
     margin-bottom: 50px;
+    max-width: 235px;
+    height: 690px;
   }
 
-  .pricing__card_title {
-    font-size: 4.1025vw;
-  }
+  .pricing__card_title, .pricing__card_monthly, .pricing__card_preference {
+    font-size: 16px;
+  } 
 
-  .pricing__card_description {
-    font-size: 3.077vw;
+  .pricing__card_description, .pricing__card_payment {
+    font-size: 12px;
   }
 
   .pricing__card_price {
-    font-size: 9.23vw;
+    font-size: 36px;
 
-    margin-top: -20px;
-
+    width: max-content;
     height: fit-content;
+
+    align-self: center;
   }
 
   .pricing__card--business::after,
@@ -399,34 +422,11 @@
     height: 7.08vw;
 
     top: -10px;
+    left: -20px;
   }
-
-  .pricing__card--business::after {
-    left: 30px;
-  }
-
-  .pricing__card--startup::after {
-    left: 38px;
-  }
-
-  .pricing__card--personal::after {
-    left: 48px;
-  }
-
-  .pricing__card--calculator::after {
-    left: 50px;
-  }
-
-  .pricing__card--hourly::after {
-    left: 42px;
-  }
-
-  .pricing__card_payment {
-    font-size: 3.077vw;
-  }
-
+  
   .pricing__card_monthly {
-    font-size: 4.103vw;
+    padding: 0 16px;
   }
 }
 
@@ -558,4 +558,21 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+}
+
+.pricing__flex.container {
+  width: 91.8vw;
+}
+
+.adm-swiper-slide .adm-swiper-item {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 641px) {
+
+  .adm-swiper-slide .adm-swiper-item {
+    justify-content: right;
+  }
+
 }

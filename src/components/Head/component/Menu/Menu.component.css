@@ -18,9 +18,34 @@
   overflow-y: scroll;
 }
 
-.menu__close_container {
-  position: absolute;
-  
-  top: 11px;
-  right: 11px;
+.menu__open::-webkit-scrollbar {
+  width: 0;
+}
+
+.menu__top_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 44px;
+}
+
+.menu__top_container > span {
+  margin-left: 15px;
+  font-family: 'Proxima Nova Bold', sans-serif;
+  font-size: 5.13vw;
+  color: #CCCCCC;
+}
+
+.menu__top_container > img {
+  margin-right: 16px;
+}
+
+@media (max-width: 641px) {
+
+  .button--container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 36px;
+  }
+
 }

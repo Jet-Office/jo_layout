@@ -70,8 +70,7 @@ export const PriceItem: React.FC<Props> = ({
     <div className={backgroundClass}>
       <div className="pricing__card" style={{ fontFamily: "inherit" }}>
         <div className="pricing__card_content">
-          <div className="pricing__first">
-            <Space direction="vertical" size="large">
+            <Space direction="vertical" size={30} align="center">
               <div className="pricing__card_head">
                 <h3 className={titleClass}>{name}</h3>
                 <p className="pricing__card_description">{description}</p>
@@ -97,89 +96,89 @@ export const PriceItem: React.FC<Props> = ({
                   <p className="pricing__card_payment">{payment}</p>
                 </div>
               )}
-            </Space>
-          </div>
-          <div className="pricing__button">
-            <Button
-              onClick={handleClick}
-              color={titleColor !== "pink" ? titleColor : "pink_price"}
-              text="Get started"
-            />
-          </div>
-          {monthlyHour !== 0 && (
-            <p
-              className={monthlyClass}
-            >{`${monthlyHour} hours monthly for task execution`}</p>
-          )}
-          <div className="pricing__card_preferences_container">
-            {preferences.length > 0 && (
-              <div className="pricing__card_preferences">
-                {preferences.length > 0 && (
-                  <>
-                    {preferences.map((preference) => (
-                      <div
-                        className="pricing__card_text_container"
-                        key={preference.id}
-                      >
-                        <div className="pricing__card_preference">
-                          {preference.name}
-                        </div>
-                        <Tooltip
-                          placement="top"
-                          title={preference.description}
-                          color="#14181c"
-                          style={{ fontFamily: "inherit" }}
-                        >
-                          <InfoCircleOutlined
-                            style={{
-                              color: "#ccc",
-                              marginLeft: "10px",
-                              cursor: "pointer",
-                            }}
-                          />
-                        </Tooltip>
-                      </div>
-                    ))}
-                  </>
-                )}
-                {frealancersPrice > 0 && (
-                  <div className="pricing__card_text_container">
-                    <div className="pricing__card_preference">Freelancers</div>
-                    <Tooltip
-                      placement="top"
-                      title="Jet Talent Hub is a database of freelancers we tap into for fire drills. Freelancers' work hours beyond the package hours are billed separately (usually from a deposit)."
-                      color="#14181c"
-                      style={{ fontFamily: "inherit" }}
-                    >
-                      <InfoCircleOutlined
-                        style={{
-                          color: "#ccc",
-                          marginLeft: "5px",
-                          marginRight: "5px",
-                          cursor: "pointer",
-                        }}
-                      />
-                    </Tooltip>
-                    <p
-                      className="pricing__card_preference"
-                      translate="no"
-                    >{`$${frealancersPrice}/h`}</p>
-                  </div>
-                )}
+
+              <div className="pricing__button">
+                <Button
+                  onClick={handleClick}
+                  color={titleColor !== "pink" ? titleColor : "pink_price"}
+                  text="Get started"
+                />
               </div>
-            )}
-            <div className="pricing__card_preferences">
-              {team.length > 0 && (
-                <>
-                  {team.map((preference) => (
-                    <div className="pricing__card_preference" key={preference}>
-                      {preference}
-                    </div>
-                  ))}
-                </>
+
+              {monthlyHour !== 0 && (
+                <p
+                  className={monthlyClass}
+                >{`${monthlyHour} hours monthly for task execution`}</p>
               )}
-            </div>
-          </div>
+              {preferences.length > 0 && (
+                <div className="pricing__card_preferences">
+                  {preferences.length > 0 && (
+                    <>
+                      {preferences.map((preference) => (
+                        <div
+                          className="pricing__card_text_container"
+                          key={preference.id}
+                        >
+                          <div className="pricing__card_preference">
+                            {preference.name}
+                          </div>
+                          <Tooltip
+                            placement="top"
+                            title={preference.description}
+                            color="#14181c"
+                            style={{ fontFamily: "inherit" }}
+                          >
+                            {/* <InfoCircleOutlined
+                              style={{
+                                color: "#ccc",
+                                marginLeft: "10px",
+                                cursor: "pointer",
+                              }}
+                            /> */}
+                          </Tooltip>
+                        </div>
+                      ))}
+                    </>
+                  )}
+                  {frealancersPrice > 0 && (
+                    <div className="pricing__card_text_container">
+                      <div className="pricing__card_preference">Freelancers</div>
+                      <Tooltip
+                        placement="top"
+                        title="Jet Talent Hub is a database of freelancers we tap into for fire drills. Freelancers' work hours beyond the package hours are billed separately (usually from a deposit)."
+                        color="#14181c"
+                        style={{ fontFamily: "inherit" }}
+                      >
+                        {/* <InfoCircleOutlined
+                          style={{
+                            color: "#ccc",
+                            marginLeft: "5px",
+                            marginRight: "5px",
+                            cursor: "pointer",
+                          }}
+                        /> */}
+                      </Tooltip>
+                      <p
+                        className="pricing__card_preference"
+                        translate="no"
+                      >{`$${frealancersPrice}/h`}</p>
+                    </div>
+                  )}
+                </div>
+              )}
+
+              <div className="pricing__card_preferences last">
+                  {team.length > 0 && (
+                    <>
+                      {team.map((preference) => (
+                        <div className="pricing__card_preference" key={preference}>
+                          {preference}
+                        </div>
+                      ))}
+                    </>
+                  )}
+                </div>
+            </Space>
         </div>
       </div>
     </div>

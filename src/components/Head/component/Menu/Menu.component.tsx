@@ -1,18 +1,33 @@
 import React, { useEffect, useState } from "react";
 import "./Menu.component.css";
 import { Navigation } from "../../../Navigation";
+import { Button } from "../../../Button";
 
 type Props = {
   activeLink: string;
   setActiveLink: (name: string) => void;
   setIsClickLink: (isClick: boolean) => void;
+  windowWidth: number;
+  submenuOpen: boolean;
+  setSubmenuOpen: (submenuOpen: boolean) => void;
+  menuIsOpen: boolean;
+  setMenuIsOpen: (menuIsOpen: boolean) => void;
+  setActiveMenuLink: (activeMenuLink: string) => void;
 };
 
-export const Menu: React.FC<Props> = ({ activeLink, setActiveLink,setIsClickLink }) => {
-  const [isOpen, setIsOpen] = useState(false);
+export const Menu: React.FC<Props> = ({ 
+  activeLink, 
+  setActiveLink, 
+  setIsClickLink, 
+  windowWidth, 
+  submenuOpen, 
+  setSubmenuOpen, 
+  menuIsOpen, 
+  setMenuIsOpen,
+  setActiveMenuLink }) => {
 
   useEffect(() => {
-    if (isOpen) {
+    if (menuIsOpen) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto";
@@ -21,14 +36,15 @@ export const Menu: React.FC<Props> = ({ activeLink, setActiveLink,setIsClickLink
     return () => {
       document.body.style.overflow = "auto";
     };
-  }, [isOpen]);
+  }, [menuIsOpen]);
 
   const handleOpen = () => {
-    setIsOpen(true);
+    setMenuIsOpen(true);
   };
 
   const handleClose = () => {
-    setIsOpen(false);
+    setMenuIsOpen(false);
+    setActiveLink("");
   };
 
   return (
@@ -44,9 +60,10 @@ export const Menu: React.FC<Props> = ({ activeLink, setActiveLink,setIsClickLink
           />
         </div>
       </div>
-      {isOpen && (
+      {menuIsOpen && (
         <div className="menu__open">
-          <div onClick={handleClose} className="menu__close_container">
+          <div onClick={handleClose} className="menu__top_container"> 
+            <span>Menu</span>
             <img
               src="/head-icons/close-icon.svg"
               alt="close menu"
@@ -60,7 +77,19 @@ export const Menu: React.FC<Props> = ({ activeLink, setActiveLink,setIsClickLink
             activeLink={activeLink}
             setActiveLink={setActiveLink}
             setIsClickLink={setIsClickLink}
+            windowWidth={windowWidth}
+            submenuOpen={submenuOpen}
+            setSubmenuOpen={setSubmenuOpen}
+            mainMenuSetIsOpen={setMenuIsOpen} 
+            setActiveMenuLink={setActiveMenuLink}
           />
+          <div className="button--container">
+            <Button
+              color="pink"
+              text="Start free trial"
+              onClick={() => console.log("pressed")}
+            />  
+          </div>
         </div>
       )}
     </>
