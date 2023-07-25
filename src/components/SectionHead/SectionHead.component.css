@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "Proxima Nova Semibold";
+  src: url(./fonts/proxima/proxima-nova-semibold.otf);
+  font-weight: 600;
+}
+
+.section-head {
+  background-image: url(../../assets/BG_nasa.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  position: relative;
+
+  height: 100vh;
+  width: 100vw;
+  min-width: 1300px;
+
+  margin-bottom: 180px;
+}
+
+/*.section-head, .section-head__container {*/
+/*  padding-bottom: 35.5vh;*/
+/*}*/
+
+.section-head__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 110px;
+
+  height: 100vh;
+  width: 100vw;
+
+  background: linear-gradient(
+          90deg,
+          rgba(20, 24, 28, 0.93) 35.91%,
+          rgba(20, 24, 28, 0) 100%
+  );
+}
+
+.section-head__title {
+  all: unset;
+
+  margin: 0;
+
+  margin-top: calc(4.4vw + 88px);
+
+  max-width: fit-content;
+
+  text-align: left;
+
+  font-size: 4.4vw;
+  line-height: 120%;
+
+  background: linear-gradient(
+          223.81deg,
+          #00e5e5 8.72%,
+          #72a5f2 50.87%,
+          #e961ff 91.3%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow: 0px 15px 30px #000000;
+
+  mix-blend-mode: normal;
+}
+
+.section-head__content_container {
+  margin-left: 3.5vw;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.section-head__text {
+  max-width: 37.5vw;
+
+  text-align: left;
+
+  font-size: 1.25vw;
+  line-height: 140%;
+
+  color: var(--text-color);
+}
+
+@media (max-height: 530px) {
+  .section-head,
+  .section-head__container {
+    padding-bottom: 300px;
+  }
+}
+
+@media (max-width: 641px) {
+  .section-head {
+    background-position: right;
+
+    min-width: 205vw;
+  }
+
+  .section-head__container {
+    background: linear-gradient(178.37deg, rgba(20, 24, 28, 0.8) 40.57%, rgba(20, 24, 28, 0) 86.73%);
+  }
+
+  .section-head__title {
+    font-family: "Proxima Nova Semibold";
+    font-weight: 600;
+    font-size: 9.23vw;
+  }
+
+  .section-head__text {
+    max-width: 87.95vw;
+
+    text-align: left;
+
+    font-size: 16px;
+
+    padding-bottom: 50px;
+  }
+
+  .section-head__content_container {
+    margin-left: 7.18vw;
+  }
+
+  .section-head__title {
+    margin-top: 140px;
+  }
+}
