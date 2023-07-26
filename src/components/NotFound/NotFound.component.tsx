@@ -1,14 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./NotFound.component.css";
-import { HeaderSpecial } from "../HeaderSpecial";
-
-type Props = {
-  windowWidth: number;
-  activePageRef: React.RefObject<HTMLElement>;
-  active: boolean;
-  setActive: React.Dispatch<React.SetStateAction<boolean>>;
-};
 
 export const NotFound: React.FC<Props> = ({
   windowWidth,
@@ -18,12 +10,6 @@ export const NotFound: React.FC<Props> = ({
 }) => {
   return (
     <>
-      <HeaderSpecial
-        windowWidth={windowWidth}
-        activePageRef={activePageRef}
-        active={active}
-        setActive={setActive}
-      />
       <div className="not-found" title="404">
         <div className="not-found__text">
           <h1 className="not-found__title">404 Not Found</h1>

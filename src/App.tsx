@@ -153,12 +153,7 @@ function App() {
           <ServiceDescription />
         } />
         <Route path="*" element={
-          <NotFound 
-          activePageRef={activePageRef}
-          windowWidth={windowWidth}
-          active={active}
-          setActive={setActive}
-          />
+          <NotFound />
         } />
       </Routes>
       <footer className="footermain">
