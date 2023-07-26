@@ -54,7 +54,7 @@ interface ServicesPageData {
   servicesPage: ServicePageItem[];
 }
 
-export const ServiceDescription: React.FC<Props> = () => {
+export const ServiceDescription: React.FC = () => {
   const { link, subLink } = useParams<{ link: string; subLink: string }>();
 
   const selectedServicePage = servicesData.servicesPage.find(
@@ -74,16 +74,16 @@ export const ServiceDescription: React.FC<Props> = () => {
     return <div>Підпослуга не знайдена</div>;
   }
 
-  const chousenSubServiceList = chousenSubService.list[0];
+  /* const chousenSubServiceList = chousenSubService.list[0];
   console.log(chousenSubServiceList);
   const heroTitle = chousenSubServiceList["hero-title"];
   const heroDescription = chousenSubServiceList["hero-description"];
   const heroBackground = chousenSubServiceList["hero-background"];
-console.log(heroBackground);
+console.log(heroBackground); */
   return (
     <>
       <section className="hero-section">
-        <div
+        {/* <div
           className="hero-section__background"
           style={{
             backgroundImage: `url(${heroBackground})`,
@@ -97,7 +97,7 @@ console.log(heroBackground);
               {heroDescription}
             </p>
           </div>
-        </div>
+        </div> */}
       </section>
       <div className="service-description">
 
