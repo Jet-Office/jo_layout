@@ -79,7 +79,7 @@ export const Item: React.FC<Props> = ({
           onMouseEnter={ () => handleMouse(id) }
           >
           <div className="left">
-            <img src={`/services-icons/${icon}`} alt="dropdown-icons" className="services-icons--svg img_scale" />
+            <img src={`/services-icons/${icon}`} alt="dropdown-icons" className="services-icons--svg" />
             <span>{name}</span>
           </div>
         </div>
@@ -91,31 +91,33 @@ export const Item: React.FC<Props> = ({
           }}
           >
           <div className={`left`}>
-            <img src={`/services-icons/${icon}`} alt="dropdown-icons" className="services-icons--svg img_scale"
+            <img src={`/services-icons/${icon}`} alt="dropdown-icons" className="services-icons--svg"
             />
             <span>{name}</span>
           </div>
           <img 
             src={activeId === id ? `/helpers-icons/arrow-right-pink.svg` : `/helpers-icons/arrow-right.svg`}
-            className="arrow-right--svg img_scale"></img>
+            className="arrow-right--svg"></img>
         </div>
         <div className="content-container scroll"> {          
           activeId !== 0 && id === activeId ? (
             <div className="content">
               <div className="content-top">
                 <div 
-                  className="back_arrow--svg img_scale"
+                  className="back_arrow--svg"
                   onClick={() => handleClickBack()}
                   >
-                  <img src="/head-icons/arrow-left-gradient.svg"></img>
+                  <img src="/head-icons/arrow-left-gradient.svg"
+                  className="menu__back_icon"></img>
                 </div>
                 <span className="submenu_name">{name}</span>
                 <div 
-                  className="close--svg img_scale"
+                  className="close--svg"
                   onClick={() => handleClickClose()}
                   >
                   <img 
-                  src="/head-icons/close-icon.svg"></img>
+                  src="/head-icons/close-icon.svg"
+                  className="menu__close_icon"></img>
                 </div>
               </div>
               <div className="content-description">

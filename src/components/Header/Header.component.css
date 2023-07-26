@@ -4,13 +4,6 @@
   font-weight: 600;
 }
 
-
-@media (min-width: 641px) and (max-width: 890px) {
-  .img_scale {
-    scale: 150%;
-  }
-}
-
 .header {
   background-image: url(../../assets/BG_nasa.webp);
   background-repeat: no-repeat;

@@ -67,7 +67,7 @@ export const Menu: React.FC<Props> = ({
             <img
               src="/head-icons/close-icon.svg"
               alt="close menu"
-              className="menu__close_icon img_scale"
+              className="menu__close_icon"
               width={30}
               height={30}
             />

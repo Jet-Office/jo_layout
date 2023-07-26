@@ -164,10 +164,6 @@
 
 @media (min-width: 641px) and (max-width: 890px) {
 
-  .img_scale {
-    scale: 150%;
-  }
-
   .services-icons--svg {
     padding-left: 40px;
   }
