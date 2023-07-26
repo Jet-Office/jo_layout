@@ -2,12 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./NotFound.component.css";
 
-export const NotFound: React.FC<Props> = ({
-  windowWidth,
-  activePageRef,
-  active,
-  setActive,
-}) => {
+export const NotFound: React.FC = () => {
   return (
     <>
       <div className="not-found" title="404">
