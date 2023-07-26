@@ -114,17 +114,18 @@ function App() {
 
   return (
     <div className="App">
-      
-      <Routes>
-        <Route path="/" element={
-          <>
-          <Modal active={active} setActive={setActive} />
+      <Modal active={active} setActive={setActive} />
             <Dropdown />
             <Header
               activePageRef={activePageRef}
               windowWidth={windowWidth}
               homePageRef={homePageRef}
             />
+          
+      
+      <Routes>
+        <Route path="/" element={
+          <>
           
             <main className="main">
               <div className="main__container">
@@ -142,29 +143,14 @@ function App() {
           </>
         } />
         <Route path="/services/:link" element={
-          <ListOfServices
-          activePageRef={activePageRef}
-          windowWidth={windowWidth}
-          active={active}
-          setActive={setActive}
-          />
+          <ListOfServices />
         } />
 
         <Route path="/services" element={
-          <ServicesPage
-            activePageRef={activePageRef}
-            windowWidth={windowWidth}
-            active={active}
-            setActive={setActive}
-          />
+          <ServicesPage />
         } />
         <Route path="/services/:link/:subLink" element={
-          <ServiceDescription
-            activePageRef={activePageRef}
-            windowWidth={windowWidth}
-            active={active}
-            setActive={setActive}
-          />
+          <ServiceDescription />
         } />
         <Route path="*" element={
           <NotFound 

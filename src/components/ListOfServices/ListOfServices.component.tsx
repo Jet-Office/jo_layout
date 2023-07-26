@@ -1,22 +1,9 @@
 import { Link, useParams } from "react-router-dom";
 import { servicesPage } from "../../data/servicesPage.json";
-import { HeaderSpecial } from "../HeaderSpecial/HeaderSpecial.component";
 
 import "./ListOfServices.component.css";
 
-type Props = {
-  windowWidth: number;
-  activePageRef: React.RefObject<HTMLElement>;
-  active: boolean;
-  setActive: React.Dispatch<React.SetStateAction<boolean>>;
-};
-
-export const ListOfServices: React.FC<Props> = ({
-  windowWidth,
-  activePageRef,
-  active,
-  setActive,
-}) => {
+export const ListOfServices: React.FC = () => {
   const { link } = useParams<{ link: string }>();
   const selectedService = servicesPage.find((service) => service.link === link);
   
@@ -27,12 +14,6 @@ export const ListOfServices: React.FC<Props> = ({
 
   return (
     <>
-      <HeaderSpecial
-        windowWidth={windowWidth}
-        activePageRef={activePageRef}
-        active={active}
-        setActive={setActive}
-      />
       <div className="container">
         <div className="list-of-services">
           <div

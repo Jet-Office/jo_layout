@@ -1,6 +1,5 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { HeaderSpecial } from "../HeaderSpecial";
 import servicesData from "../../data/servicesPage.json";
 
 import "./ServiceDescription.component.css";
@@ -55,21 +54,7 @@ interface ServicesPageData {
   servicesPage: ServicePageItem[];
 }
 
-
-
-type Props = {
-  windowWidth: number;
-  activePageRef: React.RefObject<HTMLElement>;
-  active: boolean;
-  setActive: React.Dispatch<React.SetStateAction<boolean>>;
-};
-
-export const ServiceDescription: React.FC<Props> = ({
-  windowWidth,
-  activePageRef,
-  active,
-  setActive,
-}) => {
+export const ServiceDescription: React.FC<Props> = () => {
   const { link, subLink } = useParams<{ link: string; subLink: string }>();
 
   const selectedServicePage = servicesData.servicesPage.find(
@@ -97,13 +82,6 @@ export const ServiceDescription: React.FC<Props> = ({
 console.log(heroBackground);
   return (
     <>
-      <HeaderSpecial
-        windowWidth={windowWidth}
-        activePageRef={activePageRef}
-        active={active}
-        setActive={setActive}
-      />
-
       <section className="hero-section">
         <div
           className="hero-section__background"
