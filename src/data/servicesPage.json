@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Calendars, Documents & Tasks management",
-      "description": "Effective email management is crucial for businesses to optimize their communication processes.",
+      "description": "This service provides a centralized system for storing, accessing, and collaborating on documents, ensuring easy sharing and version control.",
       "background": "/services-page/services-bg-1.png",
       "link": "calendars-documents-tasks-management",
       "list": [
@@ -11,50 +11,435 @@
           "id": 1,
           "title": "Email management",
           "icon": "/list-of-services/drawer-envelope.svg",
-          "description": "Effective email management is crucial for businesses to optimize their communication processes. Jet Office service offers comprehensive solutions to streamline your email management, taking it to a new level of efficiency and professionalism."
+          "description": "Effective email management is crucial for businesses to optimize their communication processes. Jet Office service offers comprehensive solutions to streamline your email management, taking it to a new level of efficiency and professionalism.",
+          "link": "email-management",
+          "list":[
+            {
+              "id": 1,
+              "hero-title": "Email management",
+              "hero-description": "Effective email management is crucial for businesses to optimize their communication processes. Jet Office service offers comprehensive solutions to streamline your email management, taking it to a new level of efficiency and professionalism.",
+              "hero-background": "/service-item/email-management/hero-background1.png",
+              "list":[
+                {
+                  "id": 1,
+                  "icon": "/service-item/email-management/read-email-target.svg",
+                  "title": "Spam Filtering",
+                  "description": "Keeping your mailbox secure and free from unwanted correspondence is essential"
+                },
+                {
+                  "id": 2,
+                  "icon": "/service-item/email-management/app-window-bookmark.svg",
+                  "title": "Email Template Creation",
+                  "description": "To further enhance your email management, we provide email template creation services"
+                },
+                {
+                  "id": 3,
+                  "icon": "/service-item/email-management/conversation-text.svg",
+                  "title": "Email Responses",
+                  "description": "Our team of assistants is skilled in providing prompt and professional email responses"
+                }
+              ],
+              "main-image": "/service-item/email-management/main-image1.png",
+              "main-title": "Efficiency",
+              "main-description": "Jet Office is dedicated to improving your email management processes. Our team is ready to assist you in saving time, enhancing communication efficiency, and maintaining professionalism in your email correspondence. With our expertise in correspondence automatization, email management services, spam protection, and advanced features like the email Sorting Roadmap, Jet Office is your partner in optimizing email management for your business.",
+              "list2":[
+                {
+                  "id": 1,
+                  "number": "01",
+                  "title": "Email Responses",
+                  "description": "With Jet Office, you can rely on our expertise in email management services to ensure your emails are handled with utmost care and efficiency."
+                },
+                {
+                  "id": 2,
+                  "number": "02",
+                  "title": "Email Template Creation",
+                  "description": "These templates not only save time but also ensure consistent and personalized responses tailored to your specific needs. JetOffice understands the importance of personalized communication and offers both pre-made and customized email templates."
+                },
+                {
+                  "id": 3,
+                  "number": "03",
+                  "title": "Spam Filtering",
+                  "description": "Jet Office implements cutting-edge spam filtering methods to provide robust spam protection for your emails. Our advanced spam filters and protection against malicious emails guarantee the reliability and safety of your email communication."
+                }
+              ],
+              "rocket-image": "/service-item/email-management/rocket-image1.png",
+              "rocket-title": "Roadmap",
+              "rocket-description": "Experience unparalleled efficiency in mailbox management powered by process automation and AI. Our advanced algorithms intelligently categorize and prioritize your emails, ensuring important messages are never missed. With JetOffice, your personal assistant can make informed decisions, sort emails into different folders, and create calendar events based on your instructions. Our email management solutions provide a streamlined approach to managing your inbox."
+            }
+          ]
         },
         {
           "id": 2,
           "title": "Tasks management",
           "icon": "/list-of-services/paper-write.svg",
-          "description": "Effective task assignment and control of execution is important for achieving business goals. Jet Office professionals specialize in streamlining task management and facilitating collaboration to drive productivity and ensure success."
+          "description": "Effective task assignment and control of execution is important for achieving business goals. Jet Office professionals specialize in streamlining task management and facilitating collaboration to drive productivity and ensure success.",
+          "link": "tasks-management",
+          "list":[
+            {
+              "id": 1,
+              "hero-title": "Tasks management",
+              "hero-description": "Effective task assignment and control of execution is important for achieving business goals. Jet Office specialize in streamlining task management and facilitating collaboration to drive productivity and ensure success.",
+              "hero-background": "/service-item/tasks-management/hero-background2.png",
+              "list":[
+                {
+                  "id": 1,
+                  "icon": "/service-item/tasks-management/task-list-star.svg",
+                  "title": "Prioritization",
+                  "description": "Prioritization of tasks, categorization by urgency, importance and dependence."
+                },
+                {
+                  "id": 2,
+                  "icon": "/service-item/tasks-management/iris-scan-2.svg",
+                  "title": "Control",
+                  "description": "Progress tracking, milestone reviews, and regular checks to ensure tasks stay on schedule."
+                },
+                {
+                  "id": 3,
+                  "icon": "/service-item/tasks-management/wifi-signal-2.svg",
+                  "title": "Status",
+                  "description": "Automatic notifications allow you to instantly inform the assistant about the task."
+                }
+              ],
+              "main-image": "/service-item/tasks-management/main-image2.png",
+              "main-title": "Collaborative",
+              "main-description": "We highlight the importance of fostering collaboration and communication among team members during task assignment and execution. Our recommended tools include collaborative platforms, shared calendars, and real-time updates to facilitate effective teamwork.",
+              "list2":[
+                {
+                  "id": 1,
+                  "number": "01",
+                  "title": "Task Control",
+                  "description": "We discuss the importance of prioritizing tasks and setting realistic deadlines. Our techniques involve categorizing tasks based on urgency, importance, and dependencies, ensuring that the team focuses on critical deliverables."
+                },
+                {
+                  "id": 2,
+                  "number": "02",
+                  "title": "Control",
+                  "description": "Monitoring and controlling task execution is essential for progress tracking and adherence to deadlines. This process includes progress tracking, milestone reviews, and regular check-ins to ensure that tasks stay on track."
+                },
+                {
+                  "id": 3,
+                  "number": "03",
+                  "title": "Task Status",
+                  "description": "Implementing automated notifications keeps team members informed about task assignments, updates, and completion status. We utilize notifications through email, project management tools, or collaboration platforms, ensuring everyone stays updated in real-time."
+                }
+              ],
+              "rocket-image": "/service-item/tasks-management/rocket-image2.png",
+              "rocket-title": "Task Assignment & Execution Expertise",
+              "rocket-description": "Jet Office excels in providing comprehensive services for task assignment and control of execution. With our expertise, we implement efficient task management systems and facilitate collaboration. Our experience ensures seamless coordination and drives productivity."
+            }
+          ]
         },
         {
           "id": 3,
           "title": "Scheduling & Contacts",
           "icon": "/list-of-services/presentation-analytics.svg",
-          "description": "Effective meeting schedule control and electronic contact management are vital for startups to optimize their operations and achieve productivity. At Jet Office we understand the unique challenges faced by emerging businesses and offer comprehensive solutions to streamline these essential aspects."
+          "description": "Effective meeting schedule control and electronic contact management are vital for startups to optimize their operations and achieve productivity. At Jet Office we understand the unique challenges faced by emerging businesses and offer comprehensive solutions to streamline these essential aspects.",
+          "link": "scheduling-contacts",
+          "list": [
+            {
+              "id": 1,
+              "hero-title": "Scheduling & Contacts",
+              "hero-description": "Effective meeting schedule control and electronic contact management are vital for startups to optimize their operations and achieve productivity. At Jet Office we understand the unique challenges faced by emerging businesses and offer comprehensive solutions to streamline these essential aspects.",
+              "hero-background": "/service-item/scheduling-contacts/hero-background3.png",
+              "list":[
+                {
+                  "id": 1,
+                  "icon": "/service-item/scheduling-contacts/performance-increase.svg",
+                  "title": "Enhance Efficiency",
+                  "description": "Simplify communication, minimize administrative tasks, and focus on core business activities."
+                },
+                {
+                  "id": 2,
+                  "icon": "/service-item/scheduling-contacts/time-clock-fire.svg",
+                  "title": "Optimize Time",
+                  "description": "Efficiently allocate resources, eliminate scheduling conflicts, and make the most of every valuable moment."
+                },
+                {
+                  "id": 3,
+                  "icon": "/service-item/scheduling-contacts/business-deal-handshake.svg",
+                  "title": "Boost Collaboration",
+                  "description": "Connect with stakeholders, nurture partnerships, and foster a culture of collaboration for long-term success."
+                }
+              ],
+              "main-image": "/service-item/scheduling-contacts/main-image3.png",
+              "main-title": "Advantages",
+              "main-description": "Discover the benefits of meticulous meeting planning and organization tailored with Jet Office team.  Our solution helps you optimize your limited time resources, minimize scheduling conflicts, and increase overall team productivity.",
+              "list2":[
+                {
+                  "id": 1,
+                  "number": "01",
+                  "title": "Benefits of Electronic Systems",
+                  "description": "Embrace the advantages of Jet Office's electronic contact management system! Enjoy centralized storage of contacts with advanced search functionality, making it easy to find the right contact when you need it. Update contact details in real-time, ensuring accuracy and avoiding outdated information. Enhance efficiency in managing your business relationships."
+                },
+                {
+                  "id": 2,
+                  "number": "02",
+                  "title": "Enhances Meeting  Schedule Control",
+                  "description": "At Jet Office, we offer a comprehensive suite of solutions to empower you in meeting schedule control and contact management. Our user-friendly interface and intuitive features make it easy for you to stay organized and manage your meetings effectively. Additionally, our advanced contact management system ensures seamless communication and collaboration with key stakeholders."
+                },
+                {
+                  "id": 3,
+                  "number": "03",
+                  "title": "Key Features",
+                  "description": "Meeting schedule control offers a range of features designed specifically for business. We help you easily create, edit, and track meetings in real-time. Receive automated reminders and notifications, ensuring you never miss an important meeting."
+                }
+              ],
+              "rocket-image": "/service-item/scheduling-contacts/rocket-image3.png",
+              "rocket-title": "Efficiently managing",
+              "rocket-description": "Efficiently managing meeting schedules and electronic contacts is crucial for business success. Jet Office provides tailored solutions to streamline these aspects and drive productivity. Empower your company with our intuitive tools, enhancing collaboration, networking, and establishing strong business relationships."
+            }
+          ]
         },
         {
           "id": 4,
           "title": "Documents & Presentations",
           "icon": "/list-of-services/presentation-projector-screen-bars.svg",
-          "description": "At Jet Office, we understand the significance of well-edited and visually appealing documents and presentations in effective communication. In a business optimization first impression of servises matter more than ever. That's why we emphasize the role of professionals in editing, formatting, and creating impactful content."
+          "description": "At Jet Office, we understand the significance of well-edited and visually appealing documents and presentations in effective communication. In a business optimization first impression of servises matter more than ever. That's why we emphasize the role of professionals in editing, formatting, and creating impactful content.",
+          "link": "documents-presentations",
+          "list":[
+            {
+              "id": 1,
+              "hero-title": "Documents & Presentations",
+              "hero-description": "At Jet Office, we understand the significance of well-edited and visually appealing documents and presentations in effective communication. In a business optimization first impression of servises matter more than ever.",
+              "hero-background": "/service-item/documents-presentations/hero-background4.png",
+              "list":[
+                {
+                  "id": 1,
+                  "icon": "/service-item/documents-presentations/task-list-settings.svg",
+                  "title": "Editing Documents",
+                  "description": "Review and refine documents for grammar, spelling, punctuation, and overall quality."
+                },
+                {
+                  "id": 2,
+                  "icon": "/service-item/documents-presentations/presentation-board-graph.svg",
+                  "title": "Creating Presentations",
+                  "description": "Our strategies focus on effective slide design, clear messaging, and engaging visuals."
+                },
+                {
+                  "id": 3,
+                  "icon": "/service-item/documents-presentations/pen-write.svg",
+                  "title": "Formatting Documents",
+                  "description": "Your message will be clear and captivating, leaving a lasting impression."
+                }
+              ],
+              "main-image": "/service-item/documents-presentations/main-image4.png",
+              "main-title": "Professionalism",
+              "main-description": "Maintaining brand consistency in document formatting and presentation design is key to establishing a professional image. We guide you in using professional templates, appropriate color schemes, and consistent branding elements to create a cohesive and memorable visual identity.",
+              "list2":[
+                {
+                  "id": 1,
+                  "number": "01",
+                  "title": "Media Integration",
+                  "description": "We believe that visual elements, such as images, charts, and graphs, are powerful tools for enhancing document and presentation content. Our experts excel at integrating multimedia elements effectively, creating visually stunning materials that reinforce your message and make it memorable."
+                },
+                {
+                  "id": 2,
+                  "number": "02",
+                  "title": "Jet Office's Experience",
+                  "description": "At Jet Office, we possess the expertise to provide comprehensive services for editing, formatting, and creating engaging presentations. With years of experience, we have delivered countless polished documents and impactful presentations for businesses across various industries. Trust us to bring your content to life."
+                },
+                {
+                  "id": 3,
+                  "number": "03",
+                  "title": "Visual Hierarchy",
+                  "description": "Understanding the concept of visual hierarchy is crucial in guiding the reader's or viewer's attention to key points. We utilize techniques such as headings, bullet points, and other visual cues to emphasize important information and create a logical flow that ensures your message is received loud and clear."
+                }
+              ],
+              "rocket-image": "/service-item/documents-presentations/rocket-image4.png",
+              "rocket-title": "The importance of visualization",
+              "rocket-description": "Well-edited and visually appealing documents and presentations are paramount for effective communication. Don't settle for mediocrity when it comes to your content. Leverage Jet Office's services to enhance your materials and create engaging presentations that leave a lasting impression."
+            }
+          ]
         },
         {
           "id": 5,
           "title": "Finding vendors",
           "icon": "/list-of-services/business-contract-handshake-sign.svg",
-          "description": "Finding reliable and compatible vendors is important for successful business operations. At Jet Office, we understand the significance of this process and emphasize the role of professionals in efficiently identifying and selecting vendors that meet your specific needs."
+          "description": "Finding reliable and compatible vendors is important for successful business operations. At Jet Office, we understand the significance of this process and emphasize the role of professionals in efficiently identifying and selecting vendors that meet your specific needs.",
+          "link": "finding-vendors",
+          "list":[
+            {
+              "id": 1,
+              "hero-title": "Finding vendors",
+              "hero-description": "Finding reliable and compatible vendors is important for successful business operations. At Jet Office, we understand the significance of this process and emphasize the role of professionals in efficiently identifying and selecting vendors that meet your specific needs.",
+              "hero-background": "/service-item/finding-vendors/hero-background5.png",
+              "list":[
+                {
+                  "id": 1,
+                  "icon": "/service-item/finding-vendors/business-deal-cash-2.svg",
+                  "title": "Vendor Research",
+                  "description": "Proven strategies and techniques to research and evaluate potential vendors."
+                },
+                {
+                  "id": 2,
+                  "icon": "/service-item/finding-vendors/shipment-heart.svg",
+                  "title": "Qualification & Assessment",
+                  "description": "We help you establish predetermined criteria to evaluate vendors effectively."
+                },
+                {
+                  "id": 3,
+                  "icon": "/service-item/finding-vendors/shipment-delivered.svg",
+                  "title": "Due Diligence & Verification",
+                  "description": "We assist in checking references, conducting background checks, and reviewing legal documents."
+                }
+              ],
+              "main-image": "/service-item/finding-vendors/main-image5.png",
+              "main-title": "Accompaniment",
+              "main-description": "We guide you through the process, helping you align your needs with your business objectives and industry standards. Factors such as product quality, pricing, delivery, and customer service are carefully considered to ensure the best fit for your organization.",
+              "list2":[
+                {
+                  "id": 1,
+                  "number": "01",
+                  "title": "Request for Proposals",
+                  "description": "Creating and distributing RFPs or quote requests to potential vendors is essential to gather detailed information. We assist in crafting comprehensive RFPs or quote requests that clearly outline the project scope, timeline, and specific requirements. This ensures that vendors provide accurate and tailored proposals."
+                },
+                {
+                  "id": 2,
+                  "number": "02",
+                  "title": "Vendor Selection",
+                  "description": "Our experts guide you through the process of comparing and analyzing vendor proposals or quotes. We assess factors such as pricing, product/service offerings, delivery capabilities, and contractual terms. Our objective analysis helps you make informed decisions based on the best fit for your organization."
+                },
+                {
+                  "id": 3,
+                  "number": "03",
+                  "title": "Negotiation and Contracting",
+                  "description": "Negotiating with selected vendors is crucial to secure favorable  terms and conditions. Our experts help you navigate  the negotiation process, ensuring that your interests are represented. We also emphasize the importance of formalizing agreements through contracts or service level agreements to protect both parties."
+                }
+              ],
+              "rocket-image": "/service-item/finding-vendors/rocket-image5.png",
+              "rocket-title": "Jet Office's vendor finding expertise",
+              "rocket-description": "Jet Office specializes in providing comprehensive services for finding vendors. With our expertise, we streamline the vendor selection process, ensuring optimal vendor-client matches. Our experience and industry knowledge enable us to identify vendors that align with your specific requirements, saving you time and resources."
+            }
+          ]
         },
         {
           "id": 6,
           "title": "Bills & Payment",
           "icon": "/list-of-services/accounting-invoice-mail.svg",
-          "description": "Efficient bill control and payment processes are vital for maintaining financial stability and organization. JetOffice services help to optimize these processes and bill management of your company."
+          "description": "Efficient bill control and payment processes are vital for maintaining financial stability and organization. JetOffice services help to optimize these processes and bill management of your company.",
+          "link": "bills-payment",
+          "list":[
+            {
+              "id": 1,
+              "hero-title": "Bills & Payment",
+              "hero-description": "Efficient bill control and payment processes are vital for maintaining financial stability and organization. JetOffice services help to optimize these processes and bill management of your company.",
+              "hero-background": "/service-item/bills-payment/hero-background6.png",
+              "list":[
+                {
+                  "id": 1,
+                  "icon": "/service-item/bills-payment/touch-id-approved-1.svg",
+                  "title": "Verification & Accuracy",
+                  "description": "Verifying bill details for accuracy, including amounts, dates, and billing addresses."
+                },
+                {
+                  "id": 2,
+                  "icon": "/service-item/bills-payment/receipt-dollar.svg",
+                  "title": "Bill Control",
+                  "description": "Effective bill control has a positive impact on cash flow management."
+                },
+                {
+                  "id": 3,
+                  "icon": "/service-item/bills-payment/saving-piggy-coins.svg",
+                  "title": "Budgeting & Forecasting",
+                  "description": "Budgeting and forecasting in managing accounts and planning future expenses."
+                }
+              ],
+              "main-image": "/service-item/bills-payment/main-image6.png",
+              "main-title": "Optimization",
+              "main-description": "We explore various payment methods available for bill payment, such as online banking, credit cards, or automated transfers. Strategies for optimizing payment processes include setting up recurring payments or leveraging electronic payment platforms.",
+              "list2":[
+                {
+                  "id": 1,
+                  "number": "01",
+                  "title": "Bill Information",
+                  "description": "We discuss strategies for organizing bill information, such as creating a centralized system or utilizing digital tools. Maintaining a comprehensive bill record provides easy tracking and reference for better organization."
+                },
+                {
+                  "id": 2,
+                  "number": "02",
+                  "title": "Due Date Reminders",
+                  "description": "We explore methods for tracking bill due dates, such as using calendar reminders or task management tools. Setting up automated reminders ensures timely payments and helps businesses avoid late fees."
+                },
+                {
+                  "id": 3,
+                  "number": "03",
+                  "title": "Vendor Communication",
+                  "description": "Jet Office crew discuss the importance of maintaining open communication with vendors regarding billing inquiries, disputes, or payment terms. Effective negotiation can lead to favorable payment terms, discounts, or extended payment deadlines."
+                }
+              ],
+              "rocket-image": "/service-item/bills-payment/rocket-image6.png",
+              "rocket-title": "Jet Office's bill control & payment solutions",
+              "rocket-description": "Jet Office specializes in providing comprehensive services for bill control and payment management. With our expertise, we implement efficient systems and optimize financial processes to streamline bill management."
+            }
+          ]
         },
         {
           "id": 7,
           "title": "Shopping & Delivery",
           "icon": "/list-of-services/shopping-cart-heart.svg",
-          "description": "Our team is proud to offer a virtual service that combines the convenience of shopping from anywhere with reliable delivery to customers' doorsteps."
+          "description": "Our team is proud to offer a virtual service that combines the convenience of shopping from anywhere with reliable delivery to customers' doorsteps.",
+          "link": "shopping-delivery",
+          "list":[
+            {
+              "id": 1,
+              "hero-title": "Shopping & Delivery",
+              "hero-description": "Our team is proud to offer a virtual service that combines the convenience of shopping from anywhere with reliable delivery to customers' doorsteps.",
+              "hero-background": "/service-item/shopping-delivery/hero-background7.png",
+              "list":[
+                {
+                  "id": 1,
+                  "icon": "/service-item/shopping-delivery/shop-1.svg",
+                  "title": "Wide Selection",
+                  "description": "Access to a vast array of virtual stores, catering to various product categories"
+                },
+                {
+                  "id": 2,
+                  "icon": "/service-item/shopping-delivery/shipment-give.svg",
+                  "title": "Secure Delivery",
+                  "description": "Customers can trust that their orders will be handled with care and delivered safely."
+                },
+                {
+                  "id": 3,
+                  "icon": "/service-item/shopping-delivery/browser-user-help-message.svg",
+                  "title": "Excellent Service",
+                  "description": "Team of professionals is ready to provide exceptional service and support to customers."
+                }
+              ],
+              "main-image": "/service-item/shopping-delivery/main-image7.png",
+              "main-title": "Convenience",
+              "main-description": "Our virtual service offers a seamless and user-friendly shopping experience. We will select the product for you at the best price and also offer alternative options based on your interests and hobbies.",
+              "list2":[
+                {
+                  "id": 1,
+                  "number": "01",
+                  "title": "Wide Selection",
+                  "description": "We help to find and access to a vast array of virtual stores, catering to various product categories such as clothing, electronics, cosmetics, and more. Jet Office virtual administrators will not only find and order goods for you, but will also help you find the lowest prices."
+                },
+                {
+                  "id": 2,
+                  "number": "02",
+                  "title": "Secure Delivery",
+                  "description": "We prioritize the security and reliability of our delivery process. Our startup takes extensive measures to ensures customer privacy. Customers can trust that their orders will be handled with care and delivered safely."
+                },
+                {
+                  "id": 3,
+                  "number": "03",
+                  "title": "Order Tracking",
+                  "description": "Transparency is key to customer satisfaction. Our virtual service provides real-time order tracking, enabling customers to monitor their deliveries from dispatch to arrival. Additionally, we value customer feedback as it helps us continually improve our service and meet customer expectations."
+                }
+              ],
+              "rocket-image": "/service-item/shopping-delivery/rocket-image7.png",
+              "rocket-title": "Reliable delivery",
+              "rocket-description": "In the ever-evolving world of online shopping, our virtual Shopping  & Delivery service stands out as a reliable and convenient option. With a personalized recommendations, secure delivery, and excellent customer support, we aim to redefine the virtual shopping experience. Jet Office invite customers to take advantage of our service and enjoy the convenience and security of shopping from anywhere while having their purchases promptly deliveredto their doorstep."
+            }
+          ]
         }
       ]
     },
     {
       "id": 2,
       "title": "Social media management & advertisement",
-      "description": "Effective email management is crucial for businesses to optimize their communication processes.",
+      "description": "We help businesses curate compelling content, engage with their audience, and build a strong brand presence across various social media platforms.",
       "background": "/services-page/services-bg-2.png",
       "link": "social-media-management-advertisement",
       "list":[
@@ -62,32 +447,36 @@
           "id": 1,
           "title": "Content Creation",
           "icon": "/list-of-services/content-write.svg",
-          "description": "JetOffice's Content Creation is designed to help businesses establish a strong online presence and connect with their target audience through compelling and customized content."
+          "description": "JetOffice's Content Creation is designed to help businesses establish a strong online presence and connect with their target audience through compelling and customized content.",
+          "link": "content-creation"
         },
         {
           "id": 2,
           "title": "Content Planning & Publishing",
           "icon": "/list-of-services/notes-paper-approve.svg",
-          "description": "JetOffice's Content Planning & Publishing is designed to empower businesses with a strategic approach to content creation and effective distribution. We understand the power of valuable and engaging content in driving brand awareness, attracting audiences, and nurturing customer relationships."
+          "description": "JetOffice's Content Planning & Publishing is designed to empower businesses with a strategic approach to content creation and effective distribution. We understand the power of valuable and engaging content in driving brand awareness, attracting audiences, and nurturing customer relationships.",
+          "link": "content-planning-publishing"
         },
         {
           "id": 3,
           "title": "Ad Campaign Management",
           "icon": "/list-of-services/notes-warning.svg",
-          "description": "JetOffice's Ad Campaign Management service is designed to help you maximize the results of your advertising efforts. This service offers a wide range of features and benefits to ensure effective management of your ad campaigns and achieve maximum success."
+          "description": "JetOffice's Ad Campaign Management service is designed to help you maximize the results of your advertising efforts. This service offers a wide range of features and benefits to ensure effective management of your ad campaigns and achieve maximum success.",
+          "link": "ad-campaign-management"
         },
         {
           "id": 4,
           "title": "Proofreading & Error Correction",
           "icon": "/list-of-services/computer-bug-search.svg",
-          "description": "JetOffice's Proofreading and Error Correction service is specifically designed to help you enhance the quality and professionalism of your written materials. With our comprehensive suite of services, we offer expert proofreading and meticulous error correction to ensure that your content is flawless, impactful, and of the highest standard."
+          "description": "JetOffice's Proofreading and Error Correction service is specifically designed to help you enhance the quality and professionalism of your written materials. With our comprehensive suite of services, we offer expert proofreading and meticulous error correction to ensure that your content is flawless, impactful, and of the highest standard.",
+          "link": "proofreading-error-correction"
         }
       ]
     },
     {
       "id": 3,
       "title": "Project management & coordination",
-      "description": "Effective email management is crucial for businesses to optimize their communication processes.",
+      "description": "Our team prioritizes clear communication, resource allocation, and risk management to mitigate potential obstacles and ensure project success.",
       "background": "/services-page/services-bg-3.png",
       "link": "project-management-coordination",
       "list":[
@@ -95,56 +484,223 @@
           "id": 1,
           "title": "Administration of Electronic Documents & Database Management",
           "icon": "/list-of-services/monitor-page.svg",
-          "description": "Efficient administration of electronic documents and database management is crucial for businesses to ensure organized and accessible information. JetOffice provides comprehensive services that optimize information organization, enhancing productivity and streamlining operations."
+          "description": "Efficient administration of electronic documents and database management is crucial for businesses to ensure organized and accessible information. JetOffice provides comprehensive services that optimize information organization, enhancing productivity and streamlining operations.",
+          "link": "administration-electronic-documents-database-management"
         },
         {
           "id": 2,
           "title": "Curating Online Schools or Courses",
           "icon": "/list-of-services/meeting-remote.svg",
-          "description": "Curating online schools or courses is essential for creating a seamless and effective educational process. JetOffice knows how important are curators in coordinating and organizing the educational journey, ensuring a rewarding and impactful learning experience for students."
+          "description": "Curating online schools or courses is essential for creating a seamless and effective educational process. JetOffice knows how important are curators in coordinating and organizing the educational journey, ensuring a rewarding and impactful learning experience for students.",
+          "link": "curating-online-schools-courses"
         },
         {
           "id": 3,
           "title": "Camping or Retreat Coordination",
           "icon": "/list-of-services/camping-tent-3.svg",
-          "description": "Well organized and pleasant campsites or retreats for individuals and groups. We go to great lengths to ensure that every aspect of the experience is fluid, memorable, and tailored to our clients' unique needs."
+          "description": "Well organized and pleasant campsites or retreats for individuals and groups. We go to great lengths to ensure that every aspect of the experience is fluid, memorable, and tailored to our clients' unique needs.",
+          "link": "camping-retreat-coordination"
         }
       ]
     },
     {
       "id": 4,
       "title": "Business assistance & Human resources",
-      "description": "Effective email management is crucial for businesses to optimize their communication processes.",
+      "description": "We offer assistance in areas such as employee onboarding, payroll management, benefits administration, and compliance with labor laws and regulations.",
       "background": "/services-page/services-bg-4.png",
-      "link": "business-assistance-human-resources"
+      "link": "business-assistance-human-resources",
+      "list":[
+        {
+          "id": 1,
+          "title": "Competitor Analysis & Market Research",
+          "icon": "/list-of-services/optimization-rocket-growth.svg",
+          "description": "Stay one step ahead of the competition with JetOffice's comprehensive Competitor Analysis & Market Research services. Our experienced team is here to provide you with valuable insights that will give you a competitive edge.",
+          "link": "competitor-analysis-market-research"
+        },
+        {
+          "id": 2,
+          "title": "Optimization of Business Processes",
+          "icon": "/list-of-services/optimization-graph-line.svg",
+          "description": "At JetOffice, we also specialize in providing comprehensive Optimization of Business Processes services to help businesses streamline their operations and achieve maximum efficiency. Team of experienced professionals is dedicated to identifying areas of improvement, implementing effective solutions, and driving business growth.",
+          "link": "optimization-business-processes"
+        },
+      {
+        "id": 3,
+        "title": "Search for Service Providers",
+        "icon": "/list-of-services/business-deal-negotiate.svg",
+        "description": "At JetOffice, we also specialize in providing comprehensive Optimization of Business Processes services to help businesses streamline their operations and achieve maximum efficiency. Team of experienced professionals is dedicated to identifying areas of improvement, implementing effective solutions, and driving business growth.",
+        "link": "search-service-providers"
+      },
+      {
+        "id": 4,
+        "title": "AI Сopywriting",
+        "icon": "/list-of-services/tabler-icon-file-text-ai.svg",
+        "description": "JetOffice's Human Resources Management service is designed to help businesses streamline their HR processes and achieve maximum efficiency. We understand the importance of effective HR management in driving business growth and success.",
+        "link": "ai-copywriting"
+      },
+      {
+        "id": 5,
+        "title": "AI Image Generation",
+        "icon": "/list-of-services/tabler-icon-photo-ai.svg",
+        "description": "At JetOffice, we offer an exceptional AI Image Generation service that revolutionizes the way you create and design visuals. Advanced artificial intelligence algorithms leverage the power of machine learning to generate stunning, high-quality images that will captivate your audience and elevate your creative projects to new heights.",
+        "link": "ai-image-generation"
+      },
+      {
+        "id": 6,
+        "title": "Interviews",
+        "icon": "/list-of-services/team-chat.svg",
+        "description": "JetOffice offers a comprehensive solution for gathering in-depth insights and making well-informed decisions during the hiring process or customer research. Our team of experienced interviewers utilizes their expertise to conduct thorough and targeted interviews, extracting valuable information that helps you assess candidates' qualifications or understand your customers' needs and preferences.",
+        "link": "interviews"
+      },
+      {
+        "id": 7,
+        "title": "Job posting across platforms",
+        "icon": "/list-of-services/job-seach-profile.svg",
+        "description": "JetOffice's Job Posting Across Platforms service is a comprehensive solution designed to help you maximize your recruitment efforts and attract the best candidates. Service offers a range of features and benefits to ensure that your job postings are seen by qualified candidates across various online platforms.",
+        "link": "job-posting-across-platforms"
+      },
+      {
+        "id": 8,
+        "title": "Employee onboarding",
+        "icon": "/list-of-services/briefcase.svg",
+        "description": "JetOffice's Employee Onboarding service is designed to help businesses streamline their onboarding process and ensure a smooth transition for new employees. We understand the importance of effective onboarding in driving employee engagement and retention.",
+        "link": "employee-onboarding"
+      }
+      ]
     },
     {
       "id": 5,
       "title": "Travel & relocation, Translation",
-      "description": "Effective email management is crucial for businesses to optimize their communication processes.",
+      "description": "Comprehensive support for individuals and businesses in their travel, relocation, and translation needs.",
       "background": "/services-page/services-bg-5.png",
-      "link": "travel-relocation-translation"
+      "link": "travel-relocation-translation",
+      "list":[
+        {
+          "id": 1,
+          "title": "Relocation Services",
+          "icon": "/list-of-services/travel-user-pin.svg",
+          "description": "We can help you to select the right country to providing legal advice, our expert team is dedicated to ensuring a seamless transition and helping you settle into your new home with ease.",
+          "link": "relocation-services"
+        },
+        {
+          "id": 2,
+          "title": "Travel Management",
+          "icon": "/list-of-services/travel-luggage-1.svg",
+          "description": "This service is designed to provide you with comprehensive assistance and support for all your travel needs. Expert team is here to take care of every aspect of your journey, ensuring a seamless and enjoyable travel experience from start to finish.",
+          "link": "travel-management"
+        },
+        {
+          "id": 3,
+          "title": "Translation & Localization",
+          "icon": "/list-of-services/translationchat-translate.svg",
+          "description": "JetOffice's Translation & Localization service offers comprehensive solutions to break down language barriers and ensure effective communication across cultures. Whether you need translation of written content, website localization, or adaptation of marketing materials, we have the expertise to meet your needs.",
+          "link": "translation-localization"
+        }
+      ]
     },
     {
       "id": 6,
       "title": "business events & corporate holidays",
-      "description": "Effective email management is crucial for businesses to optimize their communication processes.",
+      "description": "Our service provides end-to-end event management, ensuring seamless execution and exceptional experiences.",
       "background": "/services-page/services-bg-6.png",
-      "link": "business-events-corporate-holidays"
+      "link": "business-events-corporate-holidays",
+      "list":[
+        {
+          "id": 1,
+          "title": "Organization of Meetings & Negotiations",
+          "icon": "/list-of-services/business-deal-handshake-circle.svg",
+          "description": "In today's rapidly evolving business world, the effective organization of meetings and negotiations plays a crucial role in achieving success. At JetOffice, we understand the importance of well-planned and organized gatherings that can contribute to goal attainment and strengthen business relationships.",
+          "link": "organization-meetings-negotiations"
+        },
+        {
+          "id": 2,
+          "title": "Event Planning & Coordination",
+          "icon": "/list-of-services/graph-statistics-coffee.svg",
+          "description": "JetOffice's Event Planning and Coordination service is your partner in creating exceptional and unforgettable events. Whether you're organizing a corporate conference, a wedding, or a special celebration, we have the expertise and resources to bring your vision to life.",
+          "link": "event-planning-coordination"
+        },
+        {
+          "id": 3,
+          "title": "Party & Date Organization",
+          "icon": "/list-of-services/party-balloons.svg",
+          "description": "JetOffice's Party and Date Organization service is your go-to partner for planning and organizing exceptional parties and unforgettable dates. Whether you're celebrating a special occasion or looking to create a memorable experience for you and your loved one, we have the expertise and creativity to bring your vision to life.",
+          "link": "party-date-organization"
+        },
+        {
+          "id": 4,
+          "title": "Budget Management & Financial Reporting",
+          "icon": "/list-of-services/accounting-calculator-2.svg",
+          "description": "JetOffice's Budget Management and Financial Reporting service is designed to help businesses optimize their financial resources, maintain fiscal responsibility, and make informed decisions.",
+          "link": "budget-management-financial-reporting"
+        }
+      ]
     },
     {
       "id": 7,
       "title": "Coaching, leadership & Team-building",
-      "description": "Effective email management is crucial for businesses to optimize their communication processes.",
+      "description": "Our experienced coaches provide guidance and mentorship, helping individuals unlock their full potential.",
       "background": "/services-page/services-bg-7.png",
-      "link": "coaching-leadership-team-building"
+      "link": "coaching-leadership-team-building",
+      "list":[
+        {
+          "id": 1,
+          "title": "Partnered Coaching Services",
+          "icon": "/list-of-services/single-man-megaphone.svg",
+          "description": "We understand the importance of coaching in achieving personal and professional growth, and our service provides access to a network of skilled coaches who can empower you to unlock your full potential and achieve success in all areas of your life.",
+          "link": "partnered-coaching-services"
+        },
+        {
+          "id": 2,
+          "title": "Discover Team Building Partners",
+          "icon": "/list-of-services/job-choose-cadidate-1.svg",
+          "description": "Service provides a unique opportunity to connect with exceptional partners who specialize in conducting online training sessions to improve team dynamics, virtual games and quizzes, virtual masterclasses and virtual meetings where participants can discuss challenges and find solutions together.",
+          "link": "discover-team-building-partners"
+        }
+      ]
     },
     {
       "id": 8,
       "title": "Design, development & Research",
-      "description": "Effective email management is crucial for businesses to optimize their communication processes.",
+      "description": "Our design services encompass various areas, including product design. We leverage the latest technologies and coding practices to create robust and scalable solutions.",
       "background": "/services-page/services-bg-8.png",
-      "link": "design-development-research"
+      "link": "design-development-research",
+      "list":[
+      {
+        "id": 1,
+        "title": "Partner Network for Web Development",
+        "icon": "/list-of-services/programming-team-chat-3.svg",
+        "description": "service offers a comprehensive range of solutions, including partner selection for web development, web application development, and top-notch web hosting services. Let us connect you with trusted partners who can deliver exceptional results.",
+        "link": "partner-network-web-development"
+      },
+      {
+        "id": 2,
+        "title": "Partnered Web Design Services",
+        "icon": "/list-of-services/responsive-design-image.svg",
+        "description": "Your gateway to finding exceptional partners for all your web design requirements. We understand the significance of captivating design, compelling logos, and impactful branding in creating a strong online presence.",
+        "link": "partnered-web-design-services"
+      },
+      {
+        "id": 3,
+        "title": "Partnered Back-End Development Solutions",
+        "icon": "/list-of-services/file-java.svg",
+        "description": "Your key to finding exceptional partners for all your server-side web development and database management needs. Our service offers a comprehensive network of talented partners who excel in back-end development and database management.",
+        "link": "partnered-back-end-development-solutions"
+      },
+      {
+        "id": 4,
+        "title": "Connect with Front-End Development Experts",
+        "icon": "/list-of-services/file-js.svg",
+        "description": "Through our extensive network of skilled front-end developers, we can bring your vision to life with captivating designs and optimize your website for optimal mobile functionality.",
+        "link": "connect-front-end-development-experts"
+      },
+      {
+        "id": 5,
+        "title": "Discover SEO Optimization Partners",
+        "icon": "/list-of-services/seo-network-1.svg",
+        "description": "Partner with JetOffice's Discover SEO Optimization service to access a network of skilled professionals who can optimize your website and drive organic traffic. From expert partner selection and keyword research to on-page and off-page optimization, we have the resources and expertise to elevate your online visibility.",
+        "link": "discover-seo-optimization-partners"
+      }
+      ]
     }
   ]
 }

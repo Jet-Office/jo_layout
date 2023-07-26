@@ -20,6 +20,7 @@ import { Dropdown } from "./components/Dropdown";
 import { ServicesPage } from "./components/ServicesPage";
 import { ListOfServices } from "./components/ListOfServices";
 import { NotFound } from "./components/NotFound";
+import { ServiceDescription } from "./components/ServiceDescription";
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -157,6 +158,14 @@ function App() {
             setActive={setActive}
           />
         } />
+        <Route path="/services/:link/:subLink" element={
+          <ServiceDescription
+            activePageRef={activePageRef}
+            windowWidth={windowWidth}
+            active={active}
+            setActive={setActive}
+          />
+        } />
         <Route path="*" element={
           <NotFound 
           activePageRef={activePageRef}
@@ -174,3 +183,5 @@ function App() {
 }
 
 export default App;
+
+
