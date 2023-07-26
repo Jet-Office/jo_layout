@@ -8,6 +8,7 @@ type Props = {
   onClick?: (() => void) | React.MouseEventHandler<HTMLButtonElement>;
   className?: string;
   type? :string;
+  height?: number
 };
 
 
@@ -17,6 +18,7 @@ export const Button: React.FC<Props> = ({
   disabled = false,
   onClick,
   className,
+  height
 }) => {
   return (
     <button

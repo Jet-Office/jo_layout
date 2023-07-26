@@ -1,0 +1,106 @@
+
+.content-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-top: 22px;
+}
+  
+@media (max-width: 641px) {
+    .content-grid {
+        flex-direction: column;
+        margin-bottom: 16px;
+        padding: 0;
+    }
+}
+
+.services__card {
+    display: flex;
+    flex-basis: 43%;
+    flex-direction: column;
+    color: #cccccc;
+    text-align: left;
+    padding: 20px 12px;
+}
+
+.top-part, .top-part--first {
+    display: flex;
+    align-items: center;
+}
+  
+.services__card__title {
+    font-family: 'Proxima Nova Bold';
+    margin-left: 12px;
+}
+
+.attachment {
+    color: #e961ff;
+    border: 1px solid #e961ff;
+    border-radius: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 0;
+    margin-left: 12px;
+    font-family: "Proxima Nova regular";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.bottom-part {
+    margin-top: 8px;
+}
+
+@media (max-width: 1244px) and (min-width: 642px) {
+    .services__card {
+        flex-basis: 100%;
+    }
+  
+}
+
+@media (max-width: 641px) {
+
+
+    .services__card__title, .services__card__desc {
+        font-size: 3.7vw;
+    }
+
+    .attachment {
+        font-size: 2.9vw;
+    }
+
+    .services__card {
+        position: relative;
+        display: flex;
+        flex-basis: 40%;
+        flex-direction: column;
+        color: #cccccc;
+        text-align: left;
+        padding: 20px 12px;
+        border-radius: 9px;
+        box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.60);
+    }
+
+    .services__card.active::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 8px; 
+        padding: 1px; 
+        background: var(--gradient);
+        -webkit-mask: 
+          linear-gradient(#fff 0 0) content-box, 
+          linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude; 
+    }
+    .services__card__title.active, .bottom-part.active {
+        background: var(--gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .top-part {
+        justify-content: space-between;
+    }
+}
