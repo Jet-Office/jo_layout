@@ -26,9 +26,8 @@ export const Faq: React.FC = () => {
         <div className="faq-grid__container">
         <div className="faq__question">
           {faqItems.map((faq: FAQItem) => (
-            <div className="faq__item-wrapper">
+            <div className="faq__item-wrapper" key={faq.id}>
             <div
-              key={faq.id}
               className={`faq-item ${
                 expandedIndex === faq.id ? "expanded" : ""
               }`}
