@@ -1,12 +1,12 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+/* import { useParams } from "react-router-dom";
 import servicesData from "../../data/servicesPage.json";
-
+ */
 import "./ServiceDescription.component.css";
 
 
 export const ServiceDescription: React.FC = () => {
-  const { link, subLink } = useParams<{ link: string; subLink: string }>();
+/*   const { link, subLink } = useParams<{ link: string; subLink: string }>();
 
   const selectedServicePage = servicesData.servicesPage.find(
     (servicePage) => servicePage.link === link
@@ -19,11 +19,11 @@ export const ServiceDescription: React.FC = () => {
   const chousenSubService = selectedServicePage.list.find(
     (subService) => subService.link === subLink
   );
-
+ */
   // Якщо не знайдено підпослугу, повернемо підказку
-  if (!chousenSubService) {
+/*   if (!chousenSubService) {
     return <div>Підпослуга не знайдена</div>;
-  }
+  } */
 
   /* const chousenSubServiceList = chousenSubService.list[0];
   console.log(chousenSubServiceList);
