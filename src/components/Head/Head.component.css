@@ -39,7 +39,8 @@
   left: 0;
 }
 
-@media (max-width: 641px) {
+/* @media (max-width: 641px) { */
+@media (max-width: 890px) {
   .head--main {
     height: fit-content;
   }

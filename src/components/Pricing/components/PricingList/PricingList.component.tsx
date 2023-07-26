@@ -14,7 +14,7 @@ type Props = {
 export const PricingList: React.FC<Props> = ({ priceList, windowWidth, options }) => {
   return (
     <>
-      {windowWidth > 1075 ? (
+      {windowWidth > 1450 ? (
         <div className="pricing__list">
           {priceList.map((item) => (
             <PriceItem key={item.id} priceItem={item} options={options} />
@@ -23,9 +23,9 @@ export const PricingList: React.FC<Props> = ({ priceList, windowWidth, options }
       ) : (
         <div className="swiper-wrapper">
         <Swiper loop 
-          slideSize={windowWidth > 641 ? 35 : 25} 
+          slideSize={windowWidth <= 1087 ? 25 : windowWidth <= 1450 ? 20 : 35} 
           trackOffset={25} 
-          style={{ overflow: "visible", zIndex: 9, left: "12.5%" }}
+          style={{ overflow: "visible", zIndex: 9, left: `${windowWidth > 641 && windowWidth <= 1087 ? "14%" : "0"}` }}
           >
           {priceList.map((item) => (
             <Swiper.Item 

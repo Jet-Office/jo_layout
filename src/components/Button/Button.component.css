@@ -125,6 +125,14 @@
   }
 }
 
+@media (max-width: 890px) {
+  .button--pink.menu {
+    width: 87.95vw;
+    font-size: 3.2vw;
+    padding: 20px;
+  }
+}
+
 @media (min-width: 1920px) {
   .button {
     font-size: 1.1vw;

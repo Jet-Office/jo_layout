@@ -24,7 +24,7 @@ export const PricingSwitch: React.FC<Props> = ({ setOptions }) => {
     <div className="switch-background">
       <div className="switch-container">
         <div
-          className="switch-toggle_item"
+          className="switch-toggle_item first"
           style={{
             background:
               activeOption === SwitchOptions.OPTION1
@@ -44,7 +44,7 @@ export const PricingSwitch: React.FC<Props> = ({ setOptions }) => {
           </div>
         </div>
         <div
-          className="switch-toggle_item"
+          className="switch-toggle_item second"
           style={{
             background:
               activeOption === SwitchOptions.OPTION2

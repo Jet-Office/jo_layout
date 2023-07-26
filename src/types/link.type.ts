@@ -1,6 +1,6 @@
 export interface Link {
   id: number;
   name: string;
-  isDropDown: boolean,
+  isDropDown: boolean;
   href: string;
 }
