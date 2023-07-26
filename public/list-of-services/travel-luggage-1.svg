@@ -1,0 +1,52 @@
+<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Travel / Travel-Metaphor / travel-luggage-1">
+<g id="Group">
+<g id="travel-luggage-1">
+<path id="Shape" d="M17.4796 52.2985C5.62067 46.8577 -0.442123 33.5327 3.24701 21.0176C6.93614 8.50251 19.2573 0.596619 32.1713 2.45825C45.0853 4.31989 54.6717 15.3839 54.6759 28.4314" stroke="url(#paint0_linear_2715_8760)" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_2" d="M11.7308 8.16797L27.1308 14.0013C29.1406 14.7549 30.307 16.8552 29.8841 18.9596L28.9712 23.533C28.6392 25.1915 27.3808 26.5101 25.7395 26.9192L19.6758 28.433L16.31 36.8476C15.6543 38.4918 14.5139 39.8976 13.0404 40.8784L7.70288 44.5446" stroke="url(#paint1_linear_2715_8760)" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_3" d="M46.6405 9.53125L42.3618 18.0625C41.8433 19.1003 41.7584 20.3016 42.1255 21.4021L43.7501 26.2496" stroke="url(#paint2_linear_2715_8760)" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Rectangle-path" fill-rule="evenodd" clip-rule="evenodd" d="M28.4258 45.2422C28.4258 44.4138 29.0974 43.7422 29.9258 43.7422H66.3008C67.1292 43.7422 67.8008 44.4138 67.8008 45.2422V66.3047C67.8008 67.1331 67.1292 67.8047 66.3008 67.8047H29.9258C29.0974 67.8047 28.4258 67.1331 28.4258 66.3047V45.2422Z" stroke="url(#paint3_linear_2715_8760)" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_4" d="M37.1758 43.7422V67.8047" stroke="url(#paint4_linear_2715_8760)" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_5" d="M59.0508 43.7422V67.8047" stroke="url(#paint5_linear_2715_8760)" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_6" d="M41.5508 43.75V41.5625C41.5508 37.9381 44.4889 35 48.1133 35C51.7377 35 54.6758 37.9381 54.6758 41.5625V43.75" stroke="url(#paint6_linear_2715_8760)" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_2715_8760" x1="50.0236" y1="6.49391" x2="9.64795" y2="50.5996" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00E5E5"/>
+<stop offset="0.510417" stop-color="#72A5F2"/>
+<stop offset="1" stop-color="#E961FF"/>
+</linearGradient>
+<linearGradient id="paint1_linear_2715_8760" x1="27.9973" y1="11.2941" x2="1.30991" y2="28.3262" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00E5E5"/>
+<stop offset="0.510417" stop-color="#72A5F2"/>
+<stop offset="1" stop-color="#E961FF"/>
+</linearGradient>
+<linearGradient id="paint2_linear_2715_8760" x1="46.2205" y1="10.968" x2="38.8684" y2="13.1412" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00E5E5"/>
+<stop offset="0.510417" stop-color="#72A5F2"/>
+<stop offset="1" stop-color="#E961FF"/>
+</linearGradient>
+<linearGradient id="paint3_linear_2715_8760" x1="64.3119" y1="45.8101" x2="47.3295" y2="74.7829" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00E5E5"/>
+<stop offset="0.510417" stop-color="#72A5F2"/>
+<stop offset="1" stop-color="#E961FF"/>
+</linearGradient>
+<linearGradient id="paint4_linear_2715_8760" x1="39.834" y1="45.8101" x2="34.9919" y2="46.422" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00E5E5"/>
+<stop offset="0.510417" stop-color="#72A5F2"/>
+<stop offset="1" stop-color="#E961FF"/>
+</linearGradient>
+<linearGradient id="paint5_linear_2715_8760" x1="61.709" y1="45.8101" x2="56.8669" y2="46.422" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00E5E5"/>
+<stop offset="0.510417" stop-color="#72A5F2"/>
+<stop offset="1" stop-color="#E961FF"/>
+</linearGradient>
+<linearGradient id="paint6_linear_2715_8760" x1="53.5128" y1="35.752" x2="47.0883" y2="45.7992" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00E5E5"/>
+<stop offset="0.510417" stop-color="#72A5F2"/>
+<stop offset="1" stop-color="#E961FF"/>
+</linearGradient>
+</defs>
+</svg>
