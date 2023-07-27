@@ -160,6 +160,10 @@
     mask-composite: exclude; 
   }
 
+  .chevron-down {
+    width: 5.2vw;
+  }
+  
 }
 
 @media (min-width: 641px) and (max-width: 890px) {

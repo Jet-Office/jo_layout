@@ -22,6 +22,8 @@ import { ListOfServices } from "./components/ListOfServices";
 import { NotFound } from "./components/NotFound";
 import { ServiceDescription } from "./components/ServiceDescription";
 
+import { Blog } from "./components/Blog";
+
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -135,6 +137,7 @@ function App() {
                 <Pricing windowWidth={windowWidth} activePageRef={pricingPageRef} />
                 <Cases windowWidth={windowWidth} casesPageRef={casesPageRef} />
                 <About windowWidth={windowWidth} aboutPageRef={aboutPageRef} />
+                <Blog windowWidth={windowWidth}></Blog>
                 <Faq />
                 <Crew />
               </div>

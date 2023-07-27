@@ -1,0 +1,40 @@
+{
+    "blogCategories": [
+        {
+            "id": 1,
+            "name": "Coaching, Leadership & Team-Building"
+        },
+        {
+            "id": 2,
+            "name": "#Lifehack"
+        },
+        {
+            "id": 3,
+            "name": "Design, Development & Research"
+        },
+        {
+            "id": 4,
+            "name": "#CaseStudy"
+        },
+        {
+            "id": 5,
+            "name": "Project Management & Coordination"
+        },
+        {
+            "id": 6,
+            "name": "Calendars, Documents & Tasks Management"
+        },
+        {
+            "id": 7,
+            "name": "Business Events & Corporate Holidays"
+        },
+        {
+            "id": 8,
+            "name": "Business Assistance & Human Resources"
+        },
+        {
+            "id": 9,
+            "name": "Social Media Management & Advertisement"
+        }
+    ]
+}
