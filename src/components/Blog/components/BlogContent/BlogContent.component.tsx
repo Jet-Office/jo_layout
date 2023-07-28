@@ -2,21 +2,20 @@ import { useCallback, useState } from "react";
 import { firstBlog } from "../../../../data/blog.json";
 import { secondBlog } from "../../../../data/blog.json";
 import { blogCategories } from "../../../../data/blogCategories.json";
-import { Button } from "../../../Button";
 
+import { ListBlogPosts } from "../ListBlogPosts";
 import { BlogCategory } from "../BlogCategory";
 import { BlogPost } from "../BlogPost";
 
 import "../../Blog.component.css"
 
 type Props = {
-  windowWidth: number;
 };
 
 export const DEFAULT_BLOG_CATEGORY = "All";
 
-export const BlogContent: React.FC<Props> = ( { windowWidth } ) => {
-  const [ currentCategory, setCurrentCategory ] = useState(DEFAULT_BLOG_CATEGORY);
+export const BlogContent: React.FC<Props> = () => {
+  const [ currentCategory, setCurrentCategory ] = useState<string[]>([]);
 
   return (
     <>
@@ -33,13 +32,7 @@ export const BlogContent: React.FC<Props> = ( { windowWidth } ) => {
         
       </section>
       <section id="blog--content">
-        <div className="first-blog--content">
-          {firstBlog.map((blog) => (
-            blog.category === currentCategory || blog.serviceItem === currentCategory || currentCategory === DEFAULT_BLOG_CATEGORY
-            ? <BlogPost blog={blog} key={blog.id} /> 
-            : null 
-          ))}
-        </div>
+        <ListBlogPosts currentCategory={currentCategory} blogObject={firstBlog}  />
 
         <div id="description--container">
           <p className="description--text">
@@ -49,13 +42,7 @@ export const BlogContent: React.FC<Props> = ( { windowWidth } ) => {
           <button className="description--button button button--pink">explore services</button>
         </div>
 
-        <div className="second-blog--content">
-          {secondBlog.map((blog) => (
-            blog.category === currentCategory || blog.serviceItem === currentCategory || currentCategory === DEFAULT_BLOG_CATEGORY
-            ? <BlogPost blog={blog} key={blog.id} /> 
-            : null 
-          ))}
-        </div>
+        <ListBlogPosts currentCategory={currentCategory} blogObject={secondBlog}  />
       </section>
     </>
   );

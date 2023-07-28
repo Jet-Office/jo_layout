@@ -1,11 +1,10 @@
 #blog {
     width: 100vw;
 }
-.blog--container {
-    margin: 120px 100px 0 100px;
+.blog--section {
+    margin: 48px 100px 170px 100px;
     margin-left: 6vw;
 }
-
 
 .blog--top-part {
     display: flex;
@@ -14,14 +13,18 @@
     align-items: flex-start;
     text-align: left;
     color: var(--text-color);
-    max-width: 660px;
+    width: 100vw;
+    height: 400px;
+    background: url("/public/blog-images/backgrounds/main_blog_bg.png") no-repeat;
+    background-size: cover;
 }
 
 .blog--top-part > h1 {
     font-family: "Proxima Nova";
     font-size: 64px;
     font-weight: 400;
-    margin: 0;
+    margin: 161px 110px;
+    z-index: 1;
 }
 
 .blog--top-part > p {
@@ -29,6 +32,10 @@
     font-size: 20px;
     display: flex;
     align-items: center;
+}
+
+.top-link {
+    color: var(--text-color);
 }
 
 #blog--categories {
@@ -54,7 +61,7 @@
     box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.60);
 }
 
-.category--item.active::after {
+.category--item:hover::after {
     content: "";
     position: absolute;
 
@@ -68,7 +75,21 @@
         linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
+}
 
+.default-bg {
+    border: 0;
+    background: var(--bg, #14181C);
+    box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.60) inset;
+}
+
+.active.pink-bg {
+    box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.60) inset;
+    background: var(--pink, #E961FF);
+}
+
+.active.pink-bg::after, .category--item.default-bg::after {
+    background: none;    
 }
 
 #blog--content {
@@ -86,15 +107,12 @@
     }
 }
 
-.first-blog--content, .second-blog--content {
+.blog-list--posts {
     display: inline-flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.darker-gradient {
-    background: linear-gradient(90deg, rgba(20, 24, 28, 0.93) 35.91%, rgba(20, 24, 28, 0.00) 100%);
-}
 
 .blog--item {
     max-width: 400px;
@@ -114,7 +132,11 @@
     background-color: rgba(0, 0, 0, 0.5); 
 }
 
-.blog--item::before {
+.bg--gradient {
+    position: relative;
+}
+
+.bg--gradient::before {
     content: "";
     position: absolute;
     top: 0;
@@ -126,7 +148,7 @@
     pointer-events: none;
 }
 
-.blog--item::after {
+.bg--gradient::after {
     content: "";
     position: absolute;
     top: 0;
@@ -139,21 +161,18 @@
     mix-blend-mode: hue;
 }
 
+
 @media (min-width: 1024px) {
 
     .blog--item {
-        &:nth-child(3n+1),
-        &:nth-child(3n+3) {
-            margin-top: 32px;
-        };
-        &:nth-child(3n+2) {
-            margin-bottom: 32px;
+         &:nth-child(3n+2) {
+            margin-top: -32px;
         }
     }
 }
 
 @media (max-width: 1024px) {
-    .first-blog--content, .second-blog--content {
+    .blog-list--posts {
         justify-content: center;
     }
 }

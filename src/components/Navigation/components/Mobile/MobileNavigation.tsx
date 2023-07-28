@@ -54,7 +54,7 @@ export const MobileNavigation: React.FC<Props> =
               : ""
           }`}
           key={link.id}
-          onClick={() => { setActiveSubmenu(true); }}
+          onClick={() => { setActiveSubmenu(true) }}
         >
           <div className={`navigation__item ${
             activeLink.toLowerCase() === link.name.toLowerCase()

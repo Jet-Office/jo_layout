@@ -11,7 +11,7 @@ export const BlogPost: React.FC<Props> = ( { blog: { id, title, background, cate
 
   return (
     <div 
-      className="blog--item" 
+      className="blog--item bg--gradient" 
       style={{
         background: background !== "none" ? `url(/blog-images/backgrounds/${background}.png) center/cover no-repeat` : "none"
       }}>

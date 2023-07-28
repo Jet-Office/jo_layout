@@ -137,7 +137,6 @@ function App() {
                 <Pricing windowWidth={windowWidth} activePageRef={pricingPageRef} />
                 <Cases windowWidth={windowWidth} casesPageRef={casesPageRef} />
                 <About windowWidth={windowWidth} aboutPageRef={aboutPageRef} />
-                <Blog windowWidth={windowWidth}></Blog>
                 <Faq />
                 <Crew />
               </div>
@@ -154,6 +153,9 @@ function App() {
         } />
         <Route path="/services/:link/:subLink" element={
           <ServiceDescription />
+        } />
+        <Route path="/resources/blog" element={
+          <Blog />
         } />
         <Route path="*" element={
           <NotFound />

@@ -1,0 +1,12 @@
+li {
+    list-style: none;
+}
+
+.service-content {
+    height: 20vh;
+    justify-content: center;
+}
+
+.resource--item {
+    color: var(--text-color);
+}

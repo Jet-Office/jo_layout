@@ -1,5 +1,6 @@
 import { LINKS } from "../../Navigation.component";
 import { ServicesDropdown } from "../../../ServicesDropdown";
+import { ResourcesDropdown } from "../../../ResourcesDropdown";
 import { useCallback, useState } from "react";
 import { Link } from "../../../../types/link.type";
 
@@ -91,14 +92,15 @@ export const DesktopNavigation: React.FC<Props> =
           ))}
 
         </ul>
-        {submenuOpen && isDropDown &&
-          <ServicesDropdown
-            windowWidth={windowWidth}
-            activeLink={activeLink}
-            submenuOpen={submenuOpen}
-            mainMenuSetIsOpen={mainMenuSetIsOpen} 
-            setActiveMenuLink={setActiveMenuLink}
-          ></ServicesDropdown>
+        {submenuOpen && isDropDown && 
+          ((activeLink === "Services" &&
+            <ServicesDropdown
+              windowWidth={windowWidth}
+              activeLink={activeLink}
+              submenuOpen={submenuOpen}
+              mainMenuSetIsOpen={mainMenuSetIsOpen} 
+              setActiveMenuLink={setActiveMenuLink}
+            ></ServicesDropdown>))
         }
       </>
   );
