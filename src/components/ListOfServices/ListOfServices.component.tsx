@@ -17,7 +17,7 @@ export const ListOfServices: React.FC = () => {
       <div className="container">
         <div className="list-of-services">
           <div
-            className="service-item"
+            className="service-item special"
             style={{ backgroundImage: `url(${selectedService.background})` }}
           >
             <div className="main-text__container">

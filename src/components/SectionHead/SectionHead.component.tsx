@@ -3,8 +3,6 @@ import { Head } from "../Head";
 import "./SectionHead.component.css";
 
 type Props = {
-  windowWidth: number;
-  activePageRef: React.RefObject<HTMLElement>;
   homePageRef: React.RefObject<HTMLElement>;
 };
 
