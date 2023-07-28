@@ -82,6 +82,9 @@
 
   border-radius: 8px;
   margin-top: 40px;
+
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .pricing__card {
@@ -405,7 +408,6 @@
   .pricing__card_background {
     margin-top: 40px;
     margin-bottom: 50px;
-    margin-left: 16px;
     max-width: 235px;
     height: 690px;
   }
@@ -698,9 +700,6 @@
   
 }
 
-@media (min-width: 573px) and (max-width: 641px) {
-  
-}
 
 @media (min-width: 320px) and (max-width: 400px) {
   
@@ -961,7 +960,7 @@
 }
 
 .pricing__container.container, .pricing__flex.container {
-  max-width: 85vw;
+  max-width: 90vw;
 }
 
 @media (min-width: 1200px) {
@@ -1002,7 +1001,6 @@
   .pricing__card_background {
     margin-top: 40px;
     margin-bottom: 50px;
-    margin-left: 16px;
     max-width: 235px;
     height: 690px;
   }
@@ -1204,9 +1202,9 @@
     justify-content: right;
   }
 
-  .pricing__card_background {
+  /* .pricing__card_background {
     margin-left: 0;
-  }
+  } */
 
 }
 

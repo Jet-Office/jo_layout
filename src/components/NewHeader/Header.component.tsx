@@ -69,7 +69,7 @@ export const Header: React.FC<Props> = ({ windowWidth, activePageRef }) => {
             className="header__logo_img"
           />
         </a>
-        {windowWidth > 641 ? (    
+        {windowWidth > 890 ? (    
           <>
             <Navigation
               setIsClickLink={setIsClickLink}
