@@ -1,7 +1,6 @@
-import { useCallback, useState } from "react";
+import { useCallback, useRef, useEffect, useState } from "react";
 import { firstBlog } from "../../../../data/blog.json";
 import { secondBlog } from "../../../../data/blog.json";
-import { blogCategories } from "../../../../data/blogCategories.json";
 
 import { ListBlogPosts } from "../ListBlogPosts";
 import { BlogCategory } from "../BlogCategory";
@@ -10,27 +9,16 @@ import { BlogPost } from "../BlogPost";
 import "../../Blog.component.css"
 
 type Props = {
+  currentCategory: string[];
+  setCurrentCategory: (currentCategory: string[]) => void;
 };
 
 export const DEFAULT_BLOG_CATEGORY = "All";
 
-export const BlogContent: React.FC<Props> = () => {
-  const [ currentCategory, setCurrentCategory ] = useState<string[]>([]);
-
+export const BlogContent: React.FC<Props> = ({currentCategory, setCurrentCategory}) => {
+ 
   return (
     <>
-      <section id="blog--categories">
-        {blogCategories.map((category) => (
-            <BlogCategory
-              key={category.id}
-              currentCategory={currentCategory}
-              setCurrentCategory={setCurrentCategory}
-              category={category}
-            ></BlogCategory>
-          )
-        )}
-        
-      </section>
       <section id="blog--content">
         <ListBlogPosts currentCategory={currentCategory} blogObject={firstBlog}  />
 

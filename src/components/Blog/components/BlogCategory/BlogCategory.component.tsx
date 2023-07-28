@@ -29,7 +29,7 @@ export const BlogCategory: React.FC<Props> = ({ category, currentCategory, setCu
 
   return (
     <section className="blog--category">
-      <button 
+      <div 
         className={categoryClasses}
         onMouseDown={handleMouseDown}
         onMouseUp={handleMouseUp}
@@ -37,12 +37,10 @@ export const BlogCategory: React.FC<Props> = ({ category, currentCategory, setCu
           currentCategory.includes(category.name)
           ? removeItem(category.name)
           : setCurrentCategory([...currentCategory, category.name]);
-          console.log(currentCategory);
-          
-        }}
+          console.log(currentCategory); }}
         >
           {category.name}
-        </button>
+      </div>
     </section>
 
   )
