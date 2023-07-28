@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 
 import "./App.css";
 
-import { Header } from "./components/Header";
+import { Header } from "./components/NewHeader";
 import { Services } from "./components/Services";
 import { Benefits } from "./components/Benefits";
 import { Pricing } from "./components/Pricing";
@@ -21,6 +21,7 @@ import { ServicesPage } from "./components/ServicesPage";
 import { ListOfServices } from "./components/ListOfServices";
 import { NotFound } from "./components/NotFound";
 import { ServiceDescription } from "./components/ServiceDescription";
+import {SectionHead} from "./components/SectionHead";
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -119,9 +120,8 @@ function App() {
             <Header
               activePageRef={activePageRef}
               windowWidth={windowWidth}
-              homePageRef={homePageRef}
             />
-          
+          <SectionHead homePageRef={homePageRef}/>
       
       <Routes>
         <Route path="/" element={

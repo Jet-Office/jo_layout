@@ -78,9 +78,9 @@
 
 .section-head__text {
   max-width: 37.5vw;
-
+  min-height: 160px;
   text-align: left;
-
+  margin-top: 24px;
   font-size: 1.25vw;
   line-height: 140%;
 
