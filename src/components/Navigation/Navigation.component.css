@@ -91,6 +91,10 @@ svg path {
   .navigation__link {
     font-size: 5.13vw;
 
+  }
+
+  .navigation__link {
+
     gap: 4px;
 
     text-align: center;

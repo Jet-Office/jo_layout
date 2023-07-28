@@ -68,8 +68,6 @@ export const Menu: React.FC<Props> = ({
               src="/head-icons/close-icon.svg"
               alt="close menu"
               className="menu__close_icon"
-              width={30}
-              height={30}
             />
           </div>
           <Navigation
@@ -88,6 +86,7 @@ export const Menu: React.FC<Props> = ({
               color="pink"
               text="Start free trial"
               onClick={() => console.log("pressed")}
+              className="menu"
             />  
           </div>
         </div>

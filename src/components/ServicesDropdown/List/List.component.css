@@ -129,7 +129,7 @@ span {
 /* @media (min-width: 641px) { */
 @media (min-width: 890px) {
     .sidebar {
-        height: fit-content;
+        height: 640px;
     }
 
     .content-description {

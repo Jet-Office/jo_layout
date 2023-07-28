@@ -10,49 +10,49 @@
           "icon": "drawer-envelope.svg",
           "name": "Email Management",
           "attachment": "hot",
-          "text": "Effective email management is of paramount importance for businesses."
+          "text": "Comprehensive solutions to streamline your email management."
         },
         {
           "id": 2,
-          "icon": "paper-write.svg",
-          "name": "Tasks Managment",
-          "attachment": "hot",
-          "text": "Highlighting the importance of effective task assignment and control."
-        },
-        {
-          "id": 3,
-          "icon": "presentation-analytics.svg",
-          "name": "Scheduling & Contacts",
-          "attachment": "",
-          "text": "Efficient meeting schedule control and electronic contact management."
-        },
-        {
-          "id": 4,
-          "icon": "presentation-projector-screen-bars.svg",
-          "name": "Documents & Presentations",
-          "attachment": "",
-          "text": "Highlighting the significance of well-edited and visually appealing documents."
-        },
-        {
-          "id": 5,
           "icon": "business-contract-handshake-sign.svg",
           "name": "Finding vendors",
           "attachment": "new",
-          "text": "Effective email management is of paramount importance for businesses."
+          "text": "Finding reliable and compatible vendors for successful business operations."
         },
         {
-          "id": 6,
+          "id": 3,
+          "icon": "paper-write.svg",
+          "name": "Tasks Managment",
+          "attachment": "hot",
+          "text": "Delegation of tasks, use of tracking tools and establishment of communication channels."
+        },
+        {
+          "id": 4,
           "icon": "accounting-invoice-mail.svg",
           "name": "Bills & Payment",
           "attachment": "",
-          "text": "Highlighting the importance of efficient bill control and payment processes in maintaining"
+          "text": "Control and payment to maintain the financial stability of the organization."
         },
         {
-          "id": 7,
+          "id": 5,
+          "icon": "presentation-analytics.svg",
+          "name": "Scheduling & Contacts",
+          "attachment": "",
+          "text": "Effective meeting scheduling and electronic contact management."
+        },
+        {
+          "id": 6,
           "icon": "shopping-cart-heart.svg",
           "name": "Shopping & Delivery",
           "attachment": "new",
-          "text": "Effective email management is of paramount importance for businesses."
+          "text": "Shopping from anywhere with reliable delivery to customers' doorsteps."
+        },
+        {
+          "id": 7,
+          "icon": "presentation-projector-screen-bars.svg",
+          "name": "Documents & Presentations",
+          "attachment": "",
+          "text": "The importance of well-edited and visually appealing documents."
         }
       ],
       "news": [
@@ -128,29 +128,113 @@
     },
     {
       "id": 3,
+      "name": "Travel & relocation, Translation",
+      "icon": "landmark-pisa-tower.svg",
+      "descriptions": [
+        {
+          "id": 1,
+          "icon": "travel-user-pin.svg",
+          "name": "Relocation Services",
+          "attachment": "",
+          "text": "Advice on various legal issues, including immigration, residence and employment."
+        },
+        {
+          "id": 2,
+          "icon": "travel-luggage-1.svg",
+          "name": "Travel Management",
+          "attachment": "",
+          "text": "Taking care of every aspect of your trip so you can focus on creating unforgettable memories."
+        },
+        {
+          "id": 3,
+          "icon": "chat-translate.svg",
+          "name": "Translation & Localization",
+          "attachment": "",
+          "text": "Overcoming the language barrier and conveying a message in different cultures."
+        }
+        
+      ],
+      "news": [
+        {
+          "id": 1,
+          "title": "JetOffice email Management Services for business",
+          "alt": "JetOffice email Management Services for business",
+          "image": "./src/assets/news1.png"
+        },
+        {
+          "id": 2,
+          "title": "Enhancing Productivity and Collaboration",
+          "alt":  "Enhancing Productivity and Collaboration",
+          "image": "./src/assets/news2.png"
+        },
+        {
+          "id": 3,
+          "title": "Stages of development with a virtual assistant",
+          "alt":  "Stages of development with a virtual assistant",
+          "image": "./src/assets/news3.png"
+        }
+      ]
+    },
+    { 
+      "id": 4,
       "name": "Business assistance & Human resources",
       "icon": "bulb.svg",
       "descriptions": [
         {
           "id": 1,
-          "icon": "drawer-envelope.svg",
-          "name": "Email Management",
-          "attachment": "hot",
-          "text": "Effective email management is of paramount importance for businesses."
+          "icon": "optimization-rocket-growth.svg",
+          "name": "Competitor Analysis & Market Research",
+          "attachment": "",
+          "text": "Market trends, growth opportunities and confident strategic decisions."
         },
         {
           "id": 2,
-          "icon": "paper-write.svg",
-          "name": "Tasks Managment",
-          "attachment": "hot",
-          "text": "Highlighting the importance of effective task assignment and control."
+          "icon": "tabler-icon-photo-ai.svg",
+          "name": "AI Image Generation",
+          "attachment": "",
+          "text": "Create high-quality images that take your creative projects to new heights."
         },
         {
           "id": 3,
-          "icon": "drawer-envelope.svg",
-          "name": "Scheduling & Contacts",
+          "icon": "optimization-graph-line.svg",
+          "name": "Optimization of Business Processes",
           "attachment": "",
-          "text": "Efficient meeting schedule control and electronic contact management."
+          "text": "Implementation of effective solutions and stimulation of business growth."
+        },
+        {
+          "id": 4,
+          "icon": "team-chat.svg",
+          "name": "Interviews",
+          "attachment": "",
+          "text": "Interviews, extracting valuable information to assess the qualifications of candidates."
+        },
+        {
+          "id": 5,
+          "icon": "business-deal-negotiate.svg",
+          "name": "Search for Service Providers",
+          "attachment": "",
+          "text": "Effective email management is of paramount importance for businesses."
+        },
+        {
+          "id": 6,
+          "icon": "job-seach-profile.svg",
+          "name": "Applicant Resume Processing",
+          "attachment": "",
+          "text": "Guarantee of high-quality resumes that fully meet specific requirements."
+        },
+        {
+          "id": 7,
+          "icon": "tabler-icon-file-text-ai.svg",
+          "name": "AI Сopywriting",
+          "attachment": "",
+          "text": "The latest advances in AI  to deliver compelling high-quality content."
+        },
+        {
+          "id": 8,
+          "icon": "briefcase.svg",
+          "name": "Job Posting Across Platforms",
+          "attachment": "",
+          "text": "Wide network of job boards and platforms, targeted social media promotion."
         }
       ],
       "news": [
@@ -176,134 +260,44 @@
       ]
     },
     {
-      "id": 4,
-      "name": "Social media management & advertisement",
-      "icon": "vintage-tv-4.svg",
-      "descriptions": [
-        {
-          "id": 1,
-          "icon": "drawer-envelope.svg",
-          "name": "Email Management",
-          "attachment": "hot",
-          "text": "Effective email management is of paramount importance for businesses."
-        },
-        {
-          "id": 2,
-          "icon": "paper-write.svg",
-          "name": "Tasks Managment",
-          "attachment": "hot",
-          "text": "Highlighting the importance of effective task assignment and control."
-        },
-        {
-          "id": 3,
-          "icon": "drawer-envelope.svg",
-          "name": "Scheduling & Contacts",
-          "attachment": "",
-          "text": "Efficient meeting schedule control and electronic contact management."
-        },
-        {
-          "id": 4,
-          "icon": "drawer-envelope.svg",
-          "name": "Documents & Presentations",
-          "attachment": "",
-          "text": "Highlighting the significance of well-edited and visually appealing documents."
-        },
-        {
-          "id": 5,
-          "icon": "drawer-envelope.svg",
-          "name": "Finding vendors",
-          "attachment": "new",
-          "text": "Effective email management is of paramount importance for businesses."
-        },
-        {
-          "id": 6,
-          "icon": "drawer-envelope.svg",
-          "name": "Bills & Payment",
-          "attachment": "",
-          "text": "Highlighting the importance of efficient bill control and payment processes in maintaining"
-        },
-        {
-          "id": 7,
-          "icon": "drawer-envelope.svg",
-          "name": "Shopping & Delivery",
-          "attachment": "new",
-          "text": "Effective email management is of paramount importance for businesses."
-        }
-      ],
-      "news": [
-        {
-          "id": 1,
-          "title": "JetOffice email Management Services for business",
-          "alt": "JetOffice email Management Services for business",
-          "image": "./src/assets/news1.png"
-        },
-        {
-          "id": 2,
-          "title": "Enhancing Productivity and Collaboration",
-          "alt":  "Enhancing Productivity and Collaboration",
-          "image": "./src/assets/news2.png"
-        },
-        {
-          "id": 3,
-          "title": "Stages of development with a virtual assistant",
-          "alt":  "Stages of development with a virtual assistant",
-          "image": "./src/assets/news3.png"
-        }
-      ]
-    },
-    {
       "id": 5,
-      "name": "Travel & relocation, Translation",
-      "icon": "landmark-pisa-tower.svg",
+      "name": "Design, Development & Research",
+      "icon": "brain-1.svg",
       "descriptions": [
         {
           "id": 1,
-          "icon": "drawer-envelope.svg",
-          "name": "Email Management",
-          "attachment": "hot",
-          "text": "Effective email management is of paramount importance for businesses."
+          "icon": "programming-team-chat-3.svg",
+          "name": "Partner Network for Web Development",
+          "attachment": "",
+          "text": "From partner selection and web application development to reliable web hosting services."
         },
         {
           "id": 2,
-          "icon": "paper-write.svg",
-          "name": "Tasks Managment",
-          "attachment": "hot",
-          "text": "Highlighting the importance of effective task assignment and control."
+          "icon": "seo-network-1.svg",
+          "name": "Discover SEO Optimization Partners",
+          "attachment": "",
+          "text": "Access to a network of qualified SEO professionals to boost your online presence."
         },
         {
           "id": 3,
-          "icon": "drawer-envelope.svg",
-          "name": "Scheduling & Contacts",
+          "icon": "file-java.svg",
+          "name": "Partnered Back-End Development Solutions",
           "attachment": "",
-          "text": "Efficient meeting schedule control and electronic contact management."
+          "text": "From partner selection and server-side web development to database optimization."
         },
         {
           "id": 4,
-          "icon": "drawer-envelope.svg",
-          "name": "Documents & Presentations",
+          "icon": "file-js.svg",
+          "name": "Connect with Front-End Development Experts",
           "attachment": "",
-          "text": "Highlighting the significance of well-edited and visually appealing documents."
+          "text": "Captivating design and optimization of your website for mobile functionality."
         },
         {
           "id": 5,
-          "icon": "drawer-envelope.svg",
-          "name": "Finding vendors",
-          "attachment": "new",
-          "text": "Effective email management is of paramount importance for businesses."
-        },
-        {
-          "id": 6,
-          "icon": "drawer-envelope.svg",
-          "name": "Bills & Payment",
+          "icon": "responsive-design-image.svg",
+          "name": "Partnered Web Design Services",
           "attachment": "",
-          "text": "Highlighting the importance of efficient bill control and payment processes in maintaining"
-        },
-        {
-          "id": 7,
-          "icon": "drawer-envelope.svg",
-          "name": "Shopping & Delivery",
-          "attachment": "new",
-          "text": "Effective email management is of paramount importance for businesses."
+          "text": "An extensive network of partners excelling in website design, logo design and branding."
         }
       ],
       "news": [
@@ -334,52 +328,31 @@
       "descriptions": [
         {
           "id": 1,
-          "icon": "drawer-envelope.svg",
-          "name": "Email Management",
-          "attachment": "hot",
-          "text": "Effective email management is of paramount importance for businesses."
+          "icon": "business-deal-handshake-circle.svg",
+          "name": "Organization of Meetings & Negotiations",
+          "attachment": "",
+          "text": "Creating comprehensive plans and assigning roles and responsibilities."
         },
         {
           "id": 2,
-          "icon": "paper-write.svg",
-          "name": "Tasks Managment",
-          "attachment": "hot",
-          "text": "Highlighting the importance of effective task assignment and control."
+          "icon": "graph-statistics-coffee.svg",
+          "name": "Event Planning & Coordination",
+          "attachment": "",
+          "text": "From creative concept development to coordination and post-event evaluation."
         },
         {
           "id": 3,
-          "icon": "drawer-envelope.svg",
-          "name": "Scheduling & Contacts",
+          "icon": "party-balloons.svg",
+          "name": "Party & Date Organization",
           "attachment": "",
-          "text": "Efficient meeting schedule control and electronic contact management."
+          "text": "A cohesive and memorable experience that leaves a lasting impression on all participants."
         },
         {
           "id": 4,
-          "icon": "drawer-envelope.svg",
-          "name": "Documents & Presentations",
+          "icon": "accounting-calculator-2.svg",
+          "name": "Budget Management & Financial Reporting",
           "attachment": "",
-          "text": "Highlighting the significance of well-edited and visually appealing documents."
-        },
-        {
-          "id": 5,
-          "icon": "drawer-envelope.svg",
-          "name": "Finding vendors",
-          "attachment": "new",
-          "text": "Effective email management is of paramount importance for businesses."
-        },
-        {
-          "id": 6,
-          "icon": "drawer-envelope.svg",
-          "name": "Bills & Payment",
-          "attachment": "",
-          "text": "Highlighting the importance of efficient bill control and payment processes in maintaining"
-        },
-        {
-          "id": 7,
-          "icon": "drawer-envelope.svg",
-          "name": "Shopping & Delivery",
-          "attachment": "new",
-          "text": "Effective email management is of paramount importance for businesses."
+          "text": "Strategic budget plan that aligns with your business goals and objectives."
         }
       ],
       "news": [
@@ -405,57 +378,22 @@
     },
     {
       "id": 7,
-      "name": "Design, Development & Research",
-      "icon": "brain-1.svg",
+      "name": "Coaching, leadership & Team-building",
+      "icon": "target-correct.svg",
       "descriptions": [
         {
           "id": 1,
-          "icon": "drawer-envelope.svg",
-          "name": "Email Management",
-          "attachment": "hot",
-          "text": "Effective email management is of paramount importance for businesses."
+          "icon": "single-man-megaphone.svg",
+          "name": "Partnered Coaching Services",
+          "attachment": "",
+          "text": "Help in revealing one's potential and achieving success in all spheres of life."
         },
         {
           "id": 2,
-          "icon": "paper-write.svg",
-          "name": "Tasks Managment",
-          "attachment": "hot",
-          "text": "Highlighting the importance of effective task assignment and control."
-        },
-        {
-          "id": 3,
-          "icon": "drawer-envelope.svg",
-          "name": "Scheduling & Contacts",
+          "icon": "job-choose-cadidate-1.svg",
+          "name": "Discover Team Building Partners",
           "attachment": "",
-          "text": "Efficient meeting schedule control and electronic contact management."
-        },
-        {
-          "id": 4,
-          "icon": "drawer-envelope.svg",
-          "name": "Documents & Presentations",
-          "attachment": "",
-          "text": "Highlighting the significance of well-edited and visually appealing documents."
-        },
-        {
-          "id": 5,
-          "icon": "drawer-envelope.svg",
-          "name": "Finding vendors",
-          "attachment": "new",
-          "text": "Effective email management is of paramount importance for businesses."
-        },
-        {
-          "id": 6,
-          "icon": "drawer-envelope.svg",
-          "name": "Bills & Payment",
-          "attachment": "",
-          "text": "Highlighting the importance of efficient bill control and payment processes in maintaining"
-        },
-        {
-          "id": 7,
-          "icon": "drawer-envelope.svg",
-          "name": "Shopping & Delivery",
-          "attachment": "new",
-          "text": "Effective email management is of paramount importance for businesses."
+          "text": "Improving collaboration, boosting morale and meeting specific team challenges."
         }
       ],
       "news": [
@@ -481,57 +419,36 @@
     },
     {
       "id": 8,
-      "name": "Coaching, leadership & Team-building",
-      "icon": "target-correct.svg",
+      "name": "Social media management & advertisement",
+      "icon": "vintage-tv-4.svg",
       "descriptions": [
         {
           "id": 1,
-          "icon": "drawer-envelope.svg",
-          "name": "Email Management",
-          "attachment": "hot",
-          "text": "Effective email management is of paramount importance for businesses."
+          "icon": "content-write.svg",
+          "name": "Content Creation",
+          "attachment": "",
+          "text": "In-depth research and analysis to develop a comprehensive content strategy."
         },
         {
           "id": 2,
-          "icon": "paper-write.svg",
-          "name": "Tasks Managment",
-          "attachment": "hot",
-          "text": "Highlighting the importance of effective task assignment and control."
+          "icon": "notes-warning.svg",
+          "name": "Ad Campaign Management",
+          "attachment": "",
+          "text": "Key metrics and gain valuable insights into ad performance."
         },
         {
           "id": 3,
-          "icon": "drawer-envelope.svg",
-          "name": "Scheduling & Contacts",
+          "icon": "notes-paper-approve.svg",
+          "name": "Content Planning & Publishing",
           "attachment": "",
-          "text": "Efficient meeting schedule control and electronic contact management."
+          "text": "Website traffic, engagement, conversions, and social media reach."
         },
         {
           "id": 4,
-          "icon": "drawer-envelope.svg",
-          "name": "Documents & Presentations",
+          "icon": "computer-bug-search.svg",
+          "name": "Proofreading & Error Correction",
           "attachment": "",
-          "text": "Highlighting the significance of well-edited and visually appealing documents."
-        },
-        {
-          "id": 5,
-          "icon": "drawer-envelope.svg",
-          "name": "Finding vendors",
-          "attachment": "new",
-          "text": "Effective email management is of paramount importance for businesses."
-        },
-        {
-          "id": 6,
-          "icon": "drawer-envelope.svg",
-          "name": "Bills & Payment",
-          "attachment": "",
-          "text": "Highlighting the importance of efficient bill control and payment processes in maintaining"
-        },
-        {
-          "id": 7,
-          "icon": "drawer-envelope.svg",
-          "name": "Shopping & Delivery",
-          "attachment": "new",
-          "text": "Effective email management is of paramount importance for businesses."
+          "text": "From proofreading and language refinement to formatting and layout improvements."
         }
       ],
       "news": [

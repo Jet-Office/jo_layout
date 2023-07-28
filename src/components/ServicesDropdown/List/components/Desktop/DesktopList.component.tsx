@@ -21,7 +21,7 @@ export const DesktopList: React.FC<Props> =
   const [descriptions, setDescriptions] = useState<Description[]>([]);
 
   return (
-    <div className="dropdown-content scroll"> 
+    <div className="dropdown-content"> 
       <div className="sidebar"> {
         cases === LINKS[0].name ? (
           services.map((item) => {
@@ -44,7 +44,7 @@ export const DesktopList: React.FC<Props> =
       
       <div className="content-container"> {
         cases === LINKS[0].name ? (
-          <div className="content">
+          <div className="content scroll">
             <div className="content-description">
               <Descriptions
                 descriptions={descriptions}

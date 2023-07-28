@@ -30,7 +30,7 @@
 }
 
 .menu__top_container > span {
-  margin-left: 15px;
+  margin-left: 4.5vw;
   font-family: 'Proxima Nova Bold', sans-serif;
   font-size: 5.13vw;
   color: #CCCCCC;
@@ -38,6 +38,16 @@
 
 .menu__top_container > img {
   margin-right: 16px;
+}
+
+.menu__close_icon {
+  width: 8.7vw;
+  height: 3.5vh;
+}
+
+.menu__back_icon {
+  width: 5.8vw;
+  height: 2.5vh;
 }
 
 @media (max-width: 641px) {

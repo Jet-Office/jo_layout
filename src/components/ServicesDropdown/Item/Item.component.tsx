@@ -129,9 +129,9 @@ export const Item: React.FC<Props> = ({
                 <div className="button--container">
                   <Button
                     color="pink"
+                    className="menu"
                     text="Start free trial"
                     onClick={() => console.log("pressed")}
-                    className="menu"
                   />  
                 </div>
               </div>
