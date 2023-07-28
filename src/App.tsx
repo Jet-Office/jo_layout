@@ -121,12 +121,12 @@ function App() {
               activePageRef={activePageRef}
               windowWidth={windowWidth}
             />
-          <SectionHead homePageRef={homePageRef}/>
-      
+
       <Routes>
         <Route path="/" element={
           <>
-          
+            <SectionHead homePageRef={homePageRef}/>
+
             <main className="main">
               <div className="main__container">
                 <Services activeRef={servicesPageRef} />
@@ -164,5 +164,3 @@ function App() {
 }
 
 export default App;
-
-
