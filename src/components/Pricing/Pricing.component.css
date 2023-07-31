@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Proxima Nova Bold";
-  src: url(/fonts/proxima/proxima-nova-bold.otf);
+  src: url(/public/fonts/proxima/proxima-nova-bold.otf);
   font-weight: 700;
   font-display: swap;
 }
@@ -8,6 +8,8 @@
 .pricing__button {
   margin-top: 10px;
   margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 750px) {
@@ -30,16 +32,13 @@
 .swiper-wrapper .slider-frame .slider-item {
   flex: 0 0 auto;
   margin-right: 15px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 10px;
 }
 
 .swiper-wrapper .slider-frame .slider-item:last-child {
   margin-right: 0;
-}
-
-.swiper-wrapper .slider-frame .slider-item {
-  background-color: #f5f5f5;
-  border: 1px solid #ddd;
-  padding: 10px;
 }
 
 .pricing__container {
@@ -68,25 +67,31 @@
 }
 
 .pricing__card_background {
-  max-width: 232px;
   height: 859px;
+  max-width: 300px;
 
   position: relative;
 
-  border: 1px solid;
-
-  border-image-slice: 1;
-  border-width: 1px;
-
-  background: var(--gradient);
-
-  border-radius: 8px;
   margin-top: 40px;
-
   margin-left: 8px;
   margin-right: 8px;
 }
 
+
+.pricing__card_background::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 8px; 
+  padding: 1px; 
+  background: var(--gradient);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude; 
+}
+
 .pricing__card {
   display: flex;
   flex-direction: column;
@@ -104,28 +109,19 @@
   
 }
 
-@media (min-width: 573px) and (max-width: 641px) {
-  
-}
-
-@media (min-width: 320px) and (max-width: 400px) {
-  
-}
-
-@media (min-width: 401px) and (max-width: 460px) {
-  
-}
-
-@media (min-width: 461px) and (max-width: 470px) {
-  
-}
-
 .pricing__card_content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 30px;
 }
+
+.pricing__card_content.green {
+  gap: 30px;
+}
+
+.pricing__card_content.blue
 
 .pricing__card_background--popular::after {
   content: "";
@@ -170,7 +166,14 @@
   gap: 10px;
 }
 
-@media (max-width: 1450px) {
+.card--info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 236px;
+}
+
+@media (max-width: 1430px) {
   .pricing__card_head {
     padding: 16px 21.7px;
     padding-bottom: 0;
@@ -287,599 +290,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 117px;
 }
 
-.pricing__card_payment {
-  font-family: "Proxima Nova Bold", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 140%;
-
-  text-align: center;
-  text-transform: uppercase;
-
-  color: #8d8d8d;
-
-  max-width: 190px;
-}
-
-.pricing--green {
-  color: #1ab686;
-}
-
-.pricing--blue {
-  color: #72a5f2;
-}
-
-.pricing--pink {
-  color: #e961ff;
-}
-
-.pricing--mint {
-  color: #00e5e5;
-}
-
-.pricing--purple {
-  color: #aa97f2;
-}
-
-.pricing__card_monthly {
-  max-width: 237px;
-  height: fit-content;
-
-  font-family: "Proxima Nova Bold";
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 140%;
-
-  text-align: center;
-
-  padding: 0 20px;
-}
-
-.pricing__card_preferences {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  height: min-content;
-
-  gap: 5px;
-  padding: 0 20px;
-}
-
-.pricing__card_preferences.second {
-  padding-bottom: 40px;
-}
-
-.pricing__card_preference {
-  font-size: 20px;
-  line-height: 140%;
-
-  color: var(--text-color);
-}
-
-.pricing__card_text_container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
-}
-
-.pricing__container.container, .pricing__flex.container {
-  max-width: 85vw;
-}
-
-@media (min-width: 1200px) {
-  .pricing__list {
-    width: 100%;
-  }
-}
-
-
-@media (max-width: 1450px) {
-
-  .pricing__container.container {
-    padding: 0;
-    max-width: fit-content;
-  }
-
-  .pricing__card_text_container {
-    gap: 2px;
-  }
-
-  .pricing__card_preferences {
-    padding: 0 21.7px;
-  }
-
-  .pricing__card_preferences.last {
-    padding-bottom: 16px;
-  }
-
-  .pricing {
-    all: unset;
-  }
-
-  .pricing__calculator_icon {
-    height: 43px;
-    width: 43px;
-  }
-
-  .pricing__card_background {
-    margin-top: 40px;
-    margin-bottom: 50px;
-    max-width: 235px;
-    height: 690px;
-  }
-
-  .pricing__card_title, .pricing__card_monthly, .pricing__card_preference {
-    font-size: 16px;
-  } 
-
-  .pricing__card_description, .pricing__card_payment {
-    font-size: 12px;
-  }
-
-  .pricing__card_price {
-    font-size: 36px;
-
-    width: max-content;
-    height: fit-content;
-
-    align-self: center;
-  }
-
-  .pricing__card--business::after,
-  .pricing__card--startup::after,
-  .pricing__card--personal::after,
-  .pricing__card--calculator::after,
-  .pricing__card--hourly::after {
-    font-size: 20px;
-
-    width: 3.077vw;
-    height: 7.08vw;
-
-    top: -10px;
-    left: -20px;
-  }
-  
-  .pricing__card_monthly {
-    padding: 0 16px;
-  }
-
-}
-
-@media (min-width: 641px) and (max-width: 1450px) {
-  .pricing__card--business::after,
-  .pricing__card--startup::after,
-  .pricing__card--personal::after,
-  .pricing__card--calculator::after,
-  .pricing__card--hourly::after {
-    left: -30px;
-  }
-}
-
-@media (min-width: 1450px) {
-  .pricing__card--business::after,
-  .pricing__card--startup::after,
-  .pricing__card--personal::after {
-    left: -15px;
-  }
-
-}
-
-@media (min-width: 1920px) {
-  .pricing__container {
-    gap: 2.7vw;
-  }
-
-  .pricing__card_background {
-    min-width: 14vw;
-    max-width: 16.1vw;
-    min-height: 58vw;
-
-    border-radius: 0.56vw;
-
-    padding: 5px;
-  }
-
-  .pricing__card_head {
-    padding-top: 4.88vh;
-    padding-left: 0.7vw;
-    padding-right: 0.7vw;
-
-    gap: 0.35vw;
-  }
-
-  .pricing__card_description {
-    max-width: 13.3vw;
-
-    font-size: 0.97vw;
-  }
-
-  .pricing__card_title {
-    font-size: 1.39vw;
-  }
-
-  .pricing__card_background--popular::before {
-    top: -20px;
-
-    padding: 0.24vh 1.4vw;
-
-    font-size: 0.97vw;
-  }
-
-  .pricing__card_price {
-    font-size: 4.4vw;
-
-    height: 9.4vh;
-  }
-
-  .pricing__card--business::after {
-    width: 0.83vw;
-    height: 3.41vh;
-
-    font-size: 1.4vw;
-    bottom: 1.22vh;
-    left: 0.5vw;
-  }
-
-  .pricing__card--startup::after {
-    width: 0.83vw;
-    height: 3.41vh;
-
-    font-size: 1.4vw;
-    bottom: 1.22vh;
-    left: 0.8vw;
-  }
-
-  .pricing__card--personal::after {
-    width: 0.83vw;
-    height: 3.41vh;
-
-    font-size: 1.4vw;
-    bottom: 1.22vh;
-    left: 2vw;
-  }
-
-  .pricing__card--calculator::after {
-    width: 0.83vw;
-    height: 3.41vh;
-
-    font-size: 1.4vw;
-    bottom: 1.22vh;
-    left: 3vw;
-  }
-
-  .pricing__card--hourly::after {
-    width: 0.83vw;
-    height: 3.41vh;
-
-    font-size: 1.4vw;
-    bottom: 1.22vh;
-    left: 1vw;
-  }
-
-  .pricing__card_payment {
-    font-size: 1vw;
-
-    max-width: 13.2vw;
-
-    padding-top: 40px;
-  }
-
+@media (max-width: 1430px) {
   .pricing__card_info {
-    gap: 10vh;
+    height: 77px;
   }
-
-  .pricing__card_monthly {
-    max-width: 12.5vw;
-
-    font-size: 1.4vw;
-  }
-
-  .pricing__card_preference {
-    font-size: 1.4vw;
-  }
-
-  .pricing__calculator_icon {
-    width: 4.86vw;
-    height: 4.86vw;
-  }
-
-  .pricing__card_preferences_container {
-    max-width: fit-content;
-  }
-}
-
-.pricing__flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-@font-face {
-  font-family: "Proxima Nova Bold";
-  src: url(/fonts/proxima/proxima-nova-bold.otf);
-  font-weight: 700;
-  font-display: swap;
-}
-
-.pricing__button {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-@media (max-width: 750px) {
-  .pricing__first {
-    height: 280px;
-  }
-}
-
-.swiper-wrapper {
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-
-.swiper-wrapper .slider-frame {
-  display: flex;
-  transition: transform 0.3s ease;
-}
-
-.swiper-wrapper .slider-frame .slider-item {
-  flex: 0 0 auto;
-  margin-right: 15px;
-}
-
-.swiper-wrapper .slider-frame .slider-item:last-child {
-  margin-right: 0;
-}
-
-.swiper-wrapper .slider-frame .slider-item {
-  background-color: #f5f5f5;
-  border: 1px solid #ddd;
-  padding: 10px;
-}
-
-.pricing__container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  gap: 40px;
-  overflow: visible;
-}
-
-.pricing__card_preferences_container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  gap: 10px;
-
-  max-width: 192px;
-}
-
-.pricing__list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.pricing__card_background {
-  max-width: 232px;
-  height: 859px;
-
-  position: relative;
-
-  border: 1px solid;
-
-  border-image-slice: 1;
-  border-width: 1px;
-
-  background: var(--gradient);
-
-  border-radius: 8px;
-  margin-top: 40px;
-}
-
-.pricing__card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  gap: 30px;
-  background-color: #1c2024;
-
-  height: calc(100% - 4px);
-
-  margin: 1px;
-
-  border: 1px solid #1c2024;
-  border-radius: 8px;
-  
-}
-
-
-@media (min-width: 320px) and (max-width: 400px) {
-  
-}
-
-@media (min-width: 401px) and (max-width: 460px) {
-  
-}
-
-@media (min-width: 461px) and (max-width: 470px) {
-  
-}
-
-.pricing__card_content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.pricing__card_background--popular::after {
-  content: "";
-  position: absolute;
-  inset: -0.325em;
-  background: var(--gradient);
-  filter: blur(1.5em);
-  z-index: -1;
-}
-
-.pricing__card_background--popular::before {
-  content: "Most Popular";
-  position: absolute;
-
-  top: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-
-  padding: 2px 20px;
-  width: max-content;
-
-  background: linear-gradient(270deg, #14dbe8 0.62%, #43c0ed 100.76%);
-  border-radius: 32px;
-
-  color: #14181c;
-
-  font-family: "Proxima Nova Bold", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-
-  z-index: 99;
-}
-
-.pricing__card_head {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 40px;
-
-  display: flex;
-  flex-direction: column;
-
-  gap: 10px;
-}
-
-@media (max-width: 1450px) {
-  .pricing__card_head {
-    padding: 16px 21.7px;
-    padding-bottom: 0;
-  }
-
-  .pricing__first {
-    margin-top: 16px;
-  }
-}
-
-.pricing__card_description {
-  max-width: 192px;
-
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 140%;
-
-  color: var(--text-color);
-}
-
-@media (min-width: 1025px) and (max-width: 1165px) {
-  .pricing__card_description {
-    height: 55px;
-  }
-}
-
-.pricing__card_title {
-  all: unset;
-
-  font-family: "Proxima Nova Bold", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 140%;
-
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.pricing__card_price {
-  font-size: 64px;
-  line-height: 120%;
-
-  height: 77px;
-
-  position: relative;
-}
-
-.pricing__card--business::after {
-  content: "$";
-
-  width: 12px;
-  height: 28px;
-
-  font-size: 20px;
-
-  position: absolute;
-  top: -20px;
-  left: 7px;
-}
-
-.pricing__card--startup::after {
-  content: "$";
-
-  width: 12px;
-  height: 28px;
-
-  font-size: 20px;
-
-  position: absolute;
-  top: -20px;
-  left: 15px;
-}
-
-.pricing__card--personal::after {
-  content: "$";
-
-  width: 12px;
-  height: 28px;
-
-  font-size: 20px;
-
-  position: absolute;
-  top: -20px;
-  left: 25px;
-}
-
-.pricing__card--calculator::after {
-  content: "$";
-
-  width: 12px;
-  height: 28px;
-
-  font-size: 20px;
-
-  position: absolute;
-  top: -20px;
-  left: 50px;
-}
-
-.pricing__card--hourly::after {
-  content: "$";
-
-  width: 12px;
-  height: 28px;
-
-  font-size: 20px;
-
-  position: absolute;
-  top: -20px;
-  left: 18px;
-}
-
-.pricing__card_info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .pricing__card_payment {
@@ -970,7 +387,14 @@
 }
 
 
-@media (max-width: 1450px) {
+@media (max-width: 1700px) {
+
+  .pricing__card_background {
+    max-width: 260px;
+  }
+}
+
+@media (max-width: 1430px) {
 
   .pricing__container.container {
     padding: 0;
@@ -1002,7 +426,7 @@
     margin-top: 40px;
     margin-bottom: 50px;
     max-width: 235px;
-    height: 690px;
+    height: 709px;
   }
 
   .pricing__card_title, .pricing__card_monthly, .pricing__card_preference {
@@ -1033,7 +457,7 @@
     height: 7.08vw;
 
     top: -10px;
-    left: -20px;
+    left: -30px;
   }
   
   .pricing__card_monthly {
@@ -1042,23 +466,25 @@
 
 }
 
-@media (min-width: 641px) and (max-width: 1450px) {
+
+@media (max-width: 641px) {
+
   .pricing__card--business::after,
   .pricing__card--startup::after,
   .pricing__card--personal::after,
   .pricing__card--calculator::after,
   .pricing__card--hourly::after {
-    left: -30px;
+    left: -20px;
   }
+
 }
 
-@media (min-width: 1450px) {
+@media (min-width: 1430px) {
   .pricing__card--business::after,
   .pricing__card--startup::after,
   .pricing__card--personal::after {
     left: -15px;
   }
-
 }
 
 @media (min-width: 1920px) {
@@ -1103,9 +529,7 @@
   }
 
   .pricing__card_price {
-    font-size: 4.4vw;
-
-    height: 9.4vh;
+    font-size: 80px;
   }
 
   .pricing__card--business::after {
@@ -1114,7 +538,6 @@
 
     font-size: 1.4vw;
     bottom: 1.22vh;
-    left: 0.5vw;
   }
 
   .pricing__card--startup::after {
@@ -1123,7 +546,6 @@
 
     font-size: 1.4vw;
     bottom: 1.22vh;
-    left: 0.8vw;
   }
 
   .pricing__card--personal::after {
@@ -1132,7 +554,6 @@
 
     font-size: 1.4vw;
     bottom: 1.22vh;
-    left: 2vw;
   }
 
   .pricing__card--calculator::after {
@@ -1141,7 +562,7 @@
 
     font-size: 1.4vw;
     bottom: 1.22vh;
-    left: 3vw;
+    left: 70px;
   }
 
   .pricing__card--hourly::after {
@@ -1150,7 +571,7 @@
 
     font-size: 1.4vw;
     bottom: 1.22vh;
-    left: 1vw;
+    left: 35px;
   }
 
   .pricing__card_payment {
@@ -1162,7 +583,7 @@
   }
 
   .pricing__card_info {
-    gap: 10vh;
+    height: 160px;
   }
 
   .pricing__card_monthly {
@@ -1201,10 +622,6 @@
   .adm-swiper-slide .adm-swiper-item {
     justify-content: right;
   }
-
-  /* .pricing__card_background {
-    margin-left: 0;
-  } */
 
 }
 

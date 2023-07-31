@@ -94,6 +94,7 @@ span {
         flex-direction: column;
         padding-top: 44px;
     }
+    
 
     .back_arrow--svg {
         margin-left: 16px;
@@ -102,10 +103,9 @@ span {
     .submenu_name {
         color: var(--white, #CCC);
         text-align: center;
-        font-family: "Proxima Nova";
+        font-family: "Proxima Nova Bold";
         font-size: 4vw;
         font-style: normal;
-        font-weight: 700;
         line-height: 140%;
     }
 

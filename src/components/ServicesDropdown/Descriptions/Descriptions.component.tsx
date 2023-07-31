@@ -23,7 +23,7 @@ export const Descriptions: React.FC<Props> = ({ descriptions, windowWidth }) => 
             <div className="top-part--first">
               <img 
                 className="icons_scale"
-                src={ windowWidth <= 890 && activeDescriptionId === id ? `./dropdown-icons/gradient/${icon}` : `./dropdown-icons/${icon}`} alt="" />
+                src={ windowWidth <= 890 && activeDescriptionId === id ? `/dropdown-icons/gradient/${icon}` : `/dropdown-icons/${icon}`} alt="" />
               <span className={`services__card__title ${windowWidth <= 890 && activeDescriptionId === id ? "active" : ""}`}>{name}</span>
             </div>
             {attachment !== "" && (

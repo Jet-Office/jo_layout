@@ -46,10 +46,10 @@ export const DesktopList: React.FC<Props> =
         cases === LINKS[0].name ? (
           <div className="content scroll">
             <div className="content-description">
-              <Descriptions
-                descriptions={descriptions}
-                windowWidth={windowWidth}
-              ></Descriptions>
+                <Descriptions
+                  descriptions={descriptions}
+                  windowWidth={windowWidth}
+                ></Descriptions>
             
               <div className="services__link">
                 <button>
@@ -58,8 +58,7 @@ export const DesktopList: React.FC<Props> =
                   </button>
               </div>
             </div>
-
-        </div>
+          </div>
         ) : null
       }
       </div>

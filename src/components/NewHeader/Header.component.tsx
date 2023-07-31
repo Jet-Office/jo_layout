@@ -51,8 +51,6 @@ export const Header: React.FC<Props> = ({ windowWidth, activePageRef }) => {
     <div 
       className={`header ${(!isHome || (activeLink !== "Home")) ? "header--main" : "head--header"}`}
       onMouseLeave={() => {
-        console.log(activeLink);
-        console.log(DEFAULT_ACTIVE_LINK);
         setActiveLink(DEFAULT_ACTIVE_LINK);
         setSubmenuOpen(false);
         

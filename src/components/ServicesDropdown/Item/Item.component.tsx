@@ -121,11 +121,10 @@ export const Item: React.FC<Props> = ({
                 </div>
               </div>
               <div className="content-description">
-                <Descriptions
-                  descriptions={descriptions}
-                  windowWidth={windowWidth}
-                ></Descriptions>
-              
+                  <Descriptions
+                    descriptions={descriptions}
+                    windowWidth={windowWidth}
+                  ></Descriptions>
                 <div className="button--container">
                   <Button
                     color="pink"

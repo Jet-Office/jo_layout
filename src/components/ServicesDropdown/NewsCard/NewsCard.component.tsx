@@ -24,8 +24,8 @@ export const NewsCard: React.FC<Props> = ({
                 service.news != null 
                 ? service.news.map((news) => {
                     return (
-                        <div className="news-card">
-                            <img src={news.image} alt={news.alt} />
+                        <div className="news-card" key={news.id}>
+                            <img src={`/services-news/${news.image}`} alt={news.alt} />
 
                             <div className="text-overlay">
                                 {news.title}

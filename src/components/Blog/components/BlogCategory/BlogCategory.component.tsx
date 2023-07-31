@@ -37,7 +37,7 @@ export const BlogCategory: React.FC<Props> = ({ category, currentCategory, setCu
           currentCategory.includes(category.name)
           ? removeItem(category.name)
           : setCurrentCategory([...currentCategory, category.name]);
-          console.log(currentCategory); }}
+           }}
         >
           {category.name}
       </div>

@@ -34,10 +34,16 @@ export const DesktopNavigation: React.FC<Props> =
   const handleMouseEnter = useCallback(
     (link: Link) => {
       if (activeLink === link.name) {
-        if (submenuOpen) setSubmenuOpen(false);
+        if (submenuOpen) {
+          setSubmenuOpen(false);
+          setActiveLink("");
+        }
         else setSubmenuOpen(true);
       }
-      else setSubmenuOpen(true);
+      else {
+        setSubmenuOpen(true);
+        setActiveLink(link.name);
+      }
       setDropDown(link.isDropDown);
       handleClick(link.name);
       setHooverLink(link.name); 
@@ -57,15 +63,8 @@ export const DesktopNavigation: React.FC<Props> =
               }`}
               key={link.id}
               onClick={() => {
-                if (submenuOpen) {
-                  setSubmenuOpen(false);
-                  setActiveLink("");
-                  setHooverLink("");
-                }
-                else {
-                  setActiveLink(link.name);
-                  setSubmenuOpen(true);
-                }
+                handleMouseEnter(link);
+                
               }}
             >
               <div className="navigation__item">

@@ -69,7 +69,7 @@ export const PriceItem: React.FC<Props> = ({
   return (
     <div className={backgroundClass}>
       <div className="pricing__card" style={{ fontFamily: "inherit" }}>
-        <div className="pricing__card_content">
+        <div className={`pricing__card_content ${titleColor}`}>
             <Space direction="vertical" size={30} align="center">
               <div className="pricing__card_head">
                 <h3 className={titleClass}>{name}</h3>
@@ -96,7 +96,8 @@ export const PriceItem: React.FC<Props> = ({
                   <p className="pricing__card_payment">{payment}</p>
                 </div>
               )}
-
+            </Space>
+            <Space direction="vertical" size={30} align="center">
               <div className="pricing__button">
                 <Button
                   onClick={handleClick}

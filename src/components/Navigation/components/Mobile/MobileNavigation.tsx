@@ -46,61 +46,59 @@ export const MobileNavigation: React.FC<Props> =
   return (
     <ul className="navigation__list">
     {LINKS.map((link) => (
-      <>
-        <li
-          className={`navigation__item_background${
-            activeLink.toLowerCase() === link.name.toLowerCase()
-              ? " navigation__item_background--active"
-              : ""
-          }`}
-          key={link.id}
-          onClick={() => { setActiveSubmenu(true) }}
-        >
-          <div className={`navigation__item ${
-            activeLink.toLowerCase() === link.name.toLowerCase()
-            && link.isDropDown
-            ? " navigation__item--active"
+      <li
+        key={link.id}
+        className={`navigation__item_background${
+          activeLink.toLowerCase() === link.name.toLowerCase()
+            ? " navigation__item_background--active"
             : ""
-          }`}>
-            <a
-            className={`navigation__link ${ activeLink === link.name ? "navigation__link--active" : "" }`}
+        }`}
+        onClick={() => { setActiveSubmenu(true) }}
+      >
+        <div className={`navigation__item ${
+          activeLink.toLowerCase() === link.name.toLowerCase()
+          && link.isDropDown
+          ? " navigation__item--active"
+          : ""
+        }`}>
+          <a
+          className={`navigation__link ${ activeLink === link.name ? "navigation__link--active" : "" }`}
 
-            onClick={() => { 
-              handleMouseEnter(link); 
-              if (activeLink !== link.name) setActiveLink(link.name);
-              else {
-                setActiveLink(""); 
-                setHooverLink("");
-              }
-              
-            }}
-            >
-            {link.name}
-            {link.isDropDown
-              ? <img
-                  src={activeLink === link.name
-                    ? "/helpers-icons/arrow-down2.svg" 
-                    : "/helpers-icons/chevron-down.svg"}
-                  className="chevron-down"
-                  alt="Dropdown Icon"
-                />
-              : null
+          onClick={() => { 
+            handleMouseEnter(link); 
+            if (activeLink !== link.name) setActiveLink(link.name);
+            else {
+              setActiveLink(""); 
+              setHooverLink("");
             }
-            </a>
+            
+          }}
+          >
+          {link.name}
+          {link.isDropDown
+            ? <img
+                src={activeLink === link.name
+                  ? "/helpers-icons/arrow-down2.svg" 
+                  : "/helpers-icons/chevron-down.svg"}
+                className="chevron-down"
+                alt="Dropdown Icon"
+              />
+            : null
+          }
+          </a>
 
-            {isActiveSubmenu && isDropDown && activeLink === link.name &&
-              <ServicesDropdown
-                windowWidth={windowWidth}
-                activeLink={activeLink}
-                handleCLose={handleCLose}
-                submenuOpen={submenuOpen}
-                mainMenuSetIsOpen={mainMenuSetIsOpen}
-                setActiveMenuLink={setActiveMenuLink}
-              ></ServicesDropdown>
-            } 
-          </div>
-        </li>
-      </>
+          {isActiveSubmenu && isDropDown && activeLink === link.name &&
+            <ServicesDropdown
+              windowWidth={windowWidth}
+              activeLink={activeLink}
+              handleCLose={handleCLose}
+              submenuOpen={submenuOpen}
+              mainMenuSetIsOpen={mainMenuSetIsOpen}
+              setActiveMenuLink={setActiveMenuLink}
+            ></ServicesDropdown>
+          } 
+        </div>
+      </li>
       )
     )}
   </ul>
