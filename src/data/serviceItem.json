@@ -110,8 +110,8 @@
       "id": 3,
       "subLink": "scheduling-contacts",
       "hero-title": "Scheduling & Contacts",
-      "hero-description": "Effective meeting schedule control and electronic contact management are vital for startups to optimize their operations and achieve productivity. At Jet Office we understand the unique challenges faced by emerging businesses and offer comprehensive solutions to streamline these essential aspects.",
-      "hero-background": "/service-item/scheduling-contacts/hero-background3.png",
+      "hero-description": "Effective meeting schedule control and electronic contact management are vital for startups to optimize their operations and achieve productivity. At Jet Office we understand the unique challenges faced by emerging businesses and offer comprehensive solutions to streamline these essential aspects.",
+      "hero-background": ["/service-item/scheduling-contacts/hero-background3.png"],
       "list":[
         {
           "id": 1,
