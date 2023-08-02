@@ -4,10 +4,10 @@ import React from "react";
 import "./ServiceList2Section.css";
 
 interface ServiceList2Item {
-  id: number;
-  number: string;
-  title: string;
-  description: string;
+  id: number,
+  number: string,
+  title: string,
+  description: string,
 }
 
 interface Props {
