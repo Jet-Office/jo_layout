@@ -2,58 +2,60 @@
   "servece-item": [
     {
       "id": 1,
-              "hero-title": "Email management",
-              "hero-description": "Effective email management is crucial for businesses to optimize their communication processes. Jet Office service offers comprehensive solutions to streamline your email management, taking it to a new level of efficiency and professionalism.",
-              "hero-background": "/service-item/email-management/hero-background1.png",
-              "list":[
-                {
-                  "id": 1,
-                  "icon": "/service-item/email-management/read-email-target.svg",
-                  "title": "Spam Filtering",
-                  "description": "Keeping your mailbox secure and free from unwanted correspondence is essential"
-                },
-                {
-                  "id": 2,
-                  "icon": "/service-item/email-management/app-window-bookmark.svg",
-                  "title": "Email Template Creation",
-                  "description": "To further enhance your email management, we provide email template creation services"
-                },
-                {
-                  "id": 3,
-                  "icon": "/service-item/email-management/conversation-text.svg",
-                  "title": "Email Responses",
-                  "description": "Our team of assistants is skilled in providing prompt and professional email responses"
-                }
-              ],
-              "main-image": "/service-item/email-management/main-image1.png",
-              "main-title": "Efficiency",
-              "main-description": "Jet Office is dedicated to improving your email management processes. Our team is ready to assist you in saving time, enhancing communication efficiency, and maintaining professionalism in your email correspondence. With our expertise in correspondence automatization, email management services, spam protection, and advanced features like the email Sorting Roadmap, Jet Office is your partner in optimizing email management for your business.",
-              "list2":[
-                {
-                  "id": 1,
-                  "number": "01",
-                  "title": "Email Responses",
-                  "description": "With Jet Office, you can rely on our expertise in email management services to ensure your emails are handled with utmost care and efficiency."
-                },
-                {
-                  "id": 2,
-                  "number": "02",
-                  "title": "Email Template Creation",
-                  "description": "These templates not only save time but also ensure consistent and personalized responses tailored to your specific needs. JetOffice understands the importance of personalized communication and offers both pre-made and customized email templates."
-                },
-                {
-                  "id": 3,
-                  "number": "03",
-                  "title": "Spam Filtering",
-                  "description": "Jet Office implements cutting-edge spam filtering methods to provide robust spam protection for your emails. Our advanced spam filters and protection against malicious emails guarantee the reliability and safety of your email communication."
-                }
-              ],
-              "rocket-image": "/service-item/email-management/rocket-image1.png",
-              "rocket-title": "Roadmap",
-              "rocket-description": "Experience unparalleled efficiency in mailbox management powered by process automation and AI. Our advanced algorithms intelligently categorize and prioritize your emails, ensuring important messages are never missed. With JetOffice, your personal assistant can make informed decisions, sort emails into different folders, and create calendar events based on your instructions. Our email management solutions provide a streamlined approach to managing your inbox."
+      "subLink": "email-management",
+      "hero-title": "Email management",
+      "hero-description": "Effective email management is crucial for businesses to optimize their communication processes. Jet Office service offers comprehensive solutions to streamline your email management, taking it to a new level of efficiency and professionalism.",
+      "hero-background": "/service-item/email-management/hero-background1.png",
+      "list":[
+        {
+          "id": 1,
+          "icon": "/service-item/email-management/read-email-target.svg",
+          "title": "Spam Filtering",
+          "description": "Keeping your mailbox secure and free from unwanted correspondence is essential"
+        },
+        {
+          "id": 2,
+          "icon": "/service-item/email-management/app-window-bookmark.svg",
+          "title": "Email Template Creation",
+          "description": "To further enhance your email management, we provide email template creation services"
+        },
+        {
+          "id": 3,
+          "icon": "/service-item/email-management/conversation-text.svg",
+          "title": "Email Responses",
+          "description": "Our team of assistants is skilled in providing prompt and professional email responses"
+        }
+      ],
+      "main-image": "/service-item/email-management/main-image1.png",
+      "main-title": "Efficiency",
+      "main-description": "Jet Office is dedicated to improving your email management processes. Our team is ready to assist you in saving time, enhancing communication efficiency, and maintaining professionalism in your email correspondence. With our expertise in correspondence automatization, email management services, spam protection, and advanced features like the email Sorting Roadmap, Jet Office is your partner in optimizing email management for your business.",
+      "list2":[
+        {
+          "id": 1,
+          "number": "01",
+          "title": "Email Responses",
+          "description": "With Jet Office, you can rely on our expertise in email management services to ensure your emails are handled with utmost care and efficiency."
+        },
+        {
+          "id": 2,
+          "number": "02",
+          "title": "Email Template Creation",
+          "description": "These templates not only save time but also ensure consistent and personalized responses tailored to your specific needs. JetOffice understands the importance of personalized communication and offers both pre-made and customized email templates."
+        },
+        {
+          "id": 3,
+          "number": "03",
+          "title": "Spam Filtering",
+          "description": "Jet Office implements cutting-edge spam filtering methods to provide robust spam protection for your emails. Our advanced spam filters and protection against malicious emails guarantee the reliability and safety of your email communication."
+        }
+      ],
+      "rocket-image": "/service-item/email-management/rocket-image1.png",
+      "rocket-title": "Roadmap",
+      "rocket-description": "Experience unparalleled efficiency in mailbox management powered by process automation and AI. Our advanced algorithms intelligently categorize and prioritize your emails, ensuring important messages are never missed. With JetOffice, your personal assistant can make informed decisions, sort emails into different folders, and create calendar events based on your instructions. Our email management solutions provide a streamlined approach to managing your inbox."
     },
     {
       "id": 2,
+      "subLink": "tasks-management",
       "hero-title": "Tasks management",
       "hero-description": "Effective task assignment and control of execution is important for achieving business goals. Jet Office specialize in streamlining task management and facilitating collaboration to drive productivity and ensure success.",
       "hero-background": "/service-item/tasks-management/hero-background2.png",
@@ -106,6 +108,7 @@
     },
     {
       "id": 3,
+      "subLink": "scheduling-contacts",
       "hero-title": "Scheduling & Contacts",
       "hero-description": "Effective meeting schedule control and electronic contact management are vital for startups to optimize their operations and achieve productivity. At Jet Office we understand the unique challenges faced by emerging businesses and offer comprehensive solutions to streamline these essential aspects.",
       "hero-background": "/service-item/scheduling-contacts/hero-background3.png",
@@ -158,6 +161,7 @@
     },
     {
       "id": 4,
+      "subLink": "documents-presentations",
       "hero-title": "Documents & Presentations",
       "hero-description": "At Jet Office, we understand the significance of well-edited and visually appealing documents and presentations in effective communication. In a business optimization first impression of servises matter more than ever.",
       "hero-background": "/service-item/documents-presentations/hero-background4.png",
@@ -210,8 +214,8 @@
 
     },
     {
-      
       "id": 5,
+      "subLink": "finding-vendors",
       "hero-title": "Finding vendors",
       "hero-description": "Finding reliable and compatible vendors is important for successful business operations. At Jet Office, we understand the significance of this process and emphasize the role of professionals in efficiently identifying and selecting vendors that meet your specific needs.",
       "hero-background": "/service-item/finding-vendors/hero-background5.png",
@@ -264,7 +268,8 @@
     },
     {
       
-      "id": 7,
+      "id": 6,
+      "subLink": "bills-payment",
       "hero-title": "Bills & Payment",
       "hero-description": "Efficient bill control and payment processes are vital for maintaining financial stability and organization. JetOffice services help to optimize these processes and bill management of your company.",
       "hero-background": "/service-item/bills-payment/hero-background6.png",
@@ -317,8 +322,7 @@
     
     },
     {
-      
-      "id": 1,
+      "id": 7,
       "hero-title": "Shopping & Delivery",
       "hero-description": "Our team is proud to offer a virtual service that combines the convenience of shopping from anywhere with reliable delivery to customers' doorsteps.",
       "hero-background": "/service-item/shopping-delivery/hero-background7.png",
@@ -368,7 +372,6 @@
       "rocket-image": "/service-item/shopping-delivery/rocket-image7.png",
       "rocket-title": "Reliable delivery",
       "rocket-description": "In the ever-evolving world of online shopping, our virtual Shopping  & Delivery service stands out as a reliable and convenient option. With a personalized recommendations, secure delivery, and excellent customer support, we aim to redefine the virtual shopping experience. Jet Office invite customers to take advantage of our service and enjoy the convenience and security of shopping from anywhere while having their purchases promptly deliveredto their doorstep."
-    
     }
   ]
 }
