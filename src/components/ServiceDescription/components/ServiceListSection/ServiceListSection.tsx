@@ -3,10 +3,10 @@ import "./ServiceListSection.css"
 
 
 interface ServiceItem {
-  id: number;
-  icon: string;
-  title: string;
-  description: string;
+  id: number,
+  icon: string,
+  title: string,
+  description: string,
 }
 
 interface ServiceListProps {
