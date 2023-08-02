@@ -1,5 +1,4 @@
 import { Buttons } from "../Buttons";
-import { Head } from "../Head";
 import "./SectionHead.component.css";
 
 type Props = {
