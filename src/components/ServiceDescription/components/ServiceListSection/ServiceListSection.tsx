@@ -14,8 +14,6 @@ interface ServiceListProps {
 }
 
 export const ServiceListSection: React.FC<ServiceListProps> = ({ list }) => {
-
-
   return (
     <div className="service-list-section">
       {list.map((item) => (
