@@ -139,9 +139,9 @@
 
 @media (min-width: 1920px) {
   .button {
-    font-size: 1.1vw;
+    /*font-size: 1.1vw;*/
 
-    height: 3.5vw;
-    width: 12vw;
+    /*height: 3.5vw;*/
+    /*width: 12vw;*/
   }
 }
