@@ -23,6 +23,11 @@
   padding-top: 20px;
 }
 
+.benefits__title.h2 {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
 .benefits__icon {
   height: 48px;
   width: 48px;

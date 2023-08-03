@@ -8,6 +8,8 @@ export const Blog: React.FC = () => {
 
   const [ currentCategory, setCurrentCategory ] = useState<string[]>([]);
 
+  const windowWidth = 1000;
+
   return (
     <div id="blog" className="blog">
       <section className="blog--container">
@@ -32,6 +34,7 @@ export const Blog: React.FC = () => {
         <BlogCategoryList 
             currentCategory={ currentCategory } 
             setCurrentCategory={ setCurrentCategory }
+            windowWidth={ windowWidth }
           ></BlogCategoryList>
 
         <div className="blog--section">

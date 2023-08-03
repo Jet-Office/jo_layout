@@ -28,16 +28,17 @@ export const BlogCategory: React.FC<Props> = ({ category, currentCategory, setCu
   };
 
   return (
-    <section className="blog--category">
+    <section 
+      className={`blog--category ${categoryClasses}`}
+      onMouseDown={handleMouseDown}
+      onMouseUp={handleMouseUp}
+      onClick={() => { 
+        currentCategory.includes(category.name)
+        ? removeItem(category.name)
+        : setCurrentCategory([...currentCategory, category.name]);
+        }}
+    >
       <div 
-        className={categoryClasses}
-        onMouseDown={handleMouseDown}
-        onMouseUp={handleMouseUp}
-        onClick={() => { 
-          currentCategory.includes(category.name)
-          ? removeItem(category.name)
-          : setCurrentCategory([...currentCategory, category.name]);
-           }}
         >
           {category.name}
       </div>
