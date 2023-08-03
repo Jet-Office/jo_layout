@@ -4,7 +4,6 @@
     flex-wrap: wrap;
     gap: 12px;
     padding-top: 22px;
-    padding-left: 13px;
     padding-right: 14px;
 }
   
@@ -33,6 +32,7 @@
     color: #cccccc;
     text-align: left;
     padding: 20px 12px;
+    line-height: 140%;
 }
 
 .top-part, .top-part--first {

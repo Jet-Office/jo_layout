@@ -121,7 +121,6 @@
   gap: 30px;
 }
 
-.pricing__card_content.blue
 
 .pricing__card_background--popular::after {
   content: "";

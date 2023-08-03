@@ -1,7 +1,7 @@
 .benefits__container {
   display: grid;
   grid-template-columns: 9fr 3fr;
-  align-items: end;
+  align-items: start;
 }
 
 .benefits__text_container {
