@@ -1,37 +1,46 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { blogCategories } from "../../../../data/blogCategories.json";
 import { BlogCategory } from "../BlogCategory/BlogCategory.component";
 
 type Props = {
   currentCategory: string[];
   setCurrentCategory: (currentCategory: string[]) => void;
+  windowWidth: number;
 };
 
-export const BlogCategoryList: React.FC<Props> = ({ currentCategory, setCurrentCategory }) => {
+export const BlogCategoryList: React.FC<Props> = ({ currentCategory, setCurrentCategory, windowWidth }) => {
 
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const [ activeCategories, setActiveCategories ] = useState(false);
 
-  useEffect(() => {
-    if (scrollContainerRef.current) {
-      const containerWidth = scrollContainerRef.current.scrollWidth;
-      const visibleWidth = scrollContainerRef.current.clientWidth;
-      const scrollLeft = (containerWidth - visibleWidth) / 2;
-      scrollContainerRef.current.scrollLeft = scrollLeft;
-    }
-  }, []);
+  
+  const handleClick = () => {
+    if (activeCategories) setActiveCategories(false);
+    else setActiveCategories(true);
+  };
 
 
   return (
-    <div id="scroll--blog--categories" ref={scrollContainerRef}>
+    <div id="scroll--blog--categories">
+      { windowWidth <= 769 
+        ? <section 
+          className={`blog--category category--menu ${!activeCategories ? 'inactive' : ''}`}
+          onClick={ handleClick }
+          >
+            <div>Categories</div>
+            <img src="/helpers-icons/chevron-down.svg"></img>
+          </section>
+        : null }
       <section id="blog--categories">
         {blogCategories.map((category) => (
+          windowWidth > 769 || (activeCategories && category.name[0] != '#') ?
             <BlogCategory
               key={category.id}
               currentCategory={currentCategory}
               setCurrentCategory={setCurrentCategory}
               category={category}
             ></BlogCategory>
-          )
+            : null
+          ) 
         )}
       </section>
     </div>
