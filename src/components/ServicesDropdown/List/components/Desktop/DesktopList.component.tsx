@@ -52,7 +52,7 @@ export const DesktopList: React.FC<Props> =
                 ></Descriptions>
             
               <div className="services__link">
-                <button>
+                <button className="link_all_services">
                   <span>ALL SERVICES</span>
                   <img src="/helpers-icons/chevron-down-pink.svg" className="chevron-right-pink"></img>
                   </button>
@@ -70,7 +70,7 @@ export const DesktopList: React.FC<Props> =
                 activeServiceId={activeId}
               ></NewsCard>
               <div className="services__link">
-                <button className="services__link">
+                <button className="news_link">
                   <span>GET MORE NEWS</span>
                   <img src="/helpers-icons/chevron-down-pink.svg" className="chevron-right-pink"></img>
                 </button>
