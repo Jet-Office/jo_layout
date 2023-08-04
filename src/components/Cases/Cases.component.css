@@ -249,7 +249,7 @@
 
     border: 1px solid var(--background);
 
-    max-width: 76.92vw;
+    /*max-width: 76.92vw;*/
 
     box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.6);
     border-radius: 8px;
@@ -285,6 +285,8 @@
 
   .cases__content {
     height: auto;
+    width: 100%;
+    display: block;
   }
 }
 

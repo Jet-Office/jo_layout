@@ -117,9 +117,16 @@
     }
 
     .section-head__content_container {
+        margin: 0 16px;
     }
 
     .section-head__title {
         margin-top: 140px;
+    }
+}
+
+@media (max-width: 1140px) {
+    .section-head__content_container {
+        width: 100%;
     }
 }
