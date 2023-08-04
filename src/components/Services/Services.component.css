@@ -179,9 +179,9 @@
   }
 
   .services__container {
-    width: fit-content;
+    width: 100%;
 
-    padding-left: 2.56vw;
+    /*padding-left: 2.56vw;*/
   }
 
   .services__list_container {

@@ -79,7 +79,7 @@ body.modal-open {
 .container {
   max-width: 91.8vw;
 
-  margin: 0 auto;
+  margin: 0 100px;
 }
 
 p, button {
@@ -110,9 +110,9 @@ p, button {
   }
 
   .container {
-    margin: 0;
+    margin: 0 16px;
 
-    padding: 0 6vw;
+    /*padding: 0 6vw;*/
 
     max-width: none;
   }

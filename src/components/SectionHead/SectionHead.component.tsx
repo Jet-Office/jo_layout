@@ -9,7 +9,7 @@ export const SectionHead: React.FC<Props> = ({homePageRef }) => {
   return (
       <section className="section-head" id="home" ref={homePageRef}>
         <div className="section-head__container">
-          <div className="section-head__content_container">
+          <div className="container section-head__content_container">
             <h1 className="section-head__title title">
               Virtual Assistance <br /> & Business Solutions
             </h1>

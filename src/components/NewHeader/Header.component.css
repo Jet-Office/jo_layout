@@ -25,7 +25,7 @@
   justify-content: space-between;
   align-items: center;
 
-  padding: 20px 100px;
+  padding: 20px 0;
 
   width: 100%;
 }
@@ -47,6 +47,6 @@
   }
 
   .header__container {
-    padding: 44px 16px;
+    padding: 44px 0;
   }
 }

@@ -56,7 +56,7 @@ export const Header: React.FC<Props> = ({ windowWidth, activePageRef }) => {
         
       }}
     >
-      <div className="header__container">
+      <div className="container header__container">
         <a href="#" className="header__logo">
           <img
             src={Logo}

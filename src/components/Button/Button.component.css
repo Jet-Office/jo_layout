@@ -124,13 +124,13 @@
 @media (max-width: 641px) {
   .button--dark,
   .button--pink {
-    width: 87.95vw;
+    /*width: 87.95vw;*/
   }
 }
 
 @media (max-width: 890px) {
   .button--pink.menu {
-    width: 87.95vw;
+    /*width: 87.95vw;*/
     font-size: 3.2vw;
     padding: 20px;
     height: auto;
