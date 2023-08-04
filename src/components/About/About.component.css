@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 6fr 6fr;
 
-  padding-left: 6vw;
+  /*padding-left: 6vw;*/
 
   gap: 20px;
 }
@@ -54,7 +54,7 @@
   
 
   .about__container {
-    padding-left: 0;
+    /*padding-left: 0;*/
   }
 
   .about__earth {
