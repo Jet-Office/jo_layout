@@ -1,0 +1,9 @@
+<svg width="64" height="68" viewBox="0 0 64 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group">
+<g id="cloud-loaded">
+<path id="Shape" d="M14.5 58.0625H49.5" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_2" fill-rule="evenodd" clip-rule="evenodd" d="M58.25 58.0625C58.25 62.895 54.3325 66.8125 49.5 66.8125H14.5C9.66751 66.8125 5.75 62.895 5.75 58.0625C5.75 53.23 9.66751 49.3125 14.5 49.3125H49.5C54.3325 49.3125 58.25 53.23 58.25 58.0625Z" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_3" fill-rule="evenodd" clip-rule="evenodd" d="M49.5 40.5618C55.3897 40.5642 60.5598 36.6428 62.1456 30.9706C63.7313 25.2984 61.3444 19.2644 56.3074 16.212C51.2704 13.1596 44.8168 13.8364 40.5225 17.8673C38.923 7.50586 29.4851 0.214896 19.0555 1.28358C8.62601 2.35226 0.862879 11.4058 1.39789 21.8762C1.9329 32.3467 10.5784 40.5618 21.0625 40.5618H49.5Z" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>

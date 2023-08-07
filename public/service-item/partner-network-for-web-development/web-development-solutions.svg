@@ -1,0 +1,13 @@
+<svg width="64" height="58" viewBox="0 0 64 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group">
+<g id="website-build">
+<path id="Shape" d="M32 9.3125H62.625" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_2" d="M32 20.25H62.625" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_3" d="M42.9375 0.5625V31.1875" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_4" d="M56.0625 0.5625V31.1875" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_5" d="M1.375 13.6875H32" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_6" d="M18.875 0.5625V13.6875" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_7" fill-rule="evenodd" clip-rule="evenodd" d="M32 31.1875V0.5625H5.75C3.33375 0.5625 1.375 2.52125 1.375 4.9375V53.0625C1.375 55.4787 3.33375 57.4375 5.75 57.4375H58.25C60.6662 57.4375 62.625 55.4787 62.625 53.0625V31.1875H32Z" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>

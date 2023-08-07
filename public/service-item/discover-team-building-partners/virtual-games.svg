@@ -1,0 +1,23 @@
+<svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group">
+<g id="Regular">
+<path id="Shape" d="M14.3125 40.5625V49.3125" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_2" d="M9.9375 44.9375H18.6875" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_3" d="M49.3125 47.125C49.9166 47.125 50.4063 47.6147 50.4063 48.2188" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_4" d="M48.2188 48.2188C48.2188 47.6147 48.7084 47.125 49.3125 47.125" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_5" d="M49.3125 49.3125C48.7084 49.3125 48.2188 48.8228 48.2188 48.2188" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_6" d="M50.4063 48.2188C50.4063 48.8228 49.9166 49.3125 49.3125 49.3125" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_7" d="M55.875 40.5625C56.4791 40.5625 56.9688 41.0522 56.9688 41.6563" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_8" d="M54.7812 41.6563C54.7812 41.0522 55.2709 40.5625 55.875 40.5625" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_9" d="M55.875 42.75C55.2709 42.75 54.7812 42.2603 54.7812 41.6562" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_10" d="M56.9688 41.6562C56.9688 42.2603 56.4791 42.75 55.875 42.75" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_11" fill-rule="evenodd" clip-rule="evenodd" d="M42.8346 55.875C44.1634 55.8753 45.42 56.4795 46.25 57.5171L51.0246 63.4846C53.3761 66.427 57.3304 67.5619 60.8844 66.3144C64.4384 65.0669 66.8159 61.7095 66.8125 57.9429V40.5625C66.8125 35.73 62.895 31.8125 58.0625 31.8125H9.9375C5.10501 31.8125 1.1875 35.73 1.1875 40.5625V57.9487C1.18412 61.7153 3.56159 65.0727 7.11561 66.3202C10.6696 67.5677 14.6239 66.4328 16.9754 63.4904L21.75 57.5171C22.5807 56.4787 23.8385 55.8744 25.1683 55.875H42.8346Z" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Oval" fill-rule="evenodd" clip-rule="evenodd" d="M12.125 16.5C16.3534 16.5 19.7813 13.0722 19.7813 8.84375C19.7813 4.61532 16.3534 1.1875 12.125 1.1875C7.89657 1.1875 4.46875 4.61532 4.46875 8.84375C4.46875 13.0722 7.89657 16.5 12.125 16.5Z" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_12" d="M23.0625 25.25C20.9082 21.2107 16.7029 18.6875 12.125 18.6875C7.54707 18.6875 3.34182 21.2107 1.1875 25.25" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Oval_2" fill-rule="evenodd" clip-rule="evenodd" d="M34 16.5C38.2284 16.5 41.6563 13.0722 41.6563 8.84375C41.6563 4.61532 38.2284 1.1875 34 1.1875C29.7716 1.1875 26.3438 4.61532 26.3438 8.84375C26.3438 13.0722 29.7716 16.5 34 16.5Z" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_13" d="M44.9375 25.25C42.7832 21.2107 38.5779 18.6875 34 18.6875C29.4221 18.6875 25.2168 21.2107 23.0625 25.25" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Oval_3" fill-rule="evenodd" clip-rule="evenodd" d="M55.875 16.5C60.1034 16.5 63.5313 13.0722 63.5313 8.84375C63.5313 4.61532 60.1034 1.1875 55.875 1.1875C51.6466 1.1875 48.2188 4.61532 48.2188 8.84375C48.2188 13.0722 51.6466 16.5 55.875 16.5Z" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_14" d="M66.8125 25.25C64.6582 21.2107 60.4529 18.6875 55.875 18.6875C51.2971 18.6875 47.0918 21.2107 44.9375 25.25" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>

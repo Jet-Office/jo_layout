@@ -1,0 +1,11 @@
+<svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group">
+<g id="monitor-edit">
+<path id="Shape" d="M23.0625 58.0625L25.25 44.9375" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_2" d="M16.5 58.0625H25.25" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_3" d="M1.1875 36.1875H41.1633" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_4" d="M31.8125 44.9375H9.9375C5.10501 44.9375 1.1875 41.02 1.1875 36.1875V9.9375C1.1875 5.10501 5.10501 1.1875 9.9375 1.1875H58.0625C62.895 1.1875 66.8125 5.10501 66.8125 9.9375V25.25" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_5" fill-rule="evenodd" clip-rule="evenodd" d="M65.0071 42.3692L42.75 64.6263L31.8125 66.8138L34 55.8763L56.2571 33.6192C58.6661 31.2103 62.5718 31.2103 64.9808 33.6192L65.0071 33.6454C67.416 36.0545 67.416 39.9602 65.0071 42.3692Z" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>

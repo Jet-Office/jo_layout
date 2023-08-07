@@ -1,0 +1,14 @@
+<svg width="68" height="54" viewBox="0 0 68 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group">
+<g id="camera-professional">
+<path id="Rectangle-path" fill-rule="evenodd" clip-rule="evenodd" d="M1.1875 19.75C1.1875 18.9216 1.85907 18.25 2.6875 18.25H47.8125C48.6409 18.25 49.3125 18.9216 49.3125 19.75V51.75C49.3125 52.5784 48.6409 53.25 47.8125 53.25H2.6875C1.85907 53.25 1.1875 52.5784 1.1875 51.75V19.75Z" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M49.3125 42.3128L63.8579 47.767C64.5285 48.0181 65.2795 47.9251 65.8686 47.5181C66.4577 47.111 66.8102 46.4414 66.8125 45.7253V25.7812C66.8102 25.0651 66.4577 24.3955 65.8686 23.9885C65.2795 23.5814 64.5285 23.4884 63.8579 23.7395L49.3125 29.1878V42.3128Z" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Oval" fill-rule="evenodd" clip-rule="evenodd" d="M15.4063 42.3125C18.4266 42.3125 20.875 39.8641 20.875 36.8438C20.875 33.8234 18.4266 31.375 15.4063 31.375C12.3859 31.375 9.9375 33.8234 9.9375 36.8438C9.9375 39.8641 12.3859 42.3125 15.4063 42.3125Z" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Oval_2" fill-rule="evenodd" clip-rule="evenodd" d="M35.0938 42.3125C38.1141 42.3125 40.5625 39.8641 40.5625 36.8438C40.5625 33.8234 38.1141 31.375 35.0938 31.375C32.0734 31.375 29.625 33.8234 29.625 36.8438C29.625 39.8641 32.0734 42.3125 35.0938 42.3125Z" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_2" d="M15.4062 31.375H35.0938" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_3" fill-rule="evenodd" clip-rule="evenodd" d="M62.4375 0.75H47.125C45.9169 0.75 44.9375 1.72938 44.9375 2.9375V7.3125C44.9375 8.52062 45.9169 9.5 47.125 9.5H62.4375C64.8537 9.5 66.8125 7.54125 66.8125 5.125C66.8125 2.70875 64.8537 0.75 62.4375 0.75Z" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_4" d="M44.9375 5.125H40.5625C38.1463 5.125 36.1875 7.08375 36.1875 9.5V18.25" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_5" d="M3.375 9.5H20.875C23.2912 9.5 25.25 11.4588 25.25 13.875V18.25" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>

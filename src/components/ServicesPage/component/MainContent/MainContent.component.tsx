@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export const MainContent: React.FC = () => {
   return (
     <div className="container">
-      <div className="top-link">
+      <div className="top-link-main">
         <Link className="top-link__home" to="/">Home</Link> &#62; <span>Services</span>
       </div>
       <div className="main-content">

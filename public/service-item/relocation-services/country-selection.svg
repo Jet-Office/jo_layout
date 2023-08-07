@@ -1,0 +1,11 @@
+<svg width="64" height="68" viewBox="0 0 64 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group">
+<g id="passport-globe">
+<path id="Shape" d="M11.1109 7.03516L26.8288 13.0027C28.8386 13.7562 30.005 15.8566 29.5821 17.961L28.6663 22.5372C28.3347 24.195 27.0777 25.5134 25.4375 25.9235L19.3738 27.4402L16.008 35.8518C15.3554 37.4944 14.2193 38.9001 12.75 39.8827L6.96338 43.6277" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_2" d="M46.315 9.00781L43.4683 12.8432C41.765 15.1362 41.2881 18.1162 42.1908 20.8261L42.9375 23.0661" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Rectangle-path" fill-rule="evenodd" clip-rule="evenodd" d="M36.375 33.3125C36.375 32.4841 37.0466 31.8125 37.875 31.8125H61.125C61.9534 31.8125 62.625 32.4841 62.625 33.3125V65.3125C62.625 66.1409 61.9534 66.8125 61.125 66.8125H37.875C37.0466 66.8125 36.375 66.1409 36.375 65.3125V33.3125Z" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_3" d="M23.25 53.3278C10.0768 51.0981 0.679961 39.3296 1.42114 25.9896C2.16233 12.6496 12.8051 1.9946 26.1442 1.23799C39.4833 0.481385 51.2626 9.86464 53.5075 23.0352" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Oval" fill-rule="evenodd" clip-rule="evenodd" d="M49.5 55.875C53.1244 55.875 56.0625 52.9369 56.0625 49.3125C56.0625 45.6881 53.1244 42.75 49.5 42.75C45.8756 42.75 42.9375 45.6881 42.9375 49.3125C42.9375 52.9369 45.8756 55.875 49.5 55.875Z" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>
