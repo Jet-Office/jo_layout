@@ -2,13 +2,26 @@ import { BlogContent } from "./components/BlogContent";
 import { Link } from "react-router-dom";
 import "./Blog.component.css"
 import { BlogCategoryList } from "./components/BlogCategoryList";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export const Blog: React.FC = () => {
 
   const [ currentCategory, setCurrentCategory ] = useState<string[]>([]);
 
-  const windowWidth = 1000;
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <div id="blog" className="blog">
@@ -18,16 +31,16 @@ export const Blog: React.FC = () => {
             {/* <h1>Blog</h1> */}
             <p></p>
           </section>
-          <div className="top-link">
-            <Link className="top-link__home" to="/">
+          <div className="top-link--container">
+            <Link className="top-link top-link__home" to="/">
               Home
             </Link>{" "}
             &#62;{" "}
-            <Link className="top-link__resources" to="/resources">
+            <Link className="top-link top-link__resources" to="/resources">
               Resources
             </Link>{" "}
             &#62;{" "}
-            Blog
+            <span className="top-link">Blog</span>
           </div>
         </div>
 

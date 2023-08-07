@@ -66,13 +66,25 @@
     align-items: center;
 }
 
-.top-link {
+.top-link--container {
     margin: 0;
     margin-left: 100px;
+    text-align: left;
+    color: var(--white, #CCC);
+    font-size: 16px;
+}
+
+.top-link {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.top-link__home {
+    padding-left: 0;
 }
 
 @media (max-width: 768px) {
-    .top-link {
+    .top-link--container {
         margin-left: 14px;
     }
 }
