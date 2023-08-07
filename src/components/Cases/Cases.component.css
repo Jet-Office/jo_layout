@@ -134,7 +134,7 @@
   gap: 30px;
 
   padding: 24px 20px;
-  width: 49.65vw;
+  width: 50vw;
 }
 
 .cases__card,
@@ -156,12 +156,6 @@
 
 .cases__description_list {
   margin: 0;
-}
-
-@media (max-width: 1120px) {
-  .cases__descriptions {
-    width: 60%;
-  }
 }
 
 @media (max-width: 1050px) and (min-width: 642px) {

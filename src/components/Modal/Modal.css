@@ -2,7 +2,7 @@ a {
   text-decoration: none;
 }
 
-.modal.active, .modal__content.active {
+.modal.modal_active, .modal__content.modal_active {
   border: none;
 }
 
@@ -23,7 +23,7 @@ a {
   box-sizing: border-box;
 }
 
-.modal.active {
+.modal.modal_active {
   opacity: 1;
   pointer-events: all;
 }
@@ -62,7 +62,7 @@ a {
   background: #14181c;
 }
 
-.modal__content.active {
+.modal__content.modal_active {
   transform: scale(1);
 }
 
@@ -318,11 +318,11 @@ a {
 }
 
 @media (max-width: 670px) {
-  .modal__content.active {
+  .modal__content.modal_active {
     width: 90%;
   }
 
-  .button--pink {
+  .modal--button {
     width: 70vw;
   }
 }

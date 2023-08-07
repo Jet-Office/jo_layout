@@ -32,7 +32,12 @@ span {
 .content-container {
     border-top: 1px solid #0b0d0f;
     margin: 0 40px 0 0;
-    width: 100%;
+}
+
+@media (min-width: 890px) {
+    .content-container {
+        width: 100%;
+    }
 }
 
 .services__link {
@@ -165,40 +170,4 @@ span {
     .content-news {
         margin-right: 30px;
     }
-}
-
-@media (max-width: 750px) {
-    
-}
-
-
-@media (min-width: 573px) and (max-width: 641px) {
-    
-}
-
-@media (min-width: 320px) and (max-width: 400px) {
-
-}
-
-@media (min-width: 401px) and (max-width: 460px) {
-
-}
-
-@media (min-width: 461px) and (max-width: 470px) {
-
-}
-
-
-@media (min-width: 1025px) and (max-width: 1165px) {
-
-}
-
-
-@media (min-width: 1200px) {
-
-}
-
-
-@media (min-width: 1920px) {
-
 }

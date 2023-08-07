@@ -16,11 +16,17 @@
 
   position: relative;
 
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
   min-width: 1300px;
 
   margin-bottom: 180px;
+}
+
+@media (max-width: 641px) {
+  .section-head {
+    height: 100vh;
+  }
 }
 
 /*.section-head, .section-head__container {*/
@@ -75,7 +81,7 @@
 }
 
 .section-head__content_container {
-  margin-left: 3.5vw;
+  margin-left: 5.5vw;
 
   display: flex;
   flex-direction: column;

@@ -17,8 +17,8 @@ export const Modal: React.FC<Props> = ({ active, setActive }) => {
   };
 
   return (
-    <div className={active ? "modal active" : "modal"} onClick={handleCloseClick}>
-      <div className={active ? "modal__content active" : "modal__content"} onClick={handleContentClick}>
+    <div className={active ? "modal modal_active" : "modal"} onClick={handleCloseClick}>
+      <div className={active ? "modal__content modal_active" : "modal__content"} onClick={handleContentClick}>
         {/* <h2 className="modal__title">Attention</h2> */}
         <p className="modal__text">
           Experience our service with a 14-day free trial! Get a bonus of $30,
