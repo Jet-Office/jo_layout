@@ -287,13 +287,18 @@
   }
 }
 
-
-@media (min-width: 641px) and (max-width: 890px) {
+@media (min-width: 641px) and (max-width: 980px) {
   .cases__content {
     height: 540px;
   }
 }
 
+
+@media (min-width: 641px) and (max-width: 800px) {
+  .cases__content {
+    height: 450px;
+  }
+}
 
 @media (min-width: 1920px) {
   .cases__card {
@@ -319,6 +324,10 @@
     gap: 30px;
 
     padding: 3vh 1.4vw;
+  }
+
+  .cases__content {
+    height: 970px;
   }
 
 }
