@@ -4,7 +4,6 @@
   align-items: flex-start;
   gap: 20px;
   padding: 100px;
-  margin-bottom: 180px;
   
   color: #ccc;
 }
@@ -52,7 +51,6 @@
 @media (max-width: 641px) {
   .service-list2-section {
     padding: 16px;
-    margin-bottom: 140px;
   }
 
   .service-list2-item {

@@ -1,0 +1,12 @@
+<svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group">
+<g id="color-triangle">
+<path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M35.5223 23.935C35.2056 23.3946 34.6262 23.0625 33.9998 23.0625C33.3734 23.0625 32.794 23.3946 32.4773 23.935L23.2694 40.3092C22.9805 40.8191 22.9951 41.4465 23.3073 41.9425C23.6307 42.4488 24.1912 42.7538 24.7919 42.7505H43.2077C43.8084 42.7538 44.3689 42.4488 44.6923 41.9425C45.0045 41.4465 45.0191 40.8191 44.7302 40.3092L35.5223 23.935Z" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_2" d="M51.2344 20.5127L59.9785 13.9531" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_3" d="M18.1099 5.28906L23.7799 14.742" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_4" d="M40.2856 55.0312L42.9252 65.5867" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Oval" fill-rule="evenodd" clip-rule="evenodd" d="M34 66.8125C52.1218 66.8125 66.8125 52.1218 66.8125 34C66.8125 15.8782 52.1218 1.1875 34 1.1875C15.8782 1.1875 1.1875 15.8782 1.1875 34C1.1875 52.1218 15.8782 66.8125 34 66.8125Z" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Oval_2" fill-rule="evenodd" clip-rule="evenodd" d="M34.0554 55.9297C46.1366 55.9297 55.9304 46.1359 55.9304 34.0547C55.9304 21.9735 46.1366 12.1797 34.0554 12.1797C21.9742 12.1797 12.1804 21.9735 12.1804 34.0547C12.1804 46.1359 21.9742 55.9297 34.0554 55.9297Z" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,10 @@
+<svg width="46" height="68" viewBox="0 0 46 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group">
+<g id="hourglass">
+<path id="Shape" d="M3.97461 23.0625H42.0254" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_2" d="M42.0983 66.5121C38.3533 58.6487 31.2045 51.5 22.9999 51.5C14.7954 51.5 7.64661 58.6487 3.90161 66.5121" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_3" fill-rule="evenodd" clip-rule="evenodd" d="M5.5 1.1875C3.08375 1.1875 1.125 3.14625 1.125 5.5625V12.4662C1.125 24.5475 10.9188 34.3412 23 34.3412C35.0812 34.3412 44.875 24.5475 44.875 12.4662V5.5625C44.875 3.14625 42.9162 1.1875 40.5 1.1875H5.5Z" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_4" fill-rule="evenodd" clip-rule="evenodd" d="M5.5 66.8139C3.08375 66.8139 1.125 64.8551 1.125 62.4389V55.5352C1.125 43.4539 10.9188 33.6602 23 33.6602C35.0812 33.6602 44.875 43.4539 44.875 55.5352V62.4389C44.875 64.8551 42.9162 66.8139 40.5 66.8139H5.5Z" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>

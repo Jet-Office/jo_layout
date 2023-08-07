@@ -320,6 +320,7 @@
     },
     {
       "id": 7,
+      "subLink": "shopping-delivery",
       "hero-title": "Shopping & Delivery",
       "hero-description": "Our team is proud to offer a virtual service that combines the convenience of shopping from anywhere with reliable delivery to customers' doorsteps.",
       "hero-background": "/service-item/shopping-delivery/hero-background7.png",
@@ -369,6 +370,1542 @@
       "rocket-image": "/service-item/shopping-delivery/rocket-image7.png",
       "rocket-title": "Reliable delivery",
       "rocket-description": "In the ever-evolving world of online shopping, our virtual Shopping & Delivery service stands out as a reliable and convenient option. With a personalized recommendations, secure delivery, and excellent customer support, we aim to redefine the virtual shopping experience. Jet Office invite customers to take advantage of our service and enjoy the convenience and security of shopping from anywhere while having their purchases promptly deliveredto their doorstep."
+    },
+    {
+      "id": 8,
+      "subLink": "content-creation",
+      "hero-title": "Content Creation",
+      "hero-description": "JetOffice's Content Creation is designed to help businesses establish a strong online presence and connect with their target audience through compelling and customized content.",
+      "hero-background": "/service-item/content-creation/hero-background8.png",
+      "list":[
+        {
+          "id": 1,
+          "icon": "/service-item/content-creation/Group.svg",
+          "title": "Strategic Content Planning",
+          "description": "In-depth research and analysis, to develop an integrated content strategy."
+        },
+        {
+          "id": 2,
+          "icon": "/service-item/content-creation/seo.svg",
+          "title": "Optimized SEO Content",
+          "description": "Conducting keyword research, optimizing elements on the page and applying SEO best practices."
+        },
+        {
+          "id": 3,
+          "icon": "/service-item/content-creation/camera.svg",
+          "title": "Engaging Video Content",
+          "description": "From product demonstrations and brand stories to animated explainers and interviews."
+        }
+      ],
+      "main-image": "/service-item/content-creation/main-image8.png",
+      "main-title": "Informative",
+      "main-description": "Skilled writers excel at producing informative and engaging blog posts and articles. We optimize each piece of content with relevant keywords and industry-specific SEO techniques to improve search engine visibility and attract organic traffic.",
+      "list2":[
+        {
+          "id": 1,
+          "number": "01",
+          "title": "Compelling Content",
+          "description": "JetOffice team creates compelling social media content tailored to each platform, whether it's attention-grabbing captions, visually appealing graphics, or interactive polls."
+        },
+        {
+          "id": 2,
+          "number": "02",
+          "title": "Persuasive Texts",
+          "description": "Our skilled copywriters craft persuasive copy that highlights your product or service's unique features, benefits, and value proposition. By employing persuasive writing techniques, we help you create sales-driven content that encourages action and converts prospects into customers."
+        },
+        {
+          "id": 3,
+          "number": "03",
+          "title": "Consistent Messaging",
+          "description": "We ensure that all content we produce aligns with your brand guidelines, conveying a consistent message that resonates with your target audience."
+        }
+      ],
+      "rocket-image": "/service-item/content-creation/rocket-image8.png",
+      "rocket-title": "Partnership",
+      "rocket-description": "Partner with JetOffice's Content Creation service to strengthen your brand's online presence and engage your audience with compelling and tailored content. From blog posts and social media content to videos and whitepapers, we have the expertise to deliver content that drives results."
+    },
+    {
+      "id": 9,
+      "subLink": "content-planning-publishing",
+      "hero-title": "Content Planning & Publishing",
+      "hero-description": "JetOffice's Content Planning & Publishing is designed to empower businesses with a strategic approach to content creation and effective distribution.",
+      "hero-background": "/service-item/content-planning-publishing/hero-background9.png",
+      "list":[
+        {
+          "id": 1,
+          "icon": "/service-item/content-planning-publishing/keyboad.svg",
+          "title": "Keyword Research",
+          "description": "Thorough keyword research and application of strategic optimization techniques."
+        },
+        {
+          "id": 2,
+          "icon": "/service-item/content-planning-publishing/programming.svg",
+          "title": "Content Strategy",
+          "description": "Strengthening and expanding the reach of your brand across multiple platforms."
+        },
+        {
+          "id": 3,
+          "icon": "/service-item/content-planning-publishing/calendar.svg",
+          "title": "Content Calendar",
+          "description": "Formats and publication dates for each piece of content, a constant stream of valuable information,"
+        }
+      ],
+      "main-image": "/service-item/content-planning-publishing/main-image9.png",
+      "main-title": "Performance",
+      "main-description": "Our service includes comprehensive performance analytics and reporting. We track key metrics such as website traffic, engagement, conversions, and social media reach to evaluate the effectiveness of your content.",
+      "list2":[
+        {
+          "id": 1,
+          "number": "01",
+          "title": "Blog Posts & Articles",
+          "description": "From industry insights and educational guides to thought leadership pieces, we create content that positions your brand as a trusted authority and addresses your audience's pain points."
+        },
+        {
+          "id": 2,
+          "number": "02",
+          "title": "Multimedia Content",
+          "description": "JetOffice team creates compelling multimedia content, including videos, infographics, and interactive elements, to enhance the impact and shareability of your content."
+        },
+        {
+          "id": 3,
+          "number": "03",
+          "title": "Distribution & Promotion",
+          "description": "We leverage various distribution channels, including social media platforms, industry publications, and email marketing, to amplify the reach of your content."
+        }
+      ],
+      "rocket-image": "/service-item/content-planning-publishing/rocket-image9.png",
+      "rocket-title": "Collaboration",
+      "rocket-description": "Partner with JetOffice's Content Planning & Publishing service to unlock the full potential of your content marketing efforts. From strategic planning and creation to distribution and optimization, we have the expertise to elevate your brand's content and drive meaningful results."
+    },
+    {
+      "id": 10,
+      "subLink": "ad-campaign-management",
+      "hero-title": "Ad Campaign Management",
+      "hero-description": "JetOffice's Ad Campaign Management service is designed to help you maximize the results of your advertising efforts. This service offers a wide range of features and benefits to ensure effective management of your ad campaigns and achieve maximum success.",
+      "hero-background": "/service-item/ad-campaign-management/hero-background10.png",
+      "list":[
+        {
+          "id": 1,
+          "icon": "/service-item/ad-campaign-management/password.svg",
+          "title": "Planning of Ad Campaigns",
+          "description": "Deep analysis of the market and competitors, study of the target audience and its behavior."
+        },
+        {
+          "id": 2,
+          "icon": "/service-item/ad-campaign-management/FaceID.svg",
+          "title": "Target Audience",
+          "description": "Analysis of competitors and the market environment to determine the best advertising strategies."
+        },
+        {
+          "id": 3,
+          "icon": "/service-item/ad-campaign-management/dimond.svg",
+          "title": "Effective Advertisements",
+          "description": "Optimization to meet the requirements of the advertising platform and attract clicks."
+        }
+      ],
+      "main-image": "/service-item/ad-campaign-management/main-image10.png",
+      "main-title": "Monitoring",
+      "main-description": "We analyze key metrics such as CTR, conversions, and ROI and take appropriate actions to improve campaign effectiveness. We also employ A/B testing and other methods to determine the best advertising placement strategies and maximize your results.",
+      "list2":[
+        {
+          "id": 1,
+          "number": "01",
+          "title": "Keywords",
+          "description": "We conduct thorough research on your target audience and identify the most relevant keywords for your ads. We optimize your ads to attract your target audience and maximize clicks and conversions."
+        },
+        {
+          "id": 2,
+          "number": "02",
+          "title": "Reporting & Analytics",
+          "description": "We provide detailed reports and analytics on the progress of your ad campaign. You will be able to track key metrics and gain valuable insights into the performance of your ads. Based on this data, we offer recommendations and strategies for further improving your ad campaigns."
+        },
+        {
+          "id": 3,
+          "number": "03",
+          "title": "Creation of Effective Advertisements",
+          "description": "We offer comprehensive ad creation and optimization services. Our team of experienced copywriters and designers will develop attractive and compelling ads that capture the attention of your target audience and generate interest in your product or service."
+        }
+      ],
+      "rocket-image": "/service-item/ad-campaign-management/rocket-image10.png",
+      "rocket-title": "Confidence",
+      "rocket-description": "Trust JetOffice's Ad Campaign Management service to maximize the results of your advertising and achieve success in your goals."
+    },
+    {
+      "id": 11,
+      "subLink": "proofreading-error-correction",
+      "hero-title": "Proofreading & Error Correction",
+      "hero-description": "With our comprehensive suite of services, we offer expert proofreading and meticulous error correction to ensure that your content is flawless, impactful, and of the highest standard.",
+      "hero-background": "/service-item/proofreading-error-correction/hero-background11.png",
+      "list":[
+        {
+          "id": 1,
+          "icon": "/service-item/proofreading-error-correction/listt.svg",
+          "title": "Proofreading & Editing",
+          "description": "Close attention to grammar, spelling, punctuation, syntax, and sentence structure."
+        },
+        {
+          "id": 2,
+          "icon": "/service-item/proofreading-error-correction/ranking.svg",
+          "title": "Style Enhancement",
+          "description": "The tone and fluidity of your writing to match the intended style and purpose."
+        },
+        {
+          "id": 3,
+          "icon": "/service-item/proofreading-error-correction/Data-Files.svg",
+          "title": "Consistency & Coherence",
+          "description": "By addressing inconsistencies, we enhance the overall impact of your message."
+        }
+      ],
+      "main-image": "/service-item/proofreading-error-correction/main-image11.png",
+      "main-title": "Editing",
+      "main-description": "Our proofreaders with expertise in various fields meticulously review your content, ensuring accuracy, clarity, and adherence to the required style guides or citation formats.",
+      "list2":[
+        {
+          "id": 1,
+          "number": "01",
+          "title": "Confidentiality",
+          "description": "We understand the sensitivity and confidentiality of your content. Rest assured that your documents will be treated with the utmost confidentiality, and our proofreaders adhere to strict privacy protocols."
+        },
+        {
+          "id": 2,
+          "number": "02",
+          "title": "Timely Delivery",
+          "description": "We prioritize timely delivery, ensuring that your edited content is returned to you promptly, allowing you to meet your deadlines and publishing schedules."
+        },
+        {
+          "id": 3,
+          "number": "03",
+          "title": "Language improvements",
+          "description": "In addition to fixing bugs, we are focused on improving the overall language and style of your content. improving sentence structure, increasing clarity, and replacing words to ensure effective communication and response of messages."
+        }
+      ],
+      "rocket-image": "/service-item/proofreading-error-correction/rocket-image11.png",
+      "rocket-title": "Formatting",
+      "rocket-description": "The JetOffice service includes careful checking of formatting and layout elements such as headings, subheadings, bullets, and paragraph structure. We ensure that your content is well organized, visually appealing and easy to navigate."
+    },
+    {
+      "id": 12,
+      "subLink": "administration-electronic-documents-database-management",
+      "hero-title": "Administration of Electronic Documents & Database Management",
+      "hero-description": "JetOffice provides comprehensive services that optimize information organization, enhancing productivity and streamlining operations.",
+      "hero-background": "/service-item/administration-of-electronic-documents-database-management/hero-background12.png",
+      "list":[
+        {
+          "id": 1,
+          "icon": "/service-item/administration-of-electronic-documents-database-management/Archives.svg",
+          "title": "Administration",
+          "description": "Administrative tasks, including the organization and archiving of electronic documents."
+        },
+        {
+          "id": 2,
+          "icon": "/service-item/administration-of-electronic-documents-database-management/servers.svg",
+          "title": "Database Management",
+          "description": "Well-structured databases, ensuring data accuracy, security, and integrity."
+        },
+        {
+          "id": 3,
+          "icon": "/service-item/administration-of-electronic-documents-database-management/Laptop-Actions.svg",
+          "title": "Data Security",
+          "description": "Access controls, encryption protocols, and regular backups to safeguard."
+        }
+      ],
+      "main-image": "/service-item/administration-of-electronic-documents-database-management/main-image12.png",
+      "main-title": "Support",
+      "main-description": "We provide ongoing maintenance and support to ensure uninterrupted operations, addressing any concerns and optimizing performance.",
+      "list2":[
+        {
+          "id": 1,
+          "number": "01",
+          "title": "Control",
+          "description": "We use robust document management systems that enable businesses to effectively structure their documents for easy retrieval and efficient workflow."
+        },
+        {
+          "id": 2,
+          "number": "02",
+          "title": "Data Organization",
+          "description": "JetOffice team work closely with businesses to implement appropriate naming conventions, folder structures, and metadata tagging, enabling seamless searching, sorting, and retrieval of documents and data."
+        },
+        {
+          "id": 3,
+          "number": "03",
+          "title": "Integration & Automation",
+          "description": "Automation features, such as data syncing, report generation, and notifications, streamline processes, reduce manual effort, and enhance overall efficiency."
+        }
+      ],
+      "rocket-image": "/service-item/administration-of-electronic-documents-database-management/rocket-image12.png",
+      "rocket-title": "Optimization Methods",
+      "rocket-description": "JetOffice's services empower businesses to optimize their document administration and database management practices, enabling improved productivity, enhanced data security, and informed decision-making. Experience the benefits of efficient information organization by partnering with JetOffice today."
+    },
+    {
+      "id": 13,
+      "subLink": "curating-online-schools-courses",
+      "hero-title": "Curating Online Schools or Courses",
+      "hero-description": "JetOffice knows how important are curators in coordinating and organizing the educational journey, ensuring a rewarding and impactful learning experience for students.",
+      "hero-background": "/service-item/curating-online-schools-or-courses/hero-background13.png",
+      "list":[
+        {
+          "id": 1,
+          "icon": "/service-item/curating-online-schools-or-courses/Newspapers.svg",
+          "title": "Educational Process",
+          "description": "Ensuring the uninterrupted supply of educational content, assignments and assessments."
+        },
+        {
+          "id": 2,
+          "icon": "/service-item/curating-online-schools-or-courses/Desktop-Actions.svg",
+          "title": "Guiding Students",
+          "description": "Support in helping students navigate the online platform, accessing relevant resources."
+        },
+        {
+          "id": 3,
+          "icon": "/service-item/curating-online-schools-or-courses/Iris-Scan.svg",
+          "title": "Homework Monitoring",
+          "description": "Detailed feedback, constructive guidance, and personalized recommendations."
+        }
+      ],
+      "main-image": "/service-item/curating-online-schools-or-courses/main-image13.png",
+      "main-title": "Atmosphere",
+      "main-description": "Curators are foster a positive environment where students feel comfortable asking questions, collaborating with peers, and sharing ideas.",
+      "list2":[
+        {
+          "id": 1,
+          "number": "01",
+          "title": "Ensuring Access & Connection",
+          "description": "As course facilitator, JetOffice virtual assistant prioritize ensuring seamless access to the online educational platform for students."
+        },
+        {
+          "id": 2,
+          "number": "02",
+          "title": "Homework Checking",
+          "description": "By closely monitoring students' progress, curators ensure that they stay on track with their assignments and maximize their learning potential."
+        },
+        {
+          "id": 3,
+          "number": "03",
+          "title": "Communication with Students",
+          "description": "Effective communication is vital in online education, and our curators excel in facilitating it. They serve as a reliable point of contact, fostering a sense of connection and support for students."
+        }
+      ],
+      "rocket-image": "/service-item/curating-online-schools-or-courses/rocket-image13.png",
+      "rocket-title": "Effective Educational Coordination",
+      "rocket-description": "JetOffice's curating online schools with virtual assistant or courses is instrumental in providing a successful and impactful educational experience. We encourages educators and institutions to leverage our services for effective educational coordination."
+    },
+    {
+      "id": 14,
+      "subLink": "camping-retreat-coordination",
+      "hero-title": "Camping or Retreat Coordination",
+      "hero-description": "Well organized and pleasant campsites or retreats for individuals and groups. We go to great lengths to ensure that every aspect of the experience is fluid, memorable, and tailored to our clients' unique needs.",
+      "hero-background": "/service-item/camping-retreat-coordination/hero-background14.png",
+      "list":[
+        {
+          "id": 1,
+          "icon": "/service-item/camping-retreat-coordination/Maps.svg",
+          "title": "Location Search",
+          "description": "Connect with nature, unwind, and recharge in serene and picturesque environments."
+        },
+        {
+          "id": 2,
+          "icon": "/service-item/camping-retreat-coordination/Trekking.svg",
+          "title": "Route Planning",
+          "description": "Stress-free journey, allowing to fully immerse themselves in the camping or retreat experience."
+        },
+        {
+          "id": 3,
+          "icon": "/service-item/camping-retreat-coordination/Outdoor-Parks.svg",
+          "title": "Publicity Retreat",
+          "description": "Environment that fosters creativity, teamwork, and personal growth."
+        }
+      ],
+      "main-image": "/service-item/camping-retreat-coordination/main-image14.png",
+      "main-title": "Communication",
+      "main-description": "We provide timely and clear communication, keeping participants informed about event details, schedules, and any updates, fostering a sense of confidence and preparedness.",
+      "list2":[
+        {
+          "id": 1,
+          "number": "01",
+          "title": "Equipment Consultation",
+          "description": "Our coordinators are available for personalized consultations, guiding participants in selecting the necessary equipment and supplies to ensure their comfort and enjoyment throughout the experience."
+        },
+        {
+          "id": 2,
+          "number": "02",
+          "title": "Safety",
+          "description": "Our coordinators implement measures to ensure participant safety, such as online control for route tracking and emergency communication."
+        },
+        {
+          "id": 3,
+          "number": "03",
+          "title": "Gathering Feedback",
+          "description": "Feedback allows us to identify strengths and areas for improvement, ensuring that future camping or retreat experiences exceed expectations."
+        }
+      ],
+      "rocket-image": "/service-item/camping-retreat-coordination/rocket-image14.png",
+      "rocket-title": "Camping or Retreat Experiences",
+      "rocket-description": "With our meticulous planning, attention to detail, and commitment to personalized service, we ensure that every camping or retreat adventure is tailored to our clients' unique preferences and objectives."
+    },
+    {
+      "id": 15,
+      "subLink": "competitor-analysis-market-research",
+      "hero-title": "Competitor Analysis & Market Research",
+      "hero-description": "Stay one step ahead of the competition with JetOffice's comprehensive Competitor Analysis & Market Research services. Our experienced team is here to provide you with valuable insights that will give you a competitive edge.",
+      "hero-background": "/service-item/competitor-analysis-market-research/hero-background15.png",
+      "list":[
+        {
+          "id": 1,
+          "icon": "/service-item/competitor-analysis-market-research/Analysis.svg",
+          "title": "Competitor Analysis",
+          "description": "Stay one step ahead of the competition with market analysis and research."
+        },
+        {
+          "id": 2,
+          "icon": "/service-item/competitor-analysis-market-research/Market-Research.svg",
+          "title": "Market Research",
+          "description": "Research to identify emerging trends, customer preferences and industry dynamics."
+        },
+        {
+          "id": 3,
+          "icon": "/service-item/competitor-analysis-market-research/Target-Market.svg",
+          "title": "Trend Analysis",
+          "description": "Assistance in identifying untapped opportunities and developing targeted marketing campaigns."
+        }
+      ],
+      "main-image": "/service-item/competitor-analysis-market-research/main-image15.png",
+      "main-title": "Competitiveness",
+      "main-description": "Our experts assess your key performance indicators, financial metrics, and operational efficiency to identify areas of improvement and highlight areas where you outperform your competitors.",
+      "list2":[
+        {
+          "id": 1,
+          "number": "01",
+          "title": "Thorough Analysis",
+          "description": "We delve deep into your industry to analyze your competitors' strengths, weaknesses, strategies, and market positioning. Our experts identify key players in the market and evaluate their products, services, pricing, and marketing efforts."
+        },
+        {
+          "id": 2,
+          "number": "02",
+          "title": "Demographic Analysis",
+          "description": "JetOffice market research specialists gather consumer insights, conduct surveys, and analyze demographic data to provide you with a deep understanding of your customer base."
+        },
+        {
+          "id": 3,
+          "number": "03",
+          "title": "Actionable Insights",
+          "description": "Our reports provide actionable insights and recommendations based on our in-depth analysis. Like business helper, Maximize your market potential and drive business success with our strategic guidance."
+        }
+      ],
+      "rocket-image": "/service-item/competitor-analysis-market-research/rocket-image15.png",
+      "rocket-title": "Confidentiality and Data Security",
+      "rocket-description": "Our team adheres to strict data protection protocols and ensures that your competitor analysis and market research data are handled with the utmost care and security."
+   },
+   {
+    "id": 16,
+    "subLink": "optimization-business-processes",
+    "hero-title": "Optimization of Business Processes",
+    "hero-description": "At JetOffice, we also specialize in providing comprehensive Optimization of Business Processes services to help businesses streamline their operations and achieve maximum efficiency.",
+    "hero-background": "/service-item/optimization-of-business-processes/hero-background16.png",
+    "list":[
+      {
+        "id": 1,
+        "icon": "/service-item/optimization-of-business-processes/Analysis.svg",
+        "title": "Process Analysis & Mapping",
+        "description": "Customized optimization strategies to solve problems and improve performance."
+      },
+      {
+        "id": 2,
+        "icon": "/service-item/optimization-of-business-processes/Process-Optimization.svg",
+        "title": "Workflow Automation",
+        "description": "Advanced technologies and automation tools to streamline and simplify your workflows."
+      },
+      {
+        "id": 3,
+        "icon": "/service-item/optimization-of-business-processes/Process-Management.svg",
+        "title": "Continuous Strategies",
+        "description": "Development of your business processes in accordance with changing market requirements."
+      }
+    ],
+    "main-image": "/service-item/optimization-of-business-processes/main-image16.png",
+    "main-title": "Allocation",
+    "main-description": "Our team assesses your resource utilization, identifies areas of overutilization or underutilization, and provides recommendations for optimal resource allocation.",
+    "list2":[
+      {
+        "id": 1,
+        "number": "01",
+        "title": "Change Management",
+        "description": "JetOffice virtual assistant provide comprehensive change management plans and support, helping your employees embrace the changes and effectively adapt to new processes."
+      },
+      {
+        "id": 2,
+        "number": "02",
+        "title": "Data-Driven Decision Making",
+        "description": "We provide actionable insights that enable informed decision making and empower you to make strategic choices based on real-time information."
+      },
+      {
+        "id": 3,
+        "number": "03",
+        "title": "Confidentiality & Security",
+        "description": "We understand the importance of protecting your sensitive business information. At JetOffice, we adhere to stringent data protection protocols, ensuring the confidentiality and security of your data throughout the optimization process."
+      }
+    ],
+    "rocket-image": "/service-item/optimization-of-business-processes/rocket-image16.png",
+    "rocket-title": "Continuous Improvement",
+    "rocket-description": "Tailored strategies, automation solutions, and continuous improvement focus help businesses of all sizes and industries optimize their operations, reduce costs, and drive sustainable growth."
+   },
+   {
+    "id": 17,
+    "subLink": "search-service-providers",
+    "hero-title": "Search for Service Providers",
+    "hero-description": "Welcome to JetOffice Search for Service Providers your ultimate destination for connecting with skilled professionals who can cater to a wide range of requirements.",
+    "hero-background": "/service-item/search-for-service-providers/hero-background17.png",
+    "list":[
+      {
+        "id": 1,
+        "icon": "/service-item/search-for-service-providers/legal-services.svg",
+        "title": "Legal Services",
+        "description": "Expert legal consultations, ensuring your peace of mind in complex legal matters."
+      },
+      {
+        "id": 2,
+        "icon": "/service-item/search-for-service-providers/medical-services.svg",
+        "title": "Medical & Healthcare Services",
+        "description": "Comprehensive medical care with first-class consultations and accurate diagnostics."
+      },
+      {
+        "id": 3,
+        "icon": "/service-item/search-for-service-providers/financial-services.svg",
+        "title": "Financial Services",
+        "description": "Providing accurate accounting support for your focus on business growth and success."
+      }
+    ],
+    "main-image": "/service-item/search-for-service-providers/main-image17.png",
+    "main-title": "Education",
+    "main-description": "Enhance your knowledge and skills with personalized tutoring and education from experienced tutors. Enroll in diverse online courses and educational programs to broaden your horizons and achieve your goals.",
+    "list2":[
+      {
+        "id": 1,
+        "number": "01",
+        "title": "Visa Services",
+        "description": "With Jet Office, you can rely on our expertise in email management services to ensure your emails are handled with utmost care and efficiency."
+      },
+      {
+        "id": 2,
+        "number": "02",
+        "title": "Travel Services",
+        "description": "Plan your dream vacations with ease as our partners assist in organizing tailored trips to various destinations. Our team will help you create an unforgettable travel experience, including exciting excursions and activities."
+      },
+      {
+        "id": 3,
+        "number": "03",
+        "title": "Experts",
+        "description": "We have curated a network of exceptional experts, ensuring top-notch solutions across various domains to meet your unique needs."
+      }
+    ],
+    "rocket-image": "/service-item/search-for-service-providers/rocket-image17.png",
+    "rocket-title": "Perfect Partner for Your Needs",
+    "rocket-description": "Partner with «Search for Service Providers» today and gain access to a diverse network of skilled professionals who are dedicated to fulfilling your every requirement. Discover tailored solutions that guarantee success and satisfaction."
+   },
+   {
+    "id": 18,
+    "subLink": "ai-copywriting",
+    "hero-title": "AI Copywriting",
+    "hero-description": "Our AI-powered copywriting solution harnesses the latest advancements in artificial intelligence to deliver compelling, high-quality content that resonates with your target audience.",
+    "hero-background": "/service-item/ai-copywriting/hero-background18.png",
+    "list":[
+      {
+        "id": 1,
+        "icon": "/service-item/ai-copywriting/ai-powered-content.svg",
+        "title": "AI-Powered Content",
+        "description": "Eye-catching blog posts or attention-grabbing social media captions."
+      },
+      {
+        "id": 2,
+        "icon": "/service-item/ai-copywriting/Brand-Voice.svg",
+        "title": "Your Brand Voice",
+        "description": "Our AI algorithms are trained to adapt to your brand's unique style, tone, and personality."
+      },
+      {
+        "id": 3,
+        "icon": "/service-item/ai-copywriting/SEO-Optimization.svg",
+        "title": "Enhanced SEO Optimization",
+        "description": "Smart SEO techniques to optimize your content for relevant keywords."
+      }
+    ],
+    "main-image": "/service-item/ai-copywriting/main-image18.png",
+    "main-title": "Ai - Optimization",
+    "main-description": "AI-powered solution delivers captivating, on-brand, and SEO-optimized content that resonates with your audience and drives tangible results. Experience the power of AI in transforming your content creation process.",
+    "list2":[
+      {
+        "id": 1,
+        "number": "01",
+        "title": "Time & Cost Efficiency",
+        "description": "AI technology generates high-quality content at a fraction of the time and cost, allowing you to focus on other important aspects of your business."
+      },
+      {
+        "id": 2,
+        "number": "02",
+        "title": "Continuous Learning & Improvement",
+        "description": "Our AI algorithms continuously learn and improve from user feedback and data analysis. AI Copywriting service evolves and adapts to the latest trends, audience preferences, and industry best practices."
+      },
+      {
+        "id": 3,
+        "number": "03",
+        "title": "Data Security & Confidentiality",
+        "description": "AI Copywriting service adheres to strict data protection protocols, ensuring that your sensitive information and intellectual property are safeguarded at all times."
+      }
+    ],
+    "rocket-image": "/service-item/ai-copywriting/rocket-image18.png",
+    "rocket-title": "Transform Your Content",
+    "rocket-description": "Elevate your content marketing efforts with JetOffice's AI Copywriting service. Contact us today to unleash the potential of intelligent writing for your business."
+   },
+   {
+    "id": 19,
+    "subLink": "ai-image-generation",
+    "hero-title": "AI Image Generation",
+    "hero-description": "Advanced artificial intelligence algorithms leverage the power of machine learning to generate stunning, high-quality images that will captivate your audience and elevate your creative projects to new heights.",
+    "hero-background": "/service-item/ai-image-generation/hero-background19.png",
+    "list":[
+      {
+        "id": 1,
+        "icon": "/service-item/ai-image-generation/Endless-Creative-Possibilities.svg",
+        "title": "Endless Creative Possibilities",
+        "description": "From unique illustrations to eye-catching visuals for your marketing campaigns."
+      },
+      {
+        "id": 2,
+        "icon": "/service-item/ai-image-generation/Time-Cost-Savings.svg",
+        "title": "Time & Cost Savings",
+        "description": "By automating the process, we save you valuable time and resources."
+      },
+      {
+        "id": 3,
+        "icon": "/service-item/ai-image-generation/customization.svg",
+        "title": "Customization & Personalization",
+        "description": "From selecting specific styles and color palettes to adjusting parameters and preferences."
+      }
+    ],
+    "main-image": "/service-item/ai-image-generation/main-image19.png",
+    "main-title": "Replication",
+    "main-description": "Whether you want to emulate the look of a famous artist or create a distinct visual identity, our AI Image Generation service can mimic the desired artistic style.",
+    "list2":[
+      {
+        "id": 1,
+        "number": "01",
+        "title": "Enhanced Visual Appeal",
+        "description": "AI-generated images are crafted with precision, resulting in visuals that are visually striking and captivating. These high-quality images will enhance your brand's overall aesthetic and make a lasting impression on your viewers."
+      },
+      {
+        "id": 2,
+        "number": "02",
+        "title": "Seamless Integration",
+        "description": "Our solution seamlessly integrates with your preferred tools, making it easy to incorporate AI-generated images seamlessly into your projects."
+      },
+      {
+        "id": 3,
+        "number": "03",
+        "title": "Data-Driven Insights",
+        "description": "By analyzing vast amounts of data, our system understands visual elements, styles, and trends, enabling it to generate images that align with your target audience's preferences and resonate with their interests."
+      }
+    ],
+    "rocket-image": "/service-item/ai-image-generation/rocket-image19.png",
+    "rocket-title": "Stay Ahead of the Curve",
+    "rocket-description": "With JetOffice AI Image Generation, you can leverage the latest advancements in artificial intelligence to create visually stunning content that sets you apart from the competition."
+   },
+   {
+    "id": 20,
+    "subLink": "interviews",
+    "hero-title": "Interviews",
+    "hero-description": "Our team uses their experience to conduct targeted interviews, extracting valuable insights that will help you assess candidate qualifications or understand your clients' needs and preferences.",
+    "hero-background": "/service-item/interwiews/hero-background20.png",
+    "list":[
+      {
+        "id": 1,
+        "icon": "/service-item/interwiews/potenial.svg",
+        "title": "Potential of Candidates",
+        "description": "Informed hiring decisions that are aligned with your company's culture and goals."
+      },
+      {
+        "id": 2,
+        "icon": "/service-item/interwiews/Customer-Needs.svg",
+        "title": "Customer Needs",
+        "description": "Effective methods for collecting customer feedback and researching their expectations."
+      },
+      {
+        "id": 3,
+        "icon": "/service-item/interwiews/competencies.svg",
+        "title": "Competencies & Skills",
+        "description": "Suitability of candidates for roles and guarantees of building a strong team."
+      }
+    ],
+    "main-image": "/service-item/interwiews/main-image20.png",
+    "main-title": "Interviewing",
+    "main-description": "Our interviewers extract meaningful insights from customer interviews, uncovering valuable information about their preferences and satisfaction levels.",
+    "list2":[
+      {
+        "id": 1,
+        "number": "01",
+        "title": "Customized Interview Approaches",
+        "description": "Whether you require structured one-on-one interviews, focus groups, or panel discussions, our interviewers adapt their approach to meet your specific needs."
+      },
+      {
+        "id": 2,
+        "number": "02",
+        "title": "Confidentiality & Professionalism",
+        "description": "Interviewers adhere to strict ethical standards and handle sensitive information with the utmost care and discretion."
+      },
+      {
+        "id": 3,
+        "number": "03",
+        "title": "Actionable Reports & Recommendations",
+        "description": "These reports provide you with actionable information that can guide your decision-making process and help you develop strategies that drive positive outcomes."
+      }
+    ],
+    "rocket-image": "/service-item/interwiews/rocket-image20.png",
+    "rocket-title": "Stay Ahead of the Competition",
+    "rocket-description": "Interviews provides you with a competitive advantage by offering valuable insights into the minds of potential employees and target customers. Gain in-depth insights, make informed decisions, and drive growth."
+    },
+    {
+      "id": 21,
+      "subLink": "applicants-resume-processing",
+      "hero-title": "Applicant Resume Processingy",
+      "hero-description": "Our service is designed to alleviate the burdensome task of reviewing numerous resumes and identifying the most qualified candidates efficiently.",
+      "hero-background": "/service-item/applicants-resume-processing/hero-background21.png",
+      "list":[
+        {
+          "id": 1,
+          "icon": "/service-item/applicants-resume-processing/effective.svg",
+          "title": "Efficient Resume Screening",
+          "description": "Keyword matching and advanced filtering techniques to swiftly identify resumes."
+        },
+        {
+          "id": 2,
+          "icon": "/service-item/applicants-resume-processing/customized-resume-evaluation.svg",
+          "title": "Customized Resume Evaluation",
+          "description": "A list of resumes that best suit your needs, increasing your chances of finding the perfect candidate."
+        },
+        {
+          "id": 3,
+          "icon": "/service-item/applicants-resume-processing/enhanced.svg",
+          "title": "Enhanced Candidate Profiles",
+          "description": "Data from various sources, including professional network platforms."
+        }
+      ],
+      "main-image": "/service-item/applicants-resume-processing/main-image21.png",
+      "main-title": "Collaboration",
+      "main-description": "Streamlined process ensures efficient communication among team members, facilitating informed decision-making and timely follow-ups.",
+      "list2":[
+        {
+          "id": 1,
+          "number": "01",
+          "title": "Data Security & Confidentiality",
+          "description": "JetOffice virtual assistants adheres to strict data security protocols, employing robust encryption measures for all data transmission and storage."
+        },
+        {
+          "id": 2,
+          "number": "02",
+          "title": "Continuous Improvement & Feedback",
+          "description": "Your insights and suggestions play a vital role in helping us deliver a more effective and efficient resume processing service, enabling you to identify top talent more accurately and confidently."
+        },
+        {
+          "id": 3,
+          "title": "Fast Hiring",
+          "description": "Our advanced technology, customized evaluation, streamlined collaboration, and commitment to data security ensure that you receive a curated selection of highly qualified candidates, saving you time, effort, and resources."
+        }
+      ],
+      "rocket-image": "/service-item/applicants-resume-processing/rocket-image21.png",
+      "rocket-title": "Optimize Your Hiring Process",
+      "rocket-description": "We combine advanced technology and expert human judgment to ensure that you receive a curated selection of top-quality resumes that closely match your specific requirements, saving you valuable time and resources."
+    },
+    {
+      "id": 22,
+      "subLink": "job-posting-across-platforms",
+      "hero-title": "Job Posting Across Platforms",
+      "hero-description": "Service offers a range of features and benefits to ensure that your job postings are seen by qualified candidates across various online platforms.",
+      "hero-background": "/service-item/job-posting-across-platforms/hero-background22.png",
+      "list":[
+        {
+          "id": 1,
+          "icon": "/service-item/job-posting-across-platforms/wide-network.svg",
+          "title": "Wide Network Platforms",
+          "description": "From popular general job boards to niche industry-specific platforms."
+        },
+        {
+          "id": 2,
+          "icon": "/service-item/job-posting-across-platforms/job-descriptions.svg",
+          "title": "Job Descriptions",
+          "description": "By incorporating SEO techniques, we increase the visibility of job postings in search results."
+        },
+        {
+          "id": 3,
+          "icon": "/service-item/job-posting-across-platforms/Targeted-Promotion.svg",
+          "title": "Targeted Promotion",
+          "description": "We harness the social media by promoting your job openings through advertising campaigns."
+        }
+      ],
+      "main-image": "/service-item/job-posting-across-platforms/main-image22.png",
+      "main-title": "Analytics",
+      "main-description": "You can track metrics such as views, clicks, and applications, allowing you to measure the success of each posting and make data-driven decisions to improve your recruitment efforts.",
+      "list2":[
+        {
+          "id": 1,
+          "number": "01",
+          "title": "Cross-Platform Posting",
+          "description": "You can create, edit, and update your job postings from one dashboard, ensuring consistency and saving valuable time."
+        },
+        {
+          "id": 2,
+          "number": "02",
+          "title": "Enhanced Employer Branding",
+          "description": "JetOffice virtual assistants help you enhance your employer branding by presenting your company's unique selling points, culture, and values in your job descriptions."
+        },
+        {
+          "id": 3,
+          "number": "03",
+          "title": "Streamlined Application Processngs",
+          "description": "Service ensures a user-friendly and straightforward application process, reducing barriers and increasing candidate engagement."
+        }
+      ],
+      "rocket-image": "/service-item/job-posting-across-platforms/rocket-image22.png",
+      "rocket-title": "Attract Top Talents",
+      "rocket-description": "Wide network of job boards and platforms, optimized job descriptions, targeted social media promotion, centralized posting management, performance tracking, enhanced employer branding, and streamlined application process all work together to help you find and hire the best candidates for your organization."
+    },
+    {
+      "id": 23,
+      "subLink": "relocation-services",
+      "hero-title": "Relocation Services",
+      "hero-description": "We can help you to select the right country to providing legal advice, our expert team is dedicated to ensuring a seamless transition and helping you settle into your new home with ease.",
+      "hero-background": "/service-item/relocation-services/hero-background23.png",
+      "list":[
+        {
+          "id": 1,
+          "icon": "/service-item/relocation-services/country-selection.svg",
+          "title": "Country Selection",
+          "description": "Quality of life, job opportunities, education system, healthcare, and cultural compatibility."
+        },
+        {
+          "id": 2,
+          "icon": "/service-item/relocation-services/Selection-Organization.svg",
+          "title": "Selection & Organization",
+          "description": "We'll help you navigate the local real estate market, source suitable housing options."
+        },
+        {
+          "id": 3,
+          "icon": "/service-item/relocation-services/paperwork-assistance.svg",
+          "title": "Paperwork Assistance",
+          "description": "Comprehensive support with visa applications, work permits and insurance requirements."
+        }
+      ],
+      "main-image": "/service-item/relocation-services/main-image23.png",
+      "main-title": "Adaptation",
+      "main-description": "We'll provide you with valuable information on cultural characteristics, local customs, and norms to help you navigate your new surroundings with ease.",
+      "list2":[
+        {
+          "id": 1,
+          "number": "01",
+          "title": "School & Kindergarten Selection",
+          "description": "Experts will guide you through the enrollment process, help with paperwork, and ensure a smooth transition for your children into their new educational institutions."
+        },
+        {
+          "id": 2,
+          "number": "02",
+          "title": "Labor Market Consultation",
+          "description": "We'll provide you with insights into the local job market, industry trends, and employment opportunities."
+        },
+        {
+          "id": 3,
+          "number": "03",
+          "title": "Belongings Transportation",
+          "description": "We'll ensure that your possessions are handled with care and arrive at your new home intact and on schedule, giving you peace of mind during the moving process."
+        }
+      ],
+      "rocket-image": "/service-item/relocation-services/rocket-image23.png",
+      "rocket-title": "Legal Services",
+      "rocket-description": "With our legal expertise, you'll have the necessary information and support to navigate the legal landscape confidently and make informed decisions."
+    },
+    {
+      "id": 24,
+      "subLink": "travel-management",
+      "hero-title": "Travel Management",
+      "hero-description": "This service is designed to provide you with comprehensive assistance and support for all your travel needs. Expert team is here to take care of every aspect of your journey, ensuring a seamless and enjoyable travel experience from start to finish.",
+      "hero-background": "/service-item/travel-management/hero-background24.png",
+      "list":[
+        {
+          "id": 1,
+          "icon": "/service-item/travel-management/Ticket-Booking.svg",
+          "title": "Ticket Booking",
+          "description": "Ticket security and information for a comfortable and hassle-free journey."
+        },
+        {
+          "id": 2,
+          "icon": "/service-item/travel-management/Route-Planning.svg",
+          "title": "Route Planning",
+          "description": "Guarantee that your itinerary will be well planned and adapted to your preferences."
+        },
+        {
+          "id": 3,
+          "icon": "/service-item/travel-management/hotel-booking.svg",
+          "title": "Hotel Booking",
+          "description": "We carefully consider factors such as amenities, proximity to attractions, and customer reviews."
+        }
+      ],
+      "main-image": "/service-item/travel-management/main-image24.png",
+      "main-title": "Transfers",
+      "main-description": "We handle the logistics, coordinating transfers to ensure that you reach your destinations comfortably and on time.",
+      "list2":[
+        {
+          "id": 1,
+          "number": "01",
+          "title": "Document Preparation",
+          "description": "JetOffice team will guide you through the requirements and help with registering visas, obtaining travel insurance, and handling other necessary documents."
+        },
+        {
+          "id": 2,
+          "number": "02",
+          "title": "Consultation",
+          "description": "Knowledgeable team offers insights and recommendations to enhance your travel experience and ensure that you are well-prepared and informed before embarking on your journey."
+        },
+        {
+          "id": 3,
+          "number": "03",
+          "title": "Financial Management",
+          "description": "We aim to simplify the financial aspect of your travel, allowing you to focus on enjoying your trip without worrying about financial matters."
+        }
+      ],
+      "rocket-image": "/service-item/travel-management/rocket-image24.png",
+      "rocket-title": "Support for Your Journeys",
+      "rocket-description": "Experienced team is available to assist you with any concerns related to tickets, hotels, transportation, or other services that may arise."
+    },
+    {
+      "id": 25,
+      "subLink": "translation-localization",
+      "hero-title": "Translation & Localization",
+      "hero-description": "JetOffice's Translation & Localization service offers comprehensive solutions to break down language barriers and ensure effective communication across cultures.",
+      "hero-background": "/service-item/translation-localization/hero-background25.png",
+      "list":[
+        {
+          "id": 1,
+          "icon": "/service-item/translation-localization/website-translation.svg",
+          "title": "Website Translation",
+          "description": "We adapt the translation to suit the cultural nuances and preferences of the audience."
+        },
+        {
+          "id": 2,
+          "icon": "/service-item/translation-localization/translation-of-documents.svg",
+          "title": "Translation of Documents",
+          "description": "We guarantee accurate translations that maintain the integrity and meaning of the original documents."
+        },
+        {
+          "id": 3,
+          "icon": "/service-item/translation-localization/translation-of-materials.svg",
+          "title": "Translation of Materials",
+          "description": "Translation services for marketing materials, advertisements and press releases."
+        }
+      ],
+      "main-image": "/service-item/translation-localization/main-image25.png",
+      "main-title": "Conveying",
+      "main-description": "Whether it's documents, articles, or any other text, we ensure that the original meaning and tone are maintained while effectively conveying the message in the target language.",
+      "list2":[
+        {
+          "id": 1,
+          "number": "01",
+          "title": "Translation of Audio & Video",
+          "description": "JetOffice virtual assistants accurately translate the spoken or written content to ensure that your multimedia materials effectively communicate your message to a global audience."
+        },
+        {
+          "id": 2,
+          "number": "02",
+          "title": "Overlay of Subtitles for bloggers",
+          "description": "Our service includes the overlay of subtitles, accurately translating the spoken content into the desired languages."
+        },
+        {
+          "id": 3,
+          "number": "03",
+          "title": "Adaptation of Content",
+          "description": "Our localization experts ensure that your content is not only accurately translated but also culturally adapted to resonate with the local audience."
+        }
+      ],
+      "rocket-image": "/service-item/translation-localization/rocket-image25.png",
+      "rocket-title": "Bridging Language Barriers & Cultural Differences",
+      "rocket-description": "Our meticulous translation and localization approach ensure accurate and culturally appropriate content that resonates with your target audience."
+    },
+    {
+      "id": 26,
+      "subLink": "organization-meetings-negotiations",
+      "hero-title": "Organization of Meetings & Negotiations",
+      "hero-description": "In today's rapidly evolving business world, the effective organization of meetings and negotiations plays a crucial role in achieving success. At JetOffice, we understand the importance of well-planned and organized gatherings that can contribute  to goal attainment and strengthen business relationships.",
+      "hero-background": "/service-item/organization-of-meetings-negotiations/hero-background26.png",
+      "list":[
+        {
+          "id": 1,
+          "icon": "/service-item/organization-of-meetings-negotiations/Meeting-Planning.svg",
+          "title": "Planning Meetings",
+          "description": "We will create agendas and responsibilities to ensure that no detail is overlooked."
+        },
+        {
+          "id": 2,
+          "icon": "/service-item/organization-of-meetings-negotiations/time-management.svg",
+          "title": "Time & Resource Management",
+          "description": "Effective methods of time management during negotiations, enabling increased productivity."
+        },
+        {
+          "id": 3,
+          "icon": "/service-item/organization-of-meetings-negotiations/Effective-Negotiation.svg",
+          "title": "Effective Negotiation",
+          "description": "Proven strategies for conducting negotiations and reaching mutually beneficial agreements."
+        }
+      ],
+      "main-image": "/service-item/organization-of-meetings-negotiations/main-image26.png",
+      "main-title": "Planning",
+      "main-description": "We understand the importance of well-planned and organized gatherings that can contribute to goal attainment and strengthen business relationships.",
+      "list2":[
+        {
+          "id": 1,
+          "number": "01",
+          "title": "Effective Communication & Negotiation",
+          "description": "Master the art of effective communication and skilled negotiation using principles such as active listening, questioning techniques, and conflict resolution."
+        },
+        {
+          "id": 2,
+          "number": "02",
+          "title": "Preparation for Success",
+          "description": "The essential stages of preparation include thorough research on participants, objectives, analyzing past negotiations, and preparing relevant materials."
+        },
+        {
+          "id": 3,
+          "number": "03",
+          "title": "Technological Solutions",
+          "description": "JetOffice leverages cutting-edge technology solutions, including video conferencing and collaborative document editing, to enhance the efficiency of your processes."
+        }
+      ],
+      "rocket-image": "/service-item/organization-of-meetings-negotiations/rocket-image26.png",
+      "rocket-title": "Full Potential of Your Meetings & Negotiations",
+      "rocket-description": "Harness the power of the JetOffice team to improve your processes, enhance outcomes, and propel your business forward."
+    },
+    {
+      "id": 27,
+      "subLink": "event-planning-coordination",
+      "hero-title": "Event Planning & Coordination",
+      "hero-description": "JetOffice's Event Planning and Coordination service is your partner in creating exceptional and unforgettable events. Whether you're organizing a corporate conference, a wedding, or a special celebration, we have the expertise and resources to bring your vision to life.",
+      "hero-background": "/service-item/event-planning-coordination/hero-background27.png",
+      "list":[
+        {
+          "id": 1,
+          "icon": "/service-item/event-planning-coordination/Event-Planning.svg",
+          "title": "Event Planning",
+          "description": "All aspects of event planning and coordination for a smooth operation from start to finish."
+        },
+        {
+          "id": 2,
+          "icon": "/service-item/event-planning-coordination/Creative-Concept-Development.svg",
+          "title": "Creative Concept Development",
+          "description": "From theme selection to decor and ambiance, we create a cohesive and memorable experience."
+        },
+        {
+          "id": 3,
+          "icon": "/service-item/event-planning-coordination/Vendor-Coordination.svg",
+          "title": "Vendor Coordination",
+          "description": "From catering vendors to photographers with impeccable performance guarantees."
+        }
+      ],
+      "main-image": "/service-item/event-planning-coordination/main-image27.png",
+      "main-title": "Timeline",
+      "main-description":"We meticulously coordinate each element to ensurea seamless flow and timely execution, allowing you to relax and enjoy the event.",
+      "list2":[
+        {
+          "id": 1,
+          "number": "01",
+          "title": "Venue Selection & Management",
+          "description": "We assist in selecting and securing the ideal venue that matches your requirements, whether it's a grand ballroom, a picturesque outdoor location, or a unique event space."
+        },
+        {
+          "id": 2,
+          "number": "02",
+          "title": "Event Coordination",
+          "description": "From setup and decor to vendor management and guest assistance, we ensure that everything runs smoothly. We handle any unexpected challenges."
+        },
+        {
+          "id": 3,
+          "number": "03",
+          "title": "Budget Management",
+          "description": "We work closely with you to prioritize your spending and make informed decisions that align with your vision and financial goals."
+        }
+      ],
+      "rocket-image": "/service-item/event-planning-coordination/rocket-image27.png",
+      "rocket-title": "Post-Event Evaluation",
+      "rocket-description": "We conduct post-event evaluations to gather feedback, measure key performance indicators, and identify areas for enhancement. By analyzing the outcomes and insights, we provide valuable recommendations for future events, ensuring ongoing success and growth."
+    },
+    {
+      "id": 28,
+      "subLink": "party-date-organization",
+      "hero-title": "Party & Date Organization",
+      "hero-description": "Whether you're celebrating a special occasion or looking to create a memorable experience for you and your loved one, we have the expertise and creativity to bring your vision to life.",
+      "hero-background": "/service-item/party-date-organization/hero-background28.png",
+      "list":[
+        {
+          "id": 1,
+          "icon": "/service-item/party-date-organization/creative-theme-development.svg",
+          "title": "Creative Theme Development",
+          "description": "From elegant and sophisticated to fun and whimsical, we create a memorable experience."
+        },
+        {
+          "id": 2,
+          "icon": "/service-item/party-date-organization/Customized-Experiences.svg",
+          "title": "Customized Experiences",
+          "description": "Surprise proposal, a romantic dinner under the stars, or a themed party filled with entertainment."
+        },
+        {
+          "id": 3,
+          "icon": "/service-item/party-date-organization/venue-selection.svg",
+          "title": "Venue Selection & Decoration",
+          "description": "Intimate rooftop setting or a glamorous event, we handle all aspects of venue."
+        }
+      ],
+      "main-image": "/service-item/party-date-organization/main-image28.png",
+      "main-title": "Entertainment",
+      "main-description": "From live performers and musicians to interactive games and unique experiences, we ensure that your guests are engaged and immersed in the joy and celebration.",
+      "list2":[
+        {
+          "id": 1,
+          "number": "01",
+          "title": "Catering & Menu Selection",
+          "description": "From delectable dishes and creative drinks to exquisite desserts and stylish presentations, JetOffice administrative assistants ensure a culinary experience that leaves a lasting impression."
+        },
+        {
+          "id": 2,
+          "number": "02",
+          "title": "Logistics & Timeline Management",
+          "description": "We meticulously coordinate each element to ensure a seamless flow and timely execution, allowing you to relax and enjoy every moment of your party or date."
+        },
+        {
+          "id": 3,
+          "number": "03",
+          "title": "Privacy & Confidentiality",
+          "description": "Rest assured that your personal information and event details will be treated with the utmost confidentiality."
+        }
+      ],
+      "rocket-image": "/service-item/party-date-organization/rocket-image28.png",
+      "rocket-title": "Unforgettable Moments & Meaningful Connections",
+      "rocket-description": "From creative theme development to meticulous planning and execution, we have the expertise to bring your vision to life and unforgettable moments."
+    },
+    {
+      "id": 29,
+      "subLink": "budget-management-financial-reporting",
+      "hero-title": "Budget Management & Financial Reporting",
+      "hero-description": "From budget planning and expense tracking to financial analysis and reporting, we provide the tools and expertise to maximize efficiency and drive financial success.",
+      "hero-background": "/service-item/budget-management-financial-reporting/hero-background29.png",
+      "list":[
+        {
+          "id": 1,
+          "icon": "/service-item/budget-management-financial-reporting/Strategic-Budget-Planning.svg",
+          "title": "Strategic Budget Planning",
+          "description": "Data analysis, market assessment and consideration of the organization's priorities."
+        },
+        {
+          "id": 2,
+          "icon": "/service-item/budget-management-financial-reporting/financial-analysis.svg",
+          "title": "Financial Analysis",
+          "description": "Analysis of key financial indicators, evaluation of profitability and identification of trends."
+        },
+        {
+          "id": 3,
+          "icon": "/service-item/budget-management-financial-reporting/financial-reporting.svg",
+          "title": "Accurate Financial Reporting",
+          "description": "Providing profit and loss statements, balance sheets and cash flow statements."
+        }
+      ],
+      "main-image": "/service-item/budget-management-financial-reporting/main-image29.png",
+      "main-title": "Strategy",
+      "main-description": "By prioritizing expenses, allocating resources efficiently, and setting realistic financial targets, we help you achieve financial stability and drive growth.",
+      "list2":[
+        {
+          "id": 1,
+          "number": "01",
+          "title": "Financial Risk Management",
+          "description": "Comprehensive financial risk assessment, where we assess potential risks and develop strategies to minimize their impact."
+        },
+        {
+          "id": 2,
+          "number": "02",
+          "title": "Financial Reporting",
+          "description": "We ensure that your financial reports adhere to accounting standards and regulatory requirements, providing you with a clear picture of your organization's financial position."
+        },
+        {
+          "id": 3,
+          "number": "03",
+          "title": "financial forecasting",
+          "description": "Our service includes comprehensive financial analysis and forecasting, providing you with valuable insights into your organization's financial health."
+        }
+      ],
+      "rocket-image": "/service-item/budget-management-financial-reporting/rocket-image29.png",
+      "rocket-title": "Maximizing Efficiency & Financial Success",
+      "rocket-description": "JetOffice's Budget Management and Financial Reporting service is designed to help businesses optimize their financial resources, maintain fiscal responsibility, and make informed decisions."
+    },
+    {
+      "id": 30,
+      "subLink": "partnered-coaching-services",
+      "hero-title": "Partnered Coaching Services",
+      "hero-description": "We understand the importance of coaching in achieving personal and professional growth, and our service provides access to a network of skilled coaches who can empower you to unlock your full potential and achieve success in all areas of your life.",
+      "hero-background": "/service-item/partnered-coaching-services/hero-background30.png",
+      "list":[
+        {
+          "id": 1,
+          "icon": "/service-item/partnered-coaching-services/Expert-Coach-Selection.svg",
+          "title": "Expert Coach Selection",
+          "description": "Coaches who understand the unique challenges and opportunities for growth."
+        },
+        {
+          "id": 2,
+          "icon": "/service-item/partnered-coaching-services/business-coaching.svg",
+          "title": "Business Coaching",
+          "description": "Clarification of business goals, development of strategies and improvement of leadership qualities."
+        },
+        {
+          "id": 3,
+          "icon": "/service-item/partnered-coaching-services/personal-coaching.svg",
+          "title": "Personal Coaching",
+          "description": "Mindset change, goal setting, self-knowledge and personal effectiveness."
+        }
+      ],
+      "main-image": "/service-item/partnered-coaching-services/main-image30.png",
+      "main-title": "Approach",
+      "main-description": "By fostering a trusting and supportive relationship, we create an environment where you can openly explore challenges, embrace growth opportunities, and achieve transformational results.",
+      "list2":[
+        {
+          "id": 1,
+          "number": "01",
+          "title": "Technical Coaching",
+          "description": "Whether you're looking to enhance your programming abilities, improve your data analysis skills, or excel in cybersecurity, our technical coaches have the expertise to guide you towards technical excellence and career advancement."
+        },
+        {
+          "id": 2,
+          "number": "02",
+          "title": "Time Management Coaching",
+          "description": "Our coaching partners offer time management coaching to help you prioritize tasks, set goals, and develop effective strategies to make the most of your time. With their guidance, you can optimize your time, increase productivity, and achieve more with less stress."
+        },
+        {
+          "id": 3,
+          "number": "03",
+          "title": "Partnered Coaching",
+          "description": "Whether you crave expert guidance in business strategies, personal growth, technical skills, or time optimization, our coaching partners possess the precise knowledge and experience to guide you on a transformative journey towards lasting success."
+        }
+      ],
+      "rocket-image": "/service-item/partnered-coaching-services/rocket-image30.png",
+      "rocket-title": "Find Expert Coaches",
+      "rocket-description": "A unique opportunity to connect with outstanding coaches who specialize in different areas of coaching, including business coaching, personal coaching, technical coaching and time management coaching."
+    },
+    {
+      "id": 31, 
+      "subLink": "discover-team-building-partners",
+      "hero-title": "Discover Team Building Partners",
+      "hero-description": "Service provides a unique opportunity to connect with who specialize in conducting online training sessions to improve team dynamics, virtual games and quizzes, virtual masterclasses and virtual meetings where participants can discuss challenges and find solutions together.",
+      "hero-background": "/service-item/discover-team-building-partners/hero-background31.png",
+      "list":[
+        {
+          "id": 1,
+          "icon": "/service-item/discover-team-building-partners/virtual-games.svg",
+          "title": "Virtual Games & Quizzes",
+          "description": "Camaraderie, critical thinking and healthy competition between team members."
+        },
+        {
+          "id": 2,
+          "icon": "/service-item/discover-team-building-partners/virtual-masterclasses.svg",
+          "title": "Virtual Masterclasses",
+          "description": "New skills, explore your passions and discover hidden talents in a collaborative virtual environment."
+        },
+        {
+          "id": 3,
+          "icon": "/service-item/discover-team-building-partners/online-training-sessions.svg",
+          "title": "Online Training Sessions",
+          "description": "Interactive exercises, case studies and group discussions."
+        }
+      ],
+      "main-image": "/service-item/discover-team-building-partners/main-image31.png",
+      "main-title": "Meetings",
+      "main-description": "By providing a platform for constructive dialogue and problem-solving, our partners help teams overcome obstacles and build stronger relationships.",
+      "list2":[
+        {
+          "id": 1,
+          "number": "01",
+          "title": "Problem-Solving Sessions",
+          "description": "Our partners facilitate virtual meetings where team members can openly discuss challenges, brainstorm ideas, and collectively find solutions."
+        },
+        {
+          "id": 2,
+          "number": "02",
+          "title": "Tailored Team Building Experiences",
+          "description": "Taking into account your team's strengths, challenges, and areas for improvement to develop individual actions that take into account team dynamics and align with your overall organizational strategy."
+        },
+        {
+          "id": 3,
+          "number": "03",
+          "title": "Online Training Sessions",
+          "description": "Effective teamwork is the foundation of any successful organization. Our partners deliver online training sessions designed to enhance collaboration, communication, and problem-solving skills within your team."
+        }
+      ],
+      "rocket-image": "/service-item/discover-team-building-partners/rocket-image31.png",
+      "rocket-title": "Enhancing Collaboration & Engagement",
+      "rocket-description": "Whether you're seeking to enhance collaboration, boost morale, or address specific team challenges, our partners have the expertise and creativity to deliver engaging and impactful experiences."
+    },
+    {
+      "id": 32,
+      "subLink": "partner-network-web-development",
+      "hero-title": "Partner Network for Web Development",
+      "hero-description": "Service offers a comprehensive range of solutions, including partner selection for web development, web application development, and top-notch web hosting services. Let us connect you with trusted partners who can deliver exceptional results.",
+      "hero-background": "/service-item/partner-network-for-web-development/hero-background32.png",
+      "list":[
+        {
+          "id": 1,
+          "icon": "/service-item/partner-network-for-web-development/expert-partner-selection.svg",
+          "title": "Expert Partner Selection",
+          "description": "Our extensive network consists of experienced professionals and agencies."
+        },
+        {
+          "id": 2,
+          "icon": "/service-item/partner-network-for-web-development/web-development-solutions.svg",
+          "title": "Web Development Solutions",
+          "description": "A simple informational website, an e-commerce platform, or a complex web application."
+        },
+        {
+          "id": 3,
+          "icon": "/service-item/partner-network-for-web-development/web-hosting-services.svg",
+          "title": "Web Hosting Services",
+          "description": "Our partners provide scalable hosting solutions tailored to your needs."
+        }
+      ],
+      "main-image": "/service-item/partner-network-for-web-development/main-image32.png",
+      "main-title": "Hosting",
+      "main-description": "From partner selection and web application development to reliable web hosting services, we have the resources and expertise to bring your digital vision to life.",
+      "list2":[
+        {
+          "id": 1,
+          "number": "01",
+          "title": "Collaborative Approach",
+          "description": "We act as a liaison, ensuring that your requirements are clearly communicated and that the development process runs smoothly."
+        },
+        {
+          "id": 2,
+          "number": "02",
+          "title": "Optimized Performance",
+          "description": ".From efficient coding practices to optimization techniques, our partners go the extra mile to deliver websites and web applications that perform exceptionally well across various devices and platforms."
+        },
+        {
+          "id": 3,
+          "number": "03",
+          "title": "Web Development Solutions",
+          "description": "Our partners use the latest technologies and industry best practices to ensure that your website or web application is responsive, user-friendly, and visually appealing."
+        }
+      ],
+      "rocket-image": "/service-item/partner-network-for-web-development/rocket-image32.png",
+      "rocket-title": "Building Strong Connections",
+      "rocket-description": "JetOffice's Partner Network for Web Development is your gateway to finding the perfect partners for your website and web application development projects."
+    },
+    {
+      "id": 33,
+      "subLink": "partnered-web-design-services",
+      "hero-title": "Partnered Web Design Services",
+      "hero-description": "Your gateway to finding exceptional partners for all your web design requirements. We understand the significance of captivating design, compelling logos, and impactful branding in creating a strong online presence.",
+      "hero-background": "/service-item/partnered-web-design-services/hero-background33.png",
+      "list":[
+        {
+          "id": 1,
+          "icon": "/service-item/partnered-web-design-services/expert-partner-selection.svg",
+          "title": "Expert Selection",
+          "description": "We evaluate each partner based on their portfolio, experience, reputation and ability."
+        },
+        {
+          "id": 2,
+          "icon": "/service-item/partnered-web-design-services/website-designs.svg",
+          "title": "Website Designs",
+          "description": "From intuitive navigation to engaging visuals and responsive layouts."
+        },
+        {
+          "id": 3,
+          "icon": "/service-item/partnered-web-design-services/logo-development.svg",
+          "title": "Logo Development",
+          "description": "Distinctive and memorable logos that will resonate with your target audience."
+        }
+      ],
+      "main-image": "/service-item/partnered-web-design-services/main-image33.png",
+      "main-title": "Identity",
+      "main-description": "Our service offers a comprehensive network of talented partners who excel in website design, logo development, and branding.",
+      "list2":[
+        {
+          "id": 1,
+          "number": "01",
+          "title": "design & branding",
+          "description": "From partner selection and website design to logo development and branding, we have the resources and expertise to elevate your brand's online presence."
+        },
+        {
+          "id": 2,
+          "number": "02",
+          "title": "Collaborative Approach",
+          "description": "Our service facilitates seamless communication and coordination between you and our network of design and branding partners."
+        },
+        {
+          "id": 3,
+          "number": "03",
+          "title": "Branding Services",
+          "description": "Our partners collaborate with you to develop a cohesive brand identity that aligns with your values and resonates with your target audience."
+        }
+      ],
+      "rocket-image": "/service-item/partnered-web-design-services/rocket-image33.png",
+      "rocket-title": "Creative Excellence for Your Website",
+      "rocket-description": "We help you access a network of talented design and branding partners to help shape your digital identity. From partner selection and website design to logo development and branding, we have the resources and expertise to elevate your brand's online presence."
+    },
+    {
+      "id": 34,
+      "subLink": "partnered-back-end-development-solutions",
+      "hero-title": "Partnered Back-End Development Solutionss",
+      "hero-description": "Your key to finding exceptional partners for all your server-side web development and database management needs. Our service offers a comprehensive network of talented partners who excel in back-end development and database management.",
+      "hero-background": "/service-item/partnered-back-end-development-solutions/hero-background34.png",
+      "list":[
+        {
+          "id": 1,
+          "icon": "/service-item/partnered-back-end-development-solutions/Server-Side-Web-Development.svg",
+          "title": "Server-Side Web Development",
+          "description": "Reliable, efficient and scalable server solutions to meet your unique business requirements."
+        },
+        {
+          "id": 2,
+          "icon": "/service-item/partnered-back-end-development-solutions/Database-Management.svg",
+          "title": "Database Management",
+          "description": "From database architecture and schema design to query optimization and data security."
+        },
+        {
+          "id": 3,
+          "icon": "/service-item/partnered-back-end-development-solutions/Performance-Optimization.svg",
+          "title": "Performance Optimization",
+          "description": "From load balancing and caching to query optimization and resource management."
+        }
+      ],
+      "main-image": "/service-item/partnered-back-end-development-solutions/main-image34.png",
+      "main-title": "Assurance",
+      "main-description": "Our team conducts thorough quality assurance checks throughout the development process, ensuring that your server-side solutions are robust, scalable, and perform optimally.",
+      "list2":[
+        {
+          "id": 1,
+          "number": "01",
+          "title": "Server-Side Web Development",
+          "description": "Whether you need API development, database integration, or server optimization, our partners employ the latest technologies and frameworks to ensure seamless communication between the front-end and back-end of your web application."
+        },
+        {
+          "id": 2,
+          "number": "02",
+          "title": "Database Management",
+          "description": "Our partner network includes skilled database experts who can design and optimize databases tailored to your specific needs."
+        },
+        {
+          "id": 3,
+          "number": "03",
+          "title": "Scalability",
+          "description": "Our partners prioritize scalability and performance optimization, ensuring that your back-end solutions can scale seamlessly as your business grows."
+        }
+      ],
+      "rocket-image": "/service-item/partnered-back-end-development-solutions/rocket-image34.png",
+      "rocket-title": "Unleashing the Power of Seamless Server-Based Web Development",
+      "rocket-description": "With our comprehensive services ranging from partner selection and server-side web development to database optimization, we possess the resources and expertise to deliver robust, efficient, and successful back-end solutions."
+    },
+    {
+      "id": 35,
+      "subLink": "connect-front-end-development-experts",
+      "hero-title": "Connect with Front-End Development Experts",
+      "hero-description": "Through our extensive network of skilled front-end developers, we can bring your vision to life with captivating designs and optimize your website for optimal mobile functionality.",
+      "hero-background": "/service-item/connect-with-front-end-development-experts/hero-background35.png",
+      "list":[
+        {
+          "id": 1,
+          "icon": "/service-item/connect-with-front-end-development-experts/Experienced-Front-End.svg",
+          "title": "Experienced Front-End",
+          "description": "Professionals with the skills and experience to create exceptional user interfaces."
+        },
+        {
+          "id": 2,
+          "icon": "/service-item/connect-with-front-end-development-experts/User-Interface-Development.svg",
+          "title": "User Interface Development",
+          "description": "The UI serves as the gateway to your website or application, directly impacting user satisfaction."
+        },
+        {
+          "id": 3,
+          "icon": "/service-item/connect-with-front-end-development-experts/mobile-website-optimization.svg",
+          "title": "Mobile Website Optimization",
+          "description": "From implementing responsive design to adapting layouts for small screens."
+        }
+      ],
+      "main-image": "/service-item/connect-with-front-end-development-experts/main-image35.png",
+      "main-title": "Compatibility",
+      "main-description": "Our front-end development specialists possess extensive expertise in cross-platform compatibility, ensuring your website performs flawlessly across different browsers, operating systems, and devices.",
+      "list2":[
+        {
+          "id": 1,
+          "number": "01",
+          "title": "Experienced Front-End Development Specialists",
+          "description": "Each specialist undergoes a meticulous evaluation process based on their portfolio, technical proficiency, reputation, and ability to create visually stunning and responsive designs."
+        },
+        {
+          "id": 2,
+          "number": "02",
+          "title": "User Interface Development",
+          "description": "By leveraging the latest technologies and industry best practices, they craft responsive designs that seamlessly adapt to different devices, ensuring optimal usability and visual consistency."
+        },
+        {
+          "id": 3,
+          "number": "03",
+          "title": "Mobile Website Optimization",
+          "description": "Our front-end development experts are well-versed in mobile optimization techniques, ensuring your website performs flawlessly on smartphones and tablets."
+        }
+      ],
+      "rocket-image": "/service-item/connect-with-front-end-development-experts/rocket-image35.png",
+      "rocket-title": "User Experiences & Optimize",
+      "rocket-description": "From seamless user experiences to cross-platform compatibility, we possess the resources and expertise to enhance your digital presence. Improving your user experience and optimizing your website for mobile devices."
+    },
+    {
+      "id": 36,
+      "subLink": "discover-seo-optimization-partners",
+      "hero-title": "Discover SEO Optimization Partners",
+      "hero-description": "From expert partner selection and keyword research to on-page and off-page optimization, we have the resources and expertise to elevate your online visibility.",
+      "hero-background": "/service-item/discover-seo-optimization-partners/hero-background36.png",
+      "list":[
+        {
+          "id": 1,
+          "icon": "/service-item/discover-seo-optimization-partners/Keyword-Research.svg",
+          "title": "Keyword Research & Analysis",
+          "description": "In-depth keyword research and analysis to determine the most relevant and effective keywords"
+        },
+        {
+          "id": 2,
+          "icon": "/service-item/discover-seo-optimization-partners/Expert-Partner-Selection.svg",
+          "title": "Expert Partner Selection",
+          "description": "We evaluate each partner based on their portfolio, and ability to implement effective SEO strategies."
+        },
+        {
+          "id": 3,
+          "icon": "/service-item/discover-seo-optimization-partners/On-Page-Optimization.svg",
+          "title": "On-Page Optimization",
+          "description": "Viewing and optimizing the meta tags, titles, URLs and internal link structure of your website."
+        }
+      ],
+      "main-image": "/service-item/discover-seo-optimization-partners/main-image36.png",
+      "main-title": "Reporting",
+      "main-description": "Our partners will provide comprehensive performance tracking and reporting, allowing you to monitor key metrics such as website traffic, keyword rankings, and conversions.",
+      "list2":[
+        {
+          "id": 1,
+          "number": "01",
+          "title": "Off-Page Optimization",
+          "description": "Our partners will help you develop a comprehensive link-building strategy to increase the number and quality of backlinks pointing to your website."
+        },
+        {
+          "id": 2,
+          "number": "02",
+          "title": "Content Marketing",
+          "description": "Our partners will create compelling and informative content that not only grabs the attention of search engines, but also resonates with your customers. By consistently providing valuable content, you can establish your brand as an authority in your industry and drive organic traffic to your website."
+        },
+        {
+          "id": 3,
+          "number": "03",
+          "title": "Performance Tracking",
+          "description": "Our partners optimize your data-driven SEO strategy for maximum results and continuous improvement."
+        }
+      ],
+      "rocket-image": "/service-item/discover-seo-optimization-partners/rocket-image36.png",
+      "rocket-title": "Boost Your Online Visibility",
+      "rocket-description": "JetOffice's Discover SEO Optimization Partners helps you to find exceptional partners who specialize in improving your website's search engine visibility and driving organic traffic."
     }
   ]
 }

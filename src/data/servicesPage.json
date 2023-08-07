@@ -155,7 +155,7 @@
       },
       {
         "id": 4,
-        "title": "AI Сopywriting",
+        "title": "AI Copywriting",
         "icon": "/list-of-services/tabler-icon-file-text-ai.svg",
         "description": "JetOffice's Human Resources Management service is designed to help businesses streamline their HR processes and achieve maximum efficiency. We understand the importance of effective HR management in driving business growth and success.",
         "link": "ai-copywriting"
@@ -176,17 +176,17 @@
       },
       {
         "id": 7,
-        "title": "Job posting across platforms",
+        "title": "Applicant resume processing",
         "icon": "/list-of-services/job-seach-profile.svg",
-        "description": "JetOffice's Job Posting Across Platforms service is a comprehensive solution designed to help you maximize your recruitment efforts and attract the best candidates. Service offers a range of features and benefits to ensure that your job postings are seen by qualified candidates across various online platforms.",
-        "link": "job-posting-across-platforms"
+        "description": "JetOffice's Applicant Resume Processing service provides comprehensive solutions to streamline and optimize your hiring process. Our service is designed to alleviate the burdensome task of reviewing numerous resumes and identifying the most qualified candidates efficiently.",
+        "link": "applicants-resume-processing"
       },
       {
         "id": 8,
-        "title": "Employee onboarding",
+        "title": "Job posting across platforms",
         "icon": "/list-of-services/briefcase.svg",
-        "description": "JetOffice's Employee Onboarding service is designed to help businesses streamline their onboarding process and ensure a smooth transition for new employees. We understand the importance of effective onboarding in driving employee engagement and retention.",
-        "link": "employee-onboarding"
+        "description": "JetOffice's Job Posting Across Platforms service is a comprehensive solution designed to help you maximize your recruitment efforts and attract the best candidates. Service offers a range of features and benefits to ensure that your job postings are seen by qualified candidates across various online platforms.",
+        "link": "job-posting-across-platforms"
       }
       ]
     },
