@@ -50,7 +50,7 @@ export const CasesItem: React.FC<Props> = ({
   return (
     <div className={backgroundClass}>
       <div className="cases__card_wrapper">
-        <div className="cases__card" onClick={() => handleClick(id)}>
+        <div className={`cases__card`} onClick={() => handleClick(id)}>
           <div className="cases__card_icon_wrapper">
             <img
               src={`/services-icons/${icon}`}

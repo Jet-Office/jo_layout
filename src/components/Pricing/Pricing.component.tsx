@@ -14,12 +14,12 @@ export const Pricing: React.FC<Props> = ({ windowWidth, activePageRef }) => {
   const [options, setOptions] = useState('yearly');
 
   return (
-    <section className="pricing ml_15" id="pricing" ref={activePageRef}>
-         <div className="pricing__flex container">
+    <section className="container pricing" id="pricing" ref={activePageRef}>
+         <div className="pricing__flex">
            <h2 className="pricing__title h2">Pricing</h2>
             <PricingSwitch setOptions={setOptions} />
          </div>
-      <div className="pricing__container container">
+      <div className="pricing__container">
      
         <PricingList windowWidth={windowWidth} priceList={pricing} options={options} />
       </div>

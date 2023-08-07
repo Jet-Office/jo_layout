@@ -1,7 +1,12 @@
+.benefits__text_container.container {
+  margin: 0;
+}
+
 .benefits__container {
   display: grid;
   grid-template-columns: 9fr 3fr;
   align-items: start;
+  margin: 0 100px;
 }
 
 .benefits__text_container {
@@ -21,11 +26,6 @@
 
   gap: 30px;
   padding-top: 20px;
-}
-
-.benefits__title.h2 {
-  margin-top: 0;
-  margin-bottom: 40px;
 }
 
 .benefits__icon {

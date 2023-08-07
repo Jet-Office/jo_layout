@@ -32,6 +32,7 @@ span {
 .content-container {
     border-top: 1px solid #0b0d0f;
     margin: 0 40px 0 0;
+    width: 100%;
 }
 
 .services__link {

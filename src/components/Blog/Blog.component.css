@@ -333,6 +333,10 @@
     margin-bottom: 24px;
 }
 
+.bottom_info > img {
+    cursor: pointer;
+}
+
 .head_info, .bottom_info {
     z-index: 1;
 }

@@ -80,7 +80,6 @@
 
   border-radius: 8px;
 
-  margin-top: 40px;
   margin-left: 8px;
   margin-right: 8px;
 }
@@ -383,7 +382,7 @@
 @media (max-width: 1700px) {
 
   .pricing__card_background {
-    max-width: 260px;
+    max-width: 235px;
   }
 }
 
@@ -416,9 +415,8 @@
   }
 
   .pricing__card_background {
-    margin-top: 40px;
     margin-bottom: 50px;
-    max-width: 235px;
+    max-width: 210px;
     height: 709px;
   }
 
@@ -459,6 +457,13 @@
 
 }
 
+@media (max-width: 1315px) {
+  .pricing__card_background {
+    max-width: 250px;
+  }
+}
+
+
 
 @media (max-width: 641px) {
 
@@ -469,7 +474,6 @@
   .pricing__card--hourly::after {
     left: -20px;
   }
-
 }
 
 @media (min-width: 1430px) {
@@ -486,13 +490,12 @@
   }
 
   .pricing__card_background {
-    min-width: 14vw;
-    max-width: 16.1vw;
+    min-width: 16vw;
     min-height: 58vw;
 
     border-radius: 0.56vw;
 
-    padding: 5px;
+    padding: 2px;
   }
 
   .pricing__card_head {

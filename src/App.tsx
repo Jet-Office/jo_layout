@@ -23,6 +23,7 @@ import { ServiceDescription } from "./components/ServiceDescription";
 import {SectionHead} from "./components/SectionHead";
 
 import { Blog } from "./components/Blog";
+import { Content } from "./components/Blog/components/Content/Content.component";
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -117,10 +118,10 @@ function App() {
   return (
     <div className="App">
       <Modal active={active} setActive={setActive} />
-            <Header
-              activePageRef={activePageRef}
-              windowWidth={windowWidth}
-            />
+        <Header
+          activePageRef={activePageRef}
+          windowWidth={windowWidth}
+        />
 
       <Routes>
         <Route path="/" element={
@@ -155,6 +156,7 @@ function App() {
         <Route path="/resources/blog" element={
           <Blog />
         } />
+
         <Route path="*" element={
           <NotFound />
         } />

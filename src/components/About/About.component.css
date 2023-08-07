@@ -1,10 +1,13 @@
+.container.about__content {
+  margin: 0;
+}
+
 .about__container {
   display: grid;
   grid-template-columns: 6fr 6fr;
-
-  padding-left: 6vw;
-
   gap: 20px;
+  margin-left: 100px;
+  align-items: center;
 }
 
 .about__content {
@@ -19,7 +22,7 @@
 
   color: var(--text-color);
 
-  text-align: left;
+  text-align: justify;
 }
 
 .about__earth {
@@ -52,11 +55,6 @@
   }
 
   
-
-  .about__container {
-    padding-left: 0;
-  }
-
   .about__earth {
     position: absolute;
 

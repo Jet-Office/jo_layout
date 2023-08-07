@@ -1,6 +1,5 @@
 .services {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -72,7 +71,8 @@
 }
 
 .services__title.h2 {
-  margin-top: 0;
+  margin: 0;
+  text-align: left;
 }
 
 @media (max-width: 1280px) {
