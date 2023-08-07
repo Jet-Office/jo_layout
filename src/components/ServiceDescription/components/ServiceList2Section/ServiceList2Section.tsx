@@ -5,7 +5,7 @@ import "./ServiceList2Section.css";
 
 interface ServiceList2Item {
   id: number,
-  number: string,
+  number?: string,
   title: string,
   description: string,
 }
