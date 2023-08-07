@@ -192,10 +192,20 @@ a {
 @media (min-width: 1801px) {
   .modal__content {
     height: auto;
+    width: 550px;
   }
-  /* .modal__text {
-    font-size: 1.5vw;
-  } */
+  
+  .button {
+    width: auto;
+  }
+
+  .modal--button > img {
+    height: 30px;
+  }
+
+  .modal__text {
+    font-size: 28px;
+  }
 }
 
 @media (min-width: 2100px) {

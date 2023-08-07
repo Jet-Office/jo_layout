@@ -168,3 +168,9 @@ svg path {
     padding-bottom: 0;
   }
 }
+
+@media (min-width: 1300px) {
+  .navigation__link {
+    font-size: 30px;
+  }
+}
