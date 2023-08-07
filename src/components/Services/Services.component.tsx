@@ -13,7 +13,7 @@ export const Services: React.FC<Props> = ({ activeRef }) => {
     <section className="services" id="services" ref={activeRef}>
       <div className="container services__container">
         <h2 className="services__title h2">Services</h2>
-        <div className="text__container">
+        {/* <div className="text__container">
           <p className="paragraph">
             We offer virtual assistants and concierge services trusted by
             companies <br /> and businessmen to manage tasks, calendars, shopping,
@@ -21,7 +21,7 @@ export const Services: React.FC<Props> = ({ activeRef }) => {
             automation and artificial intelligence to achieve success and solve
             problems at maximum speed!
           </p>
-        </div>
+        </div> */}
         <ServicesList services={services} />
       </div>
     </section>

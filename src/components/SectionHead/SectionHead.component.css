@@ -1,22 +1,32 @@
 @font-face {
-    font-family: "Proxima Nova Semibold";
-    src: url(/public/fonts/proxima/Proxima-Nova-Semibold.otf);
-    font-weight: 600;
+  font-family: "Proxima Nova Semibold";
+  src: url(/public/fonts/proxima/Proxima-Nova-Semibold.otf);
+  font-weight: 600;
+}
+
+.buttons {
+  padding: 0;
 }
 
 .section-head {
-    background-image: url(../../assets/BG_nasa.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  background-image: url(../../assets/BG_nasa.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
-    position: relative;
+  position: relative;
 
+  height: 90vh;
+  width: 100vw;
+  min-width: 1300px;
+
+  margin-bottom: 180px;
+}
+
+@media (max-width: 641px) {
+  .section-head {
     height: 100vh;
-    width: 100vw;
-    min-width: 1300px;
-
-    margin-bottom: 180px;
+  }
 }
 
 /*.section-head, .section-head__container {*/
@@ -24,109 +34,113 @@
 /*}*/
 
 .section-head__container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 
-    gap: 110px;
+  gap: 110px;
 
-    height: 100vh;
-    width: 100vw;
+  height: 100vh;
+  width: 100vw;
 
-    background: linear-gradient(
-            90deg,
-            rgba(20, 24, 28, 0.93) 35.91%,
-            rgba(20, 24, 28, 0) 100%
-    );
+  background: linear-gradient(
+          90deg,
+          rgba(20, 24, 28, 0.93) 35.91%,
+          rgba(20, 24, 28, 0) 100%
+  );
 }
 
 .section-head__title {
-    all: unset;
+  all: unset;
 
-    margin: 0;
+  margin: 0;
 
-    margin-top: calc(4.4vw + 88px);
+  /* margin-top: calc(4.4vw + 88px); */
 
-    max-width: fit-content;
+  max-width: fit-content;
 
-    text-align: left;
+  text-align: left;
 
-    font-size: 4.4vw;
-    line-height: 120%;
+  font-size: 4.4vw;
+  line-height: 120%;
 
-    background: linear-gradient(
-            223.81deg,
-            #00e5e5 8.72%,
-            #72a5f2 50.87%,
-            #e961ff 91.3%
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+          223.81deg,
+          #00e5e5 8.72%,
+          #72a5f2 50.87%,
+          #e961ff 91.3%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 
-    text-shadow: 0px 15px 30px #000000;
+  text-shadow: 0px 15px 30px #000000;
 
-    mix-blend-mode: normal;
+  mix-blend-mode: normal;
 }
 
 .section-head__content_container {
-    display: flex;
-    flex-direction: column;
+  margin-left: 5.5vw;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 48px;
 }
 
-.section-head__text {
-    max-width: 37.5vw;
-    min-height: 160px;
-    text-align: left;
-    margin-top: 24px;
-    font-size: 1.25vw;
-    line-height: 140%;
+.section-head__description {
+  max-width: 37.5vw;
+  text-align: left;
+  font-size: 1.25vw;
+  line-height: 140%;
 
-    color: var(--text-color);
+  color: var(--text-color);
+}
+
+.section-head_text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 @media (max-height: 530px) {
-    .section-head,
-    .section-head__container {
-        padding-bottom: 300px;
-    }
+  .section-head,
+  .section-head__container {
+    padding-bottom: 300px;
+  }
 }
 
 @media (max-width: 641px) {
-    .section-head {
-        background-position: right;
+  .section-head {
+    background-position: right;
 
-        min-width: 205vw;
-    }
+    min-width: 205vw;
+  }
 
-    .section-head__container {
-        background: linear-gradient(178.37deg, rgba(20, 24, 28, 0.8) 40.57%, rgba(20, 24, 28, 0) 86.73%);
-    }
+  .section-head__container {
+    justify-content: flex-start;
+    background: linear-gradient(178.37deg, rgba(20, 24, 28, 0.8) 40.57%, rgba(20, 24, 28, 0) 86.73%);
+  }
 
-    .section-head__title {
-        font-family: "Proxima Nova Semibold";
-        font-weight: 600;
-        font-size: 9.23vw;
-    }
+  .section-head__title {
+    margin-top: 140px;
+    font-family: "Proxima Nova Semibold";
+    font-weight: 600;
+    font-size: 9.23vw;
+  }
 
-    .section-head__text {
-        max-width: 100%;
-        text-align: left;
-        font-size: 16px;
-        padding-bottom: 50px;
-    }
+  .section-head__description {
+    max-width: 87.95vw;
 
-    .section-head__content_container {
-        margin: 0 16px;
-    }
+    text-align: left;
 
-    .section-head__title {
-        margin-top: 140px;
-    }
-}
+    font-size: 16px;
 
-@media (max-width: 1140px) {
-    .section-head__content_container {
-        width: 100%;
-    }
+    padding-bottom: 50px;
+  }
+
+  .section-head__content_container {
+    margin-left: 7.18vw;
+  }
 }

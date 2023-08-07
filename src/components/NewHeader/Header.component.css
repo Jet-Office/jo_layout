@@ -4,14 +4,14 @@
 
   position: fixed;
   width: 100vw;
-  left: 0;
 
   z-index: 1000;
 }
 
 .header__logo {
   object-fit: cover;
-  height: 40px;
+
+  width: 7.64vw;
   min-width: 110px;
 }
 
@@ -25,20 +25,17 @@
   justify-content: space-between;
   align-items: center;
 
-  padding: 20px 0;
+  padding: 1.22vh 3.47vw;
 
   width: 100%;
 }
 
 .header--main {
-  outline: 1px solid #14181c;
+  border: 1px solid #14181c;
   background: #14181c;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 
   left: 0;
-}
-
-.head-header {
 }
 
 @media (max-width: 641px) {
@@ -47,6 +44,6 @@
   }
 
   .header__container {
-    padding: 44px 0;
+    padding: 5px 20px;
   }
 }

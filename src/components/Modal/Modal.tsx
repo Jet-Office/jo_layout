@@ -17,17 +17,20 @@ export const Modal: React.FC<Props> = ({ active, setActive }) => {
   };
 
   return (
-    <div className={active ? "modal active" : "modal"} onClick={handleCloseClick}>
-      <div className={active ? "modal__content active" : "modal__content"} onClick={handleContentClick}>
-        <h2 className="modal__title">Attention</h2>
+    <div className={active ? "modal modal_active" : "modal"} onClick={handleCloseClick}>
+      <div className={active ? "modal__content modal_active" : "modal__content"} onClick={handleContentClick}>
+        {/* <h2 className="modal__title">Attention</h2> */}
         <p className="modal__text">
-          "Experience our service with a 14-day free trial! Get a bonus of $30,
+          Experience our service with a 14-day free trial! Get a bonus of $30,
           equivalent to 3 hours of work. Select your preferred messenger to
-          connect with our manager. Start your journey with us today!"
+          connect with our manager. Start your journey with us today!
         </p>
         <div className="link__container">
           <a className="modal__link" href="https://t.me/Oksana_HeadJetOffice">
-            <img className="modal__img" src="/services-icons/telegram-icon.svg" alt="telegram__icon" />
+            <button className="button button--pink modal--button">
+              <span>connect with us</span>
+              <img className="modal__img" src="/services-icons/bxl_telegram.svg" alt="telegram__icon" />
+            </button>
           </a>
         </div>
         <button className="modal__close" onClick={handleCloseClick}></button>

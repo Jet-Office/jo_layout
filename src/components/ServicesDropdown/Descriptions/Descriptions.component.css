@@ -43,6 +43,11 @@
 .services__card__title {
     font-family: 'Proxima Nova Bold';
     margin-left: 12px;
+    line-height: 140%;
+}
+
+.services__card__desc {
+    line-height: 140%;
 }
 
 .attachment {

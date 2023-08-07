@@ -1,6 +1,5 @@
 .services {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -72,7 +71,8 @@
 }
 
 .services__title.h2 {
-  margin-top: 0;
+  margin: 0;
+  text-align: left;
 }
 
 @media (max-width: 1280px) {
@@ -147,6 +147,7 @@
 @media (max-width: 641px) {
   .services {
     all: unset;
+    width: 100vw;
   }
 
   .services__title {
@@ -183,13 +184,7 @@
   }
 
   .services__container {
-    width: 100%;
-
-    /*padding-left: 2.56vw;*/
-  }
-
-  .services__list_container {
-    max-width: 76.92vw;
+    width: auto;
   }
 }
 
@@ -202,7 +197,6 @@
   .paragraph {
     display: none;
   }
-  .services__list_container {
-  }
+
 
 }

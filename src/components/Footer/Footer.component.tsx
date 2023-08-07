@@ -10,7 +10,7 @@ type Props = {
 export const Footer: React.FC<Props> = ({ contactsPageRef }) => {
   return (
       <div>
-        <div className="container cont">
+        <div className="cont">
           <div className="footer__contacts container">
             <Contacts contactsPageRef={contactsPageRef} />
             <ContactForm />

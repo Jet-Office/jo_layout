@@ -12,8 +12,7 @@ ul {
   display: flex;
   gap: 24px;
   margin: 0;
-  padding: 6px 0;
-  /*height: 100%;*/
+  height: 100%;
   align-items: center;
   margin-bottom: 1.22vh;
 }
@@ -24,10 +23,11 @@ ul {
 }
 
 .navigation__link {
-  height: 100%;
   text-decoration: none;
+
   font-size: 20px;
-  line-height: 28px;
+  line-height: 140%;
+
   color: var(--text-color);
 
   display: flex;
