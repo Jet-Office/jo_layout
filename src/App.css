@@ -39,6 +39,7 @@
 @media (max-width: 641px) {
   .main__container {
     width: 100%; 
+    gap: 140px;
   }
 
   .footer__label {

@@ -136,7 +136,7 @@ function App() {
                 <Pricing windowWidth={windowWidth} activePageRef={pricingPageRef} />
                 <Cases windowWidth={windowWidth} casesPageRef={casesPageRef} />
                 <About windowWidth={windowWidth} aboutPageRef={aboutPageRef} />
-                <Faq />
+                {/* <Faq /> */}
                 <Crew />
               </div>
             </main>

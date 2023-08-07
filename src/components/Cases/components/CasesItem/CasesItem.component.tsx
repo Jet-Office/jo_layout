@@ -51,14 +51,14 @@ export const CasesItem: React.FC<Props> = ({
     <div className={backgroundClass}>
       <div className="cases__card_wrapper">
         <div className={`cases__card`} onClick={() => handleClick(id)}>
-          <div className="cases__card_icon_wrapper">
+          <div className="cases__card__wrapper">
             <img
               src={`/services-icons/${icon}`}
               alt="services-icon"
               className="cases__card_icon"
             />
+            <div className="cases__card_text">{name}</div>
           </div>
-          <div className="cases__card_text">{name}</div>
           {windowWidth <= 641 && (
             <div className="cases__chevron_wrapper">
               <img

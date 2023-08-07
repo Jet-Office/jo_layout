@@ -147,6 +147,7 @@
 @media (max-width: 641px) {
   .services {
     all: unset;
+    width: 100vw;
   }
 
   .services__title {
@@ -183,13 +184,7 @@
   }
 
   .services__container {
-    width: fit-content;
-
-    padding-left: 2.56vw;
-  }
-
-  .services__list_container {
-    max-width: 76.92vw;
+    width: auto;
   }
 }
 

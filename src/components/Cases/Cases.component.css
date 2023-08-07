@@ -19,6 +19,12 @@
   text-align: left;
 }
 
+@media (max-width: 641px) {
+  .cases__content {
+    height: auto;
+  }
+}
+
 .cases__list {
   display: grid;
   grid-template-columns: repeat(1, 5fr);
@@ -74,6 +80,12 @@
 
 .cases__background:hover {
   background-color: aquamarine;
+}
+
+.cases__card__wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
 .cases__card_icon {
@@ -148,7 +160,7 @@
 
 @media (max-width: 1120px) {
   .cases__descriptions {
-    width: 48vw;
+    width: 60%;
   }
 }
 
@@ -193,6 +205,7 @@
 
     position: relative;
 
+    width: 100vw;
     display: block;
   }
 
@@ -212,12 +225,10 @@
 
   .cases__card {
     all: unset;
-
+    
     display: flex;
-    justify-content: center;
-    align-items: center;
-
-    gap: 30px;
+    justify-content: space-between;
+    align-items: center
   }
 
   .cases__chevron_icon {
@@ -245,7 +256,7 @@
 
     border: 1px solid var(--background);
 
-    max-width: 76.92vw;
+    /* max-width: 76.92vw; */
 
     box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.6);
     border-radius: 8px;
@@ -257,6 +268,8 @@
 
   .cases__card_text {
     text-align: left;
+
+    padding-right: 20px;
 
     font-size: 4.103vw;
     line-height: 140%;
@@ -279,6 +292,14 @@
     padding-left: 5.13vw;
   }
 }
+
+
+@media (min-width: 641px) and (max-width: 890px) {
+  .cases__content {
+    height: 540px;
+  }
+}
+
 
 @media (min-width: 1920px) {
   .cases__card {

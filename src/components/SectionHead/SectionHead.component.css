@@ -4,6 +4,10 @@
   font-weight: 600;
 }
 
+.buttons {
+  padding: 0;
+}
+
 .section-head {
   background-image: url(../../assets/BG_nasa.webp);
   background-repeat: no-repeat;
@@ -27,6 +31,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
 
   gap: 110px;
 
@@ -45,7 +50,7 @@
 
   margin: 0;
 
-  margin-top: calc(4.4vw + 88px);
+  /* margin-top: calc(4.4vw + 88px); */
 
   max-width: fit-content;
 
@@ -74,17 +79,23 @@
 
   display: flex;
   flex-direction: column;
+
+  gap: 48px;
 }
 
-.section-head__text {
+.section-head__description {
   max-width: 37.5vw;
-  min-height: 160px;
   text-align: left;
-  margin-top: 24px;
   font-size: 1.25vw;
   line-height: 140%;
 
   color: var(--text-color);
+}
+
+.section-head_text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 @media (max-height: 530px) {
@@ -102,16 +113,18 @@
   }
 
   .section-head__container {
+    justify-content: flex-start;
     background: linear-gradient(178.37deg, rgba(20, 24, 28, 0.8) 40.57%, rgba(20, 24, 28, 0) 86.73%);
   }
 
   .section-head__title {
+    margin-top: 140px;
     font-family: "Proxima Nova Semibold";
     font-weight: 600;
     font-size: 9.23vw;
   }
 
-  .section-head__text {
+  .section-head__description {
     max-width: 87.95vw;
 
     text-align: left;
@@ -123,9 +136,5 @@
 
   .section-head__content_container {
     margin-left: 7.18vw;
-  }
-
-  .section-head__title {
-    margin-top: 140px;
   }
 }
