@@ -4,5 +4,25 @@ export interface Blog {
     background: string;
     category: string;
     serviceItem: string;
+    link: string;
+    content: {
+        headInfo: {
+            title: string;
+            description: string;
+            autor: {
+                avatar: string;
+                name: string;
+                position: string;
+            };
+            timeToRead: string;
+            creationDate: string;
+        };
+        description: string;
+        mainInfo: Array<{
+            id: number;
+            heading: string;
+            content: string;
+        }>;
+    };
 }
   

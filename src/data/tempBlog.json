@@ -1,0 +1,202 @@
+{
+    "firstBlog": [
+        {
+            "id": 1,
+            "title": "Streamlining Workflow at ABC Corporation",
+            "background": "Streamlining_Workflow_at_ABC_Corporation",
+            "category": "#CaseStudy",
+            "serviceItem": "Calendars, Documents & Tasks Management",
+            "content":
+            {
+                "headInfo": 
+                {
+                    "title": "",
+                    "description": "",
+                    "autor":
+                    {
+                        "avatar": "",
+                        "name": "",
+                        "position": ""
+                    },
+                    "timeToRead": "",
+                    "creationDate": ""
+                },
+                "description": "",
+                "mainInfo": [
+                    {
+                        "heading": "",
+                        "content": ""
+                    },
+                    {
+                        "heading": "",
+                        "content": ""
+                    }
+                ]
+
+            }
+        },
+        {
+            "id": 2,
+            "title": "Top 5 Tips for Effective Calendar & Task Management",
+            "background": "Top_5_Tips_for_Effective_Calendar_&_Task_Management",
+            "category": "#Lifehack",
+            "serviceItem": "Calendars, Documents & Tasks Management"
+        },
+        {
+            "id": 3,
+            "background": "The_Art_of_Coordinating_Projects_7_Pro_Tips",
+            "title": "Orchestrating Success for Startup 'Next Big Thing'",
+            "category": "#Lifehack",
+            "serviceItem": "Project Management & Coordination"
+        },
+        {
+            "id": 4,
+            "background": "Next_Big_Thing",
+            "title": "The Art of Coordinating Projects: 7 Pro Tips",
+            "category": "#CaseStudy",
+            "serviceItem": "Project Management & Coordination"
+        },
+        {
+            "id": 5,
+            "background": "Effective_Calendar_&_Task_Management",
+            "title": "Top 5 Business Assistance Strategies for HR Success",
+            "category": "#Lifehack",
+            "serviceItem": "Business Assistance & Human Resources"
+        },
+        {
+            "id": 6,
+            "background": "Top_7_Tips_for_Effective_Social_Media_Management",
+            "title": "Top 7 Tips for Effective Social Media Management",
+            "category": "#Lifehack",
+            "serviceItem": "Social Media Management & Advertisement"
+        },
+        {
+            "id": 7,
+            "background": "Tech_Titans",
+            "title": "Achieving HR Excellence for 'Tech Titans'",
+            "category": "#CaseStudy",
+            "serviceItem": "Business Assistance & Human Resources"
+        },
+        {
+            "id": 8,
+            "background": "Fashion_Forward",
+            "title": "Boosting Social Media Presence for 'Fashion Forward'",
+            "category": "#CaseStudy",
+            "serviceItem": "Social Media Management & Advertisement"
+        },
+        {
+            "id": 9,
+            "background": "Gourmet_Goodness",
+            "title": "Reimagining Digital Advertising for 'Gourmet Goodness'",
+            "category": "#CaseStudy",
+            "serviceItem": "Social Media Management & Advertisement"
+        },
+        {
+            "id": 10,
+            "background": "Eco_Enterprises",
+            "title": "Elevating Business Operations at 'Eco Enterprises'",
+            "category": "#CaseStudy",
+            "serviceItem": "Business Assistance & Human Resources"
+        },
+        {
+            "id": 11,
+            "background": "Global_Go_Getters",
+            "title": "Seamless Relocation for 'Global Go-Getters'",
+            "category": "#CaseStudy",
+            "serviceItem": "Travel & Relocation, Translation"
+        },
+        {
+            "id": 12,
+            "background": "Universal_Unifiers",
+            "title": "Bridging Language Barriers for 'Universal Unifiers'",
+            "category": "#CaseStudy",
+            "serviceItem": "Travel & Relocation, Translation"
+        }
+    ],
+    "secondBlog": [
+        {
+            "id": 1,
+            "title": "The Ultimate Checklist for Corporate Relocation",
+            "background": "The_Ultimate_Checklist",
+            "category": "#Lifehack",
+            "serviceItem": "Travel & Relocation, Translation"
+        },
+        {
+            "id": 2,
+            "title": "Orchestrating Memorable Events for 'Fun Factory'",
+            "background": "Fun_Factory",
+            "category": "#CaseStudy",
+            "serviceItem": "Business Events & Corporate Holidays"
+        },
+        {
+            "id": 3,
+            "background": "Holiday_Heaven",
+            "title": "Planning Perfect Holidays for 'Holiday Heaven'",
+            "category": "#CaseStudy",
+            "serviceItem": "Business Events & Corporate Holidays"
+        },
+        {
+            "id": 4,
+            "background": "Successful_Business_Events",
+            "title": "5 Pro Tips for Planning Successful Business Events",
+            "category": "#Lifehack",
+            "serviceItem": "Business Events & Corporate Holidays"
+        },
+        {
+            "id": 5,
+            "background": "Powerful_Brand_Identity",
+            "title": "7 Essential Design Tips for a Powerful Brand Identity",
+            "category": "#Lifehack",
+            "serviceItem": "Design, Development & Research"
+        },
+        {
+            "id": 6,
+            "background": "Navigating_the_Development_Process",
+            "title": "Navigating the Development Process: A Step-by-Step Guide",
+            "category": "#Lifehack",
+            "serviceItem": "Design, Development & Research"
+        },
+        {
+            "id": 7,
+            "background": "Best_Practices_for_Efficient_Market_Research",
+            "title": "5 Best Practices for Efficient Market Research",
+            "category": "#Lifehack",
+            "serviceItem": "Design, Development & Research"
+        },
+        {
+            "id": 8,
+            "background": "Spearheading_XYZ_Company_Project_Management",
+            "title": "Spearheading XYZ Company's Project Management",
+            "category": "#CaseStudy",
+            "serviceItem": "Project Management & Coordination"
+        },
+        {
+            "id": 9,
+            "background": "Transforming_Daily_Operations",
+            "title": "Transforming Daily Operations for Entrepreneur John Doe",
+            "category": "#CaseStudy",
+            "serviceItem": "Calendars, Documents & Tasks Management"
+        },
+        {
+            "id": 10,
+            "background": "Future_Leaders_Inc",
+            "title": "Igniting Leadership at 'Future Leaders Inc'",
+            "category": "#CaseStudy",
+            "serviceItem": "Coaching, Leadership & Team-Building"
+        },
+        {
+            "id": 11,
+            "background": "United_Ventures",
+            "title": "Building Strong Teamsat 'United Ventures'",
+            "category": "#CaseStudy",
+            "serviceItem": "Coaching, Leadership & Team-Building"
+        },
+        {
+            "id": 12,
+            "background": "Coaching_Techniques_for_Effective_Leadership",
+            "title": "5 Key Coaching Techniques for Effective Leadership",
+            "category": "#Lifehack",
+            "serviceItem": "Coaching, Leadership & Team-Building"
+        }
+    ]
+}

@@ -156,6 +156,9 @@ function App() {
         <Route path="/resources/blog" element={
           <Blog />
         } />
+        <Route path="/resources/blog/:link" element={
+          <Content />
+        } />
 
         <Route path="*" element={
           <NotFound />

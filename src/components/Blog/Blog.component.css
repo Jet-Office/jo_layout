@@ -278,6 +278,7 @@
     border-radius: 4px;
     background: linear-gradient(90deg, rgba(20, 24, 28, 0.93) 30.73%, rgba(20, 24, 28, 0.00) 100%);
     pointer-events: none;
+    z-index: 1;
 }
 
 .bg--gradient::after {
@@ -291,6 +292,7 @@
     background: linear-gradient(224deg, #00E5E5 0%, #72A5F2 51.04%, #E961FF 100%);
     background-blend-mode: hue;
     mix-blend-mode: hue;
+    z-index: 0;
 }
 
 

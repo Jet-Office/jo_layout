@@ -25,7 +25,7 @@ export const BlogPost: React.FC<Props> = ( { blog } ) => {
       
       <div className="bottom_info">
         <span id="category">{blog.category}</span>
-        <Link to={`/resources/blog/${blog.title}`}>
+        <Link to={`/resources/blog/${blog.link}`}>
           <img id="arrow" src="/helpers-icons/arrow-right.svg"></img>
         </Link>
       </div>
