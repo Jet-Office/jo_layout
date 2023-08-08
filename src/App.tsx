@@ -116,6 +116,14 @@ function App() {
 
   const [active, setActive] = useContext(ModalContext);
 
+  const currentPath = window.location.pathname;
+
+const newPath = currentPath.replace(/\/$/, '');
+
+if (newPath !== currentPath) {
+  window.history.replaceState("", "", newPath);
+}
+
   return (
     <div className="App">
       <Modal active={active} setActive={setActive} />
