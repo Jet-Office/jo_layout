@@ -116,14 +116,6 @@ function App() {
 
   const [active, setActive] = useContext(ModalContext);
 
-  const currentPath = window.location.pathname;
-
-const newPath = currentPath.replace(/\/$/, '');
-
-if (newPath !== currentPath) {
-  window.history.replaceState("", "", newPath);
-}
-
   return (
     <div className="App">
       <Modal active={active} setActive={setActive} />
@@ -133,7 +125,7 @@ if (newPath !== currentPath) {
         />
 
       <Routes>
-        <Route path="/" element={
+        <Route path="" element={
           <>
             <SectionHead homePageRef={homePageRef}/>
 
@@ -152,14 +144,14 @@ if (newPath !== currentPath) {
 
           </>
         } />
-        <Route path="/services/:link/" element={
+        <Route path="/services/:link" element={
           <ListOfServices />
         } />
 
-        <Route path="/services/" element={
+        <Route path="/services" element={
           <ServicesPage />
         } />
-        <Route path="/services/:link/:subLink/" element={
+        <Route path="/services/:link/:subLink" element={
           <ServiceDescription />
         } />
         <Route path="/resources/blog" element={
