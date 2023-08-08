@@ -125,7 +125,7 @@ function App() {
         />
 
       <Routes>
-        <Route path="" element={
+        <Route path="/" element={
           <>
             <SectionHead homePageRef={homePageRef}/>
 
