@@ -152,14 +152,14 @@ if (newPath !== currentPath) {
 
           </>
         } />
-        <Route path="/services/:link" element={
+        <Route path="/services/:link/" element={
           <ListOfServices />
         } />
 
-        <Route path="/services" element={
+        <Route path="/services/" element={
           <ServicesPage />
         } />
-        <Route path="/services/:link/:subLink" element={
+        <Route path="/services/:link/:subLink/" element={
           <ServiceDescription />
         } />
         <Route path="/resources/blog" element={
