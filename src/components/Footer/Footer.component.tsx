@@ -5,11 +5,12 @@ import "./Footer.component.css";
 
 type Props = {
   contactsPageRef: React.RefObject<HTMLElement>;
+  footerRef: React.RefObject<HTMLDivElement>;
 };
 
-export const Footer: React.FC<Props> = ({ contactsPageRef }) => {
+export const Footer: React.FC<Props> = ({ contactsPageRef, footerRef }) => {
   return (
-      <div>
+      <div ref={footerRef}>
         <div className="cont">
           <div className="footer__contacts container">
             <Contacts contactsPageRef={contactsPageRef} />

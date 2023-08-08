@@ -9,11 +9,12 @@ import { Menu } from "./component/Menu";
 type Props = {
   windowWidth: number;
   activePageRef: React.RefObject<HTMLElement>;
+  mainNavigationRef: React.RefObject<HTMLDivElement>;
 };
 
 export const DEFAULT_ACTIVE_LINK = "Home";
 
-export const Header: React.FC<Props> = ({ windowWidth, activePageRef }) => {
+export const Header: React.FC<Props> = ({ windowWidth, activePageRef, mainNavigationRef }) => {
   const [isHome, setIsHome] = useState(true);
   const [activeLink, setActiveLink] = useState(DEFAULT_ACTIVE_LINK);
   const [isClickLink, setIsClickLink] = useState(false);
@@ -49,6 +50,7 @@ export const Header: React.FC<Props> = ({ windowWidth, activePageRef }) => {
 
   return (
     <div 
+      ref={mainNavigationRef}
       className={`header ${(!isHome || (activeLink !== "Home")) ? "header--main" : "head--header"}`}
       onMouseLeave={() => {
         setActiveLink(DEFAULT_ACTIVE_LINK);
