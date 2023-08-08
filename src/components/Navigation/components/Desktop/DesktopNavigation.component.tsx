@@ -2,7 +2,8 @@ import { LINKS } from "../../Navigation.component";
 import { ServicesDropdown } from "../../../ServicesDropdown";
 import { ResourcesDropdown } from "../../../ResourcesDropdown";
 import { useCallback, useState } from "react";
-import { Link } from "../../../../types/link.type";
+import { Links } from "../../../../types/links.type";
+import { Link } from "react-router-dom";
 
 type Props = {
   windowWidth: number;
@@ -32,7 +33,7 @@ export const DesktopNavigation: React.FC<Props> =
   );
 
   const handleMouseEnter = useCallback(
-    (link: Link) => {
+    (link: Links) => {
       if (activeLink === link.name) {
         if (submenuOpen) setSubmenuOpen(false);
         else setSubmenuOpen(true);
@@ -66,7 +67,8 @@ export const DesktopNavigation: React.FC<Props> =
               }}
             >
               <div className="navigation__item">
-                <a
+                <Link
+                  to={link.href}
                   className={`navigation__link ${ activeLink === link.name ? "navigation__link--active" : "" }`}
 
                   onMouseEnter={() => { handleMouseEnter(link) }}
@@ -83,7 +85,7 @@ export const DesktopNavigation: React.FC<Props> =
                       />
                     : null
                   }
-                </a>
+                </Link>
               </div>
             </li>
           ))}

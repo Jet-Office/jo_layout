@@ -1,4 +1,4 @@
-export interface Link {
+export interface Links {
   id: number;
   name: string;
   isDropDown: boolean;

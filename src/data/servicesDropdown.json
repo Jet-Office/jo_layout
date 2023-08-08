@@ -3,6 +3,7 @@
     {
       "id": 1,
       "name": "Calendars, Documents & tasks management",
+      "link": "/services/calendars-documents-tasks-management",
       "icon": "list-edit.svg",
       "descriptions": [
         {
@@ -80,6 +81,7 @@
     {
       "id": 2,
       "name": "Project management & coordination",
+      "link": "/services/project-management-coordination",
       "icon": "gauge-dashboard.svg",
       "descriptions": [
         {
@@ -129,6 +131,7 @@
     {
       "id": 3,
       "name": "Travel & relocation, Translation",
+      "link": "/services/travel-relocation-translation",
       "icon": "landmark-pisa-tower.svg",
       "descriptions": [
         {
@@ -178,6 +181,7 @@
     { 
       "id": 4,
       "name": "Business assistance & Human resources",
+      "link": "/services/business-assistance-human-resources",
       "icon": "bulb.svg",
       "descriptions": [
         {
@@ -262,6 +266,7 @@
     {
       "id": 5,
       "name": "Design, Development & Research",
+      "link": "/services/design-development-research",
       "icon": "brain-1.svg",
       "descriptions": [
         {
@@ -324,6 +329,7 @@
     {
       "id": 6,
       "name": "Business events & corporate holidays",
+      "link": "/services/business-events-corporate-holidays",
       "icon": "restaurant-menu.svg",
       "descriptions": [
         {
@@ -379,6 +385,7 @@
     {
       "id": 7,
       "name": "Coaching, leadership & Team-building",
+      "link": "/services/coaching-leadership-team-building",
       "icon": "target-correct.svg",
       "descriptions": [
         {
@@ -420,6 +427,7 @@
     {
       "id": 8,
       "name": "Social media management & advertisement",
+      "link": "/services/social-media-management-advertisement",
       "icon": "vintage-tv-4.svg",
       "descriptions": [
         {

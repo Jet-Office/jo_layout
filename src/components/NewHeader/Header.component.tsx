@@ -5,6 +5,7 @@ import { Button } from "../Button";
 
 import "./Header.component.css";
 import { Menu } from "./component/Menu";
+import { Link } from "react-router-dom";
 
 type Props = {
   windowWidth: number;
@@ -57,7 +58,7 @@ export const Header: React.FC<Props> = ({ windowWidth, activePageRef }) => {
       }}
     >
       <div className="header__container">
-        <a href="#" className="header__logo">
+        <Link to="/" className="header__logo">
           <img
             src={Logo}
             alt="JetOffice logo"
@@ -66,7 +67,7 @@ export const Header: React.FC<Props> = ({ windowWidth, activePageRef }) => {
             srcSet="logo.svg 100%"
             className="header__logo_img"
           />
-        </a>
+        </Link>
         {windowWidth > 890 ? (    
           <>
             <Navigation

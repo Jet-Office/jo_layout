@@ -6,6 +6,7 @@ import { Descriptions } from "../../../Descriptions";
 import { NewsCard } from "../../../NewsCard";
 
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 type Props = {
   windowWidth: number;
@@ -19,6 +20,11 @@ type Props = {
 export const DesktopList: React.FC<Props> = 
 ({ windowWidth, cases, activeId, setActiveId, mainMenuSetIsOpen, setActiveMenuLink }) => {
   const [descriptions, setDescriptions] = useState<Description[]>([]);
+
+  const handleCLose = () => {
+    setActiveId(0);
+    setActiveMenuLink("");
+  };
 
   return (
     <div className="dropdown-content"> 
@@ -52,10 +58,14 @@ export const DesktopList: React.FC<Props> =
                 ></Descriptions>
             
               <div className="services__link">
-                <button className="link_all_services">
+                <Link 
+                  to={'/services'} 
+                  className="link_all_services"
+                  onClick={handleCLose}
+                >
                   <span>ALL SERVICES</span>
                   <img src="/helpers-icons/chevron-down-pink.svg" className="chevron-right-pink"></img>
-                  </button>
+                </Link>
               </div>
             </div>
           </div>

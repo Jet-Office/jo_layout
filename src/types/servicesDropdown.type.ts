@@ -9,6 +9,7 @@ export interface Description {
 export interface Service {
   id: number;
   name: string;
+  link?: string;
   icon: string;
   descriptions: Description[];
 }

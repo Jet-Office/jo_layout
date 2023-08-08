@@ -4,6 +4,7 @@ import { Description, Service } from "../../../types/servicesDropdown.type";
 import { Descriptions } from "../Descriptions/Descriptions.component";
 import "../ServicesDropdown.component.css";
 import { Button } from "../../Button";
+import { Link } from "react-router-dom";
 
 type Props = {
   item: Service;
@@ -18,7 +19,7 @@ type Props = {
 };
 
 export const Item: React.FC<Props> = ({
-  item: { id, name, icon, descriptions },
+  item: { id, name, icon, descriptions, link},
   setDescriptions,
   activeId,
   setActiveId,
@@ -64,12 +65,13 @@ export const Item: React.FC<Props> = ({
 
   const handleClickClose = useCallback(
     () => {
+      setIsOpen(false);
       setActiveId(0);
       mainMenuSetIsOpen(false);
       setActiveMenuLink("");
 
     },
-    [setActiveId, mainMenuSetIsOpen, setActiveMenuLink]
+    [ setIsOpen,setActiveId, mainMenuSetIsOpen, setActiveMenuLink]
   );
 
   return (
@@ -80,7 +82,13 @@ export const Item: React.FC<Props> = ({
           >
           <div className="left">
             <img src={`/services-icons/${icon}`} alt="dropdown-icons" className="services-icons--svg" />
-            <span>{name}</span>
+            <Link 
+              className="dropdown__links" 
+              to={link || ''}
+              onClick={handleClickClose}
+            >
+              {name}
+            </Link>
           </div>
         </div>
       : (

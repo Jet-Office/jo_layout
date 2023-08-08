@@ -1,5 +1,5 @@
 import "./Navigation.component.css";
-import { Link } from "../../types/link.type";
+import { Links } from "../../types/links.type";
 import { useCallback, useState } from "react";
 import { ServicesDropdown } from "../ServicesDropdown";
 import React from "react";
@@ -18,12 +18,12 @@ type Props = {
   setActiveMenuLink: (activeMenuLink: string) => void;
 };
 
-export const LINKS: Link[] = [
+export const LINKS: Links[] = [
   {
     id: 1,
     name: "Services",
     isDropDown: true,
-    href: "#services",
+    href: "/services",
   },
   {
     id: 2,
