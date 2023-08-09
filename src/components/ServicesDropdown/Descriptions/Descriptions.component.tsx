@@ -1,6 +1,7 @@
 import "./Descriptions.component.css";
 import { Description } from "../../../types/servicesDropdown.type";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 type Props = {
   descriptions: Description[];
@@ -13,8 +14,9 @@ export const Descriptions: React.FC<Props> = ({ descriptions, windowWidth }) => 
 
   return (
     <div className="content-grid">
-      {descriptions.map(({ id, icon, attachment, name, text }) => (
-        <div 
+      {descriptions.map(({ id, icon, attachment, name, text, link }) => (
+        <Link
+          to={link} 
           key={id} 
           className={`services__card ${windowWidth <= 890 && activeDescriptionId === id ? "active" : ""}`}
           onClick={() => {setActiveDescriptionId(id)}}
@@ -33,7 +35,7 @@ export const Descriptions: React.FC<Props> = ({ descriptions, windowWidth }) => 
           <div className={`bottom-part ${windowWidth <= 890 && activeDescriptionId === id ? "active" : ""}`}>
             <span className="services__card__desc">{text}</span>
           </div>
-        </div>
+        </Link>
       ))}
     </div>
   );

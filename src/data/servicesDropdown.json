@@ -8,6 +8,7 @@
       "descriptions": [
         {
           "id": 1,
+          "link": "/services/calendars-documents-tasks-management/email-management",
           "icon": "drawer-envelope.svg",
           "name": "Email Management",
           "attachment": "hot",
@@ -15,6 +16,7 @@
         },
         {
           "id": 2,
+          "link": "/services/calendars-documents-tasks-management/finding-vendors",
           "icon": "business-contract-handshake-sign.svg",
           "name": "Finding vendors",
           "attachment": "new",
@@ -22,6 +24,7 @@
         },
         {
           "id": 3,
+          "link": "/services/calendars-documents-tasks-management/tasks-management",
           "icon": "paper-write.svg",
           "name": "Tasks Managment",
           "attachment": "hot",
@@ -29,6 +32,7 @@
         },
         {
           "id": 4,
+          "link": "/services/calendars-documents-tasks-management/bills-payment",
           "icon": "accounting-invoice-mail.svg",
           "name": "Bills & Payment",
           "attachment": "",
@@ -36,6 +40,7 @@
         },
         {
           "id": 5,
+          "link": "/services/calendars-documents-tasks-management/scheduling-contacts",
           "icon": "presentation-analytics.svg",
           "name": "Scheduling & Contacts",
           "attachment": "",
@@ -43,6 +48,7 @@
         },
         {
           "id": 6,
+          "link": "/services/calendars-documents-tasks-management/shopping-delivery",
           "icon": "shopping-cart-heart.svg",
           "name": "Shopping & Delivery",
           "attachment": "new",
@@ -50,6 +56,7 @@
         },
         {
           "id": 7,
+          "link": "/services/calendars-documents-tasks-management/documents-presentations",
           "icon": "presentation-projector-screen-bars.svg",
           "name": "Documents & Presentations",
           "attachment": "",
@@ -86,6 +93,7 @@
       "descriptions": [
         {
           "id": 1,
+          "link": "/services/project-management-coordination/curating-online-schools-courses",
           "icon": "meeting-remote.svg",
           "name": "Curating Online Schools or Courses",
           "attachment": "",
@@ -93,6 +101,7 @@
         },
         {
           "id": 2,
+          "link": "/services/project-management-coordination/camping-retreat-coordination",
           "icon": "camping-tent.svg",
           "name": "Camping or Retreat Coordination",
           "attachment": "",
@@ -100,6 +109,7 @@
         },
         {
           "id": 3,
+          "link": "/services/project-management-coordination/administration-electronic-documents-database-management",
           "icon": "monitor-page.svg",
           "name": "Administration of Electronic Documents & Database Management",
           "attachment": "",
@@ -136,6 +146,7 @@
       "descriptions": [
         {
           "id": 1,
+          "link": "/services/travel-relocation-translation/relocation-services",
           "icon": "travel-user-pin.svg",
           "name": "Relocation Services",
           "attachment": "",
@@ -143,6 +154,7 @@
         },
         {
           "id": 2,
+          "link": "/services/travel-relocation-translation/travel-management",
           "icon": "travel-luggage-1.svg",
           "name": "Travel Management",
           "attachment": "",
@@ -150,6 +162,7 @@
         },
         {
           "id": 3,
+          "link": "/services/travel-relocation-translation/translation-localization",
           "icon": "chat-translate.svg",
           "name": "Translation & Localization",
           "attachment": "",
@@ -186,6 +199,7 @@
       "descriptions": [
         {
           "id": 1,
+          "link": "/services/business-assistance-human-resources/competitor-analysis-market-research",
           "icon": "optimization-rocket-growth.svg",
           "name": "Competitor Analysis & Market Research",
           "attachment": "",
@@ -193,6 +207,7 @@
         },
         {
           "id": 2,
+          "link": "/services/business-assistance-human-resources/ai-image-generation",
           "icon": "tabler-icon-photo-ai.svg",
           "name": "AI Image Generation",
           "attachment": "",
@@ -200,6 +215,7 @@
         },
         {
           "id": 3,
+          "link": "/services/business-assistance-human-resources/optimization-business-processes",
           "icon": "optimization-graph-line.svg",
           "name": "Optimization of Business Processes",
           "attachment": "",
@@ -207,6 +223,7 @@
         },
         {
           "id": 4,
+          "link": "/services/business-assistance-human-resources/interviews",
           "icon": "team-chat.svg",
           "name": "Interviews",
           "attachment": "",
@@ -214,6 +231,7 @@
         },
         {
           "id": 5,
+          "link": "/services/business-assistance-human-resources/search-service-providers",
           "icon": "business-deal-negotiate.svg",
           "name": "Search for Service Providers",
           "attachment": "",
@@ -221,6 +239,7 @@
         },
         {
           "id": 6,
+          "link": "/services/business-assistance-human-resources/applicants-resume-processing",
           "icon": "job-seach-profile.svg",
           "name": "Applicant Resume Processing",
           "attachment": "",
@@ -228,13 +247,15 @@
         },
         {
           "id": 7,
+          "link": "/services/business-assistance-human-resources/ai-copywriting",
           "icon": "tabler-icon-file-text-ai.svg",
-          "name": "AI Сopywriting",
+          "name": "AI Copywriting",
           "attachment": "",
           "text": "The latest advances in AI  to deliver compelling high-quality content."
         },
         {
           "id": 8,
+          "link": "/services/business-assistance-human-resources/job-posting-across-platforms",
           "icon": "briefcase.svg",
           "name": "Job Posting Across Platforms",
           "attachment": "",
@@ -271,6 +292,7 @@
       "descriptions": [
         {
           "id": 1,
+          "link": "/services/design-development-research/partner-network-web-development",
           "icon": "programming-team-chat-3.svg",
           "name": "Partner Network for Web Development",
           "attachment": "",
@@ -278,6 +300,7 @@
         },
         {
           "id": 2,
+          "link": "/services/design-development-research/discover-seo-optimization-partners",
           "icon": "seo-network-1.svg",
           "name": "Discover SEO Optimization Partners",
           "attachment": "",
@@ -285,6 +308,7 @@
         },
         {
           "id": 3,
+          "link": "/services/design-development-research/partnered-back-end-development-solutions",
           "icon": "file-java.svg",
           "name": "Partnered Back-End Development Solutions",
           "attachment": "",
@@ -292,6 +316,7 @@
         },
         {
           "id": 4,
+          "link": "/services/design-development-research/connect-front-end-development-experts",
           "icon": "file-js.svg",
           "name": "Connect with Front-End Development Experts",
           "attachment": "",
@@ -299,6 +324,7 @@
         },
         {
           "id": 5,
+          "link": "/services/design-development-research/partnered-web-design-services",
           "icon": "responsive-design-image.svg",
           "name": "Partnered Web Design Services",
           "attachment": "",
@@ -334,6 +360,7 @@
       "descriptions": [
         {
           "id": 1,
+          "link": "/services/business-events-corporate-holidays/organization-meetings-negotiations",
           "icon": "business-deal-handshake-circle.svg",
           "name": "Organization of Meetings & Negotiations",
           "attachment": "",
@@ -341,6 +368,7 @@
         },
         {
           "id": 2,
+          "link": "/services/business-events-corporate-holidays/event-planning-coordination",
           "icon": "graph-statistics-coffee.svg",
           "name": "Event Planning & Coordination",
           "attachment": "",
@@ -348,6 +376,7 @@
         },
         {
           "id": 3,
+          "link": "/services/business-events-corporate-holidays/party-date-organization",
           "icon": "party-balloons.svg",
           "name": "Party & Date Organization",
           "attachment": "",
@@ -355,6 +384,7 @@
         },
         {
           "id": 4,
+          "link": "/services/business-events-corporate-holidays/budget-management-financial-reporting",
           "icon": "accounting-calculator-2.svg",
           "name": "Budget Management & Financial Reporting",
           "attachment": "",
@@ -390,6 +420,7 @@
       "descriptions": [
         {
           "id": 1,
+          "link": "/services/coaching-leadership-team-building/partnered-coaching-services",
           "icon": "single-man-megaphone.svg",
           "name": "Partnered Coaching Services",
           "attachment": "",
@@ -397,6 +428,7 @@
         },
         {
           "id": 2,
+          "link": "/services/coaching-leadership-team-building/discover-team-building-partners",
           "icon": "job-choose-cadidate-1.svg",
           "name": "Discover Team Building Partners",
           "attachment": "",
@@ -432,6 +464,7 @@
       "descriptions": [
         {
           "id": 1,
+          "link": "/services/social-media-management-advertisement/content-creation",
           "icon": "content-write.svg",
           "name": "Content Creation",
           "attachment": "",
@@ -439,6 +472,7 @@
         },
         {
           "id": 2,
+          "link": "/services/social-media-management-advertisement/ad-campaign-management",
           "icon": "notes-warning.svg",
           "name": "Ad Campaign Management",
           "attachment": "",
@@ -446,6 +480,7 @@
         },
         {
           "id": 3,
+          "link": "/services/social-media-management-advertisement/content-planning-publishing",
           "icon": "notes-paper-approve.svg",
           "name": "Content Planning & Publishing",
           "attachment": "",
@@ -453,6 +488,7 @@
         },
         {
           "id": 4,
+          "link": "/services/social-media-management-advertisement/proofreading-error-correction",
           "icon": "computer-bug-search.svg",
           "name": "Proofreading & Error Correction",
           "attachment": "",
