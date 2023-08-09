@@ -125,7 +125,7 @@ function App() {
         />
 
       <Routes>
-        <Route path="home" element={
+        <Route path="" element={
           <>
             <SectionHead homePageRef={homePageRef}/>
 
@@ -144,7 +144,6 @@ function App() {
 
           </>
         } />
-        <Route path="/" element={<Navigate to="Home" replace />} />
         <Route path="services/:link" element={
           <ListOfServices />
         } />
