@@ -1,9 +1,9 @@
-.footer__contacts {
+.footer__contacts.container {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   position: relative;
-  
+  flex-direction: row;
 }
 
 .cont {
