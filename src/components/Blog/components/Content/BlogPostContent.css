@@ -175,6 +175,7 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    margin: 0;
 
     text-align: left;
 
@@ -189,7 +190,6 @@
 li {
     padding: 0;
 }
-
 .a {
     color: var(--white, #CCC);
     font-family: 'Proxima Nova';
@@ -198,4 +198,24 @@ li {
     line-height: 140%; 
 
     padding-left: 12px;
+}
+
+.network_links-list {
+    list-style: none;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 0;
+}
+
+@media (max-width: 1500px) {
+    .network_links-list {
+        gap: 0px;
+    }
+}
+
+.network--link > img {
+    height: 24px;
+    padding: 18px;
+    cursor: pointer;
 }

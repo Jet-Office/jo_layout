@@ -158,7 +158,22 @@ export const Content: React.FC<Props> = ({windowWidth, footerRef, mainNavigation
                   </li>
                 ))}
               </ul>
-              <div className="network_links"></div>
+              <div className="network_links">
+                <ul className="ul network_links-list">
+                  <li className="li">
+                    <a href="https://www.instagram.com/jet.office/" target="_blank" className="network--link"><img src="/contacts-icons/white_instagram.svg"></img></a>
+                  </li>
+                  <li className="li">
+                    <a href="" target="_blank" className="network--link"><img src="/contacts-icons/white_twitter.svg"></img></a>
+                  </li>
+                  <li className="li">
+                    <a href="https://www.linkedin.com/company/jetoffice-ua/" target="_blank" className="network--link"><img src="/contacts-icons/white_linkedin.svg"></img></a>
+                  </li>
+                  <li className="li">
+                    <a href="" target="_blank" className="network--link"><img src="/contacts-icons/white_share.svg"></img></a>
+                  </li>
+                </ul>
+              </div>
             </div>
         </div>
       </div>
