@@ -5,6 +5,10 @@
   font-display: swap;
 }
 
+.container.pricing {
+  flex-direction: column;
+}
+
 .pricing__button {
   margin-top: 10px;
   margin-bottom: 10px;

@@ -38,13 +38,19 @@
   }
 }
 
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .about__paragraph {
   font-size: 20px;
   line-height: 140%;
 
   color: var(--text-color);
 
-  text-align: justify;
+  text-align: left;
 }
 
 .about__earth {

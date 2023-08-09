@@ -10,8 +10,8 @@ import { Benefits } from "./components/Benefits";
 import { Pricing } from "./components/Pricing";
 import { Cases } from "./components/Cases";
 import { About } from "./components/About";
-/* import { Faq } from "./components/Faq";
- */
+import { Faq } from "./components/Faq";
+
 import { Crew } from "./components/Crew";
 import { ControlPreview } from "./components/ControlPreview";
 import { Modal } from "./components/Modal/Modal";
@@ -137,7 +137,7 @@ function App() {
                 <Pricing windowWidth={windowWidth} activePageRef={pricingPageRef} />
                 <Cases windowWidth={windowWidth} casesPageRef={casesPageRef} />
                 <About windowWidth={windowWidth} aboutPageRef={aboutPageRef} />
-                {/* <Faq /> */}
+                <Faq />
                 <Crew />
               </div>
             </main>
