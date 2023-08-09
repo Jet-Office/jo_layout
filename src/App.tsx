@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useContext } from "react";
 
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 import "./App.css";
 
@@ -125,7 +125,7 @@ function App() {
         />
 
       <Routes>
-        <Route path="/" element={
+        <Route path="home" element={
           <>
             <SectionHead homePageRef={homePageRef}/>
 
@@ -144,6 +144,7 @@ function App() {
 
           </>
         } />
+        <Route path="/" element={<Navigate to="Home" replace />} />
         <Route path="services/:link" element={
           <ListOfServices />
         } />
