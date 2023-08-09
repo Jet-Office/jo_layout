@@ -1,0 +1,13 @@
+<svg width="64" height="58" viewBox="0 0 64 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group">
+<g id="app-window-pie-chart">
+<path id="Rectangle-path" fill-rule="evenodd" clip-rule="evenodd" d="M1.40405 2.07129C1.40405 1.24286 2.07563 0.571289 2.90405 0.571289H61.1541C61.9825 0.571289 62.6541 1.24286 62.6541 2.07129V55.9463C62.6541 56.7747 61.9825 57.4463 61.1541 57.4463H2.90405C2.07563 57.4463 1.40405 56.7747 1.40405 55.9463V2.07129Z" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape" d="M1.40405 13.6963H62.6541" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Oval" fill-rule="evenodd" clip-rule="evenodd" d="M23.2791 48.6963C30.5278 48.6963 36.4041 42.82 36.4041 35.5713C36.4041 28.3226 30.5278 22.4463 23.2791 22.4463C16.0303 22.4463 10.1541 28.3226 10.1541 35.5713C10.1541 42.82 16.0303 48.6963 23.2791 48.6963Z" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_2" d="M23.2791 22.4463V35.5713L32.5599 44.8521" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_3" d="M45.1541 26.8213H53.9041" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_4" d="M45.1541 35.5713H53.9041" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_5" d="M45.1541 44.3213H53.9041" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>

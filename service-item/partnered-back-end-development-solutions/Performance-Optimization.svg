@@ -1,0 +1,15 @@
+<svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group">
+<g id="phone-monitor-exchange">
+<path id="Rectangle-path" fill-rule="evenodd" clip-rule="evenodd" d="M1.1875 2.6875C1.1875 1.85907 1.85907 1.1875 2.6875 1.1875H34.6875C35.5159 1.1875 36.1875 1.85907 36.1875 2.6875V21.5625C36.1875 22.3909 35.5159 23.0625 34.6875 23.0625H2.6875C1.85907 23.0625 1.1875 22.3909 1.1875 21.5625V2.6875Z" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape" d="M18.6875 23.0625V31.8125" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_2" d="M12.125 31.8125H25.25" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Rectangle-path_2" fill-rule="evenodd" clip-rule="evenodd" d="M44.9375 33.3125C44.9375 32.4841 45.6091 31.8125 46.4375 31.8125H65.3125C66.1409 31.8125 66.8125 32.4841 66.8125 33.3125V65.3125C66.8125 66.1409 66.1409 66.8125 65.3125 66.8125H46.4375C45.6091 66.8125 44.9375 66.1409 44.9375 65.3125V33.3125Z" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_3" d="M44.9375 58.0625H66.8125" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_4" d="M9.9375 44.9375C9.9375 54.6025 17.7725 62.4375 27.4375 62.4375H34" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_5" d="M66.8125 23.0625C66.8125 13.3975 58.9775 5.5625 49.3125 5.5625H44.9375" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_6" d="M49.3125 1.1875L44.9375 5.5625L49.3125 9.9375" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_7" d="M29.625 66.8125L34 62.4375L29.625 58.0625" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>

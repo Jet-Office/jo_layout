@@ -1,0 +1,16 @@
+<svg width="64" height="68" viewBox="0 0 64 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group">
+<g id="design-tool-pens">
+<path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M54.1493 1.1875C54.1493 1.1875 54.2222 5.7725 59.9826 12.0142C60.3088 12.3462 60.6156 12.6967 60.9014 13.0642C63.1069 16.0084 63.1565 20.0406 61.0241 23.0382C58.8917 26.0359 55.0663 27.3115 51.5615 26.1936C48.0568 25.0758 45.6764 21.8208 45.6734 18.1421C45.4679 11.4248 48.6527 5.05415 54.1493 1.1875V1.1875Z" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_2" fill-rule="evenodd" clip-rule="evenodd" d="M54.1491 66.8134C55.8963 66.8134 57.5639 66.083 58.7487 64.799C59.9336 63.515 60.5279 61.7942 60.3878 60.0526L57.4507 25.9509C55.3024 26.8561 52.8763 26.8371 50.7424 25.8984L47.9191 60.0526C47.7801 61.7924 48.3735 63.5113 49.5562 64.7949C50.739 66.0784 52.4037 66.81 54.1491 66.8134Z" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_3" fill-rule="evenodd" clip-rule="evenodd" d="M36.375 16.5L29.8125 1.1875L23.25 16.5V60.25C23.25 63.8744 26.1881 66.8125 29.8125 66.8125V66.8125C33.4369 66.8125 36.375 63.8744 36.375 60.25V16.5Z" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_4" d="M23.25 16.5L29.8125 20.875L36.375 16.5" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_5" d="M23.25 55.875H36.375" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_6" d="M23.25 47.125H36.375" stroke="#E961FF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_7" fill-rule="evenodd" clip-rule="evenodd" d="M14.5 51.5L7.9375 66.8125L1.375 51.5V7.75C1.375 4.12563 4.31313 1.1875 7.9375 1.1875V1.1875C9.67798 1.1875 11.3472 1.8789 12.5779 3.10961C13.8086 4.34032 14.5 6.00952 14.5 7.75V51.5Z" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_8" d="M1.375 51.5H14.5" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_9" d="M1.375 12.125H14.5" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Shape_10" d="M1.375 34H14.5" stroke="#00E5E5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>
