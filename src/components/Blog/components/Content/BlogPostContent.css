@@ -144,7 +144,7 @@
 }
 
 .navigation-blog--content.fixed-navigation {
-    top: 20%;
+    top: 23%;
     position: fixed;
     width: 15vw;
 }
@@ -214,7 +214,7 @@ li {
     }
 }
 
-.network--link > img {
+.network_img {
     height: 24px;
     padding: 18px;
     cursor: pointer;

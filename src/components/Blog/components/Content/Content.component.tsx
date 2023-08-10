@@ -59,21 +59,7 @@ export const Content: React.FC<Props> = ({windowWidth, footerRef, mainNavigation
         setNavigationFixedBottom(false);
       }
     }
-
   }
-
-  // useEffect(() => {
-  //   const listenScrollEvent = () => {
-  //     if ((window.scrollY > 113 && windowWidth > 1000) || window.scrollY > 87 ) {
-  //       setNavigationFixed(false);
-  //     } else {
-  //       setNavigationFixed(true);
-  //     }
-  //   };
-  //   window.addEventListener("scroll", listenScrollEvent);
-  //   return () => window.removeEventListener("scroll", listenScrollEvent);
-  // }, [windowWidth]);
-
   
   return (
     <section className="blog_post-content">
@@ -160,17 +146,17 @@ export const Content: React.FC<Props> = ({windowWidth, footerRef, mainNavigation
               </ul>
               <div className="network_links">
                 <ul className="ul network_links-list">
-                  <li className="li">
-                    <a href="https://www.instagram.com/jet.office/" target="_blank" className="network--link"><img src="/contacts-icons/white_instagram.svg"></img></a>
+                  <li className="li network_item">
+                    <a href="https://www.instagram.com/jet.office/" target="_blank" className="network--link"><img className="network_img" src="/contacts-icons/white_instagram.svg"></img></a>
                   </li>
-                  <li className="li">
-                    <a href="" target="_blank" className="network--link"><img src="/contacts-icons/white_twitter.svg"></img></a>
+                  <li className="li network_item">
+                    <a href="" target="_blank" className="network--link"><img className="network_img" src="/contacts-icons/white_twitter.svg"></img></a>
                   </li>
-                  <li className="li">
-                    <a href="https://www.linkedin.com/company/jetoffice-ua/" target="_blank" className="network--link"><img src="/contacts-icons/white_linkedin.svg"></img></a>
+                  <li className="li network_item">
+                    <a href="https://www.linkedin.com/company/jetoffice-ua/" target="_blank" className="network--link"><img className="network_img" src="/contacts-icons/white_linkedin.svg"></img></a>
                   </li>
-                  <li className="li">
-                    <a href="" target="_blank" className="network--link"><img src="/contacts-icons/white_share.svg"></img></a>
+                  <li className="li network_item">
+                    <a href="" target="_blank" className="network--link"><img className="network_img" src="/contacts-icons/white_share.svg"></img></a>
                   </li>
                 </ul>
               </div>
