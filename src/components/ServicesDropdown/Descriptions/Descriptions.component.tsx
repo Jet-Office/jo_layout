@@ -9,7 +9,6 @@ type Props = {
 };
 
 export const Descriptions: React.FC<Props> = ({ descriptions, windowWidth }) => {
-
   const [ activeDescriptionId, setActiveDescriptionId ] = useState(0);
 
   return (
