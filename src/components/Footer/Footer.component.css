@@ -36,7 +36,7 @@
 }
 
 @media screen and (max-width: 641px) {
-  .footer__contacts {
+  .footer__contacts.container {
     flex-direction: column-reverse;
   }
 
