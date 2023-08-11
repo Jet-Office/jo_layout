@@ -20,14 +20,7 @@ export const ListBlogPosts: React.FC<Props> = ( {currentCategory, blogObject} ) 
           || (!currentCategory.some(item => item.charAt(0) === '#') && currentCategory.includes(blog.serviceItem))
           || (!currentCategory.some(item => item.charAt(0) !== '#') && currentCategory.includes(blog.category))
           || (currentCategory.some(item => item.charAt(0) === '#') && currentCategory.includes(blog.category) && currentCategory.includes(blog.serviceItem))
-          ? <>
-            <Routes>
-              <Route path={`/resources/blog/${blog.title}`} element={
-                <Content blog={blog} />
-              } />
-            </Routes>
-            <BlogPost blog={blog} key={blog.id} /> 
-            </>
+          ? <BlogPost blog={blog} key={blog.id} /> 
           : null
         ))}
       </div>
