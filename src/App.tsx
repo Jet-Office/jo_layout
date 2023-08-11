@@ -35,14 +35,18 @@ function App() {
   const casesPageRef = useRef<HTMLElement>(null);
   const aboutPageRef = useRef<HTMLElement>(null);
   const contactsPageRef = useRef<HTMLElement>(null);
+
+  const footerRef = useRef<HTMLDivElement | null>(null);
+  const mainNavigationRef = useRef<HTMLDivElement | null>(null);
+  
   const [activePageRef, setActivePageRef] =
     useState<React.RefObject<HTMLElement>>(homePageRef);
 
-  useEffect(() => {
-    const options = {
-      rootMargin: "0px",
-      threshold: 0.5,
-    };
+    useEffect(() => {
+      const options = {
+        rootMargin: "0px",
+        threshold: 0.5,
+      };
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -122,6 +126,7 @@ function App() {
         <Header
           activePageRef={activePageRef}
           windowWidth={windowWidth}
+          mainNavigationRef={mainNavigationRef}
         />
 
       <Routes>
@@ -157,13 +162,16 @@ function App() {
         <Route path="/resources/blog" element={
           <Blog />
         } />
+        <Route path="/resources/blog/:link" element={
+          <Content windowWidth={windowWidth} footerRef={footerRef} mainNavigationRef={mainNavigationRef}/>
+        } />
 
         <Route path="*" element={
           <NotFound />
         } />
       </Routes>
       <footer className="footermain">
-        <Footer contactsPageRef={contactsPageRef} />
+        <Footer contactsPageRef={contactsPageRef} footerRef={footerRef} />
       </footer>
     </div>
   );
