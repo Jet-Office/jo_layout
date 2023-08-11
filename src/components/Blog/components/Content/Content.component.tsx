@@ -103,7 +103,7 @@ export const Content: React.FC<Props> = ({windowWidth, footerRef, mainNavigation
           Blog
         </Link>
         &#62;{" "}
-        <span className="span top-link">{selectedBlog?.title}</span>
+        <span className="top-link">{selectedBlog?.title}</span>
       </div>
       <div className="container main-columns">
         <div className="left--column">
@@ -147,7 +147,7 @@ export const Content: React.FC<Props> = ({windowWidth, footerRef, mainNavigation
               <div className="network_links">
                 <ul className="ul network_links-list">
                   <li className="li network_item">
-                    <a href="https://www.instagram.com/jet.office/" target="_blank" className="network--link"><img className="network_img" src="/contacts-icons/white_instagram.svg"></img></a>
+                    <a href="https://www.instagram.com/jetoffice.assistance/" target="_blank" className="network--link"><img className="network_img" src="/contacts-icons/white_instagram.svg"></img></a>
                   </li>
                   <li className="li network_item">
                     <a href="" target="_blank" className="network--link"><img className="network_img" src="/contacts-icons/white_twitter.svg"></img></a>

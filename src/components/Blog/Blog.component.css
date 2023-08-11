@@ -70,13 +70,15 @@
     margin: 0;
     margin-left: 100px;
     text-align: left;
-    color: var(--white, #CCC);
+    color: var(--gray, #8D8D8D);
     font-size: 16px;
 }
 
 .top-link {
     padding-right: 8px;
     padding-left: 8px;
+    color: var(--gray, #8D8D8D);
+    font-size: 16px;
 }
 
 .top-link__home {
@@ -90,7 +92,6 @@
 }
 
 .top-link__resources {
-    color: #ccc;
     text-decoration: none;
     font-size: 16px;
     font-style: normal;

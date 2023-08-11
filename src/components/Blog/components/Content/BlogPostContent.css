@@ -33,6 +33,12 @@
 .about_autor {
     display: flex;
     gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_autor > img {
+    height: 60px;
 }
 
 .about_autor-text {
@@ -151,7 +157,7 @@
 
 .navigation-blog--content.fixed-navigation--bottom {
     position: absolute;
-    bottom: -5%;
+    bottom: -8%;
     width: max-content;
     width: 15vw;
 }
