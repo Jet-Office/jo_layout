@@ -28,6 +28,15 @@
   margin-bottom: 10px;
 }
 
+.service-list-section__title {
+  font-size: 20px;
+}
+
+.service-list-section__description {
+  font-size: 20px;
+  font-weight: normal;
+}
+
 @media (max-width: 641px) {
   .service-list-section {
     justify-content: center;
@@ -42,5 +51,15 @@
   .service-list-section__item {
     width: 80%;
     padding: 12px;
+  }
+
+  .service-list-section__title {
+    font-size: 16px;
+  }
+  
+  .service-list-section__description {
+    font-size: 16px;
+    line-height: 140%;
+    padding: 0 40px;
   }
 }

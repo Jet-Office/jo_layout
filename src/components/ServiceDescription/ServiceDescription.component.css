@@ -7,19 +7,21 @@
 
 }
 
-.hero-section__text-container{
+.hero-section__text-container {
   display: flex;
   flex-direction: column;
   width: 50%;
-
+  gap: 24px;
   padding: 100px;
-  position: relative;
-
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   z-index: 555555;
 }
 
 .hero-section__title {
   font-size: 64px;
+  margin: 0;
   background: var(--gradient, linear-gradient(224deg, #00E5E5 0%, #72A5F2 51.04%, #E961FF 100%));
   background-clip: text;
   -webkit-background-clip: text;
@@ -28,9 +30,12 @@
 
 .hero-section__description {
   font-size: 20px;
+  padding-bottom: 48px;
+  width: 90%;
 }
 
 .inner-container {
+  display: flex;
   position: relative;
   width: 100%;
   text-align: start;
@@ -41,6 +46,9 @@
   height: 100vh;
   width: 100vw;
   margin-bottom: 180px; 
+
+  justify-content: center;
+  align-items: center;
 }
 
 .inner-container__background-image {
