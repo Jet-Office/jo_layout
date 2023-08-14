@@ -9,11 +9,13 @@
 
 .main-section__image {
   width: 60%;
-  height: 50vh;
+  height: 80vh;
+  min-height: 100%;
   background-size: cover;
   background-position: center;
   margin-bottom: 20px;
 }
+
 
 .main-section__content {
   display: flex;
