@@ -10,7 +10,7 @@ type Props = {
   blogObject: Blog[];
 };
 
-export const ListBlogPosts: React.FC<Props> = ( {currentCategory, blogObject} ) => {
+export const ListBlogPosts: React.FC<Props> = ( {currentCategory, blogObject} ) => {  
 
   return (
     <>

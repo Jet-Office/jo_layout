@@ -209,6 +209,14 @@
     }
 }
 
+.image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    opacity: 0.36;
+}
+
 .default-bg {
     border: 0;
     background: var(--bg, #14181C);

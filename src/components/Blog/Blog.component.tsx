@@ -7,8 +7,6 @@ import { useEffect, useState } from "react";
 export const Blog: React.FC = () => {
 
   const [ currentCategory, setCurrentCategory ] = useState<string[]>([]);
-
-
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
