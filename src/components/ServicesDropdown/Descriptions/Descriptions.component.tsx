@@ -19,12 +19,14 @@ export const Descriptions: React.FC<Props> = ({ descriptions, windowWidth }) => 
           key={id} 
           className={`services__card ${windowWidth <= 890 && activeDescriptionId === id ? "active" : ""}`}
           onClick={() => {setActiveDescriptionId(id)}}
+          onMouseEnter={() => {setActiveDescriptionId(id)}}
+          onMouseLeave={() => {setActiveDescriptionId(0)}}
           >
           <div className="top-part">
             <div className="top-part--first">
               <img 
                 className="icons_scale"
-                src={ windowWidth <= 890 && activeDescriptionId === id ? `/dropdown-icons/gradient/${icon}` : `/dropdown-icons/${icon}`} alt="" />
+                src={ activeDescriptionId === id ? `/dropdown-icons/gradient/${icon}` : `/dropdown-icons/${icon}`} alt="" />
               <span className={`services__card__title ${windowWidth <= 890 && activeDescriptionId === id ? "active" : ""}`}>{name}</span>
             </div>
             {attachment !== "" && (

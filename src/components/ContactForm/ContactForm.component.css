@@ -91,7 +91,7 @@ input {
   display: none;
 }
 
-@media (max-width: 641px) {
+@media (max-width: 900px) {
   .form__heading {
     display: block;
     text-align: left;
@@ -116,10 +116,10 @@ input {
   .form__group:nth-last-child(2) {
     margin-bottom: 80px;
   }
-  .form__group,
+  /* .form__group,
   .form__submit-button {
     width: 300px;
-  }
+  } */
 }
 
 @media (min-width: 1900px) {

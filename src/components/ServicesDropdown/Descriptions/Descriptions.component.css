@@ -33,6 +33,7 @@
     text-align: left;
     padding: 20px 12px;
     line-height: 140%;
+    position: relative;
 }
 
 .top-part, .top-part--first {
@@ -87,7 +88,6 @@
     }
 
     .services__card {
-        position: relative;
         display: flex;
         flex-basis: 40%;
         flex-direction: column;
@@ -120,5 +120,28 @@
 
     .top-part {
         justify-content: space-between;
+    }
+}
+
+@media (min-width: 890px) {
+
+    .services__card:hover::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 8px; 
+        padding: 1px; 
+        background: var(--gradient);
+        -webkit-mask: 
+          linear-gradient(#fff 0 0) content-box, 
+          linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude; 
+    }
+    
+    .services__card:hover .services__card__title, .services__card:hover .bottom-part {
+        background: var(--gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }

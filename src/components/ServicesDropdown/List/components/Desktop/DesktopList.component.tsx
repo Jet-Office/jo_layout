@@ -80,10 +80,10 @@ export const DesktopList: React.FC<Props> =
                 activeServiceId={activeId}
               ></NewsCard>
               <div className="services__link">
-                <button className="news_link">
+                <a className="news_link">
                   <span>GET MORE NEWS</span>
                   <img src="/helpers-icons/chevron-down-pink.svg" className="chevron-right-pink"></img>
-                </button>
+                </a>
               </div>
             </div>
         ) : null
