@@ -17,7 +17,7 @@ export const Content: React.FC<Props> = ({windowWidth, footerRef, mainNavigation
 
   const { link } = useParams<{ link: string }>();
 
-  const apiUrl = 'http://blog.local/wp-json/wp/v2'; 
+  const apiUrl = 'http://blog-2.local/wp-json/wp/v2'; 
 
   const [isNavigationFixed, setNavigationFixed] = useState(false);
   const [isNavigationFixedBottom, setNavigationFixedBottom] = useState(false);
@@ -34,32 +34,46 @@ export const Content: React.FC<Props> = ({windowWidth, footerRef, mainNavigation
 
   async function fetchBlogPosts() {
     try {
-      const response = await axios.get(`${apiUrl}/pages`);
+      const response = await axios.get(`${apiUrl}/posts`);
       const parsedPosts = response.data.map((post: any) => {
         
         if (link !== post.slug) return;
 
         async function fetchBackground() {
-          try {
-            const attachmentApi = post._links['wp:attachment'][0].href;
-            const attachmentResponse = await fetch(attachmentApi);
-            const attachmentData = await attachmentResponse.json();
-            if (attachmentData[0] != null) setBackground(attachmentData[0].guid.rendered);
-          } catch (error) {
-            console.error('Error fetching blog posts:', error);
+
+          if (post._links['wp:featuredmedia']) {
+        
+            const attachmentApi = post._links['wp:featuredmedia'][0].href;
+            
+            try {
+              const attachmentResponse = await fetch(attachmentApi);
+              const attachmentData = await attachmentResponse.json();
+              
+              if (attachmentData.guid != null) 
+              setBackground(attachmentData.guid.rendered);
+            } 
+            catch (error) {
+              console.error('Error:', error);
+            }
           }
         }
 
         async function fetchAuthor() {
           try {
             const authorApi = post._links['author'][0].href;
-            const authorResponse = await fetch(authorApi);
-            const authorData = await authorResponse.json();
-            setAuthor({
-              avatar: authorData.avatar_urls["96"],
-              name: authorData.name,
-              position: authorData.description
-            });
+
+            if (authorApi != null) {
+              const authorResponse = await fetch(authorApi);
+              const authorData = await authorResponse.json();
+
+              console.log(authorData.avatar_urls["96"]);
+              
+              setAuthor({
+                avatar: authorData.avatar_urls["96"],
+                name: authorData.name,
+                position: authorData.description
+              });
+          }
           } catch (error) {
             console.error('Error fetching blog posts:', error);
           }
@@ -85,29 +99,21 @@ export const Content: React.FC<Props> = ({windowWidth, footerRef, mainNavigation
               });
   
           });
-        });
-
-        //console.log(doc.querySelector('.wp-block-site-tagline')?.textContent);
-        
+        });                
 
         return ({
           title: post.title.rendered,
-          category: doc.querySelector('.category')?.textContent,
-          serviceItem: doc.querySelector('.serviceItem')?.textContent,
+          category: post.acf.hashtag,
+          serviceItem: post.acf.serviceItem,
           link: post.slug,
           content: {
             headInfo: {
               title: post.title.rendered,
-              description: doc.querySelector('.wp-block-site-tagline')?.textContent,
-              autor: {
-                avatar: "",
-                name: "",
-                position: ""
-              },
-              timeToRead: doc.querySelector('.timeToRead')?.textContent,
+              description: post.acf.description,
+              timeToRead: post.acf.timeToRead,
               creationDate: formatDate(post.date)
             },
-            description: doc.querySelector('.description')?.textContent,
+            description: post.acf.postDescription,
             mainInfo: paragraphsArray
           }
         });

@@ -9,7 +9,7 @@ type Props = {
   blog: Blog
 };
 
-export const BlogPost: React.FC<Props> = ( { blog } ) => {    
+export const BlogPost: React.FC<Props> = ( { blog } ) => {      
 
   return (
     <div 
