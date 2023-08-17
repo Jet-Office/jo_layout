@@ -116,6 +116,7 @@
   }
   .hero-section__title {
     font-size: 40px;
+    text-align: center;
   } 
   .hero-section__description {
     font-size: 16px;
