@@ -19,7 +19,7 @@ export const DEFAULT_BLOG_CATEGORY = "All";
 
 export const BlogContent: React.FC<Props> = ({currentCategory, setCurrentCategory}) => {
  
-  const apiUrl = 'http://blog-2.local/wp-json/wp/v2'; 
+  const apiUrl = 'http://13.43.127.189/wp-json/wp/v2'; 
   const [blogPosts, setBlogPosts] = useState<Blog[]>([]);
 
   async function fetchBlogPosts() {

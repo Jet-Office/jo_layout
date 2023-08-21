@@ -9,7 +9,7 @@ export interface Blog {
         headInfo: {
             title: string;
             description: string;
-            autor: {
+            author: {
                 avatar: string;
                 name: string;
                 position: string;

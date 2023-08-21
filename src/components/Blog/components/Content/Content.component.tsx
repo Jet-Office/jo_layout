@@ -17,7 +17,7 @@ export const Content: React.FC<Props> = ({windowWidth, footerRef, mainNavigation
 
   const { link } = useParams<{ link: string }>();
 
-  const apiUrl = 'http://blog-2.local/wp-json/wp/v2'; 
+  const apiUrl = 'http://13.43.127.189/wp-json/wp/v2'; 
 
   const [isNavigationFixed, setNavigationFixed] = useState(false);
   const [isNavigationFixedBottom, setNavigationFixedBottom] = useState(false);
@@ -26,11 +26,7 @@ export const Content: React.FC<Props> = ({windowWidth, footerRef, mainNavigation
 
   const [blogPost, setBlogPost] = useState<Blog>();
   const [background, setBackground] = useState("");
-  const [author, setAuthor] = useState({
-    avatar: "",
-    name: "",
-    position: ""
-  });
+  const [avatar, setAvatar] = useState("");
 
   async function fetchBlogPosts() {
     try {
@@ -60,19 +56,12 @@ export const Content: React.FC<Props> = ({windowWidth, footerRef, mainNavigation
 
         async function fetchAuthor() {
           try {
-            const authorApi = post._links['author'][0].href;
+            const avatarApi = apiUrl + '/media/' + post.acf.avatar;
 
-            if (authorApi != null) {
-              const authorResponse = await fetch(authorApi);
-              const authorData = await authorResponse.json();
-
-              console.log(authorData.avatar_urls["96"]);
-              
-              setAuthor({
-                avatar: authorData.avatar_urls["96"],
-                name: authorData.name,
-                position: authorData.description
-              });
+            if (avatarApi != null) {
+              const authorResponse = await fetch(avatarApi);
+              const authorData = await authorResponse.json();              
+              setAvatar(authorData.guid.rendered);
           }
           } catch (error) {
             console.error('Error fetching blog posts:', error);
@@ -99,7 +88,10 @@ export const Content: React.FC<Props> = ({windowWidth, footerRef, mainNavigation
               });
   
           });
-        });                
+        });
+
+        
+        
 
         return ({
           title: post.title.rendered,
@@ -111,7 +103,11 @@ export const Content: React.FC<Props> = ({windowWidth, footerRef, mainNavigation
               title: post.title.rendered,
               description: post.acf.description,
               timeToRead: post.acf.timeToRead,
-              creationDate: formatDate(post.date)
+              creationDate: formatDate(post.date),
+              author: {
+                name: post.acf.authorName,
+                position: post.acf.authorPosition
+              },
             },
             description: post.acf.postDescription,
             mainInfo: paragraphsArray
@@ -201,10 +197,10 @@ export const Content: React.FC<Props> = ({windowWidth, footerRef, mainNavigation
           </div>
           <div className="blog_post--header---info">
             <div className="about_autor">
-              <img src={author.avatar}></img>
+              <img src={avatar}></img>
               <div className="about_autor-text">
-                <span className="span autor_name">{author.name}</span>
-                <span className="span">{author.position}</span>
+                <span className="span autor_name">{blogPost?.content.headInfo.author.name}</span>
+                <span className="span">{blogPost?.content.headInfo.author.position}</span>
               </div>
             </div>
             <div className="about_time">
