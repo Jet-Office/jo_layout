@@ -31,7 +31,7 @@ export const Content: React.FC<Props> = ({windowWidth, footerRef, mainNavigation
 
   async function fetchBlogPosts() {
     try {
-      const response = await axios.get(`${apiUrl}/posts`);
+      const response = await axios.get(`${apiUrl}/posts/`);
       const parsedPosts = response.data.map((post: any) => {
         
         if (link !== post.slug) return;
@@ -40,7 +40,7 @@ export const Content: React.FC<Props> = ({windowWidth, footerRef, mainNavigation
 
           if (post._links['wp:featuredmedia']) {
         
-            const attachmentApi = post._links['wp:featuredmedia'][0].href;
+            const attachmentApi = post._links['wp:featuredmedia'][0].href + '/';
             
             try {
               const attachmentResponse = await fetch(attachmentApi);
@@ -57,7 +57,7 @@ export const Content: React.FC<Props> = ({windowWidth, footerRef, mainNavigation
 
         async function fetchAuthor() {
           try {
-            const avatarApi = apiUrl + '/media/' + post.acf.avatar;
+            const avatarApi = apiUrl + '/media/' + post.acf.avatar + '/';
 
             if (avatarApi != null) {
               const authorResponse = await fetch(avatarApi);
@@ -90,10 +90,7 @@ export const Content: React.FC<Props> = ({windowWidth, footerRef, mainNavigation
   
           });
         });
-
         
-        
-
         return ({
           title: post.title.rendered,
           category: post.acf.hashtag,

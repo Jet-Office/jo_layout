@@ -24,7 +24,7 @@ export const BlogContent: React.FC<Props> = ({currentCategory, setCurrentCategor
 
   async function fetchBlogPosts() {
     try {
-      const response = await axios.get(`${apiUrl}/posts`);
+      const response = await axios.get(`${apiUrl}/posts/`);
       const parsedPosts = await Promise.all(response.data.map(async (post: any, index: number) => {        
 
         //const attachmentApi = post._links['wp:attachment'][0].href;
@@ -32,7 +32,9 @@ export const BlogContent: React.FC<Props> = ({currentCategory, setCurrentCategor
 
         if (post._links['wp:featuredmedia']) {
         
-          const attachmentApi = post._links['wp:featuredmedia'][0].href;
+          const attachmentApi = post._links['wp:featuredmedia'][0].href + '/';
+          console.log(attachmentApi);
+          
           try {
             const attachmentResponse = await fetch(attachmentApi);
             const attachmentData = await attachmentResponse.json();
