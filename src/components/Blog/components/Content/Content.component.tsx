@@ -6,6 +6,7 @@ import "./BlogPostContent.css"
 import { Link, useParams } from "react-router-dom";
 import { Blog } from "../../../../types/blog.type";
 import axios from 'axios';
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 type Props = {
   windowWidth: number;
@@ -184,108 +185,118 @@ export const Content: React.FC<Props> = ({windowWidth, footerRef, mainNavigation
   }  
   
   return (
-    <section className="blog_post-content">
-      <div 
-        ref={headerRef}
-        className="blog_post--header--bg bg--gradient"
-        style={{ background:  `url(${background}) center/cover no-repeat` }}
-        >
-        <div className="container blog_post--header--text">
-          <div className="blog_post--header---description">
-            <h1 className="h1">{blogPost?.content.headInfo.title}</h1>
-            <p className="p">{blogPost?.content.headInfo.description}</p>
-          </div>
-          <div className="blog_post--header---info">
-            <div className="about_autor">
-              <img src={avatar}></img>
-              <div className="about_autor-text">
-                <span className="span autor_name">{blogPost?.content.headInfo.author.name}</span>
-                <span className="span">{blogPost?.content.headInfo.author.position}</span>
+    <HelmetProvider>
+      <section className="blog_post-content">
+        <Helmet>
+          <meta property="og:title" content={blogPost?.content.headInfo.title} />
+          <meta property="og:description" content={blogPost?.content.headInfo.description} />
+          <meta property="og:type" content="article" />
+          <meta property="article:author" content={blogPost?.content.headInfo.author.name} />
+          <meta property="og:site_name" content="JetOffice" />
+          <meta property="og:url" content={"https://www.jetoffice.org/#/resources/blog/" + link}  />
+          <meta property="og:image" content={background} />
+        </Helmet>
+        <div 
+          ref={headerRef}
+          className="blog_post--header--bg bg--gradient"
+          style={{ background:  `url(${background}) center/cover no-repeat` }}
+          >
+          <div className="container blog_post--header--text">
+            <div className="blog_post--header---description">
+              <h1 className="h1">{blogPost?.content.headInfo.title}</h1>
+              <p className="p">{blogPost?.content.headInfo.description}</p>
+            </div>
+            <div className="blog_post--header---info">
+              <div className="about_autor">
+                <img src={avatar}></img>
+                <div className="about_autor-text">
+                  <span className="span autor_name">{blogPost?.content.headInfo.author.name}</span>
+                  <span className="span">{blogPost?.content.headInfo.author.position}</span>
+                </div>
               </div>
-            </div>
-            <div className="about_time">
-              <span className="span">{blogPost?.content.headInfo.timeToRead} read</span>
-            </div>
-            <div className="about_create_date">
-              <span className="span">{blogPost?.content.headInfo.creationDate}</span>
+              <div className="about_time">
+                <span className="span">{blogPost?.content.headInfo.timeToRead} read</span>
+              </div>
+              <div className="about_create_date">
+                <span className="span">{blogPost?.content.headInfo.creationDate}</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="top-link--container">
-        <Link className="top-link top-link__home" to="/">
-          Home
-        </Link>{" "}
-        &#62;{" "}
-        <Link className="top-link top-link__resources" to="/resources">
-          Resources
-        </Link>{" "}
-        &#62;{" "}
-        <Link className="top-link top-link__resources" to="/resources/blog">
-          Blog
-        </Link>
-        &#62;{" "}
-        <span className="top-link">{blogPost?.title}</span>
-      </div>
-      <div className="container main-columns">
-        <div className="left--column">
-          <div className="blog_post--description">
-            <p className="p">{blogPost?.content.description}</p>
-          </div>
-          <div className="blog_post--main_part">
-            {blogPost?.content.mainInfo.map((content) => (
-              <div 
-                className="main_part--content"
-                key={content.id}
-                id={content.heading}
-                >
-                <h2 className="h2">{content.heading}</h2>
-                <p className="p">{content.content}</p>
-              </div>
-            ))}
-          </div>
+        <div className="top-link--container">
+          <Link className="top-link top-link__home" to="/">
+            Home
+          </Link>{" "}
+          &#62;{" "}
+          <Link className="top-link top-link__resources" to="/resources">
+            Resources
+          </Link>{" "}
+          &#62;{" "}
+          <Link className="top-link top-link__resources" to="/resources/blog">
+            Blog
+          </Link>
+          &#62;{" "}
+          <span className="top-link">{blogPost?.title}</span>
         </div>
-        <div className={`right--column`}>
-            <div
-              ref={blogNavRef}
-              className={
-                `navigation-blog--content 
-                ${isNavigationFixed ? 'fixed-navigation' : ''}
-                ${isNavigationFixedBottom ? 'fixed-navigation--bottom' : ''}
-                `}>
-              <div className="contents_table">
-                <h3>table of contents</h3>
-              </div>
-              <ul className="blog--navigation">
-                {blogPost?.content.mainInfo.map((content) => (
-                  <li
-                    className="li navigation--link"
-                    key={content.id}
-                    >
-                    <a className="a" href={`#${content.heading}`}>{content.heading}</a>
-                  </li>
-                ))}
-              </ul>
-              <div className="network_links">
-                <ul className="ul network_links-list">
-                  <li className="li network_item">
-                    <a href="https://www.instagram.com/jetoffice.assistance/" target="_blank" className="network--link"><img className="network_img" src="/contacts-icons/white_instagram.svg"></img></a>
-                  </li>
-                  <li className="li network_item">
-                    <a href="https://twitter.com/JetOffice23" target="_blank" className="network--link"><img className="network_img" src="/contacts-icons/white_twitter.svg"></img></a>
-                  </li>
-                  <li className="li network_item">
-                    <a href="https://www.linkedin.com/company/jetoffice-ua/" target="_blank" className="network--link"><img className="network_img" src="/contacts-icons/white_linkedin.svg"></img></a>
-                  </li>
-                  <li className="li network_item">
-                    <a href="" target="_blank" className="network--link"><img className="network_img" src="/contacts-icons/white_share.svg"></img></a>
-                  </li>
+        <div className="container main-columns">
+          <div className="left--column">
+            <div className="blog_post--description">
+              <p className="p">{blogPost?.content.description}</p>
+            </div>
+            <div className="blog_post--main_part">
+              {blogPost?.content.mainInfo.map((content) => (
+                <div 
+                  className="main_part--content"
+                  key={content.id}
+                  id={content.heading}
+                  >
+                  <h2 className="h2">{content.heading}</h2>
+                  <p className="p">{content.content}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className={`right--column`}>
+              <div
+                ref={blogNavRef}
+                className={
+                  `navigation-blog--content 
+                  ${isNavigationFixed ? 'fixed-navigation' : ''}
+                  ${isNavigationFixedBottom ? 'fixed-navigation--bottom' : ''}
+                  `}>
+                <div className="contents_table">
+                  <h3>table of contents</h3>
+                </div>
+                <ul className="blog--navigation">
+                  {blogPost?.content.mainInfo.map((content) => (
+                    <li
+                      className="li navigation--link"
+                      key={content.id}
+                      >
+                      <a className="a" href={`#${content.heading}`}>{content.heading}</a>
+                    </li>
+                  ))}
                 </ul>
+                <div className="network_links">
+                  <ul className="ul network_links-list">
+                    <li className="li network_item">
+                      <a href="https://www.instagram.com/jetoffice.assistance/" target="_blank" className="network--link"><img className="network_img" src="/contacts-icons/white_instagram.svg"></img></a>
+                    </li>
+                    <li className="li network_item">
+                      <a href="https://twitter.com/JetOffice23" target="_blank" className="network--link"><img className="network_img" src="/contacts-icons/white_twitter.svg"></img></a>
+                    </li>
+                    <li className="li network_item">
+                      <a href="https://www.linkedin.com/company/jetoffice-ua/" target="_blank" className="network--link"><img className="network_img" src="/contacts-icons/white_linkedin.svg"></img></a>
+                    </li>
+                    <li className="li network_item">
+                      <a href="" target="_blank" className="network--link"><img className="network_img" src="/contacts-icons/white_share.svg"></img></a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
+          </div>
         </div>
-      </div>
-    </section>
-    
+      </section>
+    </HelmetProvider>
   );
 };
