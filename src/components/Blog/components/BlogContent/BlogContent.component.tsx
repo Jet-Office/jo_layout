@@ -7,6 +7,8 @@ import { BlogCategory } from "../BlogCategory";
 import { BlogPost } from "../BlogPost";
 import axios from 'axios';
 
+import { Helmet, HelmetProvider } from "react-helmet-async";
+
 import "../../Blog.component.css"
 import { Blog } from "../../../../types/blog.type";
 
@@ -72,8 +74,11 @@ export const BlogContent: React.FC<Props> = ({currentCategory, setCurrentCategor
 
 
   return (
-    <>
+    <HelmetProvider>
       <section id="blog--content">
+        <Helmet>
+          <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+        </Helmet>
         <ListBlogPosts currentCategory={currentCategory} blogObject={blogPosts}  />
 
         <div id="description--container">
@@ -86,6 +91,6 @@ export const BlogContent: React.FC<Props> = ({currentCategory, setCurrentCategor
 
         {/* <ListBlogPosts currentCategory={currentCategory} blogObject={secondBlog}  /> */}
       </section>
-    </>
+    </HelmetProvider>
   );
 };
