@@ -185,6 +185,7 @@ export const Content: React.FC<Props> = ({windowWidth, footerRef, mainNavigation
     <HelmetProvider>
       <section className="blog_post-content">
         <Helmet>
+          <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
           <meta property="og:title" content={blogPost?.content.headInfo.title} />
           <meta property="og:description" content={blogPost?.content.headInfo.description} />
           <meta property="og:type" content="article" />

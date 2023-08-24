@@ -32,13 +32,10 @@ export const BlogContent: React.FC<Props> = ({currentCategory, setCurrentCategor
 
         if (post._links['wp:featuredmedia']) {
         
-          const attachmentApi = post._links['wp:featuredmedia'][0].href + '/';
-          console.log(attachmentApi);
-          
+          const attachmentApi = post._links['wp:featuredmedia'][0].href + '/';          
           try {
             const attachmentResponse = await fetch(attachmentApi);
             const attachmentData = await attachmentResponse.json();
-            console.log(attachmentData);
             
             if (attachmentData != null) 
               background = attachmentData.guid.rendered;
