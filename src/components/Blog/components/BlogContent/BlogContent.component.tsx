@@ -77,7 +77,6 @@ export const BlogContent: React.FC<Props> = ({currentCategory, setCurrentCategor
     <HelmetProvider>
       <section id="blog--content">
         <Helmet>
-          <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
         </Helmet>
         <ListBlogPosts currentCategory={currentCategory} blogObject={blogPosts}  />
 
