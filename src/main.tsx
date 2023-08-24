@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import { BrowserRouter } from "react-router-dom";
+import {  HashRouter } from "react-router-dom";
 
 import App from "./App";
 
@@ -12,11 +12,11 @@ import { DropdownProvider } from "./DropdownContext";
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <ModalProvider>
     <DropdownProvider>
-      <BrowserRouter>
+      <HashRouter>
         <React.StrictMode>
             <App />
         </React.StrictMode>
-      </BrowserRouter>
+      </HashRouter>
     </DropdownProvider>
   </ModalProvider>
 );

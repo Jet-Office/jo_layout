@@ -27,7 +27,7 @@ export const ListOfServices: React.FC = () => {
               </p>
             </div>
           </div>
-          <div className="top-link-main">
+          <div className="top-link-main top-link-list">
             <Link className="top-link__home" to="/">
               Home
             </Link>{" "}

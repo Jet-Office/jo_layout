@@ -59,7 +59,7 @@ html {
 }
 
 body {
-  font-family: "Proxima Nova regular", serif;
+  font-family: "Proxima Nova regular";
 
   box-sizing: border-box;
 
@@ -89,10 +89,13 @@ body.modal-open {
 
 p, button {
   margin: 0;
+  font-family: "Proxima Nova regular";
 }
 
 .h2 {
   /* all: unset; */
+
+  font-family: "Proxima Nova Bold";
 
   font-weight: 400;
   font-size: 40px;
