@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, useContext } from "react";
 
 import { Routes, Route } from "react-router-dom";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import "./App.css";
 
@@ -121,59 +122,68 @@ function App() {
   const [active, setActive] = useContext(ModalContext);
 
   return (
-    <div className="App">
-      <Modal active={active} setActive={setActive} />
-        <Header
-          activePageRef={activePageRef}
-          windowWidth={windowWidth}
-          mainNavigationRef={mainNavigationRef}
-        />
+    <HelmetProvider>
+      <div className="App">
+        <Helmet>
+          <meta
+            name="description"
+            content="JetOffice offers professional virtual assistance and business solutions for effective management and development. Our high-quality services include virtual admin support, consulting, web development, and more. Trust JetOffice as your reliable partner for business success." />
+          <title>JetOffice - Virtual Assistance & Business Solutions</title>
+        </Helmet>
 
-      <Routes>
-        <Route path="" element={
-          <>
-            <SectionHead homePageRef={homePageRef}/>
+        <Modal active={active} setActive={setActive} />
+          <Header
+            activePageRef={activePageRef}
+            windowWidth={windowWidth}
+            mainNavigationRef={mainNavigationRef}
+          />
 
-            <main className="main">
-              <div className="main__container">
-                <Services activeRef={servicesPageRef} />
-                {windowWidth <= 641 && <ControlPreview />}
-                <Benefits />
-                <Pricing windowWidth={windowWidth} activePageRef={pricingPageRef} />
-                <Cases windowWidth={windowWidth} casesPageRef={casesPageRef} />
-                <About windowWidth={windowWidth} aboutPageRef={aboutPageRef} />
-                <Faq />
-                <Crew />
-              </div>
-            </main>
+        <Routes>
+          <Route path="" element={
+            <>
+              <SectionHead homePageRef={homePageRef}/>
 
-          </>
-        } />
-        <Route path="services/:link" element={
-          <ListOfServices />
-        } />
+              <main className="main">
+                <div className="main__container">
+                  <Services activeRef={servicesPageRef} />
+                  {windowWidth <= 641 && <ControlPreview />}
+                  <Benefits />
+                  <Pricing windowWidth={windowWidth} activePageRef={pricingPageRef} />
+                  <Cases windowWidth={windowWidth} casesPageRef={casesPageRef} />
+                  <About windowWidth={windowWidth} aboutPageRef={aboutPageRef} />
+                  <Faq />
+                  <Crew />
+                </div>
+              </main>
 
-        <Route path="services" element={
-          <ServicesPage />
-        } />
-        <Route path="services/:link/:subLink" element={
-          <ServiceDescription />
-        } />
-        <Route path="/resources/blog" element={
-          <Blog />
-        } />
-        <Route path="/resources/blog/:link" element={
-          <Content windowWidth={windowWidth} footerRef={footerRef} mainNavigationRef={mainNavigationRef}/>
-        } />
+            </>
+          } />
+          <Route path="services/:link" element={
+            <ListOfServices />
+          } />
 
-        <Route path="*" element={
-          <NotFound />
-        } />
-      </Routes>
-      <footer className="footermain">
-        <Footer contactsPageRef={contactsPageRef} footerRef={footerRef} />
-      </footer>
-    </div>
+          <Route path="services" element={
+            <ServicesPage />
+          } />
+          <Route path="services/:link/:subLink" element={
+            <ServiceDescription />
+          } />
+          <Route path="/resources/blog" element={
+            <Blog />
+          } />
+          <Route path="/resources/blog/:link" element={
+            <Content windowWidth={windowWidth} footerRef={footerRef} mainNavigationRef={mainNavigationRef}/>
+          } />
+
+          <Route path="*" element={
+            <NotFound />
+          } />
+        </Routes>
+        <footer className="footermain">
+          <Footer contactsPageRef={contactsPageRef} footerRef={footerRef} />
+        </footer>
+      </div>
+    </HelmetProvider>
   );
 }
 

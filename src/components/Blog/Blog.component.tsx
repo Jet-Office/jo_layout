@@ -26,7 +26,7 @@ export const Blog: React.FC = () => {
     <HelmetProvider>
       <div id="blog" className="blog">
         <Helmet>
-          <title>Blog</title>
+          <title>JetOffice | Blog</title>
           <meta
             name="description"
             content="Explore a Wealth of Insights with JetOffice's Blog: Cases and Lifehacks in Coaching, Leadership, Design, Development, Project Management, Calendars, Documents, Business Events, Assistance, HR, and Social Media."

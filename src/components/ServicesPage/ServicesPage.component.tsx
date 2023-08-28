@@ -8,7 +8,7 @@ export const ServicesPage: React.FC = () => {
     <HelmetProvider>
       <div className="services-page">
         <Helmet>
-          <title>Services | JetOffice</title>
+          <title>JetOffice | Services</title>
           <meta
             name="description"
             content="Unlock Success with JetOffice's Services: Coaching, Leadership, Design & More. Explore Now!"

@@ -185,6 +185,11 @@ export const Content: React.FC<Props> = ({windowWidth, footerRef, mainNavigation
     <HelmetProvider>
       <section className="blog_post-content">
         <Helmet>
+          <title>JetOffice | {String(blogPost?.content.headInfo.title)}</title>
+          <meta
+            name="description"
+            content={String(blogPost?.content.headInfo.description)}
+          />
           <meta property="og:title" content={blogPost?.content.headInfo.title} />
           <meta property="og:description" content={blogPost?.content.headInfo.description} />
           <meta property="og:type" content="article" />
