@@ -33,6 +33,8 @@ export const Contacts: React.FC<Props> = ({ contactsPageRef }) => {
             </a>
           ))}
         </div>
+      </div>
+      <div className="socials_container">
         <h2 className="contacts__title h2" id="socials__title">
           Socials
         </h2>
