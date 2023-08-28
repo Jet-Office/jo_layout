@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Blog.component.css"
 import { BlogCategoryList } from "./components/BlogCategoryList";
 import { useEffect, useState } from "react";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 export const Blog: React.FC = () => {
 
@@ -22,39 +23,48 @@ export const Blog: React.FC = () => {
   }, []);
 
   return (
-    <div id="blog" className="blog">
-      <section className="blog--container">
-        <div className="blog--header-part">
-          <section className="blog--top-part bg--gradient">
-            {/* <h1>Blog</h1> */}
-            <p></p>
-          </section>
-          <div className="top-link--container">
-            <Link className="top-link top-link__home" to="/">
-              Home
-            </Link>{" "}
-            &#62;{" "}
-            <Link className="top-link top-link__resources" to="/resources">
-              Resources
-            </Link>{" "}
-            &#62;{" "}
-            <span className="top-link">Blog</span>
+    <HelmetProvider>
+      <div id="blog" className="blog">
+        <Helmet>
+          <title>Blog</title>
+          <meta
+            name="description"
+            content="Explore a Wealth of Insights with JetOffice's Blog: Cases and Lifehacks in Coaching, Leadership, Design, Development, Project Management, Calendars, Documents, Business Events, Assistance, HR, and Social Media."
+          />
+        </Helmet>
+        <section className="blog--container">
+          <div className="blog--header-part">
+            <section className="blog--top-part bg--gradient">
+              {/* <h1>Blog</h1> */}
+              <p></p>
+            </section>
+            <div className="top-link--container">
+              <Link className="top-link top-link__home" to="/">
+                Home
+              </Link>{" "}
+              &#62;{" "}
+              <Link className="top-link top-link__resources" to="/resources">
+                Resources
+              </Link>{" "}
+              &#62;{" "}
+              <span className="top-link">Blog</span>
+            </div>
           </div>
-        </div>
 
-        <BlogCategoryList 
-            currentCategory={ currentCategory } 
-            setCurrentCategory={ setCurrentCategory }
-            windowWidth={ windowWidth }
-          ></BlogCategoryList>
+          <BlogCategoryList 
+              currentCategory={ currentCategory } 
+              setCurrentCategory={ setCurrentCategory }
+              windowWidth={ windowWidth }
+            ></BlogCategoryList>
 
-        <div className="blog--section">
-          <BlogContent
-            currentCategory={ currentCategory } 
-            setCurrentCategory={ setCurrentCategory }
-          ></BlogContent>
-        </div>
-      </section>
-    </div>
+          <div className="blog--section">
+            <BlogContent
+              currentCategory={ currentCategory } 
+              setCurrentCategory={ setCurrentCategory }
+            ></BlogContent>
+          </div>
+        </section>
+      </div>
+    </HelmetProvider>
   )
 };
