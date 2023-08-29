@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 
 import "../../Blog.component.css"
 import "./BlogPostContent.css"
+import { apiUrlBlog } from "../BlogContent";
 
 import { Link, useParams } from "react-router-dom";
 import { Blog } from "../../../../types/blog.type";
@@ -17,8 +18,6 @@ export const Content: React.FC<Props> = ({windowWidth, footerRef, mainNavigation
 
   const { link } = useParams<{ link: string }>();
 
-  const apiUrl = 'http://13.43.127.189/wp-json/wp/v2'; 
-
   const [isNavigationFixed, setNavigationFixed] = useState(false);
   const [isNavigationFixedBottom, setNavigationFixedBottom] = useState(false);
   const headerRef = useRef<HTMLDivElement | null>(null);
@@ -30,7 +29,7 @@ export const Content: React.FC<Props> = ({windowWidth, footerRef, mainNavigation
 
   async function fetchBlogPosts() {
     try {
-      const response = await axios.get(`${apiUrl}/posts`);
+      const response = await axios.get(`${apiUrlBlog}/posts`);
       const parsedPosts = response.data.map((post: any) => {
         
         if (link !== post.slug) return;
@@ -56,7 +55,7 @@ export const Content: React.FC<Props> = ({windowWidth, footerRef, mainNavigation
 
         async function fetchAuthor() {
           try {
-            const avatarApi = apiUrl + '/media/' + post.acf.avatar;
+            const avatarApi = apiUrlBlog + '/media/' + post.acf.avatar;
 
             if (avatarApi != null) {
               const authorResponse = await fetch(avatarApi);
@@ -89,9 +88,6 @@ export const Content: React.FC<Props> = ({windowWidth, footerRef, mainNavigation
   
           });
         });
-
-        
-        
 
         return ({
           title: post.title.rendered,
