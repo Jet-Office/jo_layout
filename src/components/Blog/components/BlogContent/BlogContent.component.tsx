@@ -30,6 +30,8 @@ export const BlogContent: React.FC<Props> = ({currentCategory, setCurrentCategor
         if (post._links['wp:featuredmedia']) {
         
           const attachmentApi = post._links['wp:featuredmedia'][0].href;
+          console.log(attachmentApi);
+
           try {
             const attachmentResponse = await fetch(attachmentApi);
             const attachmentData = await attachmentResponse.json();
@@ -52,7 +54,7 @@ export const BlogContent: React.FC<Props> = ({currentCategory, setCurrentCategor
         return ({
           id: index,
           title: post.title.rendered,
-          background: background,
+          background: post.jetpack_featured_media_url,
           category: post.acf.hashtag,
           serviceItem: post.acf.serviceItem,
           link: post.slug
