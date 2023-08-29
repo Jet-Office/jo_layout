@@ -36,9 +36,6 @@ function App() {
   const casesPageRef = useRef<HTMLElement>(null);
   const aboutPageRef = useRef<HTMLElement>(null);
   const contactsPageRef = useRef<HTMLElement>(null);
-
-  const footerRef = useRef<HTMLDivElement | null>(null);
-  const mainNavigationRef = useRef<HTMLDivElement | null>(null);
   
   const [activePageRef, setActivePageRef] =
     useState<React.RefObject<HTMLElement>>(homePageRef);
@@ -127,15 +124,14 @@ function App() {
         <Helmet>
           <meta
             name="description"
-            content="JetOffice offers professional virtual assistance and business solutions for effective management and development. Our high-quality services include virtual admin support, consulting, web development, and more. Trust JetOffice as your reliable partner for business success." />
-          <title>JetOffice - Virtual Assistance & Business Solutions</title>
+            content="JetOffice provides remote assistants, administrative support, and business solutions for both personal and corporate purposes." />
+          <title>JetOffice© | Virtual Assistance & Business Solutions</title>
         </Helmet>
 
         <Modal active={active} setActive={setActive} />
           <Header
             activePageRef={activePageRef}
             windowWidth={windowWidth}
-            mainNavigationRef={mainNavigationRef}
           />
 
         <Routes>
@@ -172,7 +168,7 @@ function App() {
             <Blog />
           } />
           <Route path="/resources/blog/:link" element={
-            <Content windowWidth={windowWidth} footerRef={footerRef} mainNavigationRef={mainNavigationRef}/>
+            <Content windowWidth={windowWidth}/>
           } />
 
           <Route path="*" element={
@@ -180,7 +176,7 @@ function App() {
           } />
         </Routes>
         <footer className="footermain">
-          <Footer contactsPageRef={contactsPageRef} footerRef={footerRef} />
+          <Footer contactsPageRef={contactsPageRef} />
         </footer>
       </div>
     </HelmetProvider>

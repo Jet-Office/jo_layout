@@ -9,20 +9,15 @@ import { Blog } from "../../../../types/blog.type";
 import axios from 'axios';
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
+import { ShareContainer } from "../../../ShareContainer";
+
 type Props = {
   windowWidth: number;
-  footerRef: React.RefObject<HTMLDivElement | null>;
-  mainNavigationRef: React.RefObject<HTMLDivElement | null>;
 };
 
-export const Content: React.FC<Props> = ({windowWidth, footerRef, mainNavigationRef}) => {
+export const Content: React.FC<Props> = ({windowWidth}) => {
 
   const { link } = useParams<{ link: string }>();
-
-  const [isNavigationFixed, setNavigationFixed] = useState(false);
-  const [isNavigationFixedBottom, setNavigationFixedBottom] = useState(false);
-  const headerRef = useRef<HTMLDivElement | null>(null);
-  const blogNavRef = useRef<HTMLDivElement | null>(null);
 
   const [blogPost, setBlogPost] = useState<Blog>();
   const [avatar, setAvatar] = useState("");
@@ -112,41 +107,6 @@ export const Content: React.FC<Props> = ({windowWidth, footerRef, mainNavigation
   }, []);
   
 
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  const handleScroll = () => {
-    if (headerRef.current && footerRef.current && mainNavigationRef.current && blogNavRef.current) {
-      const headerHeight = headerRef.current.clientHeight;
-      const footerHeight = footerRef.current.clientHeight;
-      const mainNavHeight = mainNavigationRef.current.clientHeight;
-      const blogNavHeight = blogNavRef.current.clientHeight;
-
-      const scrollY = window.scrollY;      
-
-      const marginBottom = 200;
-      const maxScroll = document.body.scrollHeight - (footerHeight + marginBottom + mainNavHeight + blogNavHeight);
-      
-      if (scrollY > headerHeight && scrollY < maxScroll) {
-        setNavigationFixed(true);
-        setNavigationFixedBottom(false);
-      }
-      else if (scrollY >= maxScroll) {
-        setNavigationFixed(false);
-        setNavigationFixedBottom(true);
-      }
-      else {
-        setNavigationFixed(false);
-        setNavigationFixedBottom(false);
-      }
-    }
-  }
-
   function formatDate(inputDate: string) {
     const months = [
       'January', 'February', 'March', 'April', 'May', 'June',
@@ -166,7 +126,10 @@ export const Content: React.FC<Props> = ({windowWidth, footerRef, mainNavigation
     <HelmetProvider>
       <section className="blog_post-content">
         <Helmet>
-          <title>JetOffice | {String(blogPost?.content.headInfo.title)}</title>
+          <title>JetOffice© | {String(blogPost?.content.headInfo.title)}</title>
+          <meta name="twitter:card" content="summary" /> 
+          <meta name="twitter:site" content="@jetoffice" /> 
+          <meta property="og:url" content={"https://www.jetoffice.org/#/resources/blog/" + link} /> 
           <meta
             name="description"
             content={String(blogPost?.content.headInfo.description)}
@@ -180,7 +143,6 @@ export const Content: React.FC<Props> = ({windowWidth, footerRef, mainNavigation
           <meta property="og:image" content={blogPost?.background} />
         </Helmet>
         <div 
-          ref={headerRef}
           className="blog_post--header--bg bg--gradient"
           style={{ background:  `url(${blogPost?.background}) center/cover no-repeat` }}
           >
@@ -241,11 +203,8 @@ export const Content: React.FC<Props> = ({windowWidth, footerRef, mainNavigation
           </div>
           <div className={`right--column`}>
               <div
-                ref={blogNavRef}
                 className={
                   `navigation-blog--content 
-                  ${isNavigationFixed ? 'fixed-navigation' : ''}
-                  ${isNavigationFixedBottom ? 'fixed-navigation--bottom' : ''}
                   `}>
                 <div className="contents_table">
                   <h3>table of contents</h3>
@@ -260,22 +219,11 @@ export const Content: React.FC<Props> = ({windowWidth, footerRef, mainNavigation
                     </li>
                   ))}
                 </ul>
-                <div className="network_links">
-                  <ul className="ul network_links-list">
-                    <li className="li network_item">
-                      <a href="https://www.instagram.com/jetoffice.assistance/" target="_blank" className="network--link"><img className="network_img" src="/contacts-icons/white_instagram.svg"></img></a>
-                    </li>
-                    <li className="li network_item">
-                      <a href="https://twitter.com/JetOffice23" target="_blank" className="network--link"><img className="network_img" src="/contacts-icons/white_twitter.svg"></img></a>
-                    </li>
-                    <li className="li network_item">
-                      <a href="https://www.linkedin.com/company/jetoffice-ua/" target="_blank" className="network--link"><img className="network_img" src="/contacts-icons/white_linkedin.svg"></img></a>
-                    </li>
-                    <li className="li network_item">
-                      <a href="" target="_blank" className="network--link"><img className="network_img" src="/contacts-icons/white_share.svg"></img></a>
-                    </li>
-                  </ul>
-                </div>
+                <ShareContainer 
+                  pageUrl={"https://www.jetoffice.org/#/resources/blog/" + blogPost?.link ?? ""} 
+                  pageTitle={blogPost?.title ?? ""} 
+                  pageDescription={blogPost?.content.description ?? ""}
+                />
               </div>
           </div>
         </div>
