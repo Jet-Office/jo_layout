@@ -10,10 +10,12 @@ import axios from 'axios';
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import { ShareContainer } from "../../../ShareContainer";
+import ReactHtmlParser from 'react-html-parser';
 
 type Props = {
   windowWidth: number;
 };
+
 
 export const Content: React.FC<Props> = ({windowWidth}) => {
 
@@ -56,16 +58,20 @@ export const Content: React.FC<Props> = ({windowWidth}) => {
 
         Array.from(mainInfoArray).map(paragraph => {
           const mainInfo = Array.from(paragraph.querySelectorAll('.mainInfo'));
+          console.log(mainInfo);
+          
           mainInfo.map((info, index) => {
               paragraphsArray.push({
                 id: index,
                 heading: info.querySelector('.wp-block-heading')?.textContent, 
-                content: info.querySelector('.content')?.textContent
+                content: info.querySelector('.content')?.innerHTML
               });
   
           });
         });
 
+        console.log(paragraphsArray);
+        
         return ({
           title: post.title.rendered,
           background: post.jetpack_featured_media_url,
@@ -121,7 +127,7 @@ export const Content: React.FC<Props> = ({windowWidth}) => {
     const formattedDate = `${month} ${day}, ${year}`;
     return formattedDate;
   }  
-  
+
   return (
     <HelmetProvider>
       <section className="blog_post-content">
@@ -193,10 +199,12 @@ export const Content: React.FC<Props> = ({windowWidth}) => {
                 <div 
                   className="main_part--content"
                   key={content.id}
-                  id={content.heading}
                   >
-                  <h2 className="h2">{content.heading}</h2>
-                  <p className="p">{content.content}</p>
+                  <h2 className="h2" 
+                  id={content.heading}
+                  >{content.heading}</h2>
+                  
+                  <p className="p">{ReactHtmlParser(content.content)}</p>
                 </div>
               ))}
             </div>

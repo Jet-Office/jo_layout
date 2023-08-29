@@ -2,6 +2,10 @@
     overflow-x: clip;
 }
 
+strong {
+    font-family: 'Proxima Nova Bold';
+}
+
 .h1 {
     margin: 0;
 }
