@@ -35,40 +35,22 @@ export const Content: React.FC<Props> = ({windowWidth, footerRef, mainNavigation
         
         if (link !== post.slug) return;
 
-        async function fetchBackground() {
-
-          if (post._links['wp:featuredmedia']) {
-        
-            const attachmentApi = post._links['wp:featuredmedia'][0].href + '/';
-            
-            try {
-              const attachmentResponse = await fetch(attachmentApi);
-              const attachmentData = await attachmentResponse.json();
-              
-              if (attachmentData.guid != null) 
-              setBackground(attachmentData.guid.rendered);
-            } 
-            catch (error) {
-              console.error('Error:', error);
-            }
-          }
-        }
-
         async function fetchAuthor() {
           try {
             const avatarApi = apiUrlBlog + '/media/' + post.acf.avatar;
+            console.log(avatarApi);
+            
 
             if (avatarApi != null) {
               const authorResponse = await fetch(avatarApi);
               const authorData = await authorResponse.json();              
-              setAvatar(authorData.guid.rendered);
+              setAvatar(authorData.media_details.sizes["full"].source_url);
           }
           } catch (error) {
             console.error('Error fetching blog posts:', error);
           }
         }
 
-        fetchBackground();
         fetchAuthor();
 
         const parser = new DOMParser();
@@ -92,6 +74,7 @@ export const Content: React.FC<Props> = ({windowWidth, footerRef, mainNavigation
 
         return ({
           title: post.title.rendered,
+          background: post.jetpack_featured_media_url,
           category: post.acf.hashtag,
           serviceItem: post.acf.serviceItem,
           link: post.slug,
