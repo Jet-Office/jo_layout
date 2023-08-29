@@ -25,7 +25,6 @@ export const Content: React.FC<Props> = ({windowWidth, footerRef, mainNavigation
   const blogNavRef = useRef<HTMLDivElement | null>(null);
 
   const [blogPost, setBlogPost] = useState<Blog>();
-  const [background, setBackground] = useState("");
   const [avatar, setAvatar] = useState("");
 
   async function fetchBlogPosts() {
@@ -178,12 +177,12 @@ export const Content: React.FC<Props> = ({windowWidth, footerRef, mainNavigation
           <meta property="article:author" content={blogPost?.content.headInfo.author.name} />
           <meta property="og:site_name" content="JetOffice" />
           <meta property="og:url" content={"https://www.jetoffice.org/#/resources/blog/" + link}  />
-          <meta property="og:image" content={background} />
+          <meta property="og:image" content={blogPost?.background} />
         </Helmet>
         <div 
           ref={headerRef}
           className="blog_post--header--bg bg--gradient"
-          style={{ background:  `url(${background}) center/cover no-repeat` }}
+          style={{ background:  `url(${blogPost?.background}) center/cover no-repeat` }}
           >
           <div className="container blog_post--header--text">
             <div className="blog_post--header---description">
