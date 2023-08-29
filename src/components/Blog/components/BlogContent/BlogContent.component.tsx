@@ -1,10 +1,6 @@
-import { useCallback, useRef, useEffect, useState } from "react";
-import { firstBlog } from "../../../../data/blog.json";
-import { secondBlog } from "../../../../data/blog.json";
+import { useEffect, useState } from "react";
 
 import { ListBlogPosts } from "../ListBlogPosts";
-import { BlogCategory } from "../BlogCategory";
-import { BlogPost } from "../BlogPost";
 import axios from 'axios';
 
 import { Helmet, HelmetProvider } from "react-helmet-async";
@@ -19,14 +15,15 @@ type Props = {
 
 export const DEFAULT_BLOG_CATEGORY = "All";
 
+export const apiUrlBlog = 'https://wordpress.jetoffice.org/wp-json/wp/v2'; 
+
 export const BlogContent: React.FC<Props> = ({currentCategory, setCurrentCategory}) => {
  
-  const apiUrl = 'http://13.43.127.189/wp-json/wp/v2'; 
   const [blogPosts, setBlogPosts] = useState<Blog[]>([]);
 
   async function fetchBlogPosts() {
     try {
-      const response = await axios.get(`${apiUrl}/posts/`);
+      const response = await axios.get(`${apiUrlBlog}/posts`);
       const parsedPosts = await Promise.all(response.data.map(async (post: any, index: number) => {        
 
         //const attachmentApi = post._links['wp:attachment'][0].href;
