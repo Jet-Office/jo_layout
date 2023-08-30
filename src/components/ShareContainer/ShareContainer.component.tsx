@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./ShareContainer.component.css";
 import { LinkedinShareButton, TwitterShareButton, FacebookShareButton } from "react-share";
 
+import { Helmet, HelmetProvider } from "react-helmet-async";
 type Props = {
   pageUrl: string;
   pageTitle: string;
@@ -32,7 +33,6 @@ export const ShareContainer: React.FC<Props> = ({ pageUrl, pageTitle, pageDescri
   }
 
   return (
-
     <div className="network_links">
       <ul className="ul network_links-list">
         <li>
@@ -48,6 +48,7 @@ export const ShareContainer: React.FC<Props> = ({ pageUrl, pageTitle, pageDescri
           <TwitterShareButton
             url={pageUrl}
             title={pageTitle}
+            via="JetOffice"
             hashtags={["JetOffice"]}>
             <img className="network_img" src="/contacts-icons/white_twitter.svg" />
           </TwitterShareButton>

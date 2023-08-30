@@ -126,8 +126,6 @@ export const Content: React.FC<Props> = ({windowWidth}) => {
       <section className="blog_post-content">
         <Helmet>
           <title>JetOffice© | {String(blogPost?.content.headInfo.title)}</title>
-          <meta name="twitter:card" content="summary" /> 
-          <meta name="twitter:site" content="@jetoffice" /> 
           <meta property="og:url" content={"https://www.jetoffice.org/#/resources/blog/" + link} /> 
           <meta
             name="description"
@@ -140,6 +138,12 @@ export const Content: React.FC<Props> = ({windowWidth}) => {
           <meta property="og:site_name" content="JetOffice" />
           <meta property="og:url" content={"https://www.jetoffice.org/#/resources/blog/" + link}  />
           <meta property="og:image" content={blogPost?.background} />
+
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:site" content="@jetoffice" />
+          <meta name="twitter:title" content={`JetOffice© | ${String(blogPost?.content.headInfo.title)}`} />
+          <meta name="twitter:description" content={blogPost?.content.headInfo.description} />
+          <meta name="twitter:image" content={blogPost?.background} />
         </Helmet>
         <div 
           className="blog_post--header--bg bg--gradient"
