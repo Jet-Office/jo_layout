@@ -1,0 +1,11 @@
+@media (max-width: 875px) {
+    .right--column {
+        height: 100vh;
+    }
+    
+    .navigation-blog--content {
+        margin: 48px 44px;
+        margin-top: 28px;
+        gap: 48px;
+    }
+}

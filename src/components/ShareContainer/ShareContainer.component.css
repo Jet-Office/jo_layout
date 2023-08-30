@@ -35,7 +35,7 @@ li {
 
 .copy-btn {
     position:relative;
-   }
+}
     
 .copy-btn:before {
     content:attr(data-description);
@@ -78,4 +78,34 @@ li {
 .copy-btn.copy-btn--active:after {
     opacity:1;
     bottom:-4px;
+}
+
+@media (max-width: 875px) {
+
+    .copy-btn:before {
+        bottom:0;
+        top:10px;
+        height: 37px;
+        left: 150%;
+    }
+
+    .copy-btn:after {
+        bottom:0;
+        top:15px;
+
+        border-left:8px solid transparent;
+        border-right:8px solid transparent;
+        border-top:8px solid rgba(0,0,0,.7);
+        border-bottom: 0px;
+    }
+    
+    .copy-btn.copy-btn--active:before {
+        opacity:1;
+        top:-40px;
+    }
+        
+    .copy-btn.copy-btn--active:after {
+        opacity:1;
+        top:-4px;
+    }
 }

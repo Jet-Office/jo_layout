@@ -8,9 +8,11 @@ import { Link, useParams } from "react-router-dom";
 import { Blog } from "../../../../types/blog.type";
 import axios from 'axios';
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import { ContentTable } from "../ContentTable";
+import { MobileMenu } from "../MobileMenu";
 
-import { ShareContainer } from "../../../ShareContainer";
 import parser from 'html-react-parser';
+
 
 type Props = {
   windowWidth: number;
@@ -47,14 +49,8 @@ export const Content: React.FC<Props> = ({windowWidth}) => {
 
         fetchAuthor();
 
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(post.content.rendered, 'text/html');
-
         let paragraphsArray: { id: number, heading: string | null | undefined, content: string | null | undefined }[] = [];
-
-        //const mainInfoArray = doc.querySelectorAll('.mainInfoArray');
         const mainInfoArray = post.acf.mainInfoArray;
-
 
         Object.keys(mainInfoArray).map((key, index) => {
           const element = mainInfoArray[key];          
@@ -105,6 +101,14 @@ export const Content: React.FC<Props> = ({windowWidth}) => {
     fetchBlogPosts();
   }, []);
   
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    const elementRect = element?.getBoundingClientRect();
+    if (elementRect) {
+      const elementTop = elementRect.top + window.scrollY;
+      window.scrollTo({ top: elementTop - 80, behavior: 'smooth' });
+    }
+  };
 
   function formatDate(inputDate: string) {
     const months = [
@@ -145,14 +149,23 @@ export const Content: React.FC<Props> = ({windowWidth}) => {
           <meta name="twitter:description" content={blogPost?.content.headInfo.description} />
           <meta name="twitter:image" content={blogPost?.background} />
         </Helmet>
+
+        {windowWidth <= 875
+          ? <MobileMenu windowWidth={windowWidth} blogPost={blogPost} scrollToSection={scrollToSection} />
+          : null
+          }
         <div 
           className="blog_post--header--bg bg--gradient"
-          style={{ background:  `url(${blogPost?.background}) center/cover no-repeat` }}
+          style={{ background:  `${
+              `url(${blogPost?.background}) center/cover no-repeat`
+          }`, }}
           >
           <div className="container blog_post--header--text">
-            <div className="blog_post--header---description">
-              <h1 className="h1">{blogPost?.content.headInfo.title}</h1>
-              <p className="p">{blogPost?.content.headInfo.description}</p>
+            <div className="blog_post--header--description---container">
+              <div className="blog_post--header---description">
+                <h1 className="h1">{blogPost?.content.headInfo.title}</h1>
+                <p className="p">{blogPost?.content.headInfo.description}</p>
+              </div>
             </div>
             <div className="blog_post--header---info">
               <div className="about_autor">
@@ -162,30 +175,35 @@ export const Content: React.FC<Props> = ({windowWidth}) => {
                   <span className="span">{blogPost?.content.headInfo.author.position}</span>
                 </div>
               </div>
-              <div className="about_time">
-                <span className="span">{blogPost?.content.headInfo.timeToRead} read</span>
-              </div>
-              <div className="about_create_date">
-                <span className="span">{blogPost?.content.headInfo.creationDate}</span>
+              <div className="about_info">
+                <div className="about_time">
+                  <span className="span">{blogPost?.content.headInfo.timeToRead} read</span>
+                </div>
+                <div className="about_create_date">
+                  <span className="span">{blogPost?.content.headInfo.creationDate}</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="top-link--container">
-          <Link className="top-link top-link__home" to="/">
-            Home
-          </Link>{" "}
-          &#62;{" "}
-          <Link className="top-link top-link__resources" to="/resources">
-            Resources
-          </Link>{" "}
-          &#62;{" "}
-          <Link className="top-link top-link__resources" to="/resources/blog">
-            Blog
-          </Link>
-          &#62;{" "}
-          <span className="top-link">{blogPost?.title}</span>
-        </div>
+        { windowWidth > 641 ? 
+          <div className="top-link--container top-link--container_post">
+            <Link className="top-link top-link__home" to="/">
+              Home
+            </Link>{" "}
+            &#62;{" "}
+            <Link className="top-link top-link__resources" to="/resources">
+              Resources
+            </Link>{" "}
+            &#62;{" "}
+            <Link className="top-link top-link__resources" to="/resources/blog">
+              Blog
+            </Link>
+            &#62;{" "}
+            <span className="top-link">{blogPost?.title}</span>
+          </div>
+          : null
+        }
         <div className="container main-columns">
           <div className="left--column">
             {/* <div className="blog_post--description">
@@ -206,33 +224,14 @@ export const Content: React.FC<Props> = ({windowWidth}) => {
               ))}
             </div>
           </div>
-          <div className={`right--column`}>
-              <div
-                className={
-                  `navigation-blog--content 
-                  `}>
-                <div className="contents_table">
-                  <h3>table of contents</h3>
-                </div>
-                <ul className="blog--navigation">
-                  {blogPost?.content.mainInfo.map((content) => (
-                    content.heading ?
-                    <li
-                      className="li navigation--link"
-                      key={content.id}
-                      >
-                      <a className="a" href={`#${content.heading}`}>{content.heading}</a>
-                    </li>
-                    : null
-                  ))}
-                </ul>
-                <ShareContainer 
-                  pageUrl={"https://www.jetoffice.org/#/resources/blog/" + blogPost?.link ?? ""} 
-                  pageTitle={blogPost?.title ?? ""} 
-                  pageDescription={blogPost?.content.description ?? ""}
-                />
-              </div>
-          </div>
+          {windowWidth > 875
+          ? <ContentTable 
+              windowWidth={windowWidth} 
+              blogPost={blogPost} 
+              handleClick={function (): void {} }
+              scrollToSection={scrollToSection} />
+          : null
+          }
         </div>
       </section>
     </HelmetProvider>
