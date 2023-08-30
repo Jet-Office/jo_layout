@@ -10,7 +10,7 @@ import axios from 'axios';
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import { ShareContainer } from "../../../ShareContainer";
-import ReactHtmlParser from 'react-html-parser';
+import parser from 'html-react-parser';
 
 type Props = {
   windowWidth: number;
@@ -201,7 +201,7 @@ export const Content: React.FC<Props> = ({windowWidth}) => {
                   {content.heading ? <h2 className="h2">{content.heading}</h2>
                   : null}
                   
-                  <p className="p">{ReactHtmlParser(content.content)}</p>
+                  <p className="p">{parser(content.content)}</p>
                 </div>
               ))}
             </div>
