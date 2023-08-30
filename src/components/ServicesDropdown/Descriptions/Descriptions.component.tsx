@@ -6,9 +6,10 @@ import { Link } from "react-router-dom";
 type Props = {
   descriptions: Description[];
   windowWidth: number;
+  handleCLose: () => void;
 };
 
-export const Descriptions: React.FC<Props> = ({ descriptions, windowWidth }) => {
+export const Descriptions: React.FC<Props> = ({ descriptions, windowWidth, handleCLose }) => {
   const [ activeDescriptionId, setActiveDescriptionId ] = useState(0);
 
   return (
@@ -18,7 +19,10 @@ export const Descriptions: React.FC<Props> = ({ descriptions, windowWidth }) => 
           to={link} 
           key={id} 
           className={`services__card ${windowWidth <= 890 && activeDescriptionId === id ? "active" : ""}`}
-          onClick={() => {setActiveDescriptionId(id)}}
+          onClick={() => {
+            setActiveDescriptionId(id);
+            handleCLose()
+          }}
           onMouseEnter={() => {setActiveDescriptionId(id)}}
           onMouseLeave={() => {setActiveDescriptionId(0)}}
           >

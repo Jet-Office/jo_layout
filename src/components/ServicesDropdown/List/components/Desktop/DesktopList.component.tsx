@@ -53,6 +53,7 @@ export const DesktopList: React.FC<Props> =
           <div className="content scroll">
             <div className="content-description">
                 <Descriptions
+                  handleCLose={handleCLose}
                   descriptions={descriptions}
                   windowWidth={windowWidth}
                 ></Descriptions>

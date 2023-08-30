@@ -1,0 +1,133 @@
+.background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 2400px;
+
+  position: absolute;
+  right: 0;
+  top: 1400px;
+  left: 0;
+  z-index: -1;
+}
+
+.pricing-page {
+  margin-top: 100px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.price-page__title {
+  font-size: 64px;
+  line-height: 1.2;
+  margin: 0;
+  margin-bottom: 12px;
+  background: var(--gradient, linear-gradient(224deg, #00E5E5 0%, #72A5F2 51.04%, #E961FF 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.price-page__subtitle {
+  font-size: 20px;
+  line-height: 1.4;
+  color: #ccc;
+
+  margin-bottom: 80px;
+}
+
+.price-page__faq {
+  position: relative;
+  padding-top: 250px;
+  padding-bottom: 50px;
+  margin-bottom: 180px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 400px;
+  height: 100%;
+}
+
+.faq-block__text {
+  color: #ccc;
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 50px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.swiper {
+  width: 240px;
+  height: 750px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.swiper-slide-shadow {
+  background-color: transparent;
+}
+.swiper-slide-shadow-cards {
+  background-color: transparent !important;
+}
+
+@media (max-width: 768px) {
+  .swiper {
+    margin-bottom: 35px;
+  }
+
+  .price-page__faq{
+    gap: 280px;
+    margin-bottom: 200px;
+    padding-top: 50px;
+  }
+
+  .faq-block__text {
+    font-size: 24px;
+    line-height: 29px;
+    bottom: -2000px;
+  }
+
+  .background {
+    top: 1500px;
+    height: 2600px;
+    left: -50px;
+}
+}
+@media (max-width: 1150px) {
+  .price-page__faq{
+    gap: 100px;
+    padding-top: 50px;
+  }
+}
+
+.pricing-page__list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+
+}
+
+.pricing-page__switcher {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
