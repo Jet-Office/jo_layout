@@ -164,10 +164,10 @@ function App() {
           <Route path="services/:link/:subLink" element={
             <ServiceDescription />
           } />
-          <Route path="/resources/blog" element={
+          <Route path="resources/blog" element={
             <Blog />
           } />
-          <Route path="/resources/blog/:link" element={
+          <Route path="resources/blog/:link" element={
             <Content windowWidth={windowWidth}/>
           } />
 

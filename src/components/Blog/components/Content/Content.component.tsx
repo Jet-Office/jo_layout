@@ -33,9 +33,7 @@ export const Content: React.FC<Props> = ({windowWidth}) => {
 
         async function fetchAuthor() {
           try {
-            const avatarApi = apiUrlBlog + '/media/' + post.acf.avatar;
-            console.log(avatarApi);
-            
+            const avatarApi = apiUrlBlog + '/media/' + post.acf.avatar;            
 
             if (avatarApi != null) {
               const authorResponse = await fetch(avatarApi);
@@ -54,23 +52,18 @@ export const Content: React.FC<Props> = ({windowWidth}) => {
 
         let paragraphsArray: { id: number, heading: string | null | undefined, content: string | null | undefined }[] = [];
 
-        const mainInfoArray = doc.querySelectorAll('.mainInfoArray');
+        //const mainInfoArray = doc.querySelectorAll('.mainInfoArray');
+        const mainInfoArray = post.acf.mainInfoArray;
 
-        Array.from(mainInfoArray).map(paragraph => {
-          const mainInfo = Array.from(paragraph.querySelectorAll('.mainInfo'));
-          console.log(mainInfo);
-          
-          mainInfo.map((info, index) => {
-              paragraphsArray.push({
-                id: index,
-                heading: info.querySelector('.wp-block-heading')?.textContent, 
-                content: info.querySelector('.content')?.innerHTML
-              });
-  
+
+        Object.keys(mainInfoArray).map((key, index) => {
+          const element = mainInfoArray[key];          
+          paragraphsArray.push({
+            id: index,
+            heading: element['header'],
+            content: element['paragraph']
           });
         });
-
-        console.log(paragraphsArray);
         
         return ({
           title: post.title.rendered,
@@ -89,7 +82,7 @@ export const Content: React.FC<Props> = ({windowWidth}) => {
                 position: post.acf.authorPosition
               },
             },
-            description: post.acf.postDescription,
+            // description: post.acf.postDescription,
             mainInfo: paragraphsArray
           }
         });
@@ -191,18 +184,18 @@ export const Content: React.FC<Props> = ({windowWidth}) => {
         </div>
         <div className="container main-columns">
           <div className="left--column">
-            <div className="blog_post--description">
+            {/* <div className="blog_post--description">
               <p className="p">{blogPost?.content.description}</p>
-            </div>
+            </div> */}
             <div className="blog_post--main_part">
               {blogPost?.content.mainInfo.map((content) => (
                 <div 
                   className="main_part--content"
                   key={content.id}
+                  id={`${content.heading}`}
                   >
-                  <h2 className="h2" 
-                  id={content.heading}
-                  >{content.heading}</h2>
+                  {content.heading ? <h2 className="h2">{content.heading}</h2>
+                  : null}
                   
                   <p className="p">{ReactHtmlParser(content.content)}</p>
                 </div>
@@ -219,12 +212,14 @@ export const Content: React.FC<Props> = ({windowWidth}) => {
                 </div>
                 <ul className="blog--navigation">
                   {blogPost?.content.mainInfo.map((content) => (
+                    content.heading ?
                     <li
                       className="li navigation--link"
                       key={content.id}
                       >
                       <a className="a" href={`#${content.heading}`}>{content.heading}</a>
                     </li>
+                    : null
                   ))}
                 </ul>
                 <ShareContainer 
