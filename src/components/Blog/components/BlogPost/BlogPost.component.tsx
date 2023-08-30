@@ -9,7 +9,7 @@ type Props = {
   blog: Blog
 };
 
-export const BlogPost: React.FC<Props> = ( { blog } ) => {      
+export const BlogPost: React.FC<Props> = ( { blog } ) => {     
 
   return (
     <div 
@@ -21,7 +21,6 @@ export const BlogPost: React.FC<Props> = ( { blog } ) => {
       {blog.background !== ""
       ? <img
           className="image"
-          src={blog.background !== "none" ? `${blog.background}` : "none"}
           style={{
             backgroundImage: blog.background !== "none" ? `url(${blog.background})` : "none",
             backgroundPosition: "center",

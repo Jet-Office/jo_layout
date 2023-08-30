@@ -2,7 +2,7 @@ import "../../Blog.component.css"
 import "./MobileMenu.css"
 
 import { Blog } from "../../../../types/blog.type";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { MenuContent } from "./components";
 
 type Props = {
@@ -17,6 +17,15 @@ export const MobileMenu: React.FC<Props> = ({windowWidth, blogPost, scrollToSect
   const handleClick = () => {
     setActive((activeMenu) => !activeMenu)
   }
+  
+  useEffect(() => {
+    if (isActive) {
+      document.body.style.overflow = 'hidden'
+    }
+    else {
+      document.body.style.overflow = 'auto'
+    }
+  }, [isActive, setActive])
 
   return (
     <div className={`menuContainer ${isActive ? 'menuContainer-active' : ''}`}>
