@@ -167,7 +167,8 @@
     
     .blog--category {
         text-align: left;
-        width: 343px;
+        width: 77vw;
+        max-width: 343px;
         border-right: 1px solid var(--pink, #E961FF);
         border-bottom: 1px solid var(--pink, #E961FF);
         border-left: 1px solid var(--pink, #E961FF);
@@ -340,6 +341,14 @@
     }
 }
 
+@media (max-width: 440px) {
+    .blog--item {
+        min-width: 85vw;
+        width: 85vw;
+        height: auto;
+    }
+}
+
 .head_info {
     display: flex;
     flex-direction: column;
@@ -375,6 +384,7 @@
 #title, #category, #serviceItem {
     padding: 0 24px;
     color: var(--text-color);
+    text-align: left;
 }
 
 #title {
