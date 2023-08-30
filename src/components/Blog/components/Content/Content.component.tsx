@@ -10,7 +10,7 @@ import axios from 'axios';
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import { ShareContainer } from "../../../ShareContainer";
-import ReactHtmlParser from 'react-html-parser';
+import parse from 'html-react-parser';
 
 type Props = {
   windowWidth: number;
@@ -47,14 +47,8 @@ export const Content: React.FC<Props> = ({windowWidth}) => {
 
         fetchAuthor();
 
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(post.content.rendered, 'text/html');
-
         let paragraphsArray: { id: number, heading: string | null | undefined, content: string | null | undefined }[] = [];
-
-        //const mainInfoArray = doc.querySelectorAll('.mainInfoArray');
         const mainInfoArray = post.acf.mainInfoArray;
-
 
         Object.keys(mainInfoArray).map((key, index) => {
           const element = mainInfoArray[key];          
@@ -147,7 +141,11 @@ export const Content: React.FC<Props> = ({windowWidth}) => {
         </Helmet>
         <div 
           className="blog_post--header--bg bg--gradient"
-          style={{ background:  `url(${blogPost?.background}) center/cover no-repeat` }}
+          style={{ background: `${
+            windowWidth > 641
+              ? `url(${blogPost?.background}) center/cover no-repeat`
+              : `url(${blogPost?.background}) lightgray -12.5px 0px / 106.667% 100% no-repeat`
+          }`, }}
           >
           <div className="container blog_post--header--text">
             <div className="blog_post--header---description">
@@ -201,7 +199,7 @@ export const Content: React.FC<Props> = ({windowWidth}) => {
                   {content.heading ? <h2 className="h2">{content.heading}</h2>
                   : null}
                   
-                  <p className="p">{ReactHtmlParser(content.content)}</p>
+                  <p className="p">{parse(content.content)}</p>
                 </div>
               ))}
             </div>
