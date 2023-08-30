@@ -119,67 +119,59 @@ function App() {
   const [active, setActive] = useContext(ModalContext);
 
   return (
-    <HelmetProvider>
-      <div className="App">
-        <Helmet>
-          <meta
-            name="description"
-            content="JetOffice provides remote assistants, administrative support, and business solutions for both personal and corporate purposes." />
-          <title>JetOffice© | Virtual Assistance & Business Solutions</title>
-        </Helmet>
+    <div className="App">
 
-        <Modal active={active} setActive={setActive} />
-          <Header
-            activePageRef={activePageRef}
-            windowWidth={windowWidth}
-          />
+      <Modal active={active} setActive={setActive} />
+        <Header
+          activePageRef={activePageRef}
+          windowWidth={windowWidth}
+        />
 
-        <Routes>
-          <Route path="" element={
-            <>
-              <SectionHead homePageRef={homePageRef}/>
+      <Routes>
+        <Route path="" element={
+          <>
+            <SectionHead homePageRef={homePageRef}/>
 
-              <main className="main">
-                <div className="main__container">
-                  <Services activeRef={servicesPageRef} />
-                  {windowWidth <= 641 && <ControlPreview />}
-                  <Benefits />
-                  <Pricing windowWidth={windowWidth} activePageRef={pricingPageRef} />
-                  <Cases windowWidth={windowWidth} casesPageRef={casesPageRef} />
-                  <About windowWidth={windowWidth} aboutPageRef={aboutPageRef} />
-                  <Faq />
-                  <Crew />
-                </div>
-              </main>
+            <main className="main">
+              <div className="main__container">
+                <Services activeRef={servicesPageRef} />
+                {windowWidth <= 641 && <ControlPreview />}
+                <Benefits />
+                <Pricing windowWidth={windowWidth} activePageRef={pricingPageRef} />
+                <Cases windowWidth={windowWidth} casesPageRef={casesPageRef} />
+                <About windowWidth={windowWidth} aboutPageRef={aboutPageRef} />
+                <Faq />
+                <Crew />
+              </div>
+            </main>
 
-            </>
-          } />
-          <Route path="services/:link" element={
-            <ListOfServices />
-          } />
+          </>
+        } />
+        <Route path="services/:link" element={
+          <ListOfServices />
+        } />
 
-          <Route path="services" element={
-            <ServicesPage />
-          } />
-          <Route path="services/:link/:subLink" element={
-            <ServiceDescription />
-          } />
-          <Route path="resources/blog" element={
-            <Blog />
-          } />
-          <Route path="resources/blog/:link" element={
-            <Content windowWidth={windowWidth}/>
-          } />
+        <Route path="services" element={
+          <ServicesPage />
+        } />
+        <Route path="services/:link/:subLink" element={
+          <ServiceDescription />
+        } />
+        <Route path="resources/blog" element={
+          <Blog />
+        } />
+        <Route path="resources/blog/:link" element={
+          <Content windowWidth={windowWidth}/>
+        } />
 
-          <Route path="*" element={
-            <NotFound />
-          } />
-        </Routes>
-        <footer className="footermain">
-          <Footer contactsPageRef={contactsPageRef} />
-        </footer>
-      </div>
-    </HelmetProvider>
+        <Route path="*" element={
+          <NotFound />
+        } />
+      </Routes>
+      <footer className="footermain">
+        <Footer contactsPageRef={contactsPageRef} />
+      </footer>
+    </div>
   );
 }
 
