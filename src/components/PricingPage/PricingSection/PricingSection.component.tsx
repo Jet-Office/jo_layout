@@ -10,8 +10,8 @@ import "../PricingSection/PricingSection.component.css";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCards } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/effect-cards';
-
+/* import 'swiper/css/effect-cards';
+ */
 
 interface Props {
   windowWidth: number;
@@ -37,7 +37,7 @@ export const PricingSection: React.FC<Props> = ({
       </div>
       {windowWidth < 769 ? (
         <Swiper 
-          effect={'cards'} 
+          effect={`cards`}
           grabCursor={true} 
           modules={[EffectCards]} 
           className="mySwiper"
