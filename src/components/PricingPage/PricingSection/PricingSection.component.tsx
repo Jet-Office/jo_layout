@@ -36,8 +36,8 @@ export const PricingSection: React.FC<Props> = ({
         <PricingSwitch setOptions={setOptions} />
       </div>
       {windowWidth < 769 ? (
-        <Swiper 
-          effect={`cards`}
+        <Swiper
+          effect={'cards'}
           grabCursor={true} 
           modules={[EffectCards]} 
           className="mySwiper"
