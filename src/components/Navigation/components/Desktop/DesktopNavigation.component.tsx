@@ -12,7 +12,7 @@ type Props = {
   setSubmenuOpen: (submenuOpen: boolean) => void;
   setActiveLink: (link: string) => void;
   setIsClickLink: (isClick: boolean) => void;
-  handleCLose?: () => void;
+  handleCLose: () => void;
   mainMenuSetIsOpen: (mainMenu: boolean) => void;
   setActiveMenuLink: (activeMenuLink: string) => void;
 };
@@ -94,6 +94,7 @@ export const DesktopNavigation: React.FC<Props> =
         {submenuOpen && isDropDown && 
           ((activeLink === "Services" &&
             <ServicesDropdown
+              handleCLose={handleCLose}
               windowWidth={windowWidth}
               activeLink={activeLink}
               submenuOpen={submenuOpen}

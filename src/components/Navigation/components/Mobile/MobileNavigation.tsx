@@ -11,7 +11,7 @@ type Props = {
   setSubmenuOpen: (submenuOpen: boolean) => void;
   setActiveLink: (link: string) => void;
   setIsClickLink: (isClick: boolean) => void;
-  handleCLose?: () => void;
+  handleCLose: () => void;
   mainMenuSetIsOpen: (submenuOpen: boolean) => void;
   setActiveMenuLink: (activeMenuLink: string) => void;
 };
