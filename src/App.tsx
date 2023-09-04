@@ -23,6 +23,7 @@ import { ListOfServices } from "./components/ListOfServices";
 import { NotFound } from "./components/NotFound";
 import { ServiceDescription } from "./components/ServiceDescription";
 import {SectionHead} from "./components/SectionHead";
+import { FAQPage } from "./components/FAQPage";
 
 import { Blog } from "./components/Blog";
 import { Content } from "./components/Blog/components/Content/Content.component";
@@ -162,6 +163,9 @@ function App() {
         } />
         <Route path="resources/blog/:link" element={
           <Content windowWidth={windowWidth}/>
+        } />
+        <Route path="faq" element={
+          <FAQPage />
         } />
 
         <Route path="*" element={

@@ -1,0 +1,21 @@
+.highlighted-text {
+  display: flex;
+  flex-wrap: wrap;
+  white-space: pre-wrap;
+  display: inline;
+
+}
+
+.highlighted {
+  font-family: 'Proxima Nova Semibold';
+  background: linear-gradient(
+    223.81deg,
+    #00e5e5 8.72%,
+    #72a5f2 50.87%,
+    #e961ff 91.3%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  mix-blend-mode: normal;
+}
