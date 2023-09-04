@@ -9,14 +9,28 @@ type Props = {
   blog: Blog
 };
 
-export const BlogPost: React.FC<Props> = ( { blog } ) => {
+export const BlogPost: React.FC<Props> = ( { blog } ) => {     
 
   return (
     <div 
       className="blog--item bg--gradient" 
-      style={{
-        background: blog.background !== "none" ? `url(/blog-images/backgrounds/${blog.background}.png) center/cover no-repeat` : "none"
-      }}>
+      // style={{
+      //   background: blog.background !== "none" ? `url(${blog.background}) center/cover no-repeat` : "none"
+      // }}
+      >
+      {blog.background !== ""
+      ? <img
+          className="image"
+          style={{
+            backgroundImage: blog.background !== "none" ? `url(${blog.background})` : "none",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat"
+          }}
+          alt=""
+        />
+      : ""
+      }
 
       <div className="head_info">
         <span id="serviceItem">{blog.serviceItem}</span>

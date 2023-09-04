@@ -137,23 +137,28 @@
 }
 
 @media (max-width: 641px) {
-  .crew__container {
+  .crew__container.container {
     align-items: flex-start;
+    max-width: -webkit-fill-available;
   }
+
   .crew {
     all: unset;
+    width: 100vw;
 
     margin-top: 50px;
   }
   .crew__list {
-    display: grid;
-    grid-template-columns: repeat(1, 6fr);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 
     gap: 20px;
   }
 
   .crew__item {
-    width: 87.95vw;
+    width: 100%;
+    gap: 20px;
   }
 
   .crew__img_container {

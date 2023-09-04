@@ -120,6 +120,7 @@
 
   .section-head__container {
     justify-content: flex-start;
+    align-items: center;
     background: linear-gradient(178.37deg, rgba(20, 24, 28, 0.8) 40.57%, rgba(20, 24, 28, 0) 86.73%);
   }
 
@@ -141,6 +142,6 @@
   }
 
   .section-head__content_container {
-    margin-left: 7.18vw;
+    margin-left: 0;
   }
 }

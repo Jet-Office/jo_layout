@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, useContext } from "react";
 
 import { Routes, Route } from "react-router-dom";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import "./App.css";
 
@@ -43,9 +44,6 @@ function App() {
   const casesPageRef = useRef<HTMLElement>(null);
   const aboutPageRef = useRef<HTMLElement>(null);
   const contactsPageRef = useRef<HTMLElement>(null);
-
-  const footerRef = useRef<HTMLDivElement | null>(null);
-  const mainNavigationRef = useRef<HTMLDivElement | null>(null);
   
   const [activePageRef, setActivePageRef] =
     useState<React.RefObject<HTMLElement>>(homePageRef);
@@ -134,11 +132,11 @@ function App() {
 
   return (
     <div className="App">
+
       <Modal active={active} setActive={setActive} />
         <Header
           activePageRef={activePageRef}
           windowWidth={windowWidth}
-          mainNavigationRef={mainNavigationRef}
         />
 
       <Routes>
@@ -173,11 +171,11 @@ function App() {
         <Route path="services/:link/:subLink" element={
           <ServiceDescription />
         } />
-        <Route path="/resources/blog" element={
+        <Route path="resources/blog" element={
           <Blog />
         } />
-        <Route path="/resources/blog/:link" element={
-          <Content windowWidth={windowWidth} footerRef={footerRef} mainNavigationRef={mainNavigationRef}/>
+        <Route path="resources/blog/:link" element={
+          <Content windowWidth={windowWidth}/>
         } />
 
         <Route 
@@ -199,7 +197,7 @@ function App() {
         } />
       </Routes>
       <footer className="footermain">
-        <Footer contactsPageRef={contactsPageRef} footerRef={footerRef} />
+        <Footer contactsPageRef={contactsPageRef} />
       </footer>
     </div>
   );
