@@ -12,7 +12,7 @@ type Props = {
   activeId: number;
   setActiveId: (id: number) => void;
   windowWidth: number;
-  handleCLose?: () => void;
+  handleCLose: () => void;
   submenuOpen: boolean;
   mainMenuSetIsOpen: (mainMenuOpen: boolean) => void;
   setActiveMenuLink: (activeMenuLink: string) => void;
@@ -25,7 +25,8 @@ export const Item: React.FC<Props> = ({
   setActiveId,
   windowWidth,
   mainMenuSetIsOpen,
-  setActiveMenuLink
+  setActiveMenuLink,
+  handleCLose
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -130,6 +131,7 @@ export const Item: React.FC<Props> = ({
               </div>
               <div className="content-description">
                   <Descriptions
+                    handleCLose={handleCLose}
                     descriptions={descriptions}
                     windowWidth={windowWidth}
                   ></Descriptions>
