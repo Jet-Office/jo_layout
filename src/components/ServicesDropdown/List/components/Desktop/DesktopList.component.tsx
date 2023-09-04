@@ -15,10 +15,18 @@ type Props = {
   setActiveId: (id: number) => void;
   mainMenuSetIsOpen: (submenuOpen: boolean) => void;
   setActiveMenuLink: (activeMenuLink: string) => void;
+  handleCLose: () => void;
 };
 
 export const DesktopList: React.FC<Props> = 
-({ windowWidth, cases, activeId, setActiveId, mainMenuSetIsOpen, setActiveMenuLink }) => {
+({ 
+  windowWidth,
+  cases, 
+  activeId, 
+  setActiveId, 
+  mainMenuSetIsOpen, 
+  setActiveMenuLink,
+}) => {
   const [descriptions, setDescriptions] = useState<Description[]>([]);
 
   const handleCLose = () => {
@@ -33,6 +41,7 @@ export const DesktopList: React.FC<Props> =
           services.map((item) => {
             return (
               <Item
+                handleCLose={handleCLose}
                 key={item.id}
                 windowWidth={windowWidth}
                 item={item}
