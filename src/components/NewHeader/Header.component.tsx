@@ -6,6 +6,7 @@ import { Button } from "../Button";
 import "./Header.component.css";
 import { Menu } from "./component/Menu";
 import { Link } from "react-router-dom";
+import useHandleClick from "../../helpers/openModal";
 
 type Props = {
   windowWidth: number;
@@ -21,6 +22,8 @@ export const Header: React.FC<Props> = ({ windowWidth, activePageRef, mainNaviga
   const [isClickLink, setIsClickLink] = useState(false);
   const [submenuOpen, setSubmenuOpen] = useState(false);
   const [menuIsOpen, setMenuIsOpen] = useState(false);
+
+  const handleClick = useHandleClick();
 
 
   useEffect(() => {
@@ -86,7 +89,7 @@ export const Header: React.FC<Props> = ({ windowWidth, activePageRef, mainNaviga
               color="pink"
               text="Start free trial"
               className={'button--nav'}
-              onClick={() => console.log("pressed")}
+              onClick={handleClick}            
             />
           </> 
         ) : (

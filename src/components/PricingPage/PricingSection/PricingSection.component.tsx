@@ -22,7 +22,7 @@ interface Props {
   setActiveCardId: (id: number) => void;
 }
 
-const PricingSection: React.FC<Props> = ({
+export const PricingSection: React.FC<Props> = ({
   windowWidth,
   pricingItems,
   options,
@@ -73,5 +73,3 @@ const PricingSection: React.FC<Props> = ({
     </section>
   );
 };
-
-export default PricingSection;

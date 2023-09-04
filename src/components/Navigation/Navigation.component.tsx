@@ -29,25 +29,25 @@ export const LINKS: Links[] = [
     id: 2,
     name: "Pricing",
     isDropDown: false,
-    href: "#pricing",
+    href: "/pricing",
   },
   {
     id: 3,
-    name: "Cases",
+    name: "FAQ",
     isDropDown: false,
-    href: "#cases",
+    href: "#faq",
   },
   {
     id: 4,
-    name: "About",
+    name: "Articles",
     isDropDown: false,
-    href: "#about",
+    href: "#articles",
   },
   {
     id: 5,
-    name: "Contacts",
+    name: "About",
     isDropDown: false,
-    href: "#contacts",
+    href: "#about",
   },
 ];
 

@@ -9,7 +9,7 @@ import {pricing} from "../../data/pricing.json"
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 
-import PricingSection from "./PricingSection/PricingSection.component";
+import { PricingSection } from "./PricingSection/PricingSection.component";
 
 
 type Props = {
