@@ -67,13 +67,16 @@ export const MobileNavigation: React.FC<Props> =
           className={`navigation__link ${ activeLink === link.name ? "navigation__link--active" : "" }`}
 
           onClick={() => { 
-            handleMouseEnter(link); 
-            if (activeLink !== link.name) setActiveLink(link.name);
+            handleMouseEnter(link);
+            if (activeLink !== link.name ) setActiveLink(link.name);
             else {
               setActiveLink(""); 
               setHooverLink("");
             }
-            
+
+            if (link.name === "Pricing") {
+              handleCLose();
+            }
           }}
           >
           {link.name}
