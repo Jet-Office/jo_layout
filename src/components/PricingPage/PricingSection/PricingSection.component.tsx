@@ -30,6 +30,7 @@ export const PricingSection: React.FC<Props> = ({
   activeCardId,
   setActiveCardId,
 }) => {
+  
   return (
     <section className="pricing-page__price">
       <div className="pricing-page__switcher">
@@ -37,7 +38,7 @@ export const PricingSection: React.FC<Props> = ({
       </div>
       {windowWidth < 769 ? (
         <Swiper
-          effect={'cards'}
+          effect="cards"
           grabCursor={true} 
           modules={[EffectCards]} 
           className="mySwiper"
