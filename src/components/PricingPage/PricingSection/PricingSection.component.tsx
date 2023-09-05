@@ -10,8 +10,9 @@ import "../PricingSection/PricingSection.component.css";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCards } from 'swiper/modules';
 import 'swiper/css';
-/* import 'swiper/css/effect-cards';
- */
+import 'swiper/css/effect-cards';
+import 'swiper/swiper-bundle.css'; // Імпорт стилів Swiper
+
 
 interface Props {
   windowWidth: number;
