@@ -11,8 +11,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCards } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-cards';
-import 'swiper/swiper-bundle.css'; // Імпорт стилів Swiper
-
 
 interface Props {
   windowWidth: number;
@@ -22,6 +20,14 @@ interface Props {
   activeCardId: number;
   setActiveCardId: (id: number) => void;
 }
+
+const swiperOptions = {
+  effect: 'cards',
+  grabCursor: true,
+  modules: [EffectCards],
+  className: "mySwiper",
+  initialSlide: 2,
+};
 
 export const PricingSection: React.FC<Props> = ({
   windowWidth,
@@ -39,11 +45,7 @@ export const PricingSection: React.FC<Props> = ({
       </div>
       {windowWidth < 769 ? (
         <Swiper
-/*           effect="cards"
- */          grabCursor={true} 
-          modules={[EffectCards]} 
-          className="mySwiper"
-          initialSlide={2}
+          {...swiperOptions}
         >
           {pricingItems.map(pricingItem => (
             <SwiperSlide
