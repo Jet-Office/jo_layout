@@ -23,14 +23,6 @@ interface Props {
   setActiveCardId: (id: number) => void;
 }
 
-const swiperOptions = {
-  effect: 'cards',
-  grabCursor: true,
-  modules: [EffectCards],
-  className: "mySwiper",
-  initialSlide: 2,
-};
-
 export const PricingSection: React.FC<Props> = ({
   windowWidth,
   pricingItems,
@@ -47,7 +39,11 @@ export const PricingSection: React.FC<Props> = ({
       </div>
       {windowWidth < 769 ? (
         <Swiper
-          {...swiperOptions}
+/*           effect="cards"
+ */          grabCursor={true} 
+          modules={[EffectCards]} 
+          className="mySwiper"
+          initialSlide={2}
         >
           {pricingItems.map(pricingItem => (
             <SwiperSlide
