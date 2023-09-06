@@ -1,0 +1,26 @@
+.about-page {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 180px;
+}
+
+.crew-section__title {
+  color: #ccc;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: left;
+}
+
+.crew-section__category {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.crew-section__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+}

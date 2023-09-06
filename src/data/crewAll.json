@@ -1,0 +1,86 @@
+{
+  "crewAll":[
+    {
+      "head": [
+        {
+          "id": 1,
+          "name": "Tretnikov Illia",
+          "role": "Co-Founder",
+          "avatar": "crew/illia.png"
+        },
+        {
+          "id": 2,
+          "name": "Oksana Timchenko",
+          "role": "Co-Founder",
+          "avatar": "crew/oksana.png"
+        }
+      ],
+      "management": [
+        {
+          "id": 1,
+          "name": "Veronika Nogina",
+          "role": "Assistant Manager",
+          "avatar": "crew/veronika.png"
+        },
+        {
+          "id": 2,
+          "name": "Kostiantyn Velychko",
+          "role": "Project Manager",
+          "avatar": "crew/kostya.png"
+        }
+      ],
+      "sales": [
+        {
+          "id": 1,
+          "name": "David Bashir",
+          "role": "SMM Manager",
+          "avatar": "crew/david.png"
+        },
+        {
+          "id": 2,
+          "name": "Anastasiia Voronetska",
+          "role": "Sales Manager",
+          "avatar": "crew/anastasiia.png"
+        }
+      ],
+      "product": [
+        {
+          "id": 1,
+          "name": "Sergey Solovev",
+          "role": "UX/UI Designer",
+          "avatar": "crew/sergey.png"
+        },
+        {
+          "id": 2,
+          "name": "Oleksii Pustovit",
+          "role": "Full-Stack Developer",
+          "avatar": "crew/oleksii.png"
+        },
+        {
+          "id": 3,
+          "name": "Artem Nechaev",
+          "role": "Full-Stack Developer",
+          "avatar": "crew/artem.png"
+        },
+        {
+          "id": 4,
+          "name": "Anna Morozenko",
+          "role": "Front-End Developer",
+          "avatar": "crew/ann.png"
+        },
+        {
+          "id": 5,
+          "name": "Maxim Bobrik",
+          "role": "Back-End Developer",
+          "avatar": "crew/maks.png"
+        },
+        {
+          "id": 6,
+          "name": "Alexey Linkov",
+          "role": "Back-End Developer",
+          "avatar": "crew/alexey.png"
+        }
+      ]
+    }
+  ]
+}

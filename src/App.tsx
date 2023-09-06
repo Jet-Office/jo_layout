@@ -28,6 +28,7 @@ import { Blog } from "./components/Blog";
 import { Content } from "./components/Blog/components/Content/Content.component";
 import { PricingPage } from "./components/PricingPage";
 import { faqData } from "./data/faqData.json";
+import { AboutPage } from "./components/AboutPage";
 
 type FAQItem = {
   id: number;
@@ -158,7 +159,6 @@ function App() {
                 <Crew />
               </div>
             </main>
-
           </>
         } />
         <Route path="services/:link" element={
@@ -191,6 +191,13 @@ function App() {
             />
           }
         />
+
+        <Route path="about" element={
+          <AboutPage
+          windowWidth={windowWidth} 
+          aboutPageRef={aboutPageRef}
+          />
+        } />
 
         <Route path="*" element={
           <NotFound />

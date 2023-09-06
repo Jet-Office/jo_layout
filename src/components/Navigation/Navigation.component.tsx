@@ -47,7 +47,7 @@ export const LINKS: Links[] = [
     id: 5,
     name: "About",
     isDropDown: false,
-    href: "#about",
+    href: "/about",
   },
 ];
 
