@@ -17,8 +17,8 @@ export const FAQPage: React.FC = () => {
       const questions = topic.questions.filter((question) => {
         return searchQuery.split(' ').some((word) => {
           return (
-            question.question.toLowerCase().includes(word) ||
-            question.text.toLowerCase().includes(word)
+            question.question.toLowerCase().includes(word.toLowerCase()) ||
+            question.text.toLowerCase().includes(word.toLowerCase())
           );
         });
       });
@@ -36,14 +36,14 @@ export const FAQPage: React.FC = () => {
   
   const handleKeyPress: React.KeyboardEventHandler<HTMLInputElement> = (event) => {
     if (event.key === 'Enter') {
-      setHighlightedKeywords(event.currentTarget.value);
+      setHighlightedKeywords(event.currentTarget.value.toLowerCase());
       search(); 
     }
   };
 
   const handleOnClick = () => {
-    setSearchQuery(inputRef.current?.value || "");
-    setHighlightedKeywords(inputRef.current?.value || "");
+    setSearchQuery(inputRef.current?.value.toLowerCase() || "");
+    setHighlightedKeywords(inputRef.current?.value.toLowerCase() || "");
     search();
   }
 

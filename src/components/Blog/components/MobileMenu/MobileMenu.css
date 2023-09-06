@@ -19,6 +19,7 @@
 .menuContainer-active {
     right: 0;
     z-index: 100000;
+    overflow-y: auto;
 }
 
 .menuContainer ~ .header {

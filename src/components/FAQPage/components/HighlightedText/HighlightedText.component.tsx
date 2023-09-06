@@ -11,15 +11,16 @@ type Props = {
 export const HighlightedText: React.FC<Props> = ({text, keywords}) => {
   const keywordsArr = keywords.split(' ');
 
-  if (keywords == '')
-    return <div> {text} </div>;
+  if (keywords == '') {
+      return <div className="highlighted-text">{parser(text)}</div>;
+  }
   
-    const keywordRegex = new RegExp(keywordsArr.join('|'), 'gi');
-    const highlightedText = text.replace(keywordRegex, match => `<span class="highlighted">${match}</span>`);
-  
-    return (
-      <div
-        className="highlighted-text"
-      >{parser(highlightedText)}</div>
-    );
+  const keywordRegex = new RegExp(keywordsArr.join('|'), 'gi');
+  const highlightedText = text.replace(keywordRegex, match => `<span class="highlighted">${match}</span>`);
+
+  return (
+    <div
+      className="highlighted-text"
+    >{parser(highlightedText)}</div>
+  );
 };
