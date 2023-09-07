@@ -145,6 +145,7 @@
 
 .card__feature-text {
   font-size: 20px;
+  white-space: pre-wrap;
 }
 
 @media (max-width: 768px) {

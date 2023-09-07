@@ -7,7 +7,7 @@
       "monthlyPrice": "10/h",
       "yearlyPrice": "10/h",
       "monthlyHour": "∞",
-      "team": ["Account manager", "1 part-time Specialist"],
+      "team": ["Account manager \n", "1 part-time Specialist"],
       "mostPopular": false,
       "titleColor": "green",
       "payment": "per hour, deposit commitment",
@@ -32,7 +32,7 @@
       "monthlyPrice": 620,
       "yearlyPrice": 510,
       "monthlyHour": 80,
-      "team": ["Account manager", "1 part-time Specialist"],
+      "team": ["Account manager \n", "1 part-time Specialist"],
       "mostPopular": false,
       "titleColor": "blue",
       "payment": "Per month",
@@ -46,7 +46,10 @@
       "monthlyPrice": 1720,
       "yearlyPrice": 1430,
       "monthlyHour": 250,
-      "team": ["Account manager", "1 full time Specialist"],
+      "team": [
+        "Account manager \n",
+        "1 full time Specialist"
+      ],
       "mostPopular": true,
       "titleColor": "pink",
       "payment": "Per month",
@@ -77,10 +80,9 @@
       "yearlyPrice": 3560,
       "monthlyHour": 520,
       "team": [
-        "Account manager",
-        "2 full time Specialist",
-        "1 part-time specialist for day/night shifts",
-        "20h for freelancers"
+        "Account manager \n",
+        "2 full time Specialist \n",
+        "1 part-time specialist for day/night shifts"
       ],
       "mostPopular": false,
       "titleColor": "mint",

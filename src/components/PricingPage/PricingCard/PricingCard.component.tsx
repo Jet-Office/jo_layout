@@ -96,12 +96,21 @@ export const PricingCard: React.FC<Props> = ({
           </div>
         </div>
         <div className="card__button">
-          <Button
-            color={titleColor !== "pink" ? titleColor : "pink_price"}
-            className="card__button"
-            text="Get started"
-            onClick={handleClick}
-          />
+          {titleColor === "purple" ? (
+            <Button
+              color={"purple"}
+              className="card__button"
+              text="CONTACT SALES" // Змінено текст кнопки для purple
+              onClick={handleClick}
+            />
+          ) : (
+            <Button
+              color={titleColor !== "pink" ? titleColor : "pink_price"}
+              className="card__button"
+              text="Get started"
+              onClick={handleClick}
+            />
+          )}
         </div>
         <div className="card__features">
           {monthlyHour && (
@@ -135,7 +144,7 @@ export const PricingCard: React.FC<Props> = ({
               <div className="card__feature-icon">
                 <i className="icon-users" />
               </div>
-              <div className="card__feature-text">{team.join(", ")}</div>
+              <div className="card__feature-text">{team.join(" ")}</div>
             </div>
           )}
         </div>
