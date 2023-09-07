@@ -50,8 +50,13 @@
   }
 
   .rocket-section__image-container {
+    width: 100%;
     position: relative;
   }
+
+/*   .rocket-section__image {
+    width: 100%;
+  } */
 
   .rocket-section__image-container::before {
     content: "";

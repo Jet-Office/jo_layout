@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './CrewMember.component.css';
+
 type CrewMemberProps = {
   name: string;
   role: string;

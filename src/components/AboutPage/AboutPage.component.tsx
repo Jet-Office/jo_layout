@@ -93,19 +93,58 @@ export const AboutPage: React.FC<Props> = ({ windowWidth, aboutPageRef })=> {
 
             <div className="crew-section__list">
               <div className="crew-section__category">
-              <h3 className="crew-section__category-title">Head</h3>
-                <div className="crew-section__wrapper">
-                {crewData.head.map((member) => (
-                  <CrewMember
-                    key={member.id}
-                    name={member.name}
-                    role={member.role}
-                    avatar={member.avatar}
-                  />
-                ))}
-                </div>
-                
+                <h3 className="crew-section__category-title">Head</h3>
+                  <div className="crew-section__wrapper">
+                    {crewData.head.map((member) => (
+                      <CrewMember
+                        key={member.id}
+                        name={member.name}
+                        role={member.role}
+                        avatar={member.avatar}
+                      />
+                    ))}
+                  </div>
               </div>
+              <div className="crew-section__category">
+                <h3 className="crew-section__category-title">management</h3>
+                  <div className="crew-section__wrapper">
+                    {crewData.management.map((member) => (
+                      <CrewMember
+                        key={member.id}
+                        name={member.name}
+                        role={member.role}
+                        avatar={member.avatar}
+                      />
+                    ))}
+                  </div>
+              </div>
+              <div className="crew-section__category">
+                <h3 className="crew-section__category-title">sales</h3>
+                  <div className="crew-section__wrapper">
+                    {crewData.sales.map((member) => (
+                      <CrewMember
+                        key={member.id}
+                        name={member.name}
+                        role={member.role}
+                        avatar={member.avatar}
+                      />
+                    ))}
+                  </div>
+              </div>
+              <div className="crew-section__category">
+                <h3 className="crew-section__category-title">product</h3>
+                  <div className="crew-section__wrapper">
+                    {crewData.product.map((member) => (
+                      <CrewMember
+                        key={member.id}
+                        name={member.name}
+                        role={member.role}
+                        avatar={member.avatar}
+                      />
+                    ))}
+                  </div>
+              </div>
+              
             </div>
           </section>
         </div>

@@ -11,11 +11,24 @@
   text-align: left;
 }
 
+.crew-section__list {
+  position: relative;
+}
+
+.crew-section__category-title {
+  color: #ccc;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
 .crew-section__category {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 40px;
+  border-bottom: 1px solid #8D8D8D;
 }
 
 .crew-section__wrapper {
@@ -23,4 +36,14 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 40px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .crew-section__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+  }
 }
