@@ -49,8 +49,8 @@
 }
 
 .button--green {
-  background-color: #14181c;
-  color: #1ab686;
+  color: #14181c;
+  background-color: #1ab686;
   border-color: #1ab686;
 
   /* width: 192px; */
@@ -62,9 +62,9 @@
 }
 
 .button--blue {
-  background-color: #14181c;
+  color: #14181c;
 
-  color: #72a5f2;
+  background-color: #72a5f2;
   border-color: #72a5f2;
 
   /* width: 192px; */
@@ -84,18 +84,18 @@
 }
 
 .button--pink_price {
-  background-color: #14181c;
+  color: #14181c;
   /* width: 192px; */
 
-  color: #e961ff;
+  background-color: #e961ff;
   border-color: #e961ff;
 }
 
 .button--mint {
-  background-color: #14181c;
+  color: #14181c;
   /* width: 192px; */
 
-  color: #00e5e5;
+  background-color: #00e5e5;
   border-color: #00e5e5;
 }
 
@@ -105,9 +105,9 @@
 }
 
 .button--purple {
-  background-color: #14181c;
+  color: #14181c;
 
-  color: #aa97f2;
+  background-color: #aa97f2;
   border-color: #aa97f2;
   /* width: 192px; */
 }

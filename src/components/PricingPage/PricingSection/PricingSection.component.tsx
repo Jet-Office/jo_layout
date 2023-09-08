@@ -8,7 +8,7 @@ import "../PricingSection/PricingSection.component.css";
 
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCards } from 'swiper/modules';
+import { EffectCards, EffectCoverflow } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 
@@ -22,11 +22,19 @@ interface Props {
 }
 
 const swiperOptions = {
-  effect: 'cards',
+  effect: 'coverflow',
   grabCursor: true,
-  modules: [EffectCards],
+  slidesPerView: 3,
+  centeredSlides: true,
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+  },
+  modules: [EffectCoverflow],
   className: "mySwiper",
-  initialSlide: 2,
+  initialSlide: 2
 };
 
 export const PricingSection: React.FC<Props> = ({

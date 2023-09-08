@@ -3,7 +3,6 @@ import "./PricingCard.component.css";
 import { Price } from "../../../types/price.type";
 import classNames from "classnames";
 import useHandleClick from "../../../helpers/openModal";
-import { Space, Tooltip } from "antd";
 import { Button } from "../../Button";
 
 type Props = {
