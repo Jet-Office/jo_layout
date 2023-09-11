@@ -12,11 +12,7 @@ function ScrollToTopButton() {
   };
 
   const handleScroll = () => {
-    if (window.pageYOffset > 300) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
+    setIsVisible(window.pageYOffset > 300);
   };
 
   useEffect(() => {
@@ -27,14 +23,15 @@ function ScrollToTopButton() {
     };
   }, []);
 
-  return (
-    isVisible && (
-      <button className="scroll-to-top-button" onClick={scrollToTop}>
-        <p className="scroll-to-top-button-text">UP</p>
-        <img className="scroll-to-top-button-image" src="/backgrounds/top-button.png" alt="" />
-
-      </button>
-    )
+  return isVisible && (
+    <button className="scroll-to-top-button" onClick={scrollToTop}>
+      <p className="scroll-to-top-button-text">UP</p>
+      <img
+        className="scroll-to-top-button-image"
+        src="/backgrounds/top-button.png"
+        alt="Scroll to Top"
+      />
+    </button>
   );
 }
 
