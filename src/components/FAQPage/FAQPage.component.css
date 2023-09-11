@@ -129,6 +129,11 @@
   width: 100%;
 }
 
+.plus-icon {
+  height: 28px;
+  width: 28px;
+}
+
 @media (max-width: 870px) {
   .content--item {
     flex-direction: column;

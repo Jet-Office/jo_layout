@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./FAQItem.component.css";
 import { FAQItem } from "../../../../types/faq.type";
 import { HighlightedText } from "../HighlightedText";
 
