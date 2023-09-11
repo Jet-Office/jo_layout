@@ -12,6 +12,7 @@ import { Pricing } from "./components/Pricing";
 import { Cases } from "./components/Cases";
 import { About } from "./components/About";
 import { Faq } from "./components/Faq";
+import { FaqAll } from "./components/FaqAll";
 
 import { Crew } from "./components/Crew";
 import { ControlPreview } from "./components/ControlPreview";
@@ -127,7 +128,7 @@ function App() {
 
   const [active, setActive] = useContext(ModalContext);
 
-  const [faqItems, setFaqItems] = useState<FAQItem[]>(faqData);
+  const [faqItems, setFaqItems] = useState(faqData);
   const [options, setOptions] = useState('yearly');
   const [activeCardId, setActiveCardId] = useState(3);
 
@@ -154,7 +155,7 @@ function App() {
                 <Cases windowWidth={windowWidth} casesPageRef={casesPageRef} />
                 <About windowWidth={windowWidth} aboutPageRef={aboutPageRef} />
                 <div className="container">
-                <Faq faqItems={faqItems} />
+                <FaqAll/>
                 </div>
                 <Crew />
               </div>
