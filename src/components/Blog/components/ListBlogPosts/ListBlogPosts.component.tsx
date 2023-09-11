@@ -2,8 +2,6 @@ import { BlogPost } from "../BlogPost";
 import { Blog } from "../../../../types/blog.type";
 
 import "../../Blog.component.css"
-import { Route, Routes } from "react-router-dom";
-import { Content } from "../Content";
 
 type Props = {
   currentCategory: string[];
