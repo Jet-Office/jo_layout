@@ -14,6 +14,7 @@ type Props = {
 };
 
 export const DEFAULT_ACTIVE_LINK = "Home";
+export const SERVICE_LINK = "services";
 
 export const Header: React.FC<Props> = ({ windowWidth, activePageRef }) => {
   const [isHome, setIsHome] = useState(true);
@@ -58,6 +59,7 @@ export const Header: React.FC<Props> = ({ windowWidth, activePageRef }) => {
 
   useEffect(() => {
     setActiveLink(DEFAULT_ACTIVE_LINK);
+    setSubmenuOpen(false);
   }, [location.pathname]);
 
   return (

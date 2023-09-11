@@ -30,6 +30,7 @@ import { Blog } from "./components/Blog";
 import { Content } from "./components/Blog/components/Content/Content.component";
 import { PricingPage } from "./components/PricingPage";
 import { faqData } from "./data/faqData.json";
+import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 
 type FAQItem = {
   id: number;
@@ -203,6 +204,7 @@ function App() {
       </Routes>
       <footer className="footermain">
         <Footer contactsPageRef={contactsPageRef} />
+        <ScrollToTopButton />
       </footer>
     </div>
   );
