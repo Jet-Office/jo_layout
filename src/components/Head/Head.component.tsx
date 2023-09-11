@@ -47,6 +47,10 @@ export const Head: React.FC<Props> = ({ windowWidth, activePageRef }) => {
     return () => window.removeEventListener("scroll", listenScrollEvent);
   }, [windowWidth]);
 
+  const handleClose = () => {
+    setMenuIsOpen(false);
+  };
+
   return (
     <div 
       className={`head ${(!isHome || (activeLink !== "Home")) ? "head--main" : "head--header"}`}
@@ -72,6 +76,7 @@ export const Head: React.FC<Props> = ({ windowWidth, activePageRef }) => {
         {windowWidth > 890 ? (    
           <>
             <Navigation
+              handleCLose={handleClose}
               setIsClickLink={setIsClickLink}
               activeLink={activeLink}
               setActiveLink={setActiveLink}

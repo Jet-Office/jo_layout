@@ -6,6 +6,10 @@
   overflow-x: hidden;
 }
 
+/* .VIpgJd-ZVi9od-ORHb {
+  display: none !important;
+} */
+
 .main {
   display: flex;
 
@@ -32,8 +36,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: var(--background);
-}
+/*   background-color: var(--background);
+ */}
 
 
 @media (max-width: 641px) {

@@ -10,7 +10,7 @@ type Props = {
   cases: string;
   activeId: number;
   setActiveId: (id: number) => void;
-  handleCLose?: () => void;
+  handleCLose: () => void;
   submenuOpen: boolean;
   mainMenuSetIsOpen: (submenuOpen: boolean) => void;
   setActiveMenuLink: (activeMenuLink: string) => void;

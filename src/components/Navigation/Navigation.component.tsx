@@ -7,7 +7,7 @@ import { DesktopNavigation } from "./components/Desktop";
 import { MobileNavigation } from "./components/Mobile";
 
 type Props = {
-  handleCLose?: () => void;
+  handleCLose: () => void;
   activeLink: string;
   setActiveLink: (link: string) => void;
   setIsClickLink: (isClick: boolean) => void;
@@ -29,25 +29,25 @@ export const LINKS: Links[] = [
     id: 2,
     name: "Pricing",
     isDropDown: false,
-    href: "#pricing",
+    href: "/pricing",
   },
   {
     id: 3,
-    name: "Cases",
+    name: "FAQ",
     isDropDown: false,
-    href: "#cases",
+    href: "#faq",
   },
   {
     id: 4,
-    name: "About",
+    name: "Articles",
     isDropDown: false,
-    href: "#about",
+    href: "#articles",
   },
   {
     id: 5,
-    name: "Contacts",
+    name: "About",
     isDropDown: false,
-    href: "#contacts",
+    href: "#about",
   },
 ];
 
@@ -67,6 +67,7 @@ export const Navigation: React.FC<Props> = ({
     <nav className="navigation"> {
       windowWidth > 890 ? (
         <DesktopNavigation
+          handleCLose={handleCLose}
           windowWidth={windowWidth}
           activeLink={activeLink}
           submenuOpen={submenuOpen}

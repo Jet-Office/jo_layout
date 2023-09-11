@@ -11,7 +11,7 @@ type Props = {
   setSubmenuOpen: (submenuOpen: boolean) => void;
   setActiveLink: (link: string) => void;
   setIsClickLink: (isClick: boolean) => void;
-  handleCLose?: () => void;
+  handleCLose: () => void;
   mainMenuSetIsOpen: (submenuOpen: boolean) => void;
   setActiveMenuLink: (activeMenuLink: string) => void;
 };
@@ -67,13 +67,16 @@ export const MobileNavigation: React.FC<Props> =
           className={`navigation__link ${ activeLink === link.name ? "navigation__link--active" : "" }`}
 
           onClick={() => { 
-            handleMouseEnter(link); 
-            if (activeLink !== link.name) setActiveLink(link.name);
+            handleMouseEnter(link);
+            if (activeLink !== link.name ) setActiveLink(link.name);
             else {
               setActiveLink(""); 
               setHooverLink("");
             }
-            
+
+            if (link.name === "Pricing") {
+              handleCLose();
+            }
           }}
           >
           {link.name}

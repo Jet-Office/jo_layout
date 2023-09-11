@@ -5,7 +5,7 @@ import { List } from "./List";
 type Props = {
   windowWidth: number;
   activeLink: string;
-  handleCLose?: () => void;
+  handleCLose: () => void;
   submenuOpen: boolean;
   mainMenuSetIsOpen: (submenuOpen: boolean) => void;
   setActiveMenuLink: (activeMenuLink: string) => void;

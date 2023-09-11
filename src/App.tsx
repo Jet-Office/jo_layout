@@ -27,6 +27,14 @@ import { FAQPage } from "./components/FAQPage";
 
 import { Blog } from "./components/Blog";
 import { Content } from "./components/Blog/components/Content/Content.component";
+import { PricingPage } from "./components/PricingPage";
+import { faqData } from "./data/faqData.json";
+
+type FAQItem = {
+  id: number;
+  question: string;
+  text: string;
+};
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -119,6 +127,10 @@ function App() {
 
   const [active, setActive] = useContext(ModalContext);
 
+  const [faqItems, setFaqItems] = useState<FAQItem[]>(faqData);
+  const [options, setOptions] = useState('yearly');
+  const [activeCardId, setActiveCardId] = useState(3);
+
   return (
     <div className="App">
 
@@ -141,7 +153,9 @@ function App() {
                 <Pricing windowWidth={windowWidth} activePageRef={pricingPageRef} />
                 <Cases windowWidth={windowWidth} casesPageRef={casesPageRef} />
                 <About windowWidth={windowWidth} aboutPageRef={aboutPageRef} />
-                <Faq />
+                <div className="container">
+                <Faq faqItems={faqItems} />
+                </div>
                 <Crew />
               </div>
             </main>
@@ -167,6 +181,20 @@ function App() {
         <Route path="faq" element={
           <FAQPage />
         } />
+
+        <Route 
+          path="/pricing"
+          element={
+            <PricingPage
+              windowWidth={windowWidth}
+              activePageRef={pricingPageRef}
+              options={options}
+              setOptions={setOptions}
+              activeCardId={activeCardId}
+              setActiveCardId={setActiveCardId}
+            />
+          }
+        />
 
         <Route path="*" element={
           <NotFound />

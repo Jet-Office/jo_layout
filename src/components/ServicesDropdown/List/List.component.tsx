@@ -8,7 +8,7 @@ type Props = {
   activeId: number;
   setActiveId: (id: number) => void;
   windowWidth: number;
-  handleCLose?: () => void;
+  handleCLose: () => void;
   submenuOpen: boolean;
   mainMenuSetIsOpen: (submenuOpen: boolean) => void;
   setActiveMenuLink: (activeMenuLink: string) => void;
@@ -29,6 +29,7 @@ export const List: React.FC<Props> = ({
     <> {
       windowWidth > 890 ? (
         <DesktopList
+          handleCLose={handleCLose}
           windowWidth={windowWidth} 
           cases={cases} 
           activeId={activeId} 
