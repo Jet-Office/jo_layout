@@ -48,13 +48,32 @@
 }
 
 .sidebar__card:hover {
-  border-right: 4px solid #e961ff;
   background-color: #14181c;
+  position: relative;
+}
+
+
+.sidebar__card:hover::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  right: 0;
 }
 
 .active {
-  border-right: 4px solid #e961ff;
   background-color: #14181c;
+  position: relative;
+}
+
+.active::after  {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  right: 0;
+  background-color: #e961ff;
+  transition: all 0.2s ease-in-out;
 }
 
 .active > span {
