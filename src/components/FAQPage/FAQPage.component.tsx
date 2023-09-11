@@ -58,7 +58,7 @@ export const FAQPage: React.FC = () => {
           <h1>How we can help you?</h1>
           <div className="search-container">
             <img 
-              src="/public/helpers-icons/search_white.svg" 
+              src="/helpers-icons/search_white.svg" 
               alt="search icon" 
               className="search_img"
               onClick={handleOnClick} />
