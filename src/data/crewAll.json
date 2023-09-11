@@ -27,6 +27,12 @@
           "name": "Kostiantyn Velychko",
           "role": "Project Manager",
           "avatar": "crew/kostya.png"
+        },
+        {
+          "id": 3,
+          "name": "Alena Makovetskaya",
+          "role": "HR Manager",
+          "avatar": "crew/alena.png"
         }
       ],
       "sales": [

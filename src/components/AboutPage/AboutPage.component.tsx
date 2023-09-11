@@ -42,8 +42,8 @@ export const AboutPage: React.FC<Props> = ({ windowWidth, aboutPageRef })=> {
 
   return (
     <>
-
       <div className="about-page">
+        
         <section className="hero-section">
             <div 
               className="inner-container"
