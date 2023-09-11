@@ -23,16 +23,20 @@ function ScrollToTopButton() {
     };
   }, []);
 
-  return isVisible && (
-    <button className="scroll-to-top-button" onClick={scrollToTop}>
-      <p className="scroll-to-top-button-text">UP</p>
-      <img
-        className="scroll-to-top-button-image"
-        src="/backgrounds/top-button.png"
-        alt="Scroll to Top"
-      />
-    </button>
-  );
+  if (isVisible) {
+    return (
+      <button className="scroll-to-top-button" onClick={scrollToTop}>
+        <p className="scroll-to-top-button-text">UP</p>
+        <img
+          className="scroll-to-top-button-image"
+          src="/backgrounds/top-button.png"
+          alt="Scroll to Top"
+        />
+      </button>
+    );
+  } else {
+    return null;
+  }
 }
 
 export default ScrollToTopButton;
