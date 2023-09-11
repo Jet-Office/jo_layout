@@ -1,0 +1,300 @@
+.faq-section {
+  margin-top: 160px;
+}
+
+.container.faq-container {
+  gap: 80px;
+  margin-bottom: 180px;
+}
+
+@media (max-width: 768px) {
+  .faq-section {
+    margin-top: 122px;
+  }
+
+  .container.faq-container {
+    margin-bottom: 140px;
+  }
+}
+
+.head_info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+}
+
+.head_info-container > h1 {
+  font-family: 'Proxima Nova regular';
+  font-size: 64px;
+  font-style: normal;
+  line-height: 120%;
+  margin: 0;
+
+  background: linear-gradient(
+          223.81deg,
+          #00e5e5 8.72%,
+          #72a5f2 50.87%,
+          #e961ff 91.3%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  mix-blend-mode: normal;
+}
+
+@media (max-width: 870px) {
+  .head_info-container > h1 {
+    font-family: "Proxima Nova Semibold";
+    font-size: 36px;
+    max-width: 90%;
+  }
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 610px;
+  align-items: center;
+}
+
+.search_img {
+  position: absolute;
+}
+
+.search_input {
+  width: 100%;
+  padding: 12px;
+  padding-left: 60px;
+
+  color: var(--white, #CCC);
+  font-family: 'Proxima Nova regular';
+  font-size: 20px;
+  font-style: normal;
+  line-height: 140%;
+
+  border-radius: 4px;
+  border: 1px solid var(--white, #CCC);
+  background: var(--BG, #14181C);
+  box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.60);
+
+  position: relative;
+}
+/* 
+.search-container::before {
+  content: ''; 
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url("/public/helpers-icons/search_white.svg"); 
+  background-size: cover;
+  z-index: 2;
+} */
+
+.search_img {
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-60%);
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+}
+
+.search_input:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.faq-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+}
+
+@media (max-width: 870px) {
+  .faq-content-container {
+    gap: 48px;
+  }
+}
+
+.content--item {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+}
+
+.plus-icon {
+  height: 28px;
+  width: 28px;
+}
+
+@media (max-width: 870px) {
+  .content--item {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .faq-item-mobile {
+    border-radius: 4px;
+    background: #14181C;
+    box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.60);
+  }
+
+  .faq__item-wrapper {
+    min-width: 343px;
+  }
+
+  .plus-icon-mobile {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.topic_name-container {
+  width: 295px;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.topic_name-container > h2 {
+  font-family: 'Proxima Nova regular';
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--white, #CCC);
+  margin: 0;
+}
+
+@media (max-width: 870px) {
+  .topic_name-container {
+    width: auto;
+  }
+
+  .topic_name-container > h2 {
+    font-size: 24px;
+    font-family: 'Proxima Nova Bold';
+  }
+
+  .question__text {
+    font-size: 16px;
+    color: var(--white, #CCC);
+  }
+}
+
+.questions--container {
+  width: 100%;
+  gap: 8px;
+}
+
+.text_block-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 115px 105px;
+  padding-right: 0;
+  width: 40%;
+  max-width: 610px;
+}
+
+@media (max-width: 985px) {
+  .text_block-container {
+    padding: 105px;
+    width: auto;
+    max-width: fit-content;
+  }
+}
+
+@media (max-width: 768px) {
+  .text_block-container {
+    padding: 24px;
+  }
+}
+
+.start_trial-block {
+  flex-shrink: 0;
+
+  border-radius: 4px;
+  background: var(--BG, #14181C);
+  box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.60);
+
+  height: fit-content;
+  width: 100%;
+  margin-top: 171px;
+}
+
+.text_block {
+  color: var(--white, #CCC);
+  font-family: 'Proxima Nova regular';
+  font-size: 20px;
+  line-height: 140%;
+  text-align: left;
+}
+
+
+.start_trial-container {
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+
+@media (max-width: 985px) {
+  .text_block {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .start_trial-block {
+    margin-top: 380px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text_block {
+    font-size: 16px;
+  }
+}
+
+.shuttle_image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 505px;
+  height: 723px;
+  flex-shrink: 0;
+  transform: translate(10%, 5%);
+}
+
+@media (max-width: 985px) {
+  .shuttle_image {
+    z-index: -1;
+    transform: translate(-50%, -65%);
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    height: 668px;
+  }
+
+  .button-pink-faq {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .shuttle_image {
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 353px;
+    height: 505px;
+  }
+}
