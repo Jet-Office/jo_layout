@@ -257,6 +257,17 @@
     all: unset;
     display: block;
   }
+
+  .cases__chevron_icon {
+    width: 24px;
+    height: 24px;
+
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .cases__chevron_icon--open {
+    transform: rotateX(180deg);
+  }
 }
 
 @media (max-width: 930px) and (min-width: 641px) {
@@ -298,16 +309,7 @@
     align-items: center
   } */
 
-  .cases__chevron_icon {
-    width: 24px;
-    height: 24px;
 
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .cases__chevron_icon--open {
-    transform: rotateX(180deg);
-  }
 /* 
   .cases__card_wrapper {
     display: flex;
