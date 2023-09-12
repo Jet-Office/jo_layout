@@ -175,6 +175,11 @@
   margin: 0;
 }
 
+.question__text {
+  text-align: left;
+  max-width: 80%;
+}
+
 @media (max-width: 870px) {
   .topic_name-container {
     width: auto;

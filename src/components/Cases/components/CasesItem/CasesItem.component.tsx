@@ -40,7 +40,7 @@ export const CasesItem: React.FC<Props> = ({
     (currentId: number) => {
       setActiveCaseId(currentId);
       
-      if (windowWidth <= 641) {
+      if (windowWidth <= 930) {
         setIsOpen(!isOpen);
       }
     },
@@ -57,9 +57,9 @@ export const CasesItem: React.FC<Props> = ({
               alt="services-icon"
               className="cases__card_icon"
             />
-            <div className="cases__card_text">{name}</div>
+            <div className="cases__card_text cases__card_header">{name}</div>
           </div>
-          {windowWidth <= 641 && (
+          {windowWidth <= 930 && (
             <div className="cases__chevron_wrapper">
               <img
                 src="/helpers-icons/chevron-down.svg"

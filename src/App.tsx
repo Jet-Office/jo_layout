@@ -152,13 +152,7 @@ function App() {
                 <Services activeRef={servicesPageRef} />
                 {windowWidth <= 641 && <ControlPreview />}
                 <Benefits />
-                <Pricing windowWidth={windowWidth} activePageRef={pricingPageRef} />
                 <Cases windowWidth={windowWidth} casesPageRef={casesPageRef} />
-                <About windowWidth={windowWidth} aboutPageRef={aboutPageRef} />
-                <div className="container">
-                <FaqAll/>
-                </div>
-                <Crew />
               </div>
             </main>
 

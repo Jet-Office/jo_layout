@@ -10,19 +10,23 @@
 }
 
 .services__list {
-  display: grid;
-  grid-template-columns: repeat(4, 3fr);
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
   gap: 20px;
 }
 
 .services__item {
-  height: 212px;
+  width: 295px;
+  min-height: 212px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  padding: 24px 28px;
 
   border-color: #14181c;
 
@@ -43,8 +47,6 @@
 }
 
 .services__description {
-  max-width: 240px;
-
   font-size: 20px;
   line-height: 140%;
 
@@ -90,12 +92,6 @@
 
 @media (min-width: 1920px) {
   .services__item {
-    padding: 12px 0px;
-
-    width: 20.83vw;
-
-    width: 20.83vw;
-    height: 20.83vw;
   }
 
   .services__icon {
@@ -103,78 +99,58 @@
     width: 4.86vw;
   }
 
-  .services__description {
-    font-size: 1.5vw;
-  }
-
   .services__container {
     gap: 3vw;
-  }
-
-  .services__description {
-    max-width: 16.7vw;
   }
 }
 
 @media (max-width: 1050px) and (min-width: 642px) {
   .services__item {
-    padding: 12px 0px;
-
-    width: 20.83vw;
-
-    width: 20.83vw;
-    height: 20.83vw;
   }
 
   .services__icon {
-    height: 4.86vw;
-    width: 4.86vw;
-  }
-
-  .services__description {
-    font-size: 1.5vw;
+    height: 50px;
+    width: 50px;
   }
 
   .services__container {
     gap: 3vw;
   }
+}
 
-  .services__description {
-    max-width: 16.7vw;
+
+@media (max-width: 809px) {
+  .services__list {
+    gap: 8px;
+  }
+
+  .services__item {
+    padding: 0;
+    width: 210px;
+    box-shadow: none;
+    background: none;
   }
 }
 
 @media (max-width: 641px) {
+  .container.services__container {
+    gap: inherit;
+  }
   .services {
     all: unset;
     width: 100vw;
+  }
+
+  .services__item {
+    max-width: 167px;
   }
 
   .services__title {
     text-align: left;
   }
 
-  .services__list {
-    grid-template-columns: repeat(2, 3fr);
-
-    gap: 8px;
-  }
-
-  .services__item {
-    height: 49.542vw;
-
-    box-shadow: none;
-
-    background: none;
-  }
-
-  .services__icon {
-    height: 17.95vw;
-    width: 17.95vw;
-  }
-
   .services__description {
-    font-size: 4.103vw;
+    font-size: 16px;
   }
 
   .services__title_wrapper {
