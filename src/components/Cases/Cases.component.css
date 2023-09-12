@@ -63,13 +63,6 @@
   z-index: -1;
 }
 
-.cases__background--active .cases__card_header {
-  background: var(--gradient, linear-gradient(224deg, #00E5E5 8.72%, #72A5F2 50.87%, #E961FF 91.3%));
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .cases__card {
   display: flex;
   align-items: center;
@@ -183,7 +176,11 @@
     font-size: 20px;
   }
 
-  .cases__text_description {
+  .cases__background--active .cases__card_header {
+    background: var(--gradient, linear-gradient(224deg, #00E5E5 8.72%, #72A5F2 50.87%, #E961FF 91.3%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .cases__descriptions {
