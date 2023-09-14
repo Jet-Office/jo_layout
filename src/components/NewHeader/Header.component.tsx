@@ -99,7 +99,7 @@ export const Header: React.FC<Props> = ({ windowWidth, activePageRef }) => {
               color="pink"
               text="Start free trial"
               className={'button--nav'}
-              onClick={handleClick}            
+              onClick={handleClick}
             />
           </> 
         ) : (

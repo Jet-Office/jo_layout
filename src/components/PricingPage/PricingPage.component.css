@@ -18,6 +18,8 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+
+  font-family: "Proxima Nova regular";
 }
 
 .price-page__title {

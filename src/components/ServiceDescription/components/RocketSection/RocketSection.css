@@ -32,6 +32,7 @@
   font-weight: 400;
   line-height: 120%; 
   margin-top: 0;
+  color: var(--text-color);
 }
 
 .rocket-section__description {
@@ -49,8 +50,13 @@
   }
 
   .rocket-section__image-container {
+    width: 100%;
     position: relative;
   }
+
+/*   .rocket-section__image {
+    width: 100%;
+  } */
 
   .rocket-section__image-container::before {
     content: "";
