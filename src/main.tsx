@@ -8,12 +8,14 @@ import App from "./App";
 import "./index.css";
 import { ModalProvider } from "./modalProvider";
 import { DropdownProvider } from "./DropdownContext";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <ModalProvider>
     <DropdownProvider>
       <HashRouter>
         <React.StrictMode>
+          <ScrollToTop />
             <App />
         </React.StrictMode>
       </HashRouter>

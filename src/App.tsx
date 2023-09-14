@@ -12,6 +12,7 @@ import { Pricing } from "./components/Pricing";
 import { Cases } from "./components/Cases";
 import { About } from "./components/About";
 import { Faq } from "./components/Faq";
+import { FaqAll } from "./components/FaqAll";
 
 import { Crew } from "./components/Crew";
 import { ControlPreview } from "./components/ControlPreview";
@@ -23,12 +24,14 @@ import { ListOfServices } from "./components/ListOfServices";
 import { NotFound } from "./components/NotFound";
 import { ServiceDescription } from "./components/ServiceDescription";
 import {SectionHead} from "./components/SectionHead";
+import { FAQPage } from "./components/FAQPage";
 
 import { Blog } from "./components/Blog";
 import { Content } from "./components/Blog/components/Content/Content.component";
 import { PricingPage } from "./components/PricingPage";
 import { faqData } from "./data/faqData.json";
 import { AboutPage } from "./components/AboutPage";
+import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 
 type FAQItem = {
   id: number;
@@ -127,7 +130,7 @@ function App() {
 
   const [active, setActive] = useContext(ModalContext);
 
-  const [faqItems, setFaqItems] = useState<FAQItem[]>(faqData);
+  const [faqItems, setFaqItems] = useState(faqData);
   const [options, setOptions] = useState('yearly');
   const [activeCardId, setActiveCardId] = useState(3);
 
@@ -172,7 +175,7 @@ function App() {
                 <Cases windowWidth={windowWidth} casesPageRef={casesPageRef} />
                 <About windowWidth={windowWidth} aboutPageRef={aboutPageRef} />
                 <div className="container">
-                <Faq faqItems={faqItems} />
+                <FaqAll/>
                 </div>
                 <Crew />
               </div>
@@ -194,6 +197,9 @@ function App() {
         } />
         <Route path="resources/blog/:link" element={
           <Content windowWidth={windowWidth}/>
+        } />
+        <Route path="faq" element={
+          <FAQPage />
         } />
 
         <Route 
@@ -223,6 +229,7 @@ function App() {
       </Routes>
       <footer className="footermain">
         <Footer contactsPageRef={contactsPageRef} />
+        <ScrollToTopButton />
       </footer>
     </div>
   );

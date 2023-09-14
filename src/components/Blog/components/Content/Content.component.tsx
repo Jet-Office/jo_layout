@@ -155,7 +155,7 @@ export const Content: React.FC<Props> = ({windowWidth}) => {
           : null
           }
         <div 
-          className="blog_post--header--bg bg--gradient"
+          className="blog_post--header--bg bg--gradient bg--gradient_post"
           style={{ background:  `${
               `url(${blogPost?.background}) center/cover no-repeat`
           }`, }}

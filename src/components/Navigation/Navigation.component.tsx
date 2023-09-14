@@ -35,7 +35,7 @@ export const LINKS: Links[] = [
     id: 3,
     name: "FAQ",
     isDropDown: false,
-    href: "#faq",
+    href: "/faq",
   },
   {
     id: 4,
@@ -62,6 +62,8 @@ export const Navigation: React.FC<Props> = ({
   mainMenuSetIsOpen,
   setActiveMenuLink
 }) => {
+
+  
 
   return (
     <nav className="navigation"> {

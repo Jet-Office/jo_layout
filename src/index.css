@@ -11,6 +11,12 @@
   font-weight: 700;
 }
 
+@font-face {
+  font-family: "Proxima Nova Semibold";
+  src: url(/public/fonts/proxima/Proxima-Nova-Semibold.otf);
+  font-weight: 700;
+}
+
 :root {
   --text-color: #cccc;
   --background: #14181c;

@@ -17,6 +17,10 @@
     }
 }
 
+.icons_scale {
+    height: 24px;
+}
+
 @media (min-width: 641px) and (max-width: 890px) {
 
     .icons_scale {

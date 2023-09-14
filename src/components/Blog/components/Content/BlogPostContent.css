@@ -37,10 +37,10 @@ strong {
     .blog_post--header--bg {
         height: 400px;
     }
-}
-
-.bg--gradient::before {
-    background: linear-gradient(90deg, rgba(20, 24, 28, 0.93) 30.73%, rgba(20, 24, 28, 0.00) 100%);
+    
+    .bg--gradient_post::before {
+        background: linear-gradient(90deg, rgba(20, 24, 28, 0.88) 0%, rgba(20, 24, 28, 0.93) 50.52%, rgba(20, 24, 28, 0.00) 100%);
+    }
 }
 
 .blog_post--header---info {
@@ -86,10 +86,9 @@ strong {
     }
 
     .blog_post--header--description---container {
-        width: 93vw;
+        width: 90vw;
     }
 }
-
 
 .blog_post--header---description {
     gap: 24px;

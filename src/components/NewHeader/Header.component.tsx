@@ -5,7 +5,7 @@ import { Button } from "../Button";
 
 import "./Header.component.css";
 import { Menu } from "./component/Menu";
-import { Link } from "react-router-dom";
+import { Link, useLocation  } from "react-router-dom";
 import useHandleClick from "../../helpers/openModal";
 
 type Props = {
@@ -14,6 +14,7 @@ type Props = {
 };
 
 export const DEFAULT_ACTIVE_LINK = "Home";
+export const SERVICE_LINK = "services";
 
 export const Header: React.FC<Props> = ({ windowWidth, activePageRef }) => {
   const [isHome, setIsHome] = useState(true);
@@ -21,9 +22,7 @@ export const Header: React.FC<Props> = ({ windowWidth, activePageRef }) => {
   const [isClickLink, setIsClickLink] = useState(false);
   const [submenuOpen, setSubmenuOpen] = useState(false);
   const [menuIsOpen, setMenuIsOpen] = useState(false);
-
   const handleClick = useHandleClick();
-
 
   useEffect(() => {
     const { current } = activePageRef;
@@ -43,26 +42,34 @@ export const Header: React.FC<Props> = ({ windowWidth, activePageRef }) => {
     const listenScrollEvent = () => {
       if ((window.scrollY > 113 && windowWidth > 1000) || window.scrollY > 87 ) {
         setIsHome(false);
+        
       } else {
         setIsHome(true);
       }
     };
     window.addEventListener("scroll", listenScrollEvent);
     return () => window.removeEventListener("scroll", listenScrollEvent);
-  }, [windowWidth]);
+  }, [windowWidth, menuIsOpen]);
 
   const handleClose = () => {
     setMenuIsOpen(false);
   };
 
+  const location = useLocation();
+
+  useEffect(() => {
+    setActiveLink(DEFAULT_ACTIVE_LINK);
+    setSubmenuOpen(false);
+  }, [location.pathname]);
+
   return (
     <div 
-      className={`header ${(!isHome || (activeLink !== "Home")) ? "header--main" : "head--header"}`}
-      onMouseLeave={() => {
-        setActiveLink(DEFAULT_ACTIVE_LINK);
-        setSubmenuOpen(false);
-        
-      }}
+    className={`header ${((activeLink !== "Home") || !isHome) ? "header--main" : "head--header"}`}
+    onMouseLeave={() => {
+      setActiveLink(DEFAULT_ACTIVE_LINK);
+      setSubmenuOpen(false);
+      
+    }}
     >
       <div className="header__container">
         <Link to="/" className="header__logo">
