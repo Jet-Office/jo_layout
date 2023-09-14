@@ -29,7 +29,6 @@ import { Content } from "./components/Blog/components/Content/Content.component"
 import { PricingPage } from "./components/PricingPage";
 import { faqData } from "./data/faqData.json";
 import { AboutPage } from "./components/AboutPage";
-import { Loader } from "./components/Loader/Loader";
 
 type FAQItem = {
   id: number;

@@ -9,9 +9,17 @@ type CrewMemberProps = {
 };
 
 export const CrewMember: React.FC<CrewMemberProps> = ({ name, role, avatar }) => (
-  <div className="crew-member">
-    <img src={avatar} alt={name} className="crew-member__avatar" />
-    <h3 className="crew-member__name">{name}</h3>
-    <p className="crew-member__role">{role}</p>
+  <div className="crew__item">
+  <div className="crew__img_container">
+    <img
+      src={avatar}
+      className="crew__img"
+      alt={name}
+    />
   </div>
+  <div className="crew__description">
+    <p className="crew__name">{name}</p>
+    <p className="crew__role">{role}</p>
+  </div>
+</div>
 );

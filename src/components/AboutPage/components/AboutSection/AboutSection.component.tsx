@@ -25,10 +25,16 @@ export const AboutSection: React.FC<Props> = ({ windowWidth, aboutPageRef }) => 
       <section id="about" className="about" ref={aboutPageRef}>
         <div className="about__container">
           <div className="container about__content">
-            <h2 className="about__title h2">About us</h2>
+            <h2 className="about__title h2">About JetOffice</h2>
             <div className="about__text">
               <p className={firstParagraphCLass}>
-              JetOffice — virtual assistance and business solutions that will skyrocket your business. We provide everything needed for effective management and business development, distinguished by high-quality services, flexibility, and a personalized approach to each client. Our crew professionally delivers comprehensive business solutions, including virtual administrative support, consulting, and expertise in the fields of web development, web design, web-3, coaching, and more. Let us become your reliable flight control center for your business success.
+                JetOffice provides administrative support and outsourced assistants. Additional service — business solutions: design and development, business process automation, SMM, copywriting, coaching, management. We provide business solutions using our own resources and with the help of a network of partners.
+                <br />
+                <br />
+                A proprietary development of JetOffice is an AI-based chatbot that helps businesses automate routine processes: task and meeting creation, calendar management, content creation, purchases, and payments.
+                <br />
+                <br />
+                Our virtual assistants are quite independent. Each client is assigned a personal account manager who monitors the quality and acts as the client's advocate. Account managers and assistants are fully immersed in business tasks, understand the client's goals and needs.
               </p>
               {/* {(isShow || windowWidth > 641) && (
                 <p className="about__paragraph">

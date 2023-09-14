@@ -13,6 +13,66 @@
           "name": "Oksana Timchenko",
           "role": "Co-Founder",
           "avatar": "crew/oksana.png"
+        },
+        {
+          "id": 4,
+          "name": "Veronika Nogina",
+          "role": "Assistant Manager",
+          "avatar": "crew/veronika.png"
+        },
+        {
+          "id": 5,
+          "name": "Kostiantyn Velychko",
+          "role": "Project Manager",
+          "avatar": "crew/kostya.png"
+        },
+        {
+          "id": 6,
+          "name": "Alena Makovetskaya",
+          "role": "HR Manager",
+          "avatar": "crew/alena.png"
+        },
+        {
+          "id": 7,
+          "name": "David Bashir",
+          "role": "SMM Manager",
+          "avatar": "crew/david.png"
+        },
+        {
+          "id": 8,
+          "name": "Anastasiia Voronetska",
+          "role": "Sales Manager",
+          "avatar": "crew/anastasiia.png"
+        },
+        {
+          "id": 9,
+          "name": "Sergey Solovev",
+          "role": "UX/UI Designer",
+          "avatar": "crew/sergey.png"
+        },
+        {
+          "id": 10,
+          "name": "Oleksii Pustovit",
+          "role": "Full-Stack Developer",
+          "avatar": "crew/oleksii.png"
+        },
+        {
+          "id": 11,
+          "name": "Artem Nechaev",
+          "role": "Full-Stack Developer",
+          "avatar": "crew/artem.png"
+        },
+        {
+          "id": 12,
+          "name": "Anna Morozenko",
+          "role": "Front-End Developer",
+          "avatar": "crew/ann.png"
+        },
+        {
+          "id": 13,
+          "name": "Alexey Linkov",
+          "role": "Back-End Developer",
+          "avatar": "crew/alexey.png"
         }
       ],
       "management": [
@@ -37,13 +97,13 @@
       ],
       "sales": [
         {
-          "id": 1,
+          "id": 7,
           "name": "David Bashir",
           "role": "SMM Manager",
           "avatar": "crew/david.png"
         },
         {
-          "id": 2,
+          "id": 8,
           "name": "Anastasiia Voronetska",
           "role": "Sales Manager",
           "avatar": "crew/anastasiia.png"
@@ -51,37 +111,37 @@
       ],
       "product": [
         {
-          "id": 1,
+          "id": 9,
           "name": "Sergey Solovev",
           "role": "UX/UI Designer",
           "avatar": "crew/sergey.png"
         },
         {
-          "id": 2,
+          "id": 10,
           "name": "Oleksii Pustovit",
           "role": "Full-Stack Developer",
           "avatar": "crew/oleksii.png"
         },
         {
-          "id": 3,
+          "id": 11,
           "name": "Artem Nechaev",
           "role": "Full-Stack Developer",
           "avatar": "crew/artem.png"
         },
         {
-          "id": 4,
+          "id": 12,
           "name": "Anna Morozenko",
           "role": "Front-End Developer",
           "avatar": "crew/ann.png"
         },
         {
-          "id": 5,
+          "id": 13,
           "name": "Maxim Bobrik",
           "role": "Back-End Developer",
           "avatar": "crew/maks.png"
         },
         {
-          "id": 6,
+          "id": 14,
           "name": "Alexey Linkov",
           "role": "Back-End Developer",
           "avatar": "crew/alexey.png"
