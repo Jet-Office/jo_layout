@@ -60,7 +60,7 @@ export const AboutPage: React.FC<Props> = ({ windowWidth, aboutPageRef })=> {
         <section className="customers-interviews">
           <div className="container">
             <h2 className="customers-interviews__title">
-            Insights Gleaned from Customer Development Interviews
+              Customer Interviews
             </h2>
             <div className="customers-interviews__text-container">
               <div className="customers-interviews__wrapper">

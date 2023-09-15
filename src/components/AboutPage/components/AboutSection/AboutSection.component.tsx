@@ -25,7 +25,7 @@ export const AboutSection: React.FC<Props> = ({ windowWidth, aboutPageRef }) => 
       <section id="about" className="about" ref={aboutPageRef}>
         <div className="about__container">
           <div className="container about__content">
-            <h2 className="about__title h2">About JetOffice</h2>
+            <h2 className="about__title ">About JetOffice</h2>
             <div className="about__text">
               <p className={firstParagraphCLass}>
                 JetOffice provides administrative support and outsourced assistants. Additional service — business solutions: design and development, business process automation, SMM, copywriting, coaching, management. We provide business solutions using our own resources and with the help of a network of partners.

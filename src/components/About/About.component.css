@@ -8,6 +8,14 @@
   gap: 20px;
   align-items: center;
 }
+.about__title {
+  color: #ccc;
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 48px;
+  text-align: left;
+  font-family: "Proxima Nova regular";
+}
 
 .about__content {
   display: flex;
@@ -93,7 +101,7 @@
     opacity: 0.1;
 
     left: -15px;
-    top: -180px;
+    top: -250px;
 
     z-index: -20000;
 
