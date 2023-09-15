@@ -35,16 +35,14 @@ export const Blog: React.FC = () => {
         <section className="blog--container">
           <div className="blog--header-part">
             <section className="blog--top-part bg--gradient">
-              {/* <h1>Blog</h1> */}
-              <p></p>
+              <div className="header_info">
+                <h1>Articles</h1>
+                <p>Here you will find useful information about how we carry out cases. Articles are constantly updated, stay tuned and join JetOffice.</p>
+              </div>
             </section>
             <div className="top-link--container">
               <Link className="top-link top-link__home" to="/">
                 Home
-              </Link>{" "}
-              &#62;{" "}
-              <Link className="top-link top-link__resources" to="/resources">
-                Resources
               </Link>{" "}
               &#62;{" "}
               <span className="top-link">Blog</span>

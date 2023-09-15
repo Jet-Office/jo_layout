@@ -20,7 +20,6 @@ export const Cases: React.FC<Props> = ({ windowWidth, casesPageRef }) => {
   useEffect(() => {
     
     if (сasesListRef.current && casesContent.current && windowWidth > 930) {
-      console.log(сasesListRef.current.offsetHeight);
       casesContent.current.style.height = `${сasesListRef.current.offsetHeight}px`;
     }
   }, [windowWidth]);

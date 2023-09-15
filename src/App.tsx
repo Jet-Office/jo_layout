@@ -8,13 +8,9 @@ import "./App.css";
 import { Header } from "./components/NewHeader";
 import { Services } from "./components/Services";
 import { Benefits } from "./components/Benefits";
-import { Pricing } from "./components/Pricing";
 import { Cases } from "./components/Cases";
-import { About } from "./components/About";
-import { Faq } from "./components/Faq";
-import { FaqAll } from "./components/FaqAll";
+import { Partners } from "./components/Partners";
 
-import { Crew } from "./components/Crew";
 import { ControlPreview } from "./components/ControlPreview";
 import { Modal } from "./components/Modal/Modal";
 import { ModalContext } from "./modalProvider";
@@ -152,6 +148,7 @@ function App() {
                 <Services activeRef={servicesPageRef} />
                 {windowWidth <= 641 && <ControlPreview />}
                 <Benefits />
+                {windowWidth > 641 && <Partners />}
                 <Cases windowWidth={windowWidth} casesPageRef={casesPageRef} />
               </div>
             </main>

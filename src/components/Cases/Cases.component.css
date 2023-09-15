@@ -264,7 +264,7 @@
 
     transition: transform 0.3s ease-in-out;
   }
-  
+
   .cases__chevron_icon--open {
     transform: rotateX(180deg);
   }

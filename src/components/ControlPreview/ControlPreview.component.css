@@ -5,16 +5,24 @@
   font-display: swap;
 }
 
+.control__section {
+  position: relative;
+  height: 820px;
+}
+
 .control__background {
+  position: absolute;
+  top: 0;
+
   background-image: url(/backgrounds/nasa_mission_control_center.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
-  position: relative;
+  width: 820px;
+  height: 820px;
 
-  width: 100vw;
-  height: 100vh;
+  opacity: 0.3;
 }
 
 .control__background::before {
@@ -24,11 +32,10 @@
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 4px;
-  background: rgba(20, 24, 28, 0.80);
+  background: linear-gradient(180deg, #14181C 0.31%, rgba(20, 24, 28, 0.70) 31.29%, rgba(20, 24, 28, 0.00) 55.7%, rgba(20, 24, 28, 0.00) 77.79%, #14181C 97.38%);
   pointer-events: none;
 }
-/* 
+
 .control__background::after {
   content: "";
   position: absolute;
@@ -37,11 +44,11 @@
   width: 100%;
   height: 100%;
   border-radius: 4px;
-  background: linear-gradient(224deg, #00E5E5 0%, #72A5F2 51.04%, #E961FF 100%);
+  background: linear-gradient(224deg, #00E5E5 8.72%, #72A5F2 50.87%, #E961FF 91.3%);
   background-blend-mode: hue;
   mix-blend-mode: hue;
   z-index: 1;
-} */
+} 
 
 .control {
   width: 100vw;
@@ -71,7 +78,7 @@
   text-align: center;
   margin: 0 16px;
 
-  padding-top: 120px;
+  justify-content: center;
 }
 
 .control__title {

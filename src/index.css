@@ -31,7 +31,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 0.5em;
+  width: 4px;
 
   z-index: -3;
 
@@ -99,9 +99,8 @@ p, button {
 .h2 {
   /* all: unset; */
 
-  font-family: "Proxima Nova Bold";
+  font-family: "Proxima Nova regular";
 
-  font-weight: 400;
   font-size: 40px;
   line-height: 120%;
 
@@ -117,7 +116,6 @@ p, button {
     font-size: 24px;
 
     font-family: "Proxima Nova Bold";
-    font-weight: 700;
   }
 
   .container {

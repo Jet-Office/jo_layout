@@ -1,0 +1,27 @@
+.partners__section {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.parners-list--container {
+  width: 100vw;
+}
+
+.parners-list {
+  background: var(--white, #CCC);
+  display: flex;
+  padding: 20px 100px;
+  justify-content: space-between;
+  align-items: flex-start;
+  overflow-x: auto;
+  gap: 57px;
+}
+
+ul {
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  height: 0;
+}

@@ -2,7 +2,9 @@ import "./ControlPreview.component.css";
 
 export const ControlPreview = () => {
   return (
-    <div className="control__background">
+    <div className="control__section">
+      <div className="control__background">
+      </div>
       <div className="control">
         <div className="control__title_container">
           <h2 className="control__title">

@@ -27,7 +27,8 @@ export const BlogCategoryList: React.FC<Props> = ({ currentCategory, setCurrentC
           onClick={ handleClick }
           >
             <div>Categories</div>
-            <img src="/helpers-icons/chevron-down.svg"></img>
+            <img src="/helpers-icons/chevron-down.svg" 
+              className={` cases__chevron_icon ${activeCategories ? 'cases__chevron_icon--open' : ''}`}></img>
           </section>
         : null }
       <section id="blog--categories">
