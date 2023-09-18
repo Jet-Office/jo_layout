@@ -4,9 +4,11 @@ import './GameLoader.css';
 const GameLoader = () => {
   return (
     <div className="game-loader">
-      {/* Ви можете розкоментувати .game-loader__background, якщо вам потрібно */}
       <div className="game-loader__background"></div>
       <div className="game-loader__planet">
+        <div className="loader-radius">
+          <img className="loader-radius-img" src="public/favicons/vector2.png" alt="" />
+        </div>
         <div className="loader-radius1"></div>
         <div className="loader-radius2"></div>
         <div className="loader-radius3"></div>

@@ -1,3 +1,18 @@
+:root {
+  --intro-dark-color: #14181C;
+  --intro-light-color: linear-gradient(223.81deg,#00e5e5 8.72%,#72a5f2 50.87%,#e961ff 91.3%);
+
+  /* color: var(--intro-light-color); */  
+  --animation:#7C66E9;
+  --color1:#7C66E9;
+  --color2:#00E5E5;
+  --color3:#72A5F2;
+  --color4:#1AB686;
+  --color5:#E961FF;
+  --goocolor: #cccccc;
+  --orbitcolor: #cccccc;
+}
+
 .game-loader {
   width: 100vw;
   height: 100vh;
@@ -7,6 +22,7 @@
   z-index: 10000;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
   overflow: hidden;
   background: #14181C;
@@ -19,7 +35,7 @@
   bottom: 10vh;
   z-index: 10001;
   background: transparent;
-  border: 2px solid #11dbd9;
+  border: 2px solid var(--intro-light-color);
   border-radius: 25px;
   color: white;
   cursor: pointer;
@@ -27,7 +43,7 @@
   transition: 1s;
 }
 .game-loader__btn:hover {
-  background: #11dbd9;
+  background: var(--intro-light-color);
 }
 .game-loader__planet {
   filter: url('#goo');
@@ -41,30 +57,49 @@
   width: 8vw;
   height: 8vw;
   border-radius: 50%;
-  background: #11dbd9;
-  box-shadow: #11dbd9 0 0 24px 4px;
+  background: var(--intro-light-color);
+  box-shadow: var(--intro-light-color) 0 0 24px 4px;
   margin: 0 auto;
   position: absolute;
   top: 46vw;
   left: 46vw;
   animation: scale 16s linear infinite, color5 8s linear 1;
 }
+
+.loader-radius-img {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  top: 50%; /* Перемістить верхню частину картинки на 50% відносно висоти батьківського контейнера */
+  left: 50%; /* Перемістить ліву частину картинки на 50% відносно ширини батьківського контейнера */
+  transform: translate(-50%, -50%);
+  z-index: 10001;
+}
+
+@media (max-width: 768px) {
+  .loader-radius-img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
 .game-loader__planet .loader-mini1 {
   position: absolute;
   width: 3vw;
   height: 3vw;
   border-radius: 50%;
-  background: #11dbd9;
+  background: var(--intro-light-color);
   top: 48.5vw;
   left: 48.5vw;
-  animation: move1 8s linear 1, color1 8s linear 1;
+  animation: move1 8s linear 1, --color1 8s linear 1;
 }
 .game-loader__planet .loader-mini2 {
   position: absolute;
   width: 3.6vw;
   height: 3.6vw;
   border-radius: 50%;
-  background: #11dbd9;
+  background: var(--intro-light-color);
   top: 48.5vw;
   left: 48.5vw;
   animation: move2 9s linear 1, color2 9s linear 1;
@@ -74,7 +109,7 @@
   width: 4.2vw;
   height: 4.2vw;
   border-radius: 50%;
-  background: #11dbd9;
+  background: var(--intro-light-color);
   top: 48.5vw;
   left: 48.5vw;
   animation: move3 10s linear 1, color3 10s linear 1;
@@ -84,7 +119,7 @@
   width: 4.8vw;
   height: 4.8vw;
   border-radius: 50%;
-  background: #11dbd9;
+  background: var(--intro-light-color);
   top: 48.5vw;
   left: 48.5vw;
   animation: move4 11s linear 1, color4 11s linear 1;
@@ -94,7 +129,7 @@
   width: 12vw;
   height: 12vw;
   border-radius: 50%;
-  border: 0.5px solid #11dbd9;
+  border: 0.5px solid var(--orbitcolor);
   opacity: 0.2;
   background: transparent;
   top: 44vw;
@@ -107,7 +142,7 @@
   width: 18vw;
   height: 18vw;
   border-radius: 50%;
-  border: 0.5px solid #11dbd9;
+  border: 0.5px solid var(--orbitcolor);
   opacity: 0.2;
   background: transparent;
   transform: scale(0);
@@ -120,7 +155,7 @@
   width: 24vw;
   height: 24vw;
   border-radius: 50%;
-  border: 0.5px solid #11dbd9;
+  border: 0.5px solid var(--orbitcolor);
   opacity: 0.2;
   background: transparent;
   transform: scale(0);
@@ -133,7 +168,7 @@
   width: 30vw;
   height: 30vw;
   border-radius: 50%;
-  border: 0.5px solid #11dbd9;
+  border: 0.5px solid var(--orbitcolor);
   opacity: 0.2;
   background: transparent;
   transform: scale(0);
@@ -377,60 +412,60 @@
 }
 @keyframes color1 {
   10% {
-    background: #11dbd9;
+    background: var(--intro-light-color);
  }
   50% {
-    background: #ff217b;
+    background: var(--color1);
  }
   90% {
-    background: #11dbd9;
+    background: var(--intro-light-color);
  }
 }
 @keyframes color2 {
   10% {
-    background: #11dbd9;
+    background: var(--intro-light-color);
  }
   50% {
-    background: #ff7878;
+    background: var(--color2);
  }
   90% {
-    background: #11dbd9;
+    background: var(--intro-light-color);
  }
 }
 @keyframes color3 {
   10% {
-    background: #11dbd9;
+    background: var(--intro-light-color);
  }
   50% {
-    background: #ffa283;
+    background: var(--color3);
  }
   90% {
-    background: #11dbd9;
+    background: var(--intro-light-color);
  }
 }
 @keyframes color4 {
   10% {
-    background: #11dbd9;
+    background: var(--intro-light-color);
  }
   50% {
-    background: #962a4e;
+    background: var(--color4);
  }
   90% {
-    background: #11dbd9;
+    background: var(--intro-light-color);
  }
 }
 @keyframes color5 {
   10% {
-    background: #11dbd9;
-    box-shadow: #11dbd9 0 0 24px 4px;
+    background: var(--intro-light-color);
+    box-shadow: var(--intro-light-color) 0 0 24px 4px;
  }
   50% {
-    background: #13c2d3;
-    box-shadow: #13c2d3 0 0 24px 4px;
+    background: var(--intro-light-color);
+    box-shadow: var(--intro-light-color) 0 0 24px 4px;
  }
   90% {
-    background: #11dbd9;
-    box-shadow: #11dbd9 0 0 24px 4px;
+    background: var(--intro-light-color);
+    box-shadow: var(--intro-light-color) 0 0 24px 4px;
  }
 }
 .game-loader {
