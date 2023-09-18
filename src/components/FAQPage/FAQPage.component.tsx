@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import "./FAQPage.component.css";
+import "../FaqAll/FaqAll.component.css";
 import { faqData } from "../../data/faqData.json";
 import { FAQItem, FAQItems } from "../../types/faq.type";
 import { FAQItemComponent } from "./components/FAQItemComponent";

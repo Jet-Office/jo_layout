@@ -16,6 +16,9 @@
   align-items: flex-start;
   overflow-x: auto;
   gap: 57px;
+
+  background: var(--BG, #14181C);
+  box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.60);
 }
 
 ul {
