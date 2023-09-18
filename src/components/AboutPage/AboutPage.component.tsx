@@ -1,5 +1,6 @@
 import React from "react";
 import "./AboutPage.component.css";
+import "../Crew/Crew.component.css";
 import { AboutSection } from "./components/AboutSection";
 import { CrewMember } from "./components/CrewItem";
 
