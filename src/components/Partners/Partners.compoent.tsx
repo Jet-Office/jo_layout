@@ -9,19 +9,19 @@ export const Partners = () => {
       <div className="parners-list--container">
         <ul className="parners-list">
           <li className="patner--item">
-            <img src="/partners/google.svg" alt="google" />
+            <a href="https://www.google.com.ua/" target="_blank"><img src="/partners/google.svg" alt="google" /></a>
           </li>
           <li className="patner--item">
-            <img src="/partners/clickup.svg" alt="clickup" />
+            <a href="https://clickup.com/" target="_blank"><img src="/partners/clickup.svg" alt="clickup" /></a>
           </li>
           <li className="patner--item">
-            <img src="/partners/aws.svg" alt="aws" />
+            <a href="https://aws.amazon.com/?nc1=h_ls" target="_blank"><img src="/partners/aws.svg" alt="aws" /></a>
           </li>
           <li className="patner--item">
-            <img src="/partners/miro.svg" alt="miro" />
+            <a href="https://miro.com/" target="_blank"><img src="/partners/miro.svg" alt="miro" /></a>
           </li>
           <li className="patner--item">
-            <img src="/partners/mongodb.svg" alt="mongodb" />
+            <a href="https://www.mongodb.com/" target="_blank"><img src="/partners/mongodb.svg" alt="mongodb" /></a>
           </li>
         </ul>
       </div>
