@@ -9,7 +9,7 @@
 }
 
 .parners-list {
-  background: var(--white, #CCC);
+  /* background: var(--white, #CCC); */
   display: flex;
   padding: 20px 100px;
   justify-content: space-between;

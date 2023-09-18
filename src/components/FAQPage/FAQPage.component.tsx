@@ -3,6 +3,7 @@ import "./FAQPage.component.css";
 import { faqData } from "../../data/faqData.json";
 import { FAQItem, FAQItems } from "../../types/faq.type";
 import { FAQItemComponent } from "./components/FAQItemComponent";
+import useHandleClick from "../../helpers/openModal";
 
 export const FAQPage: React.FC = () => {
 
@@ -51,6 +52,8 @@ export const FAQPage: React.FC = () => {
     setSearchQuery(event.target.value);
   };
 
+  const handleClick = useHandleClick();
+
   return (
     <section className="faq-section">
       <div className="container faq-container">
@@ -88,7 +91,10 @@ export const FAQPage: React.FC = () => {
           <div className="start_trial-block">
             <div className="text_block-container">
               <div className="text_block">Get started with 14 days free trial — no credit card required.Experience up to 30 $ in value and discover how we can help your business boost.</div>
-              <button className="button button--pink button-pink-faq">Start free trial</button>
+              <button 
+                className="button button--pink button-pink-faq"
+                onClick={handleClick}
+              >Start free trial</button>
             </div>
           </div>
           <img className="shuttle_image" src="/faq-icon/space_shuttle.png" alt="Space shuttle" />

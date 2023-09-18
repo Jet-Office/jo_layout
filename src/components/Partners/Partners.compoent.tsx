@@ -21,9 +21,6 @@ export const Partners = () => {
             <img src="/partners/miro.svg" alt="miro" />
           </li>
           <li className="patner--item">
-            <img src="/partners/telegram.svg" alt="telegram" />
-          </li>
-          <li className="patner--item">
             <img src="/partners/mongodb.svg" alt="mongodb" />
           </li>
         </ul>
