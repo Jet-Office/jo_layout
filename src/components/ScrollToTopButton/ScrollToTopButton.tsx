@@ -26,10 +26,10 @@ function ScrollToTopButton() {
   if (isVisible) {
     return (
       <button className="scroll-to-top-button" onClick={scrollToTop}>
-        <p className="scroll-to-top-button-text">UP</p>
+        <p className="scroll-to-top-button-text">Up</p>
         <img
           className="scroll-to-top-button-image"
-          src="/backgrounds/top-button.png"
+          src="/backgrounds/top-button.svg"
           alt="Scroll to Top"
         />
       </button>

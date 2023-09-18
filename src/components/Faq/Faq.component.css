@@ -86,7 +86,6 @@
   .answer {
     display: flex;
     flex-direction: column;
-    max-width: 300px;
     text-align: left;
   }
 
