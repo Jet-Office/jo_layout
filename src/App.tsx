@@ -26,6 +26,7 @@ import { Blog } from "./components/Blog";
 import { Content } from "./components/Blog/components/Content/Content.component";
 import { PricingPage } from "./components/PricingPage";
 import { faqData } from "./data/faqData.json";
+import { AboutPage } from "./components/AboutPage";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 
 type FAQItem = {
@@ -129,8 +130,26 @@ function App() {
   const [options, setOptions] = useState('yearly');
   const [activeCardId, setActiveCardId] = useState(3);
 
+  const [isLoading, setIsLoading] = useState(true); // Додайте стан для відстеження завантаження ресурсів
+
+  useEffect(() => {
+    async function loadResources() {
+      try {
+
+        setIsLoading(false);
+      } catch (error) {
+        console.error("Помилка завантаження ресурсів", error);
+      }
+    }
+
+    loadResources();
+  }, []);
+
+
   return (
     <div className="App">
+
+
 
       <Modal active={active} setActive={setActive} />
         <Header
@@ -152,7 +171,6 @@ function App() {
                 <Cases windowWidth={windowWidth} casesPageRef={casesPageRef} />
               </div>
             </main>
-
           </>
         } />
         <Route path="services/:link" element={
@@ -188,6 +206,13 @@ function App() {
             />
           }
         />
+
+        <Route path="about" element={
+          <AboutPage
+          windowWidth={windowWidth} 
+          aboutPageRef={aboutPageRef}
+          />
+        } />
 
         <Route path="*" element={
           <NotFound />

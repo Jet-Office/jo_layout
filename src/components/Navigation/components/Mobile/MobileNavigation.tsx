@@ -74,7 +74,7 @@ export const MobileNavigation: React.FC<Props> =
               setHooverLink("");
             }
 
-            if (link.name === "Pricing") {
+            if (link.name === "Pricing" || link.name === "FAQ" || link.name === "About") {
               handleCLose();
             }
           }}
