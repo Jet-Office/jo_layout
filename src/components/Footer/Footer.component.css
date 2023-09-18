@@ -14,14 +14,16 @@
   margin-bottom: 94px;
 }
 
-.footer__contacts::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: var(--gradient);
+@media (min-width: 900px) {
+  .footer__contacts::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--gradient);
+  }
 }
 
 .footer__text {
@@ -31,13 +33,12 @@
   color: var(--text-color);
 }
 
-.footer__label {
-}
-
 @media screen and (max-width: 900px) {
   .footer__contacts {
     flex-direction: column-reverse;
     max-width: none;
+    padding: 0;
+    gap: 145px;
   }
 
   .sectionform {

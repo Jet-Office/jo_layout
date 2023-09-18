@@ -23,6 +23,8 @@
   background-color: #14181C;
 
   z-index: 1000;
+
+  cursor: pointer;
 }
 
 .scroll-to-top-button-text {

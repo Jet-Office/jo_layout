@@ -46,6 +46,10 @@
     gap: 140px;
   }
 
+  .main__container:last-child {
+    margin-bottom: 140px;
+  }
+
   .footer__label {
     font-size: 16px;
   }

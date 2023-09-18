@@ -33,7 +33,7 @@ export const ContactForm = () => {
   return (
     <section className="sectionform">
       <div className="form">
-        <h2 className="form__heading">Write to us</h2>
+        <h2 className="h2 form__heading">Write to us</h2>
         <div className="form__container">
           <form
             className="form__form"
