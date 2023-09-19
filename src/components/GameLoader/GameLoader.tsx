@@ -7,7 +7,11 @@ const GameLoader = () => {
       <div className="game-loader__background"></div>
       <div className="game-loader__planet">
         <div className="loader-radius">
-          <img className="loader-radius-img" src="public/favicons/vector2.png" alt="" />
+          <img 
+            className="loader-radius-img" 
+            src="/favicons/vector2.png" 
+            alt="" 
+          />
         </div>
         <div className="loader-radius1"></div>
         <div className="loader-radius2"></div>
