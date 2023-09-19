@@ -28,6 +28,7 @@ import { PricingPage } from "./components/PricingPage";
 import { faqData } from "./data/faqData.json";
 import { AboutPage } from "./components/AboutPage";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
+import GameLoader from "./components/GameLoader/GameLoader";
 
 type FAQItem = {
   id: number;
@@ -130,7 +131,7 @@ function App() {
   const [options, setOptions] = useState('yearly');
   const [activeCardId, setActiveCardId] = useState(3);
 
-  const [isLoading, setIsLoading] = useState(true); // Додайте стан для відстеження завантаження ресурсів
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     async function loadResources() {
@@ -148,8 +149,6 @@ function App() {
 
   return (
     <div className="App">
-
-
 
       <Modal active={active} setActive={setActive} />
         <Header
@@ -213,6 +212,11 @@ function App() {
           aboutPageRef={aboutPageRef}
           />
         } />
+
+        <Route path="loader" element={
+            <GameLoader />
+          }
+        />
 
         <Route path="*" element={
           <NotFound />

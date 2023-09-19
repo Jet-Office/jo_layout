@@ -1,5 +1,5 @@
 import React from 'react';
-import './GameLoader.css';
+import './GameLoader.scss';
 
 const GameLoader = () => {
   return (

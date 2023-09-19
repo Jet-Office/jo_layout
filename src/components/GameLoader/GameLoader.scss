@@ -1,0 +1,1104 @@
+/* :root {
+  --intro-dark-color: #14181C;
+  --intro-light-color: linear-gradient(223.81deg,#00e5e5 8.72%,#72a5f2 50.87%,#e961ff 91.3%);
+
+  --animation:#7C66E9;
+  --color1:#E961FF;
+  --color2:#00E5E5;
+  --color3:#72A5F2;
+  --color4:#1AB686;
+  --color5:#E961FF;
+  --goocolor: #cccccc;
+  --orbitcolor: #cccccc;
+}
+
+.game-loader {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  background: #14181C;
+}
+.game-loader__btn {
+  position: fixed;
+  outline: none;
+  min-width: 16vw;
+  min-height: 4vw;
+  bottom: 10vh;
+  z-index: 10001;
+  background: transparent;
+  border: 2px solid var(--intro-light-color);
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  transition: 1s;
+}
+.game-loader__btn:hover {
+  background: var(--intro-light-color);
+}
+.game-loader__planet {
+  filter: url('#goo');
+  position: relative;
+  width: 100vw;
+  height: 100vw;
+}
+.game-loader__planet::after {
+  content: '';
+  display: block;
+  width: 8vw;
+  height: 8vw;
+  border-radius: 50%;
+  background: var(--intro-light-color);
+  box-shadow: var(--intro-light-color) 0 0 24px 4px;
+  margin: 0 auto;
+  position: absolute;
+  top: 46vw;
+  left: 46vw;
+  animation: scale 16s linear infinite, color5 8s linear 1;
+}
+
+.loader-radius-img {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10001;
+}
+
+@media (max-width: 768px) {
+  .loader-radius-img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.game-loader__planet .loader-mini1 {
+  position: absolute;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+  background: var(--intro-light-color);
+  top: 48.5vw;
+  left: 48.5vw;
+  animation: move1 4s linear 1, color1 8s linear 1;
+}
+.game-loader__planet .loader-mini2 {
+  position: absolute;
+  width: 3.6vw;
+  height: 3.6vw;
+  border-radius: 50%;
+  background: var(--intro-light-color);
+  top: 48.5vw;
+  left: 48.5vw;
+  animation: move2 5s linear 1, color2 9s linear 1;
+}
+.game-loader__planet .loader-mini3 {
+  position: absolute;
+  width: 4.2vw;
+  height: 4.2vw;
+  border-radius: 50%;
+  background: var(--intro-light-color);
+  top: 48.5vw;
+  left: 48.5vw;
+  animation: move3 6s linear 1, color3 10s linear 1;
+}
+.game-loader__planet .loader-mini4 {
+  position: absolute;
+  width: 4.8vw;
+  height: 4.8vw;
+  border-radius: 50%;
+  background: var(--intro-light-color);
+  top: 48.5vw;
+  left: 48.5vw;
+  animation: move4 7s linear 1, color4 11s linear 1;
+}
+.game-loader__planet .loader-radius1 {
+  position: absolute;
+  width: 12vw;
+  height: 12vw;
+  border-radius: 50%;
+  border: 0.5px solid var(--orbitcolor);
+  opacity: 0.2;
+  background: transparent;
+  top: 44vw;
+  left: 44vw;
+  transform: scale(0);
+  animation: orbit1 4s linear 1;
+}
+.game-loader__planet .loader-radius2 {
+  position: absolute;
+  width: 18vw;
+  height: 18vw;
+  border-radius: 50%;
+  border: 0.5px solid var(--orbitcolor);
+  opacity: 0.2;
+  background: transparent;
+  transform: scale(0);
+  top: 41vw;
+  left: 41vw;
+  animation: orbit2 5s linear 1;
+}
+.game-loader__planet .loader-radius3 {
+  position: absolute;
+  width: 24vw;
+  height: 24vw;
+  border-radius: 50%;
+  border: 0.5px solid var(--orbitcolor);
+  opacity: 0.2;
+  background: transparent;
+  transform: scale(0);
+  top: 38vw;
+  left: 38vw;
+  animation: orbit3 6s linear 1;
+}
+.game-loader__planet .loader-radius4 {
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+  border: 0.5px solid var(--orbitcolor);
+  opacity: 0.2;
+  background: transparent;
+  transform: scale(0);
+  top: 35vw;
+  left: 35vw;
+  animation: orbit4 7s linear 1;
+}
+.game-loader__planet--color .loader-mini1 {
+  background: #0fc3c2;
+}
+.game-loader__planet--color .loader-mini2 {
+  background: #0dacaa;
+}
+.game-loader__planet--color .loader-mini3 {
+  background: #0b9493;
+}
+.game-loader__planet--color .loader-mini4 {
+  background: #0a7c7b;
+}
+.btn-play {
+  left: 41vw;
+}
+@keyframes move1 {
+  0% {
+    transform: skewX(5deg) rotate(0deg) translateY(0em) rotate(0deg) skewX(-5deg) rotate(0deg);
+ }
+  10% {
+    transform: skewX(5deg) rotate(180deg) translateY(-6vw) rotate(-180deg) skewX(-5deg) rotate(180deg);
+ }
+  25% {
+    transform: skewX(5deg) rotate(360deg) translateY(-12vw) rotate(-360deg) skewX(-5deg) rotate(360deg);
+ }
+  50% {
+    transform: skewX(5deg) rotate(720deg) translateY(-12vw) rotate(720deg) skewX(-5deg) rotate(720deg);
+ }
+  75% {
+    transform: skewX(5deg) rotate(1080deg) translateY(-12vw) rotate(-1080deg) skewX(-5deg) rotate(1080deg);
+ }
+  90% {
+    transform: skewX(5deg) rotate(1260deg) translateY(-6vw) rotate(-1260deg) skewX(-5deg) rotate(1260deg);
+ }
+  100% {
+    transform: skewX(5deg) rotate(1440deg) translateY(0em) rotate(-1440deg) skewX(-5deg) rotate(1440deg);
+ }
+}
+@keyframes move2 {
+  0% {
+    transform: skewX(5deg) rotate(0deg) translateY(0em) rotate(0deg) skewX(-5deg) rotate(0deg);
+ }
+  10% {
+    transform: skewX(5deg) rotate(180deg) translateY(-9vw) rotate(-180deg) skewX(-5deg) rotate(180deg);
+ }
+  25% {
+    transform: skewX(5deg) rotate(360deg) translateY(-18vw) rotate(-360deg) skewX(-5deg) rotate(360deg);
+ }
+  50% {
+    transform: skewX(5deg) rotate(720deg) translateY(-18vw) rotate(720deg) skewX(-5deg) rotate(720deg);
+ }
+  75% {
+    transform: skewX(5deg) rotate(1080deg) translateY(-18vw) rotate(-1080deg) skewX(-5deg) rotate(1080deg);
+ }
+  90% {
+    transform: skewX(5deg) rotate(1260deg) translateY(-9vw) rotate(-1260deg) skewX(-5deg) rotate(1260deg);
+ }
+  100% {
+    transform: skewX(5deg) rotate(1440deg) translateY(0em) rotate(-1440deg) skewX(-5deg) rotate(1440deg);
+ }
+}
+@keyframes move3 {
+  0% {
+    transform: skewX(5deg) rotate(0deg) translateY(0em) rotate(0deg) skewX(-5deg) rotate(0deg);
+ }
+  10% {
+    transform: skewX(5deg) rotate(180deg) translateY(-12vw) rotate(-180deg) skewX(-5deg) rotate(180deg);
+ }
+  25% {
+    transform: skewX(5deg) rotate(360deg) translateY(-24vw) rotate(-360deg) skewX(-5deg) rotate(360deg);
+ }
+  50% {
+    transform: skewX(5deg) rotate(720deg) translateY(-24vw) rotate(720deg) skewX(-5deg) rotate(720deg);
+ }
+  75% {
+    transform: skewX(5deg) rotate(1080deg) translateY(-24vw) rotate(-1080deg) skewX(-5deg) rotate(1080deg);
+ }
+  90% {
+    transform: skewX(5deg) rotate(1260deg) translateY(-12vw) rotate(-1260deg) skewX(-5deg) rotate(1260deg);
+ }
+  100% {
+    transform: skewX(5deg) rotate(1440deg) translateY(0em) rotate(-1440deg) skewX(-5deg) rotate(1440deg);
+ }
+}
+@keyframes move4 {
+  0% {
+    transform: skewX(5deg) rotate(0deg) translateY(0em) rotate(0deg) skewX(-5deg) rotate(0deg);
+ }
+  10% {
+    transform: skewX(5deg) rotate(180deg) translateY(-15vw) rotate(-180deg) skewX(-5deg) rotate(180deg);
+ }
+  25% {
+    transform: skewX(5deg) rotate(360deg) translateY(-30vw) rotate(-360deg) skewX(-5deg) rotate(360deg);
+ }
+  50% {
+    transform: skewX(5deg) rotate(720deg) translateY(-30vw) rotate(720deg) skewX(-5deg) rotate(720deg);
+ }
+  75% {
+    transform: skewX(5deg) rotate(1080deg) translateY(-30vw) rotate(-1080deg) skewX(-5deg) rotate(1080deg);
+ }
+  90% {
+    transform: skewX(5deg) rotate(1260deg) translateY(-15vw) rotate(-1260deg) skewX(-5deg) rotate(1260deg);
+ }
+  100% {
+    transform: skewX(5deg) rotate(1440deg) translateY(0em) rotate(-1440deg) skewX(-5deg) rotate(1440deg);
+ }
+}
+@keyframes scale {
+  0% {
+    transform: scale(1.5);
+ }
+  50% {
+    transform: scale(1);
+ }
+  100% {
+    transform: scale(1.5);
+ }
+}
+@keyframes orbit1 {
+  0% {
+    transform: scale(0);
+ }
+  10% {
+    transform: scale(1);
+ }
+  25% {
+    transform: scale(2.2);
+ }
+  35% {
+    transform: scale(2.1);
+ }
+  50% {
+    transform: scale(2);
+ }
+  65% {
+    transform: scale(2.1);
+ }
+  75% {
+    transform: scale(2);
+ }
+  90% {
+    transform: scale(1);
+ }
+  100% {
+    transform: scale(0);
+ }
+}
+@keyframes orbit2 {
+  0% {
+    transform: scale(0);
+ }
+  10% {
+    transform: scale(1);
+ }
+  25% {
+    transform: scale(2.2);
+ }
+  35% {
+    transform: scale(2.1);
+ }
+  50% {
+    transform: scale(2);
+ }
+  65% {
+    transform: scale(2.1);
+ }
+  75% {
+    transform: scale(2);
+ }
+  90% {
+    transform: scale(1);
+ }
+  100% {
+    transform: scale(0);
+ }
+}
+@keyframes orbit3 {
+  0% {
+    transform: scale(0);
+ }
+  10% {
+    transform: scale(1);
+ }
+  25% {
+    transform: scale(2.2);
+ }
+  35% {
+    transform: scale(2.1);
+ }
+  50% {
+    transform: scale(2);
+ }
+  65% {
+    transform: scale(2.1);
+ }
+  75% {
+    transform: scale(2);
+ }
+  90% {
+    transform: scale(1);
+ }
+  100% {
+    transform: scale(0);
+ }
+}
+@keyframes orbit4 {
+  0% {
+    transform: scale(0);
+ }
+  10% {
+    transform: scale(1);
+ }
+  25% {
+    transform: scale(2.2);
+ }
+  35% {
+    transform: scale(2.1);
+ }
+  50% {
+    transform: scale(2);
+ }
+  65% {
+    transform: scale(2.1);
+ }
+  75% {
+    transform: scale(2);
+ }
+  90% {
+    transform: scale(1);
+ }
+  100% {
+    transform: scale(0);
+ }
+}
+@keyframes color1 {
+  10% {
+    background: var(--intro-light-color);
+ }
+  50% {
+    background: var(--color1);
+ }
+  90% {
+    background: var(--intro-light-color);
+ }
+}
+@keyframes color2 {
+  10% {
+    background: var(--intro-light-color);
+ }
+  50% {
+    background: var(--color2);
+ }
+  90% {
+    background: var(--intro-light-color);
+ }
+}
+@keyframes color3 {
+  10% {
+    background: var(--intro-light-color);
+ }
+  50% {
+    background: var(--color3);
+ }
+  90% {
+    background: var(--intro-light-color);
+ }
+}
+@keyframes color4 {
+  10% {
+    background: var(--intro-light-color);
+ }
+  50% {
+    background: var(--color4);
+ }
+  90% {
+    background: var(--intro-light-color);
+ }
+}
+@keyframes color5 {
+  10% {
+    background: var(--intro-light-color);
+    box-shadow: var(--intro-light-color) 0 0 24px 4px;
+ }
+  50% {
+    background: var(--intro-light-color);
+    box-shadow: var(--intro-light-color) 0 0 24px 4px;
+ }
+  90% {
+    background: var(--intro-light-color);
+    box-shadow: var(--intro-light-color) 0 0 24px 4px;
+ }
+}
+.game-loader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+svg {
+  position: absolute;
+  z-index: -100;
+  pointer-events: none;
+}
+ */
+
+/*  --intro-dark-color: #14181C;
+ --intro-light-color: linear-gradient(223.81deg,#00e5e5 8.72%,#72a5f2 50.87%,#e961ff 91.3%);
+
+ --animation:#7C66E9;
+ --color1:#E961FF;
+ --color2:#00E5E5;
+ --color3:#72A5F2;
+ --color4:#1AB686;
+ --color5:#E961FF;
+ --goocolor: #cccccc;
+ --orbitcolor: #cccccc;
+ */
+
+$intro-dark-color: #14181C;
+$intro-light-color: linear-gradient(223.81deg,#00e5e5 8.72%,#72a5f2 50.87%,#e961ff 91.3%);
+$angle: 5deg;
+
+$color1:#E961FF;
+$color2:#00E5E5;
+$color3:#72A5F2;
+$color4:#1AB686;
+$color5:#E961FF;
+
+
+$iteration: 1;
+$goocolor: linear-gradient(223.81deg,#00e5e5 8.72%,#72a5f2 50.87%,#e961ff 91.3%);
+$orbitcolor: #cccccc;
+$bigsize:8vw;
+$smallsize:3vw;
+$containerwidth:100vw;
+$animoffset1:15vw;
+$animoffset2:25vw;
+$animoffset3:35vw;
+$animoffset4:45vw;
+$animtime:5s;
+$containerheight:100vw;
+$radius1: $smallsize*2;
+$radius2: $smallsize*3;
+$radius3: $smallsize*4;
+$radius4: $smallsize*5;
+
+.game-loader {
+  width:100vw;
+  height:100vh;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 10000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow:hidden;
+  background: $intro-dark-color;
+}
+
+.game-loader__btn{
+  position: fixed;
+  outline:none;
+  		min-width:$bigsize*2;
+		min-height:$bigsize/2;
+  bottom:10vh;
+
+  z-index:10001;
+  background: transparent;
+  border: 2px solid $intro-light-color;
+  border-radius:25px;
+  color: white;
+  cursor: pointer;
+  padding:0.5em 1em;
+  transition: 1s;
+  &:hover{
+    background: $intro-light-color;
+  }
+}
+
+.game-loader__planet{
+	filter:url('#goo');
+	position:relative;
+	width:$containerwidth;
+	height:$containerheight;
+	&::after { //big goo in middle
+		content:'';
+		display:block;
+		width:$bigsize;
+		height:$bigsize;
+		border-radius:50%;
+		background:$goocolor;
+	  box-shadow: $goocolor 0 0 24px 4px;
+		margin:0 auto;
+		position:absolute;
+		top:$containerheight/2 - $bigsize/2;
+		left:$containerwidth/2 - $bigsize/2;
+		animation:scale $animtime*2 linear infinite, color5 $animtime linear $iteration;
+	}
+	.loader-mini1 {
+		position:absolute;
+		width:$smallsize;
+		height:$smallsize;
+		border-radius:50%;
+		// background:darken($goocolor, 10%);
+    background:$goocolor;
+		top:$containerheight/2 -$smallsize/2;
+		left:$containerwidth/2 - $smallsize/2;
+		animation:move1 $animtime linear $iteration, color1 $animtime linear $iteration;
+	}
+  .loader-mini2 {
+		position:absolute;
+		width:$smallsize*1.2;
+		height:$smallsize*1.2;
+		border-radius:50%;
+		// background:darken($goocolor, 10%);
+    background:$goocolor;
+		top:$containerheight/2 -$smallsize/2;
+		left:$containerwidth/2 - $smallsize/2;
+		animation:move2 $animtime+1s linear $iteration, color2 $animtime+1s linear $iteration;
+	}
+  .loader-mini3 {
+		position:absolute;
+		width:$smallsize*1.4;
+		height:$smallsize*1.4;
+		border-radius:50%;
+		// background:darken($goocolor, 15%);
+    background:$goocolor;
+		top:$containerheight/2 -$smallsize/2;
+		left:$containerwidth/2 - $smallsize/2;
+		animation:move3 $animtime+2s linear $iteration, color3 $animtime+2s linear $iteration;
+	}
+  .loader-mini4 {
+		position:absolute;
+		width:$smallsize*1.6;
+		height:$smallsize*1.6;
+		border-radius:50%;
+		// background:darken($goocolor, 20%);
+    background:$goocolor;
+		top:$containerheight/2 -$smallsize/2;
+		left:$containerwidth/2 - $smallsize/2;
+		animation:move4 $animtime+3s linear $iteration, color4 $animtime+3s linear $iteration;
+	}
+  .loader-radius1 {
+		position:absolute;
+		width:$radius1*2;
+		height:$radius1*2;
+		border-radius:50%;
+		// background:darken($goocolor, 10%);
+    border:0.5px solid $orbitcolor;
+    opacity: 0.2;
+    background:transparent;
+		top:$containerheight/2 - $radius1;
+		left:$containerwidth/2 - $radius1;
+    transform:scale(0);
+		animation: orbit1 $animtime linear $iteration;
+	}
+  .loader-radius2 {
+		position:absolute;
+		width:$radius2*2;
+		height:$radius2*2;
+		border-radius:50%;
+		// background:darken($goocolor, 10%);
+    border:0.5px solid $orbitcolor;
+    opacity: 0.2;
+    background:transparent;
+        transform:scale(0);
+		top:$containerheight/2 - $radius2;
+		left:$containerwidth/2 - $radius2;
+		animation: orbit2 $animtime+1s linear $iteration;
+	}
+  .loader-radius3 {
+		position:absolute;
+		width:$radius3*2;
+		height:$radius3*2;
+		border-radius:50%;
+		// background:darken($goocolor, 10%);
+    border:0.5px solid $orbitcolor;
+    opacity: 0.2;
+    background:transparent;
+        transform:scale(0);
+		top:$containerheight/2 - $radius3;
+		left:$containerwidth/2 - $radius3;
+		animation: orbit3 $animtime+2s linear $iteration;
+	}
+  .loader-radius4 {
+		position:absolute;
+		width:$radius4*2;
+		height:$radius4*2;
+		border-radius:50%;
+		// background:darken($goocolor, 10%);
+    border:0.5px solid $orbitcolor;
+    opacity: 0.2;
+    background:transparent;
+        transform:scale(0);
+		top:$containerheight/2 - $radius4;
+		left:$containerwidth/2 - $radius4;
+		animation: orbit4 $animtime+3s linear $iteration;
+	}
+}
+
+.game-loader__planet--color{
+  .loader-mini1 {
+		background: $color1;
+	}
+  .loader-mini2 {
+		background: $color2;
+	}
+  .loader-mini3 {
+		background: $color3;
+	}
+  .loader-mini4 {
+		background: $color4;
+	}
+}
+
+.btn-play{
+  left:$containerwidth/2 - ($bigsize+1);
+}
+@keyframes move1 {
+	0% {
+    transform: skewX($angle) rotate(0deg) translateY(0em) 
+               rotate(0deg) skewX(-$angle) rotate(0deg);
+    // background:$goocolor;
+  }
+  
+  10% {
+    transform: skewX($angle) rotate(180deg) translateY(-$radius1) 
+               rotate(-180deg) skewX(-$angle) rotate(180deg);
+  }
+  25% {
+    transform: skewX($angle) rotate(360deg) translateY(-$radius1*2) 
+               rotate(-360deg) skewX(-$angle) rotate(360deg);
+  }
+  
+  50% {
+    transform: skewX($angle) rotate(720deg) translateY(-$radius1*2) 
+               rotate(720deg) skewX(-$angle) rotate(720deg);
+    // background:red;
+  }
+  
+  75% {
+    transform: skewX($angle) rotate(1080deg) translateY(-$radius1*2) 
+               rotate(-1080deg) skewX(-$angle) rotate(1080deg);
+                 }
+  90% {
+    transform: skewX($angle) rotate(1260deg) translateY(-$radius1) 
+               rotate(-1260deg) skewX(-$angle) rotate(1260deg);
+  }
+  
+  
+  100% {
+    transform: skewX($angle) rotate(1440deg) translateY(0em) 
+               rotate(-1440deg) skewX(-$angle) rotate(1440deg);
+    // background:$goocolor;
+  }
+}
+
+@keyframes move2 {
+	0% {
+    transform: skewX($angle) rotate(0deg) translateY(0em) 
+               rotate(0deg) skewX(-$angle) rotate(0deg);
+  }
+  
+  10% {
+    transform: skewX($angle) rotate(180deg) translateY(-$radius2) 
+               rotate(-180deg) skewX(-$angle) rotate(180deg);
+  }
+  25% {
+    transform: skewX($angle) rotate(360deg) translateY(-$radius2*2) 
+               rotate(-360deg) skewX(-$angle) rotate(360deg);
+  }
+  
+  50% {
+    transform: skewX($angle) rotate(720deg) translateY(-$radius2*2) 
+               rotate(720deg) skewX(-$angle) rotate(720deg);
+  }
+  
+  75% {
+    transform: skewX($angle) rotate(1080deg) translateY(-$radius2*2) 
+               rotate(-1080deg) skewX(-$angle) rotate(1080deg);
+                 }
+  90% {
+    transform: skewX($angle) rotate(1260deg) translateY(-$radius2) 
+               rotate(-1260deg) skewX(-$angle) rotate(1260deg);
+  }
+  
+  
+  100% {
+    transform: skewX($angle) rotate(1440deg) translateY(0em) 
+               rotate(-1440deg) skewX(-$angle) rotate(1440deg);
+  }
+}
+
+@keyframes move3 {
+	0% {
+    transform: skewX($angle) rotate(0deg) translateY(0em) 
+               rotate(0deg) skewX(-$angle) rotate(0deg);
+  }
+  
+  10% {
+    transform: skewX($angle) rotate(180deg) translateY(-$radius3) 
+               rotate(-180deg) skewX(-$angle) rotate(180deg);
+  }
+  25% {
+    transform: skewX($angle) rotate(360deg) translateY(-$radius3*2) 
+               rotate(-360deg) skewX(-$angle) rotate(360deg);
+  }
+  
+  50% {
+    transform: skewX($angle) rotate(720deg) translateY(-$radius3*2) 
+               rotate(720deg) skewX(-$angle) rotate(720deg);
+  }
+  
+  75% {
+    transform: skewX($angle) rotate(1080deg) translateY(-$radius3*2) 
+               rotate(-1080deg) skewX(-$angle) rotate(1080deg);
+                 }
+  90% {
+    transform: skewX($angle) rotate(1260deg) translateY(-$radius3) 
+               rotate(-1260deg) skewX(-$angle) rotate(1260deg);
+  }
+  
+  
+  100% {
+    transform: skewX($angle) rotate(1440deg) translateY(0em) 
+               rotate(-1440deg) skewX(-$angle) rotate(1440deg);
+  }
+}
+
+@keyframes move4 {
+	0% {
+    transform: skewX($angle) rotate(0deg) translateY(0em) 
+               rotate(0deg) skewX(-$angle) rotate(0deg);
+  }
+  
+  10% {
+    transform: skewX($angle) rotate(180deg) translateY(-$radius4)
+               rotate(-180deg) skewX(-$angle) rotate(180deg);
+  }
+  25% {
+    transform: skewX($angle) rotate(360deg) translateY(-$radius4*2) 
+               rotate(-360deg) skewX(-$angle) rotate(360deg);
+  }
+  
+  50% {
+    transform: skewX($angle) rotate(720deg) translateY(-$radius4*2) 
+               rotate(720deg) skewX(-$angle) rotate(720deg);
+  }
+  
+  75% {
+    transform: skewX($angle) rotate(1080deg) translateY(-$radius4*2) 
+               rotate(-1080deg) skewX(-$angle) rotate(1080deg);
+                 }
+  90% {
+    transform: skewX($angle) rotate(1260deg) translateY(-$radius4) 
+               rotate(-1260deg) skewX(-$angle) rotate(1260deg);
+  }
+  
+  
+  100% {
+    transform: skewX($angle) rotate(1440deg) translateY(0em) 
+               rotate(-1440deg) skewX(-$angle) rotate(1440deg);
+  }
+}
+
+@keyframes scale {
+	0% {
+		transform:scale(1.5);
+  }
+	50% {
+		transform:scale(1);
+	}
+	100% {
+		transform:scale(1.5);
+	}
+}
+
+@keyframes orbit1 {
+	0% {
+    transform:scale(0);
+  }
+  
+  10% {
+    transform:scale(1);
+  }
+  25% {
+    transform:scale(2.2);
+  }
+  
+   35% {
+    transform:scale(2.1);
+  }
+  
+  50% {
+    transform:scale(2);
+  }
+  
+    65% {
+    transform:scale(2.1);
+  }
+  
+  75% {
+    transform: scale(2);
+  }
+  90% {
+    transform:scale(1);
+  }
+  
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes orbit2 {
+	0% {
+    transform:scale(0);
+  }
+  
+  10% {
+    transform:scale(1);
+  }
+  25% {
+    transform:scale(2.2);
+  }
+  
+   35% {
+    transform:scale(2.1);
+  }
+  
+  50% {
+    transform:scale(2);
+  }
+  
+    65% {
+    transform:scale(2.1);
+  }
+  
+  75% {
+    transform: scale(2);
+  }
+  90% {
+    transform:scale(1);
+  }
+  
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes orbit3 {
+		0% {
+    transform:scale(0);
+  }
+  
+  10% {
+    transform:scale(1);
+  }
+  25% {
+    transform:scale(2.2);
+  }
+  
+   35% {
+    transform:scale(2.1);
+  }
+  
+  50% {
+    transform:scale(2);
+  }
+  
+    65% {
+    transform:scale(2.1);
+  }
+  
+  75% {
+    transform: scale(2);
+  }
+  90% {
+    transform:scale(1);
+  }
+  
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes orbit4 {
+		0% {
+    transform:scale(0);
+  }
+  
+  10% {
+    transform:scale(1);
+  }
+  25% {
+    transform:scale(2.2);
+  }
+  
+   35% {
+    transform:scale(2.1);
+  }
+  
+  50% {
+    transform:scale(2);
+  }
+  
+    65% {
+    transform:scale(2.1);
+  }
+  
+  75% {
+    transform: scale(2);
+  }
+  90% {
+    transform:scale(1);
+  }
+  
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes color1 {
+	10% {
+		background: $goocolor;
+	}
+	50% {
+		background: $color1;
+	}
+	90% {
+		background: $goocolor;
+	}
+}
+
+@keyframes color2 {
+	10% {
+		background: $goocolor;
+	}
+	50% {
+		background: $color2;
+	}
+	90% {
+		background: $goocolor;
+	}
+}
+
+@keyframes color3 {
+	10% {
+		background: $goocolor;
+	}
+	50% {
+		background: $color3;
+	}
+	90% {
+		background: $goocolor;
+	}
+}
+
+@keyframes color4 {
+	10% {
+		background: $goocolor;
+	}
+	50% {
+		background: $color4;
+	}
+	90% {
+		background: $goocolor;
+	}
+}
+
+@keyframes color5 {
+	10% {
+		background: $goocolor;
+    box-shadow: $goocolor 0 0 24px 4px;
+	}
+	50% {
+		background: $goocolor;
+    box-shadow: $goocolor 0 0 24px 4px;
+	}
+	90% {
+		background: $goocolor;
+     box-shadow: $goocolor 0 0 24px 4px;
+	}
+}
+
+.game-loader {
+  width:100%;
+  height:100%;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 10000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow:hidden;
+}
+
+.loader-radius-img {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10001;
+}
+
+@media (max-width: 768px) {
+  .loader-radius-img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+svg { //Firefox bug fix
+	position:absolute;
+	z-index:-100;
+	pointer-events:none;
+}
