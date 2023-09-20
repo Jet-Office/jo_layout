@@ -54,6 +54,8 @@
   text-transform: uppercase;
 
   color: var(--text-color);
+
+  margin-top: 10px;
 }
 
 .services__list_container {
@@ -65,11 +67,13 @@
   line-height: 140%;
   color: var(--text-color);
   text-align: center;
-
+  max-width: 860px;
 }
 
 .text__container {
   margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
 }
 
 .services__title.h2 {

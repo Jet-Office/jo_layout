@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect, useCallback } from "react";
 import "./FAQPage.component.css";
 import "../FaqAll/FaqAll.component.css";
 import { faqData } from "../../data/faqData.json";
@@ -14,7 +14,6 @@ export const FAQPage: React.FC = () => {
   const inputRef = useRef<HTMLInputElement>(null);
 
   const search = () => {
-
     const filteredData = faqData.map((topic) => {
       const questions = topic.questions.filter((question) => {
         return searchQuery.split(' ').some((word) => {
@@ -36,22 +35,21 @@ export const FAQPage: React.FC = () => {
     setFilteredFAQ(filteredData as FAQItems[]);
   }
   
-  const handleKeyPress: React.KeyboardEventHandler<HTMLInputElement> = (event) => {
-    if (event.key === 'Enter') {
-      setHighlightedKeywords(event.currentTarget.value.toLowerCase());
-      search(); 
-    }
-  };
-
-  const handleOnClick = () => {
+  const handleOnClick = useCallback(() => {
     setSearchQuery(inputRef.current?.value.toLowerCase() || "");
     setHighlightedKeywords(inputRef.current?.value.toLowerCase() || "");
     search();
-  }
+  }, []);
 
-  const handleSearchInputChange = (event: { target: { value: React.SetStateAction<string>; }; }) => {
+  const handleSearchInputChange = useCallback((event: { target: { value: React.SetStateAction<string>; }; }) => {
     setSearchQuery(event.target.value);
-  };
+  }, [])
+
+  useEffect(() => {
+    setSearchQuery(inputRef.current?.value.toLowerCase() || "");
+    setHighlightedKeywords(inputRef.current?.value.toLowerCase() || "");
+    search();
+  }, [searchQuery])
 
   const handleClick = useHandleClick();
 
@@ -71,7 +69,6 @@ export const FAQPage: React.FC = () => {
               ref={inputRef}
               type="text"
               onChange={handleSearchInputChange}
-              onKeyDown={handleKeyPress}
               placeholder="Search" />
           </div>
         </div>

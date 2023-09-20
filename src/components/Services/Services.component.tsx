@@ -16,8 +16,8 @@ export const Services: React.FC<Props> = ({ activeRef }) => {
         <div className="text__container">
           <p className="paragraph">
             We offer virtual assistants and concierge services trusted by
-            companies <br /> and businessmen to manage tasks, calendars, shopping,
-            events, bills, documents, SMM, and more. <br /> In our work, we use process
+            companies and businessmen to manage tasks, calendars, shopping,
+            events, bills, documents, SMM, and more. In our work, we use process
             automation and artificial intelligence to achieve success and solve
             problems at maximum speed!
           </p>

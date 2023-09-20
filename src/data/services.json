@@ -3,6 +3,7 @@
     {
       "id": 1,
       "link": "/services/calendars-documents-tasks-management",
+      "nameWithWrap": "Calendars,<br/>Documents & tasks<br/>management",
       "name": "Calendars, Documents & tasks management",
       "icon": "list-edit.svg",
       "descriptions": [
@@ -37,6 +38,7 @@
     {
       "id": 2,
       "link": "/services/project-management-coordination",
+      "nameWithWrap": "Project<br/>management<br/>& coordination",
       "name": "Project management & coordination",
       "icon": "gauge-dashboard.svg",
       "descriptions": [
@@ -72,6 +74,7 @@
     {
       "id": 3,
       "link": "/services/business-assistance-human-resources",
+      "nameWithWrap": "Business<br/>assistance & Human<br/>resources",
       "name": "Business assistance & Human resources",
       "icon": "bulb.svg",
       "descriptions": [
@@ -103,6 +106,7 @@
     {
       "id": 4,
       "link": "/services/social-media-management-advertisement",
+      "nameWithWrap": "Social media<br/>management<br/>& advertisement",
       "name": "Social media management & advertisement",
       "icon": "vintage-tv-4.svg",
       "descriptions": [
@@ -123,6 +127,7 @@
     {
       "id": 5,
       "link": "/services/travel-relocation-translation",
+      "nameWithWrap": "Travel<br/>& relocation<br/>Translation",
       "name": "Travel & relocation, Translation",
       "icon": "landmark-pisa-tower.svg",
       "descriptions": [
@@ -178,6 +183,7 @@
     {
       "id": 6,
       "link": "/services/business-events-corporate-holidays",
+      "nameWithWrap": "Business events<br/>& corporate<br/>holidays",
       "name": "Business events & corporate holidays",
       "icon": "restaurant-menu.svg",
       "descriptions": [
@@ -239,6 +245,7 @@
     {
       "id": 7,
       "link": "/services/design-development-research",
+      "nameWithWrap": "Design,<br/>Development<br/>& Research",
       "name": "Design, Development & Research",
       "icon": "brain-1.svg",
       "descriptions": [
@@ -288,6 +295,7 @@
     {
       "id": 8,
       "link": "/services/coaching-leadership-team-building",
+      "nameWithWrap": "Coaching,<br/>leadership<br/>& Team-building",
       "name": "Coaching, leadership & Team-building",
       "icon": "target-correct.svg",
       "descriptions": [
