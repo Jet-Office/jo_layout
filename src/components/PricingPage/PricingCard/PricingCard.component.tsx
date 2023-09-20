@@ -118,7 +118,7 @@ export const PricingCard: React.FC<Props> = ({
                 <i className="icon-hourglass" />
               </div>
               <div 
-                className={`card__feature-text card__color--${titleColor}`}
+                className={`card__feature-text card__color card__color--${titleColor}`}
               >
                 {monthlyHour} hours included per month
               </div>
