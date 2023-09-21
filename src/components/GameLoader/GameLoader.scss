@@ -513,8 +513,8 @@ $color5:#E961FF;
 $iteration: 1;
 $goocolor: linear-gradient(223.81deg,#00e5e5 8.72%,#72a5f2 50.87%,#e961ff 91.3%);
 $orbitcolor: #cccccc;
-$bigsize:8vw;
-$smallsize:3vw;
+$bigsize:5vw;
+$smallsize:1.5vw;
 $containerwidth:100vw;
 $animoffset1:15vw;
 $animoffset2:25vw;
@@ -1005,49 +1005,49 @@ $radius4: $smallsize*5;
 
 @keyframes color1 {
 	10% {
-		background: $goocolor;
+		background: $color1;
 	}
 	50% {
 		background: $color1;
 	}
 	90% {
-		background: $goocolor;
+		background: $color1;
 	}
 }
 
 @keyframes color2 {
 	10% {
-		background: $goocolor;
+		background: $color2;
 	}
 	50% {
 		background: $color2;
 	}
 	90% {
-		background: $goocolor;
+		background: $color2;
 	}
 }
 
 @keyframes color3 {
 	10% {
-		background: $goocolor;
+		background: $color3;
 	}
 	50% {
 		background: $color3;
 	}
 	90% {
-		background: $goocolor;
+		background: $color3;
 	}
 }
 
 @keyframes color4 {
 	10% {
-		background: $goocolor;
+		background: $color4;
 	}
 	50% {
 		background: $color4;
 	}
 	90% {
-		background: $goocolor;
+		background: $color4;
 	}
 }
 
@@ -1082,8 +1082,8 @@ $radius4: $smallsize*5;
 .loader-radius-img {
   position: absolute;
   top: 0;
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1092,8 +1092,8 @@ $radius4: $smallsize*5;
 
 @media (max-width: 768px) {
   .loader-radius-img {
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
   }
 }
 
