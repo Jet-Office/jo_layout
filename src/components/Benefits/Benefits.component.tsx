@@ -1,5 +1,30 @@
+import { motion } from "framer-motion";
 import { Benefit } from "../../types/benefits.type";
 import "./Benefits.component.css";
+
+const animation = {
+  hidden: {
+    x: -100,
+    opacity: 0
+  },
+  visible: (custom: number) => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.2 }
+  })
+}
+
+const animationShuttle = {
+  hidden: {
+    y: 100,
+    opacity: 0
+  },
+  visible: (custom: number) => ({
+    y: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.2 }
+  })
+}
 
 export const Benefits = () => {
   const benefits: Benefit[] = [
@@ -56,23 +81,27 @@ export const Benefits = () => {
   ];
 
   return (
-    <section className="benefits">
+    <motion.section 
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.2, once: true }}
+      className="benefits">
       <div className="benefits__container container">
         <div className="benefits__text_container">
-          <h2 className="benefits__title h2">Benefits</h2>
+          <motion.h2 custom={1} variants={animation} className="benefits__title h2">Benefits</motion.h2>
           <div className="benefits__list">
             {benefits.map(({ id, icon, text }) => (
-              <div key={id} className="benefits__item">
+              <motion.div custom={id + 0.1} variants={animation} key={id} className="benefits__item">
                 <img src={icon} alt="" className="benefits__icon" />
                 <p className="benefits__text">{text}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
         <div className="benefits__plane_container">
-            <img src="/benefits-icons/plane.svg" width={259.39} height={616} alt="rocket" className="benefits__plane" />
+            <motion.img custom={2} variants={animationShuttle} src="/benefits-icons/plane.svg" width={259.39} height={616} alt="rocket" className="benefits__plane" />
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };

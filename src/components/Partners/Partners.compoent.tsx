@@ -3,9 +3,9 @@ import "./Partners.component.css";
 export const Partners = () => {
   return (
     <div className="partners__section">
-      <div className="container patners_container">
+      {/* <div className="container patners_container">
         <h2 className="h2">Partners</h2>
-      </div>
+      </div> */}
       <div className="parners-list--container">
         <ul className="parners-list">
           <li className="patner--item">

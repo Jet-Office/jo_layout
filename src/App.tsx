@@ -151,22 +151,21 @@ function App() {
     <div className="App">
 
       <Modal active={active} setActive={setActive} />
-        <Header
-          activePageRef={activePageRef}
-          windowWidth={windowWidth}
-        />
+      <Header
+        activePageRef={activePageRef}
+        windowWidth={windowWidth}
+      />
 
       <Routes>
         <Route path="" element={
           <>
             <SectionHead homePageRef={homePageRef}/>
-
             <main className="main">
               <div className="main__container">
+                {windowWidth > 641 && <Partners />}
                 <Services activeRef={servicesPageRef} />
                 {windowWidth <= 641 && <ControlPreview />}
                 <Benefits />
-                {windowWidth > 641 && <Partners />}
                 <Cases windowWidth={windowWidth} casesPageRef={casesPageRef} />
               </div>
             </main>
@@ -175,7 +174,6 @@ function App() {
         <Route path="services/:link" element={
           <ListOfServices />
         } />
-
         <Route path="services" element={
           <ServicesPage />
         } />
@@ -191,7 +189,6 @@ function App() {
         <Route path="faq" element={
           <FAQPage />
         } />
-
         <Route 
           path="/pricing"
           element={
@@ -205,19 +202,16 @@ function App() {
             />
           }
         />
-
         <Route path="about" element={
           <AboutPage
           windowWidth={windowWidth} 
           aboutPageRef={aboutPageRef}
           />
         } />
-
         <Route path="loader" element={
             <GameLoader />
           }
         />
-
         <Route path="*" element={
           <NotFound />
         } />

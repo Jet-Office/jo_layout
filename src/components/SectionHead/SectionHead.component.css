@@ -20,12 +20,13 @@
   width: 100vw;
   min-width: 1300px;
 
-  margin-bottom: 180px;
+  margin-bottom: 80px;
 }
 
 @media (max-width: 641px) {
   .section-head {
     height: 100vh;
+    margin-bottom: 0;
   }
 }
 
