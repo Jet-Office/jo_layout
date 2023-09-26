@@ -29,6 +29,9 @@ import { faqData } from "./data/faqData.json";
 import { AboutPage } from "./components/AboutPage";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 import GameLoader from "./components/GameLoader/GameLoader";
+import { MainPageBlock } from "./components/MainPageBlock";
+import { GettingStartedBlock } from "./components/GettingStartedBlock";
+import { ReviewsMainPage } from "./components/ReviewsMainPage";
 
 type FAQItem = {
   id: number;
@@ -165,8 +168,11 @@ function App() {
                 {windowWidth > 641 && <Partners />}
                 <Services activeRef={servicesPageRef} />
                 {windowWidth <= 641 && <ControlPreview />}
+                <GettingStartedBlock />
                 <Benefits />
+                <MainPageBlock />
                 <Cases windowWidth={windowWidth} casesPageRef={casesPageRef} />
+                <ReviewsMainPage />
               </div>
             </main>
           </>
