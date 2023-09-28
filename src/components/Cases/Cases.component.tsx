@@ -34,6 +34,7 @@ const animationFromRight = {
     transition: { delay: custom * 0.2 }
   })
 }
+
 export const Cases: React.FC<Props> = ({ windowWidth, casesPageRef }) => {
   const [descriptions, setDescriptions] = useState<Description[]>([]);
   const [activeCaseId, setActiveCaseId] = useState(4);
