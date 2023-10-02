@@ -118,7 +118,7 @@
       ],
       "mostPopular": false,
       "titleColor": "purple",
-      "payment": "annual commitment only",
+      "payment": "annual commitment<br/>only",
       "preferences": [
         {
           "id": 1,
