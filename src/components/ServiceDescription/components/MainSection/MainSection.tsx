@@ -27,8 +27,8 @@ export const MainSection: React.FC<MainSectionProps> = ({
         <h2 className="h2 main-section__title">{mainTitle}</h2>
         <p className="main-section__description">{mainDescription}</p>
         <div className="buttons">
-          <Button color="dark" text="Get in touch" onClick={handleClick} />
-          <Button color="pink" text="get a service" onClick={handleClick} />
+          <Button color="dark" text="connect with us" onClick={handleClick} className="button--dark-service" />
+          <Button color="pink" text="start free trial" onClick={handleClick} className="button--pink-service" />
         </div>
       </div>
     </div>
