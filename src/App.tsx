@@ -28,6 +28,7 @@ import { PricingPage } from "./components/PricingPage";
 import { faqData } from "./data/faqData.json";
 import { AboutPage } from "./components/AboutPage";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
+import SwitchLanguageButton from "./components/SwitchLanguageButton/SwitchLanguageButton";
 import GameLoader from "./components/GameLoader/GameLoader";
 
 type FAQItem = {
@@ -225,6 +226,7 @@ function App() {
       <footer className="footermain">
         <Footer contactsPageRef={contactsPageRef} />
         <ScrollToTopButton />
+        <SwitchLanguageButton />
       </footer>
     </div>
   );
