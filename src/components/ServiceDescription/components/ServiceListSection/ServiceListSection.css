@@ -28,17 +28,22 @@
   margin-bottom: 10px;
 }
 
-.service-list-section__title {
-  font-size: 20px;
-}
-
 .service-list-section__description {
   font-size: 20px;
   font-weight: normal;
   color: var(--text-color);
 }
 
+.service-list-section__title {
+  margin: 0;
+  margin-bottom: 24px;
+}
+
 @media (max-width: 641px) {
+  .hero-section__text {
+    text-align: left;
+  }
+
   .service-list-section {
     justify-content: center;
     align-items: center;
@@ -53,14 +58,14 @@
     width: 80%;
     padding: 12px;
   }
-
-  .service-list-section__title {
-    font-size: 16px;
-  }
   
   .service-list-section__description {
     font-size: 16px;
     line-height: 140%;
     padding: 0 40px;
+  }
+
+  .service-list-section__title {
+    margin-bottom: 16px;
   }
 }
