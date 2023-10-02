@@ -29,3 +29,18 @@ ul {
 ::-webkit-scrollbar {
   height: 0;
 }
+
+@media (max-width: 641px) {
+  .parners-list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 24px 16px;
+    justify-content: center;
+    row-gap: 48px;
+    column-gap: 55px;
+  }
+
+  .patner--item img {
+    height: 30px;
+  }
+}

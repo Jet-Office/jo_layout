@@ -1,3 +1,9 @@
+.block_section {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
 .block {
   display: flex;
   justify-content: space-between;
@@ -10,16 +16,13 @@
 .text-block {
   padding: 65px 105px;
   padding-right: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }
 
 .text-block > h2 {
-  color: var(--white, #CCC);
-  font-family: 'Proxima Nova regular';
-  font-size: 40px;
-  font-style: normal;
-  line-height: 120%; 
   text-align: left;
-  font-weight: normal;
 }
 
 .img-block {
@@ -31,4 +34,41 @@
 
 .img-block > img {
   height: 308px;
+}
+
+@media (max-width: 641px) {
+  .block {
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+    width: fit-content;
+  }
+  .text-block {
+    padding: 0;
+  }
+  .buttons {
+    justify-content: center;
+  }
+
+  .text-block > h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  .block {
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+  }
+  .text-block {
+    padding: 0;
+  }
+  .buttons {
+    justify-content: center;
+  }
+
+  .text-block > h2 {
+    text-align: center;
+  }
 }

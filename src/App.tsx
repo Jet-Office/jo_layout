@@ -165,14 +165,14 @@ function App() {
             <SectionHead homePageRef={homePageRef}/>
             <main className="main">
               <div className="main__container">
-                {windowWidth > 641 && <Partners />}
+                <Partners />
                 <Services activeRef={servicesPageRef} />
                 {windowWidth <= 641 && <ControlPreview />}
-                <GettingStartedBlock />
+                {/* <GettingStartedBlock /> */}
                 <Benefits />
-                <MainPageBlock />
+                <MainPageBlock windowWidth={windowWidth} />
                 <Cases windowWidth={windowWidth} casesPageRef={casesPageRef} />
-                <ReviewsMainPage />
+                {/* <ReviewsMainPage /> */}
               </div>
             </main>
           </>
