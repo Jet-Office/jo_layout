@@ -24,7 +24,7 @@ export const MainSection: React.FC<MainSectionProps> = ({
         style={{ backgroundImage: `url(${mainImage})` }}
       ></div>
       <div className="main-section__content">
-        <h2 className="main-section__title">{mainTitle}</h2>
+        <h2 className="h2 main-section__title">{mainTitle}</h2>
         <p className="main-section__description">{mainDescription}</p>
         <div className="buttons">
           <Button color="dark" text="Get in touch" onClick={handleClick} />
