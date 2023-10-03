@@ -226,7 +226,7 @@ function App() {
       <footer className="footermain">
         <Footer contactsPageRef={contactsPageRef} />
         <ScrollToTopButton />
-        <SwitchLanguageButton />
+        {/* <SwitchLanguageButton /> */}
       </footer>
     </div>
   );
