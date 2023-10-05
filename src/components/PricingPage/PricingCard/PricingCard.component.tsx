@@ -4,6 +4,7 @@ import { Price } from "../../../types/price.type";
 import classNames from "classnames";
 import useHandleClick from "../../../helpers/openModal";
 import { Button } from "../../Button";
+import parser from 'html-react-parser';
 
 type Props = {
   pricingItem: Price;
@@ -43,8 +44,6 @@ export const PricingCard: React.FC<Props> = ({
       setPrice(yearlyPrice);
     }
   }, [monthlyPrice, options, yearlyPrice]);
-
-
 
   return (
     <div
@@ -89,8 +88,8 @@ export const PricingCard: React.FC<Props> = ({
           <br />
           
           <div className="card__price-period">
-            {options === "monthly" ? payment : (
-              payment === "Per month" ? "per year" : payment
+            {options === "monthly" ? parser(payment) : (
+              parser(payment) === "Per month" ? "per year" : parser(payment)
             )}
           </div>
         </div>

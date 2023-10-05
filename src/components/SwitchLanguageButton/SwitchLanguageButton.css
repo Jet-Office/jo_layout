@@ -1,0 +1,49 @@
+.switch_lang-button {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  gap: 8px;
+  padding: 20px;
+
+  position: fixed;
+  bottom: 70px;
+  left: 70px;
+
+  width: 70px;
+  /* height: 100px; */
+
+  border-radius: 40px;
+  border: none;
+
+  box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.6);
+
+  background-color: #14181C;
+
+  z-index: 1000;
+
+  cursor: pointer;
+}
+
+.lang-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 8px;
+}
+
+.lang-list {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 8px;
+}
+
+.lang-name {
+  color: var(--white, var(--Text, #CCC));
+  font-family: 'Proxima Nova regular';
+  font-size: 20px;
+  font-style: normal;
+  line-height: 140%;
+  text-transform: uppercase;
+}
