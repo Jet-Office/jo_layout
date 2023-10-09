@@ -5,6 +5,10 @@ import { faqData } from "../../data/faqData.json";
 import { FAQItem, FAQItems } from "../../types/faq.type";
 import { FAQItemComponent } from "./components/FAQItemComponent";
 import useHandleClick from "../../helpers/openModal";
+import { motion } from "framer-motion";
+import { animationBottom } from "../AboutPage/AboutPage.component"
+import { animationRight } from "../AboutPage/AboutPage.component"
+import { animationLeft } from "../AboutPage/AboutPage.component"
 
 export const FAQPage: React.FC = () => {
 
@@ -54,11 +58,15 @@ export const FAQPage: React.FC = () => {
   const handleClick = useHandleClick();
 
   return (
-    <section className="faq-section">
+    <motion.section 
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.1, once: true }}
+      className="faq-section">
       <div className="container faq-container">
         <div className="head_info-container">
-          <h1>How we can help you?</h1>
-          <div className="search-container">
+          <motion.h1 variants={animationBottom} custom={1}>How we can help you?</motion.h1>
+          <motion.div variants={animationBottom} custom={2} className="search-container">
             <img 
               src="/helpers-icons/search_white.svg" 
               alt="search icon" 
@@ -70,34 +78,41 @@ export const FAQPage: React.FC = () => {
               type="text"
               onChange={handleSearchInputChange}
               placeholder="Search" />
-          </div>
+          </motion.div>
         </div>
         <div className="faq-content-container">
           {(filteredFAQ.length != 0 ? filteredFAQ : faqData).map((topic) => (
-            <div key={topic.id} className="content--item">
-              <div className="topic_name-container"><h2>{topic.name}</h2></div>
+            <motion.div 
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ amount: 0.2, once: true }}
+              key={topic.id} className="content--item">
+              <motion.div variants={animationLeft} custom={1} className="topic_name-container"><h2>{topic.name}</h2></motion.div>
               <div className="faq__question questions--container">
-
-               {topic.questions.map((faq: FAQItem) => (
-                  <FAQItemComponent key={faq.id} faq={faq} keywords={highlightedKeywords}/>
+               {topic.questions.map((faq: FAQItem, index) => (
+                  <FAQItemComponent key={faq.id} faq={faq} keywords={highlightedKeywords} index={index}/>
                 ))}
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
-        <div className="start_trial-container">
+        <motion.div 
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ amount: 0.2, once: true }}
+          className="start_trial-container">
           <div className="start_trial-block">
-            <div className="text_block-container">
+            <motion.div variants={animationLeft} custom={1} className="text_block-container">
               <div className="text_block">Get started with 14 days free trial — no credit card required.Experience up to 30 $ in value and discover how we can help your business boost.</div>
               <button 
                 className="button button--pink button-pink-faq"
                 onClick={handleClick}
               >Start free trial</button>
-            </div>
+            </motion.div>
           </div>
           <img className="shuttle_image" src="/faq-icon/space_shuttle.png" alt="Space shuttle" />
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };

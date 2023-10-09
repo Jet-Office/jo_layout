@@ -6,11 +6,16 @@ import { Price } from '../../../types/price.type';
 import "../PricingPage.component.css";
 import "../PricingSection/PricingSection.component.css";
 
+import { animationBottom } from "../../AboutPage/AboutPage.component"
+import { animationRight } from "../../AboutPage/AboutPage.component"
+import { animationLeft } from "../../AboutPage/AboutPage.component"
+import { animationTop } from "../../AboutPage/AboutPage.component"
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCards, EffectCoverflow } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-cards';
+import { motion } from 'framer-motion';
 
 interface Props {
   windowWidth: number;
@@ -48,37 +53,41 @@ export const PricingSection: React.FC<Props> = ({
   
   return (
     <section className="pricing-page__price">
-      <div className="pricing-page__switcher">
+      <motion.div variants={animationTop} custom={3} className="pricing-page__switcher">
         <PricingSwitch setOptions={setOptions} />
-      </div>
+      </motion.div>
       {windowWidth < 769 ? (
         <Swiper
           {...swiperOptions}
         >
-          {pricingItems.map(pricingItem => (
+          {pricingItems.map((pricingItem, index) => (
             <SwiperSlide
               key={pricingItem.id}
               className={`swiper-slide`}
             >
-              <PricingCard
-                pricingItem={pricingItem}
-                options={options}
-                isActive={pricingItem.id === activeCardId}
-                setActiveCard={() => setActiveCardId(pricingItem.id)}
-              />
+              <motion.div variants={animationBottom} custom={index + 4}>
+                  <PricingCard
+                    pricingItem={pricingItem}
+                    options={options}
+                    isActive={pricingItem.id === activeCardId}
+                    setActiveCard={() => setActiveCardId(pricingItem.id)}
+                  />
+              </motion.div>
             </SwiperSlide>
           ))}
         </Swiper>
       ) : (
         <div className="pricing-page__list">
-          {pricingItems.map(pricingItem => (
-            <PricingCard
-              key={pricingItem.id}
-              pricingItem={pricingItem}
-              options={options}
-              isActive={pricingItem.id === activeCardId}
-              setActiveCard={() => setActiveCardId(pricingItem.id)}
-            />
+          {pricingItems.map((pricingItem, index) => (
+            <motion.div variants={animationBottom} custom={index + 4}>
+              <PricingCard
+                key={pricingItem.id}
+                pricingItem={pricingItem}
+                options={options}
+                isActive={pricingItem.id === activeCardId}
+                setActiveCard={() => setActiveCardId(pricingItem.id)}
+              />
+            </motion.div>
           ))}
         </div>
       )}

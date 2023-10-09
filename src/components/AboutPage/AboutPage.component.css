@@ -272,6 +272,7 @@ mix-blend-mode: normal;
   .about-rocket-section__image-container {
     width: 100%;
     margin-bottom: 20px;
+    z-index: -1;
   }
 
   .about-rocket-section__image {
