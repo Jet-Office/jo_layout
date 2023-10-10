@@ -7,6 +7,7 @@ import { NewsCard } from "../../../NewsCard";
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 
 type Props = {
   windowWidth: number;
@@ -33,6 +34,7 @@ export const DesktopList: React.FC<Props> =
     setActiveId(0);
     setActiveMenuLink("");
   };
+  const { t } = useTranslation();
 
   return (
     <div className="dropdown-content"> 
@@ -65,6 +67,7 @@ export const DesktopList: React.FC<Props> =
                   handleCLose={handleCLose}
                   descriptions={descriptions}
                   windowWidth={windowWidth}
+                  activeId={activeId}
                 ></Descriptions>
             
               <div className="services__link">
@@ -73,8 +76,10 @@ export const DesktopList: React.FC<Props> =
                   className="link_all_services"
                   onClick={handleCLose}
                 >
-                  <span>ALL SERVICES</span>
-                  <img src="/helpers-icons/chevron-down-pink.svg" className="chevron-right-pink"></img>
+                  <span>
+                  {t(`dropdawnButton`)}
+                  </span>
+                  <img alt="" src="/helpers-icons/chevron-down-pink.svg" className="chevron-right-pink"></img>
                 </Link>
               </div>
             </div>
@@ -91,8 +96,10 @@ export const DesktopList: React.FC<Props> =
               ></NewsCard>
               <div className="services__link">
                 <a className="news_link">
-                  <span>GET MORE NEWS</span>
-                  <img src="/helpers-icons/chevron-down-pink.svg" className="chevron-right-pink"></img>
+                  <span>
+                  {t(`moreNews`)}
+                  </span>
+                  <img alt="" src="/helpers-icons/chevron-down-pink.svg" className="chevron-right-pink"></img>
                 </a>
               </div>
             </div>

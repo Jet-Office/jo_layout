@@ -1,0 +1,39 @@
+.language-selector {
+  position: relative;
+  display: inline-block;
+}
+
+.language-selector button {
+  background-color: transparent;
+  color: #ccc;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.language-selector .language-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: transparent;
+  border: 1px solid transparent ;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.language-selector .language-dropdown button {
+  padding: 5px 10px;
+  border: none;
+  border-bottom: 1px solid transparent ;
+  cursor: pointer;
+}
+
+.language-selector .language-dropdown button:last-child {
+  border-bottom: none;
+}
+
+/* Додайте стилі для інших мов за потреби */

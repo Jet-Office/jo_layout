@@ -4,6 +4,7 @@ import { ResourcesDropdown } from "../../../ResourcesDropdown";
 import { useCallback, useState } from "react";
 import { Links } from "../../../../types/links.type";
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 
 type Props = {
   windowWidth: number;
@@ -22,6 +23,7 @@ export const DesktopNavigation: React.FC<Props> =
   
   const [hooverLink, setHooverLink] = useState("");
   const [isDropDown, setDropDown] = useState(false);
+  const { t } = useTranslation();
 
   const handleClick = useCallback(
     (name: string) => {
@@ -74,7 +76,7 @@ export const DesktopNavigation: React.FC<Props> =
                   onMouseEnter={() => { handleMouseEnter(link) }}
                   onMouseLeave={() => { setHooverLink("") }}
                 >
-                  {link.name}
+                  {t(`navigation.${link.name}`)}
                   {link.isDropDown
                     ? <img
                         src={activeLink === link.name || hooverLink === link.name

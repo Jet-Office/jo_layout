@@ -29,6 +29,7 @@ import { faqData } from "./data/faqData.json";
 import { AboutPage } from "./components/AboutPage";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 import GameLoader from "./components/GameLoader/GameLoader";
+import LanguageSelector from "./components/Localization/components/LanguageSelector";
 
 type FAQItem = {
   id: number;
@@ -149,12 +150,12 @@ function App() {
 
   return (
     <div className="App">
-
       <Modal active={active} setActive={setActive} />
         <Header
           activePageRef={activePageRef}
           windowWidth={windowWidth}
         />
+
 
       <Routes>
         <Route path="" element={

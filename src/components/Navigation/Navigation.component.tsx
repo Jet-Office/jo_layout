@@ -63,8 +63,6 @@ export const Navigation: React.FC<Props> = ({
   setActiveMenuLink
 }) => {
 
-  
-
   return (
     <nav className="navigation"> {
       windowWidth > 890 ? (
