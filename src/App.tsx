@@ -30,9 +30,12 @@ import { AboutPage } from "./components/AboutPage";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 import SwitchLanguageButton from "./components/SwitchLanguageButton/SwitchLanguageButton";
 import GameLoader from "./components/GameLoader/GameLoader";
+
+import LanguageSelector from "./components/Localization/components/LanguageSelector";
 import { MainPageBlock } from "./components/MainPageBlock";
 import { GettingStartedBlock } from "./components/GettingStartedBlock";
 import { ReviewsMainPage } from "./components/ReviewsMainPage";
+
 
 type FAQItem = {
   id: number;
@@ -153,12 +156,12 @@ function App() {
 
   return (
     <div className="App">
-
       <Modal active={active} setActive={setActive} />
       <Header
         activePageRef={activePageRef}
         windowWidth={windowWidth}
       />
+
 
       <Routes>
         <Route path="" element={

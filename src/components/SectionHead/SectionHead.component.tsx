@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Buttons } from "../Buttons";
 import { Head } from "../Head";
 import "./SectionHead.component.css";
+import { useTranslation } from 'react-i18next';
 
 type Props = {
   homePageRef: React.RefObject<HTMLElement>;
@@ -20,6 +21,8 @@ const animation = {
 }
 
 export const SectionHead: React.FC<Props> = ({homePageRef }) => {
+  const { t } = useTranslation();
+
   return (
       <motion.section 
         initial="hidden"
@@ -29,6 +32,8 @@ export const SectionHead: React.FC<Props> = ({homePageRef }) => {
         <div className="section-head__container">
           <div className="section-head__content_container">
             <div className="section-head_text">
+
+
               <motion.h1 custom={1} variants={animation} className="section-head__title title">
                 Virtual Assistance <br /> & Business Solutions
               </motion.h1>

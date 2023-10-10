@@ -20,7 +20,10 @@
   width: 100vw;
   min-width: 1300px;
 
-  margin-bottom: 80px;
+
+  margin-bottom: 180px;
+  white-space: pre-wrap;
+
 }
 
 @media (max-width: 641px) {

@@ -7,6 +7,8 @@ import "./Header.component.css";
 import { Menu } from "./component/Menu";
 import { Link, useLocation  } from "react-router-dom";
 import useHandleClick from "../../helpers/openModal";
+import LanguageSelector from "../Localization/components/LanguageSelector";
+import { useTranslation } from 'react-i18next';
 
 type Props = {
   windowWidth: number;
@@ -23,6 +25,7 @@ export const Header: React.FC<Props> = ({ windowWidth, activePageRef }) => {
   const [submenuOpen, setSubmenuOpen] = useState(false);
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   const handleClick = useHandleClick();
+  const { t } = useTranslation();
 
   useEffect(() => {
     const { current } = activePageRef;
@@ -78,11 +81,13 @@ export const Header: React.FC<Props> = ({ windowWidth, activePageRef }) => {
             alt="JetOffice logo"
             width={110}
             height={40}
-            srcSet="logo.svg 100%"
-            className="header__logo_img"
+/*             srcSet="logo.svg 100%"
+ */            className="header__logo_img"
           />
         </Link>
-        {windowWidth > 890 ? (    
+
+{/*         <LanguageSelector />
+ */}        {windowWidth > 890 ? (    
           <>
             <Navigation
               handleCLose={handleClose}
@@ -97,7 +102,7 @@ export const Header: React.FC<Props> = ({ windowWidth, activePageRef }) => {
             />
             <Button
               color="pink"
-              text="Start free trial"
+              text={t('navigation.button')}
               className={'button--nav'}
               onClick={handleClick}
             />

@@ -2,13 +2,37 @@ import { Link, useParams } from "react-router-dom";
 import { servicesPage } from "../../data/servicesPage.json";
 
 import "./ListOfServices.component.css";
+import { useTranslation } from 'react-i18next';
+
+type ListService = {
+  id: number;
+  title: string;
+  icon: string;
+  description: string;
+  link: string;
+};
+
+type Service = {
+  id: number;
+  title: string;
+  description: string;
+  background: string;
+  link: string;
+  list: ListService[];
+};
 
 export const ListOfServices: React.FC = () => {
   const { link } = useParams<{ link: string }>();
   const selectedService = servicesPage.find((service) => service.link === link);
-  
+  const { t } = useTranslation();
 
-  if (!selectedService) {
+  const newServicesPage = Object.values(t(`servicesPage.servicesList`, { returnObjects: true })) as Service[];
+
+
+  const newSelectedService = newServicesPage.find((service) => service.link === link);
+
+
+  if (!newSelectedService) {
     return <div>Service not found.</div>;
   }
 
@@ -18,28 +42,28 @@ export const ListOfServices: React.FC = () => {
         <div className="list-of-services">
           <div
             className="service-item special"
-            style={{ backgroundImage: `url(${selectedService.background})` }}
+            style={{ backgroundImage: `url(${newSelectedService.background})` }}
           >
             <div className="main-text__container">
-              <h2 className="main-text__title">{selectedService.title}</h2>
+              <h2 className="main-text__title">{newSelectedService.title}</h2>
               <p className="main-text__description">
-                {selectedService.description}
+                {t(newSelectedService.description)}
               </p>
             </div>
           </div>
           <div className="top-link-main top-link-list">
             <Link className="top-link__home" to="/">
-              Home
+              {t(`servicesPage.homeLink`)}
             </Link>{" "}
             &#62;{" "}
             <Link className="top-link__services" to="/services">
-              Services
+              {t(`servicesPage.servicesLink`)}
             </Link>{" "}
-            &#62; <span>{selectedService.title}</span>
+            &#62; <span>{newSelectedService.title}</span>
           </div>
 
           <div className="service-list">
-            {selectedService.list.map((item) => (
+            {newSelectedService.list.map((item) => (
               <div key={item.id} className="service-items">
                 <div className="list-of-services__container">
                   <img src={item.icon} alt={item.title} />
@@ -49,8 +73,8 @@ export const ListOfServices: React.FC = () => {
                       {item.description}
                     </p>
                   </div>
-                  <Link className="list-of-services__link" to={`/services/${selectedService.link}/${item.link}`}>
-                    Explore <img src="/services-page/chevron-right.svg" alt="more" />
+                  <Link className="list-of-services__link" to={`/services/${newSelectedService.link}/${item.link}`}>
+                  {t(`servicesPage.moreButton`)} <img src="/services-page/chevron-right.svg" alt="more" />
                   </Link>
                 </div>
               </div>

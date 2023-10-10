@@ -5,6 +5,7 @@ import { Descriptions } from "../Descriptions/Descriptions.component";
 import "../ServicesDropdown.component.css";
 import { Button } from "../../Button";
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 
 type Props = {
   item: Service;
@@ -74,6 +75,10 @@ export const Item: React.FC<Props> = ({
     },
     [ setIsOpen,setActiveId, mainMenuSetIsOpen, setActiveMenuLink]
   );
+  const { t } = useTranslation();
+
+  const serviceIndex = id; 
+  const serviceName = t(`services.service${serviceIndex}.title`);
 
   return (
     <> {
@@ -88,7 +93,7 @@ export const Item: React.FC<Props> = ({
               to={link || ''}
               onClick={handleClickClose}
             >
-              {name}
+              {serviceName}
             </Link>
           </div>
         </div>
@@ -102,9 +107,10 @@ export const Item: React.FC<Props> = ({
           <div className={`left`}>
             <img src={`/services-icons/${icon}`} alt="dropdown-icons" className="services-icons--svg"
             />
-            <span>{name}</span>
+            <span>{serviceName}</span>
           </div>
-          <img 
+          <img
+          alt=""
             src={activeId === id ? `/helpers-icons/arrow-right-pink.svg` : `/helpers-icons/arrow-right.svg`}
             className="arrow-right--svg"></img>
         </div>
@@ -116,7 +122,9 @@ export const Item: React.FC<Props> = ({
                   className="back_arrow--svg"
                   onClick={() => handleClickBack()}
                   >
-                  <img src="/head-icons/arrow-left-gradient.svg"
+                  <img
+                  alt=""
+                  src="/head-icons/arrow-left-gradient.svg"
                   className="menu__back_icon"></img>
                 </div>
                 <span className="submenu_name">{name}</span>
@@ -125,6 +133,7 @@ export const Item: React.FC<Props> = ({
                   onClick={() => handleClickClose()}
                   >
                   <img 
+                  alt=""
                   src="/head-icons/close-icon.svg"
                   className="menu__close_icon"></img>
                 </div>
@@ -134,12 +143,13 @@ export const Item: React.FC<Props> = ({
                     handleCLose={handleCLose}
                     descriptions={descriptions}
                     windowWidth={windowWidth}
+                    activeId={activeId}
                   ></Descriptions>
                 <div className="button--container">
                   <Button
                     color="pink"
                     className="menu"
-                    text="Start free trial"
+                    text={t('navigation.button')} 
                     onClick={() => console.log("pressed")}
                   />  
                 </div>
