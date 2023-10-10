@@ -1,6 +1,19 @@
 import "./Contacts.component.css";
 
 import { contacts } from "../../data/contacts.json";
+import { motion } from "framer-motion";
+
+const animationLeftBlock = {
+  hidden: {
+    x: -100,
+    opacity: 0
+  },
+  visible: (custom: number) => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.2 }
+  })
+}
 
 type Props = {
   contactsPageRef: React.RefObject<HTMLElement>;
@@ -8,7 +21,7 @@ type Props = {
 
 export const Contacts: React.FC<Props> = ({ contactsPageRef }) => {
   return (
-    <section className="contacts" id="contacts" ref={contactsPageRef}>
+    <motion.section custom={1} variants={animationLeftBlock} className="contacts" id="contacts" ref={contactsPageRef}>
       <div className="contacts__container">
         <h2 className="contacts__title h2" id="contacts__title">
           Contacts
@@ -78,6 +91,6 @@ export const Contacts: React.FC<Props> = ({ contactsPageRef }) => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };

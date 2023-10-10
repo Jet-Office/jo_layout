@@ -39,6 +39,7 @@
 .list-of-services__title {
   font-size: 24px;
   font-weight: bold;
+  font-family: 'Proxima Nova Bold';
   text-transform: uppercase;
 }
 
@@ -56,6 +57,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
+  font-family: 'Proxima Nova Bold';
   line-height: 140%;
   text-transform: uppercase;
   text-decoration: none;

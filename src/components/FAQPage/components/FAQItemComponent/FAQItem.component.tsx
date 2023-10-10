@@ -2,12 +2,18 @@ import React, { useState } from "react";
 import { FAQItem } from "../../../../types/faq.type";
 import { HighlightedText } from "../HighlightedText";
 
+import { animationBottom } from "../../../AboutPage/AboutPage.component"
+import { animationRight } from "../../../AboutPage/AboutPage.component"
+import { animationLeft } from "../../../AboutPage/AboutPage.component"
+import { motion } from "framer-motion";
+
 type Props = {
   faq: FAQItem;
   keywords: string;
+  index: number;
 };
 
-export const FAQItemComponent: React.FC<Props> = ({faq, keywords}) => {
+export const FAQItemComponent: React.FC<Props> = ({faq, keywords, index}) => {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
   const toggleAnswer = (index: number) => {
@@ -15,7 +21,7 @@ export const FAQItemComponent: React.FC<Props> = ({faq, keywords}) => {
   };
 
   return (
-    <div className="faq__item-wrapper">
+    <motion.div variants={animationRight} custom={index + 1} className="faq__item-wrapper">
       <div
         className={`faq-item faq-item-mobile ${expandedIndex === faq.id ? "expanded" : ""}`}
         >
@@ -37,6 +43,6 @@ export const FAQItemComponent: React.FC<Props> = ({faq, keywords}) => {
           </div>
         )}
       </div>
-  </div>
+  </motion.div>
   );
 };

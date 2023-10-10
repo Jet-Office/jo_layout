@@ -11,12 +11,6 @@
   font-weight: 700;
 }
 
-@font-face {
-  font-family: "Proxima Nova Semibold";
-  src: url(/public/fonts/proxima/Proxima-Nova-Semibold.otf);
-  font-weight: 700;
-}
-
 :root {
   --text-color: #cccccc;
   --background: #14181c;
@@ -96,25 +90,43 @@ p, button {
   font-family: "Proxima Nova regular";
 }
 
-.h2 {
-  /* all: unset; */
-
+.h1 {
   font-family: "Proxima Nova regular";
+  font-size: 64px;
+  line-height: 120%;
+  color: var(--text-color);
+  mix-blend-mode: normal;
+}
 
+.h2 {
+  font-family: "Proxima Nova regular";
   font-size: 40px;
   line-height: 120%;
-
   color: var(--text-color);
-
   mix-blend-mode: normal;
-
   margin: 0;
 }
 
+.h3 {
+  font-family: "Proxima Nova Bold";
+  font-size: 20px;
+  line-height: 120%;
+  color: var(--text-color);
+}
+
 @media (max-width: 641px) {
+  .h1 {
+    font-size: 36px;
+    font-family: "Proxima Nova Bold";
+  }
+
   .h2 {
     font-size: 24px;
+    font-family: "Proxima Nova Bold";
+  }
 
+  .h3 {
+    font-size: 16px;
     font-family: "Proxima Nova Bold";
   }
 
