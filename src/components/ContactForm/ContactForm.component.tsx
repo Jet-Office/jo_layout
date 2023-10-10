@@ -2,6 +2,19 @@ import { useState } from "react";
 import "./ContactForm.component.css";
 import { Button } from "../Button/Button.component";
 import { submitContactForm } from "../../helpers/submitContactForm";
+import { motion } from "framer-motion";
+
+const animationRigthBlock = {
+  hidden: {
+    x: 100,
+    opacity: 0
+  },
+  visible: (custom: number) => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.2 }
+  })
+}
 
 export const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -32,7 +45,7 @@ export const ContactForm = () => {
 
   return (
     <section className="sectionform">
-      <div className="form">
+      <motion.div variants={animationRigthBlock} custom={1} className="form">
         <h2 className="h2 form__heading">Write to us</h2>
         <div className="form__container">
           <form
@@ -135,7 +148,7 @@ export const ContactForm = () => {
             />
           </form>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

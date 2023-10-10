@@ -1,0 +1,23 @@
+.getting_started_block {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.getting_started_text-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  color: var(--white, #CCC);
+  font-family: 'Proxima Nova regular';
+  font-size: 20px;
+  font-style: normal;
+  line-height: 140%; 
+  text-align: left;
+}
+
+.getting_started_text-block > h3 {
+  font-family: 'Proxima Nova Semibold';
+  text-transform: uppercase;
+}

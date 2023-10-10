@@ -28,8 +28,14 @@ import { PricingPage } from "./components/PricingPage";
 import { faqData } from "./data/faqData.json";
 import { AboutPage } from "./components/AboutPage";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
+import SwitchLanguageButton from "./components/SwitchLanguageButton/SwitchLanguageButton";
 import GameLoader from "./components/GameLoader/GameLoader";
+
 import LanguageSelector from "./components/Localization/components/LanguageSelector";
+import { MainPageBlock } from "./components/MainPageBlock";
+import { GettingStartedBlock } from "./components/GettingStartedBlock";
+import { ReviewsMainPage } from "./components/ReviewsMainPage";
+
 
 type FAQItem = {
   id: number;
@@ -151,24 +157,26 @@ function App() {
   return (
     <div className="App">
       <Modal active={active} setActive={setActive} />
-        <Header
-          activePageRef={activePageRef}
-          windowWidth={windowWidth}
-        />
+      <Header
+        activePageRef={activePageRef}
+        windowWidth={windowWidth}
+      />
 
 
       <Routes>
         <Route path="" element={
           <>
             <SectionHead homePageRef={homePageRef}/>
-
             <main className="main">
               <div className="main__container">
+                <Partners />
                 <Services activeRef={servicesPageRef} />
                 {windowWidth <= 641 && <ControlPreview />}
+                {/* <GettingStartedBlock /> */}
                 <Benefits />
-                {windowWidth > 641 && <Partners />}
+                <MainPageBlock windowWidth={windowWidth} />
                 <Cases windowWidth={windowWidth} casesPageRef={casesPageRef} />
+                {/* <ReviewsMainPage /> */}
               </div>
             </main>
           </>
@@ -176,7 +184,6 @@ function App() {
         <Route path="services/:link" element={
           <ListOfServices />
         } />
-
         <Route path="services" element={
           <ServicesPage />
         } />
@@ -192,7 +199,6 @@ function App() {
         <Route path="faq" element={
           <FAQPage />
         } />
-
         <Route 
           path="/pricing"
           element={
@@ -206,19 +212,16 @@ function App() {
             />
           }
         />
-
         <Route path="about" element={
           <AboutPage
           windowWidth={windowWidth} 
           aboutPageRef={aboutPageRef}
           />
         } />
-
         <Route path="loader" element={
             <GameLoader />
           }
         />
-
         <Route path="*" element={
           <NotFound />
         } />
@@ -226,6 +229,7 @@ function App() {
       <footer className="footermain">
         <Footer contactsPageRef={contactsPageRef} />
         <ScrollToTopButton />
+        {/* <SwitchLanguageButton /> */}
       </footer>
     </div>
   );

@@ -6,10 +6,6 @@ strong {
     font-family: 'Proxima Nova Bold';
 }
 
-.h1 {
-    margin: 0;
-}
-
 .blog_post-content {
     margin-top: 70px;
     display: flex;
@@ -203,19 +199,6 @@ strong {
     .container.main-columns {
         display: block;
     }
-}
-
-
-.h2 {
-    margin: 0;
-    text-align: left;
-
-    color: var(--white, #CCC);
-
-    font-family: 'Proxima Nova regular';
-    font-size: 40px;
-
-    line-height: 120%;
 }
 
 .left--column {

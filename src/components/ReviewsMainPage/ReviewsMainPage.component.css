@@ -1,0 +1,24 @@
+.review-container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  text-align: left;
+}
+
+.reviews_list-container {
+  overflow: auto;
+  max-width: 100vw;
+}
+
+.reviews_list {
+  display: flex;
+  gap: 20px;
+}
+
+.reviews_list li:first-child {
+  padding-left: 100px;
+}
+
+.reviews_list li:last-child {
+  padding-right: 100px;
+}

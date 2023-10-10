@@ -1,0 +1,22 @@
+{
+    "languages": [
+        {
+            "id": 1,
+            "name": "en",
+            "icon": "en-lang.svg",
+            "alt": "english"
+        }, 
+        {
+            "id": 2,
+            "name": "ua",
+            "icon": "ua-lang.svg",
+            "alt": "ukrainian"
+        },
+        {
+            "id": 3,
+            "name": "ru",
+            "icon": "ru-lang.svg",
+            "alt": "russian"
+        }
+    ]
+}

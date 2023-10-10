@@ -1,11 +1,36 @@
 import { useCallback, useState } from "react";
 import "../../../About/About.component.css";
 import classNames from "classnames";
+import { motion } from "framer-motion";
+import { animationBottom } from "../../AboutPage.component";
 
 type Props = {
   windowWidth: number;
   aboutPageRef: React.RefObject<HTMLElement>;
 };
+
+const animationLeft = {
+  hidden: {
+    x: -100,
+    opacity: 0
+  },
+  visible: (custom: number) => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.2 }
+  })
+}
+
+const animationRight = {
+  hidden: {
+    opacity: 0
+  },
+  visible: (custom: number) => ({
+    opacity: 1,
+    transition: { delay: custom * 0.2 }
+  })
+}
+
 
 export const AboutSection: React.FC<Props> = ({ windowWidth, aboutPageRef }) => {
   const [isShow, setIsShow] = useState(false);
@@ -22,20 +47,24 @@ export const AboutSection: React.FC<Props> = ({ windowWidth, aboutPageRef }) => 
   const handleShow = useCallback(() => setIsShow(!isShow), [isShow]);
 
   return (
-      <section id="about" className="about" ref={aboutPageRef}>
+      <motion.section 
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ amount: 0.1, once: true }}
+        id="about" className="about" ref={aboutPageRef}>
         <div className="about__container">
           <div className="container about__content">
-            <h2 className="about__title ">About JetOffice</h2>
+            <motion.h2  variants={animationLeft} custom={2} className="about__title ">About JetOffice</motion.h2>
             <div className="about__text">
-              <p className={firstParagraphCLass}>
+              <motion.p variants={animationLeft} custom={3} className={firstParagraphCLass}>
                 JetOffice provides administrative support and outsourced assistants. Additional service — business solutions: design and development, business process automation, SMM, copywriting, coaching, management. We provide business solutions using our own resources and with the help of a network of partners.
                 <br />
                 <br />
                 A proprietary development of JetOffice is an AI-based chatbot that helps businesses automate routine processes: task and meeting creation, calendar management, content creation, purchases, and payments.
                 <br />
                 <br />
-                Our virtual assistants are quite independent. Each client is assigned a personal account manager who monitors the quality and acts as the client's advocate. Account managers and assistants are fully immersed in business tasks, understand the client's goals and needs.
-              </p>
+                Our virtual assistants are quite independent. Each client is assigned a personal account manager who monitors the quality and acts as the client's advocate. Account managers and assistants are fully immersed in business tasks, understand the client's goals and needs.
+              </motion.p>
               {/* {(isShow || windowWidth > 641) && (
                 <p className="about__paragraph">
                   Our mission is to provide client-oriented virtual assistance,
@@ -47,7 +76,7 @@ export const AboutSection: React.FC<Props> = ({ windowWidth, aboutPageRef }) => 
               )} */}
 
               {windowWidth <= 641 && (
-                <div className={showClass} onClick={handleShow}>
+                <motion.div variants={animationBottom} custom={4} className={showClass} onClick={handleShow}>
                   <p className="about__paragraph">
                     {isShow ? "Show less" : "Show more"}
                   </p>
@@ -58,12 +87,15 @@ export const AboutSection: React.FC<Props> = ({ windowWidth, aboutPageRef }) => 
                       className={chevronIconClassName}
                     />
                   </div>
-                </div>
+                </motion.div>
               )}
             </div>
           </div>
           <div className="about__earth">
-            <img
+            <motion.img
+              custom={3}
+              variants={animationRight}
+              viewport={{ amount: 0.2, once: true }}
               src="/backgrounds/earth.webp"
               width={793}
               height={820}
@@ -72,6 +104,6 @@ export const AboutSection: React.FC<Props> = ({ windowWidth, aboutPageRef }) => 
             />
           </div>
         </div>
-      </section>
+      </motion.section>
   );
 };

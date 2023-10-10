@@ -8,8 +8,8 @@
 }
 
 .main-section__image {
-  width: 60%;
-  height: 80vh;
+  width: 50%;
+  height: 100vh;
   min-height: 100%;
   background-size: cover;
   background-position: center;
@@ -74,6 +74,7 @@
   .main-section__title {
     font-size: 24px;
     margin: 0;
+    font-family: 'Proxima Nova Bold';
   }
 
   .main-section__description {

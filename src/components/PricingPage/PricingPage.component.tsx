@@ -11,6 +11,8 @@ import 'swiper/css/effect-cards';
 
 import { PricingSection } from "./PricingSection/PricingSection.component";
 
+import { animationBottom } from "../AboutPage/AboutPage.component"
+import { motion } from "framer-motion";
 
 type Props = {
   windowWidth: number;
@@ -41,12 +43,17 @@ export const PricingPage: React.FC<Props> = ({
 
   return (
     <div className="">
-      <div className="pricing-page">
+      <motion.div 
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ amount: 0, once: true }}
+        className="pricing-page">
         <div className="container">
-          <h1 className="price-page__title">We've got a plan that's perfect for you</h1>
-          <p className="price-page__subtitle">
+          <motion.h1 variants={animationBottom} custom={1} className="price-page__title">
+            We've got a plan that's perfect for you</motion.h1>
+          <motion.p variants={animationBottom} custom={2} className="price-page__subtitle">
             We have several packages, from flexible hourly pay to packages tailored for large companies.
-          </p>
+          </motion.p>
           <PricingSection
             windowWidth={windowWidth}
             pricingItems={pricing}
@@ -64,16 +71,20 @@ export const PricingPage: React.FC<Props> = ({
             <div className="background" style={{ backgroundImage: 'url(backgrounds/pricing-page-rocket.png)' }}>
             </div>
           )}
-          <section className="price-page__faq">
+          <motion.section 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.2, once: true }}
+            className="price-page__faq">
             <div className="container">
               <div className="faq-block">
-                <p className="faq-block__text">
+                <motion.p variants={animationBottom} custom={1} className="faq-block__text">
                   Get started with 14 days free trial — no credit card required. Experience up to 30 $ in value and
                   discover how we can help your business boost.
-                </p>
-                <div className="button-container">
+                </motion.p>
+                <motion.div variants={animationBottom} custom={2} className="button-container">
                   <Button color="pink" text="Start free trial" onClick={handleClick} />
-                </div>
+                </motion.div>
               </div>
             </div>
             <div className="container">
@@ -81,9 +92,8 @@ export const PricingPage: React.FC<Props> = ({
                 <Faq faqItems={faqItems} />
               </div>
             </div>
-          </section>
-
-      </div>
+          </motion.section>
+      </motion.div>
     </div>
   );
 };

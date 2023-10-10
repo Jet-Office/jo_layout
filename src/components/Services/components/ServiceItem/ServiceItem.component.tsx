@@ -6,14 +6,31 @@ import "../../Services.component.css";
 import { Link } from "react-router-dom";
 
 import parser from 'html-react-parser';
+import { motion } from "framer-motion";
 
 type Props = {
   service: Service;
 };
 
-export const ServiceItem: React.FC<Props> = ({ service: { nameWithWrap, icon, link } }) => {
+const servicesAnimation = {
+  hidden: {
+    y: 50,
+    opacity: 0
+  },
+  visible: (custom: number) => ({
+    y: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.1 }
+  })
+}
+
+export const ServiceItem: React.FC<Props> = ({ service: { id, nameWithWrap, icon, link } }) => {
   return (
-    <Card className="services__item" style={{fontFamily: "inherit"}}>
+    <MCard 
+      custom={id + 1}
+      variants={servicesAnimation}
+      className="services__item" 
+      style={{fontFamily: "inherit"}}>
       <Link
         to={link}
       >
@@ -24,6 +41,8 @@ export const ServiceItem: React.FC<Props> = ({ service: { nameWithWrap, icon, li
       />
       <p className="services__description">{parser(nameWithWrap)}</p>
       </Link>
-    </Card>
+    </MCard>
   );
 };
+
+const MCard = motion(Card);

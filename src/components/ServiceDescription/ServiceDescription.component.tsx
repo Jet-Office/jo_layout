@@ -70,12 +70,14 @@ export const ServiceDescription: React.FC = () => {
             className="inner-container__background-image"
           >
             <div className="hero-section__text-container">
+
               <h1 className="hero-section__title">{newServiceItemData["heroTitle"]}</h1>
               <p className="hero-section__description">{newServiceItemData["heroDescription"]}</p>
 
+
               <div className="buttons">
-              <Button color="dark" text="Get in touch" onClick={handleClick} />
-              <Button color="pink" text="get a service" onClick={handleClick} />
+              <Button color="dark" text="Connect with us" onClick={handleClick} className="button--dark-service" />
+              <Button color="pink" text="get a service" onClick={handleClick} className="button--pink-service" />
             </div>
             </div>
           </div>

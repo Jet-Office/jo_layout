@@ -1,5 +1,10 @@
 import React, { useState } from "react";
 import "./Faq.component.css";
+import { motion } from "framer-motion";
+
+import { animationBottom } from "../AboutPage/AboutPage.component"
+import { animationRight } from "../AboutPage/AboutPage.component"
+import { animationLeft } from "../AboutPage/AboutPage.component"
 
 type FAQItem = {
   id: number;
@@ -19,15 +24,19 @@ export const Faq: React.FC<FaqProps> = ({ faqItems }) => {
   };
 
   return (
-    <section className="faq">
+    <motion.section 
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.1, once: true }}
+      className="faq">
       <div className="faq__container">
         <div className="faq__text_container">
-          <h2 className="faq__title-text ">FAQ</h2>
+          <motion.h2 variants={animationLeft} custom={1} className="faq__title-text ">FAQ</motion.h2>
         </div>
         <div className="">
           <div className="faq__question">
-            {faqItems.map((faq: FAQItem) => (
-              <div className="faq__item-wrapper" key={faq.id}>
+            {faqItems.map((faq: FAQItem, index) => (
+              <motion.div variants={animationLeft} custom={index + 1} className="faq__item-wrapper" key={faq.id}>
                 <div
                   className={`faq-item ${
                     expandedIndex === faq.id ? "expanded" : ""
@@ -53,11 +62,11 @@ export const Faq: React.FC<FaqProps> = ({ faqItems }) => {
                     <div className="answer">{faq.text}</div>
                   )}
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
