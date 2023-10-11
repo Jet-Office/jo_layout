@@ -11,6 +11,11 @@ import { ServiceList2Section } from "./components/ServiceList2Section";
 import { RocketSection } from "./components/RocketSection";
 import { useTranslation } from 'react-i18next';
 
+import { animationBottom } from "../AboutPage/AboutPage.component"
+import { animationRight } from "../AboutPage/AboutPage.component"
+import { animationLeft } from "../AboutPage/AboutPage.component"
+import { motion } from "framer-motion";
+
 type ListServiceItem = {
   id: number;
   icon: string;
@@ -61,7 +66,11 @@ export const ServiceDescription: React.FC = () => {
 
   return (
     <>
-      <section className="hero-section">
+      <motion.section
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ amount: 0.1, once: true }}
+        className="hero-section">
         <div 
           className="inner-container"
         >
@@ -71,18 +80,17 @@ export const ServiceDescription: React.FC = () => {
           >
             <div className="hero-section__text-container">
 
-              <h1 className="hero-section__title">{newServiceItemData["heroTitle"]}</h1>
-              <p className="hero-section__description">{newServiceItemData["heroDescription"]}</p>
+              <motion.h1 custom={1} variants={animationLeft} className="hero-section__title">{newServiceItemData["heroTitle"]}</motion.h1>
+              <motion.p custom={2} variants={animationLeft} className="hero-section__description">{newServiceItemData["heroDescription"]}</motion.p>
 
-
-              <div className="buttons">
-              <Button color="dark" text="Connect with us" onClick={handleClick} className="button--dark-service" />
-              <Button color="pink" text="get a service" onClick={handleClick} className="button--pink-service" />
-            </div>
+              <motion.div custom={3} variants={animationLeft} className="buttons">
+                <Button color="dark" text="Connect with us" onClick={handleClick} className="button--dark-service" />
+                <Button color="pink" text="get a service" onClick={handleClick} className="button--pink-service" />
+              </motion.div>
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
       <section className="service-description">
         <ServiceListSection list={newServiceItemData.list} />
       </section>

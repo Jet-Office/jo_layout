@@ -4,6 +4,11 @@ import { servicesPage } from "../../data/servicesPage.json";
 import "./ListOfServices.component.css";
 import { useTranslation } from 'react-i18next';
 
+import { animationBottom } from "../AboutPage/AboutPage.component"
+import { animationRight } from "../AboutPage/AboutPage.component"
+import { animationLeft } from "../AboutPage/AboutPage.component"
+import { motion } from "framer-motion";
+
 type ListService = {
   id: number;
   title: string;
@@ -39,8 +44,14 @@ export const ListOfServices: React.FC = () => {
   return (
     <>
       <div className="container">
-        <div className="list-of-services">
-          <div
+        <motion.div 
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ amount: 0.1, once: true }}
+          className="list-of-services">
+          <motion.div
+            variants={animationBottom}
+            custom={1}
             className="service-item special"
             style={{ backgroundImage: `url(${newSelectedService.background})` }}
           >
@@ -50,8 +61,8 @@ export const ListOfServices: React.FC = () => {
                 {t(newSelectedService.description)}
               </p>
             </div>
-          </div>
-          <div className="top-link-main top-link-list">
+          </motion.div>
+          <motion.div custom={2} variants={animationLeft} className="top-link-main top-link-list">
             <Link className="top-link__home" to="/">
               {t(`servicesPage.homeLink`)}
             </Link>{" "}
@@ -60,27 +71,34 @@ export const ListOfServices: React.FC = () => {
               {t(`servicesPage.servicesLink`)}
             </Link>{" "}
             &#62; <span>{newSelectedService.title}</span>
-          </div>
+          </motion.div>
 
-          <div className="service-list">
-            {newSelectedService.list.map((item) => (
-              <div key={item.id} className="service-items">
+          <div 
+            className="service-list">
+            {newSelectedService.list.map((item, index) => (
+              <motion.div 
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ amount: 0.1, once: true }}
+                key={item.id} className="service-items">
                 <div className="list-of-services__container">
-                  <img src={item.icon} alt={item.title} />
+                  <motion.img custom={index+1} variants={animationLeft} src={item.icon} alt={item.title} />
                   <div className="list-of-services-text-container">
-                    <h2 className="list-of-services__title">{item.title}</h2>
-                    <p className="list-of-services__description">
+                    <motion.h2 custom={index} variants={animationLeft} className="list-of-services__title">{item.title}</motion.h2>
+                    <motion.p custom={index+1} variants={animationLeft} className="list-of-services__description">
                       {item.description}
-                    </p>
+                    </motion.p>
                   </div>
-                  <Link className="list-of-services__link" to={`/services/${newSelectedService.link}/${item.link}`}>
-                  {t(`servicesPage.moreButton`)} <img src="/services-page/chevron-right.svg" alt="more" />
-                  </Link>
+                  <motion.div custom={index + 2} variants={animationRight}>
+                    <Link className="list-of-services__link" to={`/services/${newSelectedService.link}/${item.link}`}>
+                    {t(`servicesPage.moreButton`)} <img src="/services-page/chevron-right.svg" alt="more" />
+                    </Link>
+                  </motion.div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </>
   );
