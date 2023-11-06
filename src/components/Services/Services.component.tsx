@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import "./Services.component.css";
 import { ServicesList } from "./components/ServicesList";
 import { useTranslation } from 'react-i18next';
+import { Service } from "../../types/service.type";
 
 const textAnimation = {
   hidden: {
@@ -23,7 +24,7 @@ type Props = {
 export const Services: React.FC<Props> = ({ activeRef }) => {
   const { t } = useTranslation();
 
-  const newServices = Object.values(t(`main.services.services`, { returnObjects: true }));
+  const newServices = Object.values(t(`main.services.services`, { returnObjects: true })) as Service[];
 
   return (
     <motion.section 
