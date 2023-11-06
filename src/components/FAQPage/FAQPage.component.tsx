@@ -32,10 +32,10 @@ export const FAQPage: React.FC = () => {
   const inputRef = useRef<HTMLInputElement>(null);
   const { t } = useTranslation();
 
-  const newFaqData = Object.values(t(`faqPage.faqData`, { returnObjects: true }));
+  const newFaqData = Object.values(t(`faqPage.faqData`, { returnObjects: true })) as FAQData;
 
   const search = () => {
-    const filteredData = newFaqData.map((topic:FAQCategory) => {
+    const filteredData = newFaqData.map((topic) => {
       console.log(topic)
       const questions = topic.questions.filter((question: { question: string; text: string; }) => {
         return searchQuery.split(' ').some((word) => {
