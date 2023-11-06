@@ -10,6 +10,19 @@ import { animationBottom } from "../AboutPage/AboutPage.component"
 import { animationRight } from "../AboutPage/AboutPage.component"
 import { animationLeft } from "../AboutPage/AboutPage.component"
 import { useTranslation } from 'react-i18next';
+type FAQQuestion = {
+  id: number;
+  question: string;
+  text: string;
+};
+
+type FAQCategory = {
+  id: number;
+  name: string;
+  questions: FAQQuestion[];
+};
+
+type FAQData = FAQCategory[];
 
 export const FAQPage: React.FC = () => {
 
@@ -22,7 +35,7 @@ export const FAQPage: React.FC = () => {
   const newFaqData = Object.values(t(`faqPage.faqData`, { returnObjects: true }));
 
   const search = () => {
-    const filteredData = newFaqData.map((topic) => {
+    const filteredData = newFaqData.map((topic:FAQCategory) => {
       const questions = topic.questions.filter((question: { question: string; text: string; }) => {
         return searchQuery.split(' ').some((word) => {
           return (
