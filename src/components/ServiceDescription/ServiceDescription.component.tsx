@@ -83,10 +83,15 @@ export const ServiceDescription: React.FC = () => {
               <motion.h1 custom={1} variants={animationLeft} className="hero-section__title">{newServiceItemData["heroTitle"]}</motion.h1>
               <motion.p custom={2} variants={animationLeft} className="hero-section__description">{newServiceItemData["heroDescription"]}</motion.p>
 
+
+
               <motion.div custom={3} variants={animationLeft} className="buttons">
-                <Button color="dark" text="Connect with us" onClick={handleClick} className="button--dark-service" />
-                <Button color="pink" text="get a service" onClick={handleClick} className="button--pink-service" />
+              <div className="buttons">
+                <Button color="dark" text={t(`servicesPage.conectButton`)} onClick={handleClick} className="button--dark-service" />
+                <Button color="pink" text={t(`servicesPage.getButton`)} onClick={handleClick} className="button--pink-service" />
+              </div>
               </motion.div>
+
             </div>
           </div>
         </div>

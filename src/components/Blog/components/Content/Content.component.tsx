@@ -169,7 +169,7 @@ export const Content: React.FC<Props> = ({windowWidth}) => {
             </div>
             <div className="blog_post--header---info">
               <div className="about_autor">
-                <img src={avatar}></img>
+                <img alt="avatar" src={avatar}></img>
                 <div className="about_autor-text">
                   <span className="span autor_name">{blogPost?.content.headInfo.author.name}</span>
                   <span className="span">{blogPost?.content.headInfo.author.position}</span>

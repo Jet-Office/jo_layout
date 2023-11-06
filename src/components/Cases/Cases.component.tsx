@@ -1,10 +1,11 @@
 import "./Cases.component.css";
 import { services } from "../../data/services.json"
-import { useEffect, useRef, useState } from "react";
+import { useMemo, useEffect, useRef, useState } from "react";
 import { Description } from "../../types/service.type";
 import { CasesItem } from "./components/CasesItem";
 import { CasesDescription } from "./components/CasesDescriptions/CasesDescriptions.component";
 import { motion } from "framer-motion";
+import { useTranslation } from 'react-i18next';
 
 type Props = {
   windowWidth: number;
@@ -36,6 +37,16 @@ const animationFromRight = {
 }
 
 export const Cases: React.FC<Props> = ({ windowWidth, casesPageRef }) => {
+  const { t } = useTranslation();
+/*   const [newServices, setNewServices] = useState([]);
+
+useEffect(() => {
+  const localizedServices = Object.values(t(`main.services.services`, { returnObjects: true }));
+  setNewServices(localizedServices);
+}, [t]);
+
+const someServices = newServices; */
+
   const [descriptions, setDescriptions] = useState<Description[]>([]);
   const [activeCaseId, setActiveCaseId] = useState(4);
 
@@ -48,7 +59,11 @@ export const Cases: React.FC<Props> = ({ windowWidth, casesPageRef }) => {
       casesContent.current.style.height = `${сasesListRef.current.offsetHeight}px`;
     }
   }, [windowWidth]);
-  
+  const newServices = useMemo(() => Object.values(t(`main.services.services`, { returnObjects: true })), [t]);
+    
+
+    const someServices = newServices;
+
   return (
     <motion.section 
       initial="hidden"
@@ -56,10 +71,10 @@ export const Cases: React.FC<Props> = ({ windowWidth, casesPageRef }) => {
       viewport={{ amount: 0.2, once: true }}
       className="cases" id="cases" ref={casesPageRef}>
       <div className="cases__container container">
-        <motion.h2 custom={1} variants={animationFromLeft} className="cases__title h2">Cases we can do</motion.h2>
+        <motion.h2 custom={1} variants={animationFromLeft} className="cases__title h2">{t(`main.cases`)}</motion.h2>
         <div ref={casesContent} className="cases__content">
           <div ref={сasesListRef} className="cases__list">
-            {services.map((item) => (
+            {someServices.map((item) => (
               <CasesItem key={item.id} windowWidth={windowWidth} caseItem={item} setActiveCaseId={setActiveCaseId} setDescriptions={setDescriptions} activeCaseId={activeCaseId} />
             ))}
           </div>

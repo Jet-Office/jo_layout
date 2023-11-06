@@ -3,6 +3,7 @@ import "../../../About/About.component.css";
 import classNames from "classnames";
 import { motion } from "framer-motion";
 import { animationBottom } from "../../AboutPage.component";
+import { useTranslation } from 'react-i18next';
 
 type Props = {
   windowWidth: number;
@@ -45,6 +46,7 @@ export const AboutSection: React.FC<Props> = ({ windowWidth, aboutPageRef }) => 
   });
 
   const handleShow = useCallback(() => setIsShow(!isShow), [isShow]);
+  const { t } = useTranslation();
 
   return (
       <motion.section 
@@ -54,16 +56,10 @@ export const AboutSection: React.FC<Props> = ({ windowWidth, aboutPageRef }) => 
         id="about" className="about" ref={aboutPageRef}>
         <div className="about__container">
           <div className="container about__content">
-            <motion.h2  variants={animationLeft} custom={2} className="about__title ">About JetOffice</motion.h2>
+            <motion.h2  variants={animationLeft} custom={2} className="about__title ">{t(`aboutPage.aboutSectionTitle`)}</motion.h2>
             <div className="about__text">
               <motion.p variants={animationLeft} custom={3} className={firstParagraphCLass}>
-                JetOffice provides administrative support and outsourced assistants. Additional service — business solutions: design and development, business process automation, SMM, copywriting, coaching, management. We provide business solutions using our own resources and with the help of a network of partners.
-                <br />
-                <br />
-                A proprietary development of JetOffice is an AI-based chatbot that helps businesses automate routine processes: task and meeting creation, calendar management, content creation, purchases, and payments.
-                <br />
-                <br />
-                Our virtual assistants are quite independent. Each client is assigned a personal account manager who monitors the quality and acts as the client's advocate. Account managers and assistants are fully immersed in business tasks, understand the client's goals and needs.
+              {t(`aboutPage.aboutSectionText`)}
               </motion.p>
               {/* {(isShow || windowWidth > 641) && (
                 <p className="about__paragraph">

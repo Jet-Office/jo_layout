@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Benefit } from "../../types/benefits.type";
 import "./Benefits.component.css";
+import { useTranslation } from 'react-i18next';
 
 const animation = {
   hidden: {
@@ -27,56 +28,58 @@ const animationShuttle = {
 }
 
 export const Benefits = () => {
+  const { t } = useTranslation();
+
   const benefits: Benefit[] = [
     {
       id: 1,
       icon: "/benefits-icons/icons-4.png",
-      text: "Enjoy a free 14-day trial flight. No credit card required.",
+      text: t(`main.benefits.text1`),
     },
     {
       id: 2,
       icon: "/benefits-icons/icons-1.png",
-      text: "An account manager to coordinate tasks & ensure quality control.",
+      text: t(`main.benefits.text2`),
     },
     {
       id: 3,
       icon: "/benefits-icons/icons-8.png",
-      text: "Task monitoring (e.g., ClickUp) and reporting.",
+      text: t(`main.benefits.text3`),
     },
     {
       id: 4,
       icon: "/benefits-icons/icons-2.png",
-      text: "Online and offline assistance available 24/7 in any messenger service.",
+      text: t(`main.benefits.text4`),
     },
     {
       id: 5,
       icon: "/benefits-icons/icons-9.png",
-      text: "Corporate account for remote payments.",
+      text: t(`main.benefits.text5`),
     },
     {
       id: 6,
       icon: "/benefits-icons/icons-6.png",
-      text: "Confidentiality and security. Possibility to work on the client's software.",
+      text: t(`main.benefits.text6`),
     },
     {
       id: 7,
       icon: "/benefits-icons/icons-10.png",
-      text: "Payment available in USDT and other cryptocurrencies.",
+      text: t(`main.benefits.text7`),
     },
     {
       id: 8,
       icon: "/benefits-icons/icons-3.png",
-      text: "Flexible allocation of assistant time depending on needs.",
+      text: t(`main.benefits.text8`),
     },
     {
       id: 9,
       icon: "/benefits-icons/icons.png",
-      text: "Individually selected specialists in any corner of the galaxy, fluent in any language.",
+      text: t(`main.benefits.text9`),
     },
     {
       id: 10,
       icon: "/benefits-icons/icons-11.png",
-      text: "Resource-efficient and time-saving through outsourcing administrative tasks.",
+      text: t(`main.benefits.text10`),
     },
   ];
 
@@ -88,7 +91,9 @@ export const Benefits = () => {
       className="benefits">
       <div className="benefits__container container">
         <div className="benefits__text_container">
-          <motion.h2 custom={1} variants={animation} className="benefits__title h2">Benefits</motion.h2>
+          <motion.h2 custom={1} variants={animation} className="benefits__title h2">
+            {t(`main.benefits.title`)}
+          </motion.h2>
           <div className="benefits__list">
             {benefits.map(({ id, icon, text }) => (
               <motion.div custom={id + 0.1} variants={animation} key={id} className="benefits__item">

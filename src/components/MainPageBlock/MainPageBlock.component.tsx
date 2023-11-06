@@ -2,6 +2,8 @@ import { Link, useParams } from "react-router-dom";
 
 import "./MainPageBlock.component.css";
 import { motion } from "framer-motion";
+import { useTranslation } from 'react-i18next';
+import { Buttons } from "../Buttons";
 
 const animationFromLeft = {
   hidden: {
@@ -32,6 +34,7 @@ type Props = {
 };
 
 export const MainPageBlock: React.FC<Props> = ({ windowWidth }) => {  
+  const { t } = useTranslation();
 
   return (
     <section className="block_section">
@@ -42,10 +45,11 @@ export const MainPageBlock: React.FC<Props> = ({ windowWidth }) => {
         className="container">
         <div className="block">
           <motion.div variants={animationFromLeft} custom={1} className="text-block">
-            <h2 className="h2">Virtual Assistance & Business Solutions:<br/>Human Driven, AI Empowered.</h2>
+            <h2 className="h2">
+              {t(`main.mainPageBlock.title`)}
+            </h2>
             <div className="buttons">
-              <button className="button button--dark">Get in touch</button>
-              <button className="button button--pink">Start free trial</button>
+              <Buttons />
             </div>
           </motion.div>
           {windowWidth > 1000 &&

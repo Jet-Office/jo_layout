@@ -79,9 +79,8 @@ export const PricingSection: React.FC<Props> = ({
       ) : (
         <div className="pricing-page__list">
           {pricingItems.map((pricingItem, index) => (
-            <motion.div variants={animationBottom} custom={index + 4}>
+            <motion.div key={pricingItem.id} variants={animationBottom} custom={index + 4}>
               <PricingCard
-                key={pricingItem.id}
                 pricingItem={pricingItem}
                 options={options}
                 isActive={pricingItem.id === activeCardId}

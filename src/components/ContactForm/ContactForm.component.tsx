@@ -3,6 +3,7 @@ import "./ContactForm.component.css";
 import { Button } from "../Button/Button.component";
 import { submitContactForm } from "../../helpers/submitContactForm";
 import { motion } from "framer-motion";
+import { useTranslation } from 'react-i18next';
 
 const animationRigthBlock = {
   hidden: {
@@ -25,6 +26,7 @@ export const ContactForm = () => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [isFormError, setIsFormError] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const { t } = useTranslation();
 
   const handleFormSubmit = (e: { preventDefault: () => void; target: any }) => {
     e.preventDefault();
@@ -65,7 +67,7 @@ export const ContactForm = () => {
                   setFormData({ ...formData, name: e.target.value })
                 }
                 required
-                placeholder="Your name"
+                placeholder={t(`footer.formName`)}
               />
             </div>
             <div className="form__group">
@@ -80,7 +82,7 @@ export const ContactForm = () => {
                   setFormData({ ...formData, email: e.target.value })
                 }
                 required
-                placeholder="Your mail"
+                placeholder={t(`footer.formEmail`)}
               />
             </div>
             <div className="form__group">
@@ -93,13 +95,13 @@ export const ContactForm = () => {
                   setFormData({ ...formData, message: e.target.value })
                 }
                 required
-                placeholder="Your message"
+                placeholder={t(`footer.formMessage`)}
               ></textarea>
             </div>
             {isFormSubmitted && (
               <div className="form__message form__message--success">
                 <div>
-                  <p className="form__message--text">Message sent!</p>
+                  <p className="form__message--text">{t(`footer.formNotice`)}</p>
                 </div>
                 <div className="div">
                   <button
@@ -120,7 +122,7 @@ export const ContactForm = () => {
             {isFormError && (
               <div className="form__message form__message--error">
                 <div>
-                  <p className="form__message--text">Something went wrong!</p>
+                  <p className="form__message--text">{t(`footer.formNoticeWrong`)}</p>
                 </div>
                 <div>
                   <button
@@ -141,7 +143,7 @@ export const ContactForm = () => {
             <Button
               type="submit"
               color="pink"
-              text={isSubmitting ? "Message is sending..." : "Send a message"}
+              text={isSubmitting ? t(`footer.formButton1`) : t(`footer.formButton2`)}
               className="form__submit-button"
               disabled={isFormSubmitted}
               onClick={() => {}}

@@ -86,8 +86,8 @@ export const Header: React.FC<Props> = ({ windowWidth, activePageRef }) => {
           />
         </Link>
 
-{/*         <LanguageSelector />
- */}        {windowWidth > 890 ? (    
+        {/* <LanguageSelector /> */}
+        {windowWidth > 890 ? (    
           <>
             <Navigation
               handleCLose={handleClose}

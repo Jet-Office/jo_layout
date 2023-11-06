@@ -5,6 +5,7 @@ import classNames from "classnames";
 import useHandleClick from "../../../helpers/openModal";
 import { Button } from "../../Button";
 import parser from 'html-react-parser';
+import { useTranslation } from 'react-i18next';
 
 type Props = {
   pricingItem: Price;
@@ -31,6 +32,7 @@ export const PricingCard: React.FC<Props> = ({
     preferences,
     yearlyPrice,
   } = pricingItem;
+  const { t } = useTranslation();
 
   const displayedPrice = options === "monthly" ? monthlyPrice : yearlyPrice;
 
@@ -46,6 +48,7 @@ export const PricingCard: React.FC<Props> = ({
   }, [monthlyPrice, options, yearlyPrice]);
 
   return (
+
     <div
       className={classNames("pricing-page__card", {
         "pricing-page__card--active": isActive,
@@ -63,7 +66,7 @@ export const PricingCard: React.FC<Props> = ({
           >
             {name}
           </h3>
-          {mostPopular && <div className="card__popular">Most popular</div>}
+          {mostPopular && <div className="card__popular">{t(`pricingPage.mostPopular`)}</div>}
         </div>
         <p className="card__description">{description}</p>
         <div className="card__price">
@@ -98,14 +101,14 @@ export const PricingCard: React.FC<Props> = ({
             <Button
               color={"purple"}
               className="card__button"
-              text="CONTACT SALES" // Змінено текст кнопки для purple
+              text={t(`pricingPage.contactButton`)}
               onClick={handleClick}
             />
           ) : (
             <Button
               color={titleColor !== "pink" ? titleColor : "pink_price"}
               className="card__button"
-              text="Get started"
+              text={t(`pricingPage.getStartedButton`)}
               onClick={handleClick}
             />
           )}
@@ -119,7 +122,7 @@ export const PricingCard: React.FC<Props> = ({
               <div 
                 className={`card__feature-text card__color card__color--${titleColor}`}
               >
-                {monthlyHour} hours included per month
+                {monthlyHour} {t(`pricingPage.hoursMonth`)}
               </div>
             </div>
           )}
@@ -148,5 +151,7 @@ export const PricingCard: React.FC<Props> = ({
         </div>
       </div>
     </div>
+
+
   );
 };
