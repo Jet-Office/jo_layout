@@ -81,8 +81,8 @@ export const AboutPage: React.FC<Props> = ({ windowWidth, aboutPageRef })=> {
   const crewData: CrewCategoryData = crewDataJson.crewAll[0];
   const { t } = useTranslation();
 
-  const localCrew =  Object.values(t(`aboutPage.crewAll`, { returnObjects: true }))
-  const finalCrew: CrewCategoryData = localCrew[0];
+  const localCrew =  Object.values(t(`aboutPage.crewAll`, { returnObjects: true })) as CrewCategoryData;
+  const finalCrew = localCrew[0];
 
   return (
     <>
