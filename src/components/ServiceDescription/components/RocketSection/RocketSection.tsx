@@ -1,6 +1,8 @@
 import React from "react";
 
 import "./RocketSection.css";
+import { motion } from "framer-motion";
+import { animationBottom, animationRight } from "../../../AboutPage";
 
 interface RocketSectionProps {
   rocketImage: string;
@@ -14,16 +16,20 @@ export const RocketSection: React.FC<RocketSectionProps> = ({
   rocketDescription,
 }) => {
   return (
-    <section className="rocket-section">
+    <motion.section 
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.3, once: true }}
+      className="rocket-section">
       <div className="rocket-section__content">
-        <div className="rocket-section__image-container">
+        <motion.div custom={3} variants={animationBottom} className="rocket-section__image-container">
           <img className="rocket-section__image" src={rocketImage} alt={rocketTitle} />
-        </div>
+        </motion.div>
         <div className="rocket-section__text-container">
-          <h2 className="rocket-section__title">{rocketTitle}</h2>
-          <p className="rocket-section__description">{rocketDescription}</p>
+          <motion.h2 custom={1} variants={animationRight} className="rocket-section__title">{rocketTitle}</motion.h2>
+          <motion.p custom={2} variants={animationRight} className="rocket-section__description">{rocketDescription}</motion.p>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };

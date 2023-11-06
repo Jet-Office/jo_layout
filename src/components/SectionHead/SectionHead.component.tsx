@@ -35,7 +35,9 @@ export const SectionHead: React.FC<Props> = ({homePageRef }) => {
 
 
               <motion.h1 custom={1} variants={animation} className="section-head__title title">
+
                 {t(`main.title`)}
+
               </motion.h1>
               <motion.p custom={2} variants={animation} className="section-head__description">
               {t(`main.description`)}
