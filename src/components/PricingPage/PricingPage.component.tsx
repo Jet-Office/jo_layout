@@ -14,6 +14,7 @@ import { PricingSection } from "./PricingSection/PricingSection.component";
 
 import { animationBottom } from "../AboutPage/AboutPage.component"
 import { motion } from "framer-motion";
+import { Price } from "../../types/price.type";
 
 type Props = {
   windowWidth: number;
@@ -49,7 +50,7 @@ export const PricingPage: React.FC<Props> = ({
 
   const handleClick = useHandleClick();
 
-  const newPrising = Object.values(t(`pricingPage.pricing`, { returnObjects: true }));
+  const newPrising = Object.values(t(`pricingPage.pricing`, { returnObjects: true })) as Price[];
 
   return (
     <div className="">
