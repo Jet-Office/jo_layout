@@ -36,7 +36,6 @@ export const FAQPage: React.FC = () => {
 
   const search = () => {
     const filteredData = newFaqData.map((topic) => {
-      console.log(topic)
       const questions = topic.questions.filter((question: { question: string; text: string; }) => {
         return searchQuery.split(' ').some((word) => {
           return (

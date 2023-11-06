@@ -77,8 +77,6 @@ const someServices = newServices; */
     }
   }, [windowWidth]);
   const newServices = useMemo(() => Object.values(t(`main.services.services`, { returnObjects: true })) as Services, [t]);
-    console.log(newServices)
-
     const someServices = newServices;
 
   return (
