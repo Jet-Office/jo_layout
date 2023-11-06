@@ -30,6 +30,10 @@ type FAQItem = {
   text: string;
 };
 
+type FAQData = {
+  faqPrice: FAQItem[];
+};
+
 export const PricingPage: React.FC<Props> = ({ 
   windowWidth, 
   activePageRef,
@@ -41,7 +45,7 @@ export const PricingPage: React.FC<Props> = ({
 }) => {
   const { t } = useTranslation();
 
-  const newFaqPrice = Object.values(t(`pricingPage.faqPrice`, { returnObjects: true }));
+  const newFaqPrice = Object.values(t(`pricingPage.faqPrice`, { returnObjects: true })) as FAQItem[];
 
   const handleClick = useHandleClick();
 
