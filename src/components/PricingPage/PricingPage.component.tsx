@@ -1,10 +1,11 @@
 import "./PricingPage.component.css";
-import React, {  useState } from 'react';
+import React, {  useEffect, useState } from 'react';
 import { Faq } from "../Faq";
 import useHandleClick from "../../helpers/openModal";
 import {Button} from "../Button";
 import { faqPrice } from "../../data/faqPrice.json";
 import {pricing} from "../../data/pricing.json"
+import { useTranslation } from 'react-i18next';
 
 import 'swiper/css';
 import 'swiper/css/effect-cards';
@@ -38,8 +39,13 @@ export const PricingPage: React.FC<Props> = ({
   setActiveCardId,
 
 }) => {
-  const [faqItems, setFaqItems] = useState<FAQItem[]>(faqPrice);
+  const { t } = useTranslation();
+
+  const newFaqPrice = Object.values(t(`pricingPage.faqPrice`, { returnObjects: true }));
+
   const handleClick = useHandleClick();
+
+  const newPrising = Object.values(t(`pricingPage.pricing`, { returnObjects: true }));
 
   return (
     <div className="">
@@ -50,13 +56,14 @@ export const PricingPage: React.FC<Props> = ({
         className="pricing-page">
         <div className="container">
           <motion.h1 variants={animationBottom} custom={1} className="price-page__title">
-            We've got a plan that's perfect for you</motion.h1>
+            {t(`pricingPage.title`)}
+          </motion.h1>
           <motion.p variants={animationBottom} custom={2} className="price-page__subtitle">
-            We have several packages, from flexible hourly pay to packages tailored for large companies.
+            {t(`pricingPage.subtitle`)}
           </motion.p>
           <PricingSection
             windowWidth={windowWidth}
-            pricingItems={pricing}
+            pricingItems={newPrising}
             options={options}
             setOptions={setOptions}
             activeCardId={activeCardId}
@@ -79,17 +86,16 @@ export const PricingPage: React.FC<Props> = ({
             <div className="container">
               <div className="faq-block">
                 <motion.p variants={animationBottom} custom={1} className="faq-block__text">
-                  Get started with 14 days free trial — no credit card required. Experience up to 30 $ in value and
-                  discover how we can help your business boost.
+                  {t(`pricingPage.text`)}
                 </motion.p>
                 <motion.div variants={animationBottom} custom={2} className="button-container">
-                  <Button color="pink" text="Start free trial" onClick={handleClick} />
+                  <Button color="pink" text={t(`pricingPage.startFreeButton`)} onClick={handleClick} />
                 </motion.div>
               </div>
             </div>
             <div className="container">
               <div className="faq-block">
-                <Faq faqItems={faqItems} />
+                <Faq faqItems={newFaqPrice} />
               </div>
             </div>
           </motion.section>

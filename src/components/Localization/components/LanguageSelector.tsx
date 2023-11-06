@@ -15,9 +15,20 @@ function LanguageSelector() {
     setIsOpen(!isOpen);
   };
 
+  const sectionStyle = {
+    width: "40px",
+    height: "40px",
+  };
+
   return (
     <div className="language-selector">
-      <button onClick={toggleDropdown}>Select Language</button>
+      <button onClick={toggleDropdown}>
+        <img
+          style={sectionStyle}
+          src="/local/earth1.png" 
+          alt="earth" 
+        />
+      </button>
       {isOpen && (
         <div className="language-dropdown">
           <button onClick={() => changeLanguage('en')}>English</button>

@@ -35,12 +35,10 @@ export const SectionHead: React.FC<Props> = ({homePageRef }) => {
 
 
               <motion.h1 custom={1} variants={animation} className="section-head__title title">
-                Virtual Assistance <br /> & Business Solutions
+                {t(`main.title`)}
               </motion.h1>
               <motion.p custom={2} variants={animation} className="section-head__description">
-                Get started with 14 days free trial — no credit card required.
-                Experience up to $30 in value and discover how we can help your
-                business boost.
+              {t(`main.description`)}
               </motion.p>
             </div>
             <Buttons />

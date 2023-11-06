@@ -342,11 +342,361 @@
   "moreNews":"GET MORE NEWS",
   "main":{
     "title": "Virtual Assistance \n & Business Solutions",
-    "description": "Get started with 14 days free trial — no credit card required. Experience up to $30 in value and discover how we can help your business boost."
+    "description": "Get started with 14 days free trial — no credit card required. Experience up to $30 in value and discover how we can help your business boost.",
+    "getInTouchButton":"Get in touch",
+    "startFreehButton":"Start free trial",
+    "cases":"Cases we can do",
+    "services":{
+      "title":"Services",
+      "description":"We offer virtual assistants and concierge services trusted by companies and businessmen to manage tasks, calendars, shopping, events, bills, documents, SMM, and more. In our work, we use process automation and artificial intelligence to achieve success and solve problems at maximum speed!",
+      "services": [
+        {
+          "id": 1,
+          "link": "/services/calendars-documents-tasks-management",
+          "nameWithWrap": "Calendars,<br/>Documents & tasks<br/>management",
+          "name": "Calendars, Documents & tasks management",
+          "icon": "list-edit.svg",
+          "descriptions": [
+            {
+              "id": 1,
+              "name": "Emails & calendars",
+              "text": [
+                "Answering emails, creating email templates.",
+                "Spam filtering",
+                " Organization of meetings and negotiations.",
+                "Making appointments and maintaining a schedule.",
+                "Managing electronic contacts.",
+                "Meeting schedule control."
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Document and task management",
+              "text": [
+                "Administration of electronic documents.",
+                "Maintaining databases.",
+                "Editing and formatting documents.",
+                "Creating presentations.",
+                "Finding vendors.",
+                "Assignment of tasks and control of execution.",
+                "Notifications about tasks and their status.",
+                "Bill control and payment."
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "link": "/services/project-management-coordination",
+          "nameWithWrap": "Project<br/>management<br/>& coordination",
+          "name": "Project management & coordination",
+          "icon": "gauge-dashboard.svg",
+          "descriptions": [
+            {
+              "id": 1,
+              "name": "Curating online schools or courses",
+              "text": [
+                "Help to coordinate and organize the educational process in your online school.",
+                "Guiding students from start to finish.",
+                "Monitoring and checking homework.",
+                "Checking access and connection to the educational platform.",
+                "Communication with students: answering questions, motivating and maintaining a friendly atmosphere."
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Camping or Retreat Coordination",
+              "text": [
+                "Location search",
+                "Route planning and logistics",
+                "Campaign or publicity retreat",
+                "Registration and communication with participants to discuss the details",
+                "Providing information about the features of the venue",
+                "Online consultations on the choice of the necessary equipment",
+                "Providing instructions on how to use the equipment",
+                "Online control over the route and safety of participants",
+                "Gathering feedback from participants",
+                "Analysis of the results and identification of possible improvements in the organization."
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "link": "/services/business-assistance-human-resources",
+          "nameWithWrap": "Business<br/>assistance & Human<br/>resources",
+          "name": "Business assistance & Human resources",
+          "icon": "bulb.svg",
+          "descriptions": [
+            {
+              "id": 1,
+              "name": "Business assistance",
+              "text": [
+                "Competitor analysis & market research.",
+                "Optimization of business processes.",
+                "Legal consulting & papers.",
+                "Business modelling.",
+                "Company registration."
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Recruitment & HR",
+              "text": [
+                "Drafting vacancies according to customer requests.",
+                "Conducting the first round of interviews.",
+                "Search and processing of resumes of applicants.",
+                "Calling applicants and conducting the first stage of the interview.",
+                "Registration and placement of vacancies on recruiting resources and social networks.",
+                "Processing applicants' answers."
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "link": "/services/social-media-management-advertisement",
+          "nameWithWrap": "Social media<br/>management<br/>& advertisement",
+          "name": "Social media management & advertisement",
+          "icon": "vintage-tv-4.svg",
+          "descriptions": [
+            {
+              "id": 1,
+              "name": "Social media support",
+              "text": [
+                "Content creation: preparing text messages, photos, videos, graphics, etc.",
+                "Planning and publishing content: determining the frequency and schedule of publications, planning topics and messages for publication.",
+                "Communication: interacting with subscribers, addressing comments and messages, addressing feedback.",
+                "Advertising: creating advertising campaigns, defining the audience, setting parameters, tracking results, and optimising.",
+                "Help bloggers create subtitles for video content.",
+                "Spell check, punctuation and error correction."
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "link": "/services/travel-relocation-translation",
+          "nameWithWrap": "Travel<br/>& relocation<br/>Translation",
+          "name": "Travel & relocation, Translation",
+          "icon": "landmark-pisa-tower.svg",
+          "descriptions": [
+            {
+              "id": 1,
+              "name": "Relocation",
+              "text": [
+                "Assisting with selecting a country to move based on the customer's criteria and preferences.",
+                "Selection and organization of housing - help find and rent suitable housing, negotiate with owners, organize property inspections, and draw up a lease agreement.",
+                "Selection of schools and kindergartens for children, and assistance with paperwork.",
+                "Assistance with job selection and labor market consultation.",
+                "Assistance with paperwork, including visas, work permits, and insurance.",
+                "Transportation of property and personal belongings to the new location.",
+                "Adaptation services: provide information on cultural characteristics, and assistance in finding acquaintances in a new country according to the interests of the customer.",
+                "Legal services - provide legal advice on the laws of the new country."
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Travel management",
+              "text": [
+                "Booking tickets: planes, trains, and buses according to the client's preferences.",
+                "Booking hotels: searching and booking hotels and other accommodations.",
+                "Route planning: developing the optimal travel route, selecting places to visit, booking excursions and entertainment.",
+                "Document preparation: registering visas, insurance policies, and other documents.",
+                "Consultation: providing information about weather conditions, culture, traditions, and other features of the destination country.",
+                "Financial management: monitoring the travel budget, making payments, interacting with banks and financial institutions.",
+                "Transfers: organizing transfers between airports, train stations, hotels, and other destinations.",
+                "Travel support: resolving problems related to tickets, hotels, transportation, and other services that may arise during the trip."
+              ]
+            },
+            {
+              "id": 3,
+              "name": "Translation",
+              "text": [
+                "Translation of written content from one language to another.",
+                "Website translation.",
+                "Translation of documents.",
+                "Translation of marketing materials.",
+                "Translation of audio recordings and video clips.",
+                "Overlay of subtitles."
+              ]
+            },
+            {
+              "id": 4,
+              "name": "Content localization",
+              "text": [
+                "Adaptation of content to meet the cultural characteristics and requirements of the target audience."
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "link": "/services/business-events-corporate-holidays",
+          "nameWithWrap": "Business events<br/>& corporate<br/>holidays",
+          "name": "Business events & corporate holidays",
+          "icon": "restaurant-menu.svg",
+          "descriptions": [
+            {
+              "id": 1,
+              "name": "Planning and holding conferences and seminars",
+              "text": [
+                "Location selection.",
+                "Organization of accommodation and transportation.",
+                "Invitation of speakers.",
+                "Coordination of all event details."
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Organization of business meetings and events",
+              "text": [
+                "Creation of event programs.",
+                "Selection of a venue according to the customer's criteria.",
+                "Organization of catering, transportation, and entertainment for participants."
+              ]
+            },
+            {
+              "id": 3,
+              "name": "Organization of corporate holidays and parties",
+              "text": [
+                "Selection of a theme for the party.",
+                "Development of a program.",
+                "Selection of a venue.",
+                "RSVP management.",
+                "Organization of catering and entertainment."
+              ]
+            },
+            {
+              "id": 4,
+              "name": "Organizing a date",
+              "text": [
+                "Booking a place at the request of the customer.",
+                "Creating a romantic atmosphere (flowers, balloons, candles, etc.)",
+                "Horse rides, private jet bookings, hot air balloons and many others."
+              ]
+            },
+            {
+              "id": 5,
+              "name": "Event production and AV services",
+              "text": [
+                "Providing audiovisual services, including lighting, sound, and video production for events."
+              ]
+            },
+            {
+              "id": 6,
+              "name": "Budget management and financial reporting",
+              "text": [
+                "Managing the event budget, tracking expenses, and providing financial reports and analysis to the client."
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "link": "/services/design-development-research",
+          "nameWithWrap": "Design,<br/>Development<br/>& Research",
+          "name": "Design, Development & Research",
+          "icon": "brain-1.svg",
+          "descriptions": [
+            {
+              "id": 1,
+              "name": "Web development",
+              "text": [
+                "development of websites and web applications.",
+                "web hosting."
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Web design",
+              "text": [
+                "website design development.",
+                "creation of logos and branding."
+              ]
+            },
+            {
+              "id": 3,
+              "name": "Front-end development",
+              "text": [
+                "user interface development.",
+                "site optimization for mobile devices."
+              ]
+            },
+            {
+              "id": 4,
+              "name": "Back-end development",
+              "text": [
+                "development of the server part of the site.",
+                "database management."
+              ]
+            },
+            {
+              "id": 5,
+              "name": "SEO optimization",
+              "text": [
+                "website content optimization to improve search engine rankings,",
+                "keyword research,",
+                "technical optimization."
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "link": "/services/coaching-leadership-team-building",
+          "nameWithWrap": "Coaching,<br/>leadership<br/>& Team-building",
+          "name": "Coaching, leadership & Team-building",
+          "icon": "target-correct.svg",
+          "descriptions": [
+            {
+              "id": 1,
+              "name": "Coaching",
+              "text": [
+                "Business coaching — goals and performance.",
+                "Personal coaching — personal growth, personal goals and increasing motivation.",
+                "Technical coaching — motivation in mastering new technologies, improving skills.",
+                "Time management coaching — planning and organization.",
+                "Coaching in leadership and communication - development of leadership skills, team management and communication."
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Team building",
+              "text": [
+                "Online trainings to improve team performance.",
+                "Virtual games and quizzes.",
+                "Virtual master classes (culinary/sports/psychological/etc)",
+                "Virtual meetings where participants can discuss problems and find solutions together."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "benefits":{
+      "title":"Benefits",
+      "text1":"Enjoy a free 14-day trial flight. No credit card required.",
+      "text2":"An account manager to coordinate tasks & ensure quality control.",
+      "text3":"Task monitoring (e.g., ClickUp) and reporting.",
+      "text4":"Online and offline assistance available 24/7 in any messenger service.",
+      "text5":"Corporate account for remote payments.",
+      "text6":"Confidentiality and security. Possibility to work on the client's software.",
+      "text7":"Payment available in USDT and other cryptocurrencies.",
+      "text8":"Flexible allocation of assistant time depending on needs.",
+      "text9":"Individually selected specialists in any corner of the galaxy, fluent in any language.",
+      "text10":"Resource-efficient and time-saving through outsourcing administrative tasks."
+    },
+    "mainPageBlock":{
+      "title":"Virtual Assistance & Business Solutions: \n Human Driven, AI Empowered."
+    }
   },
   "servicesPage":{
     "homeLink":"Home",
     "servicesLink": "Services",
+    "conectButton":"Connect with us",
+    "getButton":"get a service",
+    "startButton": "start free trial",
     "servicesList": [
       {
         "id": 1,
@@ -2583,5 +2933,587 @@
       "rocketTitle": "Boost Your Online Visibility",
       "rocketDescription": "JetOffice's Discover SEO Optimization Partners helps you to find exceptional partners who specialize in improving your website's search engine visibility and driving organic traffic."
     }
-  ]
+  ],
+  "aboutPage":
+  {
+    "title": "Service from Ukraine for the Whole World",
+    "aboutSectionTitle": "About JetOffice",
+    "aboutSectionText": "JetOffice provides administrative support and outsourced assistants. Additional service — business solutions: design and development, business process automation, SMM, copywriting, coaching, management. We provide business solutions using our own resources and with the help of a network of partners.\n\n A proprietary development of JetOffice is an AI-based chatbot that helps businesses automate routine processes: task and meeting creation, calendar management, content creation, purchases, and payments.\n\n Our virtual assistants are quite independent. Each client is assigned a personal account manager who monitors the quality and acts as the client's advocate. Account managers and assistants are fully immersed in business tasks, understand the client's goals and needs.",
+    "heroTitle": "Our History",
+    "heroText": "It all began in a cafe in December 2022, in Fethiye, Turkey. Illia was working as a product designer in outsourced company and Oksana was the head of administrative support in a company with a headcount of 80 employees, and we were pondering: «how to scale the skill of solving problems and finding solutions for companies on an outsourcing basis». Here are the challenges we saw for companies that needed assistants, helpers, and administrative support:",
+    "customersInterviewsTitle": "Customer Interviews",
+    "customersInterviewsText1": "Navigating the administrative landscape is no small feat. Finding someone adept enough to support our team without distracting from core tasks is critical - especially when an executive's hour holds higher value than that of an assistant.",
+    "customersInterviewsText2": "In our search for a business assistant, we don't just want anyone. We're looking for a self-starter – someone who grasps business intricacies, shows initiative, and is continuously eager to learn and adapt.",
+    "customersInterviewsText3": "Seeking the perfect personal assistant is a quest in its own right. We need someone who not only understands our company's nuances but can carry out tasks with reliability and precision, ensuring that our top brass can operate without a hitch.",
+    "customersInterviewsText4": "The ultimate challenge? Melding these talents into a cohesive team led by a single, insightful manager – someone who gets the intricacies of our operations, anticipates our client needs, delves into data, and thinks outside the box for those unpredictable tasks.",
+    "titleRocket":"Our mission and goals",
+    "textRocket":"Our mission is to provide client-oriented virtual assistance, administrative support, and business solutions such as process automation and IT product development. We strive to deliver exceptional service, build long-lasting relationships with our clients, and continuously improve our processes to exceed their expectations. \n\n One of our goals is to create a turnkey platform ecosystem for both businesses and private clients, where human assistants and AI together will be maximally effective and beneficial for clients.",
+    "crewAll":[
+      {
+        "head": [
+          {
+            "id": 1,
+            "name": "Tretnikov Illia",
+            "role": "Co-Founder",
+            "avatar": "crew/illia.png"
+          },
+          {
+            "id": 2,
+            "name": "Oksana Timchenko",
+            "role": "Co-Founder",
+            "avatar": "crew/oksana.png"
+          },
+          {
+            "id": 4,
+            "name": "Veronika Nogina",
+            "role": "Assistant Manager",
+            "avatar": "crew/veronika.png"
+          },
+          {
+            "id": 5,
+            "name": "Kostiantyn Velychko",
+            "role": "Project Manager",
+            "avatar": "crew/kostya.png"
+          },
+          {
+            "id": 6,
+            "name": "Alena Makovetskaya",
+            "role": "HR Manager",
+            "avatar": "crew/alena.png"
+          },
+          {
+            "id": 7,
+            "name": "David Bashir",
+            "role": "SMM Manager",
+            "avatar": "crew/david.png"
+          },
+          {
+            "id": 8,
+            "name": "Anastasiia Voronetska",
+            "role": "Sales Manager",
+            "avatar": "crew/anastasiia.png"
+          },
+          {
+            "id": 9,
+            "name": "Sergey Solovev",
+            "role": "UX/UI Designer",
+            "avatar": "crew/sergey.png"
+          },
+          {
+            "id": 10,
+            "name": "Oleksii Pustovit",
+            "role": "Full-Stack Developer",
+            "avatar": "crew/oleksii.png"
+          },
+          {
+            "id": 11,
+            "name": "Artem Nechaev",
+            "role": "Full-Stack Developer",
+            "avatar": "crew/artem.png"
+          },
+          {
+            "id": 12,
+            "name": "Anna Morozenko",
+            "role": "Front-End Developer",
+            "avatar": "crew/ann.png"
+          },
+          {
+            "id": 13,
+            "name": "Alexey Linkov",
+            "role": "Back-End Developer",
+            "avatar": "crew/alexey.png"
+          }
+        ],
+        "management": [
+          {
+            "id": 1,
+            "name": "Veronika Nogina",
+            "role": "Assistant Manager",
+            "avatar": "crew/veronika.png"
+          },
+          {
+            "id": 2,
+            "name": "Kostiantyn Velychko",
+            "role": "Project Manager",
+            "avatar": "crew/kostya.png"
+          },
+          {
+            "id": 3,
+            "name": "Alena Makovetskaya",
+            "role": "HR Manager",
+            "avatar": "crew/alena.png"
+          }
+        ],
+        "sales": [
+          {
+            "id": 7,
+            "name": "David Bashir",
+            "role": "SMM Manager",
+            "avatar": "crew/david.png"
+          },
+          {
+            "id": 8,
+            "name": "Anastasiia Voronetska",
+            "role": "Sales Manager",
+            "avatar": "crew/anastasiia.png"
+          }
+        ],
+        "product": [
+          {
+            "id": 9,
+            "name": "Sergey Solovev",
+            "role": "UX/UI Designer",
+            "avatar": "crew/sergey.png"
+          },
+          {
+            "id": 10,
+            "name": "Oleksii Pustovit",
+            "role": "Full-Stack Developer",
+            "avatar": "crew/oleksii.png"
+          },
+          {
+            "id": 11,
+            "name": "Artem Nechaev",
+            "role": "Full-Stack Developer",
+            "avatar": "crew/artem.png"
+          },
+          {
+            "id": 12,
+            "name": "Anna Morozenko",
+            "role": "Front-End Developer",
+            "avatar": "crew/ann.png"
+          },
+          {
+            "id": 13,
+            "name": "Maxim Bobrik",
+            "role": "Back-End Developer",
+            "avatar": "crew/maks.png"
+          },
+          {
+            "id": 14,
+            "name": "Alexey Linkov",
+            "role": "Back-End Developer",
+            "avatar": "crew/alexey.png"
+          }
+        ]
+      }
+    ]
+  },
+  "faqPage":
+  {
+    "faqTitle": "How we can help you?",
+    "faqPlaceholder":"Search",
+    "faqTrial":"Get started with 14 days free trial — no credit card required.Experience up to 30 $ in value and discover how we can help your business boost.",
+    "faqTrialButton":"Start free trial",
+    "faqData": [
+      {
+        "id": 1,
+        "name": "General",
+        "questions": [
+          {
+            "id": 1,
+            "question": "How it works?",
+            "text": "Everything is super simple and just a few clicks away!\n\n1. Click the START FREE TRIAL (link to the bot) button on the website.\n2. Choose a suitable plan (link to the plans page) or try the free trial period.\n3. In the chat, get acquainted with the account manager and your assistant, who will be assigned to you. Tell them about yourself, your business, and your expectations.\n4. Describe the task, agree on the deliverables (for example, a Google spreadsheet, a to-do list), deadlines, and in what form the task should be completed. The account manager will ask clarifying questions, pass them on to the assistant, and immediately start working on the task.\n5. The account manager will notify you when the task is completed.\n6. Use the AI capabilities directly in the chatbot.\n7. Receive a weekly or monthly report."
+          },
+          {
+            "id": 6,
+            "question": "How does JetOffice provide assistance services to employees of my company?",
+            "text": "For corporate clients, we offer two schemes:\n\n<strong>Scheme #1: Separate chat groups</strong>\n\n1. Separate chat groups are created for employees, top management, and C-level in Telegram, Slack, or another suitable messenger. The group includes an Account Manager, assistants, and company personnel. It is recommended to have no more than 50-80 employees in one chat.\n2. Together with the client, we distribute the hours for task execution between chat groups, establish regulations, conditions, and priorities.\n3. In ClickUp, by default from JetOffice, or in any other task management program from the client side (optional), separate task categories are created for each chat group, where all tasks are entered and the time for performing these tasks is logged.\n4. Logged time is summed up. At the end of the month, a report is generated.\n\n<strong>Scheme #2: chatbot for Each employee</strong>\n\n1. Each employee has access to JetOffice.app - a chatbot, where they can directly contact an assistant and also use AI-based solutions.\n2. Together with the client, we create user groups. Together with the client, we distribute the hours for task execution between groups, establish regulations, conditions, and priorities.\n3. In ClickUp, by default from JetOffice, or in any other task management program from the client side (optional), separate task categories are created for each user group, where all tasks are entered, and the time for performing these tasks is logged.\n4. Logged time is summed up. At the end of the month, a report is generated."
+          },
+          {
+            "id": 7,
+            "question": "How does JetOffice work with private clients and companies? What is the difference?",
+            "text": "The difference lies in the number of employees served by virtual assistants and the different channels of communication. If a company has many employees, JetOffice can create a common chat for all employees. Consequently, more time and more assistants are needed to cover tasks for companies. For large corporations, JetOffice can offer a special deal that is more advantageous than other subscription plans. Check the rates here (link to prices page). Contact mail@jetoffice.org to get an offer for large corporations.\n\nOn the other hand, for private clients, one assistant and cheaper rates may be sufficient."
+          },
+          {
+            "id": 8,
+            "question": "Can a common group chat be created for company employees?",
+            "text": "Yes, that is possible. We can create a common chat in Telegram or any other messenger application."
+          },
+          {
+            "id": 9,
+            "question": "What messengers can be used?",
+            "text": "JetOffice uses Telegram for internal needs, for communication with clients, and for using JetOffice.app. However, we are ready to integrate into any corporate messenger that the company uses."
+          },
+          {
+            "id": 10,
+            "question": "What makes JetOffice more advantageous, better, or cheaper than an in-house employee?",
+            "text": 
+            "<strong>Firstly</strong>, we provide a service. This means that the recruitment, selection, replacement, training, and internship of employees are our responsibility. The company does not need to maintain an employee, pay taxes, train, monitor quality, etc. The company only delegates tasks and does not have to worry about anything else.\n\n<strong>Secondly</strong>, you pay for as many hours as you need for effective work. There is even the possibility of hourly payment. On more expensive tariff plans, you can really hire an in-house employee, but then training, replacement, and other issues fall on your shoulders. This is a questionable saving, isn't it?\n\n<strong>Thirdly</strong>, a virtual assistant (outsourced assistant) is not much different from an in-house assistant, administrative assistant, or secretary in terms of effectiveness - they are also immersed in the context: they understand the tasks of the business and the needs of the client.\n\n<strong>The cherry on top</strong>: we have a cool network of partners (from product development to coaching), as well as our own AI-based product for automating your routine processes. And you get all this in one box, in one chat."
+          },
+          {
+            "id": 11,
+            "question": "How can I manage if I need to do something offline? Can JetOffice solve this?",
+            "text": "Of course! For us, these are the same working hours. We can find a person anywhere in the world who agrees to complete the task offline: go to the store, check the apartment, or pick up things from the laundry. We will pay this person for their time according to the assistant's rate."
+          },
+          {
+            "id": 23,
+            "question": "Where are you from?",
+            "text": "Illia and Oksana, the founders, are from Ukraine, and we consider our startup to be Ukrainian. However, our team is international."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Assistance",
+        "questions": [
+          {
+            "id": 2,
+            "question": "What communication channels does JetOffice support?",
+            "text": "We can agree on any communication channel that is convenient for you. By default, it is a Telegram bot - the most preferred and convenient because everything is set up for comfortable work.\n\nSome clients prefer Slack or Facebook Workplace chat."
+          },
+          {
+            "id": 12,
+            "question": "Can I contact the assistant personally?",
+            "text": "The chatbot already provides direct access to the assistant. You know who you are communicating with, and if there are several assistants in the chat, it will be clear who is writing. The ability to write directly to an assistant in Telegram is available, but it is not advisable because then this correspondence is not visible to the account manager and there is no possibility to use AI for process automation.\n\nIt is forbidden to lure our employees to work for you without an agreement with JetOffice. It is also forbidden to ask to complete tasks that go beyond working hours.\n\nIn any case, any task will be confidential. But for the client's peace of mind, you can write to the assistant personally and then return to the chatbot."
+          },
+          {
+            "id": 13,
+            "question": "Can I communicate with the assistant using voice messages, online calls, or phone calls?",
+            "text": "Yes, you can."
+          },
+          {
+            "id": 14,
+            "question": "How do I know who my assistants are and who is my content manager?",
+            "text": "You can easily check this in the chatbot under the \"My Account\" information."
+          },
+          {
+            "id": 15,
+            "question": "What tasks does JetOffice not perform?",
+            "text": "JetOffice provides comprehensive business solutions by connecting you with qualified vendors. While we address most needs virtually, we can also introduce you to vendors for tasks requiring physical presence. However, there are specific tasks we don't undertake.\n\n1. <strong>Specialized Consultations</strong>: We recommend seeking experts in the respective field for highly specialized tasks.\n2. <strong>High-Risk Tasks</strong>: We do not handle requests associated with significant financial or legal risks without detailed analysis.\n3. <strong>Breach of Confidentiality</strong>: Tasks that might compromise personal information or safety are not accepted.\n4. <strong>Illegal Requests</strong>: Any actions or requests that breach the law will be declined.\n5. <strong>Fraud and Financial Pyramids</strong>: Requests related to participating in financial pyramids, fraudulent schemes, or other activities that are illegal or unethical are strictly prohibited.\n6. <strong>Usage of \"Black Hat\" Tactics</strong>: Any requests to use virtual assistants for manipulations, bypassing laws, or unfair competition will be declined.\n7. <strong>Breach of Ethical Principles</strong>: Tasks that might harm the reputation of your company or ours, or contradict commonly accepted ethical standards, are not accepted.\n8. <strong>Contradiction to Corporate Values</strong>: If a task doesn't align with the principles and values of JetOffice or the individual values of the assistant, a decision might be made to decline its execution.\n9. <strong>Unrealistic Deadlines</strong>: Tasks with unattainable deadlines may be reviewed or declined."
+          },
+          {
+            "id": 24,
+            "question": "Are There Any Restrictions on Cooperation with Companies Registered in Russia or Russian Citizens?",
+            "text": "At the moment, <strong>we do not collaborate with Russian companies</strong>, do not accept payments from Russian accounts, and do not undertake tasks related to the territory of Russia or Russian vendors. However, we do not discriminate based on nationality or passport and treat all individuals with respect.\n\nThis means that we <strong><u>collaborate with Russian citizens</u></strong> who do not reside in Russia and do not pay taxes in Russia. We also collaborate with relocated companies. We believe in peace and that cooperation and respect will lead to peace between our nations."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Payment",
+        "questions": [
+          {
+            "id": 3,
+            "question": "What happens if I don't use all the hours included in my plan?",
+            "text": "If you haven't used the hours included in your plan by the end of the month — they expire. JetOffice does not carry over these hours to the next month and does not refund the money."
+          },
+          {
+            "id": 5,
+            "question": "Can I upgrade of downgrade my plan anytime?",
+            "text": "<strong>Monthly Subscription</strong>:\n<strong>Upgrade</strong>: Clients can upgrade their subscription at any time by paying the price difference between the current and new plans.\n<strong>Downgrade</strong>: Clients can downgrade their plan only after the current month's subscription period ends. No refunds are provided.\n\n<strong>Yearly Subscription</strong>:\n<strong>Upgrade</strong>: Clients can upgrade their subscription at any time. The additional payment is calculated based on the price difference between plans and the remaining time until the end of the yearly subscription.\n<strong>Downgrade</strong>: Transition to a lower plan is possible only after the yearly subscription ends.\n<strong>Switch from Yearly to Monthly</strong>: The transition is allowed only after the yearly subscription ends. No refunds are provided. After the yearly subscription ends, clients can choose a monthly plan.\n<strong>Cancellation of Yearly Subscription</strong>: Client-initiated cancellation of the yearly subscription incurs a penalty equal to the cost of three months' subscription."
+          },
+          {
+            "id": 16,
+            "question": "What happens if I go over monthly hours?",
+            "text": "Our system is designed to remind users when they approach the end of their hours or billing period. This ensures that you won't exceed the time limit without your knowledge. When the system notifies you about reaching your time limit, you'll have the following options:\n\n1. Purchase a new package: In this case, the countdown will start from a new date.\n2. Use hourly rate billing: To do this, you'll need to deposit funds into your account.\n3. Suspend task execution until the beginning of the next billing period.\n\nIf your package hours run out, you won't be able to work beyond the allocated hours until you purchase a new package or opt for hourly rate billing."
+          },
+          {
+            "id": 17,
+            "question": "Which subscription is best for me?",
+            "text": "Start With\n\n<strong>Free Trial</strong>: Try it out, test it, evaluate it. You'll love it! Three hours are enough for a small test. \n\n<strong>Hourly Rate</strong>: If you need more time to get familiar with JetOffice assistants, use our hourly rate. It's not as cost-effective as monthly plans, but it allows you to fully assess the service.\n\n<strong>Get Up to 20% Off</strong>: More hours, more discounts!\n\n<strong>PERSONAL</strong>: Good for getting acquainted with the service, small businesses, or personal use. With this plan, JetOffice provides you with an account manager and a part-time assistant. The price per hour is $6.6 with a yearly subscription and $7.9 per hour with a monthly subscription.\n\n<strong>STARTUP</strong>: The golden middle ground. With this plan, you get a full-time assistant for better task immersion and an account manager. You also get an 11% discount compared to the PERSONAL plan. The hourly rate is $5.9 with a yearly subscription and $7.1 per hour with a monthly subscription.\n\n<strong>BUSINESS</strong>: For in-depth work and multitasking. With this plan, you can handle multiple tasks simultaneously because you'll have three full-time assistants and a manager. You'll also get a 20% discount compared to the PERSONAL plan. The hourly rate is $5.2 with a yearly subscription and $6.3 per hour with a monthly subscription.\n\n<strong>ENTERPRISE</strong>: This offers an individualized approach to get more assistants at a more favorable price."
+          },
+          {
+            "id": 18,
+            "question": "How to use hourly pay?",
+            "text": "Here are the instructions on how to use the hourly pay option:\n\n1. In the chatbot, select \"HOURLY PAY $10.\"\n2. Add a balance in multiples of $10.\n3. The system will notify you of the purchased amount of time.\n4. You can start working.\n5. When your balance is running low, the system will alert you about the depletion of funds.\n\nThe deposit model helps you control your funds more attentively and stay within your budget and expectations.\nPlease note that unused time cannot be refunded or used to pay for subscription packages due to technical limitations of the payment system. However, you can always use these funds for hourly payments, and they have no expiration date."
+          },
+          {
+            "id": 19,
+            "question": "Annual and monthly commitment",
+            "text": "The main difference between Annual and Monthly commitment lies in the price and the terms of the agreement. Let's break it down in detail:\n\n<strong>Annual commitment</strong>: The primary benefit for customers when purchasing an Annual commitment plan is a lower hourly rate, and the assurance of a dedicated team focused on your tasks and needs for an extended period. With an annual subscription, you receive up to 20% discount compared to monthly payments. This discount accounts for the inclusion of the risks associated with employee downtime in the monthly pricing.\n\nFor example, the difference in the annual budget on the STARTUP plan between monthly and annual commitment would be $17,040 per year with monthly payments and $14,200 with an annual commitment. This means you save $2,840 per year, which is a 16.7%.\n\nHowever, there are specific considerations that compensate for these lower prices:\n1. You cannot downgrade your subscription until the end of the billing cycle (which means not until the year ends), but you can upgrade at any time.\n2. Canceling your subscription with an annual commitment incurs a penalty equivalent to three months of the subscription cost, excluding the current month.\n3. During payment, the entire annual amount will be charged upfront.\n\n<strong>Monthly commitment</strong>: JetOffice values flexibility, convenience, and simplicity. When you choose a monthly subscription, you are not tied to long-term commitments, but keep in mind that this type of agreement will make your annual expenses higher.\n\nPlease note that transitioning from a monthly subscription to an annual commitment is straightforward, but the reverse is not possible. \n\nFor detailed information on transitioning between plans, please refer to \"Can I upgrade or downgrade my plan anytime?\"\n\nWe recommend starting with a monthly subscription to get acquainted with JetOffice and build trust, and then consider transitioning to an annual commitment for cost savings."
+          },
+          {
+            "id": 20,
+            "question": "When and How Is Payment Made? What Payment Options Are Available? What Currencies Are Accepted?",
+            "text": "We offer flexibility when it comes to payment options, and we can accommodate various payment methods, including cash, bank transfers, cryptocurrency, and even barter arrangements where services or goods can be exchanged for JetOffice services.\n\nLet's dive into the details:\n\n<strong>When is Payment Made?</strong> \nnWe operate on a 100% upfront payment model. If you have any reservations, we recommend starting with a free trial period or using our hourly payment option with a small balance on your account.\n\n<strong>How is Payment Made?</strong>\nWe provide several payment methods:\n\n<strong>1. Bank Transfer</strong>: You can make a payment by transferring funds via SWIFT or SEPA. Your account manager will send you a proforma invoice for the prepayment of our services.\n\n<strong>2. Payment Gateway in the Chat</strong>: We've integrated a payment gateway into our chat interface, allowing you to pay with any credit card from around the world and in any currency. Simply start using the JetOffice chat, select \"Subscription,\" and follow the instructions to make a payment.\n\n<strong>3. Cryptocurrency</strong>: We plan to introduce a payment gateway for cryptocurrency transactions. If it's not available yet, your account manager will provide you with a cryptocurrency wallet address. Please note that we comply with tax regulations for cryptocurrency transactions.\n\n<strong>4. In-Person Meeting</strong>: While less common, we can arrange a personal meeting for payment. In this case, we'll prepare a proforma invoice, and you can choose to receive it in print or via email.\n\nRest assured that we aim to make the payment process as convenient as possible for you, regardless of the method you choose. If you have any further questions or need assistance with payments, please feel free to ask."
+          },
+          {
+            "id": 21,
+            "question": "Can I subscribe to multiple plans simultaneously?",
+            "text": "Yes, you can. Essentially, it will be just the sum of hours."
+          },
+          {
+            "id": 22,
+            "question": "What is Remote payments & Deposit account and how can I use it? ",
+            "text": "A JetOffice deposit provides several possibilities:\n\n1. Firstly, you can use it for hourly payment. You deposit money into your balance and use JetOffice services for as long as there is money on your account. It's convenient because you can limit your spending.\n2. Secondly, the deposit allows you to make payments on your behalf or on behalf of your company. This is very convenient for various operational and routine payments, such as cleaning services, ticket bookings, accommodation, and so on. We call it Remote payments.\n\n<strong>Remote payments</strong> are a type of service where we pay bills on your behalf. In this way, you only confirm the transaction, and we handle everything else. \nThe transaction is processed from our bank account, while the funds are deducted from your balance. This way, we have bypassed the necessity of linking your card to our service. In the future, we will strive to add the option for clients to link their card and make transactions directly from it.\n\n<strong>Attention!</strong> JetOffice limits the payment capabilities. We do not pay for: risky transactions, business deals, investment transactions, payments to exchanges and brokers, currency purchases and conversions, the purchase of illegal goods such as weapons, drugs, etc. Anything that has serious consequences and requires specialized expertise falls outside the scope of our remote payment service.\n\nWe can only process non-risky payments and transactions that do not require professional auditing, such as:\n\n- Ordering food or a taxi.\n- Paying for simple services, such as car repairs or house cleaning.\n- Buying tickets, booking accommodations, renting transportation.\n- Purchasing movie tickets or paying for a restaurant reservation.\n- Paying for grocery orders or personal items. \n- And much more... The key is that the financial transaction should be legal and not require in-depth and specialized auditing.\n\n<strong>Attention!</strong> We are not responsible for any consequences faced by the client in Remote payments once the client has approved the payment. After payment approval, for example, purchasing plane tickets with specific dates, the responsibility lies with the client.\n\n<strong>Attention!</strong> We reserve the right to decline the Remote Payment service if we deem it risky, dangerous, or illegal."
+          },
+          {
+            "id": 25,
+            "question": "When can JetOffice start working?",
+            "text": "This depends on the availability of assistants and the size of your company. Sometimes it may take us from a few days to a few weeks to assemble a team. Of course, the package's start time will be counted from the launch day."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Security & privacy",
+        "questions": [
+          {
+            "id": 4,
+            "question": "Where are my data stored?",
+            "text": "Your data is hosted on AWS (Amazon Web Services) servers, a leader in cloud solutions with numerous security certifications, such as ISO 27001, PCI DSS Level 1, and more. Depending on the specific services you use, some data may also be stored on Telegram and ClickUp servers. Telegram uses distributed servers worldwide, ensuring fast performance and security, while ClickUp utilizes AWS infrastructure for its data storage."
+          },
+          {
+            "id": 26,
+            "question": "Will you share my data with third parties?",
+            "text": "We do not share data with third parties unless agreed upon with you or if it's required to accomplish a specific task. For example, if ticket purchasing requires your data, we pass it on to aggregator services. However, we do not allow data leaks and do not share corporate information."
+          },
+          {
+            "id": 27,
+            "question": "How are your assistants trained in security matters?",
+            "text": "We are currently actively exploring resources and courses on security and confidentiality. Stay tuned for updates in this section."
+          },
+          {
+            "id": 28,
+            "question": "How long do you store my data?",
+            "text": "We retain your data indefinitely unless we receive a request from you to delete it."
+          },
+          {
+            "id": 29,
+            "question": "What security measures do you use to protect my data?",
+            "text": "- <strong>AWS (Amazon Web Services)</strong>: Implements physical, operational, and software security measures. AWS holds numerous security certifications, including ISO 27001, PCI DSS, and FIPS 140-2.\n- <strong>Telegram</strong>: End-to-end encryption is used in Telegram's secret chats to ensure confidentiality. Standard chats are encrypted between the client and server. It also stores messages, media files on its servers, with an option for user-initiated deletion.\n- <strong>MongoDB</strong>: Uses data encryption mechanisms both in storage and in transit. MongoDB also offers access control and audit tools.\n- <strong>ClickUp</strong>: ClickUp data is secured using SSL encryption, regular backups, and various access control mechanisms (from team level down to individual task levels)."
+          },
+          {
+            "id": 30,
+            "question": "Who at JetOffice has access to my data?",
+            "text": "Your data in JetOffice is accessible by the account manager, assistant, project manager, sales team, and company founders."
+          },
+          {
+            "id": 31,
+            "question": "What will happen if there's a data breach?",
+            "text": "We are developing a plan of action for security breaches. We are also considering insuring against such an event. More details will be available soon."
+          },
+          {
+            "id": 32,
+            "question": "How do you process my personal data?",
+            "text": "Before starting to process your personal data, we ask for your consent according to our privacy policy. Your agreement is requested during your first interaction with the chatbot. Our privacy policy, in line with legislative norms, governs the collection, use, disclosure, storage, and protection of your personal data."
+          },
+          {
+            "id": 33,
+            "question": "Do your employees sign Non-Disclosure Agreements (NDA)?",
+            "text": "Yes, all our employees sign a Non-Disclosure Agreement (NDA) to ensure an additional level of protection for your data and confidential information."
+          }
+        ]
+      }
+    ]
+  },
+  "pricingPage":
+  {
+    "title":"We've got a plan that's perfect for you",
+    "subtitle":"We have several packages, from flexible hourly pay to packages tailored for large companies.",
+    "getStartedButton":"GET STARTED",
+    "contactButton":"CONTACT SALES",
+    "hoursMonth":"hours included per month",
+    "paymentMonth":"Per month",
+    "paymentYear":"per year",
+    "mostPopular":"Most popular",
+    "option1":"monthly",
+    "option2":"yearly",
+    "text":" Get started with 14 days free trial — no credit card required. Experience up to 30 $ in value and discover how we can help your business boost.",
+    "startFreeButton":"Start free trial",
+    "pricing": [
+      {
+        "id": 1,
+        "name": "Hourly rate",
+        "description": "Suitable for getting acquainted with JetOffice service and for urgent tasks",
+        "monthlyPrice": "10/h",
+        "yearlyPrice": "10/h",
+        "monthlyHour": "∞",
+        "team": ["Account manager \n", "1 part-time Specialist"],
+        "mostPopular": false,
+        "titleColor": "green",
+        "payment": "per hour, deposit commitment",
+        "preferences": [
+          {
+            "id": 1,
+            "name": "Remote payments",
+            "description": "Remote Payments is a service where Jet Office can pay your invoices without your involvement."
+          },
+          {
+            "id": 2,
+            "name": "Deposit account",
+            "description": "You can make a deposit, which we will use to pay your bills remotely or hire freelance specialists."
+          }
+        ],
+        "frealancersPrice": 0
+      },
+      {
+        "id": 2,
+        "name": "Personal",
+        "description": "Best for individual use up to 5 people, small businesses and simple tasks",
+        "monthlyPrice": 620,
+        "yearlyPrice": 510,
+        "monthlyHour": 80,
+        "team": ["Account manager \n", "1 part-time Specialist"],
+        "mostPopular": false,
+        "titleColor": "blue",
+        "payment": "Per month",
+        "preferences": [],
+        "frealancersPrice": 0
+      },
+      {
+        "id": 3,
+        "name": "Startup",
+        "description": "Best for businesses with up to 20 people and medium-complexity tasks.",
+        "monthlyPrice": 1720,
+        "yearlyPrice": 1430,
+        "monthlyHour": 250,
+        "team": [
+          "Account manager \n",
+          "1 full time Specialist"
+        ],
+        "mostPopular": true,
+        "titleColor": "pink",
+        "payment": "Per month",
+        "preferences": [
+          {
+            "id": 1,
+            "name": "Remote payments",
+            "description": "Remote Payments is a service where Jet Office can pay your invoices without your involvement."
+          },
+          {
+            "id": 2,
+            "name": "Deposit account",
+            "description": "You can make a deposit, which we will use to pay your bills remotely or hire freelance specialists."
+          },
+          {
+            "id": 3,
+            "name": "Multi flow",
+            "description": "Multi Flow is a service that allows administrative assistants to take on multiple tasks at the same time. Otherwise, the next task will be executed only after the previous task is completed or pending."
+          }
+        ],
+        "frealancersPrice": 10
+      },
+      {
+        "id": 4,
+        "name": "Business",
+        "description": "Best for full-scale businesses operations with up to 80 employees and complex tasks",
+        "monthlyPrice": 4280,
+        "yearlyPrice": 3560,
+        "monthlyHour": 520,
+        "team": [
+          "Account manager \n",
+          "2 full time Specialist \n",
+          "1 part-time specialist for day/night shifts"
+        ],
+        "mostPopular": false,
+        "titleColor": "mint",
+        "payment": "Per month",
+        "preferences": [
+          {
+            "id": 1,
+            "name": "Remote payments",
+            "description": "Remote Payments is a service where Jet Office can pay your invoices without your involvement."
+          },
+          {
+            "id": 2,
+            "name": "Deposit account",
+            "description": "You can make a deposit, which we will use to pay your bills remotely or hire freelance specialists."
+          },
+          {
+            "id": 3,
+            "name": "Multi flow",
+            "description": "Multi Flow is a service that allows administrative assistants to take on multiple tasks at the same time. Otherwise, the next task will be executed only after the previous task is completed or pending."
+          }
+        ],
+        "frealancersPrice": 8
+      },
+      {
+        "id": 5,
+        "name": "Enterprise",
+        "description": "Best for businesses with more than 100 employees, complex tasks and different teams",
+        "monthlyPrice": "calculate",
+        "yearlyPrice": "calculate",
+        "monthlyHour": "∞",
+        "team": [
+          "Let's choose the number of specialists according to your requirements"
+        ],
+        "mostPopular": false,
+        "titleColor": "purple",
+        "payment": "annual commitment<br/>only",
+        "preferences": [
+          {
+            "id": 1,
+            "name": "Remote payments",
+            "description": "Remote Payments is a service where Jet Office can pay your invoices without your involvement."
+          },
+          {
+            "id": 2,
+            "name": "Deposit account",
+            "description": "You can make a deposit, which we will use to pay your bills remotely or hire freelance specialists."
+          },
+          {
+            "id": 3,
+            "name": "Multi flow",
+            "description": "Multi Flow is a service that allows administrative assistants to take on multiple tasks at the same time. Otherwise, the next task will be executed only after the previous task is completed or pending."
+          }
+        ],
+        "frealancersPrice": 8
+      }
+    ],
+    "faqPrice": [
+      {
+        "id": 1,
+        "question": "What happens if I don't use all the hours included in my plan?",
+        "text": "If you haven't used the hours included in your plan by the end of the month — they expire. JetOffice does not carry over these hours to the next month and does not refund the money."
+      },
+      {
+        "id": 2,
+        "question": "Can I upgrade of downgrade my plan anytime?",
+        "text": "Monthly Subscription:\nUpgrade: Clients can upgrade their subscription at any time by paying the price difference between the current and new plans.\nDowngrade: Clients can downgrade their plan only after the current month's subscription period ends. No refunds are provided.\n\nYearly Subscription:\nUpgrade: Clients can upgrade their subscription at any time. The additional payment is calculated based on the price difference between plans and the remaining time until the end of the yearly subscription.\nDowngrade: Transition to a lower plan is possible only after the yearly subscription ends.\nSwitch from Yearly to Monthly: The transition is allowed only after the yearly subscription ends. No refunds are provided. After the yearly subscription ends, clients can choose a monthly plan.\nCancellation of Yearly Subscription: Client-initiated cancellation of the yearly subscription incurs a penalty equal to the cost of three months' subscription."
+      },
+      {
+        "id": 3,
+        "question": "What happens if I go over monthly hours?",
+        "text": "Our system is designed to remind users when they approach the end of their hours or billing period. This ensures that you won't exceed the time limit without your knowledge. When the system notifies you about reaching your time limit, you'll have the following options:\n\n1. Purchase a new package: In this case, the countdown will start from a new date.\n2. Use hourly rate billing: To do this, you'll need to deposit funds into your account.\n3. Suspend task execution until the beginning of the next billing period.\n\nIf your package hours run out, you won't be able to work beyond the allocated hours until you purchase a new package or opt for hourly rate billing."
+      },
+      {
+        "id": 4,
+        "question": "Which subscription is best for me?",
+        "text": "Start With\n\nFree Trial: Try it out, test it, evaluate it. You'll love it! Three hours are enough for a small test. \n\nHourly Rate: If you need more time to get familiar with JetOffice assistants, use our hourly rate. It's not as cost-effective as monthly plans, but it allows you to fully assess the service.\n\nGet Up to 20% Off: More hours, more discounts!\n\nPERSONAL: Good for getting acquainted with the service, small businesses, or personal use. With this plan, JetOffice provides you with an account manager and a part-time assistant. The price per hour is $6.6 with a yearly subscription and $7.9 per hour with a monthly subscription.\n\nSTARTUP: The golden middle ground. With this plan, you get a full-time assistant for better task immersion and an account manager. You also get an 11% discount compared to the PERSONAL plan. The hourly rate is $5.9 with a yearly subscription and $7.1 per hour with a monthly subscription.\n\nBUSINESS: For in-depth work and multitasking. With this plan, you can handle multiple tasks simultaneously because you'll have three full-time assistants and a manager. You'll also get a 20% discount compared to the PERSONAL plan. The hourly rate is $5.2 with a yearly subscription and $6.3 per hour with a monthly subscription.\n\nENTERPRISE: This offers an individualized approach to get more assistants at a more favorable price."
+      },
+      {
+        "id": 5,
+        "question": "How to use hourly pay?",
+        "text": "Here are the instructions on how to use the hourly pay option:\n\n1. In the chatbot, select \"HOURLY PAY $10.\"\n2. Add a balance in multiples of $10.\n3. The system will notify you of the purchased amount of time.\n4. You can start working.\n5. When your balance is running low, the system will alert you about the depletion of funds.\n\nThe deposit model helps you control your funds more attentively and stay within your budget and expectations.\nPlease note that unused time cannot be refunded or used to pay for subscription packages due to technical limitations of the payment system. However, you can always use these funds for hourly payments, and they have no expiration date."
+      },
+      {
+        "id": 6,
+        "question": "Annual and monthly commitment",
+        "text": "The main difference between Annual and Monthly commitment lies in the price and the terms of the agreement. Let's break it down in detail:\n\nAnnual commitment: The primary benefit for customers when purchasing an Annual commitment plan is a lower hourly rate, and the assurance of a dedicated team focused on your tasks and needs for an extended period. With an annual subscription, you receive up to 20% discount compared to monthly payments. This discount accounts for the inclusion of the risks associated with employee downtime in the monthly pricing.\n\nFor example, the difference in the annual budget on the STARTUP plan between monthly and annual commitment would be $17,040 per year with monthly payments and $14,200 with an annual commitment. This means you save $2,840 per year, which is a 16.7%.\n\nHowever, there are specific considerations that compensate for these lower prices:\n1. You cannot downgrade your subscription until the end of the billing cycle (which means not until the year ends), but you can upgrade at any time.\n2. Canceling your subscription with an annual commitment incurs a penalty equivalent to three months of the subscription cost, excluding the current month.\n3. During payment, the entire annual amount will be charged upfront.\n\nMonthly commitment: JetOffice values flexibility, convenience, and simplicity. When you choose a monthly subscription, you are not tied to long-term commitments, but keep in mind that this type of agreement will make your annual expenses higher.\n\nPlease note that transitioning from a monthly subscription to an annual commitment is straightforward, but the reverse is not possible. \n\nFor detailed information on transitioning between plans, please refer to \"Can I upgrade or downgrade my plan anytime?\"\n\nWe recommend starting with a monthly subscription to get acquainted with JetOffice and build trust, and then consider transitioning to an annual commitment for cost savings."
+      },
+      {
+        "id": 7,
+        "question": "When and How Is Payment Made? What Payment Options Are Available? What Currencies Are Accepted?",
+        "text": "We offer flexibility when it comes to payment options, and we can accommodate various payment methods, including cash, bank transfers, cryptocurrency, and even barter arrangements where services or goods can be exchanged for JetOffice services.\n\nLet's dive into the details:\n\nWhen is Payment Made? \nnWe operate on a 100% upfront payment model. If you have any reservations, we recommend starting with a free trial period or using our hourly payment option with a small balance on your account.\n\nHow is Payment Made?\nWe provide several payment methods:\n\n1. Bank Transfer: You can make a payment by transferring funds via SWIFT or SEPA. Your account manager will send you a proforma invoice for the prepayment of our services.\n\n2. Payment Gateway in the Chat: We've integrated a payment gateway into our chat interface, allowing you to pay with any credit card from around the world and in any currency. Simply start using the JetOffice chat, select \"Subscription,\" and follow the instructions to make a payment.\n\n3. Cryptocurrency: We plan to introduce a payment gateway for cryptocurrency transactions. If it's not available yet, your account manager will provide you with a cryptocurrency wallet address. Please note that we comply with tax regulations for cryptocurrency transactions.\n\n4. In-Person Meeting: While less common, we can arrange a personal meeting for payment. In this case, we'll prepare a proforma invoice, and you can choose to receive it in print or via email.\n\nRest assured that we aim to make the payment process as convenient as possible for you, regardless of the method you choose. If you have any further questions or need assistance with payments, please feel free to ask."
+      },
+      {
+        "id": 8,
+        "question": "Can I subscribe to multiple plans simultaneously?",
+        "text": "Yes, you can. Essentially, it will be just the sum of hours."
+      },
+      {
+        "id": 9,
+        "question": "What is Remote payments & Deposit account and how can I use it? ",
+        "text": "A JetOffice deposit provides several possibilities:\n\n1. Firstly, you can use it for hourly payment. You deposit money into your balance and use JetOffice services for as long as there is money on your account. It's convenient because you can limit your spending.\n2. Secondly, the deposit allows you to make payments on your behalf or on behalf of your company. This is very convenient for various operational and routine payments, such as cleaning services, ticket bookings, accommodation, and so on. We call it Remote payments.\n\nRemote payments are a type of service where we pay bills on your behalf. In this way, you only confirm the transaction, and we handle everything else. \nThe transaction is processed from our bank account, while the funds are deducted from your balance. This way, we have bypassed the necessity of linking your card to our service. In the future, we will strive to add the option for clients to link their card and make transactions directly from it.\n\nAttention! JetOffice limits the payment capabilities. We do not pay for: risky transactions, business deals, investment transactions, payments to exchanges and brokers, currency purchases and conversions, the purchase of illegal goods such as weapons, drugs, etc. Anything that has serious consequences and requires specialized expertise falls outside the scope of our remote payment service.\n\nWe can only process non-risky payments and transactions that do not require professional auditing, such as:\n\n- Ordering food or a taxi.\n- Paying for simple services, such as car repairs or house cleaning.\n- Buying tickets, booking accommodations, renting transportation.\n- Purchasing movie tickets or paying for a restaurant reservation.\n- Paying for grocery orders or personal items. \n- And much more... The key is that the financial transaction should be legal and not require in-depth and specialized auditing.\n\nAttention! We are not responsible for any consequences faced by the client in Remote payments once the client has approved the payment. After payment approval, for example, purchasing plane tickets with specific dates, the responsibility lies with the client.\n\nAttention! We reserve the right to decline the Remote Payment service if we deem it risky, dangerous, or illegal."
+      },
+      {
+        "id": 10,
+        "question": "When can JetOffice start working?",
+        "text": "This depends on the availability of assistants and the size of your company. Sometimes it may take us from a few days to a few weeks to assemble a team. Of course, the package's start time will be counted from the launch day."
+      }
+    ]
+  },
+  "footer":{
+    "contactsTitle":"Contacts",
+    "socialTitle":"Socials",
+    "formName":"Your name",
+    "formEmail":"Your email",
+    "formMessage":"Your message",
+    "formNotice":"Message sent!",
+    "formNoticeWrong":"Something went wrong!",
+    "formButton1":"The message is being sent...",
+    "formButton2":"Send a message"
+  }
 }

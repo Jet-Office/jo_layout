@@ -28,7 +28,6 @@ import { PricingPage } from "./components/PricingPage";
 import { faqData } from "./data/faqData.json";
 import { AboutPage } from "./components/AboutPage";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
-import SwitchLanguageButton from "./components/SwitchLanguageButton/SwitchLanguageButton";
 import GameLoader from "./components/GameLoader/GameLoader";
 
 import LanguageSelector from "./components/Localization/components/LanguageSelector";
@@ -37,11 +36,11 @@ import { GettingStartedBlock } from "./components/GettingStartedBlock";
 import { ReviewsMainPage } from "./components/ReviewsMainPage";
 
 
-type FAQItem = {
+/* type FAQItem = {
   id: number;
   question: string;
   text: string;
-};
+}; */
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -153,6 +152,19 @@ function App() {
     loadResources();
   }, []);
 
+  const [isStylesLoaded, setStylesLoaded] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setStylesLoaded(true); 
+    }, 7000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (!isStylesLoaded) {
+    return <GameLoader />;
+  }
 
   return (
     <div className="App">
@@ -229,7 +241,6 @@ function App() {
       <footer className="footermain">
         <Footer contactsPageRef={contactsPageRef} />
         <ScrollToTopButton />
-        {/* <SwitchLanguageButton /> */}
       </footer>
     </div>
   );

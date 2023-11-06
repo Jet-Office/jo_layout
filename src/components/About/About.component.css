@@ -2,6 +2,10 @@
   margin-right: 0;
 }
 
+.about {
+  white-space: pre-wrap;
+}
+
 .about__container {
   display: grid;
   grid-template-columns: 6fr 6fr;

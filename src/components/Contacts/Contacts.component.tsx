@@ -2,6 +2,7 @@ import "./Contacts.component.css";
 
 import { contacts } from "../../data/contacts.json";
 import { motion } from "framer-motion";
+import { useTranslation } from 'react-i18next';
 
 const animationLeftBlock = {
   hidden: {
@@ -20,11 +21,13 @@ type Props = {
 };
 
 export const Contacts: React.FC<Props> = ({ contactsPageRef }) => {
+  const { t } = useTranslation();
+
   return (
     <motion.section custom={1} variants={animationLeftBlock} className="contacts" id="contacts" ref={contactsPageRef}>
       <div className="contacts__container">
         <h2 className="contacts__title h2" id="contacts__title">
-          Contacts
+          {t(`footer.contactsTitle`)}
         </h2>
         <div className="contacts__info_container">
           {contacts.map((contact) => (
@@ -49,7 +52,7 @@ export const Contacts: React.FC<Props> = ({ contactsPageRef }) => {
       </div>
       <div className="socials_container">
         <h2 className="contacts__title h2" id="socials__title">
-          Socials
+        {t(`footer.socialTitle`)}
         </h2>
         <div className="contacts__socials">
           <div className="icon__container">

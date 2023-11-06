@@ -7,6 +7,9 @@ import { CrewMember } from "./components/CrewItem";
 import crewDataJson  from '../../data/crewAll.json';
 import { motion } from "framer-motion";
 
+import { useTranslation } from 'react-i18next';
+
+
 export const animationBottom = {
   hidden: {
     y: 100,
@@ -76,6 +79,10 @@ type Props = {
 
 export const AboutPage: React.FC<Props> = ({ windowWidth, aboutPageRef })=> {
   const crewData: CrewCategoryData = crewDataJson.crewAll[0];
+  const { t } = useTranslation();
+
+  const localCrew =  Object.values(t(`aboutPage.crewAll`, { returnObjects: true }))
+  const finalCrew = localCrew[0];
 
   return (
     <>
@@ -86,7 +93,7 @@ export const AboutPage: React.FC<Props> = ({ windowWidth, aboutPageRef })=> {
         className="about-page">
         <div className="container">
           <motion.h1 variants={animationBottom} custom={1} className="about-page__title">
-          Service from Ukraine for the Whole World
+          {t(`aboutPage.title`)}
           </motion.h1>
         </div>
 
@@ -104,10 +111,10 @@ export const AboutPage: React.FC<Props> = ({ windowWidth, aboutPageRef })=> {
             />
             <div className="history__text-container">
               <motion.h2 variants={animationRight} custom={1} className="history__title">
-                Our History
+              {t(`aboutPage.heroTitle`)}
               </motion.h2>
               <motion.p variants={animationRight} custom={2} className="history__text">
-              It all began in a cafe in December 2022, in Fethiye, Turkey. Illia was working as a product designer in outsourced company and Oksana was the head of administrative support in a company with a headcount of 80 employees, and we were pondering: «how to scale the skill of solving problems and finding solutions for companies on an outsourcing basis». Here are the challenges we saw for companies that needed assistants, helpers, and administrative support:
+              {t(`aboutPage.heroText`)}
               </motion.p>
             </div>
           </div>
@@ -119,23 +126,23 @@ export const AboutPage: React.FC<Props> = ({ windowWidth, aboutPageRef })=> {
           className="customers-interviews">
           <div className="container">
             <motion.h2 variants={animationLeft} className="customers-interviews__title">
-              Customer Interviews
+            {t(`aboutPage.customersInterviewsTitle`)}
             </motion.h2>
             <div className="customers-interviews__text-container">
               <div className="customers-interviews__wrapper">
                 <motion.p variants={animationLeft} custom={1} className="customers-interviews__text">
-                  ❝  Navigating the administrative landscape is no small feat. Finding someone adept enough to support our team without distracting from core tasks is critical - especially when an executive's hour holds higher value than that of an assistant.
+                  ❝  {t(`aboutPage.customersInterviewsText1`)}
                 </motion.p>
                 <motion.p variants={animationRight} custom={2} className="customers-interviews__text">
-                ❝ In our search for a business assistant, we don't just want anyone. We're looking for a self-starter – someone who grasps business intricacies, shows initiative, and is continuously eager to learn and adapt.
+                ❝ {t(`aboutPage.customersInterviewsText2`)}
                 </motion.p>
               </div>
               <div className="customers-interviews__wrapper">
                 <motion.p variants={animationLeft} custom={3} className="customers-interviews__text">
-                ❝  Seeking the perfect personal assistant is a quest in its own right. We need someone who not only understands our company's nuances but can carry out tasks with reliability and precision, ensuring that our top brass can operate without a hitch.
+                ❝  {t(`aboutPage.customersInterviewsText3`)}
                 </motion.p>
                 <motion.p variants={animationRight} custom={4} className="customers-interviews__text">
-                ❝  The ultimate challenge? Melding these talents into a cohesive team led by a single, insightful manager – someone who gets the intricacies of our operations, anticipates our client needs, delves into data, and thinks outside the box for those unpredictable tasks.
+                ❝  {t(`aboutPage.customersInterviewsText4`)}
                 </motion.p>
               </div>
             </div>
@@ -152,13 +159,10 @@ export const AboutPage: React.FC<Props> = ({ windowWidth, aboutPageRef })=> {
             </div>
             <div className="about-rocket-section__text-container">
               <motion.h2 variants={animationLeft} custom={1} className="about-rocket-section__title">
-                Our mission and goals
+              {t(`aboutPage.titleRocket`)}
               </motion.h2>
               <motion.p variants={animationLeft} custom={2} className="about-rocket-section__description">
-                Our mission is to provide client-oriented virtual assistance, administrative support, and business solutions such as process automation and IT product development. We strive to deliver exceptional service, build long-lasting relationships with our clients, and continuously improve our processes to exceed their expectations. 
-                <br />
-                <br />
-                One of our goals is to create a turnkey platform ecosystem for both businesses and private clients, where human assistants and AI together will be maximally effective and beneficial for clients.
+              {t(`aboutPage.textRocket`)}
               </motion.p>
             </div>
           </div>
@@ -176,7 +180,7 @@ export const AboutPage: React.FC<Props> = ({ windowWidth, aboutPageRef })=> {
             <div className="crew-section__list">
               <div className="crew-section__category">
                   <div className="crew-section__wrapper">
-                    {crewData.head.map((member) => (
+                    {finalCrew.head.map((member: CrewMemberData) => (
                       <CrewMember
                         key={member.id}
                         name={member.name}

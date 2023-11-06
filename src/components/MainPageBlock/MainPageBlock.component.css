@@ -11,6 +11,7 @@
   border-radius: 4px;
   background: var(--BG, #14181C);
   box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.60);
+  white-space: pre-wrap;
 }
 
 .text-block {
