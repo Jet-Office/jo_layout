@@ -76,10 +76,10 @@ const someServices = newServices; */
       casesContent.current.style.height = `${сasesListRef.current.offsetHeight}px`;
     }
   }, [windowWidth]);
-  const newServices = useMemo(() => Object.values(t(`main.services.services`, { returnObjects: true })), [t]);
-    
+  const newServices = useMemo(() => Object.values(t(`main.services.services`, { returnObjects: true })) as Services, [t]);
+    console.log(newServices)
 
-    const someServices:Services = newServices;
+    const someServices = newServices;
 
   return (
     <motion.section 
