@@ -82,7 +82,7 @@ export const AboutPage: React.FC<Props> = ({ windowWidth, aboutPageRef })=> {
   const { t } = useTranslation();
 
   const localCrew =  Object.values(t(`aboutPage.crewAll`, { returnObjects: true }))
-  const finalCrew = localCrew[0];
+  const finalCrew: CrewCategoryData = localCrew[0];
 
   return (
     <>
