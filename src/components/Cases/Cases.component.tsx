@@ -12,6 +12,23 @@ type Props = {
   casesPageRef: React.RefObject<HTMLElement>;
 };
 
+type ServiceDescription = {
+    id: number;
+    name: string;
+    text: string[];
+};
+
+type Service = {
+    id: number;
+    link: string;
+    nameWithWrap: string;
+    name: string;
+    icon: string;
+    descriptions: ServiceDescription[];
+};
+
+type Services = Service[];
+
 const animationFromLeft = {
   hidden: {
     x: -100,
@@ -62,7 +79,7 @@ const someServices = newServices; */
   const newServices = useMemo(() => Object.values(t(`main.services.services`, { returnObjects: true })), [t]);
     
 
-    const someServices = newServices;
+    const someServices:Services = newServices;
 
   return (
     <motion.section 
