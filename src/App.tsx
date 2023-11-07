@@ -153,10 +153,12 @@ function App() {
   }, []);
 
   const [isStylesLoaded, setStylesLoaded] = useState(false);
+  const [isContentVisible, setContentVisible] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setStylesLoaded(true); 
+      setStylesLoaded(true);
+      setContentVisible(true);
     }, 7000);
 
     return () => clearTimeout(timer);
@@ -174,70 +176,74 @@ function App() {
         windowWidth={windowWidth}
       />
 
-
+      {isContentVisible && (
       <Routes>
-        <Route path="" element={
-          <>
-            <SectionHead homePageRef={homePageRef}/>
-            <main className="main">
-              <div className="main__container">
-                <Partners />
-                <Services activeRef={servicesPageRef} />
-                {windowWidth <= 641 && <ControlPreview />}
-                {/* <GettingStartedBlock /> */}
-                <Benefits />
-                <MainPageBlock windowWidth={windowWidth} />
-                <Cases windowWidth={windowWidth} casesPageRef={casesPageRef} />
-                {/* <ReviewsMainPage /> */}
-              </div>
-            </main>
-          </>
-        } />
-        <Route path="services/:link" element={
-          <ListOfServices />
-        } />
-        <Route path="services" element={
-          <ServicesPage />
-        } />
-        <Route path="services/:link/:subLink" element={
-          <ServiceDescription />
-        } />
-        <Route path="resources/blog" element={
-          <Blog />
-        } />
-        <Route path="resources/blog/:link" element={
-          <Content windowWidth={windowWidth}/>
-        } />
-        <Route path="faq" element={
-          <FAQPage />
-        } />
-        <Route 
-          path="/pricing"
-          element={
-            <PricingPage
-              windowWidth={windowWidth}
-              activePageRef={pricingPageRef}
-              options={options}
-              setOptions={setOptions}
-              activeCardId={activeCardId}
-              setActiveCardId={setActiveCardId}
-            />
-          }
-        />
-        <Route path="about" element={
-          <AboutPage
-          windowWidth={windowWidth} 
-          aboutPageRef={aboutPageRef}
+      <Route path="" element={
+        <>
+          <SectionHead homePageRef={homePageRef}/>
+          <main className="main">
+            <div className="main__container">
+              <Partners />
+              <Services activeRef={servicesPageRef} />
+              {windowWidth <= 641 && <ControlPreview />}
+              {/* <GettingStartedBlock /> */}
+              <Benefits />
+              <MainPageBlock windowWidth={windowWidth} />
+              <Cases windowWidth={windowWidth} casesPageRef={casesPageRef} />
+              {/* <ReviewsMainPage /> */}
+            </div>
+          </main>
+        </>
+      } />
+      <Route path="services/:link" element={
+        <ListOfServices />
+      } />
+      <Route path="services" element={
+        <ServicesPage />
+      } />
+      <Route path="services/:link/:subLink" element={
+        <ServiceDescription />
+      } />
+      <Route path="resources/blog" element={
+        <Blog />
+      } />
+      <Route path="resources/blog/:link" element={
+        <Content windowWidth={windowWidth}/>
+      } />
+      <Route path="faq" element={
+        <FAQPage />
+      } />
+      <Route 
+        path="/pricing"
+        element={
+          <PricingPage
+            windowWidth={windowWidth}
+            activePageRef={pricingPageRef}
+            options={options}
+            setOptions={setOptions}
+            activeCardId={activeCardId}
+            setActiveCardId={setActiveCardId}
           />
-        } />
-        <Route path="loader" element={
-            <GameLoader />
-          }
+        }
+      />
+      <Route path="about" element={
+        <AboutPage
+        windowWidth={windowWidth} 
+        aboutPageRef={aboutPageRef}
         />
-        <Route path="*" element={
-          <NotFound />
-        } />
-      </Routes>
+      } />
+      <Route path="loader" element={
+          <GameLoader />
+        }
+      />
+      <Route path="*" element={
+        <NotFound />
+      } />
+    </Routes>
+      )
+
+      }
+
       <footer className="footermain">
         <Footer contactsPageRef={contactsPageRef} />
         <ScrollToTopButton />
