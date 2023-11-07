@@ -86,7 +86,7 @@ export const Header: React.FC<Props> = ({ windowWidth, activePageRef }) => {
           />
         </Link>
 
-        {/* <LanguageSelector /> */}
+        <LanguageSelector />
         {windowWidth > 890 ? (    
           <>
             <Navigation
