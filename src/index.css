@@ -59,7 +59,7 @@ html {
 }
 
 body {
-  font-family: "Proxima Nova regular";
+  font-family: "Proxima Nova regular", sans-serif;
 
   box-sizing: border-box;
 
