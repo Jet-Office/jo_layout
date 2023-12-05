@@ -12,7 +12,7 @@
   border-radius: 10px;
   box-shadow: 0 0 32px #0009;
   position: relative;
-  background-position: center;
+  background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
 }

@@ -122,6 +122,7 @@ export const Header: React.FC<Props> = ({ windowWidth, activePageRef }) => {
             />
           </>
         )}
+        <div className="clack"></div>
       
       </div>
     </div>
