@@ -57,7 +57,7 @@ export const Contacts: React.FC<Props> = ({ contactsPageRef }) => {
         <div className="contacts__socials">
           <div className="icon__container">
             <a
-              href="https://www.instagram.com/jet.office/"
+              href="https://instagram.com/jetoffice.assistance?igshid=MzMyNGUyNmU2YQ=="
               target="_blank"
               rel="noreferrer"
             >
